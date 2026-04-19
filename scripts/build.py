@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
-"""Build proxy.txt by merging upstream Loyalsoldier/surge-rules with local sources.
+"""Build proxy rule files by merging upstream Loyalsoldier/surge-rules with local sources.
 
-Output is a Surge DOMAIN-SET:
-  - bare domain       -> exact match
-  - leading-dot (.d)  -> exact + all subdomains (domain-suffix)
+Produces two output files:
+  - proxy.txt  : Surge DOMAIN-SET format (for `DOMAIN-SET,...` directive)
+                   * bare domain      -> exact match
+                   * leading-dot (.d) -> exact + all subdomains
+  - proxy.list : Surge RULE-SET format (for `RULE-SET,...` directive)
+                   * `.example.com`   -> `DOMAIN-SUFFIX,example.com`
+                   * `example.com`    -> `DOMAIN,example.com`
+
+Surge mobile rejects leading-dot plain lines when the config uses
+`RULE-SET,...` -- that directive requires a rule-type prefix on every line.
+Publishing both formats lets the user pick whichever directive their
+Surge config uses without editing it.
 
 Dedup rules:
-  - If `.example.com` exists, `example.com` AND any `*.example.com` subdomain entries
-    are redundant and are dropped.
+  - If `.example.com` exists, `example.com` AND any `*.example.com` subdomain
+    entries are redundant and are dropped.
   - Exact duplicates are collapsed.
 """
 
@@ -24,7 +33,8 @@ UPSTREAM_URL = (
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCES_DIR = ROOT / "sources"
-OUTPUT_FILE = ROOT / "proxy.txt"
+OUTPUT_DOMAIN_SET = ROOT / "proxy.txt"
+OUTPUT_RULE_SET = ROOT / "proxy.list"
 
 REQUEST_TIMEOUT_SECONDS = 30
 HTTP_USER_AGENT = "surge-rules-builder/1.0 (+https://github.com/StiofanZ/surge-rules)"
@@ -85,20 +95,68 @@ def dedupe(domains: list[str]) -> list[str]:
     return sorted(kept, key=lambda x: (x.lstrip("."), 0 if x.startswith(".") else 1))
 
 
-def build_header(upstream_count: int, local_count: int, total: int) -> str:
+def to_ruleset(domains: list[str]) -> list[str]:
+    """Convert DOMAIN-SET entries to Surge RULE-SET lines.
+
+    `.example.com` -> `DOMAIN-SUFFIX,example.com`
+    `example.com`  -> `DOMAIN,example.com`
+    """
+    out: list[str] = []
+    for d in domains:
+        if d.startswith("."):
+            out.append(f"DOMAIN-SUFFIX,{d[1:]}")
+        else:
+            out.append(f"DOMAIN,{d}")
+    return out
+
+
+def _common_header(
+    *, filename: str, fmt: str, upstream_count: int, local_count: int, total: int
+) -> str:
     stamp = _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds")
     return (
-        "# Surge DOMAIN-SET: proxy.txt\n"
+        f"# Surge {fmt}: {filename}\n"
         f"# Generated: {stamp}\n"
         f"# Upstream: {UPSTREAM_URL}\n"
         "# Supplement: sources/openai-chatgpt.txt "
         "(https://help.openai.com/zh-hans-cn/articles/9247338)\n"
         f"# Counts: upstream={upstream_count}, local={local_count}, total(deduped)={total}\n"
         "# Repo: https://github.com/StiofanZ/surge-rules\n"
-        "#\n"
+    )
+
+
+def header_domain_set(upstream_count: int, local_count: int, total: int) -> str:
+    return (
+        _common_header(
+            filename="proxy.txt",
+            fmt="DOMAIN-SET",
+            upstream_count=upstream_count,
+            local_count=local_count,
+            total=total,
+        )
+        + "#\n"
+        "# Use in Surge config: DOMAIN-SET,<url>,<policy>\n"
         "# Format:\n"
         "#   example.com   -> exact match\n"
         "#   .example.com  -> exact + all subdomains\n"
+        "\n"
+    )
+
+
+def header_rule_set(upstream_count: int, local_count: int, total: int) -> str:
+    return (
+        _common_header(
+            filename="proxy.list",
+            fmt="RULE-SET",
+            upstream_count=upstream_count,
+            local_count=local_count,
+            total=total,
+        )
+        + "#\n"
+        "# Use in Surge config: RULE-SET,<url>,<policy>\n"
+        "# Format:\n"
+        "#   DOMAIN,example.com        -> exact match\n"
+        "#   DOMAIN-SUFFIX,example.com -> exact + all subdomains\n"
         "\n"
     )
 
@@ -125,9 +183,18 @@ def main() -> int:
     deduped = dedupe(combined)
     print(f"[build] deduped total: {len(deduped)}", file=sys.stderr)
 
-    header = build_header(len(upstream), len(local), len(deduped))
-    OUTPUT_FILE.write_text(header + "\n".join(deduped) + "\n", encoding="utf-8")
-    print(f"[build] wrote {OUTPUT_FILE.relative_to(ROOT)}", file=sys.stderr)
+    domain_set_header = header_domain_set(len(upstream), len(local), len(deduped))
+    OUTPUT_DOMAIN_SET.write_text(
+        domain_set_header + "\n".join(deduped) + "\n", encoding="utf-8"
+    )
+    print(f"[build] wrote {OUTPUT_DOMAIN_SET.relative_to(ROOT)}", file=sys.stderr)
+
+    rule_set_header = header_rule_set(len(upstream), len(local), len(deduped))
+    ruleset_lines = to_ruleset(deduped)
+    OUTPUT_RULE_SET.write_text(
+        rule_set_header + "\n".join(ruleset_lines) + "\n", encoding="utf-8"
+    )
+    print(f"[build] wrote {OUTPUT_RULE_SET.relative_to(ROOT)}", file=sys.stderr)
     return 0
 
 

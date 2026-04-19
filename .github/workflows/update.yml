@@ -41,12 +41,12 @@ jobs:
         id: diff
         run: |
           # Ignore the "Generated:" timestamp line when deciding if a commit is needed.
-          if git diff --quiet -I '^# Generated: ' -- proxy.txt; then
+          if git diff --quiet -I '^# Generated: ' -- proxy.txt proxy.list; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No meaningful changes in proxy.txt"
+            echo "No meaningful changes in proxy.txt / proxy.list"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            git --no-pager diff --stat -- proxy.txt
+            git --no-pager diff --stat -- proxy.txt proxy.list
           fi
 
       - name: Commit and push
@@ -57,6 +57,6 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
-          git add proxy.txt
-          git commit -m "chore(rules): refresh proxy.txt from upstream + OpenAI sources"
+          git add proxy.txt proxy.list
+          git commit -m "chore(rules): refresh proxy.txt and proxy.list"
           git push

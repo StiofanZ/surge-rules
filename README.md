@@ -4,18 +4,33 @@
 
 ## 规则清单
 
-| 文件 | 类型 | 说明 |
-| --- | --- | --- |
-| [`proxy.txt`](./proxy.txt) | DOMAIN-SET | 代理域名集。上游 [Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + 本地 OpenAI/ChatGPT 白名单补充，自动去重。 |
+同一份规则数据同时以两种 Surge 格式发布，内容等价，按自己 Surge 配置里的指令选一个即可：
+
+| 文件 | 类型 | 对应 Surge 指令 | 每行形如 |
+| --- | --- | --- | --- |
+| [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` | `.example.com` / `example.com` |
+| [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` | `DOMAIN-SUFFIX,example.com` / `DOMAIN,example.com` |
+
+两者都源自 [Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + 本地 OpenAI/ChatGPT 补充，合并去重后生成。
 
 ## 在 Surge 中使用
+
+**A. 使用 DOMAIN-SET 指令（桌面端常用）：**
 
 ```ini
 [Rule]
 DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.txt,Proxy
 ```
 
-> `DOMAIN-SET` 内约定：裸域 `example.com` 为精确匹配，`.example.com` 为精确 + 全部子域匹配。
+**B. 使用 RULE-SET 指令（若手机端报 `invalid line`，用这份）：**
+
+```ini
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.list,Proxy
+```
+
+> **为什么有两份？**
+> Surge 的 `RULE-SET` 指令要求每行必须带规则类型前缀（`DOMAIN-SUFFIX,...`），不接受像 `.000webhost.com` 这种前导点的纯域名——否则会报 `invalid line`。`DOMAIN-SET` 指令则相反，只接受纯域名。两份文件同步产出，避免改错指令又改错文件的尴尬。
 
 ## 数据来源
 
@@ -46,11 +61,12 @@ python3 scripts/build.py
 
 ```
 surge-rules/
-├── proxy.txt                      # 合并后的代理规则（机器生成）
+├── proxy.txt                      # DOMAIN-SET 格式（机器生成）
+├── proxy.list                     # RULE-SET 格式（机器生成）
 ├── sources/
 │   └── openai-chatgpt.txt         # 本地补充源
 ├── scripts/
-│   └── build.py                   # 合并 + 去重脚本
+│   └── build.py                   # 合并 + 去重 + 双格式输出
 └── .github/workflows/
     └── update.yml                 # 每日自动更新
 ```
