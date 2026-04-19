@@ -1,0 +1,38 @@
+# OpenAI / ChatGPT allowlist domains
+# Source: https://help.openai.com/zh-hans-cn/articles/9247338
+# Format: Surge DOMAIN-SET
+#   - bare domain (e.g. example.com)      -> exact match only
+#   - leading-dot (e.g. .example.com)     -> exact + all subdomains
+
+# --- OpenAI core (domain-suffix covers all listed subdomains) ---
+.openai.com
+.chatgpt.com
+.oaistatic.com
+.oaiusercontent.com
+
+# --- OpenAI third-party auth / feature-flags / telemetry ---
+.auth.openai.com
+.ct.sendgrid.net
+.featuregates.org
+.intercom.io
+.intercomcdn.com
+.statsig.com
+
+# --- Standalone dependencies ---
+auth0.openai.com
+cdn.openaimerge.com
+cdn.workos.com
+challenges.cloudflare.com
+events.statsigapi.net
+featureassets.org
+forwarder.workos.com
+humb.apple.com
+images.workoscdn.com
+js.stripe.com
+o207216.ingest.sentry.io
+o33249.ingest.sentry.io
+prodregistryv2.org
+rum.browser-intake-datadoghq.com
+setup.workos.com
+statsigapi.net
+workos.imgix.net

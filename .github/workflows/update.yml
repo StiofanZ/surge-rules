@@ -1,0 +1,62 @@
+name: Update proxy.txt
+
+on:
+  schedule:
+    # Daily at 18:30 UTC (02:30 Beijing time). Loyalsoldier/surge-rules is
+    # typically refreshed around 16:00 UTC, so we pick up the latest release.
+    - cron: "30 18 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "sources/**"
+      - "scripts/build.py"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-proxy-txt
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and commit proxy.txt
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build proxy.txt
+        run: python scripts/build.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          # Ignore the "Generated:" timestamp line when deciding if a commit is needed.
+          if git diff --quiet -I '^# Generated: ' -- proxy.txt; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No meaningful changes in proxy.txt"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git --no-pager diff --stat -- proxy.txt
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          git add proxy.txt
+          git commit -m "chore(rules): refresh proxy.txt from upstream + OpenAI sources"
+          git push
