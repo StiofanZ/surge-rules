@@ -1,4 +1,4 @@
-name: Update proxy.txt
+name: Update rule sets
 
 on:
   schedule:
@@ -17,12 +17,12 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-proxy-txt
+  group: update-rule-sets
   cancel-in-progress: false
 
 jobs:
   build:
-    name: Build and commit proxy.txt
+    name: Build and commit rule sets
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -34,19 +34,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Build proxy.txt
+      - name: Build rule sets
         run: python scripts/build.py
 
       - name: Check for changes
         id: diff
+        env:
+          OUTPUTS: "proxy.txt proxy.list reject.txt reject.list"
         run: |
           # Ignore the "Generated:" timestamp line when deciding if a commit is needed.
-          if git diff --quiet -I '^# Generated: ' -- proxy.txt proxy.list; then
+          if git diff --quiet -I '^# Generated: ' -- $OUTPUTS; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No meaningful changes in proxy.txt / proxy.list"
+            echo "No meaningful changes in rule-set outputs"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            git --no-pager diff --stat -- proxy.txt proxy.list
+            git --no-pager diff --stat -- $OUTPUTS
           fi
 
       - name: Commit and push
@@ -57,6 +59,6 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
-          git add proxy.txt proxy.list
-          git commit -m "chore(rules): refresh proxy.txt and proxy.list"
+          git add proxy.txt proxy.list reject.txt reject.list
+          git commit -m "chore(rules): refresh proxy and reject rule sets"
           git push

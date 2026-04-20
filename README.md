@@ -4,14 +4,42 @@
 
 ## 规则清单
 
-同一份规则数据同时以两种 Surge 格式发布，内容等价，按自己 Surge 配置里的指令选一个即可：
+每个分类都同时以两种 Surge 格式发布，按 Surge 配置里用的指令选对应文件即可：
 
-| 文件 | 类型 | 对应 Surge 指令 | 每行形如 |
-| --- | --- | --- | --- |
-| [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` | `.example.com` / `example.com` |
-| [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` | `DOMAIN-SUFFIX,example.com` / `DOMAIN,example.com` |
+### proxy — 需要走代理的域名
 
-两者都源自 [Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + 本地 OpenAI/ChatGPT 补充，合并去重后生成。
+| 文件 | 类型 | 对应 Surge 指令 |
+| --- | --- | --- |
+| [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` |
+| [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` |
+
+来源：[Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)（OpenAI/ChatGPT 官方允许列表）。
+
+### reject — 广告 / 追踪 / 挖矿域名
+
+| 文件 | 类型 | 对应 Surge 指令 |
+| --- | --- | --- |
+| [`reject.txt`](./reject.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,REJECT` |
+| [`reject.list`](./reject.list) | **RULE-SET** | `RULE-SET,<url>,REJECT` |
+
+来源：[AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters)，覆盖该仓库中**所有**面向域名的过滤段：
+
+| 来源文件 | 作用 |
+| --- | --- |
+| `BaseFilter` / `MobileFilter` / `ChineseFilter` / `JapaneseFilter` 的 `adservers.txt` | 第三方广告网络主域 |
+| `BaseFilter` / `ChineseFilter` / `JapaneseFilter` 的 `adservers_firstparty.txt` | 合法网站下挂的广告子域 |
+| `SpywareFilter/tracking_servers.txt` | 第三方追踪/分析 |
+| `SpywareFilter/tracking_servers_firstparty.txt` | 第一方追踪（埋点域） |
+| `SpywareFilter/mobile.txt` | 移动端追踪/遥测 |
+| `BaseFilter/cryptominers.txt` | 挖矿脚本域 |
+
+此外还接入 [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 [`data/category-ads-all`](https://github.com/v2fly/domain-list-community/blob/master/data/category-ads-all)——这是 [SagerNet/sing-geosite](https://github.com/SagerNet/sing-geosite) 编译 `geosite-category-ads-all.srs` 所用的上游文本源。构建器递归展开 v2fly 的 `include:` 指令，并严格遵守其 **属性过滤语义**：
+
+- `include:apple @ads` 表示"只纳入 `data/apple` 中带 `@ads` 标签的终端规则"，因此 `apple.com` 主域不会进 reject，只有 `advertising.apple.com`、`iadsdk.apple.com` 等 5 条广告子域会进。
+- 过滤通过嵌套 include 链路**求交集**传播（`@ads AND @cn` 等），避免父级过滤被子级忽略。
+- 抓取结果带缓存，避免同一文件在多路径下重复下载。
+
+构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 
 ## 在 Surge 中使用
 
@@ -20,29 +48,57 @@
 ```ini
 [Rule]
 DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.txt,Proxy
+DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.txt,REJECT
 ```
 
-**B. 使用 RULE-SET 指令（若手机端报 `invalid line`，用这份）：**
+**B. 使用 RULE-SET 指令（若手机端对 `DOMAIN-SET` 报 `invalid line`，用这份）：**
 
 ```ini
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.list,REJECT
 ```
 
-> **为什么有两份？**
-> Surge 的 `RULE-SET` 指令要求每行必须带规则类型前缀（`DOMAIN-SUFFIX,...`），不接受像 `.000webhost.com` 这种前导点的纯域名——否则会报 `invalid line`。`DOMAIN-SET` 指令则相反，只接受纯域名。两份文件同步产出，避免改错指令又改错文件的尴尬。
+> **为什么每份有两种格式？**
+> Surge 的 `RULE-SET` 指令要求每行必须带规则类型前缀（`DOMAIN-SUFFIX,...`），不接受像 `.000webhost.com` 这种前导点的纯域名——否则会报 `invalid line`。`DOMAIN-SET` 指令则相反，只接受纯域名。两种文件同步产出，避免改错指令又改错文件的尴尬。
 
 ## 数据来源
 
 1. **上游主数据：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt`。
 2. **本地补充：** [`sources/openai-chatgpt.txt`](./sources/openai-chatgpt.txt) — 基于 OpenAI 官方[《网络建议》帮助文章](https://help.openai.com/zh-hans-cn/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps)所列的 OpenAI/ChatGPT 允许列表域名（含 WorkOS、Statsig、Stripe、Cloudflare Turnstile、Sentry、Datadog RUM 等第三方依赖）。
 
-## 自动更新
+## CI / 自动化
 
-- 调度：[`.github/workflows/update.yml`](./.github/workflows/update.yml) 每天 **18:30 UTC**（北京时间次日 02:30）运行。
-- 过程：拉取上游 → 合并 `sources/*.txt` → 去冗余（子域被更宽后缀规则覆盖时自动删除）→ 排序写出 `proxy.txt`。
-- 仅当规则内容有实质变化时才提交，纯时间戳变化忽略。
-- 手动触发：GitHub UI → Actions → "Update proxy.txt" → Run workflow，或 `gh workflow run "Update proxy.txt"`。
+三个独立 workflow：
+
+| 文件 | 触发 | 作用 |
+| --- | --- | --- |
+| [`update.yml`](./.github/workflows/update.yml) | cron 18:30 UTC / `workflow_dispatch` / `push` main | 每日刷新 `proxy.*` + `reject.*` 并 push |
+| [`ci.yml`](./.github/workflows/ci.yml) | `pull_request` / `push` main | 跑 build.py、校验 DOMAIN-SET/RULE-SET 行格式、检测输出漂移 |
+| [`automerge.yml`](./.github/workflows/automerge.yml) | `pull_request_target` | 对受信 PR 调用 `gh pr merge --auto --squash`，在 CI 通过后自动合入 |
+
+### 自动更新节奏
+
+- 调度：`update.yml` 每天 18:30 UTC（北京时间次日 02:30）运行。
+- 过程：拉取上游 → 合并 `sources/<category>/*.txt` → 去冗余 → 排序写出 `*.txt` + `*.list`。
+- 仅当规则内容有实质变化时才提交（`git diff -I '^# Generated: '` 忽略纯时间戳漂移）。
+- 手动触发：GitHub UI → Actions → "Update rule sets" → Run workflow，或 `gh workflow run "Update rule sets"`。
+
+### 自动合并（需要在 GitHub 设置里点一个开关）
+
+`automerge.yml` 会对以下条件之一的 PR 启用 GitHub 原生 auto-merge：
+1. 作者是 `StiofanZ`（仓库主）
+2. 作者是 `github-actions[bot]`
+3. PR 上贴了 `automerge` label
+
+启用后，PR 在所有必须状态检查（即 `ci.yml` 的 `Build + validate rule sets`）通过后**自动以 squash 方式合入**，无需点按钮。
+
+**一次性仓库设置（必需）：**
+- Settings → General → Pull Requests → **"Allow auto-merge" 打勾**（否则 `gh pr merge --auto` 会报错）
+
+**强烈建议再做一个分支保护（安全阀）：**
+- Settings → Branches → 为 `main` 添加规则 → Require status checks to pass → 勾选 `CI / Build + validate rule sets`
+- 这样即使 automerge 误开启，CI 失败的 PR 也不会真的合进去
 
 ## 本地构建
 
@@ -54,19 +110,23 @@ python3 scripts/build.py
 
 ## 添加新的补充规则
 
-1. 在 `sources/` 下新建 `*.txt` 文件，按 DOMAIN-SET 格式编写（一行一条，`#` 为注释）。
-2. 推送到 `main`，GitHub Actions 会自动合并并发布。
+- **扩充已有分类：** 在 `sources/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。例如 `sources/reject/my-custom.txt`。
+- **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、`local_dir`（本地子目录）、输出文件名；`parser` 可选 `"domain_set"` 或 `"adguard"`。
+
+推送到 `main` 后 GitHub Actions 会自动合并并发布。
 
 ## 目录结构
 
 ```
 surge-rules/
-├── proxy.txt                      # DOMAIN-SET 格式（机器生成）
-├── proxy.list                     # RULE-SET 格式（机器生成）
+├── proxy.txt / proxy.list           # proxy 分类（机器生成）
+├── reject.txt / reject.list         # reject 分类（机器生成）
 ├── sources/
-│   └── openai-chatgpt.txt         # 本地补充源
+│   ├── proxy/
+│   │   └── openai-chatgpt.txt       # proxy 本地补充源
+│   └── reject/                      # reject 本地补充源（可选）
 ├── scripts/
-│   └── build.py                   # 合并 + 去重 + 双格式输出
+│   └── build.py                     # 多规则集合并 + AdGuard 解析 + 双格式输出
 └── .github/workflows/
-    └── update.yml                 # 每日自动更新
+    └── update.yml                   # 每日自动更新
 ```

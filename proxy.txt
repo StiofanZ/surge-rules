@@ -1,11 +1,13 @@
-# Surge DOMAIN-SET: proxy.txt
-# Generated: 2026-04-19T16:16:50+00:00
-# Upstream: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
-# Supplement: sources/openai-chatgpt.txt (https://help.openai.com/zh-hans-cn/articles/9247338)
-# Counts: upstream=25997, local=27, total(deduped)=25433
+# Surge DOMAIN-SET: proxy.txt (proxy)
+# Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt plus local OpenAI/ChatGPT allowlist supplement.
+# Generated: 2026-04-20T04:00:45+00:00
+# Sources:
+#   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
+#   [local] sources/proxy/openai-chatgpt.txt
+# Counts: upstream=25998, local=27, total(deduped)=25434
 # Repo: https://github.com/StiofanZ/surge-rules
 #
-# Use in Surge config: DOMAIN-SET,<url>,<policy>
+# Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
 #   example.com   -> exact match
 #   .example.com  -> exact + all subdomains
@@ -766,6 +768,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .adguard.io
 .adguard.org
 .adguardaccount.com
+.adguardcdn.com
 .adguardvpn.com
 .adhelpnews.com
 .adidas-archive.org
