@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
-"""Build proxy rule files by merging upstream Loyalsoldier/surge-rules with local sources.
+"""Build Surge rule files from upstream sources + local supplements.
 
-Produces two output files:
-  - proxy.txt  : Surge DOMAIN-SET format (for `DOMAIN-SET,...` directive)
-                   * bare domain      -> exact match
-                   * leading-dot (.d) -> exact + all subdomains
-  - proxy.list : Surge RULE-SET format (for `RULE-SET,...` directive)
-                   * `.example.com`   -> `DOMAIN-SUFFIX,example.com`
-                   * `example.com`    -> `DOMAIN,example.com`
+For each configured rule set we produce TWO files:
+  - <name>.txt  : Surge DOMAIN-SET format (for `DOMAIN-SET,...` directive)
+                    * bare domain       -> exact match
+                    * leading-dot (.d)  -> exact + all subdomains
+  - <name>.list : Surge RULE-SET format (for `RULE-SET,...` directive)
+                    * `.example.com`    -> `DOMAIN-SUFFIX,example.com`
+                    * `example.com`     -> `DOMAIN,example.com`
 
 Surge mobile rejects leading-dot plain lines when the config uses
 `RULE-SET,...` -- that directive requires a rule-type prefix on every line.
-Publishing both formats lets the user pick whichever directive their
-Surge config uses without editing it.
+Publishing both formats lets the user pick whichever directive their Surge
+config uses without editing it.
 
-Dedup rules:
+Supported upstream parsers:
+  - "domain_set" : Surge DOMAIN-SET (the Loyalsoldier format).
+  - "adguard"    : AdGuard/ABP adblock syntax. Only pure `||domain^` rules
+                   with safe (DNS-compatible) modifiers are extracted;
+                   cosmetic, path, regex, allow-list, and resource-type
+                   rules are dropped.
+
+Dedup rules (applied per rule set):
   - If `.example.com` exists, `example.com` AND any `*.example.com` subdomain
     entries are redundant and are dropped.
   - Exact duplicates are collapsed.
@@ -22,33 +29,100 @@ Dedup rules:
 
 from __future__ import annotations
 
+import dataclasses
 import datetime as _dt
 import pathlib
+import re
 import sys
 import urllib.request
 
-UPSTREAM_URL = (
-    "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt"
-)
-
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCES_DIR = ROOT / "sources"
-OUTPUT_DOMAIN_SET = ROOT / "proxy.txt"
-OUTPUT_RULE_SET = ROOT / "proxy.list"
 
 REQUEST_TIMEOUT_SECONDS = 30
 HTTP_USER_AGENT = "surge-rules-builder/1.0 (+https://github.com/StiofanZ/surge-rules)"
+REPO_URL = "https://github.com/StiofanZ/surge-rules"
 
 
-def fetch_upstream(url: str) -> str:
+@dataclasses.dataclass(frozen=True)
+class Source:
+    url: str
+    parser: str  # "domain_set" | "adguard"
+
+
+@dataclasses.dataclass(frozen=True)
+class RuleSet:
+    name: str
+    description: str
+    sources: tuple[Source, ...]
+    local_dir: str | None  # subdirectory under sources/, or None
+    output_domain_set: str  # e.g. "proxy.txt"
+    output_rule_set: str  # e.g. "proxy.list"
+
+
+RULE_SETS: tuple[RuleSet, ...] = (
+    RuleSet(
+        name="proxy",
+        description=(
+            "Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules "
+            "proxy.txt plus local OpenAI/ChatGPT allowlist supplement."
+        ),
+        sources=(
+            Source(
+                url="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt",
+                parser="domain_set",
+            ),
+        ),
+        local_dir="proxy",
+        output_domain_set="proxy.txt",
+        output_rule_set="proxy.list",
+    ),
+    RuleSet(
+        name="reject",
+        description=(
+            "Ad / tracking / crypto-miner domains to reject. Aggregated from "
+            "AdguardTeam/AdguardFilters (BaseFilter, ChineseFilter, SpywareFilter)."
+        ),
+        sources=(
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt",
+                parser="adguard",
+            ),
+        ),
+        local_dir="reject",
+        output_domain_set="reject.txt",
+        output_rule_set="reject.list",
+    ),
+)
+
+
+# ------------------------------ fetch ------------------------------
+
+
+def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": HTTP_USER_AGENT})
     with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as resp:
         charset = resp.headers.get_content_charset() or "utf-8"
         return resp.read().decode(charset)
 
 
-def parse_domains(text: str) -> list[str]:
-    """Extract domain entries from a Surge DOMAIN-SET text blob.
+# ------------------------------ parsers ------------------------------
+
+
+def parse_domain_set(text: str) -> list[str]:
+    """Extract entries from a Surge DOMAIN-SET text blob.
 
     Keeps leading dots. Strips comments (# ...) and blank lines.
     Lowercases for canonical comparison.
@@ -66,6 +140,86 @@ def parse_domains(text: str) -> list[str]:
     return out
 
 
+# AdGuard modifiers safe to ignore at DNS level: either pure-markers or contexts
+# that still mean "block this whole domain" for DNS-based rule sets.
+_ADGUARD_SAFE_MODIFIERS = frozenset({"third-party", "3p", "all", "important", "popup"})
+_ADGUARD_DOMAIN_RE = re.compile(
+    r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$"
+)
+# IPv4 literal (Surge DOMAIN-SET does not accept IP entries).
+_IPV4_RE = re.compile(r"^\d{1,3}(\.\d{1,3}){3}$")
+
+
+def parse_adguard(text: str) -> list[str]:
+    """Extract domain-suffix rules from an AdGuard/ABP filter blob.
+
+    Recognized: ``||example.com^`` [with optional $safe-modifier list].
+    Rejected:
+      - ``!`` comment lines
+      - ``@@`` allowlist exceptions
+      - cosmetic / scriptlet (``##``, ``#@#``, ``#?#``, ``#$#``, ``#%#``)
+      - URL parts (``/path/``, ``|http://...``)
+      - regex (``/.../``)
+      - wildcards inside the domain (``*`` before ``^``)
+      - rules with context-dependent modifiers (``$domain=``, ``$script`` etc.)
+
+    Returns leading-dot suffix entries (e.g. ``.example.com``), which means
+    "match example.com and all subdomains" in Surge DOMAIN-SET.
+    """
+    out: list[str] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("!") or line.startswith("#"):
+            continue
+        if line.startswith("@@"):
+            continue  # allowlist exception
+        if any(tok in line for tok in ("##", "#@#", "#?#", "#$#", "#%#", "$$")):
+            continue  # cosmetic / scriptlet / html filter
+        if not line.startswith("||"):
+            continue  # not a domain-anchored rule
+        body = line[2:]  # strip leading ||
+        if "$" in body:
+            rule_part, mod_part = body.split("$", 1)
+        else:
+            rule_part, mod_part = body, ""
+        if not rule_part.endswith("^"):
+            continue
+        domain = rule_part[:-1]
+        if not domain:
+            continue
+        if "/" in domain or ":" in domain or "*" in domain or "?" in domain:
+            continue
+        domain = domain.lower()
+        if not _ADGUARD_DOMAIN_RE.match(domain):
+            continue
+        if _IPV4_RE.match(domain):
+            continue  # IPv4 literal -- Surge DOMAIN-SET is domain-only
+        if mod_part:
+            mods = [m.strip() for m in mod_part.split(",") if m.strip()]
+            bad = False
+            for m in mods:
+                name = m[1:] if m.startswith("~") else m
+                name = name.split("=", 1)[0]
+                if name not in _ADGUARD_SAFE_MODIFIERS:
+                    bad = True
+                    break
+            if bad:
+                continue
+        out.append("." + domain)
+    return out
+
+
+_PARSERS: dict[str, object] = {
+    "domain_set": parse_domain_set,
+    "adguard": parse_adguard,
+}
+
+
+# ------------------------------ dedupe ------------------------------
+
+
 def dedupe(domains: list[str]) -> list[str]:
     """Remove entries made redundant by a broader domain-suffix rule.
 
@@ -79,14 +233,12 @@ def dedupe(domains: list[str]) -> list[str]:
         bare = d[1:] if d.startswith(".") else d
         parts = bare.split(".")
         covered = False
-        # Check strictly broader suffixes: any parent label sequence.
         start = 1 if d.startswith(".") else 0
         for i in range(start, len(parts)):
             candidate = ".".join(parts[i:])
             if candidate == bare and d.startswith("."):
                 continue
             if candidate in suffixes:
-                # A parent suffix (or equal suffix for a non-dot entry) covers it.
                 covered = True
                 break
         if covered:
@@ -95,12 +247,11 @@ def dedupe(domains: list[str]) -> list[str]:
     return sorted(kept, key=lambda x: (x.lstrip("."), 0 if x.startswith(".") else 1))
 
 
-def to_ruleset(domains: list[str]) -> list[str]:
-    """Convert DOMAIN-SET entries to Surge RULE-SET lines.
+# ------------------------------ emitters ------------------------------
 
-    `.example.com` -> `DOMAIN-SUFFIX,example.com`
-    `example.com`  -> `DOMAIN,example.com`
-    """
+
+def to_ruleset(domains: list[str]) -> list[str]:
+    """Convert DOMAIN-SET entries to Surge RULE-SET lines."""
     out: list[str] = []
     for d in domains:
         if d.startswith("."):
@@ -110,32 +261,53 @@ def to_ruleset(domains: list[str]) -> list[str]:
     return out
 
 
+def _timestamp() -> str:
+    return _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds")
+
+
+def _source_lines(rs: RuleSet) -> str:
+    lines = ["# Sources:"]
+    for s in rs.sources:
+        lines.append(f"#   [{s.parser}] {s.url}")
+    if rs.local_dir:
+        local_root = SOURCES_DIR / rs.local_dir
+        if local_root.is_dir():
+            for p in sorted(local_root.glob("*.txt")):
+                lines.append(f"#   [local] sources/{rs.local_dir}/{p.name}")
+    return "\n".join(lines) + "\n"
+
+
 def _common_header(
-    *, filename: str, fmt: str, upstream_count: int, local_count: int, total: int
+    *,
+    rs: RuleSet,
+    filename: str,
+    fmt: str,
+    upstream: int,
+    local: int,
+    total: int,
 ) -> str:
-    stamp = _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds")
     return (
-        f"# Surge {fmt}: {filename}\n"
-        f"# Generated: {stamp}\n"
-        f"# Upstream: {UPSTREAM_URL}\n"
-        "# Supplement: sources/openai-chatgpt.txt "
-        "(https://help.openai.com/zh-hans-cn/articles/9247338)\n"
-        f"# Counts: upstream={upstream_count}, local={local_count}, total(deduped)={total}\n"
-        "# Repo: https://github.com/StiofanZ/surge-rules\n"
+        f"# Surge {fmt}: {filename} ({rs.name})\n"
+        f"# Description: {rs.description}\n"
+        f"# Generated: {_timestamp()}\n"
+        f"{_source_lines(rs)}"
+        f"# Counts: upstream={upstream}, local={local}, total(deduped)={total}\n"
+        f"# Repo: {REPO_URL}\n"
     )
 
 
-def header_domain_set(upstream_count: int, local_count: int, total: int) -> str:
+def header_domain_set(rs: RuleSet, upstream: int, local: int, total: int) -> str:
     return (
         _common_header(
-            filename="proxy.txt",
+            rs=rs,
+            filename=rs.output_domain_set,
             fmt="DOMAIN-SET",
-            upstream_count=upstream_count,
-            local_count=local_count,
+            upstream=upstream,
+            local=local,
             total=total,
         )
         + "#\n"
-        "# Use in Surge config: DOMAIN-SET,<url>,<policy>\n"
+        f"# Use in Surge config: DOMAIN-SET,<url>,{rs.name.upper()}\n"
         "# Format:\n"
         "#   example.com   -> exact match\n"
         "#   .example.com  -> exact + all subdomains\n"
@@ -143,17 +315,18 @@ def header_domain_set(upstream_count: int, local_count: int, total: int) -> str:
     )
 
 
-def header_rule_set(upstream_count: int, local_count: int, total: int) -> str:
+def header_rule_set(rs: RuleSet, upstream: int, local: int, total: int) -> str:
     return (
         _common_header(
-            filename="proxy.list",
+            rs=rs,
+            filename=rs.output_rule_set,
             fmt="RULE-SET",
-            upstream_count=upstream_count,
-            local_count=local_count,
+            upstream=upstream,
+            local=local,
             total=total,
         )
         + "#\n"
-        "# Use in Surge config: RULE-SET,<url>,<policy>\n"
+        f"# Use in Surge config: RULE-SET,<url>,{rs.name.upper()}\n"
         "# Format:\n"
         "#   DOMAIN,example.com        -> exact match\n"
         "#   DOMAIN-SUFFIX,example.com -> exact + all subdomains\n"
@@ -161,41 +334,86 @@ def header_rule_set(upstream_count: int, local_count: int, total: int) -> str:
     )
 
 
-def main() -> int:
-    print(f"[build] fetching upstream: {UPSTREAM_URL}", file=sys.stderr)
-    try:
-        upstream_text = fetch_upstream(UPSTREAM_URL)
-    except Exception as exc:  # noqa: BLE001
-        print(f"[build] ERROR: upstream fetch failed: {exc}", file=sys.stderr)
-        return 1
+# ------------------------------ pipeline ------------------------------
 
-    upstream = parse_domains(upstream_text)
-    print(f"[build] upstream entries: {len(upstream)}", file=sys.stderr)
 
-    local: list[str] = []
-    if SOURCES_DIR.is_dir():
-        for path in sorted(SOURCES_DIR.glob("*.txt")):
-            chunk = parse_domains(path.read_text(encoding="utf-8"))
-            print(f"[build] local {path.name}: {len(chunk)}", file=sys.stderr)
-            local.extend(chunk)
+def _read_local(rs: RuleSet) -> list[str]:
+    """Read local supplement files. Each file is parsed as DOMAIN-SET."""
+    if not rs.local_dir:
+        return []
+    local_root = SOURCES_DIR / rs.local_dir
+    if not local_root.is_dir():
+        return []
+    out: list[str] = []
+    for path in sorted(local_root.glob("*.txt")):
+        chunk = parse_domain_set(path.read_text(encoding="utf-8"))
+        print(
+            f"[{rs.name}] local sources/{rs.local_dir}/{path.name}: {len(chunk)}",
+            file=sys.stderr,
+        )
+        out.extend(chunk)
+    return out
 
-    combined = upstream + local
+
+def build_rule_set(rs: RuleSet) -> int:
+    """Fetch, parse, dedupe, and emit one rule set. Returns 0 on success, 1 on failure."""
+    upstream_entries: list[str] = []
+    for src in rs.sources:
+        print(f"[{rs.name}] fetching {src.parser} source: {src.url}", file=sys.stderr)
+        try:
+            text = fetch(src.url)
+        except Exception as exc:  # noqa: BLE001
+            print(
+                f"[{rs.name}] ERROR: fetch failed for {src.url}: {exc}", file=sys.stderr
+            )
+            return 1
+        parser = _PARSERS[src.parser]
+        chunk = parser(text)  # type: ignore[operator]
+        print(
+            f"[{rs.name}] parsed {len(chunk)} entries from {src.url}", file=sys.stderr
+        )
+        upstream_entries.extend(chunk)
+
+    local_entries = _read_local(rs)
+    combined = upstream_entries + local_entries
     deduped = dedupe(combined)
-    print(f"[build] deduped total: {len(deduped)}", file=sys.stderr)
-
-    domain_set_header = header_domain_set(len(upstream), len(local), len(deduped))
-    OUTPUT_DOMAIN_SET.write_text(
-        domain_set_header + "\n".join(deduped) + "\n", encoding="utf-8"
+    print(
+        f"[{rs.name}] upstream={len(upstream_entries)}, local={len(local_entries)}, "
+        f"deduped={len(deduped)}",
+        file=sys.stderr,
     )
-    print(f"[build] wrote {OUTPUT_DOMAIN_SET.relative_to(ROOT)}", file=sys.stderr)
 
-    rule_set_header = header_rule_set(len(upstream), len(local), len(deduped))
-    ruleset_lines = to_ruleset(deduped)
-    OUTPUT_RULE_SET.write_text(
-        rule_set_header + "\n".join(ruleset_lines) + "\n", encoding="utf-8"
+    upstream_n, local_n, total_n = (
+        len(upstream_entries),
+        len(local_entries),
+        len(deduped),
     )
-    print(f"[build] wrote {OUTPUT_RULE_SET.relative_to(ROOT)}", file=sys.stderr)
+
+    out_ds = ROOT / rs.output_domain_set
+    out_ds.write_text(
+        header_domain_set(rs, upstream_n, local_n, total_n)
+        + "\n".join(deduped)
+        + "\n",
+        encoding="utf-8",
+    )
+    print(f"[{rs.name}] wrote {out_ds.relative_to(ROOT)}", file=sys.stderr)
+
+    out_rs = ROOT / rs.output_rule_set
+    out_rs.write_text(
+        header_rule_set(rs, upstream_n, local_n, total_n)
+        + "\n".join(to_ruleset(deduped))
+        + "\n",
+        encoding="utf-8",
+    )
+    print(f"[{rs.name}] wrote {out_rs.relative_to(ROOT)}", file=sys.stderr)
     return 0
+
+
+def main() -> int:
+    rc = 0
+    for rs in RULE_SETS:
+        rc |= build_rule_set(rs)
+    return rc
 
 
 if __name__ == "__main__":

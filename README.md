@@ -4,14 +4,25 @@
 
 ## 规则清单
 
-同一份规则数据同时以两种 Surge 格式发布，内容等价，按自己 Surge 配置里的指令选一个即可：
+每个分类都同时以两种 Surge 格式发布，按 Surge 配置里用的指令选对应文件即可：
 
-| 文件 | 类型 | 对应 Surge 指令 | 每行形如 |
-| --- | --- | --- | --- |
-| [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` | `.example.com` / `example.com` |
-| [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` | `DOMAIN-SUFFIX,example.com` / `DOMAIN,example.com` |
+### proxy — 需要走代理的域名
 
-两者都源自 [Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + 本地 OpenAI/ChatGPT 补充，合并去重后生成。
+| 文件 | 类型 | 对应 Surge 指令 |
+| --- | --- | --- |
+| [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` |
+| [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` |
+
+来源：[Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)（OpenAI/ChatGPT 官方允许列表）。
+
+### reject — 广告 / 追踪 / 挖矿域名
+
+| 文件 | 类型 | 对应 Surge 指令 |
+| --- | --- | --- |
+| [`reject.txt`](./reject.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,REJECT` |
+| [`reject.list`](./reject.list) | **RULE-SET** | `RULE-SET,<url>,REJECT` |
+
+来源：[AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的 `BaseFilter`、`ChineseFilter`、`SpywareFilter` 中纯域名规则段（`adservers.txt` / `tracking_servers.txt` / `cryptominers.txt`）。构建时仅保留 `||domain.com^` 纯域名屏蔽规则，跳过外观过滤（`##`）、URL 路径、资源类型修饰符、IP 直屏等 Surge DOMAIN-SET 无法表达的条目。
 
 ## 在 Surge 中使用
 
@@ -20,17 +31,19 @@
 ```ini
 [Rule]
 DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.txt,Proxy
+DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.txt,REJECT
 ```
 
-**B. 使用 RULE-SET 指令（若手机端报 `invalid line`，用这份）：**
+**B. 使用 RULE-SET 指令（若手机端对 `DOMAIN-SET` 报 `invalid line`，用这份）：**
 
 ```ini
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.list,REJECT
 ```
 
-> **为什么有两份？**
-> Surge 的 `RULE-SET` 指令要求每行必须带规则类型前缀（`DOMAIN-SUFFIX,...`），不接受像 `.000webhost.com` 这种前导点的纯域名——否则会报 `invalid line`。`DOMAIN-SET` 指令则相反，只接受纯域名。两份文件同步产出，避免改错指令又改错文件的尴尬。
+> **为什么每份有两种格式？**
+> Surge 的 `RULE-SET` 指令要求每行必须带规则类型前缀（`DOMAIN-SUFFIX,...`），不接受像 `.000webhost.com` 这种前导点的纯域名——否则会报 `invalid line`。`DOMAIN-SET` 指令则相反，只接受纯域名。两种文件同步产出，避免改错指令又改错文件的尴尬。
 
 ## 数据来源
 
@@ -42,7 +55,7 @@ RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.list,
 - 调度：[`.github/workflows/update.yml`](./.github/workflows/update.yml) 每天 **18:30 UTC**（北京时间次日 02:30）运行。
 - 过程：拉取上游 → 合并 `sources/*.txt` → 去冗余（子域被更宽后缀规则覆盖时自动删除）→ 排序写出 `proxy.txt`。
 - 仅当规则内容有实质变化时才提交，纯时间戳变化忽略。
-- 手动触发：GitHub UI → Actions → "Update proxy.txt" → Run workflow，或 `gh workflow run "Update proxy.txt"`。
+- 手动触发：GitHub UI → Actions → "Update rule sets" → Run workflow，或 `gh workflow run "Update rule sets"`。
 
 ## 本地构建
 
@@ -54,19 +67,23 @@ python3 scripts/build.py
 
 ## 添加新的补充规则
 
-1. 在 `sources/` 下新建 `*.txt` 文件，按 DOMAIN-SET 格式编写（一行一条，`#` 为注释）。
-2. 推送到 `main`，GitHub Actions 会自动合并并发布。
+- **扩充已有分类：** 在 `sources/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。例如 `sources/reject/my-custom.txt`。
+- **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、`local_dir`（本地子目录）、输出文件名；`parser` 可选 `"domain_set"` 或 `"adguard"`。
+
+推送到 `main` 后 GitHub Actions 会自动合并并发布。
 
 ## 目录结构
 
 ```
 surge-rules/
-├── proxy.txt                      # DOMAIN-SET 格式（机器生成）
-├── proxy.list                     # RULE-SET 格式（机器生成）
+├── proxy.txt / proxy.list           # proxy 分类（机器生成）
+├── reject.txt / reject.list         # reject 分类（机器生成）
 ├── sources/
-│   └── openai-chatgpt.txt         # 本地补充源
+│   ├── proxy/
+│   │   └── openai-chatgpt.txt       # proxy 本地补充源
+│   └── reject/                      # reject 本地补充源（可选）
 ├── scripts/
-│   └── build.py                   # 合并 + 去重 + 双格式输出
+│   └── build.py                     # 多规则集合并 + AdGuard 解析 + 双格式输出
 └── .github/workflows/
-    └── update.yml                 # 每日自动更新
+    └── update.yml                   # 每日自动更新
 ```
