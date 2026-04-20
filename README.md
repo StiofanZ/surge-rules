@@ -33,6 +33,8 @@
 | `SpywareFilter/mobile.txt` | 移动端追踪/遥测 |
 | `BaseFilter/cryptominers.txt` | 挖矿脚本域 |
 
+额外与 [SagerNet/sing-geosite](https://github.com/SagerNet/sing-geosite) 的 `geosite-adblock.srs` / `geosite-adblockplus.srs` 保持对齐——这两个 SRS 实际是从 [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/adblock`、`data/adblockplus` 编译而来，构建时直接抓取文本源避免 SRS 二进制解码（它们仅含 `adblockcdn.com` / `getadblock.com` / `adblockplus.org` 三个 AdBlock 工具自家的域名，并非广告黑名单本身）。
+
 构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 
 ## 在 Surge 中使用

@@ -20,6 +20,13 @@ Supported upstream parsers:
                    with safe (DNS-compatible) modifiers are extracted;
                    cosmetic, path, regex, allow-list, and resource-type
                    rules are dropped.
+  - "v2fly"      : v2fly/domain-list-community text source. Recognizes
+                   bare domains (suffix match), ``domain:`` prefix (suffix),
+                   ``full:`` prefix (exact). Drops ``keyword:`` / ``regexp:``
+                   (Surge DOMAIN-SET cannot express them) and ``include:``
+                   directives (we inline explicitly instead). This is the
+                   same source sing-geosite uses to compile its .srs files,
+                   which lets us avoid a binary SRS decoder.
 
 Dedup rules (applied per rule set):
   - If `.example.com` exists, `example.com` AND any `*.example.com` subdomain
@@ -136,6 +143,20 @@ RULE_SETS: tuple[RuleSet, ...] = (
                 url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt",
                 parser="adguard",
             ),
+            # sing-geosite parity: these two .srs rule-sets from SagerNet/sing-geosite
+            # (geosite-adblock.srs, geosite-adblockplus.srs) are compiled from
+            # v2fly/domain-list-community data/{adblock,adblockplus}. We fetch the
+            # text source directly instead of decoding the SRS binary. They only
+            # contain vendor domains of adblock tools themselves (adblockcdn.com,
+            # getadblock.com, adblockplus.org) -- NOT an ad blocklist.
+            Source(
+                url="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adblock",
+                parser="v2fly",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adblockplus",
+                parser="v2fly",
+            ),
         ),
         local_dir="reject",
         output_domain_set="reject.txt",
@@ -247,9 +268,63 @@ def parse_adguard(text: str) -> list[str]:
     return out
 
 
+_V2FLY_ATTR_RE = re.compile(r"\s*@[A-Za-z0-9_-]+")
+_V2FLY_BARE_DOMAIN_RE = re.compile(
+    r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$"
+)
+
+
+def parse_v2fly(text: str) -> list[str]:
+    """Extract suffix/exact rules from a v2fly/domain-list-community text source.
+
+    Accepted forms (per line, after stripping ``#`` comments and ``@attribute``
+    tags):
+      - ``example.com``          -> ``.example.com`` (suffix, v2fly default)
+      - ``domain:example.com``   -> ``.example.com`` (suffix)
+      - ``full:example.com``     -> ``example.com``  (exact)
+
+    Skipped:
+      - ``include:other``        (we list sources explicitly; no recursion)
+      - ``keyword:foo``          (Surge DOMAIN-SET cannot express substrings)
+      - ``regexp:.*``            (ditto)
+      - IPv4 literals / invalid domains
+    """
+    out: list[str] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        # Strip comments (`# ...`) and `@attribute` tags.
+        if "#" in line:
+            line = line.split("#", 1)[0].strip()
+            if not line:
+                continue
+        line = _V2FLY_ATTR_RE.sub("", line).strip()
+        if not line:
+            continue
+        if line.startswith("include:") or line.startswith("keyword:") or line.startswith(
+            "regexp:"
+        ):
+            continue
+        exact = False
+        if line.startswith("full:"):
+            exact = True
+            line = line[len("full:") :]
+        elif line.startswith("domain:"):
+            line = line[len("domain:") :]
+        line = line.strip().lower()
+        if not _V2FLY_BARE_DOMAIN_RE.match(line):
+            continue
+        if _IPV4_RE.match(line):
+            continue
+        out.append(line if exact else "." + line)
+    return out
+
+
 _PARSERS: dict[str, object] = {
     "domain_set": parse_domain_set,
     "adguard": parse_adguard,
+    "v2fly": parse_v2fly,
 }
 
 

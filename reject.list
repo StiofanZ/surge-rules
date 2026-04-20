@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-20T04:11:14+00:00
+# Generated: 2026-04-20T04:21:28+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -13,7 +13,9 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers_firstparty.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
-# Counts: upstream=11175, local=0, total(deduped)=10856
+#   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adblock
+#   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adblockplus
+# Counts: upstream=11178, local=0, total(deduped)=10857
 # Repo: https://github.com/StiofanZ/surge-rules
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
@@ -405,6 +407,8 @@ DOMAIN-SUFFIX,adbite.com
 DOMAIN-SUFFIX,adbkacpmu.com
 DOMAIN-SUFFIX,adblade.com
 DOMAIN-SUFFIX,adblockanalytics.com
+DOMAIN-SUFFIX,adblockcdn.com
+DOMAIN-SUFFIX,adblockplus.org
 DOMAIN-SUFFIX,adbot.tw
 DOMAIN-SUFFIX,adbottw.net
 DOMAIN-SUFFIX,adbrix.io
@@ -4390,6 +4394,7 @@ DOMAIN-SUFFIX,geotg.jp
 DOMAIN-SUFFIX,get.civicscience.com
 DOMAIN-SUFFIX,get.stoplocker.com
 DOMAIN-SUFFIX,get4click.ru
+DOMAIN-SUFFIX,getadblock.com
 DOMAIN-SUFFIX,getadfinity.com
 DOMAIN-SUFFIX,getallmedia.com
 DOMAIN-SUFFIX,getbackstory.com
@@ -5558,7 +5563,6 @@ DOMAIN-SUFFIX,log.eufylife.com
 DOMAIN-SUFFIX,log.g-enews.com
 DOMAIN-SUFFIX,log.game.qcplay.com
 DOMAIN-SUFFIX,log.geetest.com
-DOMAIN-SUFFIX,log.getadblock.com
 DOMAIN-SUFFIX,log.go.com
 DOMAIN-SUFFIX,log.gobankingrates.com
 DOMAIN-SUFFIX,log.gomlab.com
@@ -7007,7 +7011,6 @@ DOMAIN-SUFFIX,piclick.kr
 DOMAIN-SUFFIX,picshost.pics
 DOMAIN-SUFFIX,pimpmypr.de
 DOMAIN-SUFFIX,ping.fastsimon.com
-DOMAIN-SUFFIX,ping.getadblock.com
 DOMAIN-SUFFIX,ping.hashnode.com
 DOMAIN-SUFFIX,ping.hungama.com
 DOMAIN-SUFFIX,ping.paidy.com
