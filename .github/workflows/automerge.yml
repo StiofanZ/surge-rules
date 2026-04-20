@@ -1,54 +1,94 @@
 name: Auto-merge
 
-# Enables GitHub's native auto-merge on trusted PRs so they merge as soon
-# as all required status checks pass. Trusted PR sources:
-#   1. Opened by the repository owner (resolved via github.repository_owner).
-#   2. Opened by github-actions[bot] (daily rule-set refresh PRs, if ever
-#      switched from direct-push-to-main to PR flow).
-#   3. Carrying the `automerge` label (manual opt-in for other contributors).
+# Squash-merges trusted PRs as soon as CI passes -- without requiring the
+# repository to have branch protection rules on `main`.
 #
-# Requires the repository setting:
-#   Settings -> General -> Pull Requests -> "Allow auto-merge" = ON
-# Without it, `gh pr merge --auto` returns an error.
+# Why not `gh pr merge --auto`?
+#   GitHub's native auto-merge (`--auto` / enablePullRequestAutoMerge) is
+#   only accepted when the target branch has a branch-protection rule:
+#     "Pull request Protected branch rules not configured for this branch
+#      (enablePullRequestAutoMerge)"
+#   That makes a repo un-forkable out of the box. So instead we listen for
+#   the CI workflow's completion and, if it succeeded on an open PR whose
+#   author we trust, call `gh pr merge --squash` directly.
 #
-# For stronger safety also configure branch protection on `main`:
-#   Settings -> Branches -> Protect `main` -> Require status checks to pass
-#   -> select "CI / Build + validate rule sets". This makes auto-merge wait
-#   for CI before actually merging.
+# Trusted PR sources:
+#   1. Author is the repository owner (resolved via github.repository_owner).
+#   2. Author is `github-actions[bot]`.
+#   3. PR carries the `automerge` label.
+#
+# Security note:
+#   `workflow_run` always runs the workflow from the repository's default
+#   branch, not from the PR branch. A malicious PR cannot modify this file
+#   and then have the modified version run.
 
 on:
-  pull_request_target:
-    types: [opened, reopened, synchronize, ready_for_review, labeled]
-    branches: [main]
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
 
 permissions:
   contents: write
   pull-requests: write
 
 concurrency:
-  group: automerge-${{ github.event.pull_request.number }}
+  group: automerge-${{ github.event.workflow_run.head_sha }}
   cancel-in-progress: false
 
 jobs:
-  enable:
-    name: Enable auto-merge on trusted PR
+  merge:
+    name: Squash-merge trusted PR on green CI
     runs-on: ubuntu-latest
     if: >-
-      github.event.pull_request.draft == false &&
-      (
-        github.event.pull_request.user.login == github.repository_owner ||
-        github.event.pull_request.user.login == 'github-actions[bot]' ||
-        contains(github.event.pull_request.labels.*.name, 'automerge')
-      )
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
     steps:
-      - name: Enable auto-merge (squash)
+      - name: Resolve PR and merge if trusted
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          PR_URL: ${{ github.event.pull_request.html_url }}
+          REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
-          echo "Enabling auto-merge for PR #$PR_NUMBER ($PR_URL)"
-          # `--auto` queues the merge for when required checks pass. If no
-          # branch protection is configured it will merge immediately.
-          # `--squash` keeps main's history linear.
-          gh pr merge --auto --squash --repo "${{ github.repository }}" "$PR_NUMBER"
+          set -euo pipefail
+
+          # Locate the open PR associated with this CI run's HEAD commit.
+          # For same-repo PRs the `pull_requests` array in the workflow_run
+          # payload is usually populated; for fork PRs it is empty, so we
+          # fall back to the commits-to-pulls REST endpoint which works in
+          # both cases.
+          pr_json=$(gh api "repos/${REPO}/commits/${HEAD_SHA}/pulls" \
+            --jq '[.[] | select(.state == "open" and .base.ref == "main")]')
+          pr_count=$(printf '%s' "$pr_json" | jq 'length')
+          if [ "$pr_count" = "0" ]; then
+            echo "No open PR targets main for HEAD ${HEAD_SHA}; nothing to do."
+            exit 0
+          fi
+
+          pr_number=$(printf '%s' "$pr_json" | jq -r '.[0].number')
+          author=$(printf '%s' "$pr_json" | jq -r '.[0].user.login')
+          is_draft=$(printf '%s' "$pr_json" | jq -r '.[0].draft')
+          labels=$(printf '%s' "$pr_json" | jq -r '[.[0].labels[].name] | join(",")')
+
+          echo "PR #${pr_number} by ${author}, draft=${is_draft}, labels=[${labels}]"
+
+          if [ "$is_draft" = "true" ]; then
+            echo "PR is draft; skipping."
+            exit 0
+          fi
+
+          trusted="false"
+          if [ "$author" = "$OWNER" ] || [ "$author" = "github-actions[bot]" ]; then
+            trusted="true"
+          fi
+          case ",$labels," in
+            *,automerge,*) trusted="true" ;;
+          esac
+
+          if [ "$trusted" != "true" ]; then
+            echo "Author '${author}' is not trusted and 'automerge' label absent; skipping."
+            exit 0
+          fi
+
+          echo "CI passed and PR is trusted -- squash-merging PR #${pr_number}..."
+          gh pr merge --squash --delete-branch --repo "$REPO" "$pr_number"

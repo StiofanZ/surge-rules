@@ -86,21 +86,19 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/reject.list,
 - 仅当规则内容有实质变化时才提交（`git diff -I '^# Generated: '` 忽略纯时间戳漂移）。
 - 手动触发：GitHub UI → Actions → "Update rule sets" → Run workflow，或 `gh workflow run "Update rule sets"`。
 
-### 自动合并（需要在 GitHub 设置里点一个开关）
+### 自动合并
 
-`automerge.yml` 会对以下条件之一的 PR 启用 GitHub 原生 auto-merge：
+`automerge.yml` 触发时机是 **CI workflow 完成后**（`on.workflow_run`），若该次 CI 结果为 `success` 且 PR 满足以下条件之一，就调 `gh pr merge --squash --delete-branch` 直接合入：
+
 1. 作者是仓库主（通过 `github.repository_owner` 上下文解析）
 2. 作者是 `github-actions[bot]`
 3. PR 上贴了 `automerge` label
 
-启用后，PR 在所有必须状态检查（即 `ci.yml` 的 `Build + validate rule sets`）通过后**自动以 squash 方式合入**，无需点按钮。
+**为什么不用 GitHub 原生 auto-merge？**
+原生 `gh pr merge --auto`（`enablePullRequestAutoMerge` API）要求目标分支已配置 branch protection rules，否则会抛出 `GraphQL: Pull request Protected branch rules not configured for this branch` 错误。对开源/fork 友好的仓库不应默认强制分支保护，所以本 workflow 改为**等 CI 完成**这个自然信号点。安全性不打折：`workflow_run` 事件始终从默认分支加载 workflow 定义，PR 无法修改 automerge 逻辑再触发自己。
 
-**一次性仓库设置（必需）：**
-- Settings → General → Pull Requests → **"Allow auto-merge" 打勾**（否则 `gh pr merge --auto` 会报错）
-
-**强烈建议再做一个分支保护（安全阀）：**
-- Settings → Branches → 为 `main` 添加规则 → Require status checks to pass → 勾选 `CI / Build + validate rule sets`
-- 这样即使 automerge 误开启，CI 失败的 PR 也不会真的合进去
+**可选加固（更严格）：**
+如果你还是想让 CI 成为**必须通过**的守门员（防止有人手动合并绕过），可以加一个分支保护：Settings → Branches → 为 `main` 添加规则 → Require status checks to pass → 勾选 `CI / Build + validate rule sets`。这与本 workflow 正交共存。
 
 ## 本地构建
 
