@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-20T05:05:56+00:00
+# Generated: 2026-04-20T19:37:48+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -723,6 +723,7 @@ ads.rustore.ru
 .ads.sohu.com
 .ads.sparkflow.net
 .ads.sportslocalmedia.com
+.ads.starzd.pro
 .ads.taptapnetworks.com
 .ads.thetimes.co.uk
 .ads.topsex.cc
@@ -5070,7 +5071,6 @@ google-analytics-suite.ozon.ru
 .hktracker.hankookilbo.com
 .hlog.hiido.com
 .hlogger.heraldcorp.com
-.hls-beacons-us.xumo.com
 .hlserve.com
 .hlstatus.com
 .hlstlyy.com
