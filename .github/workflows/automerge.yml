@@ -1,0 +1,54 @@
+name: Auto-merge
+
+# Enables GitHub's native auto-merge on trusted PRs so they merge as soon
+# as all required status checks pass. Trusted PR sources:
+#   1. Opened by the repo owner (StiofanZ).
+#   2. Opened by github-actions[bot] (daily rule-set refresh PRs, if ever
+#      switched from direct-push-to-main to PR flow).
+#   3. Carrying the `automerge` label (manual opt-in for other contributors).
+#
+# Requires the repository setting:
+#   Settings -> General -> Pull Requests -> "Allow auto-merge" = ON
+# Without it, `gh pr merge --auto` returns an error.
+#
+# For stronger safety also configure branch protection on `main`:
+#   Settings -> Branches -> Protect `main` -> Require status checks to pass
+#   -> select "CI / Build + validate rule sets". This makes auto-merge wait
+#   for CI before actually merging.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review, labeled]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: automerge-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  enable:
+    name: Enable auto-merge on trusted PR
+    runs-on: ubuntu-latest
+    if: >-
+      github.event.pull_request.draft == false &&
+      (
+        github.event.pull_request.user.login == 'StiofanZ' ||
+        github.event.pull_request.user.login == 'github-actions[bot]' ||
+        contains(github.event.pull_request.labels.*.name, 'automerge')
+      )
+    steps:
+      - name: Enable auto-merge (squash)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          echo "Enabling auto-merge for PR #$PR_NUMBER ($PR_URL)"
+          # `--auto` queues the merge for when required checks pass. If no
+          # branch protection is configured it will merge immediately.
+          # `--squash` keeps main's history linear.
+          gh pr merge --auto --squash --repo "${{ github.repository }}" "$PR_NUMBER"

@@ -67,12 +67,38 @@ RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.list
 1. **上游主数据：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt`。
 2. **本地补充：** [`sources/openai-chatgpt.txt`](./sources/openai-chatgpt.txt) — 基于 OpenAI 官方[《网络建议》帮助文章](https://help.openai.com/zh-hans-cn/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps)所列的 OpenAI/ChatGPT 允许列表域名（含 WorkOS、Statsig、Stripe、Cloudflare Turnstile、Sentry、Datadog RUM 等第三方依赖）。
 
-## 自动更新
+## CI / 自动化
 
-- 调度：[`.github/workflows/update.yml`](./.github/workflows/update.yml) 每天 **18:30 UTC**（北京时间次日 02:30）运行。
-- 过程：拉取上游 → 合并 `sources/*.txt` → 去冗余（子域被更宽后缀规则覆盖时自动删除）→ 排序写出 `proxy.txt`。
-- 仅当规则内容有实质变化时才提交，纯时间戳变化忽略。
+三个独立 workflow：
+
+| 文件 | 触发 | 作用 |
+| --- | --- | --- |
+| [`update.yml`](./.github/workflows/update.yml) | cron 18:30 UTC / `workflow_dispatch` / `push` main | 每日刷新 `proxy.*` + `reject.*` 并 push |
+| [`ci.yml`](./.github/workflows/ci.yml) | `pull_request` / `push` main | 跑 build.py、校验 DOMAIN-SET/RULE-SET 行格式、检测输出漂移 |
+| [`automerge.yml`](./.github/workflows/automerge.yml) | `pull_request_target` | 对受信 PR 调用 `gh pr merge --auto --squash`，在 CI 通过后自动合入 |
+
+### 自动更新节奏
+
+- 调度：`update.yml` 每天 18:30 UTC（北京时间次日 02:30）运行。
+- 过程：拉取上游 → 合并 `sources/<category>/*.txt` → 去冗余 → 排序写出 `*.txt` + `*.list`。
+- 仅当规则内容有实质变化时才提交（`git diff -I '^# Generated: '` 忽略纯时间戳漂移）。
 - 手动触发：GitHub UI → Actions → "Update rule sets" → Run workflow，或 `gh workflow run "Update rule sets"`。
+
+### 自动合并（需要在 GitHub 设置里点一个开关）
+
+`automerge.yml` 会对以下条件之一的 PR 启用 GitHub 原生 auto-merge：
+1. 作者是 `StiofanZ`（仓库主）
+2. 作者是 `github-actions[bot]`
+3. PR 上贴了 `automerge` label
+
+启用后，PR 在所有必须状态检查（即 `ci.yml` 的 `Build + validate rule sets`）通过后**自动以 squash 方式合入**，无需点按钮。
+
+**一次性仓库设置（必需）：**
+- Settings → General → Pull Requests → **"Allow auto-merge" 打勾**（否则 `gh pr merge --auto` 会报错）
+
+**强烈建议再做一个分支保护（安全阀）：**
+- Settings → Branches → 为 `main` 添加规则 → Require status checks to pass → 勾选 `CI / Build + validate rule sets`
+- 这样即使 automerge 误开启，CI 失败的 PR 也不会真的合进去
 
 ## 本地构建
 

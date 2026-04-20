@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  # PR runs keyed by PR number; main/manual runs keyed by SHA.
+  group: ci-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Build + validate rule sets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run build.py (smoke test that upstream fetch + parsing works)
+        run: python scripts/build.py
+
+      - name: Validate output format (Surge DOMAIN-SET / RULE-SET)
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+
+          DOMAIN_SET_FILES = ["proxy.txt", "reject.txt"]
+          RULE_SET_FILES = ["proxy.list", "reject.list"]
+
+          # Single label: at least 1 char, letters/digits, hyphens allowed
+          # but not at edges (RFC 1123 + LDH check, 63-char max).
+          label = r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?"
+          # One or more labels separated by dots. Single-label is valid:
+          # Surge DOMAIN-SET supports brand/ICANN gTLDs like `.amazon`,
+          # `.google`, `.xn--flw351e` as whole-gTLD blocks/rules.
+          domain = rf"{label}(?:\.{label})*"
+
+          DS_RE = re.compile(rf"^\.?{domain}$")
+          RS_RE = re.compile(rf"^(?:DOMAIN|DOMAIN-SUFFIX),{domain}$")
+          IPV4_RE = re.compile(r"^\.?\d{1,3}(?:\.\d{1,3}){3}$")
+
+          failures = []
+
+          def scan(path: Path, pattern: re.Pattern[str], fmt_name: str) -> None:
+              total = 0
+              bad = 0
+              for lineno, raw in enumerate(path.read_text().splitlines(), 1):
+                  line = raw.strip()
+                  if not line or line.startswith("#"):
+                      continue
+                  total += 1
+                  if not pattern.match(line):
+                      bad += 1
+                      if bad <= 5:
+                          failures.append(f"{path}:{lineno}: invalid {fmt_name} line: {line!r}")
+                      continue
+                  candidate = line if fmt_name == "DOMAIN-SET" else line.split(",", 1)[1]
+                  if IPV4_RE.match(candidate):
+                      bad += 1
+                      if bad <= 5:
+                          failures.append(f"{path}:{lineno}: IP literal in {fmt_name}: {line!r}")
+              print(f"{path}: {total} rules checked, {bad} invalid")
+
+          for name in DOMAIN_SET_FILES:
+              scan(Path(name), DS_RE, "DOMAIN-SET")
+          for name in RULE_SET_FILES:
+              scan(Path(name), RS_RE, "RULE-SET")
+
+          if failures:
+              print("\nVALIDATION FAILED:")
+              for f in failures:
+                  print(" ", f)
+              raise SystemExit(1)
+          print("All rule-set files pass format validation.")
+          PY
+
+      - name: Confirm pipeline is deterministic modulo timestamp
+        # Safety net: if a PR changed the build but forgot to rebuild outputs,
+        # or if the pipeline is non-deterministic, flag here. Diff ignores
+        # the single `# Generated:` line which is expected to drift.
+        run: |
+          if git diff --quiet -I '^# Generated: ' -- proxy.txt proxy.list reject.txt reject.list; then
+            echo "Outputs match committed versions (ignoring timestamps)."
+          else
+            echo "::warning ::Rebuilt outputs differ from committed files (content, not just timestamp)."
+            git --no-pager diff --stat -I '^# Generated: ' -- proxy.txt proxy.list reject.txt reject.list
+          fi
