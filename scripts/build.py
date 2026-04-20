@@ -48,8 +48,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCES_DIR = ROOT / "sources"
 
 REQUEST_TIMEOUT_SECONDS = 30
-HTTP_USER_AGENT = "surge-rules-builder/1.0 (+https://github.com/StiofanZ/surge-rules)"
-REPO_URL = "https://github.com/StiofanZ/surge-rules"
+HTTP_USER_AGENT = "surge-rules-builder/1.0"
 
 
 @dataclasses.dataclass(frozen=True)
@@ -475,7 +474,6 @@ def _common_header(
         f"# Generated: {_timestamp()}\n"
         f"{_source_lines(rs)}"
         f"# Counts: upstream={upstream}, local={local}, total(deduped)={total}\n"
-        f"# Repo: {REPO_URL}\n"
     )
 
 

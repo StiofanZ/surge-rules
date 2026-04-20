@@ -2,7 +2,7 @@ name: Auto-merge
 
 # Enables GitHub's native auto-merge on trusted PRs so they merge as soon
 # as all required status checks pass. Trusted PR sources:
-#   1. Opened by the repo owner (StiofanZ).
+#   1. Opened by the repository owner (resolved via github.repository_owner).
 #   2. Opened by github-actions[bot] (daily rule-set refresh PRs, if ever
 #      switched from direct-push-to-main to PR flow).
 #   3. Carrying the `automerge` label (manual opt-in for other contributors).
@@ -36,7 +36,7 @@ jobs:
     if: >-
       github.event.pull_request.draft == false &&
       (
-        github.event.pull_request.user.login == 'StiofanZ' ||
+        github.event.pull_request.user.login == github.repository_owner ||
         github.event.pull_request.user.login == 'github-actions[bot]' ||
         contains(github.event.pull_request.labels.*.name, 'automerge')
       )

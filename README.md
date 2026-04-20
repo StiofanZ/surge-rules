@@ -43,20 +43,22 @@
 
 ## 在 Surge 中使用
 
+将 `<OWNER>` 替换为你自己 fork 的 GitHub 用户名（或上游的维护者）。
+
 **A. 使用 DOMAIN-SET 指令（桌面端常用）：**
 
 ```ini
 [Rule]
-DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.txt,Proxy
-DOMAIN-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.txt,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.txt,Proxy
+DOMAIN-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/reject.txt,REJECT
 ```
 
 **B. 使用 RULE-SET 指令（若手机端对 `DOMAIN-SET` 报 `invalid line`，用这份）：**
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/proxy.list,Proxy
-RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/reject.list,REJECT
 ```
 
 > **为什么每份有两种格式？**
@@ -87,7 +89,7 @@ RULE-SET,https://raw.githubusercontent.com/StiofanZ/surge-rules/main/reject.list
 ### 自动合并（需要在 GitHub 设置里点一个开关）
 
 `automerge.yml` 会对以下条件之一的 PR 启用 GitHub 原生 auto-merge：
-1. 作者是 `StiofanZ`（仓库主）
+1. 作者是仓库主（通过 `github.repository_owner` 上下文解析）
 2. 作者是 `github-actions[bot]`
 3. PR 上贴了 `automerge` label
 
