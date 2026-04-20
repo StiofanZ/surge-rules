@@ -33,7 +33,11 @@
 | `SpywareFilter/mobile.txt` | 移动端追踪/遥测 |
 | `BaseFilter/cryptominers.txt` | 挖矿脚本域 |
 
-额外与 [SagerNet/sing-geosite](https://github.com/SagerNet/sing-geosite) 的 `geosite-adblock.srs` / `geosite-adblockplus.srs` 保持对齐——这两个 SRS 实际是从 [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/adblock`、`data/adblockplus` 编译而来，构建时直接抓取文本源避免 SRS 二进制解码（它们仅含 `adblockcdn.com` / `getadblock.com` / `adblockplus.org` 三个 AdBlock 工具自家的域名，并非广告黑名单本身）。
+此外还接入 [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 [`data/category-ads-all`](https://github.com/v2fly/domain-list-community/blob/master/data/category-ads-all)——这是 [SagerNet/sing-geosite](https://github.com/SagerNet/sing-geosite) 编译 `geosite-category-ads-all.srs` 所用的上游文本源。构建器递归展开 v2fly 的 `include:` 指令，并严格遵守其 **属性过滤语义**：
+
+- `include:apple @ads` 表示"只纳入 `data/apple` 中带 `@ads` 标签的终端规则"，因此 `apple.com` 主域不会进 reject，只有 `advertising.apple.com`、`iadsdk.apple.com` 等 5 条广告子域会进。
+- 过滤通过嵌套 include 链路**求交集**传播（`@ads AND @cn` 等），避免父级过滤被子级忽略。
+- 抓取结果带缓存，避免同一文件在多路径下重复下载。
 
 构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 

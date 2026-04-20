@@ -23,10 +23,11 @@ Supported upstream parsers:
   - "v2fly"      : v2fly/domain-list-community text source. Recognizes
                    bare domains (suffix match), ``domain:`` prefix (suffix),
                    ``full:`` prefix (exact). Drops ``keyword:`` / ``regexp:``
-                   (Surge DOMAIN-SET cannot express them) and ``include:``
-                   directives (we inline explicitly instead). This is the
-                   same source sing-geosite uses to compile its .srs files,
-                   which lets us avoid a binary SRS decoder.
+                   (Surge DOMAIN-SET cannot express them). ``include:other``
+                   lines recursively fetch the sibling file under the same
+                   ``data/`` directory. This is the same source sing-geosite
+                   uses to compile its .srs files, which lets us avoid a
+                   binary SRS decoder.
 
 Dedup rules (applied per rule set):
   - If `.example.com` exists, `example.com` AND any `*.example.com` subdomain
@@ -143,18 +144,14 @@ RULE_SETS: tuple[RuleSet, ...] = (
                 url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt",
                 parser="adguard",
             ),
-            # sing-geosite parity: these two .srs rule-sets from SagerNet/sing-geosite
-            # (geosite-adblock.srs, geosite-adblockplus.srs) are compiled from
-            # v2fly/domain-list-community data/{adblock,adblockplus}. We fetch the
-            # text source directly instead of decoding the SRS binary. They only
-            # contain vendor domains of adblock tools themselves (adblockcdn.com,
-            # getadblock.com, adblockplus.org) -- NOT an ad blocklist.
+            # v2fly/domain-list-community `category-ads-all` (the source
+            # SagerNet/sing-geosite compiles `geosite-category-ads-all.srs`
+            # from). Recursively follows `include:` directives so we pick up
+            # category-ads plus every branded subcategory (adjust, clearbit,
+            # growingio, ogury, openx, pubmatic, segment, supersonic, taboola,
+            # ...) without listing each one explicitly.
             Source(
-                url="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adblock",
-                parser="v2fly",
-            ),
-            Source(
-                url="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adblockplus",
+                url="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all",
                 parser="v2fly",
             ),
         ),
@@ -268,56 +265,131 @@ def parse_adguard(text: str) -> list[str]:
     return out
 
 
-_V2FLY_ATTR_RE = re.compile(r"\s*@[A-Za-z0-9_-]+")
+_V2FLY_ATTR_RE = re.compile(r"@([A-Za-z0-9_-]+)")
 _V2FLY_BARE_DOMAIN_RE = re.compile(
     r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$"
 )
 
 
+def _parse_v2fly_line(line: str) -> tuple | None:
+    """Classify one non-empty, non-comment v2fly line.
+
+    Returns one of:
+      ("include", target, frozenset[str])       -- an ``include:other`` directive
+                                                   with optional filter tags
+                                                   (e.g. ``include:apple @ads``).
+      ("domain", ".foo"|"foo", frozenset[str])  -- a terminal rule with its own
+                                                   attribute tags.
+      None                                       -- unusable for Surge DOMAIN-SET.
+    """
+    tags = frozenset(_V2FLY_ATTR_RE.findall(line))
+    line = _V2FLY_ATTR_RE.sub("", line).strip()
+    if not line:
+        return None
+    if line.startswith("include:"):
+        target = line[len("include:") :].strip().split()[0]  # strip trailing tokens
+        return ("include", target, tags) if target else None
+    if line.startswith("keyword:") or line.startswith("regexp:"):
+        return None
+    exact = False
+    if line.startswith("full:"):
+        exact = True
+        line = line[len("full:") :]
+    elif line.startswith("domain:"):
+        line = line[len("domain:") :]
+    line = line.strip().lower()
+    if not _V2FLY_BARE_DOMAIN_RE.match(line):
+        return None
+    if _IPV4_RE.match(line):
+        return None
+    return ("domain", line if exact else "." + line, tags)
+
+
 def parse_v2fly(text: str) -> list[str]:
-    """Extract suffix/exact rules from a v2fly/domain-list-community text source.
+    """Extract suffix/exact rules from a single v2fly text blob.
 
-    Accepted forms (per line, after stripping ``#`` comments and ``@attribute``
-    tags):
-      - ``example.com``          -> ``.example.com`` (suffix, v2fly default)
-      - ``domain:example.com``   -> ``.example.com`` (suffix)
-      - ``full:example.com``     -> ``example.com``  (exact)
-
-    Skipped:
-      - ``include:other``        (we list sources explicitly; no recursion)
-      - ``keyword:foo``          (Surge DOMAIN-SET cannot express substrings)
-      - ``regexp:.*``            (ditto)
-      - IPv4 literals / invalid domains
+    Ignores ``include:`` directives -- the pipeline calls
+    ``fetch_v2fly_recursive`` when attribute-aware recursion is desired.
     """
     out: list[str] = []
     for raw in text.splitlines():
         line = raw.strip()
         if not line or line.startswith("#"):
             continue
-        # Strip comments (`# ...`) and `@attribute` tags.
         if "#" in line:
             line = line.split("#", 1)[0].strip()
             if not line:
                 continue
-        line = _V2FLY_ATTR_RE.sub("", line).strip()
-        if not line:
+        parsed = _parse_v2fly_line(line)
+        if parsed is None or parsed[0] != "domain":
             continue
-        if line.startswith("include:") or line.startswith("keyword:") or line.startswith(
-            "regexp:"
-        ):
-            continue
-        exact = False
-        if line.startswith("full:"):
-            exact = True
-            line = line[len("full:") :]
-        elif line.startswith("domain:"):
-            line = line[len("domain:") :]
-        line = line.strip().lower()
-        if not _V2FLY_BARE_DOMAIN_RE.match(line):
-            continue
-        if _IPV4_RE.match(line):
-            continue
-        out.append(line if exact else "." + line)
+        out.append(parsed[1])
+    return out
+
+
+_V2FLY_MAX_DEPTH = 8
+
+
+def fetch_v2fly_recursive(url: str) -> list[str]:
+    """Fetch a v2fly file and transitively its ``include:`` siblings.
+
+    Supports v2fly attribute filtering semantics. When a file is entered via
+    ``include:target @foo``, only terminal rules that carry the ``@foo`` tag
+    are emitted; un-tagged bulk rules of the target are skipped. Filters
+    compose (intersect) through nested includes -- e.g. ``include:X @ads`` in
+    a caller that already requires ``@cn`` emits only terminals tagged
+    ``@ads AND @cn``.
+    """
+    text_cache: dict[str, str] = {}
+    in_progress: set[tuple[str, frozenset[str]]] = set()
+    out: list[str] = []
+
+    def _walk(target_url: str, required_tags: frozenset[str], depth: int) -> None:
+        key = (target_url, required_tags)
+        if depth > _V2FLY_MAX_DEPTH or key in in_progress:
+            return
+        in_progress.add(key)
+        filt_label = ",".join(sorted(required_tags)) if required_tags else "*"
+        print(
+            f"  [v2fly] fetch (depth {depth}, tags=[{filt_label}]): {target_url}",
+            file=sys.stderr,
+        )
+        text = text_cache.get(target_url)
+        if text is None:
+            try:
+                text = fetch(target_url)
+            except Exception as exc:  # noqa: BLE001
+                print(
+                    f"  [v2fly] WARN: include fetch failed ({exc}): {target_url}",
+                    file=sys.stderr,
+                )
+                return
+            text_cache[target_url] = text
+        base = target_url.rsplit("/", 1)[0] + "/"
+        for raw in text.splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "#" in line:
+                line = line.split("#", 1)[0].strip()
+                if not line:
+                    continue
+            parsed = _parse_v2fly_line(line)
+            if parsed is None:
+                continue
+            kind = parsed[0]
+            if kind == "include":
+                _, target, child_tags = parsed
+                _walk(base + target, required_tags | child_tags, depth + 1)
+            else:
+                _, value, line_tags = parsed
+                # Terminal rule passes iff its tag set is a superset of the
+                # active required_tags filter (empty required_tags = pass-through).
+                if required_tags and not required_tags.issubset(line_tags):
+                    continue
+                out.append(value)
+
+    _walk(url, frozenset(), 0)
     return out
 
 
@@ -472,14 +544,20 @@ def build_rule_set(rs: RuleSet) -> int:
     for src in rs.sources:
         print(f"[{rs.name}] fetching {src.parser} source: {src.url}", file=sys.stderr)
         try:
-            text = fetch(src.url)
+            if src.parser == "v2fly":
+                # v2fly needs recursive `include:` resolution; the resolver
+                # does its own fetching, so skip the generic fetch-then-parse
+                # path.
+                chunk = fetch_v2fly_recursive(src.url)
+            else:
+                text = fetch(src.url)
+                parser = _PARSERS[src.parser]
+                chunk = parser(text)  # type: ignore[operator]
         except Exception as exc:  # noqa: BLE001
             print(
                 f"[{rs.name}] ERROR: fetch failed for {src.url}: {exc}", file=sys.stderr
             )
             return 1
-        parser = _PARSERS[src.parser]
-        chunk = parser(text)  # type: ignore[operator]
         print(
             f"[{rs.name}] parsed {len(chunk)} entries from {src.url}", file=sys.stderr
         )
