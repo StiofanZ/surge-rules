@@ -80,12 +80,21 @@ RULE_SETS: tuple[RuleSet, ...] = (
     RuleSet(
         name="reject",
         description=(
-            "Ad / tracking / crypto-miner domains to reject. Aggregated from "
-            "AdguardTeam/AdguardFilters (BaseFilter, ChineseFilter, SpywareFilter)."
+            "Ad / tracking / crypto-miner domains to reject. Aggregated from every "
+            "domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, "
+            "MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); "
+            "SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); "
+            "plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and "
+            "resource-type-conditional rules are dropped by the parser."
         ),
         sources=(
+            # Ad servers (third-party ad networks).
             Source(
                 url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
                 parser="adguard",
             ),
             Source(
@@ -93,9 +102,36 @@ RULE_SETS: tuple[RuleSet, ...] = (
                 parser="adguard",
             ),
             Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt",
+                parser="adguard",
+            ),
+            # First-party ad servers (subdomains under otherwise-legitimate sites).
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers_firstparty.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers_firstparty.txt",
+                parser="adguard",
+            ),
+            # Trackers / analytics / mobile tracking.
+            Source(
                 url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt",
                 parser="adguard",
             ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers_firstparty.txt",
+                parser="adguard",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt",
+                parser="adguard",
+            ),
+            # Crypto-miners.
             Source(
                 url="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt",
                 parser="adguard",

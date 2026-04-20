@@ -22,7 +22,18 @@
 | [`reject.txt`](./reject.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,REJECT` |
 | [`reject.list`](./reject.list) | **RULE-SET** | `RULE-SET,<url>,REJECT` |
 
-来源：[AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的 `BaseFilter`、`ChineseFilter`、`SpywareFilter` 中纯域名规则段（`adservers.txt` / `tracking_servers.txt` / `cryptominers.txt`）。构建时仅保留 `||domain.com^` 纯域名屏蔽规则，跳过外观过滤（`##`）、URL 路径、资源类型修饰符、IP 直屏等 Surge DOMAIN-SET 无法表达的条目。
+来源：[AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters)，覆盖该仓库中**所有**面向域名的过滤段：
+
+| 来源文件 | 作用 |
+| --- | --- |
+| `BaseFilter` / `MobileFilter` / `ChineseFilter` / `JapaneseFilter` 的 `adservers.txt` | 第三方广告网络主域 |
+| `BaseFilter` / `ChineseFilter` / `JapaneseFilter` 的 `adservers_firstparty.txt` | 合法网站下挂的广告子域 |
+| `SpywareFilter/tracking_servers.txt` | 第三方追踪/分析 |
+| `SpywareFilter/tracking_servers_firstparty.txt` | 第一方追踪（埋点域） |
+| `SpywareFilter/mobile.txt` | 移动端追踪/遥测 |
+| `BaseFilter/cryptominers.txt` | 挖矿脚本域 |
+
+构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 
 ## 在 Surge 中使用
 
