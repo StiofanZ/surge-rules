@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-20T19:37:48+00:00
+# Generated: 2026-04-21T19:43:24+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12044, local=0, total(deduped)=11463
+# Counts: upstream=12051, local=0, total(deduped)=11470
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1452,6 +1452,7 @@ DOMAIN-SUFFIX,analytics.picsart.com
 DOMAIN-SUFFIX,analytics.pixels.ai
 DOMAIN-SUFFIX,analytics.plaid.com
 DOMAIN-SUFFIX,analytics.plex.tv
+DOMAIN-SUFFIX,analytics.pocketfm.com
 DOMAIN-SUFFIX,analytics.poferries.com
 DOMAIN-SUFFIX,analytics.pointdrive.linkedin.com
 DOMAIN-SUFFIX,analytics.portal.gov.bd
@@ -1590,6 +1591,7 @@ DOMAIN-SUFFIX,analytiwave.com
 DOMAIN-SUFFIX,andersenit.dk
 DOMAIN-SUFFIX,andhub.jp
 DOMAIN-SUFFIX,andmlb.kshwtj.com
+DOMAIN-SUFFIX,android-beacons.xumo.com
 DOMAIN-SUFFIX,android-stat.acestream.net
 DOMAIN-SUFFIX,android-tv-beacons.xumo.com
 DOMAIN-SUFFIX,androidtvchannels-pa.googleapis.com
@@ -2680,6 +2682,7 @@ DOMAIN-SUFFIX,chuchle.all-usanomination.com
 DOMAIN-SUFFIX,chushoushijian.cn
 DOMAIN-SUFFIX,cinarra.com
 DOMAIN-SUFFIX,circle.am
+DOMAIN-SUFFIX,cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com
 DOMAIN-SUFFIX,citiservi.es
 DOMAIN-SUFFIX,citrusad.net
 DOMAIN-SUFFIX,cityua.net
@@ -6671,6 +6674,7 @@ DOMAIN-SUFFIX,mobile.slgnt.eu
 DOMAIN-SUFFIX,mobileads.google.com
 DOMAIN-SUFFIX,mobileapptracking.com
 DOMAIN-SUFFIX,mobilebanner.ru
+DOMAIN-SUFFIX,mobileconfig.sascdn.com
 DOMAIN-SUFFIX,mobilecore.com
 DOMAIN-SUFFIX,mobiledl.adboe.com
 DOMAIN-SUFFIX,mobilefuse.com
@@ -7746,6 +7750,7 @@ DOMAIN-SUFFIX,prime-ever.com
 DOMAIN-SUFFIX,primead.jp
 DOMAIN-SUFFIX,primeleech.com
 DOMAIN-SUFFIX,prisma-tr.prismamedia.com
+DOMAIN-SUFFIX,prismriotads.com
 DOMAIN-SUFFIX,privacy-sandbox.appsflyersdk.com
 DOMAIN-SUFFIX,privacycounter.com
 DOMAIN-SUFFIX,private-show.live
@@ -8208,6 +8213,7 @@ DOMAIN-SUFFIX,robin-flow.com
 DOMAIN-SUFFIX,rocks.io
 DOMAIN-SUFFIX,roewnand.biz
 DOMAIN-SUFFIX,roiservice.com
+DOMAIN-SUFFIX,roku-beacons.xumo.com
 DOMAIN-SUFFIX,rollingcounters.com
 DOMAIN-SUFFIX,roosterfirework.com
 DOMAIN-SUFFIX,roselip-fetish.com
@@ -8370,6 +8376,7 @@ DOMAIN-SUFFIX,sajari.com
 DOMAIN-SUFFIX,sakura.goguardian.com
 DOMAIN-SUFFIX,salecycle.com
 DOMAIN-SUFFIX,sam.msn.com
+DOMAIN-SUFFIX,samsung-beacons.xumo.com
 DOMAIN-SUFFIX,samsungads.com
 DOMAIN-SUFFIX,samsungtvads.com
 DOMAIN-SUFFIX,samuraiclick.com
