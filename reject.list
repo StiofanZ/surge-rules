@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-21T19:43:24+00:00
+# Generated: 2026-04-22T19:45:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12051, local=0, total(deduped)=11470
+# Counts: upstream=12078, local=0, total(deduped)=11495
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3507,6 +3507,7 @@ DOMAIN-SUFFIX,d3plfjw9uod7ab.cloudfront.net
 DOMAIN-SUFFIX,d3pnod4lg28ix4.cloudfront.net
 DOMAIN-SUFFIX,d3qvcyf9oa6vhw.cloudfront.net
 DOMAIN-SUFFIX,d3r7h55ola878c.cloudfront.net
+DOMAIN-SUFFIX,d3rem.com
 DOMAIN-SUFFIX,d3rhktq8uy839j.cloudfront.net
 DOMAIN-SUFFIX,d3s7ggfq1s6jlj.cloudfront.net
 DOMAIN-SUFFIX,d3t3bxixsojwre.cloudfront.net
@@ -4745,6 +4746,7 @@ DOMAIN-SUFFIX,global-report.ml.youngjoygame.com
 DOMAIN-SUFFIX,global-sis.engagelab.com
 DOMAIN-SUFFIX,global.appnext.com
 DOMAIN-SUFFIX,global.px.quantserve.com
+DOMAIN-SUFFIX,globalsiteanalytics.com
 DOMAIN-SUFFIX,globalwebindex.net
 DOMAIN-SUFFIX,globalwoldsinc.com
 DOMAIN-SUFFIX,globase.com
@@ -4819,6 +4821,7 @@ DOMAIN-SUFFIX,gostats.pl
 DOMAIN-SUFFIX,gostats.ru
 DOMAIN-SUFFIX,gostats.vn
 DOMAIN-SUFFIX,gotchosen.com
+DOMAIN-SUFFIX,goto.simplywall.st
 DOMAIN-SUFFIX,goto.suno.com
 DOMAIN-SUFFIX,gourmetads.com
 DOMAIN-SUFFIX,govisibl.io
@@ -5217,6 +5220,7 @@ DOMAIN-SUFFIX,icu.newsroom.bi
 DOMAIN-SUFFIX,icyads.com
 DOMAIN-SUFFIX,id-visitors.com
 DOMAIN-SUFFIX,id5-sync.com
+DOMAIN-SUFFIX,id6.me
 DOMAIN-SUFFIX,idat.production.ippen.space
 DOMAIN-SUFFIX,identitypxl.app
 DOMAIN-SUFFIX,identitypxl.com
@@ -5277,6 +5281,7 @@ DOMAIN-SUFFIX,imp.pvnsolutions.com
 DOMAIN-SUFFIX,impact-ad.jp
 DOMAIN-SUFFIX,impactify.media
 DOMAIN-SUFFIX,impbid.com
+DOMAIN-SUFFIX,impdsp.meituan.com
 DOMAIN-SUFFIX,impresivedate.com
 DOMAIN-SUFFIX,impreslvedate.com
 DOMAIN-SUFFIX,impression.appsflyer.com
@@ -6656,6 +6661,7 @@ DOMAIN-SUFFIX,mob2.welltastic-app.com
 DOMAIN-SUFFIX,moba8.net
 DOMAIN-SUFFIX,mobadme.jp
 DOMAIN-SUFFIX,mobads-logs.baidu.com
+DOMAIN-SUFFIX,mobads-logs.bcebos.com
 DOMAIN-SUFFIX,mobads-pre-config.cdn.bcebos.com
 DOMAIN-SUFFIX,mobads.baidu.com
 DOMAIN-SUFFIX,mobalyzer.net
@@ -8246,6 +8252,7 @@ DOMAIN-SUFFIX,rtapi.abbi.io
 DOMAIN-SUFFIX,rtb-trk4.linkedin.com
 DOMAIN-SUFFIX,rtb-us-east.linkedin.com
 DOMAIN-SUFFIX,rtb.appbid.com
+DOMAIN-SUFFIX,rtb.julang.taobao.com
 DOMAIN-SUFFIX,rtb.videonow.ru
 DOMAIN-SUFFIX,rtb.voltaxam.com
 DOMAIN-SUFFIX,rtbadzesto.com
@@ -8388,6 +8395,15 @@ DOMAIN-SUFFIX,sanjagh.com
 DOMAIN-SUFFIX,sankei.click
 DOMAIN-SUFFIX,sapha.com
 DOMAIN-SUFFIX,sapi.tremendous.com
+DOMAIN-SUFFIX,sas.a.int-nft.peacocktv.com
+DOMAIN-SUFFIX,sas.a.peacocktv.com
+DOMAIN-SUFFIX,sas.a.stable-int.peacocktv.com
+DOMAIN-SUFFIX,sas.f.int-nft.peacocktv.com
+DOMAIN-SUFFIX,sas.f.peacocktv.com
+DOMAIN-SUFFIX,sas.f.stable-int.peacocktv.com
+DOMAIN-SUFFIX,sas.int-nft.peacocktv.com
+DOMAIN-SUFFIX,sas.peacocktv.com
+DOMAIN-SUFFIX,sas.stable-int.peacocktv.com
 DOMAIN-SUFFIX,sas15k01.com
 DOMAIN-SUFFIX,sat.cellordion3.net
 DOMAIN-SUFFIX,sat.dipamaid.net
@@ -9184,6 +9200,7 @@ DOMAIN-SUFFIX,static.herr.io
 DOMAIN-SUFFIX,static.hyprmx.com
 DOMAIN-SUFFIX,static.jampp.com
 DOMAIN-SUFFIX,static.javhd.com
+DOMAIN-SUFFIX,static.journify.io
 DOMAIN-SUFFIX,static.mopo.jp
 DOMAIN-SUFFIX,static.parsely.com
 DOMAIN-SUFFIX,static.runconverge.com
@@ -9449,6 +9466,8 @@ DOMAIN-SUFFIX,swelen.com
 DOMAIN-SUFFIX,swetrix.org
 DOMAIN-SUFFIX,swiss-counter.com
 DOMAIN-SUFFIX,switchadhub.com
+DOMAIN-SUFFIX,swsdd.simplywall.st
+DOMAIN-SUFFIX,swssp.simplywall.st
 DOMAIN-SUFFIX,sx.fakjkwp.cn
 DOMAIN-SUFFIX,sy.ameba.jp
 DOMAIN-SUFFIX,sygrip.info
@@ -9526,6 +9545,7 @@ DOMAIN-SUFFIX,t.irtyc.com
 DOMAIN-SUFFIX,t.iwara.tv
 DOMAIN-SUFFIX,t.jasper.ai
 DOMAIN-SUFFIX,t.jibeno.xyz
+DOMAIN-SUFFIX,t.journify.io
 DOMAIN-SUFFIX,t.karte.io
 DOMAIN-SUFFIX,t.kck.st
 DOMAIN-SUFFIX,t.la-croix.com
@@ -10277,6 +10297,7 @@ DOMAIN-SUFFIX,tracker.stats.in.th
 DOMAIN-SUFFIX,tracker.str-nrg.com
 DOMAIN-SUFFIX,tracker.thinkermail.com
 DOMAIN-SUFFIX,tracker.thinkindot.com
+DOMAIN-SUFFIX,tracker.tianmu.mobi
 DOMAIN-SUFFIX,tracker.tubecj.com
 DOMAIN-SUFFIX,tracker.uira.live
 DOMAIN-SUFFIX,tracker.ulivetv.net
@@ -10687,6 +10708,7 @@ DOMAIN-SUFFIX,umami.is
 DOMAIN-SUFFIX,umami.spencerdevs.xyz
 DOMAIN-SUFFIX,umami.subdavis.com
 DOMAIN-SUFFIX,umami.syg.ma
+DOMAIN-SUFFIX,umamix.fadunews.in
 DOMAIN-SUFFIX,umbel.com
 DOMAIN-SUFFIX,umeng.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
@@ -10721,6 +10743,7 @@ DOMAIN-SUFFIX,up.ousabq.tech
 DOMAIN-SUFFIX,upalytics.com
 DOMAIN-SUFFIX,upapi.net
 DOMAIN-SUFFIX,upasiansex.com
+DOMAIN-SUFFIX,upc.zztfly.com
 DOMAIN-SUFFIX,update-macosx.com
 DOMAIN-SUFFIX,updatemobilee.com
 DOMAIN-SUFFIX,uplift-platform.com
@@ -11015,6 +11038,7 @@ DOMAIN-SUFFIX,wbtrk.net
 DOMAIN-SUFFIX,wc.paybooc.co.kr
 DOMAIN-SUFFIX,wcfbc.net
 DOMAIN-SUFFIX,wcl.shinhancard.com
+DOMAIN-SUFFIX,wcp.taobao.com
 DOMAIN-SUFFIX,wct-2.com
 DOMAIN-SUFFIX,wdfl.co
 DOMAIN-SUFFIX,wdig.vo.llnwd.net
@@ -11397,6 +11421,7 @@ DOMAIN-SUFFIX,yoc.younited-credit.com
 DOMAIN-SUFFIX,yollamedia.com
 DOMAIN-SUFFIX,yomedia.vn
 DOMAIN-SUFFIX,yoochoose.net
+DOMAIN-SUFFIX,yoszi.com
 DOMAIN-SUFFIX,yottlyscript.com
 DOMAIN-SUFFIX,youborafds01.com
 DOMAIN-SUFFIX,youle55.com

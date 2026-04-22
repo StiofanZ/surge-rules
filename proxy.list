@@ -1,10 +1,10 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-04-21T19:43:05+00:00
+# Generated: 2026-04-22T19:44:47+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=26000, local=27, total(deduped)=25436
+# Counts: upstream=26001, local=27, total(deduped)=25437
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -11872,6 +11872,7 @@ DOMAIN-SUFFIX,impermium.com
 DOMAIN-SUFFIX,improd.works
 DOMAIN-SUFFIX,imstagram.com
 DOMAIN-SUFFIX,imtagram.com
+DOMAIN-SUFFIX,imtintl.com
 DOMAIN-SUFFIX,imzog.com
 DOMAIN-SUFFIX,inaporn.com
 DOMAIN-SUFFIX,inasian.club

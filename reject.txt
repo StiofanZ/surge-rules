@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-21T19:43:24+00:00
+# Generated: 2026-04-22T19:45:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12051, local=0, total(deduped)=11470
+# Counts: upstream=12078, local=0, total(deduped)=11495
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -3507,6 +3507,7 @@ click.rustore.ru
 .d3pnod4lg28ix4.cloudfront.net
 .d3qvcyf9oa6vhw.cloudfront.net
 .d3r7h55ola878c.cloudfront.net
+.d3rem.com
 .d3rhktq8uy839j.cloudfront.net
 .d3s7ggfq1s6jlj.cloudfront.net
 .d3t3bxixsojwre.cloudfront.net
@@ -4745,6 +4746,7 @@ error-tracking.megamarket.tech
 .global-sis.engagelab.com
 .global.appnext.com
 .global.px.quantserve.com
+.globalsiteanalytics.com
 .globalwebindex.net
 .globalwoldsinc.com
 .globase.com
@@ -4819,6 +4821,7 @@ google-analytics-suite.ozon.ru
 .gostats.ru
 .gostats.vn
 .gotchosen.com
+.goto.simplywall.st
 .goto.suno.com
 .gourmetads.com
 .govisibl.io
@@ -5217,6 +5220,7 @@ google-analytics-suite.ozon.ru
 .icyads.com
 .id-visitors.com
 .id5-sync.com
+.id6.me
 .idat.production.ippen.space
 .identitypxl.app
 .identitypxl.com
@@ -5277,6 +5281,7 @@ google-analytics-suite.ozon.ru
 .impact-ad.jp
 .impactify.media
 .impbid.com
+.impdsp.meituan.com
 .impresivedate.com
 .impreslvedate.com
 .impression.appsflyer.com
@@ -6656,6 +6661,7 @@ metrics.21-school.ru
 .moba8.net
 .mobadme.jp
 .mobads-logs.baidu.com
+.mobads-logs.bcebos.com
 .mobads-pre-config.cdn.bcebos.com
 .mobads.baidu.com
 .mobalyzer.net
@@ -8246,6 +8252,7 @@ rs.mail.ru
 .rtb-trk4.linkedin.com
 .rtb-us-east.linkedin.com
 .rtb.appbid.com
+.rtb.julang.taobao.com
 .rtb.videonow.ru
 .rtb.voltaxam.com
 .rtbadzesto.com
@@ -8388,6 +8395,15 @@ rtlog5-applog.fqnovel.com
 .sankei.click
 .sapha.com
 .sapi.tremendous.com
+.sas.a.int-nft.peacocktv.com
+.sas.a.peacocktv.com
+.sas.a.stable-int.peacocktv.com
+.sas.f.int-nft.peacocktv.com
+.sas.f.peacocktv.com
+.sas.f.stable-int.peacocktv.com
+.sas.int-nft.peacocktv.com
+.sas.peacocktv.com
+.sas.stable-int.peacocktv.com
 .sas15k01.com
 .sat.cellordion3.net
 .sat.dipamaid.net
@@ -9184,6 +9200,7 @@ stacks.vk-portal.net
 .static.hyprmx.com
 .static.jampp.com
 .static.javhd.com
+.static.journify.io
 .static.mopo.jp
 .static.parsely.com
 .static.runconverge.com
@@ -9449,6 +9466,8 @@ stats.telega.info
 .swetrix.org
 .swiss-counter.com
 .switchadhub.com
+.swsdd.simplywall.st
+.swssp.simplywall.st
 .sx.fakjkwp.cn
 .sy.ameba.jp
 .sygrip.info
@@ -9526,6 +9545,7 @@ stats.telega.info
 .t.iwara.tv
 .t.jasper.ai
 .t.jibeno.xyz
+.t.journify.io
 .t.karte.io
 .t.kck.st
 .t.la-croix.com
@@ -10277,6 +10297,7 @@ tracing-http.megamarket.tech
 .tracker.str-nrg.com
 .tracker.thinkermail.com
 .tracker.thinkindot.com
+.tracker.tianmu.mobi
 .tracker.tubecj.com
 .tracker.uira.live
 .tracker.ulivetv.net
@@ -10687,6 +10708,7 @@ tracing-http.megamarket.tech
 .umami.spencerdevs.xyz
 .umami.subdavis.com
 .umami.syg.ma
+.umamix.fadunews.in
 .umbel.com
 .umeng.com
 .umengacs.m.taobao.com
@@ -10721,6 +10743,7 @@ tracing-http.megamarket.tech
 .upalytics.com
 .upapi.net
 .upasiansex.com
+.upc.zztfly.com
 .update-macosx.com
 .updatemobilee.com
 .uplift-platform.com
@@ -11015,6 +11038,7 @@ visor.sberbank.ru
 .wc.paybooc.co.kr
 .wcfbc.net
 .wcl.shinhancard.com
+.wcp.taobao.com
 .wct-2.com
 .wdfl.co
 .wdig.vo.llnwd.net
@@ -11397,6 +11421,7 @@ xapi.ozonru.me
 .yollamedia.com
 .yomedia.vn
 .yoochoose.net
+.yoszi.com
 .yottlyscript.com
 .youborafds01.com
 .youle55.com
