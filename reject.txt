@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-22T19:45:18+00:00
+# Generated: 2026-04-23T19:46:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12078, local=0, total(deduped)=11495
+# Counts: upstream=12082, local=0, total(deduped)=11499
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1994,6 +1994,7 @@ apilog-web.acfun.cn
 .aztool.org
 .b-aws.aol.com
 .b-click.net
+.b-short.link
 .b-sing.com
 .b.clipkit.co
 .b.ranking.apis.sankei-digital.co.jp
@@ -3585,6 +3586,7 @@ click.rustore.ru
 .data.r.pl
 .data.sec.intl.miui.com
 .data.sec.miui.com
+.data.ssports.com
 .data.thoughtmetric.io
 .data.tm-awx.com
 .data2.doodlemobile.com
@@ -4562,6 +4564,7 @@ error-tracking.megamarket.tech
 .fsuooh.cc
 .ftbpro.com
 .ftl5li6yv2x4tio8pum64x.rest
+.fubuki-umami.space
 .fueldeck.com
 .fuelx.com
 .fugetech.com
@@ -4767,6 +4770,7 @@ error-tracking.megamarket.tech
 .go.vrvm.com
 .go.xxxjmp.com
 .go2.global
+.goads2023.com
 .goadservices.com
 .goatcounter.com
 .gocp.stroeermediabrands.de

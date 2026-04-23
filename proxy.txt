@@ -1,10 +1,10 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-04-22T19:44:47+00:00
+# Generated: 2026-04-23T19:45:52+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=26001, local=27, total(deduped)=25437
+# Counts: upstream=26009, local=27, total(deduped)=25445
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -2308,6 +2308,7 @@ api-p.videomarket.jp
 .asianwifeporn.com
 .asianxxxvideos.cc
 .asiaone.com
+.asiasociety.org
 .asjmapihost.cc
 .ask.com
 .askfacebook.net
@@ -3292,6 +3293,7 @@ beck-online.beck.de
 .bell.wiki
 .bellebound.com
 .bellesa.co
+.bellingcat.com
 .bellotube.com
 .bellsouth.net
 .benaughty.fun
@@ -5851,6 +5853,7 @@ cisco.evergage.com
 .crececonebay.com
 .creditcardsbay.com
 .creditkarma.com
+.crewai.com
 .cricketcountry.com
 .cristyli.com
 .crit-staging.com
@@ -13406,6 +13409,7 @@ ingest.apple-studies.com
 .lamnia.co.uk
 .lanasbigboobs.com
 .landofhope.tv
+.langchain.com
 .langsuirs.com
 .lanik.us
 .lanmdh.net
@@ -13716,6 +13720,7 @@ live-patreon-marketing.pantheonsite.io
 .lmm167.shop
 .lmmbtc.com
 .lms01.com
+.lmstudio.ai
 .lnkd.in
 .lnstagram-help.com
 .loanbuilder.com
@@ -16708,6 +16713,7 @@ ntppool2.time.nl
 .olevod.tv
 .olevodtv.com
 .oli-school.com
+.ollama.com
 .olumpo.com
 .omafotze.com
 .omakase.in
@@ -18648,6 +18654,7 @@ public-us-pingsx.api.clonoth.com
 .raw.githack.com
 .rawgit.com
 .rawgithub.com
+.rawstory.com
 .rayark.download
 .rayark.net
 .razer.com
@@ -18781,6 +18788,7 @@ public-us-pingsx.api.clonoth.com
 .recoiljs.org
 .reconinstruments.com
 .reconjet.com
+.recordedfuture.com
 .recoveryversion.com.tw
 .red-lang.org
 .redamateurtube.com
@@ -20362,7 +20370,6 @@ setup.workos.com
 .soyinyj.top
 .soyjak.party
 .soyjak.st
-.soylentnews.org
 .sp.cool
 .spaceexplored.com
 .spacely.com.au
@@ -21450,6 +21457,7 @@ tesla-cdn.thron.com
 .thieme-connect.de
 .thieme.de
 .thinkboxsoftware.com
+.thinkchina.sg
 .thinkdifferent.us
 .thinkgeek.com
 .thinkingtaiwan.com

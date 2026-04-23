@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-22T19:45:18+00:00
+# Generated: 2026-04-23T19:46:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12078, local=0, total(deduped)=11495
+# Counts: upstream=12082, local=0, total(deduped)=11499
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1994,6 +1994,7 @@ DOMAIN-SUFFIX,azq.zozo.jp
 DOMAIN-SUFFIX,aztool.org
 DOMAIN-SUFFIX,b-aws.aol.com
 DOMAIN-SUFFIX,b-click.net
+DOMAIN-SUFFIX,b-short.link
 DOMAIN-SUFFIX,b-sing.com
 DOMAIN-SUFFIX,b.clipkit.co
 DOMAIN-SUFFIX,b.ranking.apis.sankei-digital.co.jp
@@ -3585,6 +3586,7 @@ DOMAIN-SUFFIX,data.pendo.io
 DOMAIN-SUFFIX,data.r.pl
 DOMAIN-SUFFIX,data.sec.intl.miui.com
 DOMAIN-SUFFIX,data.sec.miui.com
+DOMAIN-SUFFIX,data.ssports.com
 DOMAIN-SUFFIX,data.thoughtmetric.io
 DOMAIN-SUFFIX,data.tm-awx.com
 DOMAIN-SUFFIX,data2.doodlemobile.com
@@ -4562,6 +4564,7 @@ DOMAIN-SUFFIX,fruitflan.com
 DOMAIN-SUFFIX,fsuooh.cc
 DOMAIN-SUFFIX,ftbpro.com
 DOMAIN-SUFFIX,ftl5li6yv2x4tio8pum64x.rest
+DOMAIN-SUFFIX,fubuki-umami.space
 DOMAIN-SUFFIX,fueldeck.com
 DOMAIN-SUFFIX,fuelx.com
 DOMAIN-SUFFIX,fugetech.com
@@ -4767,6 +4770,7 @@ DOMAIN-SUFFIX,go.tmrjmp.com
 DOMAIN-SUFFIX,go.vrvm.com
 DOMAIN-SUFFIX,go.xxxjmp.com
 DOMAIN-SUFFIX,go2.global
+DOMAIN-SUFFIX,goads2023.com
 DOMAIN-SUFFIX,goadservices.com
 DOMAIN-SUFFIX,goatcounter.com
 DOMAIN-SUFFIX,gocp.stroeermediabrands.de
