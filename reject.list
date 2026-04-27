@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-25T19:14:30+00:00
+# Generated: 2026-04-27T19:52:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12084, local=0, total(deduped)=11501
+# Counts: upstream=12091, local=0, total(deduped)=11505
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -620,6 +620,7 @@ DOMAIN-SUFFIX,adpublisher.s3.amazonaws.com
 DOMAIN-SUFFIX,adpush.goforandroid.com
 DOMAIN-SUFFIX,adq.chinaso.com
 DOMAIN-SUFFIX,adquota.com
+DOMAIN-SUFFIX,adradar.io
 DOMAIN-SUFFIX,adrange.net
 DOMAIN-SUFFIX,adrevenue.appsflyer.com
 DOMAIN-SUFFIX,adright.com
@@ -7286,7 +7287,8 @@ DOMAIN-SUFFIX,p030.courant.com
 DOMAIN-SUFFIX,p16-ad.byteoversea.com
 DOMAIN-SUFFIX,p192.eastbaytimes.com
 DOMAIN-SUFFIX,p2trc.emv2.com
-DOMAIN,p3-ad-sign.byteimg.com
+DOMAIN-SUFFIX,p3-ad-sign.byteimg.com
+DOMAIN-SUFFIX,p3-ad-sign.byteimg.com.queniusy.com
 DOMAIN-SUFFIX,p4p.sina.com.cn
 DOMAIN-SUFFIX,p543.inquirer.com
 DOMAIN-SUFFIX,p593.seattlepi.com
@@ -8195,6 +8197,7 @@ DOMAIN-SUFFIX,reyun.com
 DOMAIN-SUFFIX,rferl.c.goolara.net
 DOMAIN-SUFFIX,rfihub.com
 DOMAIN-SUFFIX,rfvgcross.com
+DOMAIN-SUFFIX,rgzz3rs.icu
 DOMAIN-SUFFIX,rhinoseo.com
 DOMAIN-SUFFIX,riastats.com
 DOMAIN-SUFFIX,richard-group.com
@@ -9266,6 +9269,7 @@ DOMAIN-SUFFIX,stats.bunkr.ru
 DOMAIN-SUFFIX,stats.calldorado.com
 DOMAIN-SUFFIX,stats.cardschat.com
 DOMAIN-SUFFIX,stats.christianpost.com
+DOMAIN-SUFFIX,stats.cinevibe.asia
 DOMAIN-SUFFIX,stats.clear-media.com
 DOMAIN-SUFFIX,stats.cn.ronghub.com
 DOMAIN-SUFFIX,stats.coronalabs.com
