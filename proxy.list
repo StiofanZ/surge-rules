@@ -1,10 +1,10 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-04-28T19:59:00+00:00
+# Generated: 2026-04-29T19:57:33+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=26013, local=27, total(deduped)=25449
+# Counts: upstream=26014, local=27, total(deduped)=25450
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -22351,6 +22351,7 @@ DOMAIN-SUFFIX,upmedia.mg
 DOMAIN-SUFFIX,upornia.com
 DOMAIN-SUFFIX,uporno.xxx
 DOMAIN-SUFFIX,uproxy.org
+DOMAIN-SUFFIX,upsangel.com
 DOMAIN-SUFFIX,uptodown.com
 DOMAIN-SUFFIX,ura-akiba.jp
 DOMAIN-SUFFIX,uraban.me

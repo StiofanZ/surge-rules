@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-04-28T19:59:14+00:00
+# Generated: 2026-04-29T19:57:49+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12090, local=0, total(deduped)=11505
+# Counts: upstream=12093, local=0, total(deduped)=11508
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -6721,6 +6721,7 @@ metrics.21-school.ru
 .mon.tiktokv.com
 .mon.us.tiktokv.com
 .mon.zijieapi.com
+.mon11-misc-lq.fqnovel.com
 .mon16-normal-us-ttp.capcutapi.us
 .monerominer.rocks
 .monetate.net
@@ -8547,6 +8548,7 @@ rtlog5-applog.fqnovel.com
 .sensor.org.ua
 .sensor.photogrid.app
 .sensors-log.dongqiudi.com
+.sensors.dito.ph
 .sensors.ibreader.com
 .sensors.snappea.com
 .sensors.snaptube.app
@@ -9960,6 +9962,7 @@ target.vk.com
 .tnc16-alisg.isnssdk.com
 .tnc16-normal-us-ttp.capcutapi.us
 .tnc16-useast1a.isnssdk.com
+.tnc3-alisc1.bytedance.com
 .tncid.app
 .tnkfactory.com
 .tns-counter.ru
