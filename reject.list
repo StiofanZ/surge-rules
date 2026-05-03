@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-03T12:18:08+00:00
+# Generated: 2026-05-03T14:56:14+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -20,6 +20,8 @@
 # Format:
 #   DOMAIN,example.com        -> exact match
 #   DOMAIN-SUFFIX,example.com -> exact + all subdomains
+#   IP-CIDR,192.0.2.0/24      -> IPv4 CIDR (when rule-set-only sources exist)
+#   IP-CIDR6,2001:db8::/32    -> IPv6 CIDR (when rule-set-only sources exist)
 
 DOMAIN-SUFFIX,002777.xyz
 DOMAIN-SUFFIX,023hysj.com

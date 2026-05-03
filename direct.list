@@ -1,6 +1,6 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-05-03T12:18:09+00:00
+# Generated: 2026-05-03T14:56:15+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 # Counts: upstream=115467, local=0, total(deduped)=115333
@@ -9,6 +9,8 @@
 # Format:
 #   DOMAIN,example.com        -> exact match
 #   DOMAIN-SUFFIX,example.com -> exact + all subdomains
+#   IP-CIDR,192.0.2.0/24      -> IPv4 CIDR (when rule-set-only sources exist)
+#   IP-CIDR6,2001:db8::/32    -> IPv6 CIDR (when rule-set-only sources exist)
 
 DOMAIN-SUFFIX,0.zone
 DOMAIN-SUFFIX,00.net
