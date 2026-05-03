@@ -35,6 +35,7 @@ jobs:
       - name: Validate output format (Surge DOMAIN-SET / RULE-SET)
         run: |
           python - <<'PY'
+          import ipaddress
           import re
           from pathlib import Path
 
@@ -64,6 +65,17 @@ jobs:
                       continue
                   total += 1
                   if not pattern.match(line):
+                      if fmt_name == "RULE-SET" and line.startswith(("IP-CIDR,", "IP-CIDR6,")):
+                          rule_type, cidr = line.split(",", 1)
+                          try:
+                              network = ipaddress.ip_network(cidr, strict=False)
+                          except ValueError:
+                              network = None
+                          if network is not None:
+                              if rule_type == "IP-CIDR" and network.version == 4:
+                                  continue
+                              if rule_type == "IP-CIDR6" and network.version == 6:
+                                  continue
                       bad += 1
                       if bad <= 5:
                           failures.append(f"{path}:{lineno}: invalid {fmt_name} line: {line!r}")

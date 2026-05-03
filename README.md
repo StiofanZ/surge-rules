@@ -13,7 +13,9 @@
 | [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` |
 | [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` |
 
-来源：[Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + [`ruleset/gfw.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt) + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)（OpenAI/ChatGPT 官方允许列表）。
+来源：[Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + [`ruleset/gfw.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt) + [`ruleset/telegramcidr.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt) + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)（OpenAI/ChatGPT 官方允许列表）。
+
+`telegramcidr.txt` 是 `IP-CIDR` / `IP-CIDR6`，只能进入 `proxy.list`；`proxy.txt` 是 DOMAIN-SET，不能表达 IP 段。
 
 ### reject — 广告 / 追踪 / 挖矿域名
 
@@ -79,7 +81,7 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,P
 
 ## 数据来源
 
-1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + `ruleset/gfw.txt` + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)。
+1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + `ruleset/gfw.txt` + `ruleset/telegramcidr.txt` + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)。
 2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all`。
 3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt`。
 
