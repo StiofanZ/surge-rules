@@ -38,8 +38,8 @@ jobs:
           import re
           from pathlib import Path
 
-          DOMAIN_SET_FILES = ["proxy.txt", "reject.txt"]
-          RULE_SET_FILES = ["proxy.list", "reject.list"]
+          DOMAIN_SET_FILES = ["proxy.txt", "reject.txt", "direct.txt"]
+          RULE_SET_FILES = ["proxy.list", "reject.list", "direct.list"]
 
           # Single label: at least 1 char, letters/digits, hyphens allowed
           # but not at edges (RFC 1123 + LDH check, 63-char max).
@@ -93,9 +93,9 @@ jobs:
         # or if the pipeline is non-deterministic, flag here. Diff ignores
         # the single `# Generated:` line which is expected to drift.
         run: |
-          if git diff --quiet -I '^# Generated: ' -- proxy.txt proxy.list reject.txt reject.list; then
+          if git diff --quiet -I '^# Generated: ' -- proxy.txt proxy.list reject.txt reject.list direct.txt direct.list; then
             echo "Outputs match committed versions (ignoring timestamps)."
           else
             echo "::warning ::Rebuilt outputs differ from committed files (content, not just timestamp)."
-            git --no-pager diff --stat -I '^# Generated: ' -- proxy.txt proxy.list reject.txt reject.list
+            git --no-pager diff --stat -I '^# Generated: ' -- proxy.txt proxy.list reject.txt reject.list direct.txt direct.list
           fi

@@ -16,6 +16,9 @@ config uses without editing it.
 
 Supported upstream parsers:
   - "domain_set" : Surge DOMAIN-SET (the Loyalsoldier format).
+  - "surge_rule_set": Surge RULE-SET. Only DOMAIN and DOMAIN-SUFFIX rules
+                   are converted; unsupported rule types are dropped because
+                   DOMAIN-SET cannot express them.
   - "adguard"    : AdGuard/ABP adblock syntax. Only pure `||domain^` rules
                    with safe (DNS-compatible) modifiers are extracted;
                    cosmetic, path, regex, allow-list, and resource-type
@@ -54,7 +57,7 @@ HTTP_USER_AGENT = "surge-rules-builder/1.0"
 @dataclasses.dataclass(frozen=True)
 class Source:
     url: str
-    parser: str  # "domain_set" | "adguard"
+    parser: str  # "domain_set" | "surge_rule_set" | "adguard" | "v2fly"
 
 
 @dataclasses.dataclass(frozen=True)
@@ -158,6 +161,22 @@ RULE_SETS: tuple[RuleSet, ...] = (
         output_domain_set="reject.txt",
         output_rule_set="reject.list",
     ),
+    RuleSet(
+        name="direct",
+        description=(
+            "Domains that should connect directly. Upstream Loyalsoldier/surge-rules "
+            "ruleset/direct.txt converted from Surge RULE-SET format."
+        ),
+        sources=(
+            Source(
+                url="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
+                parser="surge_rule_set",
+            ),
+        ),
+        local_dir="direct",
+        output_domain_set="direct.txt",
+        output_rule_set="direct.list",
+    ),
 )
 
 
@@ -190,6 +209,42 @@ def parse_domain_set(text: str) -> list[str]:
             if not line:
                 continue
         out.append(line.lower())
+    return out
+
+
+_SURGE_RULE_DOMAIN_RE = re.compile(
+    r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$"
+)
+
+
+def parse_surge_rule_set(text: str) -> list[str]:
+    """Extract DOMAIN / DOMAIN-SUFFIX rules from a Surge RULE-SET text blob.
+
+    ``DOMAIN,example.com`` is converted to ``example.com`` (exact match).
+    ``DOMAIN-SUFFIX,example.com`` is converted to ``.example.com`` (suffix).
+    Unsupported rule types are ignored because DOMAIN-SET cannot express them.
+    """
+    out: list[str] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "#" in line:
+            line = line.split("#", 1)[0].strip()
+            if not line:
+                continue
+        parts = [p.strip() for p in line.split(",")]
+        if len(parts) < 2:
+            continue
+        rule_type, domain = parts[0].upper(), parts[1].lower()
+        if not _SURGE_RULE_DOMAIN_RE.match(domain):
+            continue
+        if _IPV4_RE.match(domain):
+            continue
+        if rule_type == "DOMAIN":
+            out.append(domain)
+        elif rule_type == "DOMAIN-SUFFIX":
+            out.append("." + domain)
     return out
 
 
@@ -394,6 +449,7 @@ def fetch_v2fly_recursive(url: str) -> list[str]:
 
 _PARSERS: dict[str, object] = {
     "domain_set": parse_domain_set,
+    "surge_rule_set": parse_surge_rule_set,
     "adguard": parse_adguard,
     "v2fly": parse_v2fly,
 }
