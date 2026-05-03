@@ -40,7 +40,7 @@ jobs:
       - name: Check for changes
         id: diff
         env:
-          OUTPUTS: "proxy.txt proxy.list reject.txt reject.list"
+          OUTPUTS: "proxy.txt proxy.list reject.txt reject.list direct.txt direct.list"
         run: |
           # Ignore the "Generated:" timestamp line when deciding if a commit is needed.
           if git diff --quiet -I '^# Generated: ' -- $OUTPUTS; then
@@ -59,6 +59,6 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
-          git add proxy.txt proxy.list reject.txt reject.list
-          git commit -m "chore(rules): refresh proxy and reject rule sets"
+          git add proxy.txt proxy.list reject.txt reject.list direct.txt direct.list
+          git commit -m "chore(rules): refresh generated rule sets"
           git push

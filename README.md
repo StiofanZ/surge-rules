@@ -1,6 +1,6 @@
 # surge-rules
 
-个人维护的 [Surge](https://nssurge.com/) 规则集合。每日自动与上游同步，并附加本地补充。
+[Surge](https://nssurge.com/) 规则集合。每日自动与上游同步，并附加本地补充。
 
 ## 规则清单
 
@@ -41,6 +41,15 @@
 
 构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 
+### direct — 直连域名
+
+| 文件 | 类型 | 对应 Surge 指令 |
+| --- | --- | --- |
+| [`direct.txt`](./direct.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,DIRECT` |
+| [`direct.list`](./direct.list) | **RULE-SET** | `RULE-SET,<url>,DIRECT` |
+
+来源：[Loyalsoldier/surge-rules `ruleset/direct.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt)。上游是 Surge RULE-SET 格式，构建器仅转换 `DOMAIN` / `DOMAIN-SUFFIX` 两类域名规则；其它 Surge 规则类型若出现会被跳过，因为 DOMAIN-SET 无法表达。
+
 ## 在 Surge 中使用
 
 将 `<OWNER>` 替换为你自己 fork 的 GitHub 用户名（或上游的维护者）。
@@ -49,25 +58,30 @@
 
 ```ini
 [Rule]
-DOMAIN-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.txt,Proxy
 DOMAIN-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/reject.txt,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/direct.txt,DIRECT
+DOMAIN-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.txt,Proxy
 ```
 
 **B. 使用 RULE-SET 指令（若手机端对 `DOMAIN-SET` 报 `invalid line`，用这份）：**
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,Proxy
 RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/reject.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,Proxy
 ```
+
+如果同时使用 `reject` 与 `direct`，建议把 `reject` 放在 `direct` 前面，避免广告/追踪域名被更宽泛的直连规则提前命中。
 
 > **为什么每份有两种格式？**
 > Surge 的 `RULE-SET` 指令要求每行必须带规则类型前缀（`DOMAIN-SUFFIX,...`），不接受像 `.000webhost.com` 这种前导点的纯域名——否则会报 `invalid line`。`DOMAIN-SET` 指令则相反，只接受纯域名。两种文件同步产出，避免改错指令又改错文件的尴尬。
 
 ## 数据来源
 
-1. **上游主数据：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt`。
-2. **本地补充：** [`sources/openai-chatgpt.txt`](./sources/openai-chatgpt.txt) — 基于 OpenAI 官方[《网络建议》帮助文章](https://help.openai.com/zh-hans-cn/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps)所列的 OpenAI/ChatGPT 允许列表域名（含 WorkOS、Statsig、Stripe、Cloudflare Turnstile、Sentry、Datadog RUM 等第三方依赖）。
+1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)。
+2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all`。
+3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt`。
 
 ## CI / 自动化
 
@@ -75,9 +89,9 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/reject.list,
 
 | 文件 | 触发 | 作用 |
 | --- | --- | --- |
-| [`update.yml`](./.github/workflows/update.yml) | cron 18:30 UTC / `workflow_dispatch` / `push` main | 每日刷新 `proxy.*` + `reject.*` 并 push |
+| [`update.yml`](./.github/workflows/update.yml) | cron 18:30 UTC / `workflow_dispatch` / `push` main | 每日刷新 `proxy.*` + `reject.*` + `direct.*` 并 push |
 | [`ci.yml`](./.github/workflows/ci.yml) | `pull_request` / `push` main | 跑 build.py、校验 DOMAIN-SET/RULE-SET 行格式、检测输出漂移 |
-| [`automerge.yml`](./.github/workflows/automerge.yml) | `pull_request_target` | 对受信 PR 调用 `gh pr merge --auto --squash`，在 CI 通过后自动合入 |
+| [`automerge.yml`](./.github/workflows/automerge.yml) | `workflow_run` | CI 通过后对受信 PR 执行 squash merge |
 
 ### 自动更新节奏
 
@@ -111,7 +125,7 @@ python3 scripts/build.py
 ## 添加新的补充规则
 
 - **扩充已有分类：** 在 `sources/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。例如 `sources/reject/my-custom.txt`。
-- **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、`local_dir`（本地子目录）、输出文件名；`parser` 可选 `"domain_set"` 或 `"adguard"`。
+- **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、`local_dir`（本地子目录）、输出文件名；`parser` 可选 `"domain_set"`、`"surge_rule_set"`、`"adguard"` 或 `"v2fly"`。
 
 推送到 `main` 后 GitHub Actions 会自动合并并发布。
 
@@ -121,10 +135,12 @@ python3 scripts/build.py
 surge-rules/
 ├── proxy.txt / proxy.list           # proxy 分类（机器生成）
 ├── reject.txt / reject.list         # reject 分类（机器生成）
+├── direct.txt / direct.list         # direct 分类（机器生成）
 ├── sources/
 │   ├── proxy/
 │   │   └── openai-chatgpt.txt       # proxy 本地补充源
-│   └── reject/                      # reject 本地补充源（可选）
+│   ├── reject/                      # reject 本地补充源（可选）
+│   └── direct/                      # direct 本地补充源（可选）
 ├── scripts/
 │   └── build.py                     # 多规则集合并 + AdGuard 解析 + 双格式输出
 └── .github/workflows/
