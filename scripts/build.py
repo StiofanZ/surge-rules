@@ -75,12 +75,16 @@ RULE_SETS: tuple[RuleSet, ...] = (
         name="proxy",
         description=(
             "Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules "
-            "proxy.txt plus local OpenAI/ChatGPT allowlist supplement."
+            "proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement."
         ),
         sources=(
             Source(
                 url="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt",
                 parser="domain_set",
+            ),
+            Source(
+                url="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt",
+                parser="surge_rule_set",
             ),
         ),
         local_dir="proxy",
