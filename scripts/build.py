@@ -8,6 +8,7 @@ For each configured rule set we produce TWO files:
   - <name>.list : Surge RULE-SET format (for `RULE-SET,...` directive)
                     * `.example.com`    -> `DOMAIN-SUFFIX,example.com`
                     * `example.com`     -> `DOMAIN,example.com`
+                    * optional RULE-SET-only sources are appended verbatim
 
 Surge mobile rejects leading-dot plain lines when the config uses
 `RULE-SET,...` -- that directive requires a rule-type prefix on every line.
@@ -19,6 +20,10 @@ Supported upstream parsers:
   - "surge_rule_set": Surge RULE-SET. Only DOMAIN and DOMAIN-SUFFIX rules
                    are converted; unsupported rule types are dropped because
                    DOMAIN-SET cannot express them.
+  - "surge_ip_rule_set": Surge RULE-SET. Only IP-CIDR / IP-CIDR6 rules are
+                   retained and appended to the .list output. These rules are
+                   deliberately excluded from .txt because DOMAIN-SET cannot
+                   express CIDR ranges.
   - "adguard"    : AdGuard/ABP adblock syntax. Only pure `||domain^` rules
                    with safe (DNS-compatible) modifiers are extracted;
                    cosmetic, path, regex, allow-list, and resource-type
@@ -42,6 +47,7 @@ from __future__ import annotations
 
 import dataclasses
 import datetime as _dt
+import ipaddress
 import pathlib
 import re
 import sys
@@ -57,7 +63,7 @@ HTTP_USER_AGENT = "surge-rules-builder/1.0"
 @dataclasses.dataclass(frozen=True)
 class Source:
     url: str
-    parser: str  # "domain_set" | "surge_rule_set" | "adguard" | "v2fly"
+    parser: str  # "domain_set" | "surge_rule_set" | "surge_ip_rule_set" | "adguard" | "v2fly"
 
 
 @dataclasses.dataclass(frozen=True)
@@ -68,6 +74,7 @@ class RuleSet:
     local_dir: str | None  # subdirectory under sources/, or None
     output_domain_set: str  # e.g. "proxy.txt"
     output_rule_set: str  # e.g. "proxy.list"
+    rule_set_only_sources: tuple[Source, ...] = ()
 
 
 RULE_SETS: tuple[RuleSet, ...] = (
@@ -90,6 +97,12 @@ RULE_SETS: tuple[RuleSet, ...] = (
         local_dir="proxy",
         output_domain_set="proxy.txt",
         output_rule_set="proxy.list",
+        rule_set_only_sources=(
+            Source(
+                url="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt",
+                parser="surge_ip_rule_set",
+            ),
+        ),
     ),
     RuleSet(
         name="reject",
@@ -219,8 +232,6 @@ def parse_domain_set(text: str) -> list[str]:
 _SURGE_RULE_DOMAIN_RE = re.compile(
     r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$"
 )
-
-
 def parse_surge_rule_set(text: str) -> list[str]:
     """Extract DOMAIN / DOMAIN-SUFFIX rules from a Surge RULE-SET text blob.
 
@@ -249,6 +260,34 @@ def parse_surge_rule_set(text: str) -> list[str]:
             out.append(domain)
         elif rule_type == "DOMAIN-SUFFIX":
             out.append("." + domain)
+    return out
+
+
+def parse_surge_ip_rule_set(text: str) -> list[str]:
+    """Extract IP-CIDR / IP-CIDR6 rules from a Surge RULE-SET text blob."""
+    out: list[str] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "#" in line:
+            line = line.split("#", 1)[0].strip()
+            if not line:
+                continue
+        parts = [p.strip() for p in line.split(",")]
+        if len(parts) < 2:
+            continue
+        rule_type, cidr = parts[0].upper(), parts[1].lower()
+        if rule_type not in {"IP-CIDR", "IP-CIDR6"}:
+            continue
+        try:
+            network = ipaddress.ip_network(cidr, strict=False)
+        except ValueError:
+            continue
+        if rule_type == "IP-CIDR" and network.version == 4:
+            out.append(f"IP-CIDR,{network}")
+        elif rule_type == "IP-CIDR6" and network.version == 6:
+            out.append(f"IP-CIDR6,{network}")
     return out
 
 
@@ -454,6 +493,7 @@ def fetch_v2fly_recursive(url: str) -> list[str]:
 _PARSERS: dict[str, object] = {
     "domain_set": parse_domain_set,
     "surge_rule_set": parse_surge_rule_set,
+    "surge_ip_rule_set": parse_surge_ip_rule_set,
     "adguard": parse_adguard,
     "v2fly": parse_v2fly,
 }
@@ -507,10 +547,13 @@ def _timestamp() -> str:
     return _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds")
 
 
-def _source_lines(rs: RuleSet) -> str:
+def _source_lines(rs: RuleSet, *, include_rule_set_only: bool) -> str:
     lines = ["# Sources:"]
     for s in rs.sources:
         lines.append(f"#   [{s.parser}] {s.url}")
+    if include_rule_set_only:
+        for s in rs.rule_set_only_sources:
+            lines.append(f"#   [{s.parser}:rule-set-only] {s.url}")
     if rs.local_dir:
         local_root = SOURCES_DIR / rs.local_dir
         if local_root.is_dir():
@@ -527,13 +570,19 @@ def _common_header(
     upstream: int,
     local: int,
     total: int,
+    rule_set_only: int = 0,
 ) -> str:
+    source_lines = _source_lines(rs, include_rule_set_only=(fmt == "RULE-SET"))
+    counts = f"# Counts: upstream={upstream}, local={local}, total(deduped)={total}"
+    if fmt == "RULE-SET" and rule_set_only:
+        counts += f", rule_set_only={rule_set_only}"
+    counts += "\n"
     return (
         f"# Surge {fmt}: {filename} ({rs.name})\n"
         f"# Description: {rs.description}\n"
         f"# Generated: {_timestamp()}\n"
-        f"{_source_lines(rs)}"
-        f"# Counts: upstream={upstream}, local={local}, total(deduped)={total}\n"
+        f"{source_lines}"
+        f"{counts}"
     )
 
 
@@ -556,7 +605,13 @@ def header_domain_set(rs: RuleSet, upstream: int, local: int, total: int) -> str
     )
 
 
-def header_rule_set(rs: RuleSet, upstream: int, local: int, total: int) -> str:
+def header_rule_set(
+    rs: RuleSet,
+    upstream: int,
+    local: int,
+    total: int,
+    rule_set_only: int = 0,
+) -> str:
     return (
         _common_header(
             rs=rs,
@@ -565,12 +620,15 @@ def header_rule_set(rs: RuleSet, upstream: int, local: int, total: int) -> str:
             upstream=upstream,
             local=local,
             total=total,
+            rule_set_only=rule_set_only,
         )
         + "#\n"
         f"# Use in Surge config: RULE-SET,<url>,{rs.name.upper()}\n"
         "# Format:\n"
         "#   DOMAIN,example.com        -> exact match\n"
         "#   DOMAIN-SUFFIX,example.com -> exact + all subdomains\n"
+        "#   IP-CIDR,192.0.2.0/24      -> IPv4 CIDR (when rule-set-only sources exist)\n"
+        "#   IP-CIDR6,2001:db8::/32    -> IPv6 CIDR (when rule-set-only sources exist)\n"
         "\n"
     )
 
@@ -593,6 +651,17 @@ def _read_local(rs: RuleSet) -> list[str]:
             file=sys.stderr,
         )
         out.extend(chunk)
+    return out
+
+
+def _dedupe_preserve_order(lines: list[str]) -> list[str]:
+    seen: set[str] = set()
+    out: list[str] = []
+    for line in lines:
+        if line in seen:
+            continue
+        seen.add(line)
+        out.append(line)
     return out
 
 
@@ -621,12 +690,35 @@ def build_rule_set(rs: RuleSet) -> int:
         )
         upstream_entries.extend(chunk)
 
+    rule_set_only_entries: list[str] = []
+    for src in rs.rule_set_only_sources:
+        print(
+            f"[{rs.name}] fetching {src.parser} rule-set-only source: {src.url}",
+            file=sys.stderr,
+        )
+        try:
+            text = fetch(src.url)
+            parser = _PARSERS[src.parser]
+            chunk = parser(text)  # type: ignore[operator]
+        except Exception as exc:  # noqa: BLE001
+            print(
+                f"[{rs.name}] ERROR: fetch failed for {src.url}: {exc}",
+                file=sys.stderr,
+            )
+            return 1
+        print(
+            f"[{rs.name}] parsed {len(chunk)} rule-set-only entries from {src.url}",
+            file=sys.stderr,
+        )
+        rule_set_only_entries.extend(chunk)
+    rule_set_only_entries = _dedupe_preserve_order(rule_set_only_entries)
+
     local_entries = _read_local(rs)
     combined = upstream_entries + local_entries
     deduped = dedupe(combined)
     print(
         f"[{rs.name}] upstream={len(upstream_entries)}, local={len(local_entries)}, "
-        f"deduped={len(deduped)}",
+        f"deduped={len(deduped)}, rule_set_only={len(rule_set_only_entries)}",
         file=sys.stderr,
     )
 
@@ -647,8 +739,14 @@ def build_rule_set(rs: RuleSet) -> int:
 
     out_rs = ROOT / rs.output_rule_set
     out_rs.write_text(
-        header_rule_set(rs, upstream_n, local_n, total_n)
-        + "\n".join(to_ruleset(deduped))
+        header_rule_set(
+            rs,
+            upstream_n,
+            local_n,
+            total_n,
+            rule_set_only=len(rule_set_only_entries),
+        )
+        + "\n".join(to_ruleset(deduped) + rule_set_only_entries)
         + "\n",
         encoding="utf-8",
     )
