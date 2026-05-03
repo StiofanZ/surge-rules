@@ -1,9 +1,10 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-05-03T14:56:15+00:00
+# Generated: 2026-05-03T22:52:20+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
-# Counts: upstream=115467, local=0, total(deduped)=115333
+#   [exclude] excludes/direct/fonts-googleapis.txt
+# Counts: upstream=115467, local=0, total(deduped)=115332, excluded=1
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -36624,7 +36625,6 @@ fontfiles.googleapis.com
 .fontong.com
 .fontoohotels.com
 .fontowns.com
-fonts.googleapis.com
 fonts.gstatic.com
 .fontsfile.com
 .fontshow.com

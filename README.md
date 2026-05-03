@@ -98,7 +98,7 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,P
 ### 自动更新节奏
 
 - 调度：`update.yml` 每天 18:30 UTC（北京时间次日 02:30）运行。
-- 过程：拉取上游 → 合并 `sources/<category>/*.txt` → 去冗余 → 排序写出 `*.txt` + `*.list`。
+- 过程：拉取上游 → 合并 `sources/<category>/*.txt` → 应用 `excludes/<category>/*.txt` → 去冗余 → 排序写出 `*.txt` + `*.list`。
 - 仅当规则内容有实质变化时才提交（`git diff -I '^# Generated: '` 忽略纯时间戳漂移）。
 - 手动触发：GitHub UI → Actions → "Update rule sets" → Run workflow，或 `gh workflow run "Update rule sets"`。
 
@@ -127,6 +127,7 @@ python3 scripts/build.py
 ## 添加新的补充规则
 
 - **扩充已有分类：** 在 `sources/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。例如 `sources/reject/my-custom.txt`。
+- **排除已有分类：** 在 `excludes/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。精确域名只移除同名精确规则；前导点后缀规则会移除该后缀及其子域。
 - **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、`local_dir`（本地子目录）、输出文件名；`parser` 可选 `"domain_set"`、`"surge_rule_set"`、`"adguard"` 或 `"v2fly"`。
 
 推送到 `main` 后 GitHub Actions 会自动合并并发布。
@@ -143,8 +144,11 @@ surge-rules/
 │   │   └── openai-chatgpt.txt       # proxy 本地补充源
 │   ├── reject/                      # reject 本地补充源（可选）
 │   └── direct/                      # direct 本地补充源（可选）
+├── excludes/
+│   └── direct/
+│       └── fonts-googleapis.txt     # direct 排除项
 ├── scripts/
-│   └── build.py                     # 多规则集合并 + AdGuard 解析 + 双格式输出
+│   └── build.py                     # 多规则集合并 + 排除项 + 双格式输出
 └── .github/workflows/
     └── update.yml                   # 每日自动更新
 ```
