@@ -55,6 +55,7 @@ import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCES_DIR = ROOT / "sources"
+EXCLUDES_DIR = ROOT / "excludes"
 
 REQUEST_TIMEOUT_SECONDS = 30
 HTTP_USER_AGENT = "surge-rules-builder/1.0"
@@ -74,6 +75,7 @@ class RuleSet:
     local_dir: str | None  # subdirectory under sources/, or None
     output_domain_set: str  # e.g. "proxy.txt"
     output_rule_set: str  # e.g. "proxy.list"
+    exclude_dir: str | None = None  # subdirectory under excludes/, or None
     rule_set_only_sources: tuple[Source, ...] = ()
 
 
@@ -175,6 +177,7 @@ RULE_SETS: tuple[RuleSet, ...] = (
             ),
         ),
         local_dir="reject",
+        exclude_dir="reject",
         output_domain_set="reject.txt",
         output_rule_set="reject.list",
     ),
@@ -191,6 +194,7 @@ RULE_SETS: tuple[RuleSet, ...] = (
             ),
         ),
         local_dir="direct",
+        exclude_dir="direct",
         output_domain_set="direct.txt",
         output_rule_set="direct.list",
     ),
@@ -559,6 +563,11 @@ def _source_lines(rs: RuleSet, *, include_rule_set_only: bool) -> str:
         if local_root.is_dir():
             for p in sorted(local_root.glob("*.txt")):
                 lines.append(f"#   [local] sources/{rs.local_dir}/{p.name}")
+    if rs.exclude_dir:
+        exclude_root = EXCLUDES_DIR / rs.exclude_dir
+        if exclude_root.is_dir():
+            for p in sorted(exclude_root.glob("*.txt")):
+                lines.append(f"#   [exclude] excludes/{rs.exclude_dir}/{p.name}")
     return "\n".join(lines) + "\n"
 
 
@@ -571,9 +580,12 @@ def _common_header(
     local: int,
     total: int,
     rule_set_only: int = 0,
+    excluded: int = 0,
 ) -> str:
     source_lines = _source_lines(rs, include_rule_set_only=(fmt == "RULE-SET"))
     counts = f"# Counts: upstream={upstream}, local={local}, total(deduped)={total}"
+    if excluded:
+        counts += f", excluded={excluded}"
     if fmt == "RULE-SET" and rule_set_only:
         counts += f", rule_set_only={rule_set_only}"
     counts += "\n"
@@ -586,7 +598,13 @@ def _common_header(
     )
 
 
-def header_domain_set(rs: RuleSet, upstream: int, local: int, total: int) -> str:
+def header_domain_set(
+    rs: RuleSet,
+    upstream: int,
+    local: int,
+    total: int,
+    excluded: int = 0,
+) -> str:
     return (
         _common_header(
             rs=rs,
@@ -595,6 +613,7 @@ def header_domain_set(rs: RuleSet, upstream: int, local: int, total: int) -> str
             upstream=upstream,
             local=local,
             total=total,
+            excluded=excluded,
         )
         + "#\n"
         f"# Use in Surge config: DOMAIN-SET,<url>,{rs.name.upper()}\n"
@@ -611,6 +630,7 @@ def header_rule_set(
     local: int,
     total: int,
     rule_set_only: int = 0,
+    excluded: int = 0,
 ) -> str:
     return (
         _common_header(
@@ -621,6 +641,7 @@ def header_rule_set(
             local=local,
             total=total,
             rule_set_only=rule_set_only,
+            excluded=excluded,
         )
         + "#\n"
         f"# Use in Surge config: RULE-SET,<url>,{rs.name.upper()}\n"
@@ -652,6 +673,37 @@ def _read_local(rs: RuleSet) -> list[str]:
         )
         out.extend(chunk)
     return out
+
+
+def _read_excludes(rs: RuleSet) -> list[str]:
+    """Read local exclusion files. Each file is parsed as DOMAIN-SET."""
+    if not rs.exclude_dir:
+        return []
+    exclude_root = EXCLUDES_DIR / rs.exclude_dir
+    if not exclude_root.is_dir():
+        return []
+    out: list[str] = []
+    for path in sorted(exclude_root.glob("*.txt")):
+        chunk = parse_domain_set(path.read_text(encoding="utf-8"))
+        print(
+            f"[{rs.name}] exclude excludes/{rs.exclude_dir}/{path.name}: {len(chunk)}",
+            file=sys.stderr,
+        )
+        out.extend(chunk)
+    return out
+
+
+def _domain_is_excluded(domain: str, excludes: set[str]) -> bool:
+    bare = domain[1:] if domain.startswith(".") else domain
+    if domain in excludes or bare in excludes:
+        return True
+    for excluded in excludes:
+        if not excluded.startswith("."):
+            continue
+        suffix = excluded[1:]
+        if bare == suffix or bare.endswith("." + suffix):
+            return True
+    return False
 
 
 def _dedupe_preserve_order(lines: list[str]) -> list[str]:
@@ -714,11 +766,18 @@ def build_rule_set(rs: RuleSet) -> int:
     rule_set_only_entries = _dedupe_preserve_order(rule_set_only_entries)
 
     local_entries = _read_local(rs)
-    combined = upstream_entries + local_entries
+    exclude_entries = _read_excludes(rs)
+    exclude_set = set(exclude_entries)
+    combined = [
+        domain
+        for domain in upstream_entries + local_entries
+        if not _domain_is_excluded(domain, exclude_set)
+    ]
     deduped = dedupe(combined)
     print(
         f"[{rs.name}] upstream={len(upstream_entries)}, local={len(local_entries)}, "
-        f"deduped={len(deduped)}, rule_set_only={len(rule_set_only_entries)}",
+        f"excluded={len(exclude_entries)}, deduped={len(deduped)}, "
+        f"rule_set_only={len(rule_set_only_entries)}",
         file=sys.stderr,
     )
 
@@ -730,7 +789,13 @@ def build_rule_set(rs: RuleSet) -> int:
 
     out_ds = ROOT / rs.output_domain_set
     out_ds.write_text(
-        header_domain_set(rs, upstream_n, local_n, total_n)
+        header_domain_set(
+            rs,
+            upstream_n,
+            local_n,
+            total_n,
+            excluded=len(exclude_entries),
+        )
         + "\n".join(deduped)
         + "\n",
         encoding="utf-8",
@@ -745,6 +810,7 @@ def build_rule_set(rs: RuleSet) -> int:
             local_n,
             total_n,
             rule_set_only=len(rule_set_only_entries),
+            excluded=len(exclude_entries),
         )
         + "\n".join(to_ruleset(deduped) + rule_set_only_entries)
         + "\n",
