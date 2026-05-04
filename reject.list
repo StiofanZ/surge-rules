@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-03T14:56:14+00:00
+# Generated: 2026-05-04T19:59:32+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12097, local=0, total(deduped)=11511
+# Counts: upstream=12111, local=0, total(deduped)=11524
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -634,6 +634,7 @@ DOMAIN-SUFFIX,ads-alpha.ewscloud.com
 DOMAIN-SUFFIX,ads-ap-venues.yinzcam.com
 DOMAIN-SUFFIX,ads-api.duolingo.com
 DOMAIN-SUFFIX,ads-api.kidsnote.com
+DOMAIN-SUFFIX,ads-api.twitter.com
 DOMAIN-SUFFIX,ads-api.x.com
 DOMAIN-SUFFIX,ads-bidder-api.twitter.com
 DOMAIN-SUFFIX,ads-bridge.pixocial.com
@@ -1222,6 +1223,7 @@ DOMAIN-SUFFIX,analytics-op.streak.ninja
 DOMAIN-SUFFIX,analytics-prd.aws.wehaa.net
 DOMAIN-SUFFIX,analytics-prod.readtheory.org
 DOMAIN-SUFFIX,analytics-production.hapyak.com
+DOMAIN-SUFFIX,analytics-proxy-501188673100.us-central1.run.app
 DOMAIN-SUFFIX,analytics-script.ad-shield.io
 DOMAIN-SUFFIX,analytics-sdk.yle.fi
 DOMAIN-SUFFIX,analytics-server.gimbal.com
@@ -2886,6 +2888,7 @@ DOMAIN-SUFFIX,coinpot.co
 DOMAIN-SUFFIX,cointent.com
 DOMAIN-SUFFIX,coinzillatag.com
 DOMAIN-SUFFIX,col.surfside.io
+DOMAIN-SUFFIX,colbwxlsfenwn.website
 DOMAIN-SUFFIX,coll.lovense.com
 DOMAIN-SUFFIX,collarity.com
 DOMAIN-SUFFIX,collect.4gtv.tv
@@ -3294,6 +3297,7 @@ DOMAIN-SUFFIX,cwt.citywire.info
 DOMAIN-SUFFIX,cxdcn9c.fjshxjs.cn
 DOMAIN-SUFFIX,cxense.com
 DOMAIN-SUFFIX,cxhub.ru
+DOMAIN-SUFFIX,cxlog.shinhansec.com
 DOMAIN-SUFFIX,cy-pr.com
 DOMAIN-SUFFIX,cya1t.net
 DOMAIN-SUFFIX,cya2.net
@@ -3861,7 +3865,6 @@ DOMAIN-SUFFIX,dsbahmgppc0j4.cloudfront.net
 DOMAIN-SUFFIX,dsh1ct2zrfakt.cloudfront.net
 DOMAIN-SUFFIX,dsmmadvantage.com
 DOMAIN-SUFFIX,dsp-adcreative.mobshark.net
-DOMAIN-SUFFIX,dsp-api.moloco.com
 DOMAIN-SUFFIX,dsp-service.admatic.de
 DOMAIN-SUFFIX,dsp.groupminteraction.ru
 DOMAIN-SUFFIX,dsp.logly.co.jp
@@ -4832,6 +4835,7 @@ DOMAIN-SUFFIX,gostats.vn
 DOMAIN-SUFFIX,gotchosen.com
 DOMAIN-SUFFIX,goto.simplywall.st
 DOMAIN-SUFFIX,goto.suno.com
+DOMAIN-SUFFIX,gotoda.co
 DOMAIN-SUFFIX,gourmetads.com
 DOMAIN-SUFFIX,govisibl.io
 DOMAIN-SUFFIX,govmetric.com
@@ -5539,6 +5543,7 @@ DOMAIN-SUFFIX,j927.statnews.com
 DOMAIN-SUFFIX,ja.gamersky.com
 DOMAIN-SUFFIX,ja1.gamersky.com
 DOMAIN-SUFFIX,ja2.gamersky.com
+DOMAIN-SUFFIX,jackknifemonuments.com
 DOMAIN-SUFFIX,jads.co
 DOMAIN-SUFFIX,jaeger.netmonet.co
 DOMAIN-SUFFIX,jambojar.com
@@ -6064,12 +6069,14 @@ DOMAIN-SUFFIX,log002.commutil.kr
 DOMAIN-SUFFIX,log1.apkomega.com
 DOMAIN-SUFFIX,log1.cmpassport.com
 DOMAIN-SUFFIX,log1.perfectworldgames.com
+DOMAIN-SUFFIX,log1.pwsdk.com
 DOMAIN-SUFFIX,log1.wanmei.com
 DOMAIN-SUFFIX,log1.wtlogin.qq.com
 DOMAIN-SUFFIX,log16-normal-us-ttp.capcutapi.us
 DOMAIN-SUFFIX,log2.ihubgo.info
 DOMAIN-SUFFIX,log2.musical.ly
 DOMAIN-SUFFIX,log2.perfectworldgames.com
+DOMAIN-SUFFIX,log2.pwsdk.com
 DOMAIN-SUFFIX,log2.radiko.jp
 DOMAIN-SUFFIX,log2.sina.cn
 DOMAIN-SUFFIX,log2.spotify.com
@@ -6688,6 +6695,7 @@ DOMAIN-SUFFIX,mobile-events.eservice.emarsys.net
 DOMAIN-SUFFIX,mobile-production.content-square.net
 DOMAIN-SUFFIX,mobile.slgnt.eu
 DOMAIN-SUFFIX,mobileads.google.com
+DOMAIN-SUFFIX,mobileadvertiser.yanosik.pl
 DOMAIN-SUFFIX,mobileapptracking.com
 DOMAIN-SUFFIX,mobilebanner.ru
 DOMAIN-SUFFIX,mobileconfig.sascdn.com
@@ -6712,6 +6720,7 @@ DOMAIN-SUFFIX,mofox.com
 DOMAIN-SUFFIX,moguldom.com
 DOMAIN-SUFFIX,mokuz.ru
 DOMAIN-SUFFIX,mollyflow.com
+DOMAIN-SUFFIX,moloco.com
 DOMAIN-SUFFIX,momowa.momoshop.com.tw
 DOMAIN-SUFFIX,mon-sg.capcutapi.com
 DOMAIN-SUFFIX,mon-va.byteoversea.com
@@ -6856,6 +6865,7 @@ DOMAIN-SUFFIX,mv.outbrain.com
 DOMAIN-SUFFIX,mva1.maeva.com
 DOMAIN-SUFFIX,mvad.com
 DOMAIN-SUFFIX,mvtracker.com
+DOMAIN-SUFFIX,mxana.tacool.com
 DOMAIN-SUFFIX,mxaserver.mxplay.com
 DOMAIN-SUFFIX,mxcdn.net
 DOMAIN-SUFFIX,mxpl.9gag.com
@@ -7100,6 +7110,7 @@ DOMAIN-SUFFIX,ob.cheqzone.com
 DOMAIN-SUFFIX,ob.esnlocco.com
 DOMAIN-SUFFIX,ob.leap.app
 DOMAIN-SUFFIX,obnoljac.com
+DOMAIN-SUFFIX,obs.mts.ru
 DOMAIN-SUFFIX,observare.de
 DOMAIN-SUFFIX,observerapp.com
 DOMAIN-SUFFIX,obseu.netgreencolumn.com
@@ -7218,6 +7229,7 @@ DOMAIN-SUFFIX,openxmarket.asia
 DOMAIN-SUFFIX,ophan.theguardian.com
 DOMAIN-SUFFIX,oply.hearstapps.com
 DOMAIN-SUFFIX,oproi.com
+DOMAIN-SUFFIX,opt.mocortech.com
 DOMAIN-SUFFIX,opt8.co
 DOMAIN-SUFFIX,optaim.com
 DOMAIN-SUFFIX,optimeeze.appspot.com
@@ -8569,6 +8581,7 @@ DOMAIN,sentry.dev-my.com
 DOMAIN,sentry.dev-my.games
 DOMAIN-SUFFIX,sentry.eks.hoyoverse.com
 DOMAIN,sentry.hetzner.company
+DOMAIN,sentry.iptv.rt.ru
 DOMAIN,sentry.kontur.host
 DOMAIN,sentry.mindbox.ru
 DOMAIN-SUFFIX,sentry.music.163.com

@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-03T14:56:02+00:00
+# Generated: 2026-05-04T19:59:14+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30222, local=27, total(deduped)=25451
+# Counts: upstream=30219, local=27, total(deduped)=25452
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -6543,6 +6543,7 @@ deutschewelle.h-cdn.com
 .digitaldesire.com
 .digitalhub.com
 .digitalid.ch
+.digitalocean-ui.com
 .digitalocean.com
 .digitaloceanspaces.com
 .digitalpack.com
