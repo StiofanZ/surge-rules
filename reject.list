@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-04T19:59:32+00:00
+# Generated: 2026-05-05T19:55:28+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12111, local=0, total(deduped)=11524
+# Counts: upstream=12114, local=0, total(deduped)=11527
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4311,6 +4311,7 @@ DOMAIN-SUFFIX,events1.avantisvideo.com
 DOMAIN-SUFFIX,eventsapi.grocerkey.com
 DOMAIN-SUFFIX,eventstream.dodopizza.com
 DOMAIN-SUFFIX,eventsv2balanced.malpagames.com
+DOMAIN-SUFFIX,eventtrace.ru
 DOMAIN-SUFFIX,eventtracking.hubapi.com
 DOMAIN-SUFFIX,everestjs.net
 DOMAIN-SUFFIX,everestop.io
@@ -5698,6 +5699,7 @@ DOMAIN-SUFFIX,krxd.net
 DOMAIN-SUFFIX,ktrackdata.com
 DOMAIN-SUFFIX,kts.visitstats.com
 DOMAIN-SUFFIX,kueezrtb.com
+DOMAIN-SUFFIX,kujsc5.ru
 DOMAIN-SUFFIX,kumo.network-n.com
 DOMAIN-SUFFIX,kupona.de
 DOMAIN-SUFFIX,kuyun.com
@@ -6296,6 +6298,7 @@ DOMAIN-SUFFIX,magiq.com
 DOMAIN-SUFFIX,magnetmail1.net
 DOMAIN-SUFFIX,magnetrack.klangoo.com
 DOMAIN-SUFFIX,magnify360.com
+DOMAIN-SUFFIX,magtorr.com
 DOMAIN-SUFFIX,mail-ads.google.com
 DOMAIN-SUFFIX,mailderef.mail.com
 DOMAIN-SUFFIX,mailstat.us

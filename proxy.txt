@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-04T19:59:14+00:00
+# Generated: 2026-05-05T19:55:10+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30219, local=27, total(deduped)=25452
+# Counts: upstream=30311, local=27, total(deduped)=25544
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1761,6 +1761,8 @@ angle.com.tw
 .anthemthegame.com
 .anthonycalzadilla.com
 .anthropic.com
+.antiphishing.nl
+.antiphishing.ru
 .antiwave.net
 .antpool.com
 .anudetube.com
@@ -2738,6 +2740,7 @@ api-p.videomarket.jp
 .azattyk.org
 .azattyq.org
 .azatutyun.am
+.azbukainterneta.ru
 .aziani.com
 .azirevpn.com
 .aznude.com
@@ -2788,6 +2791,7 @@ api-p.videomarket.jp
 .b-ok.global
 .b-ok.org
 .b.hatena.ne.jp
+.b2c-digest.ru
 .b3boos.com
 .b6b33.com
 .baazee.com
@@ -2848,6 +2852,7 @@ api-p.videomarket.jp
 .bamtoki.com
 .banan.tv
 .banana-vpn.com
+.bananacall.ru
 .banatfun.com
 .band.us
 .bandag.cc
@@ -3272,6 +3277,8 @@ beck-online.beck.de
 .beeline.tv
 .beepool.com
 .beepool.org
+.beesbfl.ru
+.beescrm.ru
 .beevpn.com
 .beforeigners.com
 .befuck.com
@@ -3510,6 +3517,7 @@ beck-online.beck.de
 .bimbolive.com
 .bimglue.com
 .bimlibrary.com
+.bimsaas.ru
 .bimseeker.com
 .bimsource.com
 .bimworld.com
@@ -4724,6 +4732,7 @@ bybit.ada.support
 .calgoncarbon.com
 .calgonit.com
 .callabitch.org
+.callbackkiller.com
 .callersbane.com
 .callhulu.com
 .cam-duct.com
@@ -4953,6 +4962,7 @@ bybit.ada.support
 .cbbank.com.mm
 .cbc.ca
 .cbi.ir
+.cbkiller.com
 .cbm.com.mm
 .cbn.com.br
 .cbs.com
@@ -5080,6 +5090,8 @@ cdn.workos.com
 .cerebras.ai
 .cern
 .cern.ch
+.cert-gib.com
+.cert-gib.ru
 .certificat2.com
 .certificate-transparency.org
 .certificate.revocationcheck.com
@@ -5997,6 +6009,7 @@ crl.versign.net
 .cy22.tv
 .cyber-bay.info
 .cyber-bay.org
+.cybercrimecon.com
 .cyberghostvpn.com
 .cybermondaybeats4sale.com
 .cybersport.ru
@@ -7550,6 +7563,9 @@ dl.begellhouse.com
 .elgoog.im
 elib.maruzen.co.jp
 .elifesciences.org
+.eligens.cl
+.eligens.com.br
+.eligens.io
 .elite.com
 .elitebabes.com
 .eliteindianporn.com
@@ -7671,6 +7687,15 @@ elib.maruzen.co.jp
 .envato-static.com
 .envato.com
 .envatousercontent.com
+.envybox.company
+.envybox.family
+.envybox.io
+.envybox.kg
+.envybox.su
+.envycdp.com
+.envycdp.ru
+.envycrm.com
+.envyday.ru
 .eotarchive.org
 .epicbrowser.com
 .epicevents.gg
@@ -7969,6 +7994,9 @@ events.statsigapi.net
 .f2pool.com
 f3b7q2p3.ssl.hwcdn.net
 .f5pf.com
+.f6.dev
+.f6.ru
+.f6.security
 .f6988.com
 .f8.com
 .f95zone.to
@@ -7989,6 +8017,8 @@ f3b7q2p3.ssl.hwcdn.net
 .facboox.com
 .faccebook.com
 .faccebookk.com
+.facct.email
+.facct.ru
 .facdbook.com
 .facdebook.com
 .face-book.com
@@ -9240,6 +9270,7 @@ forwarder.workos.com
 .futuhn.com
 .futuholdings.com
 .futunited.com
+.future-cs.ru
 .futuremessage.org
 .futureofbritishmanufacturing.com
 .futureofbusinesssurvey.org
@@ -9257,6 +9288,10 @@ forwarder.workos.com
 .fzdm.com
 .fzdshare.net
 .g-area.org
+.g-ib.ae
+.g-ib.ru
+.g-ib.sg
+.g-ib.us
 .g-queen.com
 .g-technology.com
 .g-tun.com
@@ -9462,12 +9497,18 @@ forwarder.workos.com
 .gen.lib.rus.ec
 .gendai.net
 .generated.photos
+.genetic-technologies.am
 .geneticconstructor.com
 .geng8cn.xyz
 .gengba-av.mom
 .gengba.cc
 .genius.com
 .genkai-hounyo.com
+.genotek.am
+.genotek.es
+.genotek.eu
+.genotek.health
+.genotek.ru
 .genshin-porn.com
 .genshinh.com
 .genshinimpact.com
@@ -9592,6 +9633,10 @@ forwarder.workos.com
 .ghut.org
 .giantessbooru.com
 .giantessnight.com
+.gib-global.com
+.gib.sg
+.gibdev.net
+.gibtds.ru
 .gid.ru
 .giffgaff.com
 .giffgaff.design
@@ -10241,7 +10286,18 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .grooby.com
 .groq.com
 .ground.news
+.group-ib.ae
+.group-ib.co.uk
+.group-ib.com
+.group-ib.de
+.group-ib.eu
+.group-ib.ru
+.group-ib.sg
+.group-ib.us
 .groupfun.com
+.groupib.ae
+.groupib.sg
+.groupib.us
 .groups.com
 .grss-ieee.org
 .grupobmw.com
@@ -11572,6 +11628,9 @@ i.jeded.com
 .idea-server.com
 .ideal-teens.com
 .ideapocket.com
+.ideco.dev
+.ideco.ru
+.idecosoftware.ru
 .idelreal.org
 .identi.ca
 .identrust.co.uk
@@ -11961,6 +12020,7 @@ ingest.apple-studies.com
 .innovations-i.com
 .inoreader.com
 .inote.tw
+.inplat.ru
 .inporn.com
 .inquirer.net
 .insecam.org
@@ -13219,6 +13279,7 @@ ingest.apple-studies.com
 .kijjiji.ca
 .kik.com
 .kikdirty.com
+.killercb.ru
 .killwall.com
 .kilmeadeandfriends.com
 .kimchi.tv
@@ -13274,6 +13335,7 @@ ingest.apple-studies.com
 .kinokuniya.com
 .kinopoisk.ru
 .kinorium.com
+.kion.ru
 .kir2kos.net
 .kirbysepicyarn.com
 .kirbysuperstarultra.com
@@ -14430,6 +14492,9 @@ medone-education.thieme.com
 .mega.nz
 .megacamz.com
 .megafilmporno.com
+.megafon.com
+.megafon.ru
+.megafonpro.ru
 .megalodon.jp
 .megamarket.ru
 .megamarket.tech
@@ -14521,6 +14586,7 @@ medone-education.thieme.com
 .mfk-t-finance.ru
 .mfmf.club
 .mfxmedia.com
+.mgfn.ru
 .mgo-images.com
 .mgo.com
 .mgoon.com
@@ -15261,6 +15327,7 @@ medone-education.thieme.com
 .moozporn.com
 .moptt.tw
 .morazzia.com
+.more.tv
 .moreheadphones.com
 .moresci.sale
 .morewithautodesk.com
@@ -15395,7 +15462,11 @@ medone-education.thieme.com
 .mt0011.site
 .mtao.fun
 .mthruf.com
+.mts-ws.net
+.mts.ru
+.mtsbank.ru
 .mtsdengi.ru
+.mtsmedia.ru
 .mtt.org
 .mtvnservices.com
 .mubi.com
@@ -15525,6 +15596,7 @@ muse.jhu.edu
 .myds.me
 .myebay.com
 .myeclipseide.com
+.myenvy.ru
 .myfappening.org
 .myfavoritearcade.com
 .myfbfans.com
@@ -15591,6 +15663,7 @@ muse.jhu.edu
 .myminiso.com
 .mymmode.com
 .mymoe.moe
+.mymts.ru
 .mymusclevideo.com
 .mynavi.jp
 .mynetname.net
@@ -16739,6 +16812,7 @@ ntppool2.time.nl
 .omorashi.org
 .omscr.com
 .omtrdc.net
+.on-media.ru
 .on.cc
 .on.here
 .on2.com
@@ -18552,6 +18626,7 @@ public-us-pingsx.api.clonoth.com
 .quixel.com
 .quixel.se
 .quiz.directory
+.quizlink.ru
 .qumingwz.com
 .quora.com
 .quoracdn.net
@@ -18869,6 +18944,7 @@ public-us-pingsx.api.clonoth.com
 .renzhe.cloud
 .repe21.com
 .repo.new
+.report-megafon.ru
 .repotama.com
 .repsils.no
 .repsneakermall.com
@@ -18889,6 +18965,7 @@ public-us-pingsx.api.clonoth.com
 .respawnbyrazer.com
 .restnproducts.ru
 .restream-media.net
+.restream.ru
 .rethink.net
 .retimer.com
 .retroclassicporn.com
@@ -19035,6 +19112,7 @@ roovza.skadsdk.appsflyersdk.com
 .rosemarydoll.com
 .roshy.tv
 .rostaxi.org
+.rostelecom.ru
 .rou.video
 .roudao6.buzz
 .roudaosp.cc
@@ -19085,6 +19163,7 @@ rsshub2.asailor.org
 .rssmeme.com
 .rstatic.net
 .rt.com
+.rt.ru
 .rtalabel.org
 .rtbcdn.ru
 .rthk.hk
@@ -19165,6 +19244,7 @@ rum.browser-intake-datadoghq.com
 .s2stagehance.com
 .s81c.com
 .s8ds5gfm.xyz
+.saas-support.com
 .saasexch.cc
 .saasexch.co
 .saasexch.com
@@ -19340,6 +19420,7 @@ sberpro.vedomosti.ru
 .scandalplanet.com
 .scanlover.com
 .scanservice1.qcpp1.net
+.scartel.ru
 .scat-enema.com
 .scat-japan.com
 .scat-shop.net
@@ -21020,6 +21101,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .t.co
 .t.finance
 .t.me
+.t2.ru
 .t66y.com
 .taa-usa.org
 .taaze.tw
@@ -21192,6 +21274,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .tehnodom.com
 .tehrantimes.com
 .tejaratbank.ir
+.tele2.ru
 .telebay.com
 .telega.info
 .telega.me
@@ -22059,6 +22142,7 @@ tesla-cdn.thron.com
 .tvmedia.net.au
 .tvmost.com.hk
 .tvnaviweb.jp
+.tvoyodbo.online
 .tvpromise.com
 .tvunetworks.com
 .tw-blog.com
@@ -23681,6 +23765,7 @@ vsmarketplacebadge.apphb.com
 .whimn.com.au
 .whisolutions.com
 .whispersystems.org
+.whitesaas.com
 .whitexxxtube.com
 .who.int
 .whoer.net
@@ -23843,6 +23928,7 @@ widgets.stripst.com
 .wingy.site
 .winhec.com
 .winhec.net
+.wink.am
 .wink.ru
 .winning11.com
 .wintermute.com
@@ -24276,13 +24362,17 @@ ws.audioscrobbler.com
 .xn--74q434dwff.com
 .xn--74q434dwff.net
 .xn--7hv594h.com
+.xn--80a9a4b.xn--p1ai
 .xn--80aafgovrgbc7am.xn--p1ai
 .xn--80acbjgmges7ca.xn--p1ai
 .xn--80acbjgsdq2cl.xn--p1ai
+.xn--80aj3b.xn--p1ai
 .xn--80aqcf7a6do.com
+.xn--80arpq.xn--p1ai
 .xn--80asgb.xn--p1ai
 .xn--8uq428d76d.tokyo
 .xn--90ab.com
+.xn--90absjljw3g.xn--p1ai
 .xn--90aifd0az.shop
 .xn--90aifd0azb.xn--p1acf
 .xn--90wwvt03e.com
@@ -24958,6 +25048,8 @@ yangzhi.app
 .yostar.co.jp
 .yostar.net
 .yostarplat.com
+.yota.ru
+.yotagamer.ru
 .you-get.org
 .you.com
 .youassporn.com
