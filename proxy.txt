@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-06T20:05:34+00:00
+# Generated: 2026-05-07T19:57:26+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30312, local=27, total(deduped)=25544
+# Counts: upstream=30400, local=27, total(deduped)=25576
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -702,6 +702,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .acer.com
 .acesofthunder.net
 .acevpn.com
+.acg.mn
 .acg.rip
 .acg18.me
 .acgbox.org
@@ -1777,6 +1778,7 @@ angle.com.tw
 .anypornsexxx.com
 .anysex.com
 .anyshemale.com
+.anythingllm.com
 .anyxxx.me
 .anyxxx.pro
 .ao3.org
@@ -3648,6 +3650,7 @@ beck-online.beck.de
 .blackvpn.com
 .blaoshi.cc
 .blazor.net
+.bleepingcomputer.com
 .blender.org
 .blink.org
 .blinkload.zone
@@ -4300,6 +4303,7 @@ blizzard.nefficient.co.kr
 .boomba.club
 .boombeach.com
 .boomerang.com
+.boomplay.com
 .booru.org
 .boosty.to
 .booth.pm
@@ -4731,6 +4735,7 @@ bybit.ada.support
 .calgoncarbon-china.com
 .calgoncarbon.com
 .calgonit.com
+.calibre-ebook.com
 .callabitch.org
 .callbackkiller.com
 .callersbane.com
@@ -5744,7 +5749,6 @@ cisco.evergage.com
 .content.googleadapis.com
 .contentful.com
 .contest.com
-.contests.twilio.com
 .convrgencegame.com
 .cookiechoices.org
 .cookielaw.org
@@ -5925,6 +5929,7 @@ crl.versign.net
 .ctfassets.net
 .ctinets.com
 .ctinews.com
+.ctinsider.com
 .ctitv.com.tw
 .ctotires.com
 .ctowc.org
@@ -7501,6 +7506,7 @@ dl.begellhouse.com
 .edgekey.net
 .edgemeplease.com
 .edgesuite.net
+.edigest.hk
 .edisebay.com
 .editorx.com
 .edninfo.com
@@ -10880,6 +10886,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .hitomi.la
 .hitun.io
 .hitxhot.com
+.hive.blog
 .hiveon.net
 .hjb246.top
 .hjb7e9.top
@@ -11527,6 +11534,7 @@ i.jeded.com
 .ibradome.com
 .ibvpn.com
 .icashpassport.com.mx
+.iccf.com
 .icedrive.net
 .icegay.tv
 .icegaytube.tv
@@ -11993,6 +12001,7 @@ imperial.insendi.com
 .infolinker.com.tw
 .infoq.jp
 .informs.org
+.infosec.exchange
 .infotimes.com.tw
 .infowars.com
 .infowarsmedia.com
@@ -13209,6 +13218,7 @@ ingest.apple-studies.com
 .kaspersky.se
 .kastatic.org
 .katestube.com
+.kathmandupost.com
 .kavkazr.com
 .kawaiikawaii.jp
 .kawase.com
@@ -13565,6 +13575,7 @@ ingest.apple-studies.com
 .lematin.ch
 .lemmynsfw.com
 .lemoncams.com
+.lemonde.fr
 .lencr.org
 .lenkino.xxx
 .lenporno.net
@@ -14469,6 +14480,7 @@ mdn.mozillademos.org
 .mediaclip.jp
 .mediafiles-cisco.com
 .mediafreakcity.com
+.mediamatters.org
 .mediasama.com
 .mediawiki.org
 .medical-reserve.co.jp
@@ -15118,6 +15130,7 @@ medone-education.thieme.com
 .mizzmona.com
 .mji.rip
 .mjj.rip
+.mjj.today
 .mjlsh.usc.cuhk.edu.hk
 .mjv-art.org
 .mk.shrimpia.network
@@ -16000,6 +16013,7 @@ muse.jhu.edu
 .newsexxxx.com
 .newsfeed.com
 .newsgawakaru.com
+.newshub.co.nz
 .newslicensing.co.uk
 .newsmart.jp
 .newsmax.com
@@ -16012,6 +16026,7 @@ muse.jhu.edu
 .newstamago.com
 .newstapa.org
 .newstatesman.com
+.newstimes.com
 .newsukadops.com
 .newsupermariobrosu.com
 .newsweek.com
@@ -16068,6 +16083,7 @@ muse.jhu.edu
 .nflxso.net
 .nflxvideo.net
 .nfsc.global
+.nfsc.press
 .nfscdict.com
 .nfscofficial.com
 .nfsworld.com
@@ -16824,6 +16840,7 @@ ntppool2.time.nl
 .onapp.com
 .onbeatsbydresale.com
 .oncars.in
+.ondigitalocean.com
 .one.one.one
 .one889.app
 .oneapi.com
@@ -16941,6 +16958,7 @@ ood.opsource.net
 .opensource.guide
 .opensourceinsight.dev
 .opensourceinsights.dev
+.openspec.dev
 .openssl.org
 .openstreetmap.com
 .openstreetmap.net
@@ -17051,6 +17069,7 @@ ood.opsource.net
 .overapple.com
 .overcast.fm
 .overdaily.org
+.overdrive.com
 .overleaf.com
 .overplay.net
 .oversea.istarshine.com
@@ -17485,6 +17504,7 @@ ood.opsource.net
 .pemulihan.or.id
 .pen.io
 .pendrivelinux.com
+.penguin.com.au
 .penisbot.com
 .pensions-expert.com
 .penthouse.com
@@ -19171,6 +19191,7 @@ rsshub2.asailor.org
 .rti.org.tw
 .rti.tw
 .rtings.com
+.rts.ch
 .ruby-lang.org
 .rubygems.org
 .rude.com
@@ -20951,6 +20972,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .supplybestjerseys.com
 .support-uber.com
 .supportfacebook.com
+.supr.cl
 .supremacy.com
 .supremacy.net
 .suprememastertv.com
@@ -21374,6 +21396,7 @@ tesla-cdn.thron.com
 .tgirlcentral.com
 .tgirlpostop.com
 .tgp6.com
+.tgstat.com
 .tgtube.com
 .tgutube.com
 .thai-xxx.com
@@ -21391,6 +21414,7 @@ tesla-cdn.thron.com
 .the-japan-news.com
 .the-m-festival.com
 .the-monster-beats.com
+.the-sun.com
 .the-tls.co.uk
 .the123d.com
 .theaffairs.com
@@ -21536,6 +21560,7 @@ tesla-cdn.thron.com
 .theuab.net
 .theverge.com
 .thevirtualsexreview.com
+.theweek.com
 .theweek.in
 .thewgo.org
 .thewirechina.com
@@ -22136,6 +22161,7 @@ tesla-cdn.thron.com
 .tvbs.com.tw
 .tvbusa.com
 .tvbweekly.com
+.tvdy1.com
 .tver.co.jp
 .tver.jp
 .tvigle.ru
@@ -22189,6 +22215,8 @@ tesla-cdn.thron.com
 .twiffo.com
 .twifuli.com
 .twiggit.org
+.twilio.com
+.twilio.jp
 .twimg.com
 .twinkboyfriends.tv
 .twinkspornos.com
@@ -22265,6 +22293,7 @@ tesla-cdn.thron.com
 .typora.io
 .tyre-cadcam.com
 .tyrecadcam.com
+.tytch.com
 .tytng189.com
 .tytporno.online
 .u.nu
@@ -22468,7 +22497,9 @@ ubisoft.siteintercept.qualtrics.com
 .userapi.ru
 .usercentrics.eu
 .usercontent.dev
+.userdrive.org
 .userpxt.io
+.usersdrive.com
 .usertrust.com
 .usfk.mil
 .usma.edu
@@ -24037,6 +24068,7 @@ widgets.stripst.com
 .worldescortindex.com
 .worldflipper.jp
 .worldhack.com
+.worldjournal.com
 .worldofslaves.io
 .worldoftanks.com
 .worldoftanks.eu

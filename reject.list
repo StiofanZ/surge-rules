@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-06T20:05:53+00:00
+# Generated: 2026-05-07T19:57:47+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12117, local=0, total(deduped)=11530
+# Counts: upstream=12120, local=0, total(deduped)=11533
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4867,6 +4867,7 @@ DOMAIN-SUFFIX,gridsumdissector.com
 DOMAIN-SUFFIX,grmtech.net
 DOMAIN-SUFFIX,groovinews.com
 DOMAIN-SUFFIX,groovy-manul.pikapod.net
+DOMAIN-SUFFIX,grouchy-lay.com
 DOMAIN-SUFFIX,grow.powerstep.com
 DOMAIN-SUFFIX,growin.cn
 DOMAIN-SUFFIX,growingio.cn
@@ -6633,6 +6634,7 @@ DOMAIN-SUFFIX,ml314.com
 DOMAIN-SUFFIX,mlb.did.ijinshan.com
 DOMAIN-SUFFIX,mlclick.com
 DOMAIN-SUFFIX,mllog.jd.com
+DOMAIN-SUFFIX,mlm-tracking.meinestadt.de
 DOMAIN-SUFFIX,mlog.hiido.com
 DOMAIN-SUFFIX,mm.actionlink.jp
 DOMAIN-SUFFIX,mm.wxc.cc
@@ -6719,6 +6721,7 @@ DOMAIN-SUFFIX,mobuppsweb.online
 DOMAIN-SUFFIX,mobwithad.com
 DOMAIN-SUFFIX,mobylog.jp
 DOMAIN-SUFFIX,mochibot.com
+DOMAIN-SUFFIX,mod.leftnewsex.com
 DOMAIN-SUFFIX,moduleanalysis.aliexpress.com
 DOMAIN-SUFFIX,mofox.com
 DOMAIN-SUFFIX,moguldom.com
