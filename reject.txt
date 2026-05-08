@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-07T19:57:47+00:00
+# Generated: 2026-05-08T19:49:37+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12120, local=0, total(deduped)=11533
+# Counts: upstream=12127, local=0, total(deduped)=11539
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -145,6 +145,7 @@
 .a.deadlinefunnel.com
 .a.dlads.cn
 .a.flux.jp
+.a.gripi.online
 .a.hit360.tech
 .a.hstrck.com
 .a.kupibilet.ru
@@ -635,6 +636,7 @@ adblogger.vk.ru
 .ads-api.twitter.com
 .ads-api.x.com
 .ads-bidder-api.twitter.com
+.ads-blocker-1.static-cloudflare.workers.dev
 .ads-bridge.pixocial.com
 .ads-cdn.hopper.com
 .ads-chunks.prod.ihrhls.com
@@ -1069,6 +1071,7 @@ agency-adv.ozon.ru
 .ak.oalsauwy.net
 .akanoo.com
 .akavita.com
+.aki-gb-sdklog.kurogames.net
 .akn.analytics.autodesk.com
 .akstat.com
 .akstat.io
@@ -2994,7 +2997,6 @@ click.rustore.ru
 .confiant-integrations.net
 .config-factory.com
 .config.emb-api.com
-.config.htplayground.com
 .config.inmobi.com
 .config.jpush.cn
 .config.safedk.com
@@ -4537,6 +4539,7 @@ error-tracking.megamarket.tech
 .free-counters.net
 .free-website-hit-counters.com
 .freeadd.me
+.freebestgames2025.com
 .freebloghitcounter.com
 .freecounter.it
 .freecountercode.com
@@ -5140,6 +5143,7 @@ google-analytics-suite.ozon.ru
 .hsehk.cn
 .hsrdkt.com
 .htagpa.tech
+.htplayground.com
 .htrace.wetvinfo.com
 .httpdns.bilivideo.com
 .httpool.com
@@ -5704,6 +5708,7 @@ google-analytics-suite.ozon.ru
 .kupona.de
 .kuyun.com
 .kvaedit.site
+.kw0xlh4wig.com
 .l.da-te.jp
 .l.ffsagami.com
 .l.ffx.io
@@ -9466,6 +9471,7 @@ stats.telega.info
 .sts.batmobi.net
 .sts.eccmp.com
 .stt.nimbusweb.me
+.stutterschuyt.com
 .style.onvz.nl
 .su.addthis.com
 .sub2tech.com

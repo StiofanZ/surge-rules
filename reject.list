@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-07T19:57:47+00:00
+# Generated: 2026-05-08T19:49:37+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12120, local=0, total(deduped)=11533
+# Counts: upstream=12127, local=0, total(deduped)=11539
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -147,6 +147,7 @@ DOMAIN-SUFFIX,a.ddli.jp
 DOMAIN-SUFFIX,a.deadlinefunnel.com
 DOMAIN-SUFFIX,a.dlads.cn
 DOMAIN-SUFFIX,a.flux.jp
+DOMAIN-SUFFIX,a.gripi.online
 DOMAIN-SUFFIX,a.hit360.tech
 DOMAIN-SUFFIX,a.hstrck.com
 DOMAIN-SUFFIX,a.kupibilet.ru
@@ -637,6 +638,7 @@ DOMAIN-SUFFIX,ads-api.kidsnote.com
 DOMAIN-SUFFIX,ads-api.twitter.com
 DOMAIN-SUFFIX,ads-api.x.com
 DOMAIN-SUFFIX,ads-bidder-api.twitter.com
+DOMAIN-SUFFIX,ads-blocker-1.static-cloudflare.workers.dev
 DOMAIN-SUFFIX,ads-bridge.pixocial.com
 DOMAIN-SUFFIX,ads-cdn.hopper.com
 DOMAIN-SUFFIX,ads-chunks.prod.ihrhls.com
@@ -1071,6 +1073,7 @@ DOMAIN-SUFFIX,ajur.info
 DOMAIN-SUFFIX,ak.oalsauwy.net
 DOMAIN-SUFFIX,akanoo.com
 DOMAIN-SUFFIX,akavita.com
+DOMAIN-SUFFIX,aki-gb-sdklog.kurogames.net
 DOMAIN-SUFFIX,akn.analytics.autodesk.com
 DOMAIN-SUFFIX,akstat.com
 DOMAIN-SUFFIX,akstat.io
@@ -2996,7 +2999,6 @@ DOMAIN-SUFFIX,conff.dc.oppomobile.com
 DOMAIN-SUFFIX,confiant-integrations.net
 DOMAIN-SUFFIX,config-factory.com
 DOMAIN-SUFFIX,config.emb-api.com
-DOMAIN-SUFFIX,config.htplayground.com
 DOMAIN-SUFFIX,config.inmobi.com
 DOMAIN-SUFFIX,config.jpush.cn
 DOMAIN-SUFFIX,config.safedk.com
@@ -4539,6 +4541,7 @@ DOMAIN-SUFFIX,free-counters.co.uk
 DOMAIN-SUFFIX,free-counters.net
 DOMAIN-SUFFIX,free-website-hit-counters.com
 DOMAIN-SUFFIX,freeadd.me
+DOMAIN-SUFFIX,freebestgames2025.com
 DOMAIN-SUFFIX,freebloghitcounter.com
 DOMAIN-SUFFIX,freecounter.it
 DOMAIN-SUFFIX,freecountercode.com
@@ -5142,6 +5145,7 @@ DOMAIN-SUFFIX,hscollectedforms.net
 DOMAIN-SUFFIX,hsehk.cn
 DOMAIN-SUFFIX,hsrdkt.com
 DOMAIN-SUFFIX,htagpa.tech
+DOMAIN-SUFFIX,htplayground.com
 DOMAIN-SUFFIX,htrace.wetvinfo.com
 DOMAIN-SUFFIX,httpdns.bilivideo.com
 DOMAIN-SUFFIX,httpool.com
@@ -5706,6 +5710,7 @@ DOMAIN-SUFFIX,kumo.network-n.com
 DOMAIN-SUFFIX,kupona.de
 DOMAIN-SUFFIX,kuyun.com
 DOMAIN-SUFFIX,kvaedit.site
+DOMAIN-SUFFIX,kw0xlh4wig.com
 DOMAIN-SUFFIX,l.da-te.jp
 DOMAIN-SUFFIX,l.ffsagami.com
 DOMAIN-SUFFIX,l.ffx.io
@@ -9468,6 +9473,7 @@ DOMAIN-SUFFIX,strs.jp
 DOMAIN-SUFFIX,sts.batmobi.net
 DOMAIN-SUFFIX,sts.eccmp.com
 DOMAIN-SUFFIX,stt.nimbusweb.me
+DOMAIN-SUFFIX,stutterschuyt.com
 DOMAIN-SUFFIX,style.onvz.nl
 DOMAIN-SUFFIX,su.addthis.com
 DOMAIN-SUFFIX,sub2tech.com

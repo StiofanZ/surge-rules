@@ -1,10 +1,10 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-05-07T19:57:47+00:00
+# Generated: 2026-05-08T19:49:38+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
-# Counts: upstream=114794, local=0, total(deduped)=114659, excluded=1
+# Counts: upstream=114783, local=0, total(deduped)=114648, excluded=1
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -878,7 +878,6 @@ DOMAIN-SUFFIX,076650.com
 DOMAIN-SUFFIX,07666.com
 DOMAIN-SUFFIX,0768000.com
 DOMAIN-SUFFIX,0769che.com
-DOMAIN-SUFFIX,0769king.xin
 DOMAIN-SUFFIX,0769net.com
 DOMAIN-SUFFIX,0769pf.com
 DOMAIN-SUFFIX,0769sun.com
@@ -3758,7 +3757,6 @@ DOMAIN-SUFFIX,31668.com
 DOMAIN-SUFFIX,316watches.com
 DOMAIN-SUFFIX,3171688.com
 DOMAIN-SUFFIX,317608.com
-DOMAIN-SUFFIX,31793.com
 DOMAIN-SUFFIX,317hu.com
 DOMAIN-SUFFIX,318595.xyz
 DOMAIN-SUFFIX,3188.la
@@ -8277,7 +8275,6 @@ DOMAIN-SUFFIX,7moor-fs1.com
 DOMAIN-SUFFIX,7moor-fs2.com
 DOMAIN-SUFFIX,7moor-zx.com
 DOMAIN-SUFFIX,7moor.com
-DOMAIN-SUFFIX,7msj.com
 DOMAIN-SUFFIX,7mx.com
 DOMAIN-SUFFIX,7mz3a.com
 DOMAIN-SUFFIX,7nepal.com
@@ -8382,6 +8379,7 @@ DOMAIN-SUFFIX,800mei.net
 DOMAIN-SUFFIX,800pharm.com
 DOMAIN-SUFFIX,800tuan.com
 DOMAIN-SUFFIX,800tzw.com
+DOMAIN-SUFFIX,800vdc.com
 DOMAIN-SUFFIX,800vod.com
 DOMAIN-SUFFIX,800wen.com
 DOMAIN-SUFFIX,800xiaoshuo.com
@@ -9977,7 +9975,6 @@ DOMAIN-SUFFIX,9dfx.com
 DOMAIN-SUFFIX,9dian.info
 DOMAIN-SUFFIX,9dida.net
 DOMAIN-SUFFIX,9dinn.com
-DOMAIN-SUFFIX,9douyu.com
 DOMAIN-SUFFIX,9droom.com
 DOMAIN-SUFFIX,9duw.com
 DOMAIN-SUFFIX,9dwork.com
@@ -17814,7 +17811,6 @@ DOMAIN-SUFFIX,bokesoftware.com
 DOMAIN-SUFFIX,bokexia.com
 DOMAIN-SUFFIX,bokeyz.com
 DOMAIN-SUFFIX,boktour.com
-DOMAIN-SUFFIX,bokunwatch.com
 DOMAIN-SUFFIX,bolaa.com
 DOMAIN-SUFFIX,bolan.net
 DOMAIN-SUFFIX,bolaninfo.com
@@ -23633,7 +23629,6 @@ DOMAIN-SUFFIX,ciyun.link
 DOMAIN-SUFFIX,ciyynodegroup.cyou
 DOMAIN-SUFFIX,cizip.com
 DOMAIN-SUFFIX,cj0515.com
-DOMAIN-SUFFIX,cj120.com
 DOMAIN-SUFFIX,cj5bs.com
 DOMAIN-SUFFIX,cj5bs.net
 DOMAIN-SUFFIX,cj8.ren
@@ -25391,7 +25386,6 @@ DOMAIN-SUFFIX,coding-pages.com
 DOMAIN-SUFFIX,coding.love
 DOMAIN-SUFFIX,coding.me
 DOMAIN-SUFFIX,coding.net
-DOMAIN-SUFFIX,coding3min.com
 DOMAIN-SUFFIX,codingapp.com
 DOMAIN-SUFFIX,codingchangeworld.com
 DOMAIN-SUFFIX,codingcorp.net
@@ -33205,7 +33199,6 @@ DOMAIN-SUFFIX,ejoy365.com
 DOMAIN-SUFFIX,ejoy365hk.com
 DOMAIN-SUFFIX,ejrfood.com
 DOMAIN-SUFFIX,ejsoon.win
-DOMAIN-SUFFIX,ejtieyi.com
 DOMAIN-SUFFIX,ejtsyc.com
 DOMAIN-SUFFIX,eju.com
 DOMAIN-SUFFIX,ejuhome.com
@@ -66235,7 +66228,6 @@ DOMAIN-SUFFIX,mayiw.com
 DOMAIN-SUFFIX,mayiwenku.com
 DOMAIN-SUFFIX,mayiwsk.com
 DOMAIN-SUFFIX,mayiyx.com
-DOMAIN-SUFFIX,mayizhuanlan.com
 DOMAIN-SUFFIX,maylandresort.com
 DOMAIN-SUFFIX,maylove2333.com
 DOMAIN-SUFFIX,mayora-sh.com
@@ -68017,6 +68009,7 @@ DOMAIN-SUFFIX,mmbang.info
 DOMAIN-SUFFIX,mmbang.net
 DOMAIN-SUFFIX,mmbao.com
 DOMAIN-SUFFIX,mmbest.com
+DOMAIN-SUFFIX,mmbizgo.com
 DOMAIN-SUFFIX,mmbjq.com
 DOMAIN-SUFFIX,mmbread.com
 DOMAIN-SUFFIX,mmc-data.com
@@ -85378,7 +85371,6 @@ DOMAIN-SUFFIX,sjzgxwl.com
 DOMAIN-SUFFIX,sjzhr.com
 DOMAIN-SUFFIX,sjzhushou.com
 DOMAIN-SUFFIX,sjzjifeng.com
-DOMAIN-SUFFIX,sjzjinliulin.com
 DOMAIN-SUFFIX,sjzjkqgs.com
 DOMAIN-SUFFIX,sjzjtjt.com
 DOMAIN-SUFFIX,sjzkz.com
@@ -92415,7 +92407,6 @@ DOMAIN-SUFFIX,tourenwang.com
 DOMAIN-SUFFIX,tourgansu.com
 DOMAIN-SUFFIX,tourhr.com
 DOMAIN-SUFFIX,tourjob.net
-DOMAIN-SUFFIX,tourongjia.com
 DOMAIN-SUFFIX,tourongzi.org
 DOMAIN-SUFFIX,toursbms.com
 DOMAIN-SUFFIX,tourscool.com
@@ -99166,7 +99157,6 @@ DOMAIN-SUFFIX,wouju.com
 DOMAIN-SUFFIX,wouu.net
 DOMAIN-SUFFIX,wow.fun
 DOMAIN-SUFFIX,wowamazingthings.com
-DOMAIN-SUFFIX,wowbbs.com
 DOMAIN-SUFFIX,wowcat.net
 DOMAIN-SUFFIX,wowchina.com
 DOMAIN-SUFFIX,wowenda.com
@@ -104532,7 +104522,6 @@ DOMAIN-SUFFIX,xyz1412.net
 DOMAIN-SUFFIX,xyzcdn.net
 DOMAIN-SUFFIX,xyzcn.com
 DOMAIN-SUFFIX,xyzdict.com
-DOMAIN-SUFFIX,xyzdns.xyz
 DOMAIN-SUFFIX,xyzele.com
 DOMAIN-SUFFIX,xyzfm.link
 DOMAIN-SUFFIX,xyzfm.space
