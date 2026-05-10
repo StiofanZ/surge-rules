@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-09T19:37:26+00:00
+# Generated: 2026-05-10T19:37:16+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30403, local=27, total(deduped)=25578
+# Counts: upstream=30406, local=27, total(deduped)=25581
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -5569,7 +5569,6 @@ cisco.evergage.com
 .cn.sandscotaicentral.com
 .cn.shafaqna.com
 .cna.com.tw
-.cnappinstall.googleadapis.com
 .cnbc.com
 .cnbcfm.com
 .cnbeta.com
@@ -5746,7 +5745,6 @@ cisco.evergage.com
 .contactossexoecuador.com
 .containersonaws.com
 .contechacademy.com
-.content.googleadapis.com
 .contentful.com
 .contest.com
 .convrgencegame.com
@@ -6944,7 +6942,6 @@ dl.begellhouse.com
 .dowjoneson.com
 .download.com
 .download.dappcdn.com
-.download.qatp1.net
 .downloadpass.com
 .downloadsforipod.com
 .dpool.top
@@ -13099,6 +13096,7 @@ ingest.apple-studies.com
 .justporno.tv
 .justswallows.com
 .justusboys.com
+.justveryok.com
 .juyangbee.xyz
 .juyangto.info
 .juzi-js.shop
@@ -13256,6 +13254,7 @@ ingest.apple-studies.com
 .kex.com
 .keybase.io
 .keybaseapi.com
+.keyboardmen.com
 .keycdn.com
 .keyhole.com
 .keyporntube.com
@@ -15257,7 +15256,6 @@ medone-education.thieme.com
 .mongodb.org
 .monica.im
 .monitorchina.org
-.monitoring.qpdp1.net
 .monitrix.net
 .mono-project.com
 .monocloud.me
@@ -16723,7 +16721,15 @@ ntppool2.time.nl
 .oculusrift.com
 .oculusvr.com
 .odkl.ru
+.odnoklasniki.by
+.odnoklasniki.ua
+.odnoklassniki.am
+.odnoklassniki.by
+.odnoklassniki.co.ee
+.odnoklassniki.eu
+.odnoklassniki.lv
 .odnoklassniki.ru
+.odnoklassniki.tj
 .odysee.com
 .oecd-ilibrary.org
 .oed.com
@@ -18531,7 +18537,6 @@ public-us-pingsx.api.clonoth.com
 .q10.jp
 .q13.com
 .q13fox.com
-.qagpublic.qatp1.net
 .qatarescortsvip.com
 .qattdh.cc
 .qattdh.top
@@ -18544,7 +18549,6 @@ public-us-pingsx.api.clonoth.com
 .qcomgeo2.com
 .qctconnect.com
 .qdiehzz7.me
-.qgadmin.qcpp1.net
 .qgirl.com.tw
 .qi-gong.me
 .qianbai.tw
@@ -18604,8 +18608,6 @@ public-us-pingsx.api.clonoth.com
 .qualcommventures.cn
 .qualcommventures.com
 .qualphone.com
-.qualysapi.qatp1.net
-.qualysguard.qpdp1.net
 .quanben-xiaoshuo.com
 .quanben.io
 .quantil.com
@@ -18675,6 +18677,7 @@ public-us-pingsx.api.clonoth.com
 .r18lu.com
 .r2.dev
 .r34porn.net
+.rabbitcounter.com
 .rabbitscams.com
 .rabbitscams.sex
 .rabbitsreviews.com
@@ -19390,6 +19393,7 @@ rum.browser-intake-datadoghq.com
 .savitahd.net
 .savoycomputing.com
 .savvyshopper.net.au
+.sayeasy.eu
 .saynow.com
 .sb-cd.com
 .sb-mobile.jp
@@ -19440,7 +19444,6 @@ sberpro.vedomosti.ru
 .scaleform.com
 .scandalplanet.com
 .scanlover.com
-.scanservice1.qcpp1.net
 .scartel.ru
 .scat-enema.com
 .scat-japan.com
