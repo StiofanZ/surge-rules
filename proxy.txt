@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-10T19:37:16+00:00
+# Generated: 2026-05-11T20:09:47+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30406, local=27, total(deduped)=25581
+# Counts: upstream=30412, local=27, total(deduped)=25585
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -6132,6 +6132,7 @@ crl.versign.net
 .data-tscbank.ru
 .data-vocabulary.org
 .data.com
+.data18.com
 databank.worldbank.org
 .datacloudmy.com
 .dataframeworks.com
@@ -7072,6 +7073,7 @@ dl.begellhouse.com
 .dstk.dk
 .dswz88.xyz
 .dsyiren.com
+.dt18.com
 .dtci.co
 .dtci.technology
 .dtiblog.com
@@ -9596,6 +9598,7 @@ forwarder.workos.com
 .gettyimages.us
 .getuploader.com
 .getws1.com
+.getwsj.com
 .getwsone.com
 .getzola.org
 .gfacecbook.com
@@ -12737,6 +12740,7 @@ ingest.apple-studies.com
 .javdove.com
 .javdove8.xyz
 .javextreme.net
+.javfc2.xyz
 .javfilms.com
 .javfinder.ai
 .javfor.me

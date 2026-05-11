@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-10T19:37:16+00:00
+# Generated: 2026-05-11T20:09:47+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30406, local=27, total(deduped)=25581, rule_set_only=12
+# Counts: upstream=30412, local=27, total(deduped)=25585, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -6135,6 +6135,7 @@ DOMAIN-SUFFIX,dat.foundation
 DOMAIN-SUFFIX,data-tscbank.ru
 DOMAIN-SUFFIX,data-vocabulary.org
 DOMAIN-SUFFIX,data.com
+DOMAIN-SUFFIX,data18.com
 DOMAIN,databank.worldbank.org
 DOMAIN-SUFFIX,datacloudmy.com
 DOMAIN-SUFFIX,dataframeworks.com
@@ -7075,6 +7076,7 @@ DOMAIN-SUFFIX,dssott.com
 DOMAIN-SUFFIX,dstk.dk
 DOMAIN-SUFFIX,dswz88.xyz
 DOMAIN-SUFFIX,dsyiren.com
+DOMAIN-SUFFIX,dt18.com
 DOMAIN-SUFFIX,dtci.co
 DOMAIN-SUFFIX,dtci.technology
 DOMAIN-SUFFIX,dtiblog.com
@@ -9599,6 +9601,7 @@ DOMAIN-SUFFIX,gettyimages.se
 DOMAIN-SUFFIX,gettyimages.us
 DOMAIN-SUFFIX,getuploader.com
 DOMAIN-SUFFIX,getws1.com
+DOMAIN-SUFFIX,getwsj.com
 DOMAIN-SUFFIX,getwsone.com
 DOMAIN-SUFFIX,getzola.org
 DOMAIN-SUFFIX,gfacecbook.com
@@ -12740,6 +12743,7 @@ DOMAIN-SUFFIX,javdoe.to
 DOMAIN-SUFFIX,javdove.com
 DOMAIN-SUFFIX,javdove8.xyz
 DOMAIN-SUFFIX,javextreme.net
+DOMAIN-SUFFIX,javfc2.xyz
 DOMAIN-SUFFIX,javfilms.com
 DOMAIN-SUFFIX,javfinder.ai
 DOMAIN-SUFFIX,javfor.me
