@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-12T20:12:40+00:00
+# Generated: 2026-05-13T20:14:30+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30412, local=27, total(deduped)=25585
+# Counts: upstream=30501, local=27, total(deduped)=25674
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -672,6 +672,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .abplive.com
 .abr.ru
 .absoluporn.com
+.absolutbank.ru
 .absolutewhores.com
 .ac-pocketcamp.com
 .ac.ir
@@ -1281,6 +1282,7 @@ adobeereg.com
 .akastream.com
 .akastream.net
 .akatns.net
+.akbars.ru
 .akiba-online.com
 .akiba-souken.com
 .akiba-web.com
@@ -1297,6 +1299,7 @@ adobeereg.com
 .albastudio.co
 .albeats.com
 .alchemysynth.com
+.alefbank.com
 .alexa.com
 .alexanderstreet.com
 .alfabank.oavdo.amc
@@ -1738,6 +1741,7 @@ angle.com.tw
 .aniscartujo.com
 .anistreaming.xyz
 .ankarazirvesi2018.com
+.ankb.ru
 .ankiuser.net
 .ankiweb.net
 .anm.co.uk
@@ -2283,6 +2287,7 @@ api-p.videomarket.jp
 .ashemaletv.com
 .ashikagabank.co.jp
 .ashleysageellison.com
+.asia-pay.ru
 .asiacrazy.xyz
 .asiaharvest.org
 .asiamoviepass.com
@@ -2360,6 +2365,7 @@ api-p.videomarket.jp
 .asuswebstorage.com
 .at.ua
 .atandt.com
+.atb.su
 .atc.org.au
 .atchinese.com
 .atdmt2.com
@@ -2585,6 +2591,7 @@ api-p.videomarket.jp
 .autodraw.com
 .autoesporte.com
 .autoesporte.com.br
+.autokreditbank.ru
 .automaton-media.com
 .automobile.fr
 .automotive-cadcam.com
@@ -2608,6 +2615,7 @@ api-p.videomarket.jp
 .av6k.vip
 .avaaz.org
 .avail.googleflights.net
+.avangard.ru
 .avast.com
 .avatara.com
 .avbebe.com
@@ -2623,6 +2631,7 @@ api-p.videomarket.jp
 .avdwang.xyz
 .avelip.com
 .aventertainments.com
+.aversbank.ru
 .avfox.cc
 .avg.com
 .avgigi.com
@@ -2876,7 +2885,11 @@ api-p.videomarket.jp
 .bangumi.tv
 .bangyoulater.com
 .bangyourwife.com
+.bank-arzamas.ru
+.bank-credit-suisse-moscow.ru
 .bank-maskan.ir
+.bank131.com
+.bankermak.ru
 .bankline.ru
 .bankmellat.ir
 .bankmobilevibe.com
@@ -2952,6 +2965,7 @@ api-p.videomarket.jp
 .bbgwatch.com
 .bbhub.io
 .bbqm1.xyz
+.bbr.ru
 bbs.boingboing.net
 .bbs.cantonese.asia
 .bbs.hanminzu.org
@@ -3418,6 +3432,7 @@ beck-online.beck.de
 .beurettesvideo.com
 .bextbuy.com
 .beyondcore.com
+.bfa.ru
 .bffshd.com
 .bfnn.org
 .bfsh.hk
@@ -3835,6 +3850,7 @@ blizzard.nefficient.co.kr
 .blurams.com
 .blylq.buzz
 .blz-contentstack.com
+.bm-bank.ru
 .bmdru.com
 .bmi.ir
 .bmia.org
@@ -4499,6 +4515,7 @@ blizzard.nefficient.co.kr
 .bsky.app
 .bsky.network
 .bsky.social
+.bspb.ru
 .bstatic.com
 .bsw.co.jp
 .bsw.jp
@@ -5700,6 +5717,7 @@ cisco.evergage.com
 .comments.app
 .commentshk.com
 .commerceos.com
+.commerzbank.ru
 .communistcrimes.org
 .communitychoicecu.com
 .como-hackearfacebook.com
@@ -5867,6 +5885,7 @@ cisco.evergage.com
 .creativesdk.com
 .creatwhatsnext.com
 .crececonebay.com
+.credit-zenit.ru
 .creditcardsbay.com
 .creditkarma.com
 .crewai.com
@@ -6166,6 +6185,7 @@ datarouter.apps.netherrealm.com
 .db.tt
 .dba.dk
 .dbgjd.com
+.dbmoscow.ru
 .dbo-dengi.online
 .dcard.cc
 .dcard.io
@@ -6482,8 +6502,10 @@ deribit.cdn.prismic.io
 .dettolsitishield.co.in
 .dettolthailand.com
 .deutsch-sexfilme.com
+.deutsche-bank.ru
 .deutsche-pornos-kostenlos.xxx
 .deutsche-welle.de
+.deutschebank.ru
 .deutschepornos-kostenlos.net
 deutschewelle.h-cdn.com
 .deutschsex.com
@@ -6881,6 +6903,7 @@ dl.begellhouse.com
 .dolphiners.com
 .dolyame.ru
 .dombosco.com.br
+.domrfbank.ru
 .domywife.com
 .donatecarsoh.org
 .donationalerts.com
@@ -8331,6 +8354,7 @@ f3b7q2p3.ssl.hwcdn.net
 .fanbox.cc
 .fandango.com
 .fandom.com
+.fanfictionero.com
 .fanfox.net
 .fangeqiang.com
 .fanglizhi.info
@@ -8563,8 +8587,11 @@ featureassets.org
 .fi11av1.com
 .fi11tv1.com
 .fibank.bg
+.fic.fan
+.ficador.com
 .ficbook.net
 .ficeboock.com
+.ficmania.com
 .fictionmania.tv
 .fiddle.jshell.net
 .fifastreet.com
@@ -8590,6 +8617,7 @@ featureassets.org
 .filtercams.com
 .fimfiction.net
 .finalcutpro.com
+.finambank.ru
 .financeleadsonline.com
 .financetwitter.com
 .financialadvisoriq.com
@@ -8814,6 +8842,7 @@ firstsearch.oclc.org
 .formitfactory.com
 .forms.new
 .forpojie.pics
+.forshtadt.ru
 .fortawesome.com
 .forthebadge.com
 .forthethrone.com
@@ -10489,6 +10518,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .hbabit.com
 .hbfile.net
 .hbg.com
+.hbo
 .hbo-europe.com
 .hbo.ba
 .hbo.bg
@@ -10978,6 +11008,7 @@ holoxx.f5.si
 .homealonemilfs.com
 .homebox.com
 .homeboxoffice.com
+.homecredit.ru
 .homedepot-static.com
 .homedepot.com
 .homefuckingmovies.com
@@ -11504,6 +11535,7 @@ i.jeded.com
 .iask.ca
 .iavian.net
 .iavnight.com
+.ibamoscow.ru
 .ibb.co
 .ibeats-uk.com
 .ibeatsbydre.cc
@@ -13039,6 +13071,7 @@ ingest.apple-studies.com
 .jpg4.pw
 .jpg4us.net
 .jpl.nasa.gov
+.jpmorgan.ru
 .jpvhub.com
 .jquery.com
 .jquerymobile.com
@@ -13402,6 +13435,7 @@ ingest.apple-studies.com
 .koranmandarin.com
 .koreanpornmovie.com
 .korewaeroi.com
+.korona.com
 .koshelek.app
 .kostenlosepornoclips.com
 .kotlinlang.org
@@ -13438,6 +13472,7 @@ ingest.apple-studies.com
 .kuanrenxs.com
 .kubakuba.global
 .kubakuba1996.com
+.kubankredit.ru
 .kubeacademy.com
 .kubeapps.com
 .kubernetes.io
@@ -14442,6 +14477,7 @@ live-patreon-marketing.pantheonsite.io
 .mcpeaceofmind.com
 .mcrouter.net
 .mcrouter.org
+.mcs.st
 .mcstories.com
 .mcusercontent.com
 .md-t.org
@@ -14598,6 +14634,7 @@ medone-education.thieme.com
 .mexc.com
 .mexcsensors.com
 .mfg-inspector.com
+.mfk-bank.ru
 .mfk-t-finance.ru
 .mfmf.club
 .mfxmedia.com
@@ -14607,6 +14644,8 @@ medone-education.thieme.com
 .mgoon.com
 .mgstage.com
 .mh4u.org
+.mhcb.ru
+.mhcbr.ru
 .mhhanman.xyz
 .mhqwe.xyz
 .mhradio.org
@@ -15541,6 +15580,7 @@ muse.jhu.edu
 .mvg.jp
 .mvideoporno.xxx
 .mvk.com
+.mvs-bank.ru
 .mwcu00.com
 .mwdbank.com
 .mwhentai.net
@@ -15791,6 +15831,7 @@ muse.jhu.edu
 .nanyangpost.com
 .naoconto.com
 .napiszex.com
+.narod.ru
 .narumiya.xii.jp
 .nastranincad.com
 .nastrannx.com
@@ -16119,6 +16160,8 @@ muse.jhu.edu
 .nic.cz.cc
 .nic.gov
 .niceanimegames.com
+.nicegram.app
+.nicegram.cloud
 .niceporn.tv
 .nicesrv.de
 .nicesshop.net
@@ -16396,6 +16439,7 @@ muse.jhu.edu
 .nonlinearnastran.com
 .nonstopfap.com
 .noodlemagazine.com
+.noosferabank.ru
 .nordstrom.com
 .nordstromimage.com
 .nordstrommedia.com
@@ -17056,6 +17100,7 @@ ood.opsource.net
 .otcbtc.com
 .otello.ru
 .otokonokoland.com
+.otpbank.ru
 .otto.de
 .oudoll.com
 .oup.com
@@ -18335,6 +18380,7 @@ practivate.adobe.ntp
 .pricesearch.jp
 .priconne-redive.jp
 .pridetube.com
+.primbank.ru
 .prime-video.com
 .primecurves.com
 .primeday.info
@@ -18438,6 +18484,7 @@ prodregistryv2.org
 .proyectoclubes.com
 .prpops.com
 .prts.plus
+.prvbank.ru
 .ps-exchange.com
 .psb-ocenka.ru
 .psb.ru
@@ -18448,6 +18495,7 @@ prodregistryv2.org
 .pshvpn.com
 .psiphon.ca
 .psiphon3.com
+.pskb.ru
 .pstatic.net
 .pstorage.space
 .psyccareers.com
@@ -18514,6 +18562,7 @@ public-us-pingsx.api.clonoth.com
 .pvp.net
 .pvp.tv
 .pvt.sexy
+.pvubank.com
 .pvue1.com
 .pvue2.com
 .pvzgw2.com
@@ -18713,6 +18762,8 @@ public-us-pingsx.api.clonoth.com
 .rael.org
 .raggedbanner.com
 .raidcall.com.tw
+.raiffeisen-media.ru
+.raiffeisen.ru
 .raindrop.io
 .raizoji.or.jp
 .rajwaphq.com
@@ -18956,7 +19007,9 @@ public-us-pingsx.api.clonoth.com
 .relateiq.com
 .religionnews.com
 .remirepo.net
+.rencapbank.ru
 .renchead.com
+.rencredit.ru
 .renderingtoolkit.org
 .renderos.com
 .reneerossvideos.com
@@ -19064,6 +19117,7 @@ rink.hockeyapp.net
 .rlwlw.com
 .rm2029.com
 .rmbl.ws
+.rncoluminis.ru
 .ro-blox.com
 .ro89.com
 .road-crew.com
@@ -19199,6 +19253,7 @@ rsshub2.asailor.org
 .rti.tw
 .rtings.com
 .rts.ch
+.ru.ccb.com
 .ruby-lang.org
 .rubygems.org
 .rude.com
@@ -19431,6 +19486,7 @@ sberpro.vedomosti.ru
 .sbertech.ru
 .sbertroika.ru
 .sbgkstv.shop
+.sbibankllc.ru
 .sbishinseibank.co.jp
 .sbitravelcard.com
 .sbme.me
@@ -19539,6 +19595,7 @@ sberpro.vedomosti.ru
 .seasidestory.tokyo
 .seattlefdc.com
 .seattlespheres.com
+.seb.ru
 .secom.co.jp
 .secomtrust.net
 .second-ns.com
@@ -19598,6 +19655,7 @@ sberpro.vedomosti.ru
 .selectelpro.ru
 .selectyourgame.com
 .selfloversworld.com
+.selkombank.ru
 .sellercommunity.com
 .semanticscholar.org
 .sena.co.kr
@@ -20077,6 +20135,7 @@ setup.workos.com
 .simulationsquad.com
 .sina.com.hk
 .sinabank.ir
+.sinara.ru
 .sinchew.com.my
 .sinchew.my
 .sing-box.app
@@ -20189,6 +20248,7 @@ setup.workos.com
 .slackhq.com
 .slashdot.org
 .slashine.onl
+.slavbank.ru
 .slc.tl
 .sldolls.com
 .sleazyfork.org
@@ -20236,6 +20296,7 @@ setup.workos.com
 .smartthings.com
 .smashed.xxx
 .smbc.co.jp
+.smbcr-bank.ru
 .smbctb.co.jp
 .smedevelopmentbank.com.mm
 .smh.com.au
@@ -20334,6 +20395,7 @@ setup.workos.com
 .solana.com
 .solarcity.com
 .solarsystem.nasa.gov
+.solid.ru
 .solostudioksale.com
 .solscan.io
 .solutionstation.com
@@ -20479,6 +20541,7 @@ setup.workos.com
 .southmongolia.org
 .southnews.com.tw
 .southpark.cc.com
+.sovcombank.ru
 .sovec.net
 .sowers.org.hk
 .soyinyj.top
@@ -20602,6 +20665,7 @@ setup.workos.com
 .ss-link.com
 .ss2.us
 .ss7.app
+.ssb.msk.ru
 .ssdevrd.com
 .ssglobal.co
 .sshs.club
@@ -21143,6 +21207,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .tachusz.xyz
 .taedp.org.tw
 .tagapie.com.tw
+.tagbank.ru
 .tagwalk.com
 .taiav.com
 .tail-f.com
@@ -21211,6 +21276,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .tasteofpremium.jp
 .tastyblacks.com
 .tati-log.com
+.tatsotsbank.ru
 .taup.net
 .taweet.com
 .tawny-peaks.com
@@ -21302,6 +21368,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .tegrazone.kr
 .tehnodom.com
 .tehrantimes.com
+.teinon.net
 .tejaratbank.ir
 .tele2.ru
 .telebay.com
@@ -21780,6 +21847,7 @@ tesla-cdn.thron.com
 .tittykings.com
 .tkb008.xyz
 .tkb2233.life
+.tkbbank.ru
 .tkbqf2.life
 .tkcs-collins.com
 .tksex.com
@@ -22324,6 +22392,7 @@ ubisoft.siteintercept.qualtrics.com
 .ubisoftconnect.com
 .ubncloud.com
 .ubnw.net
+.ubs.com
 .ubuntu-touch.io
 .ubuntu.com
 .ubuntu.net
@@ -22353,6 +22422,7 @@ ubisoft.siteintercept.qualtrics.com
 .ucoz.ru
 .ucoz.site
 .ucoz.ua
+.ucozmail.com
 .ucozmedia.com
 .ucozmedia.ru
 .ucoztemplates.com
@@ -22370,6 +22440,7 @@ ubisoft.siteintercept.qualtrics.com
 .uflash.tv
 .uforadio.com.tw
 .uguide.ru
+.uguide.su
 .uguisupapa.net
 .uhairy.com
 .uhdwallpapers.org
@@ -22390,6 +22461,7 @@ ubisoft.siteintercept.qualtrics.com
 .ukit.com
 .ukit.group
 .ukit.me
+.ukoz.ru
 .uku.im
 .ukwhoswho.com
 .ulifestyle.com.hk
@@ -22479,6 +22551,7 @@ ubisoft.siteintercept.qualtrics.com
 .uptodown.com
 .ura-akiba.jp
 .uraban.me
+.uralsib.ru
 .urasma.com
 .urbandictionary.com
 .urbansurvival.com
@@ -22512,6 +22585,7 @@ ubisoft.siteintercept.qualtrics.com
 .usfk.mil
 .usma.edu
 .usno.navy.mil
+.usocial.pro
 .ustibetcommittee.org
 .ustream.tv
 .usvimosquito.com
@@ -22553,6 +22627,7 @@ utcnist3.colorado.edu
 .uverse.com
 .uvwxyz.xyz
 .uwants.com
+.uweb.ru
 .uwpcommunitytoolkit.com
 .uxthemes.com
 .uyghur-j.org
@@ -23132,6 +23207,7 @@ utcnist3.colorado.edu
 .vk.com
 .vk.company
 .vk.design
+.vk.kz
 .vk.link
 .vk.me
 .vk.ru
@@ -23139,7 +23215,9 @@ utcnist3.colorado.edu
 .vkcache.com
 .vkcdnservice.com
 .vkclips.app
+.vkcloud-static.kz
 .vkcloud-static.ru
+.vkcloud.kz
 .vkcs.cloud
 .vkfest.ru
 .vkgo.app
@@ -23168,7 +23246,9 @@ utcnist3.colorado.edu
 .vkuservideo.net
 .vkuservideo.ru
 .vkvideo.ru
+.vkworkspace.kz
 .vl4x.net
+.vlb100.ru
 .vllcs.org
 .vmailru.net
 .vmglobal.net
@@ -23506,7 +23586,10 @@ utcnist3.colorado.edu
 vsmarketplacebadge.apphb.com
 .vsphere.com
 .vsphere.net
+.vtb-direct.com
+.vtb-grants.fut.ru
 .vtb.ru
+.vtbglobalperspectives.com
 .vtrahe.page
 .vtsociety.org
 .vtunnel.com
@@ -23755,6 +23838,7 @@ vsmarketplacebadge.apphb.com
 .wenzhao.ca
 .westca.com
 .westerndigital.com
+.westernunion.ru
 .westernwolves.com
 .westlaw.com
 .westpoint.edu
@@ -24429,6 +24513,7 @@ ws.audioscrobbler.com
 .xn--czq75pvv1aj5c.org
 .xn--d1abkf4ap.fun
 .xn--d1acpjx3f.xn--p1ai
+.xn--d1aqf.xn--p1ai
 .xn--d4ty0ojsqzfd.com
 .xn--e1adjldbbpv.xn--90ais
 .xn--e1aigb.xn--p1ai
@@ -25082,6 +25167,7 @@ yangzhi.app
 .yomiuri-shimbun.pressreader.com
 .yomiuri-systec.co.jp
 .yomiuri.co.jp
+.yoobusiness.ru
 .yopornshop.com
 .yorozoonews.jp
 .yoshisnewisland.com
@@ -25445,6 +25531,8 @@ yangzhi.app
 .zencdn.net
 .zencoder.com
 .zendesk.com
+.zenit-card.ru
+.zenit.ru
 .zenlesszonezero.com
 .zenmate.com
 .zenmate.com.ru
@@ -25489,6 +25577,7 @@ yangzhi.app
 .zingtruyen.net
 .zinio.com
 .zipcine.com
+.ziraatbank.ru
 .zishy.com
 .zlib.life
 .zlibcdn.com
