@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-13T20:15:05+00:00
+# Generated: 2026-05-14T20:10:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12156, local=0, total(deduped)=11554
+# Counts: upstream=12159, local=0, total(deduped)=11557
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -208,6 +208,7 @@
 .abmr.net
 .abnad.net
 .abodealley.com
+.aboveaveragefinallycast.com
 .abroad-ad.kingsoft-office-service.com
 .abs.proxistore.com
 .absolstats.co.za
@@ -803,6 +804,7 @@ adsdk.yandex.ru
 .adsfs.oppomobile.com
 .adsgard.aprod.scopely.io
 .adsgig.com
+.adsgram.ai
 .adsh.m.taobao.com
 .adshares.net
 .adshmmsg.qq.com
@@ -7884,6 +7886,7 @@ prodvizhenie-adv.ozon.ru
 .ptwmstc.com
 .ptztvpremium.com
 .puata.info
+.pub.searchnova.net
 .pub.toku-tag.jp
 .pub1.co
 .pubexchange.com

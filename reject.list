@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-13T20:15:05+00:00
+# Generated: 2026-05-14T20:10:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12156, local=0, total(deduped)=11554
+# Counts: upstream=12159, local=0, total(deduped)=11557
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -210,6 +210,7 @@ DOMAIN-SUFFIX,abh.jp
 DOMAIN-SUFFIX,abmr.net
 DOMAIN-SUFFIX,abnad.net
 DOMAIN-SUFFIX,abodealley.com
+DOMAIN-SUFFIX,aboveaveragefinallycast.com
 DOMAIN-SUFFIX,abroad-ad.kingsoft-office-service.com
 DOMAIN-SUFFIX,abs.proxistore.com
 DOMAIN-SUFFIX,absolstats.co.za
@@ -805,6 +806,7 @@ DOMAIN-SUFFIX,adsfirm.com
 DOMAIN-SUFFIX,adsfs.oppomobile.com
 DOMAIN-SUFFIX,adsgard.aprod.scopely.io
 DOMAIN-SUFFIX,adsgig.com
+DOMAIN-SUFFIX,adsgram.ai
 DOMAIN-SUFFIX,adsh.m.taobao.com
 DOMAIN-SUFFIX,adshares.net
 DOMAIN-SUFFIX,adshmmsg.qq.com
@@ -7886,6 +7888,7 @@ DOMAIN-SUFFIX,pto-slb-09.com
 DOMAIN-SUFFIX,ptwmstc.com
 DOMAIN-SUFFIX,ptztvpremium.com
 DOMAIN-SUFFIX,puata.info
+DOMAIN-SUFFIX,pub.searchnova.net
 DOMAIN-SUFFIX,pub.toku-tag.jp
 DOMAIN-SUFFIX,pub1.co
 DOMAIN-SUFFIX,pubexchange.com
