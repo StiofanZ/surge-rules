@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-14T20:10:39+00:00
+# Generated: 2026-05-15T19:57:31+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12159, local=0, total(deduped)=11557
+# Counts: upstream=12163, local=0, total(deduped)=11561
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4386,6 +4386,7 @@ DOMAIN-SUFFIX,eyeota.net
 DOMAIN-SUFFIX,eyewondermedia.com
 DOMAIN-SUFFIX,ezakus.net
 DOMAIN-SUFFIX,ezodn.com
+DOMAIN-SUFFIX,ezoicanalytics.com
 DOMAIN-SUFFIX,ezstat.ru
 DOMAIN-SUFFIX,ezytrack.com
 DOMAIN-SUFFIX,f-counter.net
@@ -8503,6 +8504,7 @@ DOMAIN-SUFFIX,script.anura.io
 DOMAIN-SUFFIX,script.fixel.ai
 DOMAIN-SUFFIX,scriptil.com
 DOMAIN-SUFFIX,scripts-repo.reelevant.com
+DOMAIN-SUFFIX,scripts.contimo.app
 DOMAIN-SUFFIX,scripts.dadata.com.br
 DOMAIN-SUFFIX,scripts.jixie.media
 DOMAIN-SUFFIX,scripts.static-od.com
@@ -8911,6 +8913,7 @@ DOMAIN-SUFFIX,sokmil-ad.com
 DOMAIN-SUFFIX,sokrati.com
 DOMAIN-SUFFIX,solarad.net
 DOMAIN-SUFFIX,solutionshindsight.net
+DOMAIN-SUFFIX,somepossibility.com
 DOMAIN-SUFFIX,sometired.com
 DOMAIN-SUFFIX,sometrics.com
 DOMAIN-SUFFIX,sonic-ui.highereducation.com
@@ -9910,6 +9913,7 @@ DOMAIN-SUFFIX,testads.api.my7v.com
 DOMAIN-SUFFIX,testingmetriksbre.ru
 DOMAIN-SUFFIX,tetigi.com
 DOMAIN-SUFFIX,tetoolbox.com
+DOMAIN-SUFFIX,textad.fc2.com
 DOMAIN-SUFFIX,textad.net
 DOMAIN-SUFFIX,tg.meitu.com
 DOMAIN-SUFFIX,tg.minfin.com.ua
