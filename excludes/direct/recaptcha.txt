@@ -1,0 +1,4 @@
+# reCAPTCHA 的墙内可达镜像域名。accounts.google.com 登录触发人机校验
+# 时会加载它，上游 direct 判直连，部分网络下镜像直连也不稳。前导点
+# 后缀移除整个 recaptcha.net 域，落到 proxy 的 .recaptcha.net 后缀规则。
+.recaptcha.net
