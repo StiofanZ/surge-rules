@@ -1,0 +1,7 @@
+# accounts.google.com 登录页的静态资源宿主（JS/CSS/雪碧图/字体）。
+# 上游 direct 把它们判为直连，墙内会 TCP 超时 / TLS reset，
+# 导致登录页加载慢、JS 报错、功能失效。移除后落到 proxy 的
+# .gstatic.com 后缀规则走代理。
+ssl.gstatic.com
+www.gstatic.com
+fonts.gstatic.com

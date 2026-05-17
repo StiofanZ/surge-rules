@@ -146,7 +146,8 @@ surge-rules/
 │   └── direct/                      # direct 本地补充源（可选）
 ├── excludes/
 │   └── direct/
-│       └── fonts-googleapis.txt     # direct 排除项
+│       ├── fonts-googleapis.txt        # direct 排除项
+│       └── gstatic-signin-assets.txt   # direct 排除项（登录页 gstatic 静态资源）
 ├── scripts/
 │   └── build.py                     # 多规则集合并 + 排除项 + 双格式输出
 └── .github/workflows/
