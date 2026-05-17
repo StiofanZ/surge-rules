@@ -52,7 +52,7 @@
 
 来源：[Loyalsoldier/surge-rules `ruleset/direct.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt) + [`sources/direct/*.txt`](./sources/direct) 本地补充。上游是 Surge RULE-SET 格式，构建器仅转换 `DOMAIN` / `DOMAIN-SUFFIX` 两类域名规则；其它 Surge 规则类型若出现会被跳过，因为 DOMAIN-SET 无法表达。
 
-本地补充当前包含 [`sources/direct/bitget.txt`](./sources/direct/bitget.txt)：`bitget.com` 后端按请求源 IP 判定国家，上游将其归入 `proxy`，代理出口在美国会被判为美国并触发地区限制，故强制直连。`proxy` 类别无 `exclude_dir`，`bitget.com` 仍同时存在于 `proxy.list`，需保证 `direct.list` 在 Surge 配置中排在 `proxy.list` 之前。
+本地补充当前包含 [`sources/direct/bitget.txt`](./sources/direct/bitget.txt)：`bitget.com`（交易所）与 `bitkeep.app`（Bitget Wallet 移动端，旧品牌 BitKeep）后端均按请求源 IP 判定国家，代理出口在美国会被判为美国并触发地区限制，故强制直连。`bitget.com` 上游归入 `proxy`，而 `proxy` 类别无 `exclude_dir`，它仍同时存在于 `proxy.list`，需保证 `direct.list` 在 Surge 配置中排在 `proxy.list` 之前。
 
 ## 在 Surge 中使用
 

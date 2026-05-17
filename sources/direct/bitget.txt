@@ -16,3 +16,8 @@
 # 取舍：直连出口须自身可达 bitget 且非美国 IP；纯墙内无代理环境下
 # bitget.com 直连可能不通——这正是上游将其归入 proxy/gfw 的原因。
 .bitget.com
+
+# Bitget Wallet 移动端（旧品牌 BitKeep）后端宿主在 bitkeep.app，同样
+# 按请求源 IP 判定国家、对美国弹出地区限制。该根域不在 .bitget.com
+# 后缀覆盖范围内，单列。
+.bitkeep.app
