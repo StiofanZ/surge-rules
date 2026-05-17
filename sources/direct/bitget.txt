@@ -1,0 +1,18 @@
+# Bitget 强制直连。
+#
+# www.bitget.com 后端按「发起请求的源 IP」判定用户所在国家：
+#   POST /v1/user/public/getRegulatoryMeasuresV2  -> countryCode=US，
+#        text="该网站及其提供的服务不面向居住在美利坚合众国的个人。"
+#   POST /v1/user/public/getIpNationalityLimit     -> countryName=美利坚合众国
+#   POST /v1/user/public/compliance/process        -> ipCode=US
+# 登录页与上述合规接口同宿主，无独立地区探测域名。上游把
+# DOMAIN-SUFFIX,bitget.com 归到 proxy，若代理出口在美国即被判为
+# 美国并触发限制。强制直连让这些接口从本地（非美）出口发出。
+#
+# 注意：bitget.com 仍保留在上游 proxy.list（proxy 类别无 exclude_dir
+# 机制可移除）。要让本规则生效，Surge 配置中 direct.list 必须排在
+# proxy.list 之前（README 推荐顺序即如此）。
+#
+# 取舍：直连出口须自身可达 bitget 且非美国 IP；纯墙内无代理环境下
+# bitget.com 直连可能不通——这正是上游将其归入 proxy/gfw 的原因。
+.bitget.com

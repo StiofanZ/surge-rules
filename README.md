@@ -50,7 +50,9 @@
 | [`direct.txt`](./direct.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,DIRECT` |
 | [`direct.list`](./direct.list) | **RULE-SET** | `RULE-SET,<url>,DIRECT` |
 
-来源：[Loyalsoldier/surge-rules `ruleset/direct.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt)。上游是 Surge RULE-SET 格式，构建器仅转换 `DOMAIN` / `DOMAIN-SUFFIX` 两类域名规则；其它 Surge 规则类型若出现会被跳过，因为 DOMAIN-SET 无法表达。
+来源：[Loyalsoldier/surge-rules `ruleset/direct.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt) + [`sources/direct/*.txt`](./sources/direct) 本地补充。上游是 Surge RULE-SET 格式，构建器仅转换 `DOMAIN` / `DOMAIN-SUFFIX` 两类域名规则；其它 Surge 规则类型若出现会被跳过，因为 DOMAIN-SET 无法表达。
+
+本地补充当前包含 [`sources/direct/bitget.txt`](./sources/direct/bitget.txt)：`bitget.com` 后端按请求源 IP 判定国家，上游将其归入 `proxy`，代理出口在美国会被判为美国并触发地区限制，故强制直连。`proxy` 类别无 `exclude_dir`，`bitget.com` 仍同时存在于 `proxy.list`，需保证 `direct.list` 在 Surge 配置中排在 `proxy.list` 之前。
 
 ## 在 Surge 中使用
 
@@ -83,7 +85,7 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,P
 
 1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + `ruleset/gfw.txt` + `ruleset/telegramcidr.txt` + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)。
 2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all`。
-3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt`。
+3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt` + [`sources/direct/*.txt`](./sources/direct) 本地补充。
 
 ## CI / 自动化
 

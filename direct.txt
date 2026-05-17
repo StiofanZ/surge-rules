@@ -1,10 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-05-17T06:37:43+00:00
+# Generated: 2026-05-17T18:00:46+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
+#   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
-# Counts: upstream=113779, local=0, total(deduped)=113643, excluded=5
+#   [exclude] excludes/direct/gstatic-signin-assets.txt
+#   [exclude] excludes/direct/recaptcha.txt
+# Counts: upstream=113760, local=1, total(deduped)=113625, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -4332,7 +4335,6 @@
 .36zpp.com
 .37.com
 .37021.com
-.37051.cc
 .370fd.com
 .371.com
 .371.net
@@ -11432,7 +11434,6 @@ afcs.dell.com
 .airchinamedia.com
 .aircourses.com
 .aircx.bid
-.airdali.com
 .airdoc.com
 .airdropin.com
 .airenche.com
@@ -15402,7 +15403,6 @@ beacons3.gvt2.com
 .bearingclub.com
 .bearrental.com
 .bearsing.com
-.bearyboard.com
 .bearychat.com
 .beastush.com
 .beasure.com
@@ -16554,6 +16554,7 @@ bg4.v4.a.dl.ws.microsoft.com
 .bitekou.com
 .bitell.com
 .bitenn.com
+.bitget.com
 .bitgo.cc
 .bitgo.net
 .bithosts.net
@@ -17392,7 +17393,6 @@ bg4.v4.a.dl.ws.microsoft.com
 .bluehn.com
 .blueidea.com
 .bluek.org
-.bluelettercn.org
 .bluelightfuse.com
 .bluelive.me
 .bluenotechina.com
@@ -26943,6 +26943,7 @@ cstat.cdn-apple.com
 .ctgapp.com
 .ctgcdn.biz
 .ctgcdn.com
+.ctgcdn.info
 .ctghealthy.com
 .ctghr.com
 .ctghro.com
@@ -46317,7 +46318,6 @@ guzzoni.smoot.apple.com
 .hiczp.com
 .hidery.com
 .hidesigncloud.com
-.hidist.com
 .hiditie.com
 .hidna.net
 .hidreamai.com
@@ -50892,7 +50892,6 @@ i.pki.goog
 .ichengli.com
 .ichengsi.com
 .ichengyun.net
-.ichennan.com
 .icheruby.net
 .icheshi.com
 .ichezhan.com
@@ -64062,7 +64061,6 @@ login.corp.google.com
 .lul8.com
 .lula.fun
 .lulala.com
-.lulaoshi.info
 .lulinux.com
 .lulisteel.com
 .lulubei.com
@@ -64100,7 +64098,6 @@ login.corp.google.com
 .luochenyl.com
 .luochenzhimu.com
 .luodian.com
-.luofk.xyz
 .luoganpump.com
 .luogu.org
 .luohanacademy.com
@@ -64148,7 +64145,6 @@ login.corp.google.com
 .luoxiang.com
 .luoxiangcheliang.com
 .luoxiaozi.com
-.luoxinyaoye.com
 .luoxudong.com
 .luoxue.com
 .luoyangdx.com
@@ -67456,7 +67452,6 @@ ml.cdn-apple.com
 .mmfad.com
 .mmgl.net
 .mmgo.com
-.mmgogo.com
 .mmgoodcar.com
 .mmhygame.com
 .mmi-shanghai.com
@@ -72526,7 +72521,6 @@ ocsp2.apple.com
 .ordostonghui.com
 .orebotech.com
 .orfactory.com
-.org-tollsi.cc
 .organo-sz.com
 .orgcc.com
 .orggd.com
@@ -73484,7 +73478,6 @@ pd.itunes.apple.com
 .pdfbianji.com
 .pdfdo.com
 .pdfexpert.cc
-.pdffsy.com
 .pdfjia.com
 .pdflibr.com
 .pdfxd.com
@@ -78771,7 +78764,6 @@ reserve-prime.apple.com
 .rightpaddle.com
 .rigol.com
 .rigouwang.com
-.rigums.xyz
 .riitao.com
 .riji001.com
 .riji100zi.com
@@ -80764,7 +80756,6 @@ scene7-cdn.dell.com
 .sdcia.net
 .sdcjtz.com
 .sdclimber.com
-.sdcmc.net
 .sdcoke.com
 .sdcpd.com
 .sdcqjy.com
@@ -82356,7 +82347,6 @@ shazam-insights.cdn-apple.com
 .shebao.net
 .shebao100.com
 .shebao5.com
-.shebao520.com
 .shebaomi.com
 .shebaotong.com
 .shebaowang.com
@@ -91896,7 +91886,6 @@ tp.louisvuitton.com
 .trinitigame.com
 .trinova-tech.com
 .trioisobardev.com
-.triolion.com
 .triopen.com
 .triowin.com
 .trip169.com
@@ -96434,7 +96423,6 @@ weatherkit.apple.com
 .weishan2015.com
 .weishang99.net
 .weishangagent.com
-.weishangmh.com
 .weishangshijie.com
 .weishangtui.vip
 .weishi.com
@@ -98425,7 +98413,6 @@ weatherkit.apple.com
 .wqycq.com
 .wqyunpan.com
 .wqzsc36ou356m.com
-.wqzx.net
 .wrating.com
 .wrcdn.com
 .wrdtech.com
@@ -101312,7 +101299,6 @@ www4-static.gog-statics.com
 .xingyao.com
 .xingyaomob.com
 .xingyaoss.com
-.xingyaowa.com
 .xingyaozhilian.com
 .xingye.work
 .xingye1.com
@@ -103782,7 +103768,6 @@ xtratime.qcomgeo2.com
 .y3pm.com
 .y5000.com
 .y55l6.com
-.y56.com
 .y5663.com
 .y5api.com
 .y5coin.com
