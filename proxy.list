@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-17T18:05:18+00:00
+# Generated: 2026-05-18T20:07:57+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30505, local=27, total(deduped)=25677, rule_set_only=12
+# Counts: upstream=30509, local=27, total(deduped)=25679, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -20091,6 +20091,7 @@ DOMAIN-SUFFIX,shywifeswap.com
 DOMAIN-SUFFIX,siam.org
 DOMAIN-SUFFIX,sibreal.org
 DOMAIN-SUFFIX,sidelinesnews.com
+DOMAIN-SUFFIX,sider.ai
 DOMAIN-SUFFIX,siege-amazon.com
 DOMAIN-SUFFIX,sifangclub.com
 DOMAIN-SUFFIX,sigcomm.org
@@ -25559,6 +25560,7 @@ DOMAIN-SUFFIX,zhainanjidi.xyz
 DOMAIN-SUFFIX,zhainanjidid.top
 DOMAIN-SUFFIX,zhangboz1.xyz
 DOMAIN-SUFFIX,zhangtianliang.com
+DOMAIN-SUFFIX,zhangzhehan.net
 DOMAIN-SUFFIX,zhanlve.org
 DOMAIN-SUFFIX,zhao.1984.city
 DOMAIN-SUFFIX,zhengjian.org
