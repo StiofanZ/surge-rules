@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-18T20:07:57+00:00
+# Generated: 2026-05-19T20:09:46+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30509, local=27, total(deduped)=25679, rule_set_only=12
+# Counts: upstream=30529, local=27, total(deduped)=25699, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -417,6 +417,7 @@ DOMAIN-SUFFIX,54647.org
 DOMAIN-SUFFIX,55dndn.com
 DOMAIN-SUFFIX,567321.online
 DOMAIN-SUFFIX,568xe.com
+DOMAIN-SUFFIX,573.jp
 DOMAIN-SUFFIX,58avgo.com
 DOMAIN-SUFFIX,592r.com
 DOMAIN-SUFFIX,59mvmv.com
@@ -13304,6 +13305,7 @@ DOMAIN-SUFFIX,keytransparency.com
 DOMAIN-SUFFIX,keytransparency.foo
 DOMAIN-SUFFIX,keytransparency.org
 DOMAIN-SUFFIX,kfs.io
+DOMAIN-SUFFIX,kgisystems.com
 DOMAIN-SUFFIX,kgslb.com
 DOMAIN-SUFFIX,khanacademy.org
 DOMAIN-SUFFIX,khatrimaza.org
@@ -13397,6 +13399,7 @@ DOMAIN-SUFFIX,kisscos.net
 DOMAIN-SUFFIX,kissjav.com
 DOMAIN-SUFFIX,kissjav.li
 DOMAIN-SUFFIX,kitakyushubank.co.jp
+DOMAIN-SUFFIX,kiwi.jp
 DOMAIN-SUFFIX,kiwi.kz
 DOMAIN-SUFFIX,kiwibrowser.com
 DOMAIN-SUFFIX,kiyobank.co.jp
@@ -13434,6 +13437,20 @@ DOMAIN-SUFFIX,kompozer.net
 DOMAIN-SUFFIX,konachan.com
 DOMAIN-SUFFIX,konachan.net
 DOMAIN-SUFFIX,konachan.wjcodes.com
+DOMAIN-SUFFIX,konami
+DOMAIN-SUFFIX,konami-igaming.online
+DOMAIN-SUFFIX,konami.co.jp
+DOMAIN-SUFFIX,konami.com
+DOMAIN-SUFFIX,konami.net
+DOMAIN-SUFFIX,konami.org
+DOMAIN-SUFFIX,konamicrossmedia.com
+DOMAIN-SUFFIX,konamigaming.com
+DOMAIN-SUFFIX,konamigaming.net
+DOMAIN-SUFFIX,konamigaming.online
+DOMAIN-SUFFIX,konamionline.com
+DOMAIN-SUFFIX,konamiopen.jp
+DOMAIN-SUFFIX,konamisportsclub.jp
+DOMAIN-SUFFIX,konamistyle.jp
 DOMAIN-SUFFIX,koolsolutions.com
 DOMAIN-SUFFIX,koornk.com
 DOMAIN-SUFFIX,kopfhorergunstigshop.com
@@ -19042,6 +19059,8 @@ DOMAIN-SUFFIX,researchkit.hk
 DOMAIN-SUFFIX,researchkit.net
 DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,researchkit.tv
+DOMAIN-SUFFIX,resella.jp
+DOMAIN-SUFFIX,resellablue.com
 DOMAIN-SUFFIX,resilio.com
 DOMAIN-SUFFIX,resistchina.org
 DOMAIN-SUFFIX,resonabank.co.jp
@@ -25445,6 +25464,7 @@ DOMAIN-SUFFIX,ytn.co.kr
 DOMAIN-SUFFIX,yuanming.net
 DOMAIN-SUFFIX,yuenuge113.xyz
 DOMAIN-SUFFIX,yuenuge18.cc
+DOMAIN-SUFFIX,yugioh-card.com
 DOMAIN-SUFFIX,yulghun.com
 DOMAIN-SUFFIX,yuming.qxbbs.org
 DOMAIN-SUFFIX,yunchao.net

@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-18T20:08:18+00:00
+# Generated: 2026-05-19T20:10:08+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12166, local=0, total(deduped)=11564
+# Counts: upstream=12169, local=0, total(deduped)=11567
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1124,7 +1124,6 @@ DOMAIN-SUFFIX,amavalet.com
 DOMAIN-SUFFIX,amawidget.yutbr.com
 DOMAIN-SUFFIX,amazingcounters.com
 DOMAIN-SUFFIX,amazon-adsystem.com
-DOMAIN-SUFFIX,amazonlogistics.jp
 DOMAIN-SUFFIX,amazy.ru
 DOMAIN-SUFFIX,ambercrow.com
 DOMAIN-SUFFIX,amc.yandex.ru
@@ -2715,6 +2714,7 @@ DOMAIN-SUFFIX,clarity.ms
 DOMAIN-SUFFIX,claritytag.com
 DOMAIN-SUFFIX,clarivoy.com
 DOMAIN-SUFFIX,clb.yahoo.co.jp
+DOMAIN-SUFFIX,clb.yahooapis.jp
 DOMAIN-SUFFIX,clc.stackoverflow.com
 DOMAIN-SUFFIX,clck.edadeal.ru
 DOMAIN-SUFFIX,clck.yandex.com
@@ -3871,6 +3871,7 @@ DOMAIN-SUFFIX,ds-aksb-a.akamaihd.net
 DOMAIN-SUFFIX,dsas-t.danawa.com
 DOMAIN-SUFFIX,dsas.danawa.com
 DOMAIN-SUFFIX,dsb.yahoo.co.jp
+DOMAIN-SUFFIX,dsb.yahooapis.jp
 DOMAIN-SUFFIX,dsbahmgppc0j4.cloudfront.net
 DOMAIN-SUFFIX,dsh1ct2zrfakt.cloudfront.net
 DOMAIN-SUFFIX,dsmmadvantage.com
@@ -7661,6 +7662,7 @@ DOMAIN-SUFFIX,pj.l.liftdsp.com
 DOMAIN-SUFFIX,pjatr.com
 DOMAIN-SUFFIX,pjtra.com
 DOMAIN-SUFFIX,pketred.com
+DOMAIN-SUFFIX,pkoapbafhgaf.in
 DOMAIN-SUFFIX,pks-analytics.raenonx.cc
 DOMAIN-SUFFIX,pl.elements.video
 DOMAIN-SUFFIX,pl.youku.com
@@ -10122,6 +10124,7 @@ DOMAIN-SUFFIX,trac.oferting.it
 DOMAIN-SUFFIX,trac.oferting.net
 DOMAIN-SUFFIX,tracdelight.io
 DOMAIN-SUFFIX,trace-2000.com
+DOMAIN-SUFFIX,trace-flow.ru
 DOMAIN-SUFFIX,trace.51jingying.com
 DOMAIN-SUFFIX,trace.events
 DOMAIN-SUFFIX,trace.free-reels.com
