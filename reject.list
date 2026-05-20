@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-19T20:10:08+00:00
+# Generated: 2026-05-20T20:32:41+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12169, local=0, total(deduped)=11567
+# Counts: upstream=12171, local=0, total(deduped)=11569
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2620,6 +2620,7 @@ DOMAIN-SUFFIX,cdn.usefathom.com
 DOMAIN-SUFFIX,cdn.userleap.com
 DOMAIN-SUFFIX,cdn.welcome.pussysaga.com
 DOMAIN-SUFFIX,cdn.wgchrrammzv.com
+DOMAIN-SUFFIX,cdn.xclick.app
 DOMAIN-SUFFIX,cdn.xpln.tech
 DOMAIN-SUFFIX,cdn.zx-adnet.com
 DOMAIN-SUFFIX,cdn2.sales-frontier.com
@@ -10548,6 +10549,7 @@ DOMAIN-SUFFIX,trafficfacts.com
 DOMAIN-SUFFIX,trafficjoint.com
 DOMAIN-SUFFIX,trafficmanager.anyclip.com
 DOMAIN-SUFFIX,trafficmaxx.de
+DOMAIN-SUFFIX,trafficoza.com
 DOMAIN-SUFFIX,trafficregenerator.com
 DOMAIN-SUFFIX,trafficscanner.pl
 DOMAIN-SUFFIX,trafficstars.com

@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-19T20:09:46+00:00
+# Generated: 2026-05-20T20:32:24+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30529, local=27, total(deduped)=25699, rule_set_only=12
+# Counts: upstream=30538, local=27, total(deduped)=25703, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -1306,6 +1306,7 @@ DOMAIN-SUFFIX,alchemysynth.com
 DOMAIN-SUFFIX,alefbank.com
 DOMAIN-SUFFIX,alexa.com
 DOMAIN-SUFFIX,alexanderstreet.com
+DOMAIN-SUFFIX,alfa.me
 DOMAIN-SUFFIX,alfabank.oavdo.amc
 DOMAIN-SUFFIX,alfabank.ru
 DOMAIN-SUFFIX,alfabank.st
@@ -15787,6 +15788,7 @@ DOMAIN-SUFFIX,mysocialworklab.com
 DOMAIN-SUFFIX,myspacecdn.com
 DOMAIN-SUFFIX,mysql.com
 DOMAIN-SUFFIX,mystrikingly.com
+DOMAIN-SUFFIX,myteamspeak.com
 DOMAIN-SUFFIX,myteenwebcam.com
 DOMAIN-SUFFIX,mythicentertainment.com
 DOMAIN-SUFFIX,mythicentertainment.net
@@ -21331,6 +21333,8 @@ DOMAIN-SUFFIX,teachmyass.com
 DOMAIN-SUFFIX,teachparentstech.org
 DOMAIN-SUFFIX,teamneedforspeed.com
 DOMAIN-SUFFIX,teamskeet.com
+DOMAIN-SUFFIX,teamspeak-services.com
+DOMAIN-SUFFIX,teamspeak.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,teamviewer.us
 DOMAIN-SUFFIX,tearapeak.com

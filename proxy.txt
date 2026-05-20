@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-19T20:09:46+00:00
+# Generated: 2026-05-20T20:32:24+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30529, local=27, total(deduped)=25699
+# Counts: upstream=30538, local=27, total(deduped)=25703
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1303,6 +1303,7 @@ adobeereg.com
 .alefbank.com
 .alexa.com
 .alexanderstreet.com
+.alfa.me
 .alfabank.oavdo.amc
 .alfabank.ru
 .alfabank.st
@@ -15784,6 +15785,7 @@ muse.jhu.edu
 .myspacecdn.com
 .mysql.com
 .mystrikingly.com
+.myteamspeak.com
 .myteenwebcam.com
 .mythicentertainment.com
 .mythicentertainment.net
@@ -21328,6 +21330,8 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .teachparentstech.org
 .teamneedforspeed.com
 .teamskeet.com
+.teamspeak-services.com
+.teamspeak.com
 .teamviewer.com
 .teamviewer.us
 .tearapeak.com

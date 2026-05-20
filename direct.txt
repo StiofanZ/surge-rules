@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-05-19T20:10:08+00:00
+# Generated: 2026-05-20T20:32:41+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=113746, local=2, total(deduped)=113612, excluded=5
+# Counts: upstream=113723, local=2, total(deduped)=113589, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -1697,6 +1697,7 @@
 .123242.com
 .123245.com
 .123254.com
+.123278.com
 .123294.com
 .123295.com
 .12333.com
@@ -3822,6 +3823,7 @@
 .332831.com
 .333-555.com
 .333.com
+.3331.com
 .33315.com
 .333232.xyz
 .333333.com
@@ -12582,6 +12584,7 @@ amp-api.music.apple.com
 .ant-financial.com
 .ant-open.com
 .anta.com
+.antafu.com
 .antaiib.com
 .antairui.net
 .antangbusiness.com
@@ -16019,6 +16022,7 @@ bg4.v4.a.dl.ws.microsoft.com
 .bhshunhui.com
 .bhshyy.com
 .bhsr.com
+.bhsun.com
 .bhszyyy.com
 .bhtv.cc
 .bhuitong.com
@@ -24228,7 +24232,6 @@ cn.widevine.com
 .cnamico.com
 .cnanzhi.com
 .cnaomeng.com
-cnappinstall.googleadapis.com
 .cnatom.com
 .cnats.com
 .cnautofinance.com
@@ -25389,7 +25392,6 @@ connectivitycheck.gstatic.com
 .constar-gd.com
 .constasj.me
 .constgroup.com
-content.googleadapis.com
 .content4ads.com
 .contentchina.com
 .contentstore.htcvive.com
@@ -30896,7 +30898,6 @@ doubleclick.net
 download.developer.apple.com
 .download.microsoft.com
 download.mlcc.google.com
-download.qatp1.net
 download.tensorflow.google.com
 .download.visualstudio.microsoft.com
 .download.windowsupdate.com
@@ -33136,7 +33137,6 @@ ea2cn-staging-outlet.dell.com
 .emjob.com
 .emlinix.com
 .emlog.net
-emmapplecodevice.googleapis.com
 .emmmn.com
 .emodor.com
 emoi-cncdn.bing.com
@@ -39428,7 +39428,6 @@ gbxgateway.dell.com
 .go-gddq.com
 .go-goal.com
 .go.cc
-go.corp.google.com
 .go007.com
 .go108.com
 .go1314.com
@@ -49257,7 +49256,6 @@ guzzoni.smoot.apple.com
 .hujingnb.com
 .huke88.com
 .hukeck.com
-.hukelc.com
 .hukenb.com
 .hukexyy.com
 .hukou021.com
@@ -50469,6 +50467,7 @@ guzzoni.smoot.apple.com
 .hzzp.com
 .hzzpko3186.vip
 .hzzqzc.com
+.hzzred.com
 .hzzrmc.com
 .hzzsfs.com
 .hzzsxh.com
@@ -54695,6 +54694,7 @@ izattime.qcomgeo2.com
 .jidubook.com
 .jidujiao.com
 .jidujiasu.com
+.jie.ge
 .jieanjiaotong.com
 .jiebai.com
 .jiebanchuyou.com
@@ -55023,6 +55023,7 @@ izattime.qcomgeo2.com
 .jingdudai.com
 .jingdukaoyan.com
 .jingdw.com
+.jingeshou.com
 .jingge.com
 .jinggeng.net
 .jinggon.com
@@ -55706,6 +55707,7 @@ izattime.qcomgeo2.com
 .jj0833.com
 .jj20.com
 .jj59.com
+.jj5agame.com
 .jj831.com
 .jj99.icu
 .jjbang.com
@@ -56173,7 +56175,6 @@ izattime.qcomgeo2.com
 .jnyng.com
 .jnyyjt.com
 .jnzhuoxin.com
-.jnzjzx.net
 .jnzl.com
 .jnzongchi.com
 .jnzx.cc
@@ -60485,7 +60486,6 @@ ksn-verdict.geoksn.kaspersky.com
 .l.biz
 .l178.info
 .l1yu.com
-l2-uberproxy.corp.google.com
 .l2cn.com
 .l2h.site
 .l2t7.cc
@@ -63321,13 +63321,10 @@ learn.microsoft.com
 .log-research.com
 .logacg.com
 .logclub.com
-logger-dev.corp.google.com
-logger.corp.google.com
 .logi.im
 .logi100.com
 .logicdsp.com
 .login.cdnetworks.com
-login.corp.google.com
 .logiseasy.com
 .logisteed-sc.com
 .logistics-ea.com
@@ -67602,6 +67599,7 @@ ml.cdn-apple.com
 .modelevel.com
 .modelltd.com
 .modelones.com
+.modelscope.ai
 .modelscope.net
 .modelwhale.com
 .modeng178.com
@@ -67795,7 +67793,6 @@ ml.cdn-apple.com
 .monidata.com
 .moniex-verifyb.com
 .monika.love
-monitoring.qpdp1.net
 .monkeylsp.com
 .monknow.com
 .mono.work
@@ -74819,7 +74816,6 @@ productcard.gog-statics.com
 .providence-chemicals.com
 .prowine-shanghai.com
 .proximabeta.com
-proxyconfig.corp.google.com
 .proya-group.com
 .proya.com
 .proyy.com
@@ -75254,7 +75250,6 @@ publicassets.cdn-apple.com
 .qacctv.com
 .qacn.net
 .qafone.cc
-qagpublic.qatp1.net
 .qakkan.vip
 .qalex.com
 .qamemc.com
@@ -75585,7 +75580,6 @@ qagpublic.qatp1.net
 .qfxcha.com
 .qg.net
 .qg108.com
-qgadmin.qcpp1.net
 .qgb2b.com
 .qgbnzb.com
 .qgcyjq.org
@@ -77103,8 +77097,6 @@ qpx.googleflights.net
 .qualcomm.cn.cdn.cloudflare.net
 .quality666.com
 .qualtekgz.com
-qualysapi.qatp1.net
-qualysguard.qpdp1.net
 .quan.mx
 .quan007.com
 .quan05.com
@@ -77769,7 +77761,6 @@ qualysguard.qpdp1.net
 .qygjyey.com
 .qyglzz.com
 .qygvip128.com
-.qygvip40.com
 .qyhgsb.com
 .qyhl.vip
 .qyhr.org
@@ -77947,7 +77938,6 @@ qualysguard.qpdp1.net
 .r-tms.net
 .r.bing.com
 .r.biz
-r.cert.corp.google.com
 .r12345.com
 .r147emh.com
 .r1y.com
@@ -78083,7 +78073,6 @@ r.cert.corp.google.com
 .rapidppt.com
 .rapoo.com
 .rapospectre.com
-rapture-prod.corp.google.com
 .rarcbank.com
 .rarelit.net
 .rarone.com
@@ -78751,7 +78740,6 @@ reserve-prime.apple.com
 .rightpaddle.com
 .rigol.com
 .rigouwang.com
-.riitao.com
 .riji001.com
 .riji100zi.com
 .rijigu.com
@@ -79776,6 +79764,7 @@ safebrowsing.googleapis.com
 .safetyimg.com
 .safetystatic.com
 .safetyvod.com
+.safewk.com
 .safround.com
 .sagewc-exp.com
 .sagigame.net
@@ -80212,7 +80201,6 @@ safebrowsing.googleapis.com
 .sc96655.com
 .scaffi.com
 .scagz.com
-scanservice1.qcpp1.net
 .scansmt.com
 .scanv.com
 .scarbbs.com
@@ -80814,7 +80802,6 @@ scene7-cdn.dell.com
 .sdglql.com
 .sdgmjiaoyun.com
 .sdgren.com
-.sdgsdggg.xyz
 .sdgsgcjsjt.com
 .sdgsjc.com
 .sdgslb.com
@@ -80891,6 +80878,7 @@ scene7-cdn.dell.com
 .sdjcf.com
 .sdjcsh.com
 .sdjcw.com
+.sdjcxxgs.com
 .sdjiance.com
 .sdjiankan.com
 .sdjianmei.com
@@ -86043,7 +86031,6 @@ ssl-google-analytics.l.google.com
 .ssleye.com
 .sslibrary.com
 .sslnode.com
-sslredirect.corp.google.com
 .sslso.com
 .ssltgm.com
 .ssmc-sz.com
@@ -86376,8 +86363,6 @@ store.storeimages.cdn-apple.com
 .streamax.com
 .streamaxtech.com
 .streamcomputing.com
-streaming-uberproxy-rotation.corp.google.com
-streaming-uberproxy.corp.google.com
 streamingaudio.itunes.apple.com
 .streamlakeapi.com
 .streffy.com
@@ -86853,10 +86838,6 @@ su.itunes.apple.com
 .suotn.com
 .suoxin5.com
 .suoyiren.com
-sup-ssh-relay.corp.google.com
-sup-ssh-relay2.corp.google.com
-sup.corp.google.com
-sup.l.google.com
 .supafa.com
 .supaq.com
 .suparc.com
@@ -89895,7 +89876,6 @@ tac.googleapis.com
 .tesolsh.com
 .tesoon.com
 .test-cignacmb.com
-test.gbugs-qa.chromium.org
 .testbird.com
 .testcoo.com
 .testeb.com
@@ -91403,7 +91383,6 @@ tj-pod1-smp-device.apple.com
 .toolnb.com
 .toolonline.net
 tools.google.com
-tools.l.google.com
 .tools.team
 .toolscat.com
 .toolsjy.com
@@ -93008,9 +92987,6 @@ tp.louisvuitton.com
 .ubccn.com
 .ubeethiesemo.com
 .ubeihai.com
-uberproxy-debug4.corp.google.com
-uberproxy.corp.google.com
-uberproxy6.corp.google.com
 .ubesh.com
 .ubestkid.com
 .ubetween.com
@@ -95906,6 +95882,7 @@ valid.origin-apple.com.akadns.net
 .wcjm.org
 .wclbox.com
 .wcloud.com
+.wcloudcdn.com
 .wcode.net
 .wcp.hk
 .wcqjyw.com
@@ -97668,7 +97645,6 @@ weatherkit.apple.com
 .wise-iot.com
 .wise99.com
 .wiseasy.com
-.wisebond.net
 .wisecity.net
 .wisecotech.com
 .wisedoo.com
@@ -98726,6 +98702,7 @@ wscont2.apps.microsoft.com
 .wujue.com
 .wukaikai.tech
 .wukao.com
+.wukazhifupos.com
 .wukong.com
 .wukong.la
 .wukongbjb.com
@@ -102353,7 +102330,6 @@ www4-static.gog-statics.com
 .xn--fiqz9s
 .xn--fjq5py34j65v.com
 .xn--fjq720a
-xn--flw351e.com
 .xn--g2xx48c
 .xn--glr604k.com
 .xn--gmq238c5fy.com
@@ -110163,6 +110139,7 @@ xtratime.qcomgeo2.com
 .zhenyunpan.com
 .zhenzhuchanfu.com
 .zheshenet.com
+.zheshouka.com
 .zhetao.com
 .zhetian.org
 .zhetouniu.com
