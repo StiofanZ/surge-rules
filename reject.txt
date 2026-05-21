@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-20T20:32:41+00:00
+# Generated: 2026-05-21T20:15:51+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12171, local=0, total(deduped)=11569
+# Counts: upstream=12179, local=0, total(deduped)=11574
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -697,6 +697,7 @@ ads.dahlmessenger.com
 .ads.farakav.com
 .ads.feelingtouch.com
 .ads.greengeeks.com
+.ads.heytapmobi.com
 .ads.huan.tv
 .ads.huantest.com
 ads.icq.com
@@ -801,6 +802,7 @@ adsdk.yandex.ru
 .adsettings.com
 .adsfile.qq.com
 .adsfirm.com
+.adsfs.heytapimage.com
 .adsfs.oppomobile.com
 .adsgard.aprod.scopely.io
 .adsgig.com
@@ -1599,7 +1601,6 @@ analytics.wildberries.ru
 .analytik.xyz
 .analytiwave.com
 .andersenit.dk
-.andhub.jp
 .andmlb.kshwtj.com
 .android-beacons.xumo.com
 .android-stat.acestream.net
@@ -2932,7 +2933,6 @@ click.rustore.ru
 .collector-pxdojv695v.protechts.net
 .collector-pxebumdlwe.px-cdn.net
 .collector-pxebumdlwe.pxchk.net
-.collector-sbanking.shb-pelib.com
 .collector-statistics.nhn-commerce.com
 .collector.abc.net.au
 .collector.brandify.com
@@ -2997,8 +2997,6 @@ click.rustore.ru
 .conduit-beacon-usw2.mtvnservices.com
 .conduit-beacon.mtvnservices.com
 .conf.international.baidu.com
-.confe.dc.oppomobile.com
-.conff.dc.oppomobile.com
 .confiant-integrations.net
 .config-factory.com
 .config.emb-api.com
@@ -3196,6 +3194,7 @@ copilot-telemetry-service.githubusercontent.com
 .crazyegg.com
 .create.lidstatic.com
 .creative-klepon-3f0ecb.netlify.app
+.creative.5ch.fun
 .creative.boyfriend.show
 .creative.camsplanetlive.com
 .creative.celebjihad.live
@@ -3639,6 +3638,7 @@ copilot-telemetry-service.githubusercontent.com
 .dc.di.atlas.samsung.com
 .dc.dqa.samsung.com
 .dc.letv.com
+.dc.oppomobile.com
 .dc121677.com
 .dc5ig2fc8lg83.cloudfront.net
 .dc8xl0ndzn2cb.cloudfront.net
@@ -3853,7 +3853,6 @@ disney.my.sentry.io
 .dpjzr.top
 .dppaivsn6f9dy.cloudfront.net
 .dragate-in-dc.heytapmobile.com
-.dragate.dc.oppomobile.com
 .drainmayhem.click
 .dramaticsalad.com
 .drawers06.com
@@ -4571,6 +4570,7 @@ error-tracking.megamarket.tech
 .freshcounter.com
 .freshmarketer.com
 .fresnel-events.vimeocdn.com
+.frhiys.com
 .friendbuy.com
 .friendlyduck.com
 .frog.editorx.com
@@ -5812,6 +5812,7 @@ google-analytics-suite.ozon.ru
 .leroj.elitegol.tv
 .les-experts.com
 .levexis.com
+.lex.toss.im
 .lexip.4pcdn.de
 .lexity.com
 .lexozfldkklgvc.com
@@ -7685,6 +7686,7 @@ pixel.yandex.com
 .player-telemetry.vimeo.com
 .player.gliacloud.com
 .player.stats.live-video.net
+.player.target-video.com
 .playgap.b-cdn.net
 .playhaven.com
 .playwire.com
@@ -8737,6 +8739,7 @@ sentry.x5.ru
 .shinystat.it
 .shippinginsights.com
 .shisanmaozser.com
+.shiyifacaisalzc.com
 .shoelace.com
 .shonretimus.com
 .shop.vapelog.jp
@@ -9171,7 +9174,6 @@ stacks.vk-portal.net
 .startup.mobile.yandex.net
 .stat-analytics.mediavitrina.ru
 .stat-feedot.ru
-.stat-in.dc.oppomobile.com
 .stat.4u.pl
 .stat.5-tv.ru
 .stat.adtec.ru
@@ -9754,6 +9756,7 @@ t.mail.ru
 .tagm.uneedcomms.com
 .tagman.britishairways.com
 .tagmanager.alright.network
+.tagmanager.andata.ru
 .tagmanager.toast.com
 .tagmanager.yodobashi.com
 .tagrec.sphdigital.com
@@ -9987,6 +9990,7 @@ target.vk.com
 .tkrecorder.aotter.net
 .tktracker.aotter.net
 .tl.tradetracker.net
+.tl7x928g7l3ppnqnc7ngy8wue3qgkvnb.cfd
 .tl813.com
 .tlmtr.org
 .tm-banners.gamingadult.com
@@ -11030,6 +11034,7 @@ visor.sberbank.ru
 .vkcdnservice.com
 .vlcdownloads.com
 .vliplatform.com
+.vm.target-video.com
 .vm5apis.com
 .vmmpxl.com
 .vmweb.net

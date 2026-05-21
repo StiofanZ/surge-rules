@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-20T20:32:24+00:00
+# Generated: 2026-05-21T20:15:32+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30538, local=27, total(deduped)=25703
+# Counts: upstream=30553, local=27, total(deduped)=25712
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -9335,6 +9335,7 @@ forwarder.workos.com
 .g-tun.com
 .g-tvapp.com
 .g-xxxhub.com
+.g.ai
 .g.co
 .g.dev
 .g.page
@@ -13639,6 +13640,7 @@ ingest.apple-studies.com
 .lenporno.net
 .lenporno.red
 .lenwhite.com
+.leonardo.ai
 .leporno.org
 .lepornochaud.com
 .lepornofrais.com
@@ -15455,10 +15457,12 @@ medone-education.thieme.com
 .moxing.news
 .moystoys.com
 .mozgcp.net
+.mozilla.ai
 .mozilla.com
 .mozilla.community
 .mozilla.net
 .mozilla.org
+.mozillafoundation.org
 .mp.world
 .mpettis.com
 .mpfinance.com
@@ -15808,6 +15812,7 @@ muse.jhu.edu
 .myyoungmomisnude.com
 .myyoungwifeisnude.com
 .mzed.com
+.mzl.la
 .mzstatic.com
 .n0vadesktop.com
 .n26.com
@@ -18801,6 +18806,7 @@ public-us-pingsx.api.clonoth.com
 .randyblue.com
 .rapefilms.net
 .rapetube.me
+.raphael.app
 .rapidmoviez.com
 .rapidprototyping-cadcam.com
 .rapidssl.com
@@ -19284,6 +19290,7 @@ rsshub2.asailor.org
 .ruinedking.com
 .rukoebxx.com
 .rulaisc-tv.buzz
+.rule34.us
 .rule34.xxx
 .rule34h.com
 .rule34pornvids.com
@@ -20541,6 +20548,7 @@ setup.workos.com
 .sosad.fun
 .soso7778.com
 .sosreader.com
+.sotwe.com
 .soubory.com
 .souka.xyz
 .soulcaliburhentai.net
@@ -21282,6 +21290,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .tap.io
 .tapanwap.com
 .tapatalk.com
+.tapnow.ai
 .taptap.io
 .taptotokyo.com
 .taqunuhai.vip

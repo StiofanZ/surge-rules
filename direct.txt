@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-05-20T20:32:41+00:00
+# Generated: 2026-05-21T20:15:53+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=113723, local=2, total(deduped)=113589, excluded=5
+# Counts: upstream=113687, local=2, total(deduped)=113553, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -2717,7 +2717,6 @@
 .1d9z.com
 .1dao99.com
 .1date1cake.com
-.1dcbzuv.com
 .1dcdp4.com
 .1de6de84b1017.beer
 .1der-ad.com
@@ -4870,7 +4869,6 @@
 .4132c3c4011021.beer
 .413cd5ac210291.beer
 .413xkyd.com
-.414500.net
 .416548ebbf96c1b9.com
 .41739b0aa10301.beer
 .417628.org
@@ -7470,7 +7468,6 @@
 .6868yx.com
 .68716871.com
 .68792999.com
-.688539.com
 .6887cc57c10251.beer
 .6888.tv
 .688dns.com
@@ -11634,7 +11631,6 @@ afcs.dell.com
 .aizhantj.com
 .aizhanzhe.com
 .aizhengli.com
-.aizhet.com
 .aizhibo.net
 .aizhugong.com
 .aizools.com
@@ -12069,7 +12065,6 @@ alibaba.cdn.steampipe.steamcontent.com
 .aliyunga8602.com
 .aliyunga8603.com
 .aliyungf.com
-.aliyungrtn.com
 .aliyunhelp.com
 .aliyunhn.com
 .aliyunidaas.com
@@ -12725,7 +12720,6 @@ amp-api.music.apple.com
 .anzhixun.com
 .anzhuauto.com
 .anzhuo.com
-.anzhuo.me
 .anzhuoapk.com
 .anzhuoe.com
 .anzhuoshouzhuan.com
@@ -17193,7 +17187,6 @@ bg4.v4.a.dl.ws.microsoft.com
 .bjzmkm.com
 .bjzmqj.com
 .bjznkq.net
-.bjznnt.com
 .bjzph.com
 .bjzqw.com
 .bjzrzc.com
@@ -17363,7 +17356,6 @@ bg4.v4.a.dl.ws.microsoft.com
 .blue0123.com
 .blueaggrestore.com
 .bluearchive-cn.com
-.bluebellalingerie.com
 .bluebellls.com
 .bluebirdme.com
 .blueboxasia.com
@@ -19316,7 +19308,6 @@ cache.pack.google.com
 .cardplus.work
 .cardqu.com
 .cardyang.com
-.care-challenge.com
 .care110.com
 .caredear.com
 .careduka.com
@@ -20851,7 +20842,6 @@ certs.apple.com
 .chaincatcher.com
 .chaindd.com
 .chainedbox.com
-.chainhd.com
 .chainknow.com
 .chainlinkpcp.com
 .chainlinkwork.com
@@ -21493,7 +21483,6 @@ checkin.gstatic.com
 .chgi.net
 .chgie.com
 .chglmp.com
-.chgreenway.com
 .chgry.com
 .chgzfls.com
 .chhqtest.com
@@ -21670,7 +21659,6 @@ checkin.gstatic.com
 .china-jianan.com
 .china-jinlong.com
 .china-jit.com
-.china-jlt.com
 .china-jm.org
 .china-jxcf.com
 .china-kaidiwt.com
@@ -23057,7 +23045,6 @@ checkin.gstatic.com
 .chuanyuapp.com
 .chuanzhen.com
 .chuapp.com
-.chuban.cc
 .chubanyun.me
 .chubaohui.com
 .chucheng.wiki
@@ -23076,7 +23063,6 @@ checkin.gstatic.com
 .chuinet.com
 .chuisax.com
 .chuishen.xyz
-.chuixue.com
 .chuiyue.com
 .chuizi.net
 .chujian.xyz
@@ -30943,7 +30929,6 @@ downloaddispatch.itunes.apple.com
 .dper.com
 .dpfile.com
 .dpgz.com
-.dpifloor.com
 .dpin100.com
 .dpjszs.com
 .dpkyz.com
@@ -31580,7 +31565,6 @@ downloaddispatch.itunes.apple.com
 .dwjpwf.com
 .dwjxz.com
 .dwmoniqi.com
-.dwoke.com
 .dwq.com
 .dwsedu.com
 .dwsgases.com
@@ -34143,7 +34127,6 @@ experiments.apple.com
 .ezhangu.com
 .ezhayan.com
 .ezhicai.com
-.ezhijiantuoluo.com
 .ezhiwan.com
 .ezhou.com
 .ezhousetech.com
@@ -42441,7 +42424,6 @@ guzzoni.smoot.apple.com
 .gxtongji.com
 .gxtongzhu.com
 .gxtopart.com
-.gxtp2021.com
 .gxtrwhy.com
 .gxtskq.com
 .gxtslr.com
@@ -44884,7 +44866,6 @@ guzzoni.smoot.apple.com
 .hbjjrb.com
 .hbjk114.com
 .hbjkjt.com
-.hbjmcjjt.com
 .hbjmyljs.com
 .hbjob88.com
 .hbjomay.com
@@ -47080,7 +47061,6 @@ guzzoni.smoot.apple.com
 .hnlat.com
 .hnlawyer.org
 .hnlbdl.com
-.hnleisu.com
 .hnlens.com
 .hnliangku.com
 .hnlipu.com
@@ -47592,7 +47572,6 @@ guzzoni.smoot.apple.com
 .hongyaomall.com
 .hongyawang.com
 .hongyejixie.com
-.hongyewuyang.com
 .hongyi5.com
 .hongyimarine.com
 .hongyirong.com
@@ -47873,6 +47852,7 @@ guzzoni.smoot.apple.com
 .hpcang.com
 .hpccake.com
 .hpccube.com
+.hpconnected.com
 .hpculturegroup.com
 .hpepea.com
 .hpgamestream.com
@@ -48367,7 +48347,6 @@ guzzoni.smoot.apple.com
 .huachengenjoy.com
 .huachengjx.com
 .huachenholdings.com
-.huachenit.com
 .huachenyuanyang.com
 .huachuangroup.net
 .huaco908.com
@@ -51503,6 +51482,7 @@ icloud.cdn-apple.com
 .ihtmlcss.com
 .ihuaben.com
 .ihuan.me
+.ihuandu.com
 .ihuang.org
 .ihuanling.com
 .ihuanque.com
@@ -54084,7 +54064,6 @@ izattime.qcomgeo2.com
 .jgcarbide.com
 .jgchat.net
 .jgcjjt.com
-.jgdq.org
 .jgdun.com
 .jgdx.com
 .jgew3d.com
@@ -55858,7 +55837,6 @@ izattime.qcomgeo2.com
 .jkt-tencentclb.com
 .jkt-tencentclb.net
 .jkt-tencentclb.work
-.jktcom.com
 .jktong.com
 .jktower.com
 .jkuntp.com
@@ -56249,7 +56227,6 @@ izattime.qcomgeo2.com
 .johhan.com
 .johnlz.com
 .johnmedia.com
-.johogames.com
 .johouse.com
 .joi09110pt.com
 .joiest.com
@@ -68346,7 +68323,6 @@ ml.cdn-apple.com
 .musestudio.net
 .musetransfer.com
 .mushafa.net
-.music-search.org
 music.apple.com
 .music4x.com
 .musicchina-expo.com
@@ -69369,7 +69345,6 @@ myapp.itunes.apple.com
 .nbwaf.net
 .nbwan.net
 .nbwbw.com
-.nbweldingtorch.com
 .nbwelldon.com
 .nbwetc.com
 .nbwhg.com
@@ -70435,7 +70410,6 @@ myapp.itunes.apple.com
 .njkaiguan.com
 .njkcsj.com
 .njkeeryq.com
-.njkefayuan.com
 .njkerun.com
 .njkeystone.com
 .njkhhb.com
@@ -70716,7 +70690,6 @@ myapp.itunes.apple.com
 .nliniz.com
 .nlinkline.com
 .nlktj.com
-.nlogn.art
 .nloop.cc
 .nlplab.com
 .nls1853.com
@@ -74530,7 +74503,6 @@ play.music.apple.com
 .potnsik-faastink898.com
 .potomaccottage.com
 .potops.com
-.potplayer.org
 .potplayercn.com
 .pouchcontainer.io
 .pouquiagievu.com
@@ -77760,7 +77732,6 @@ qpx.googleflights.net
 .qygbet427.vip
 .qygjyey.com
 .qyglzz.com
-.qygvip128.com
 .qyhgsb.com
 .qyhl.vip
 .qyhr.org
@@ -78529,7 +78500,6 @@ refresh-bkg.activation-v2.kaspersky.com
 .renrk.com
 .renruihr.com
 .renrunkeji.com
-.rensa-hanno.com
 .rensheng123.com
 .renshouks.com
 .renshouren.com
@@ -87798,6 +87768,7 @@ sync.itunes.apple.com
 .szcwdz.com
 .szcy-fintech.com
 .szcy99.com
+.szcyqg.com
 .szczjy.com
 .szczkjgs.com
 .szdaily.com
@@ -90678,7 +90649,6 @@ time.xtracloud.net
 .tingtingwo.com
 .tingvision.com
 .tingxi8.com
-.tingxiangzu.com
 .tingxiaoyou.com
 .tingyulou.com
 .tingyun.com
@@ -96325,7 +96295,6 @@ weatherkit.apple.com
 .weimaitu.com
 .weimaqi.net
 .weimeigu.net
-.weimeiyijing.com
 .weimi24.com
 .weimiaocaishang.com
 .weimibio.com
@@ -96504,7 +96473,6 @@ weatherkit.apple.com
 .weiyuntop.com
 .weiyunyingxiang.com
 .weizhanabc.com
-.weizhangjilu.com
 .weizhangwang.com
 .weizhi.com
 .weizhike.club
@@ -98347,7 +98315,6 @@ weatherkit.apple.com
 .wpxap.com
 .wpyou.com
 .wpzhiku.com
-.wpzysq.com
 .wq96f9.com
 .wqbook.com
 .wqc.so
@@ -98583,7 +98550,6 @@ wscont2.apps.microsoft.com
 .wubixuexi.com
 .wubizi.net
 .wublock123.com
-.wubuxianjing.com
 .wubx.net
 .wuchenxu.com
 .wuchou.org
@@ -101635,7 +101601,6 @@ www4-static.gog-statics.com
 .xiqiaoshantour.com
 .xiqifun.com
 .xiqinrc.com
-.xiqkj.com
 .xiqu.me
 .xiqu001.com
 .xiquebo.com
@@ -111382,7 +111347,6 @@ xtratime.qcomgeo2.com
 .ziwuyunjiao.com
 .zixia.com
 .zixiaomao.com
-.zixigua.com
 .zixijiaoshi.com
 .zixingxinwen.com
 .zixueguoxue.com
