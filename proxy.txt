@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-22T20:15:17+00:00
+# Generated: 2026-05-23T19:41:45+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30553, local=27, total(deduped)=25712
+# Counts: upstream=30559, local=27, total(deduped)=25715
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -233,6 +233,7 @@
 .233abc.com
 .2371tom.com
 .24h.tv
+.24hbook.com
 .24hjav.com
 .24hrs.ca
 .24porn.com
@@ -14276,6 +14277,7 @@ live-patreon-marketing.pantheonsite.io
 .marvelsuperwar.com
 .marxist.net
 .marxists.org
+.mas.to
 .masalabin.com
 .masaladesi.com
 .masalaseen.net
@@ -15962,6 +15964,7 @@ muse.jhu.edu
 .nenitas.club
 .nentindo.net
 .neo-miracle.com
+.neodb.social
 .neoforged.net
 .neotokyo.supertop-100.com
 .neovim.io

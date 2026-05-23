@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-22T20:15:17+00:00
+# Generated: 2026-05-23T19:41:45+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30553, local=27, total(deduped)=25712, rule_set_only=12
+# Counts: upstream=30559, local=27, total(deduped)=25715, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -236,6 +236,7 @@ DOMAIN-SUFFIX,22112211.xyz
 DOMAIN-SUFFIX,233abc.com
 DOMAIN-SUFFIX,2371tom.com
 DOMAIN-SUFFIX,24h.tv
+DOMAIN-SUFFIX,24hbook.com
 DOMAIN-SUFFIX,24hjav.com
 DOMAIN-SUFFIX,24hrs.ca
 DOMAIN-SUFFIX,24porn.com
@@ -14279,6 +14280,7 @@ DOMAIN-SUFFIX,marvelsuperheroseptember.com
 DOMAIN-SUFFIX,marvelsuperwar.com
 DOMAIN-SUFFIX,marxist.net
 DOMAIN-SUFFIX,marxists.org
+DOMAIN-SUFFIX,mas.to
 DOMAIN-SUFFIX,masalabin.com
 DOMAIN-SUFFIX,masaladesi.com
 DOMAIN-SUFFIX,masalaseen.net
@@ -15965,6 +15967,7 @@ DOMAIN-SUFFIX,nenastran.com
 DOMAIN-SUFFIX,nenitas.club
 DOMAIN-SUFFIX,nentindo.net
 DOMAIN-SUFFIX,neo-miracle.com
+DOMAIN-SUFFIX,neodb.social
 DOMAIN-SUFFIX,neoforged.net
 DOMAIN-SUFFIX,neotokyo.supertop-100.com
 DOMAIN-SUFFIX,neovim.io
