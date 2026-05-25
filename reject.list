@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-24T19:45:25+00:00
+# Generated: 2026-05-25T20:04:14+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12181, local=0, total(deduped)=11576
+# Counts: upstream=12182, local=0, total(deduped)=11577
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -6343,6 +6343,7 @@ DOMAIN-SUFFIX,maphuahin.com
 DOMAIN-SUFFIX,maploco.com
 DOMAIN-SUFFIX,mapmyuser.com
 DOMAIN-SUFFIX,marathondataco.com
+DOMAIN-SUFFIX,marcuscash.one
 DOMAIN-SUFFIX,marfeelcache.com
 DOMAIN-SUFFIX,marinsm.com
 DOMAIN-SUFFIX,market-click-baobab.yandex.ru
@@ -7690,7 +7691,6 @@ DOMAIN-SUFFIX,player-feedback.p7s1video.net
 DOMAIN-SUFFIX,player-telemetry.vimeo.com
 DOMAIN-SUFFIX,player.gliacloud.com
 DOMAIN-SUFFIX,player.stats.live-video.net
-DOMAIN-SUFFIX,player.target-video.com
 DOMAIN-SUFFIX,playgap.b-cdn.net
 DOMAIN-SUFFIX,playhaven.com
 DOMAIN-SUFFIX,playwire.com
@@ -7918,6 +7918,7 @@ DOMAIN-SUFFIX,puds.ucweb.com
 DOMAIN-SUFFIX,pullcf.com
 DOMAIN-SUFFIX,puls.lv
 DOMAIN-SUFFIX,pulsar.ebay.com
+DOMAIN-SUFFIX,pulse.ftools.fluege.de
 DOMAIN-SUFFIX,pulse.perfmetrics.netflix.com
 DOMAIN-SUFFIX,pulselog.com
 DOMAIN-SUFFIX,pulsemaps.com
