@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-26T20:28:46+00:00
+# Generated: 2026-05-27T20:31:17+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12184, local=0, total(deduped)=11578
+# Counts: upstream=12186, local=0, total(deduped)=11580
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -461,6 +461,7 @@ DOMAIN-SUFFIX,adbkacpmu.com
 DOMAIN-SUFFIX,adbkwai.com
 DOMAIN-SUFFIX,adblade.com
 DOMAIN-SUFFIX,adblockanalytics.com
+DOMAIN-SUFFIX,adblocker.prod-blocking.workers.dev
 DOMAIN,adblogger.vk.com
 DOMAIN,adblogger.vk.ru
 DOMAIN-SUFFIX,adbot.tw
@@ -4067,6 +4068,7 @@ DOMAIN-SUFFIX,engagetosell.com
 DOMAIN-SUFFIX,engageya.com
 DOMAIN-SUFFIX,engine.partylemons.com
 DOMAIN-SUFFIX,engine.trialhd.com
+DOMAIN-SUFFIX,engine.vaxcams.com
 DOMAIN-SUFFIX,engine212.com
 DOMAIN-SUFFIX,engine64.com
 DOMAIN-SUFFIX,enhance.co.jp
@@ -5005,6 +5007,7 @@ DOMAIN-SUFFIX,halldata.com
 DOMAIN-SUFFIX,hananokai.tv
 DOMAIN-SUFFIX,hao123union.baidu.com
 DOMAIN-SUFFIX,haoxxwang.com
+DOMAIN-SUFFIX,happyleafmotion.com
 DOMAIN-SUFFIX,harvest.graindata.com
 DOMAIN-SUFFIX,harvester.cms.markiza.sk
 DOMAIN-SUFFIX,harvester.hbpl.co.uk
@@ -7118,7 +7121,6 @@ DOMAIN-SUFFIX,ntracker-collector.naver.com
 DOMAIN-SUFFIX,ntus.bidease.com
 DOMAIN-SUFFIX,ntvk1.ru
 DOMAIN-SUFFIX,nuclearads.com
-DOMAIN-SUFFIX,nuggad.net
 DOMAIN-SUFFIX,nugh2om.txxx.com
 DOMAIN-SUFFIX,numbers.md
 DOMAIN-SUFFIX,numerino.cz
@@ -7164,6 +7166,7 @@ DOMAIN-SUFFIX,odtrtadl.com
 DOMAIN-SUFFIX,ofbtrorzo.in
 DOMAIN-SUFFIX,ofd.meng-an.cn
 DOMAIN-SUFFIX,offclaydolon.com
+DOMAIN-SUFFIX,offer-extensions.com
 DOMAIN-SUFFIX,offer-go.com
 DOMAIN-SUFFIX,offermatica.com
 DOMAIN-SUFFIX,offerreality.com
@@ -9109,7 +9112,6 @@ DOMAIN-SUFFIX,spt.performgroup.com
 DOMAIN-SUFFIX,sptag.com
 DOMAIN-SUFFIX,sptag1.com
 DOMAIN-SUFFIX,spxl.socy.es
-DOMAIN-SUFFIX,spyglass.octanime.net
 DOMAIN-SUFFIX,spylog.com
 DOMAIN-SUFFIX,spylog.ru
 DOMAIN-SUFFIX,sq.requestads.com
