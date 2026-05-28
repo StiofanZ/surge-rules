@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-27T20:30:44+00:00
+# Generated: 2026-05-28T20:39:39+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30561, local=27, total(deduped)=25716
+# Counts: upstream=30595, local=27, total(deduped)=25749
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -7586,6 +7586,7 @@ dl.begellhouse.com
 .electronicsignature.ru
 .electronjs.org
 .element.io
+.elementary.io
 .elephantlist.com
 .elephantsdream.org
 .elephanttube.com
@@ -9846,6 +9847,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .gnci.org.hk
 .gnews.org
 .gnom-cham.com
+.gnome.org
 .gnu.org
 .gnzi.xyz
 .gnzi1.top
@@ -10659,6 +10661,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .helloandroid.com
 .helloavgirls.com
 .hellokittybeats.com
+.hellomoto.com
 .helloqueer.com
 .hellosmartbook.com
 .hellporno.com
@@ -13269,6 +13272,7 @@ ingest.apple-studies.com
 .kbzpay.com
 .kc3000.shop
 .kcqsw-na.sbs
+.kde.org
 .kdfuli.com
 .kdy202312.shop
 .keaiav.com
@@ -14025,6 +14029,7 @@ live-patreon-marketing.pantheonsite.io
 .lvv2.com
 .lwwcn.buzz
 .lwwcn.xyz
+.lxqt-project.org
 .lxxlxx.com
 .lyfhk.net
 .lysol.ca
@@ -14400,6 +14405,7 @@ live-patreon-marketing.pantheonsite.io
 .mat6tube.com
 .matainja.com
 .matchmover.com
+.mate-desktop.org
 .material.io
 .mathoverflow.net
 .matome-plus.com
@@ -15431,7 +15437,31 @@ medone-education.thieme.com
 .motherless.com
 .motiongraphicsandmore.com
 .motionpictureser.com
+.moto.com
 .motolia.com
+.motorola.ca
+.motorola.cl
+.motorola.co
+.motorola.co.id
+.motorola.co.jp
+.motorola.co.th
+.motorola.co.uk
+.motorola.com
+.motorola.com.au
+.motorola.com.co
+.motorola.com.pe
+.motorola.com.pr
+.motorola.de
+.motorola.es
+.motorola.fr
+.motorola.gr
+.motorola.in
+.motorola.it
+.motorola.net
+.motorola.vn
+.motorolacareers.com
+.motorolanews.com
+.motorolasolutions.com
 .motorshowblog.com
 .mottainai.info
 .move-free.net
@@ -17818,6 +17848,7 @@ ood.opsource.net
 .plannotator.ai
 .plansondemand.com
 .plantsvszombies2.com
+.plasma-mobile.org
 .plasticlabs.com
 .plastics-cadcam.com
 .platiecom.ru
@@ -21197,6 +21228,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .synologyupdate.com
 .syosetu.com
 .sysinternals.com
+.system76.com
 .syzbj36.xyz
 .szabadeuropa.hu
 .szcheapmonsterheadphones.com
@@ -24413,6 +24445,7 @@ ws.audioscrobbler.com
 .xeon.com
 .xerotica.com
 .xfantazy.com
+.xfce.org
 .xfemaledom.com
 .xfinity.com
 .xfockers.com
