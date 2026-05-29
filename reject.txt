@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-28T20:39:59+00:00
+# Generated: 2026-05-29T20:40:09+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12191, local=0, total(deduped)=11585
+# Counts: upstream=12200, local=0, total(deduped)=11592
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -655,6 +655,7 @@ ads-gate.wildberries.ru
 .ads-image.production-public.tubi.io
 .ads-img-al.xhscdn.com
 .ads-img-bak.xhscdn.com
+ads-img.mozilla.org
 ads-integration.rustore.ru
 .ads-interfaces.sc-cdn.net
 .ads-leaseweb.appsgeyser.com
@@ -4444,6 +4445,7 @@ error-tracking.megamarket.tech
 .fcs.ovh
 .fdolspwa.my
 .fe-go.letv.com
+.feast-events.guardianapis.com
 .feathr.co
 .featureassets.org
 .featured.perfectionholic.com
@@ -5258,6 +5260,7 @@ google-analytics-suite.ozon.ru
 .id5-sync.com
 .id6.me
 .idat.production.ippen.space
+.identity.treeumapp.net
 .identitypxl.app
 .identitypxl.com
 .ideoclick.com
@@ -5338,6 +5341,7 @@ google-analytics-suite.ozon.ru
 .inbound-analytics.pixlee.com
 .inboxtag.com
 .incentivesnetwork.net
+incoming-telemetry.thunderbird.net
 .incoming.telemetry.mozilla.org
 .increasingcustomers-tag.com
 .index.ru
@@ -6271,6 +6275,7 @@ loyalnost-adv.ozon.ru
 .luminati.io
 .lumitos.com
 .luolitang.com
+.lust-girls.com
 .luxupcdnc.com
 .lw-c-log.lastwarapp.com
 .lwadm.com
@@ -9357,6 +9362,7 @@ stats.dev.telega.info
 .stats.ibtimes.co.in
 .stats.ibtimes.co.uk
 .stats.img2go.com
+.stats.index.hr
 .stats.indianpornempire.com
 .stats.insighttimer.com
 .stats.itc.ua
@@ -10798,6 +10804,7 @@ tracing-http.megamarket.tech
 .umengacs.m.taobao.com
 .umengjmacs.m.taobao.com
 .umini.shujupie.com
+.umommy.online
 .umphek.com
 .uncn.jp
 .unddeliv.com

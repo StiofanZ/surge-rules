@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-28T20:39:59+00:00
+# Generated: 2026-05-29T20:40:09+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12191, local=0, total(deduped)=11585
+# Counts: upstream=12200, local=0, total(deduped)=11592
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -657,6 +657,7 @@ DOMAIN-SUFFIX,ads-gdl.imovideo.ru
 DOMAIN-SUFFIX,ads-image.production-public.tubi.io
 DOMAIN-SUFFIX,ads-img-al.xhscdn.com
 DOMAIN-SUFFIX,ads-img-bak.xhscdn.com
+DOMAIN,ads-img.mozilla.org
 DOMAIN,ads-integration.rustore.ru
 DOMAIN-SUFFIX,ads-interfaces.sc-cdn.net
 DOMAIN-SUFFIX,ads-leaseweb.appsgeyser.com
@@ -4446,6 +4447,7 @@ DOMAIN-SUFFIX,fcmatch.google.com
 DOMAIN-SUFFIX,fcs.ovh
 DOMAIN-SUFFIX,fdolspwa.my
 DOMAIN-SUFFIX,fe-go.letv.com
+DOMAIN-SUFFIX,feast-events.guardianapis.com
 DOMAIN-SUFFIX,feathr.co
 DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,featured.perfectionholic.com
@@ -5260,6 +5262,7 @@ DOMAIN-SUFFIX,id-visitors.com
 DOMAIN-SUFFIX,id5-sync.com
 DOMAIN-SUFFIX,id6.me
 DOMAIN-SUFFIX,idat.production.ippen.space
+DOMAIN-SUFFIX,identity.treeumapp.net
 DOMAIN-SUFFIX,identitypxl.app
 DOMAIN-SUFFIX,identitypxl.com
 DOMAIN-SUFFIX,ideoclick.com
@@ -5340,6 +5343,7 @@ DOMAIN-SUFFIX,inbound-analytics.pixlee.co
 DOMAIN-SUFFIX,inbound-analytics.pixlee.com
 DOMAIN-SUFFIX,inboxtag.com
 DOMAIN-SUFFIX,incentivesnetwork.net
+DOMAIN,incoming-telemetry.thunderbird.net
 DOMAIN-SUFFIX,incoming.telemetry.mozilla.org
 DOMAIN-SUFFIX,increasingcustomers-tag.com
 DOMAIN-SUFFIX,index.ru
@@ -6273,6 +6277,7 @@ DOMAIN-SUFFIX,luminate.com
 DOMAIN-SUFFIX,luminati.io
 DOMAIN-SUFFIX,lumitos.com
 DOMAIN-SUFFIX,luolitang.com
+DOMAIN-SUFFIX,lust-girls.com
 DOMAIN-SUFFIX,luxupcdnc.com
 DOMAIN-SUFFIX,lw-c-log.lastwarapp.com
 DOMAIN-SUFFIX,lwadm.com
@@ -9359,6 +9364,7 @@ DOMAIN-SUFFIX,stats.hitwebcloud.de
 DOMAIN-SUFFIX,stats.ibtimes.co.in
 DOMAIN-SUFFIX,stats.ibtimes.co.uk
 DOMAIN-SUFFIX,stats.img2go.com
+DOMAIN-SUFFIX,stats.index.hr
 DOMAIN-SUFFIX,stats.indianpornempire.com
 DOMAIN-SUFFIX,stats.insighttimer.com
 DOMAIN-SUFFIX,stats.itc.ua
@@ -10800,6 +10806,7 @@ DOMAIN-SUFFIX,umeng.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
 DOMAIN-SUFFIX,umengjmacs.m.taobao.com
 DOMAIN-SUFFIX,umini.shujupie.com
+DOMAIN-SUFFIX,umommy.online
 DOMAIN-SUFFIX,umphek.com
 DOMAIN-SUFFIX,uncn.jp
 DOMAIN-SUFFIX,unddeliv.com
