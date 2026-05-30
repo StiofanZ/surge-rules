@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-29T20:39:51+00:00
+# Generated: 2026-05-30T19:45:47+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30595, local=27, total(deduped)=25749
+# Counts: upstream=30601, local=27, total(deduped)=25751
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -2277,6 +2277,7 @@ api-p.videomarket.jp
 .arxiv.org
 .arzon.jp
 .as-hp.ca
+.as.mr
 .asacp.org
 .asagaku.com
 .asahi.com
@@ -9536,6 +9537,7 @@ forwarder.workos.com
 .gemfury.com
 .gemini.com
 .gen.lib.rus.ec
+.gencraft.com
 .gendai.net
 .generated.photos
 .genetic-technologies.am
@@ -22813,6 +22815,7 @@ utcnist3.colorado.edu
 .vdoav.com
 .vecchiescopate.casa
 .vector.im
+.veed.io
 .veet.at
 .veet.be
 .veet.ca
@@ -25202,7 +25205,6 @@ yangzhi.app
 .yhy.cool
 .yibaochina.com
 .yibei.org
-.yidio.com
 .yigeni.com
 .yimg.com
 .yimg.jp

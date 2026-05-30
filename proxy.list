@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-29T20:39:51+00:00
+# Generated: 2026-05-30T19:45:47+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30595, local=27, total(deduped)=25749, rule_set_only=12
+# Counts: upstream=30601, local=27, total(deduped)=25751, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -2280,6 +2280,7 @@ DOMAIN-SUFFIX,arweave.org
 DOMAIN-SUFFIX,arxiv.org
 DOMAIN-SUFFIX,arzon.jp
 DOMAIN-SUFFIX,as-hp.ca
+DOMAIN-SUFFIX,as.mr
 DOMAIN-SUFFIX,asacp.org
 DOMAIN-SUFFIX,asagaku.com
 DOMAIN-SUFFIX,asahi.com
@@ -9539,6 +9540,7 @@ DOMAIN-SUFFIX,gemfire.net
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,gemini.com
 DOMAIN-SUFFIX,gen.lib.rus.ec
+DOMAIN-SUFFIX,gencraft.com
 DOMAIN-SUFFIX,gendai.net
 DOMAIN-SUFFIX,generated.photos
 DOMAIN-SUFFIX,genetic-technologies.am
@@ -22816,6 +22818,7 @@ DOMAIN-SUFFIX,vday.io
 DOMAIN-SUFFIX,vdoav.com
 DOMAIN-SUFFIX,vecchiescopate.casa
 DOMAIN-SUFFIX,vector.im
+DOMAIN-SUFFIX,veed.io
 DOMAIN-SUFFIX,veet.at
 DOMAIN-SUFFIX,veet.be
 DOMAIN-SUFFIX,veet.ca
@@ -25205,7 +25208,6 @@ DOMAIN-SUFFIX,yho.com
 DOMAIN-SUFFIX,yhy.cool
 DOMAIN-SUFFIX,yibaochina.com
 DOMAIN-SUFFIX,yibei.org
-DOMAIN-SUFFIX,yidio.com
 DOMAIN-SUFFIX,yigeni.com
 DOMAIN-SUFFIX,yimg.com
 DOMAIN-SUFFIX,yimg.jp
