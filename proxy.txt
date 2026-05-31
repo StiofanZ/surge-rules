@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-05-30T19:45:47+00:00
+# Generated: 2026-05-31T19:45:37+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30601, local=27, total(deduped)=25751
+# Counts: upstream=30603, local=27, total(deduped)=25753
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -13842,6 +13842,7 @@ live-patreon-marketing.pantheonsite.io
 .livexxx.me
 .livingstream.com
 .livingyourambition.com
+.livinno.org
 .livrariart.com.br
 .lizardporn.com
 .lizol.co.in
@@ -17042,6 +17043,7 @@ ood.opsource.net
 .ootbstudio.co.kr
 .op.gg
 .op7979.com
+.opac-project.eu
 .open.firstory.me
 .openai.com
 .openamt.com
