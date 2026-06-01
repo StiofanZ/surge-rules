@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-05-31T19:45:54+00:00
+# Generated: 2026-06-01T21:46:05+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12200, local=0, total(deduped)=11592
+# Counts: upstream=12203, local=0, total(deduped)=11595
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -910,6 +910,7 @@ DOMAIN-SUFFIX,adv.bandi.so
 DOMAIN-SUFFIX,adv.ettoday.net
 DOMAIN-SUFFIX,adv.mxmcdn.net
 DOMAIN,adv.ozon.ru
+DOMAIN-SUFFIX,adv.red
 DOMAIN,adv.rustore.ru
 DOMAIN-SUFFIX,adv.sec.intl.miui.com
 DOMAIN-SUFFIX,adv.sec.miui.com
@@ -5009,6 +5010,7 @@ DOMAIN-SUFFIX,hairsromance.com
 DOMAIN-SUFFIX,hakurei.cdnbo.org
 DOMAIN-SUFFIX,halldata.com
 DOMAIN-SUFFIX,hananokai.tv
+DOMAIN-SUFFIX,handler.rgstats.com
 DOMAIN-SUFFIX,hao123union.baidu.com
 DOMAIN-SUFFIX,haoxxwang.com
 DOMAIN-SUFFIX,happyleafmotion.com
@@ -7860,6 +7862,7 @@ DOMAIN-SUFFIX,proext.com
 DOMAIN-SUFFIX,profile-api.amplitude.com
 DOMAIN-SUFFIX,profiler-collector.dalyfeds.com
 DOMAIN-SUFFIX,profiler-collector.wshareit.com
+DOMAIN-SUFFIX,profitable-grocery.com
 DOMAIN-SUFFIX,profusesupport.com
 DOMAIN-SUFFIX,programattik.com
 DOMAIN-SUFFIX,programmatica.com
