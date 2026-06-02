@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-01T21:46:05+00:00
+# Generated: 2026-06-02T21:27:08+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12203, local=0, total(deduped)=11595
+# Counts: upstream=12216, local=0, total(deduped)=11607
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2340,6 +2340,7 @@ DOMAIN-SUFFIX,brdtnet.com
 DOMAIN-SUFFIX,breaktime.com.tw
 DOMAIN-SUFFIX,brealtime.com
 DOMAIN-SUFFIX,breathebuds.com
+DOMAIN-SUFFIX,breezebrowsing.com
 DOMAIN-SUFFIX,bridged.media
 DOMAIN-SUFFIX,bridgevine.com
 DOMAIN-SUFFIX,bright-sdk.com
@@ -2671,6 +2672,7 @@ DOMAIN-SUFFIX,cf.adxcel.com
 DOMAIN-SUFFIX,cfa-js.cafe24.com
 DOMAIN-SUFFIX,cfg.cml.ksmobile.com
 DOMAIN-SUFFIX,cfg.imtt.qq.com
+DOMAIN-SUFFIX,cfjump.com
 DOMAIN-SUFFIX,cftrack.com
 DOMAIN-SUFFIX,cfts1tifqr.com
 DOMAIN-SUFFIX,cfusion-internet.com
@@ -3997,6 +3999,7 @@ DOMAIN-SUFFIX,ebxcdn.com
 DOMAIN-SUFFIX,ec-concier.com
 DOMAIN-SUFFIX,ec-track.com
 DOMAIN-SUFFIX,ec.adadapted.com
+DOMAIN-SUFFIX,ecdwm.com
 DOMAIN-SUFFIX,eclick.baidu.com
 DOMAIN-SUFFIX,ecma.bdimg.com
 DOMAIN-SUFFIX,ecmb.bdimg.com
@@ -4427,6 +4430,7 @@ DOMAIN-SUFFIX,fancyapi.com
 DOMAIN-SUFFIX,fancydsp.com
 DOMAIN-SUFFIX,fanplayr.com
 DOMAIN-SUFFIX,fanzhuang.net.cn
+DOMAIN-SUFFIX,farflung-permission.com
 DOMAIN-SUFFIX,fast-down.ru
 DOMAIN-SUFFIX,fast-thinking.co.uk
 DOMAIN-SUFFIX,fastcounter.de
@@ -4625,6 +4629,7 @@ DOMAIN-SUFFIX,g.click.taobao.com
 DOMAIN-SUFFIX,g.ign.com
 DOMAIN-SUFFIX,g.mindbox.ru
 DOMAIN-SUFFIX,g1.tagtic.cn
+DOMAIN-SUFFIX,g10498469755.co
 DOMAIN-SUFFIX,g3.letv.com
 DOMAIN-SUFFIX,g650.delcotimes.com
 DOMAIN-SUFFIX,g986.themorningsun.com
@@ -5173,6 +5178,7 @@ DOMAIN-SUFFIX,httpdns.bilivideo.com
 DOMAIN-SUFFIX,httpool.com
 DOMAIN-SUFFIX,hub.com.pl
 DOMAIN-SUFFIX,hub.fghtem.com
+DOMAIN-SUFFIX,hubapi.my.id
 DOMAIN-SUFFIX,hubble.netease.com
 DOMAIN-SUFFIX,hubcloud.com.cn
 DOMAIN-SUFFIX,hubrus.com
@@ -5183,6 +5189,7 @@ DOMAIN-SUFFIX,humanclick.com
 DOMAIN-SUFFIX,humanz.com
 DOMAIN-SUFFIX,hummingbird.mavencoalition.io
 DOMAIN-SUFFIX,hung.ch
+DOMAIN-SUFFIX,hungry-exit.com
 DOMAIN-SUFFIX,huntmad.com
 DOMAIN-SUFFIX,hurra.com
 DOMAIN-SUFFIX,husfly.com
@@ -5425,6 +5432,7 @@ DOMAIN-SUFFIX,installp.com
 DOMAIN-SUFFIX,installtracker.com
 DOMAIN-SUFFIX,instana.io
 DOMAIN-SUFFIX,instapagemetrics.com
+DOMAIN-SUFFIX,instaread-ads.s3.amazonaws.com
 DOMAIN-SUFFIX,instore.biz
 DOMAIN-SUFFIX,int.akisinn.info
 DOMAIN-SUFFIX,int.akisinn.me
@@ -7257,6 +7265,7 @@ DOMAIN-SUFFIX,openinternetexchange.com
 DOMAIN-SUFFIX,openinternetexchange.net
 DOMAIN-SUFFIX,openlog.tapapis.cn
 DOMAIN-SUFFIX,openlog.tapapis.com
+DOMAIN-SUFFIX,openmindedpassengerserr.com
 DOMAIN-SUFFIX,openmonitor.alipay-eco.com
 DOMAIN-SUFFIX,openmonitor.alipay.com
 DOMAIN-SUFFIX,openrate.aweber.com
@@ -9393,6 +9402,7 @@ DOMAIN-SUFFIX,stats.online-convert.com
 DOMAIN-SUFFIX,stats.opoloo.de
 DOMAIN-SUFFIX,stats.otempo.com.br
 DOMAIN-SUFFIX,stats.pandora.com
+DOMAIN-SUFFIX,stats.peachify.top
 DOMAIN-SUFFIX,stats.persgroep.be
 DOMAIN-SUFFIX,stats.persgroep.nl
 DOMAIN-SUFFIX,stats.piaggio.com
@@ -11248,6 +11258,7 @@ DOMAIN-SUFFIX,westfile-dl.click
 DOMAIN-SUFFIX,wh.giftd.tech
 DOMAIN-SUFFIX,whale.camera
 DOMAIN-SUFFIX,whatismyip.win
+DOMAIN-SUFFIX,wheelroot.com
 DOMAIN-SUFFIX,wheelwheel.space
 DOMAIN-SUFFIX,whehilru.com
 DOMAIN-SUFFIX,wheredoyoucomefrom.ovh
@@ -11307,6 +11318,7 @@ DOMAIN-SUFFIX,wobs.route.com
 DOMAIN-SUFFIX,wompanalytics.azurewebsites.net
 DOMAIN-SUFFIX,wonder-ma.com
 DOMAIN-SUFFIX,wonderful-day.club
+DOMAIN-SUFFIX,wonderfulyesterday.com
 DOMAIN-SUFFIX,woodpecker.uc.cn
 DOMAIN-SUFFIX,woomy.me
 DOMAIN-SUFFIX,woopra-ns.com
