@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-02T21:27:08+00:00
+# Generated: 2026-06-03T21:33:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12216, local=0, total(deduped)=11607
+# Counts: upstream=12222, local=0, total(deduped)=11613
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -154,6 +154,7 @@ DOMAIN-SUFFIX,a.hstrck.com
 DOMAIN-SUFFIX,a.kupibilet.ru
 DOMAIN-SUFFIX,a.labadena.com
 DOMAIN-SUFFIX,a.letsjerk.to
+DOMAIN-SUFFIX,a.line.me
 DOMAIN-SUFFIX,a.market.xiaomi.com
 DOMAIN-SUFFIX,a.mobify.com
 DOMAIN-SUFFIX,a.mt.ru
@@ -211,6 +212,7 @@ DOMAIN-SUFFIX,abmr.net
 DOMAIN-SUFFIX,abnad.net
 DOMAIN-SUFFIX,abodealley.com
 DOMAIN-SUFFIX,aboveaveragefinallycast.com
+DOMAIN-SUFFIX,aboveboardcomplicate.com
 DOMAIN-SUFFIX,abroad-ad.kingsoft-office-service.com
 DOMAIN-SUFFIX,abs.proxistore.com
 DOMAIN-SUFFIX,absolstats.co.za
@@ -1886,6 +1888,7 @@ DOMAIN-SUFFIX,arpxs.com
 DOMAIN-SUFFIX,arrasinutile.com
 DOMAIN-SUFFIX,artefact.is
 DOMAIN-SUFFIX,artfut.com
+DOMAIN-SUFFIX,as-pet.ams3.cdn.digitaloceanspaces.com
 DOMAIN-SUFFIX,as.adfonic.net
 DOMAIN-SUFFIX,asanalytics.booking.com
 DOMAIN-SUFFIX,ascendeummedia.com
@@ -2531,6 +2534,7 @@ DOMAIN-SUFFIX,cca-lite.coinbase.com
 DOMAIN-SUFFIX,cccpmo.com
 DOMAIN-SUFFIX,ccgateway.net
 DOMAIN-SUFFIX,cda7k-ddok.com
+DOMAIN-SUFFIX,cdclub.net
 DOMAIN-SUFFIX,cdend.com
 DOMAIN-SUFFIX,cdertf.cfd
 DOMAIN-SUFFIX,cdj-dap.s3-ap-northeast-1.amazonaws.com
@@ -3896,6 +3900,7 @@ DOMAIN-SUFFIX,dsxlez.com
 DOMAIN-SUFFIX,dt.beyla.site
 DOMAIN-SUFFIX,dtch.brunel.nl
 DOMAIN-SUFFIX,dtcollect.newsbang.com
+DOMAIN-SUFFIX,dtent.povvverz.one
 DOMAIN-SUFFIX,dti-ranker.com
 DOMAIN-SUFFIX,dtignite.com
 DOMAIN-SUFFIX,dtm.ashleyhomestore.ca
@@ -5853,6 +5858,7 @@ DOMAIN-SUFFIX,lhe-beacon.team-rec.jp
 DOMAIN-SUFFIX,lhinsights.com
 DOMAIN-SUFFIX,liadm.com
 DOMAIN-SUFFIX,lianmeng.360.cn
+DOMAIN-SUFFIX,lib-wp.dev
 DOMAIN-SUFFIX,librateam.net
 DOMAIN-SUFFIX,librato-collector.genius.com
 DOMAIN-SUFFIX,libs.aseads.com

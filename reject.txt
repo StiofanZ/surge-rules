@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-02T21:27:08+00:00
+# Generated: 2026-06-03T21:33:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12216, local=0, total(deduped)=11607
+# Counts: upstream=12222, local=0, total(deduped)=11613
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -152,6 +152,7 @@
 .a.kupibilet.ru
 .a.labadena.com
 .a.letsjerk.to
+.a.line.me
 .a.market.xiaomi.com
 .a.mobify.com
 .a.mt.ru
@@ -209,6 +210,7 @@
 .abnad.net
 .abodealley.com
 .aboveaveragefinallycast.com
+.aboveboardcomplicate.com
 .abroad-ad.kingsoft-office-service.com
 .abs.proxistore.com
 .absolstats.co.za
@@ -1884,6 +1886,7 @@ apilog-web.acfun.cn
 .arrasinutile.com
 .artefact.is
 .artfut.com
+.as-pet.ams3.cdn.digitaloceanspaces.com
 .as.adfonic.net
 .asanalytics.booking.com
 .ascendeummedia.com
@@ -2529,6 +2532,7 @@ bs.mail.ru
 .cccpmo.com
 .ccgateway.net
 .cda7k-ddok.com
+.cdclub.net
 .cdend.com
 .cdertf.cfd
 .cdj-dap.s3-ap-northeast-1.amazonaws.com
@@ -3894,6 +3898,7 @@ disney.my.sentry.io
 .dt.beyla.site
 .dtch.brunel.nl
 .dtcollect.newsbang.com
+.dtent.povvverz.one
 .dti-ranker.com
 .dtignite.com
 .dtm.ashleyhomestore.ca
@@ -5851,6 +5856,7 @@ incoming-telemetry.thunderbird.net
 .lhinsights.com
 .liadm.com
 .lianmeng.360.cn
+.lib-wp.dev
 .librateam.net
 .librato-collector.genius.com
 .libs.aseads.com
