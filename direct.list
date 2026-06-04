@@ -1,13 +1,13 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-03T21:33:19+00:00
+# Generated: 2026-06-04T20:28:18+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=113206, local=2, total(deduped)=113072, excluded=5
+# Counts: upstream=113209, local=2, total(deduped)=113075, excluded=5
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -17882,6 +17882,7 @@ DOMAIN-SUFFIX,bright21cn.com
 DOMAIN-SUFFIX,brightdairy.com
 DOMAIN-SUFFIX,brightdecolighting.com
 DOMAIN-SUFFIX,brightfood.com
+DOMAIN-SUFFIX,brighticecream.com
 DOMAIN-SUFFIX,brightliao.com
 DOMAIN-SUFFIX,brightmeat.com
 DOMAIN-SUFFIX,brilliance-auto.com
@@ -21852,6 +21853,7 @@ DOMAIN-SUFFIX,chinaconveyor.com
 DOMAIN-SUFFIX,chinacordblood.org
 DOMAIN-SUFFIX,chinacosco.com
 DOMAIN-SUFFIX,chinacourt.org
+DOMAIN-SUFFIX,chinacow.com
 DOMAIN-SUFFIX,chinacpda.com
 DOMAIN-SUFFIX,chinacpda.org
 DOMAIN-SUFFIX,chinacqme.com
@@ -100937,6 +100939,7 @@ DOMAIN-SUFFIX,xinlinghuayuan.com
 DOMAIN-SUFFIX,xinlingletu.com
 DOMAIN-SUFFIX,xinlip.com
 DOMAIN-SUFFIX,xinlischool.com
+DOMAIN-SUFFIX,xinlishumeng.com
 DOMAIN-SUFFIX,xinliwanju.com
 DOMAIN-SUFFIX,xinlixinli.net
 DOMAIN-SUFFIX,xinlong-holding.com
