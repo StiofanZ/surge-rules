@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-04T20:28:17+00:00
+# Generated: 2026-06-05T20:19:30+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12224, local=0, total(deduped)=11615
+# Counts: upstream=12235, local=0, total(deduped)=11618
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -269,6 +269,7 @@ DOMAIN-SUFFIX,ad-api.maxnapps.com
 DOMAIN-SUFFIX,ad-api.revoaidapp.com
 DOMAIN-SUFFIX,ad-arrow.com
 DOMAIN-SUFFIX,ad-blocker-1.static-cloudflare.workers.dev
+DOMAIN-SUFFIX,ad-blocker.prod-blocking.workers.dev
 DOMAIN-SUFFIX,ad-bls-tracking.lemino.docomo.ne.jp
 DOMAIN-SUFFIX,ad-brix.com
 DOMAIN,ad-channel.diwodiwo.xyz
@@ -1860,6 +1861,7 @@ DOMAIN-SUFFIX,appsanalytics.appideas.it
 DOMAIN-SUFFIX,appsdt.com
 DOMAIN-SUFFIX,appserver-ap.com
 DOMAIN-SUFFIX,appsflyer-report.honkaiimpact3.com
+DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,appshelf.ttpsdk.info
 DOMAIN-SUFFIX,appsrv.display.io
 DOMAIN-SUFFIX,apptics.zoho.in
@@ -1951,7 +1953,6 @@ DOMAIN-SUFFIX,atsssl.gmarket.co.kr
 DOMAIN-SUFFIX,atti.com
 DOMAIN-SUFFIX,attn.tv
 DOMAIN-SUFFIX,attr.appsflyer.com
-DOMAIN-SUFFIX,attr.appsflyersdk.com
 DOMAIN-SUFFIX,attracta.com
 DOMAIN-SUFFIX,attribution.airbridge.io
 DOMAIN-SUFFIX,atype.jp
@@ -2365,6 +2366,7 @@ DOMAIN-SUFFIX,browser-statistik.de
 DOMAIN-SUFFIX,browser-update.org
 DOMAIN-SUFFIX,browser.events.data.msn.cn
 DOMAIN-SUFFIX,browser.events.data.msn.com
+DOMAIN-SUFFIX,browser.pipe.aria.microsoft.com
 DOMAIN-SUFFIX,browsercfg-drcn.cloud.dbankcloud.cn
 DOMAIN-SUFFIX,brsrvr.com
 DOMAIN-SUFFIX,brt.studylabs.cn
@@ -4535,6 +4537,7 @@ DOMAIN-SUFFIX,force24.co.uk
 DOMAIN-SUFFIX,forecast.lemonde.fr
 DOMAIN-SUFFIX,forecast.nouvelobs.com
 DOMAIN-SUFFIX,foreseeresults.com
+DOMAIN-SUFFIX,forgivefireextinguisher.com
 DOMAIN-SUFFIX,forkcdn.com
 DOMAIN-SUFFIX,formalyzer.com
 DOMAIN-SUFFIX,formisimo.com
@@ -4806,6 +4809,7 @@ DOMAIN-SUFFIX,gmossp-sp.jp
 DOMAIN-SUFFIX,gnar.grammarly.com
 DOMAIN-SUFFIX,gnsnpaw.com
 DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN-SUFFIX,go-usertrack-importer.pub.rtl-api.com
 DOMAIN-SUFFIX,go.admost.com
 DOMAIN-SUFFIX,go.bidfluence.com
 DOMAIN-SUFFIX,go.gsrv.dev
@@ -5354,7 +5358,6 @@ DOMAIN-SUFFIX,in.cuebiq.com
 DOMAIN-SUFFIX,in.unext.jp
 DOMAIN-SUFFIX,inaftracker.com
 DOMAIN-SUFFIX,inapps.appsflyer.com
-DOMAIN-SUFFIX,inapps.appsflyersdk.com
 DOMAIN-SUFFIX,inbound-analytics.pixlee.co
 DOMAIN-SUFFIX,inbound-analytics.pixlee.com
 DOMAIN-SUFFIX,inboxtag.com
@@ -5906,7 +5909,6 @@ DOMAIN-SUFFIX,livetech.shopee.com.br
 DOMAIN-SUFFIX,livetrafficfeed.com
 DOMAIN-SUFFIX,livewebstats.dk
 DOMAIN-SUFFIX,lk.vectoranalytics.ru
-DOMAIN-SUFFIX,lklfwu-inapps.appsflyersdk.com
 DOMAIN-SUFFIX,lloogg.com
 DOMAIN-SUFFIX,lltrck.com
 DOMAIN-SUFFIX,lma.npaw.com
@@ -6296,6 +6298,7 @@ DOMAIN-SUFFIX,luminati.io
 DOMAIN-SUFFIX,lumitos.com
 DOMAIN-SUFFIX,luolitang.com
 DOMAIN-SUFFIX,lust-girls.com
+DOMAIN-SUFFIX,lustygg.com
 DOMAIN-SUFFIX,luxupcdnc.com
 DOMAIN-SUFFIX,lw-c-log.lastwarapp.com
 DOMAIN-SUFFIX,lwadm.com
@@ -7846,7 +7849,6 @@ DOMAIN-SUFFIX,primead.jp
 DOMAIN-SUFFIX,primeleech.com
 DOMAIN-SUFFIX,prisma-tr.prismamedia.com
 DOMAIN-SUFFIX,prismriotads.com
-DOMAIN-SUFFIX,privacy-sandbox.appsflyersdk.com
 DOMAIN-SUFFIX,privacycounter.com
 DOMAIN-SUFFIX,private-show.live
 DOMAIN-SUFFIX,privatestats.whatsapp.net
@@ -8849,7 +8851,6 @@ DOMAIN-SUFFIX,sjsmartcontent.org
 DOMAIN-SUFFIX,sjv.io
 DOMAIN-SUFFIX,skadnetwork.singular.net
 DOMAIN-SUFFIX,skadsdk.appsflyer.com
-DOMAIN-SUFFIX,skadsdk.appsflyersdk.com
 DOMAIN-SUFFIX,skillfuldrop.com
 DOMAIN-SUFFIX,skimresources.com
 DOMAIN-SUFFIX,skroutza.skroutz.gr
@@ -9091,6 +9092,7 @@ DOMAIN-SUFFIX,spanids.dictionary.com
 DOMAIN-SUFFIX,spanids.thesaurus.com
 DOMAIN-SUFFIX,sparrowcanned.com
 DOMAIN-SUFFIX,sparteo.com
+DOMAIN-SUFFIX,spbgc.com
 DOMAIN-SUFFIX,spcode.baidu.com
 DOMAIN-SUFFIX,specialstat.com
 DOMAIN-SUFFIX,spectate.com
@@ -10821,6 +10823,7 @@ DOMAIN-SUFFIX,umami.is
 DOMAIN-SUFFIX,umami.spencerdevs.xyz
 DOMAIN-SUFFIX,umami.subdavis.com
 DOMAIN-SUFFIX,umami.syg.ma
+DOMAIN-SUFFIX,umami.vidcore.net
 DOMAIN-SUFFIX,umamix.fadunews.in
 DOMAIN-SUFFIX,umbel.com
 DOMAIN-SUFFIX,umeng.com
