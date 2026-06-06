@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-05T20:19:10+00:00
+# Generated: 2026-06-06T19:50:11+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30788, local=27, total(deduped)=25936, rule_set_only=12
+# Counts: upstream=30793, local=27, total(deduped)=25939, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -5489,6 +5489,7 @@ DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,clawhub.ai
 DOMAIN-SUFFIX,clck.ru
@@ -21309,6 +21310,7 @@ DOMAIN-SUFFIX,sustainabledesigncouncil.net
 DOMAIN-SUFFIX,sustainthesound.com
 DOMAIN-SUFFIX,suxib.com
 DOMAIN-SUFFIX,suxiebu.com
+DOMAIN-SUFFIX,suyingtv.com
 DOMAIN-SUFFIX,suzuri.jp
 DOMAIN-SUFFIX,svaboda.org
 DOMAIN-SUFFIX,svc.ms
@@ -24446,6 +24448,7 @@ DOMAIN-SUFFIX,woyaolian.org
 DOMAIN-SUFFIX,wp-themes.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,wpewebkit.org
+DOMAIN-SUFFIX,wplace.live
 DOMAIN-SUFFIX,wpoforum.com
 DOMAIN-SUFFIX,wpvip.com
 DOMAIN,wrds-www.wharton.upenn.edu
