@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-06T19:50:11+00:00
+# Generated: 2026-06-07T19:51:29+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30793, local=27, total(deduped)=25939
+# Counts: upstream=30835, local=27, total(deduped)=25980
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1622,6 +1622,7 @@ adobeereg.com
 .amd.com
 .amd.com.cn
 .amdfanstore.com
+.amdgaming.com
 .amdigital.co.uk
 .ameba.jp
 .amebame.com
@@ -4573,6 +4574,7 @@ blizzard.nefficient.co.kr
 .budatt.com
 .buddymedia.com
 .buffered.com
+.bugsnag.com
 .bugzilla.org
 .buhidoh.net
 .buicha.social
@@ -5047,6 +5049,7 @@ cbsservice.aws.syncbak.com
 .cciernslabs.com
 .cciesecuritylabs.com
 .ccievoicelabs.com
+.ccleaner.com
 .cclife.org
 .cclifefl.org
 .ccna5.net
@@ -5455,6 +5458,7 @@ cisco.evergage.com
 .cityoflove.com
 .citypopulation.de
 .citytourgirls.com
+.cityu.hk
 .civicparty.hk
 .civil3d.com
 .civilcc.com
@@ -6001,6 +6005,7 @@ crl.versign.net
 .cuckwimp.com
 .cuebic.biz
 .cuffiesaldi.com
+.cuhk.hk
 .cuinc.oen.tw
 .cuinc.tw
 .cuiweiping.net
@@ -7571,9 +7576,11 @@ dl.begellhouse.com
 .editorx.com
 .edninfo.com
 .edu-research.org
+.edu.hk
 .edu.ir
 .edubridge.com
 .education-cadcam.com
+.eduhk.hk
 .eduplus.hk
 .edx-cdn.org
 .edx.org
@@ -8650,6 +8657,7 @@ featureassets.org
 .fileflyer.com
 .filesmonster.vip
 .filesor.com
+.filezilla-project.org
 .filipino-music.net
 .filme2.xxx
 .filmeleporno.xxx
@@ -9783,6 +9791,7 @@ forwarder.workos.com
 .git.io
 .gitbook.com
 .gitbook.io
+.gitgud.io
 github-api.arkoselabs.com
 .github.ai
 .github.blog
@@ -10985,6 +10994,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .hitxhot.com
 .hive.blog
 .hiveon.net
+.hivepress.io
 .hjb246.top
 .hjb7e9.top
 .hk-pub.com
@@ -10997,6 +11007,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .hkbn.net
 .hkbnes.net
 .hkbookcity.com
+.hkbu.hk
 .hkchronicles.com
 .hkcircleapp.com
 .hkcitizenmedia.com
@@ -11031,6 +11042,8 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .hkteducation.com
 .hktpremier.com
 .hktshop.com
+.hku.hk
+.hkust.hk
 .hlbelygl.com
 .hlsp1.pw
 .hm.com
@@ -13100,7 +13113,6 @@ ingest.apple-studies.com
 .jmcomic1.rocks
 .jmcomic2.moe
 .jmlr.org
-.jmsc.hku.hk
 .jmscult.com
 .jmvbt.com
 .jneurosci.org
@@ -13617,6 +13629,7 @@ ingest.apple-studies.com
 .landofhope.tv
 .langchain.com
 .langsuirs.com
+.languagetool.org
 .lanik.us
 .lanmdh.net
 .lanniser-ylo.shop
@@ -13777,7 +13790,6 @@ ingest.apple-studies.com
 .liboggirls.net
 .library-access.sk
 .library.lol
-.library.usc.cuhk.edu.hk
 .librarylovefest.com
 .libraryofthumbs.com
 .libredd.it
@@ -15272,7 +15284,6 @@ medone-education.thieme.com
 .mji.rip
 .mjj.rip
 .mjj.today
-.mjlsh.usc.cuhk.edu.hk
 .mjv-art.org
 .mk.shrimpia.network
 .mk.yopo.work
@@ -15507,6 +15518,7 @@ medone-education.thieme.com
 .motionpictureser.com
 .moto.com
 .motolia.com
+.motopress.com
 .motorola.ca
 .motorola.cl
 .motorola.co
@@ -15658,6 +15670,7 @@ medone-education.thieme.com
 .msudalosti.com
 .msunlimitedcloudsummit.com
 .mswe1.org
+.msys2.org
 .mt.lv
 .mt0011.site
 .mtao.fun
@@ -16886,6 +16899,7 @@ ntppool2.time.nl
 .o3t.ru
 .o3team.ru
 .oaistatic.com
+.oaistatsig.com
 .oaiusercontent.com
 .oanda.com
 .oanencore.com
@@ -18075,6 +18089,7 @@ ood.opsource.net
 .polymer-project.org
 .polymerhk.com
 .polymerproject.org
+.polyu.hk
 .ponyanimalsex.com
 .poofetish.com
 .pool.ntp.org
@@ -18786,6 +18801,7 @@ public-us-pingsx.api.clonoth.com
 .qmttqg3k.me
 .qnap.com
 .qobuz.com
+.qoder.com
 .qombol.com
 .qoo-app.com
 .qoo10.jp
@@ -24446,6 +24462,7 @@ widgets.stripst.com
 .wp.com
 .wpewebkit.org
 .wplace.live
+.wpmailsmtp.com
 .wpoforum.com
 .wpvip.com
 wrds-www.wharton.upenn.edu
@@ -24781,9 +24798,15 @@ ws.audioscrobbler.com
 .xn--d4ty0ojsqzfd.com
 .xn--e1adjldbbpv.xn--90ais
 .xn--e1aigb.xn--p1ai
+.xn--fiqs8s1bxp3anr7a.hk
+.xn--fiqs8s1bxp3anr7a.xn--j6w193g
+.xn--fiqs8s1byzqyvl.hk
+.xn--fiqs8s1byzqyvl.xn--j6w193g
 .xn--fiqs8sxootzz.xn--hxt814e
 .xn--flw351e
 .xn--flw351e.com
+.xn--gdt08a.hk
+.xn--gdt08a.xn--j6w193g
 .xn--ggle-55da.com
 .xn--gmq348bujlxrb.com
 .xn--gmq92kd2rm1kx34a.com
@@ -24803,11 +24826,23 @@ ws.audioscrobbler.com
 .xn--kput3imi374g.xn--hxt814e
 .xn--mts47c3w9b1qr.net
 .xn--mtswd61ejxq.com
+.xn--mxtq18a.hk
+.xn--mxtq18a.xn--j6w193g
 .xn--ngstr-lra8j.com
 .xn--noss43i.com
 .xn--oiq.cc
 .xn--p8j9a0d9c9a.xn--q9jyb4c
 .xn--pearsonenespaol-brb.com
+.xn--pssu7ci2j23mp9ny48b.hk
+.xn--pssu7ci2j23mp9ny48b.xn--j6w193g
+.xn--pssu7cv61af1tcs59bnvd.hk
+.xn--pssu7cv61af1tcs59bnvd.xn--j6w193g
+.xn--pssu7cv61af44b.hk
+.xn--pssu7cv61af44b.xn--j6w193g
+.xn--pssu7cv61ahw8aq79bztd.hk
+.xn--pssu7cv61ahw8aq79bztd.xn--j6w193g
+.xn--pssu7cv61ahwcb1p2yk.hk
+.xn--pssu7cv61ahwcb1p2yk.xn--j6w193g
 .xn--q41am8x.com
 .xn--qcka1pmc
 .xn--qoq462m.com
@@ -24820,7 +24855,13 @@ ws.audioscrobbler.com
 .xn--u2u927b.com
 .xn--ubt498knmf.com
 .xn--uis17aj9kmuf.com
+.xn--uis44a.xn--j6w193g
 .xn--urs05q.jp
+.xn--wcv22d.hk
+.xn--wcv22d.xn--j6w193g
+.xn--wcvs22d.xn--j6w193g
+.xn--wcvs22d1m.hk
+.xn--wcvs22d1m.xn--j6w193g
 .xn--x-qeu1ji09tzlg.biz
 .xn--x-qeu1ji09tzlg.net
 .xn--xsq421m.com
