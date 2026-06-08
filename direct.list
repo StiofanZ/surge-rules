@@ -1,13 +1,13 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-07T19:51:48+00:00
+# Generated: 2026-06-08T20:37:37+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=113025, local=2, total(deduped)=112891, excluded=5
+# Counts: upstream=113021, local=2, total(deduped)=112887, excluded=5
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -23426,6 +23426,7 @@ DOMAIN,cl1.apple.com
 DOMAIN,cl2-cdn.origin-apple.com.akadns.net
 DOMAIN,cl2-cn.apple.com
 DOMAIN,cl2.apple.com
+DOMAIN,cl2.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,cl2009.com
 DOMAIN,cl3-cdn.origin-apple.com.akadns.net
 DOMAIN,cl3.apple.com
@@ -39944,6 +39945,7 @@ DOMAIN-SUFFIX,gsmuban.com
 DOMAIN-SUFFIX,gsnhcg.com
 DOMAIN-SUFFIX,gsnytz.com
 DOMAIN,gsp10-ssl-cn.ls.apple.com
+DOMAIN,gsp11-cn.ls.apple.com
 DOMAIN,gsp12-cn.ls.apple.com
 DOMAIN,gsp13-cn.ls.apple.com
 DOMAIN,gsp4-cn.ls.apple.com
@@ -50592,9 +50594,7 @@ DOMAIN-SUFFIX,iclicash.com
 DOMAIN-SUFFIX,iclickstatic.com
 DOMAIN-SUFFIX,icliexpo.com
 DOMAIN-SUFFIX,icljt.com
-DOMAIN,icloud-cdn.icloud.com.akadns.net
 DOMAIN-SUFFIX,icloud-power.com
-DOMAIN,icloud.cdn-apple.com
 DOMAIN-SUFFIX,icloudcity.com
 DOMAIN-SUFFIX,icloudgslb.com
 DOMAIN-SUFFIX,icloudnative.io
@@ -71395,11 +71395,9 @@ DOMAIN-SUFFIX,oclkj.com
 DOMAIN-SUFFIX,ocn187.com
 DOMAIN-SUFFIX,ocpuritech.com
 DOMAIN-SUFFIX,ocsjs.com
-DOMAIN,ocsp-lb.apple.com.akadns.net
 DOMAIN,ocsp.apple.com
 DOMAIN,ocsp.pki.goog
 DOMAIN-SUFFIX,ocsp.us.cdnetworks.com
-DOMAIN,ocsp2-lb.apple.com.akadns.net
 DOMAIN,ocsp2.apple.com
 DOMAIN-SUFFIX,ocssaas.com
 DOMAIN-SUFFIX,oct-asia.com
@@ -72617,7 +72615,6 @@ DOMAIN-SUFFIX,panawincn.com
 DOMAIN-SUFFIX,panbaidu.net
 DOMAIN-SUFFIX,panbrake.com
 DOMAIN,pancake.apple.com
-DOMAIN,pancake.cdn-apple.com.akadns.net
 DOMAIN-SUFFIX,panchinasports.com
 DOMAIN-SUFFIX,panchip.com
 DOMAIN-SUFFIX,panchuang.net
@@ -78091,7 +78088,6 @@ DOMAIN,res.cdn.office.net
 DOMAIN-SUFFIX,reseetech.com
 DOMAIN-SUFFIX,resemblancey.com
 DOMAIN-SUFFIX,resemi.com
-DOMAIN,reserve-prime.apple.com
 DOMAIN-SUFFIX,reservehemu.com
 DOMAIN-SUFFIX,resheji.com
 DOMAIN-SUFFIX,resistor.today

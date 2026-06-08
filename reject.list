@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-07T19:51:47+00:00
+# Generated: 2026-06-08T20:37:37+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12235, local=0, total(deduped)=11618
+# Counts: upstream=12245, local=0, total(deduped)=11627
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -208,6 +208,7 @@ DOMAIN-SUFFIX,abcompteur.com
 DOMAIN-SUFFIX,abcstats.com
 DOMAIN-SUFFIX,abdalminhag.com
 DOMAIN-SUFFIX,abh.jp
+DOMAIN-SUFFIX,abjectionfreedpaying.com
 DOMAIN-SUFFIX,abmr.net
 DOMAIN-SUFFIX,abnad.net
 DOMAIN-SUFFIX,abodealley.com
@@ -1456,6 +1457,7 @@ DOMAIN-SUFFIX,analytics.nodecraft.com
 DOMAIN-SUFFIX,analytics.nova.foxsports.com
 DOMAIN-SUFFIX,analytics.oceanengine.com
 DOMAIN-SUFFIX,analytics.octaglobal.com
+DOMAIN-SUFFIX,analytics.oeksound.com
 DOMAIN-SUFFIX,analytics.oliveapp.net
 DOMAIN-SUFFIX,analytics.omniscientai.com
 DOMAIN-SUFFIX,analytics.onedio.com
@@ -3666,6 +3668,7 @@ DOMAIN-SUFFIX,dcs.maxthon.com
 DOMAIN-SUFFIX,dct.mango-office.ru
 DOMAIN-SUFFIX,dd.g2.com
 DOMAIN-SUFFIX,dd.leboncoin.fr
+DOMAIN-SUFFIX,dd.qwant.com
 DOMAIN-SUFFIX,dd.reuters.com
 DOMAIN-SUFFIX,dd6zx4ibq538k.cloudfront.net
 DOMAIN-SUFFIX,ddgjjj.com
@@ -4462,7 +4465,6 @@ DOMAIN-SUFFIX,fdolspwa.my
 DOMAIN-SUFFIX,fe-go.letv.com
 DOMAIN-SUFFIX,feast-events.guardianapis.com
 DOMAIN-SUFFIX,feathr.co
-DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,featured.perfectionholic.com
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,feckurteg.net
@@ -5672,6 +5674,7 @@ DOMAIN-SUFFIX,jybsb9oyss.com
 DOMAIN-SUFFIX,jzt.jd.com
 DOMAIN-SUFFIX,k-analytix.com
 DOMAIN-SUFFIX,k-words.io
+DOMAIN-SUFFIX,k.qwant.com
 DOMAIN-SUFFIX,k030.koco.com
 DOMAIN-SUFFIX,k203.adn.com
 DOMAIN-SUFFIX,k2n0f.cn
@@ -9308,6 +9311,7 @@ DOMAIN-SUFFIX,static.terratraf.com
 DOMAIN-SUFFIX,static.terratraf.io
 DOMAIN-SUFFIX,static.timetreeads.com
 DOMAIN-SUFFIX,static.user-red.com
+DOMAIN-SUFFIX,statikk.modelviewer.lol
 DOMAIN-SUFFIX,statis.api.3g.youku.com
 DOMAIN-SUFFIX,statistic-overseas.yunxinfw.com
 DOMAIN-SUFFIX,statistic.live.126.net
@@ -10795,6 +10799,7 @@ DOMAIN-SUFFIX,ufz.doesxyz.com
 DOMAIN-SUFFIX,ug-sg.byteoversea.com
 DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,ugdturner.com
+DOMAIN-SUFFIX,uibjh29vqc.com
 DOMAIN-SUFFIX,uid.mediacorp.sg
 DOMAIN-SUFFIX,uie.data.cbc.ca
 DOMAIN-SUFFIX,uii.io
@@ -10824,6 +10829,8 @@ DOMAIN-SUFFIX,umami.spencerdevs.xyz
 DOMAIN-SUFFIX,umami.subdavis.com
 DOMAIN-SUFFIX,umami.syg.ma
 DOMAIN-SUFFIX,umami.vidcore.net
+DOMAIN-SUFFIX,umami.vidfast.pro
+DOMAIN-SUFFIX,umami.vidup.to
 DOMAIN-SUFFIX,umamix.fadunews.in
 DOMAIN-SUFFIX,umbel.com
 DOMAIN-SUFFIX,umeng.com
@@ -10867,6 +10874,7 @@ DOMAIN-SUFFIX,updatemobilee.com
 DOMAIN-SUFFIX,uplift-platform.com
 DOMAIN-SUFFIX,uplog.inews.qq.com
 DOMAIN-SUFFIX,upoll.umengcloud.com
+DOMAIN-SUFFIX,uproestup.sbs
 DOMAIN-SUFFIX,ups.ksmobile.net
 DOMAIN-SUFFIX,upscore.com
 DOMAIN-SUFFIX,upsell.alphwidget.com
@@ -11442,6 +11450,7 @@ DOMAIN-SUFFIX,xlog.tiktokv.com
 DOMAIN-SUFFIX,xml.affiliate.rakuten.co.jp
 DOMAIN-SUFFIX,xml.bidiology.com
 DOMAIN-SUFFIX,xml.realtime-bid.com
+DOMAIN-SUFFIX,xml.srvqk.com
 DOMAIN-SUFFIX,xmlfusion.com
 DOMAIN-SUFFIX,xmlppc.net
 DOMAIN-SUFFIX,xmm.wxc.cc

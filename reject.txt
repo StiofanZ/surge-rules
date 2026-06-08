@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-07T19:51:47+00:00
+# Generated: 2026-06-08T20:37:37+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12235, local=0, total(deduped)=11618
+# Counts: upstream=12245, local=0, total(deduped)=11627
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -206,6 +206,7 @@
 .abcstats.com
 .abdalminhag.com
 .abh.jp
+.abjectionfreedpaying.com
 .abmr.net
 .abnad.net
 .abodealley.com
@@ -1454,6 +1455,7 @@ analytics-stage.wildberries.ru
 .analytics.nova.foxsports.com
 .analytics.oceanengine.com
 .analytics.octaglobal.com
+.analytics.oeksound.com
 .analytics.oliveapp.net
 .analytics.omniscientai.com
 .analytics.onedio.com
@@ -3664,6 +3666,7 @@ copilot-telemetry-service.githubusercontent.com
 .dct.mango-office.ru
 .dd.g2.com
 .dd.leboncoin.fr
+.dd.qwant.com
 .dd.reuters.com
 .dd6zx4ibq538k.cloudfront.net
 .ddgjjj.com
@@ -4460,7 +4463,6 @@ error-tracking.megamarket.tech
 .fe-go.letv.com
 .feast-events.guardianapis.com
 .feathr.co
-.featureassets.org
 .featured.perfectionholic.com
 .featuregates.org
 .feckurteg.net
@@ -5670,6 +5672,7 @@ incoming-telemetry.thunderbird.net
 .jzt.jd.com
 .k-analytix.com
 .k-words.io
+.k.qwant.com
 .k030.koco.com
 .k203.adn.com
 .k2n0f.cn
@@ -9306,6 +9309,7 @@ stacks.vk-portal.net
 .static.terratraf.io
 .static.timetreeads.com
 .static.user-red.com
+.statikk.modelviewer.lol
 .statis.api.3g.youku.com
 .statistic-overseas.yunxinfw.com
 .statistic.live.126.net
@@ -10793,6 +10797,7 @@ tracing-http.megamarket.tech
 .ug-sg.byteoversea.com
 .ugdtimg.com
 .ugdturner.com
+.uibjh29vqc.com
 .uid.mediacorp.sg
 .uie.data.cbc.ca
 .uii.io
@@ -10822,6 +10827,8 @@ tracing-http.megamarket.tech
 .umami.subdavis.com
 .umami.syg.ma
 .umami.vidcore.net
+.umami.vidfast.pro
+.umami.vidup.to
 .umamix.fadunews.in
 .umbel.com
 .umeng.com
@@ -10865,6 +10872,7 @@ tracing-http.megamarket.tech
 .uplift-platform.com
 .uplog.inews.qq.com
 .upoll.umengcloud.com
+.uproestup.sbs
 .ups.ksmobile.net
 .upscore.com
 .upsell.alphwidget.com
@@ -11440,6 +11448,7 @@ xapi.ozonru.me
 .xml.affiliate.rakuten.co.jp
 .xml.bidiology.com
 .xml.realtime-bid.com
+.xml.srvqk.com
 .xmlfusion.com
 .xmlppc.net
 .xmm.wxc.cc
