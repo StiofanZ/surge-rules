@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-08T20:37:37+00:00
+# Generated: 2026-06-09T20:22:50+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12245, local=0, total(deduped)=11627
+# Counts: upstream=12273, local=0, total(deduped)=11654
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1121,6 +1121,7 @@ DOMAIN-SUFFIX,als-svc.nytimes.com
 DOMAIN-SUFFIX,als.baidu.com
 DOMAIN-SUFFIX,alt-ad.mail.ru
 DOMAIN-SUFFIX,alt-r.my.com
+DOMAIN-SUFFIX,alt.cobweb.com
 DOMAIN-SUFFIX,altastat.com
 DOMAIN-SUFFIX,altema-log.com
 DOMAIN-SUFFIX,alvenda.com
@@ -1145,6 +1146,7 @@ DOMAIN-SUFFIX,amethyst.zappos.com
 DOMAIN-SUFFIX,amgload.net
 DOMAIN-SUFFIX,amikay.com
 DOMAIN-SUFFIX,amillionads.com
+DOMAIN-SUFFIX,amkcuwli.in
 DOMAIN-SUFFIX,aml.valuecommerce.com
 DOMAIN-SUFFIX,amoad.com
 DOMAIN-SUFFIX,amobee.com
@@ -1410,6 +1412,7 @@ DOMAIN-SUFFIX,analytics.languagetoolplus.com
 DOMAIN-SUFFIX,analytics.lasegunda.ecn.cl
 DOMAIN-SUFFIX,analytics.launch.bz
 DOMAIN-SUFFIX,analytics.launcherleaks.net
+DOMAIN-SUFFIX,analytics.learndirect.com
 DOMAIN-SUFFIX,analytics.lekumo.jp
 DOMAIN-SUFFIX,analytics.liine.com
 DOMAIN-SUFFIX,analytics.liveact-vault.com
@@ -3297,6 +3300,7 @@ DOMAIN-SUFFIX,ctags.cn
 DOMAIN-SUFFIX,ctent.povvverz.one
 DOMAIN-SUFFIX,ctl.buyt.in
 DOMAIN-SUFFIX,ctl.mobitrack.co.kr
+DOMAIN-SUFFIX,ctm.turnbull-scott.co.uk
 DOMAIN-SUFFIX,ctnsnet.com
 DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,ctr.po-kaki-to.com
@@ -3603,6 +3607,7 @@ DOMAIN-SUFFIX,data.armexdef.uk
 DOMAIN-SUFFIX,data.artistchai.co.kr
 DOMAIN-SUFFIX,data.client.openweb.bid
 DOMAIN-SUFFIX,data.deep-content.io
+DOMAIN-SUFFIX,data.deschouwwitgoed.nl
 DOMAIN-SUFFIX,data.digitalks.az
 DOMAIN-SUFFIX,data.ds.dumont.de
 DOMAIN-SUFFIX,data.emb-api.com
@@ -6592,6 +6597,7 @@ DOMAIN-SUFFIX,metrics.media-amazon.com
 DOMAIN-SUFFIX,metrics.motoblouz.com
 DOMAIN-SUFFIX,metrics.mzstatic.com
 DOMAIN-SUFFIX,metrics.n-tv.de
+DOMAIN-SUFFIX,metrics.nautilus2.pl
 DOMAIN-SUFFIX,metrics.news.com.au
 DOMAIN-SUFFIX,metrics.nsureapi.com
 DOMAIN-SUFFIX,metrics.onewegg.com
@@ -9183,10 +9189,24 @@ DOMAIN-SUFFIX,ssp.otm-r.com
 DOMAIN-SUFFIX,sspapi-prd.samsungrs.com
 DOMAIN-SUFFIX,sspnm.emol.com
 DOMAIN-SUFFIX,sst.altenpflege-online.net
+DOMAIN-SUFFIX,sst.amweb.nl
+DOMAIN-SUFFIX,sst.beckhuis.com
+DOMAIN-SUFFIX,sst.bike-eu.com
+DOMAIN-SUFFIX,sst.charrell.be
 DOMAIN-SUFFIX,sst.colemanfurniture.com
+DOMAIN-SUFFIX,sst.dearchitect.nl
+DOMAIN-SUFFIX,sst.desko.nl
+DOMAIN-SUFFIX,sst.distrifood.nl
 DOMAIN-SUFFIX,sst.hostnet.nl
+DOMAIN-SUFFIX,sst.missethoreca.nl
 DOMAIN-SUFFIX,sst.mkb-brandstof.nl
+DOMAIN-SUFFIX,sst.msm.nl
+DOMAIN-SUFFIX,sst.onlineveilingmeester.nl
+DOMAIN-SUFFIX,sst.parkingcentrumoosterdok.nl
+DOMAIN-SUFFIX,sst.salarisnet.nl
 DOMAIN-SUFFIX,sst.shopware.com
+DOMAIN-SUFFIX,sst.stickerei-stoiber.ch
+DOMAIN-SUFFIX,sst.stickerei-stoiber.de
 DOMAIN-SUFFIX,sst.thebanker.com
 DOMAIN-SUFFIX,st-5cva8vttppvjafpc7jvj.kodik.biz
 DOMAIN-SUFFIX,st-fly.b-cdn.net
@@ -9432,6 +9452,7 @@ DOMAIN-SUFFIX,stats.rip
 DOMAIN-SUFFIX,stats.rong-edge.com
 DOMAIN-SUFFIX,stats.rustica.fr
 DOMAIN-SUFFIX,stats.rustore.ru
+DOMAIN-SUFFIX,stats.sailtheship.xyz
 DOMAIN-SUFFIX,stats.samsungpass.com
 DOMAIN-SUFFIX,stats.sdk.banuba.net
 DOMAIN-SUFFIX,stats.searchftps.net
@@ -9791,9 +9812,11 @@ DOMAIN-SUFFIX,tagging.src-reizen.nl
 DOMAIN-SUFFIX,tagging.stieglitz.nl
 DOMAIN-SUFFIX,tagging.swat.io
 DOMAIN-SUFFIX,tagging.systemyzawieszen.pl
+DOMAIN-SUFFIX,tagging.trined.nl
 DOMAIN-SUFFIX,tagging.utwente.nl
 DOMAIN-SUFFIX,tagging.veda.ch
 DOMAIN-SUFFIX,tagging.vhdakkapellen.nl
+DOMAIN-SUFFIX,tagging.voordeelvanger.nl
 DOMAIN-SUFFIX,tagging.woodtex.be
 DOMAIN-SUFFIX,tagging.work21.nl
 DOMAIN-SUFFIX,taggyad.jp
@@ -9893,6 +9916,7 @@ DOMAIN-SUFFIX,tdid.m.qq.com
 DOMAIN-SUFFIX,tdk.petsplace.nl
 DOMAIN-SUFFIX,tds.bid
 DOMAIN-SUFFIX,tds.favbet.partners
+DOMAIN-SUFFIX,tds.vss-security.nl
 DOMAIN-SUFFIX,tdstats.com
 DOMAIN-SUFFIX,tdum.alibaba.com
 DOMAIN-SUFFIX,teachscape.vo.llnwd.net
@@ -9968,6 +9992,7 @@ DOMAIN-SUFFIX,textad.net
 DOMAIN-SUFFIX,tg.meitu.com
 DOMAIN-SUFFIX,tg.minfin.com.ua
 DOMAIN-SUFFIX,tg1.premiumimpression.com
+DOMAIN-SUFFIX,tggng.suitable.de
 DOMAIN-SUFFIX,tgtag.io
 DOMAIN-SUFFIX,tgw.gmx.net
 DOMAIN-SUFFIX,th.pinduoduo.com
@@ -10294,6 +10319,7 @@ DOMAIN-SUFFIX,track.searchiq.co
 DOMAIN-SUFFIX,track.securedvisit.com
 DOMAIN-SUFFIX,track.segmentstream.com
 DOMAIN-SUFFIX,track.sendlane.com
+DOMAIN-SUFFIX,track.shiksha.com
 DOMAIN-SUFFIX,track.shrinkplus.com
 DOMAIN-SUFFIX,track.slideshare.net
 DOMAIN-SUFFIX,track.sohu.com
@@ -10553,6 +10579,7 @@ DOMAIN-SUFFIX,tracking.univtec.com
 DOMAIN-SUFFIX,tracking.unrealengine.com
 DOMAIN-SUFFIX,tracking.upfluence.co
 DOMAIN-SUFFIX,tracking.utlservice.com
+DOMAIN-SUFFIX,tracking.vbr.ru
 DOMAIN-SUFFIX,tracking.viewlift.com
 DOMAIN-SUFFIX,tracking.ws.eurosport.com
 DOMAIN-SUFFIX,tracking.yourfilehost.com

@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-08T20:37:37+00:00
+# Generated: 2026-06-09T20:22:51+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=113021, local=2, total(deduped)=112887, excluded=5
+# Counts: upstream=113045, local=2, total(deduped)=112911, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -1231,6 +1231,7 @@
 .0x5.me
 .0x9.me
 .0xaa55.com
+.0xffff.one
 .0xffffff.org
 .0xiao.com
 .0xjqlun2.work
@@ -5873,6 +5874,7 @@
 .51yugou.com
 .51yund.com
 .51yundong.me
+.51yunzhi.com
 .51ywx.com
 .51yxcyy.com
 .51yxky.com
@@ -19280,6 +19282,7 @@ cache.pack.google.com
 .catchyrime.com
 .catering-shizuoka.com
 .catfish-cms.com
+.catfk.com
 .catguo.com
 .cathassist.org
 .cathayagroup.com
@@ -22813,6 +22816,7 @@ checkin.gstatic.com
 .chualamdimsum.com
 .chuan-s.com
 .chuanboyi.com
+.chuanboyu.com
 .chuandaizc.com
 .chuandasolar.com
 .chuandong.com
@@ -29099,6 +29103,7 @@ dg-meta.video.google.com
 .dgjx.net
 .dgjxmk.com
 .dgjy.net
+.dgkfa.com
 .dgkj888.com
 .dglpool.com
 .dglyjx.com
@@ -32570,6 +32575,7 @@ ea2cn-staging-outlet.dell.com
 .ego-robotics.com
 .egoint.com
 .egongzheng.com
+.egonlin.com
 .egooad.com
 .egood995.com
 .egoonet.com
@@ -43311,6 +43317,7 @@ guzzoni.smoot.apple.com
 .h5anli.com
 .h5app.com
 .h5avu.com
+.h5cmpassport.com
 .h5cn.com
 .h5data.com
 .h5designer.com
@@ -46290,6 +46297,7 @@ guzzoni.smoot.apple.com
 .hjenglish.com
 .hjg365.com
 .hjgcd.com
+.hjgroup-sdq.com
 .hjgrp.com
 .hjgtjt.com
 .hjhrcloud.com
@@ -51162,6 +51170,7 @@ i.pki.goog
 .ihqfo.org
 .ihr360.com
 .ihrscloud.com
+.ihsiao.com
 .ihst8.com
 .ihstatic.com
 .ihtcboy.com
@@ -59467,6 +59476,7 @@ ksn-verdict.geoksn.kaspersky.com
 .ksydx.com
 .ksyiqiwan.com
 .ksyll.com
+.ksymsbz.com
 .ksyna.com
 .ksyun.com
 .ksyun.net
@@ -65042,6 +65052,7 @@ maps.apple.com
 .marco-bj.com
 .marcopolochina.com
 .marginalk.com
+.maria23.com
 .mariedalgar.com
 .marimekko-hots.com
 .marine-dancer.com
@@ -65410,12 +65421,14 @@ maps.apple.com
 .mcyz.com
 .mczhihui.com
 .mczmb.org
+.mczsok.com
 .mczwlt.net
 .mczyz.com
 .mczz.net
 .md-hmjt.com
 .md-pms.com
 .md5ma.com
+.mdaehx.com
 .mdapp.tv
 .mdbchina.com
 .mdbimg.com
@@ -66551,6 +66564,7 @@ mesu.apple.com
 .minecraftxz.com
 .minecraftzw.com
 .minegoods.com
+.mineharmony.cc
 .minei.com
 .mineplugin.org
 .minerhome.com
@@ -73592,6 +73606,7 @@ performanceparameters.googleapis.com
 .pinkertech.com
 .pinkoichina.com
 .pinkou.com
+.pinkr.com
 .pinla.com
 .pinlyu.com
 .pinmanduo.com
@@ -80008,6 +80023,7 @@ scene7-cdn.dell.com
 .scmccboss.com
 .scmchem.com
 .scmfair.com
+.scmggzbh.com
 .scmor.com
 .scmroad.com
 .scmsky.com
@@ -85719,6 +85735,7 @@ statics.teams.cdn.office.net
 .stdout.pub
 .ste56.com
 .stea2008.com
+.steam-run.com
 .steam.com
 .steam302.xyz
 .steambig.com
@@ -86929,6 +86946,7 @@ swscan.apple.com
 .syhzdj.net
 .syhzx.com
 .syhzzf.com
+.syiban.com
 .syiptv.com
 .syitgz.com
 .syjcly.com
@@ -93268,6 +93286,7 @@ upp.itunes.apple.com
 .uucqrdmk.com
 .uueasy.com
 .uuedutech.com
+.uufaka.com
 .uufund.com
 .uufuns.com
 .uugai.com
@@ -94748,6 +94767,7 @@ valid.origin-apple.com.akadns.net
 .walvax.com
 .wamawama.com
 .wamila.com
+.wamoyu.com
 .wan-ka.com
 .wan.cc
 .wan.com
@@ -98609,6 +98629,7 @@ www4-static.gog-statics.com
 .wya1.com
 .wybgs.com
 .wybosch.com
+.wybuddhist.com
 .wybzdwss.com
 .wycad.com
 .wycfw.com
@@ -100423,6 +100444,7 @@ www4-static.gog-statics.com
 .ximitools.com
 .ximiyouxi.com
 .ximmerse.com
+.ximofood.com
 .ximogo.com
 .ximuw.com
 .xin-health.com
@@ -102724,6 +102746,7 @@ xtratime.qcomgeo2.com
 .xxymdy.com
 .xxymw.com
 .xxyo.com
+.xxyoil.com
 .xxys2023.com
 .xxyw.com
 .xxyx.ltd
@@ -108356,6 +108379,7 @@ xtratime.qcomgeo2.com
 .zchospital.com
 .zchrgroup.com
 .zcict.com
+.zcidclink.com
 .zcimg.com
 .zcinfo.net
 .zciv.com
