@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-09T20:22:30+00:00
+# Generated: 2026-06-10T21:04:00+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30836, local=27, total(deduped)=25981
+# Counts: upstream=30841, local=27, total(deduped)=25986
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -12111,6 +12111,7 @@ imperial.insendi.com
 .infocert.it
 .infoglobo.com.br
 .infolinker.com.tw
+.infoq.com
 .infoq.jp
 .informs.org
 .infosec.exchange
@@ -16871,6 +16872,7 @@ ntppool2.time.nl
 .nxta.org
 .nxtdig.com.hk
 .nxtdig.com.tw
+.nxtv.jp
 .nyaa.eu
 .nyaa.net
 .nyaa.si
@@ -22763,6 +22765,9 @@ ubisoft.siteintercept.qualtrics.com
 .underhentai.net
 .underlords.com
 .underwoodammo.com
+.unext-info.jp
+.unext.co.jp
+.unext.jp
 .unfiltered.news
 .unholyknight.com
 .unidraw.io

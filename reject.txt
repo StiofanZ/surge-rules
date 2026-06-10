@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-09T20:22:50+00:00
+# Generated: 2026-06-10T21:04:16+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12273, local=0, total(deduped)=11654
+# Counts: upstream=12280, local=0, total(deduped)=11661
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2650,6 +2650,7 @@ bs.mail.ru
 .cdns.lodeo.io
 .cdnstats-a.akamaihd.net
 .cdnstr.com
+.cdnw.onlinelearning.hms.harvard.edu
 .cdp.cloud.unity.cn
 .cdp.cloud.unity3d.com
 .cdp.vemt.com
@@ -3665,6 +3666,7 @@ copilot-telemetry-service.githubusercontent.com
 .dc5ig2fc8lg83.cloudfront.net
 .dc8xl0ndzn2cb.cloudfront.net
 .dcjg1gv1px1h.cloudfront.net
+.dclsrv.com
 .dcmn.com
 .dco.coupang.com
 .dcs.maxthon.com
@@ -3907,6 +3909,7 @@ disney.my.sentry.io
 .dspunion.com
 .dsxlez.com
 .dt.beyla.site
+.dtasrvr.com
 .dtch.brunel.nl
 .dtcollect.newsbang.com
 .dtent.povvverz.one
@@ -4904,6 +4907,7 @@ google-analytics-suite.ozon.ru
 .great12.org
 .greatviews.de
 .greenbids.ai
+.gresrv.com
 .grfz.de
 .grgnsht.nzxt.com
 .gridsum.com
@@ -5319,6 +5323,7 @@ google-analytics-suite.ozon.ru
 .im.c.yimg.jp
 .im.cbsileads.com
 .image-rentracks.com
+.image-sap.sfmc-content.com
 .imagehost.pics
 .imagehub.fun
 .imapi-sg.isnssdk.com
@@ -7721,6 +7726,7 @@ pixel.yandex.com
 .plausible.omgapi.org
 .plausible.paimon.moe
 .plausible.pronouns.cc
+.plausible.root-nation.net
 .plausible.scimago.es
 .plausible.simplelogin.io
 .plausible.vidsonic.net
@@ -10814,6 +10820,7 @@ tracing-http.megamarket.tech
 .udbdf-v2.nimo.tv
 .udbdf.apkpure.com
 .udc.msn.com
+.udderstack.allstar.gg
 .udgrbq.malwarebytes.com
 .udkcrj.com
 .ue.flipboard.com

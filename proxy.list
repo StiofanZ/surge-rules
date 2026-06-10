@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-09T20:22:30+00:00
+# Generated: 2026-06-10T21:04:00+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30836, local=27, total(deduped)=25981, rule_set_only=12
+# Counts: upstream=30841, local=27, total(deduped)=25986, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -12114,6 +12114,7 @@ DOMAIN-SUFFIX,infocert.digital
 DOMAIN-SUFFIX,infocert.it
 DOMAIN-SUFFIX,infoglobo.com.br
 DOMAIN-SUFFIX,infolinker.com.tw
+DOMAIN-SUFFIX,infoq.com
 DOMAIN-SUFFIX,infoq.jp
 DOMAIN-SUFFIX,informs.org
 DOMAIN-SUFFIX,infosec.exchange
@@ -16874,6 +16875,7 @@ DOMAIN-SUFFIX,nwxs8.com
 DOMAIN-SUFFIX,nxta.org
 DOMAIN-SUFFIX,nxtdig.com.hk
 DOMAIN-SUFFIX,nxtdig.com.tw
+DOMAIN-SUFFIX,nxtv.jp
 DOMAIN-SUFFIX,nyaa.eu
 DOMAIN-SUFFIX,nyaa.net
 DOMAIN-SUFFIX,nyaa.si
@@ -22766,6 +22768,9 @@ DOMAIN-SUFFIX,uncyclopedia.tw
 DOMAIN-SUFFIX,underhentai.net
 DOMAIN-SUFFIX,underlords.com
 DOMAIN-SUFFIX,underwoodammo.com
+DOMAIN-SUFFIX,unext-info.jp
+DOMAIN-SUFFIX,unext.co.jp
+DOMAIN-SUFFIX,unext.jp
 DOMAIN-SUFFIX,unfiltered.news
 DOMAIN-SUFFIX,unholyknight.com
 DOMAIN-SUFFIX,unidraw.io
