@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-10T21:04:00+00:00
+# Generated: 2026-06-11T20:39:58+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30841, local=27, total(deduped)=25986
+# Counts: upstream=30880, local=27, total(deduped)=26025
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1407,6 +1407,7 @@ adobeereg.com
 .allizom.net
 .allizom.org
 .alljapanesepass.com
+.allkeyshop.com
 .allmomsex.com
 .allmovie.com
 .allover30.com
@@ -2649,6 +2650,7 @@ api-p.videomarket.jp
 .avdwang.xyz
 .avelip.com
 .aventertainments.com
+.avermedia.com
 .aversbank.ru
 .avfox.cc
 .avg.com
@@ -3455,6 +3457,7 @@ beck-online.beck.de
 .bextbuy.com
 .beyondcore.com
 .bfa.ru
+.bfads.net
 .bffshd.com
 .bfnn.org
 .bfsh.hk
@@ -4679,6 +4682,7 @@ blizzard.nefficient.co.kr
 .buypass.com
 .buypass.no
 .buypass.se
+.buyservices.com
 .buyshoponly.com
 .buzzardflapper.com
 .buzzav.com
@@ -5689,6 +5693,7 @@ cisco.evergage.com
 .coinbene.com
 .coindesk.com
 .coinex.com
+.coingate.com
 .coingecko.com
 .coingi.com
 .coinglass.com
@@ -6728,6 +6733,9 @@ deutschewelle.h-cdn.com
 .discountbeatsstore.com
 .discountedporn.com
 .discountporn.club
+.discourse-cdn.com
+.discourse.group
+.discourse.org
 .discovershiretoko.org
 .discoveryplus.com
 .discreet.com
@@ -7360,6 +7368,10 @@ dl.begellhouse.com
 .eater.com
 .ebahy.com
 .ebalovo.com
+.ebates.ca
+.ebates.kr
+.ebates.sg
+.ebatescanada.com
 .ebay-authenticate.net
 .ebay-confirm.com
 .ebay-course.com
@@ -7542,6 +7554,7 @@ dl.begellhouse.com
 .ebtcbank.com
 .ebuyer.com
 .ebuyheadphones.com
+.ecbsn.com
 .ecchinohentai.ru
 .ecert.gov.hk
 .ecfa.org.tw
@@ -7625,6 +7638,7 @@ dl.begellhouse.com
 .electronicarts.fr
 .electronicsignature.ru
 .electronjs.org
+.elegantthemes.com
 .element.io
 .elementary.io
 .elephantlist.com
@@ -8505,6 +8519,7 @@ faronics.kayako.com
 .fasttrackreadysupport.com
 .fatbtc.com
 .fatstube.com
+.fatwallet.com
 .favebook.com
 .favelaporno.com
 .favepornmovs.com
@@ -8645,6 +8660,7 @@ featureassets.org
 .ficador.com
 .ficbook.net
 .ficeboock.com
+.ficgs.com
 .ficmania.com
 .fictionmania.tv
 .fiddle.jshell.net
@@ -9326,6 +9342,7 @@ forwarder.workos.com
 .fullpornnetwork.com
 .fullservicegame.com
 .fullsexmovs.com
+.fullstory.com
 .fulltaboo.tv
 .fullxxxmovies.net
 .fundaiphone5s.com
@@ -9442,7 +9459,9 @@ forwarder.workos.com
 .gamesfuckgirls.com
 .gamesofdesire.com
 .gamespark.jp
+.gamesplanet.com
 .gamesstack.com
+.gametap.com
 .gameuxmasterguide.com
 .gamez.com.tw
 .gaming-notebooks.com
@@ -9718,6 +9737,7 @@ forwarder.workos.com
 .gfx.ms
 .gfycat.com
 .gfysex.com
+.gg.deals
 .ggdiao.com
 .ggjav.com
 .ggoogle.com
@@ -9730,6 +9750,7 @@ forwarder.workos.com
 .gh.io
 .ghbi.ir
 .ghcr.io
+.ghe.com
 .ghettotube.com
 .ghidra-sre.org
 .ghostarchive.org
@@ -10324,6 +10345,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .governmentengineer.com
 .govforce.com
 .gpb.ru
+.gpstatic.com
 .gpstheseries.com
 .gputechconf.co.kr
 .gputechconf.com
@@ -11581,6 +11603,7 @@ hub.slarker.me
 .hyper.is
 .hyperbeam.com
 .hyperdreams.com
+.hyperliquid.xyz
 .hyperrate.com
 .hyperscan.io
 .hypnohub.net
@@ -13458,6 +13481,7 @@ ingest.apple-studies.com
 .kingofpics.com
 .kingstagram.com
 .kingstone.com.tw
+.kinguin.net
 .kinguno.xyz
 .kink.com
 .kinkbook.com
@@ -13809,6 +13833,8 @@ licdn.cn.cdn20.com
 .lifewire.com
 .lightbridge.com
 .lighten.org.tw
+.lighter.exchange
+.lighter.xyz
 .lighti.me
 .lightnovel.cn
 .lightxxxtube.com
@@ -16252,7 +16278,9 @@ muse.jhu.edu
 .nexon.co.jp
 .nexon.com
 .nexon.io
+.nexon.net
 .nexoncdn.co.kr
+.nexongames.co.kr
 .nexpart.com
 .nexpart.tv
 .next.com
@@ -16319,6 +16347,10 @@ muse.jhu.edu
 .nhentaihaven.com
 .nhentaihaven.org
 .nheos.com
+.nhk
+.nhk.jp
+.nhk.or.jp
+.nhkworld.jp
 .nhncorp.jp
 .nic.cz.cc
 .nic.gov
@@ -18956,7 +18988,10 @@ public-us-pingsx.api.clonoth.com
 .rakuten.com
 .rakuten.com.tw
 .rakuten.ne.jp
+.rakuten.tv
 .rakuten.tw
+.rakutenadvertising.com
+.rakutengiftcards.ca
 .rakuya.com.tw
 .ramcity.com.au
 .randyblue.com
@@ -19400,6 +19435,7 @@ roovza.skadsdk.appsflyersdk.com
 .rpmfusion.org
 .rprimelab.com
 .rqbank.ir
+.rrcbsn.com
 .rrl28.buzz
 .rrs1.xyz
 .rrtis.com
@@ -23252,6 +23288,7 @@ utcnist3.colorado.edu
 .viewpointsfromfacebook.com
 .vigorgame.com
 .viju.ru
+.viki.com
 .vikiporn.com
 .vilanet.me
 .vilavpn.com
@@ -24417,6 +24454,7 @@ widgets.stripst.com
 .woolyss.com
 .woopie.jp
 .woopie.tv
+.wordcamp.org
 .wordpress.com
 .wordpress.net
 .wordpress.org
@@ -25891,6 +25929,7 @@ yangzhi.app
 .zipcine.com
 .ziraatbank.ru
 .zishy.com
+.zklighter.elliot.ai
 .zlib.life
 .zlibcdn.com
 .zlibcdn2.com

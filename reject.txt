@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-10T21:04:16+00:00
+# Generated: 2026-06-11T20:40:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12280, local=0, total(deduped)=11661
+# Counts: upstream=12292, local=0, total(deduped)=11669
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1563,6 +1563,7 @@ analytics-stage.wildberries.ru
 .analytics.totalprosports.com
 .analytics.touchnote.io
 .analytics.tout.com
+.analytics.trbna.com
 .analytics.tripoto.com
 .analytics.trovit.com
 .analytics.turk.pro
@@ -1761,6 +1762,7 @@ api.mindbox.ru
 .api.visitorapi.com
 .api.whizeo.com
 .api.youngle.tech
+.api2.amplitude.com
 .api2.appsflyer.com
 .api2.branch.io
 .api2.poperblocker.com
@@ -2539,6 +2541,8 @@ bs.mail.ru
 .cca-lite.coinbase.com
 .cccpmo.com
 .ccgateway.net
+.cchome-stage.adobe.io
+.cchome.adobe.io
 .cda7k-ddok.com
 .cdclub.net
 .cdend.com
@@ -7511,6 +7515,7 @@ p9-ad-sign.byteimg.com
 .percentmobile.com
 .perf-events.cloud.unity3d.com
 .perf.bblmw.com
+.perf.cloud.unity3d.com
 .perf.hsforms.com
 .perfalytics.com
 .perfdrive.com
@@ -7832,6 +7837,7 @@ pixel.yandex.com
 .prd-collector-anon.ex.co
 .prd-collector-anon.playbuzz.com
 .prd-collector-platform.ex.co
+.prd-lender.cdp.internal.unity3d.com
 .prdwebcollector.ruetracking.com
 .pre.glotgrx.com
 .preaf.jp
@@ -10644,6 +10650,7 @@ tracing-http.megamarket.tech
 .tralut.chatpdf.com
 .trandgid.com
 .transaction-watcher-2.littledata.io
+.transporter.makemytrip.global
 .traxex.gannettdigital.com
 .trc.gpcdn.pl
 .trc.r25.jp
@@ -10751,6 +10758,7 @@ tracing-http.megamarket.tech
 .tw.api.vpon.com
 .tw.netcore.co.in
 .twcount.com
+.twimg.cash
 .twin-iq.kickfire.com
 .twitob.com
 .twitter.sx

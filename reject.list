@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-10T21:04:16+00:00
+# Generated: 2026-06-11T20:40:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12280, local=0, total(deduped)=11661
+# Counts: upstream=12292, local=0, total(deduped)=11669
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1565,6 +1565,7 @@ DOMAIN-SUFFIX,analytics.tn.kz
 DOMAIN-SUFFIX,analytics.totalprosports.com
 DOMAIN-SUFFIX,analytics.touchnote.io
 DOMAIN-SUFFIX,analytics.tout.com
+DOMAIN-SUFFIX,analytics.trbna.com
 DOMAIN-SUFFIX,analytics.tripoto.com
 DOMAIN-SUFFIX,analytics.trovit.com
 DOMAIN-SUFFIX,analytics.turk.pro
@@ -1763,6 +1764,7 @@ DOMAIN-SUFFIX,api.usebutton.com
 DOMAIN-SUFFIX,api.visitorapi.com
 DOMAIN-SUFFIX,api.whizeo.com
 DOMAIN-SUFFIX,api.youngle.tech
+DOMAIN-SUFFIX,api2.amplitude.com
 DOMAIN-SUFFIX,api2.appsflyer.com
 DOMAIN-SUFFIX,api2.branch.io
 DOMAIN-SUFFIX,api2.poperblocker.com
@@ -2541,6 +2543,8 @@ DOMAIN-SUFFIX,cc.swiftype.com
 DOMAIN-SUFFIX,cca-lite.coinbase.com
 DOMAIN-SUFFIX,cccpmo.com
 DOMAIN-SUFFIX,ccgateway.net
+DOMAIN-SUFFIX,cchome-stage.adobe.io
+DOMAIN-SUFFIX,cchome.adobe.io
 DOMAIN-SUFFIX,cda7k-ddok.com
 DOMAIN-SUFFIX,cdclub.net
 DOMAIN-SUFFIX,cdend.com
@@ -7513,6 +7517,7 @@ DOMAIN-SUFFIX,pepperjam.com
 DOMAIN-SUFFIX,percentmobile.com
 DOMAIN-SUFFIX,perf-events.cloud.unity3d.com
 DOMAIN-SUFFIX,perf.bblmw.com
+DOMAIN-SUFFIX,perf.cloud.unity3d.com
 DOMAIN-SUFFIX,perf.hsforms.com
 DOMAIN-SUFFIX,perfalytics.com
 DOMAIN-SUFFIX,perfdrive.com
@@ -7834,6 +7839,7 @@ DOMAIN-SUFFIX,prd-collect-llm.xverse.cn
 DOMAIN-SUFFIX,prd-collector-anon.ex.co
 DOMAIN-SUFFIX,prd-collector-anon.playbuzz.com
 DOMAIN-SUFFIX,prd-collector-platform.ex.co
+DOMAIN-SUFFIX,prd-lender.cdp.internal.unity3d.com
 DOMAIN-SUFFIX,prdwebcollector.ruetracking.com
 DOMAIN-SUFFIX,pre.glotgrx.com
 DOMAIN-SUFFIX,preaf.jp
@@ -10646,6 +10652,7 @@ DOMAIN-SUFFIX,traktum.com
 DOMAIN-SUFFIX,tralut.chatpdf.com
 DOMAIN-SUFFIX,trandgid.com
 DOMAIN-SUFFIX,transaction-watcher-2.littledata.io
+DOMAIN-SUFFIX,transporter.makemytrip.global
 DOMAIN-SUFFIX,traxex.gannettdigital.com
 DOMAIN-SUFFIX,trc.gpcdn.pl
 DOMAIN-SUFFIX,trc.r25.jp
@@ -10753,6 +10760,7 @@ DOMAIN-SUFFIX,tw-api.vpon.com
 DOMAIN-SUFFIX,tw.api.vpon.com
 DOMAIN-SUFFIX,tw.netcore.co.in
 DOMAIN-SUFFIX,twcount.com
+DOMAIN-SUFFIX,twimg.cash
 DOMAIN-SUFFIX,twin-iq.kickfire.com
 DOMAIN-SUFFIX,twitob.com
 DOMAIN-SUFFIX,twitter.sx
