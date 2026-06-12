@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-11T20:40:34+00:00
+# Generated: 2026-06-12T20:31:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12292, local=0, total(deduped)=11669
+# Counts: upstream=12293, local=0, total(deduped)=11670
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3810,7 +3810,6 @@ DOMAIN-SUFFIX,dls-account.di.atlas.samsung.com
 DOMAIN-SUFFIX,dls-ddc.dqa.samsung.com
 DOMAIN-SUFFIX,dls2s.appsflyer.com
 DOMAIN-SUFFIX,dlso-ap96.macgamingdb.app
-DOMAIN-SUFFIX,dlswbr.baidu.com
 DOMAIN-SUFFIX,dm.isnssdk.com
 DOMAIN-SUFFIX,dm.pstatp.com
 DOMAIN-SUFFIX,dm.toutiao.com
@@ -5449,6 +5448,7 @@ DOMAIN-SUFFIX,insights-collector.newrelic.com
 DOMAIN-SUFFIX,insights-mxp.coursecareers.com
 DOMAIN-SUFFIX,insights-tag.convertkit.com
 DOMAIN-SUFFIX,insights.algolia.io
+DOMAIN-SUFFIX,insights.xyba.dev
 DOMAIN-SUFFIX,insights.zennioptical.com
 DOMAIN-SUFFIX,insigit.com
 DOMAIN-SUFFIX,insitemetrics.com
@@ -6656,7 +6656,6 @@ DOMAIN-SUFFIX,mgs123.com
 DOMAIN-SUFFIX,mgtmod01.com
 DOMAIN-SUFFIX,mgzjin.cn
 DOMAIN-SUFFIX,mhub.work
-DOMAIN-SUFFIX,miao.baidu.com
 DOMAIN-SUFFIX,miaowu.baidu.com
 DOMAIN-SUFFIX,michiganrobotflower.com
 DOMAIN-SUFFIX,micodigo.com
@@ -8746,6 +8745,7 @@ DOMAIN-SUFFIX,sgtm.atg.se
 DOMAIN-SUFFIX,sgtm.aziendechesifinanzianodasole.com
 DOMAIN-SUFFIX,sgtm.blume2000.de
 DOMAIN-SUFFIX,sgtm.casamundo.de
+DOMAIN-SUFFIX,sgtm.cmoa.jp
 DOMAIN-SUFFIX,sgtm.comprend.com
 DOMAIN-SUFFIX,sgtm.csas.cz
 DOMAIN-SUFFIX,sgtm.depaul.edu
@@ -9571,6 +9571,7 @@ DOMAIN-SUFFIX,stroeerdigitalmedia.de
 DOMAIN-SUFFIX,strs.jp
 DOMAIN-SUFFIX,sts.batmobi.net
 DOMAIN-SUFFIX,sts.eccmp.com
+DOMAIN-SUFFIX,sts.marketingsuite.jp
 DOMAIN-SUFFIX,stt.nimbusweb.me
 DOMAIN-SUFFIX,stutterschuyt.com
 DOMAIN-SUFFIX,style.onvz.nl

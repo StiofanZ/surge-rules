@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-11T20:39:58+00:00
+# Generated: 2026-06-12T20:30:51+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30880, local=27, total(deduped)=26025
+# Counts: upstream=30897, local=27, total(deduped)=26042
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -6976,6 +6976,7 @@ dl.begellhouse.com
 .dot-mac.de
 .dot.net
 .dot.sb
+.dota2.com
 .dotcernpilot.info
 .dotdeb.org
 .dotfacebook.com
@@ -13930,6 +13931,8 @@ live-patreon-marketing.pantheonsite.io
 .livehdcams.com
 .livejasmin.com
 .livejasminbabes.net
+.livejournal.com
+.livejournal.net
 .liveleak.com
 .livemint.com
 .livemodels.co
@@ -17043,6 +17046,7 @@ ntppool2.time.nl
 .okx-dns.com
 .okx-dns1.com
 .okx-dns2.com
+.okx.ac
 .okx.cab
 .okx.com
 .old.honeynet.org
@@ -22951,6 +22955,7 @@ utcnist3.colorado.edu
 .v-av.com
 .v-has.com
 .v.gd
+.v.ps
 .v2.help
 .v2.hysteria.network
 .v2ex.com
@@ -22979,6 +22984,7 @@ utcnist3.colorado.edu
 .value-domain.com
 .value-server.com
 .valuegb.com
+.valve.net
 .valvesoftware.com
 .vamo.com
 .vamzakaz.ru
@@ -23860,6 +23866,7 @@ utcnist3.colorado.edu
 .vpornvideos.com
 .vpro.com
 .vpro.net
+.vps.hosting
 .vpsxb.net
 .vrbgay.com
 .vrcams.io
@@ -24993,6 +25000,16 @@ ws.audioscrobbler.com
 .xt.pub
 .xtapes.to
 .xtegvk.xyz
+.xtom.au
+.xtom.com
+.xtom.de
+.xtom.ee
+.xtom.hk
+.xtom.jp
+.xtom.nl
+.xtom.sg
+.xtom.social
+.xtom.us
 .xtracloud.net
 .xtube.com
 .xtubebdsm.com

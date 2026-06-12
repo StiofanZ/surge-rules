@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-11T20:39:58+00:00
+# Generated: 2026-06-12T20:30:51+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30880, local=27, total(deduped)=26025, rule_set_only=12
+# Counts: upstream=30897, local=27, total(deduped)=26042, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -6979,6 +6979,7 @@ DOMAIN-SUFFIX,doseofporn.com
 DOMAIN-SUFFIX,dot-mac.de
 DOMAIN-SUFFIX,dot.net
 DOMAIN-SUFFIX,dot.sb
+DOMAIN-SUFFIX,dota2.com
 DOMAIN-SUFFIX,dotcernpilot.info
 DOMAIN-SUFFIX,dotdeb.org
 DOMAIN-SUFFIX,dotfacebook.com
@@ -13933,6 +13934,8 @@ DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,livehdcams.com
 DOMAIN-SUFFIX,livejasmin.com
 DOMAIN-SUFFIX,livejasminbabes.net
+DOMAIN-SUFFIX,livejournal.com
+DOMAIN-SUFFIX,livejournal.net
 DOMAIN-SUFFIX,liveleak.com
 DOMAIN-SUFFIX,livemint.com
 DOMAIN-SUFFIX,livemodels.co
@@ -17046,6 +17049,7 @@ DOMAIN-SUFFIX,oktech.ru
 DOMAIN-SUFFIX,okx-dns.com
 DOMAIN-SUFFIX,okx-dns1.com
 DOMAIN-SUFFIX,okx-dns2.com
+DOMAIN-SUFFIX,okx.ac
 DOMAIN-SUFFIX,okx.cab
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,old.honeynet.org
@@ -22954,6 +22958,7 @@ DOMAIN-SUFFIX,uymaarip.com
 DOMAIN-SUFFIX,v-av.com
 DOMAIN-SUFFIX,v-has.com
 DOMAIN-SUFFIX,v.gd
+DOMAIN-SUFFIX,v.ps
 DOMAIN-SUFFIX,v2.help
 DOMAIN-SUFFIX,v2.hysteria.network
 DOMAIN-SUFFIX,v2ex.com
@@ -22982,6 +22987,7 @@ DOMAIN-SUFFIX,valoryirene.com
 DOMAIN-SUFFIX,value-domain.com
 DOMAIN-SUFFIX,value-server.com
 DOMAIN-SUFFIX,valuegb.com
+DOMAIN-SUFFIX,valve.net
 DOMAIN-SUFFIX,valvesoftware.com
 DOMAIN-SUFFIX,vamo.com
 DOMAIN-SUFFIX,vamzakaz.ru
@@ -23863,6 +23869,7 @@ DOMAIN-SUFFIX,vporn.com
 DOMAIN-SUFFIX,vpornvideos.com
 DOMAIN-SUFFIX,vpro.com
 DOMAIN-SUFFIX,vpro.net
+DOMAIN-SUFFIX,vps.hosting
 DOMAIN-SUFFIX,vpsxb.net
 DOMAIN-SUFFIX,vrbgay.com
 DOMAIN-SUFFIX,vrcams.io
@@ -24996,6 +25003,16 @@ DOMAIN-SUFFIX,xt.com
 DOMAIN-SUFFIX,xt.pub
 DOMAIN-SUFFIX,xtapes.to
 DOMAIN-SUFFIX,xtegvk.xyz
+DOMAIN-SUFFIX,xtom.au
+DOMAIN-SUFFIX,xtom.com
+DOMAIN-SUFFIX,xtom.de
+DOMAIN-SUFFIX,xtom.ee
+DOMAIN-SUFFIX,xtom.hk
+DOMAIN-SUFFIX,xtom.jp
+DOMAIN-SUFFIX,xtom.nl
+DOMAIN-SUFFIX,xtom.sg
+DOMAIN-SUFFIX,xtom.social
+DOMAIN-SUFFIX,xtom.us
 DOMAIN-SUFFIX,xtracloud.net
 DOMAIN-SUFFIX,xtube.com
 DOMAIN-SUFFIX,xtubebdsm.com

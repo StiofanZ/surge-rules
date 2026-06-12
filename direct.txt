@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-11T20:40:35+00:00
+# Generated: 2026-06-12T20:31:08+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=113051, local=2, total(deduped)=112917, excluded=5
+# Counts: upstream=113052, local=2, total(deduped)=112918, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -3318,7 +3318,7 @@
 .264006.com
 .264321.com
 .264400.com
-265.com
+.265.com
 .26582.vip
 .26595.com
 .265g.com
@@ -98387,6 +98387,7 @@ www.destinationurl.com
 .www.microsoft.com
 .www.nike.com
 www.pxcc.com
+www.recaptcha-cn.net
 .www.redhat.com
 .www.samsung.com
 .www.st.com
