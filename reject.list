@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-14T20:02:17+00:00
+# Generated: 2026-06-15T21:28:09+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12294, local=0, total(deduped)=11671
+# Counts: upstream=12298, local=0, total(deduped)=11675
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -270,7 +270,6 @@ DOMAIN-SUFFIX,ad-api.maxnapps.com
 DOMAIN-SUFFIX,ad-api.revoaidapp.com
 DOMAIN-SUFFIX,ad-arrow.com
 DOMAIN-SUFFIX,ad-blocker-1.static-cloudflare.workers.dev
-DOMAIN-SUFFIX,ad-blocker.prod-blocking.workers.dev
 DOMAIN-SUFFIX,ad-bls-tracking.lemino.docomo.ne.jp
 DOMAIN-SUFFIX,ad-brix.com
 DOMAIN,ad-channel.diwodiwo.xyz
@@ -465,7 +464,6 @@ DOMAIN-SUFFIX,adbkacpmu.com
 DOMAIN-SUFFIX,adbkwai.com
 DOMAIN-SUFFIX,adblade.com
 DOMAIN-SUFFIX,adblockanalytics.com
-DOMAIN-SUFFIX,adblocker.prod-blocking.workers.dev
 DOMAIN,adblogger.vk.com
 DOMAIN,adblogger.vk.ru
 DOMAIN-SUFFIX,adbot.tw
@@ -868,6 +866,7 @@ DOMAIN-SUFFIX,adtarget.biz
 DOMAIN-SUFFIX,adtarget.me
 DOMAIN-SUFFIX,adtcdn.unidadeditorial.es
 DOMAIN-SUFFIX,adtech-prod.nikecloud.com
+DOMAIN-SUFFIX,adtech.abs-cbn.com
 DOMAIN-SUFFIX,adtech.com
 DOMAIN-SUFFIX,adtech.de
 DOMAIN-SUFFIX,adtechjp.com
@@ -1346,6 +1345,7 @@ DOMAIN-SUFFIX,analytics.edgekey.net
 DOMAIN-SUFFIX,analytics.editorialedomani.it
 DOMAIN-SUFFIX,analytics.egdata.app
 DOMAIN-SUFFIX,analytics.eip.telegraph.co.uk
+DOMAIN-SUFFIX,analytics.ekonsilio.io
 DOMAIN-SUFFIX,analytics.electro-com.ru
 DOMAIN-SUFFIX,analytics.elegela.us
 DOMAIN-SUFFIX,analytics.emforce.co.kr
@@ -3929,6 +3929,7 @@ DOMAIN-SUFFIX,dtxtngytz5im1.cloudfront.net
 DOMAIN-SUFFIX,dualstack-cgicol.amap.com
 DOMAIN-SUFFIX,dualstack-collection.rong-edge.com
 DOMAIN-SUFFIX,dualstack-logs.amap.com
+DOMAIN-SUFFIX,duckier.com
 DOMAIN-SUFFIX,duiwai.baidu.com
 DOMAIN-SUFFIX,dullequivalent.com
 DOMAIN-SUFFIX,dumedia.ru
@@ -7880,6 +7881,7 @@ DOMAIN-SUFFIX,pro-web-metrics.alias.s24cloud.net
 DOMAIN-SUFFIX,pro100news.ru
 DOMAIN-SUFFIX,proclivitysystems.com
 DOMAIN-SUFFIX,prod-analytics.royal.drmgms.com
+DOMAIN-SUFFIX,prod-blocking.workers.dev
 DOMAIN-SUFFIX,prod-clientlog.fastly.newssuite.sinfony.ne.jp
 DOMAIN-SUFFIX,prod-collector.bigbasket.com
 DOMAIN-SUFFIX,prod-mhaa.mhtr.be
@@ -8519,7 +8521,6 @@ DOMAIN-SUFFIX,sas.f.int-nft.peacocktv.com
 DOMAIN-SUFFIX,sas.f.peacocktv.com
 DOMAIN-SUFFIX,sas.f.stable-int.peacocktv.com
 DOMAIN-SUFFIX,sas.int-nft.peacocktv.com
-DOMAIN-SUFFIX,sas.peacocktv.com
 DOMAIN-SUFFIX,sas.stable-int.peacocktv.com
 DOMAIN-SUFFIX,sas15k01.com
 DOMAIN-SUFFIX,sat.cellordion3.net
@@ -9567,6 +9568,7 @@ DOMAIN-SUFFIX,strands.com
 DOMAIN-SUFFIX,stream.corporatefinanceinstitute.com
 DOMAIN-SUFFIX,stream.datago.ru
 DOMAIN-SUFFIX,stream.spongead.com
+DOMAIN-SUFFIX,streamvault.top
 DOMAIN-SUFFIX,stripe.rs-1028-a.com
 DOMAIN-SUFFIX,stroeerdigitalmedia.de
 DOMAIN-SUFFIX,strs.jp
@@ -11314,6 +11316,7 @@ DOMAIN-SUFFIX,webvitals.luxnet.ua
 DOMAIN-SUFFIX,webwise.com
 DOMAIN-SUFFIX,webwise.org
 DOMAIN-SUFFIX,wecount4u.com
+DOMAIN-SUFFIX,welovedata.go2cloud.org
 DOMAIN-SUFFIX,welt-der-links.de
 DOMAIN-SUFFIX,wenoolgo.icu
 DOMAIN-SUFFIX,west.bidtellect.com
@@ -11397,6 +11400,7 @@ DOMAIN-SUFFIX,wphlvzycf5.execute-api.eu-west-2.amazonaws.com
 DOMAIN-SUFFIX,wrating.com
 DOMAIN-SUFFIX,wrc.shinhancard.com
 DOMAIN-SUFFIX,wrmcfyzl.com
+DOMAIN-SUFFIX,wrupqrdcwvjar.space
 DOMAIN-SUFFIX,ws-goguardian.pusher.com
 DOMAIN-SUFFIX,ws.audioeye.com
 DOMAIN-SUFFIX,ws.ksmobile.net

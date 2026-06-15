@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-14T20:01:57+00:00
+# Generated: 2026-06-15T21:27:49+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30919, local=27, total(deduped)=26063
+# Counts: upstream=30957, local=27, total(deduped)=26101
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -2192,7 +2192,6 @@ api-p.videomarket.jp
 .approvedusedbmw.com
 .apps.evozi.com
 .apps5.oingo.com
-.appsflayer.com
 .appshopper.com
 .appsmail.ru
 .appsocks.net
@@ -2938,6 +2937,7 @@ api-p.videomarket.jp
 .barrons.com
 .barss1207.pro
 .barton.de
+.base.org
 .baselinestudy.com
 .baselinestudy.org
 .basilisk-browser.org
@@ -3644,6 +3644,7 @@ beck-online.beck.de
 .bitflyer.jp
 .bitget.com
 .bithumb.com
+.bitlayer.org
 .bitly.com
 .bitly.is
 .bitmex.com
@@ -3689,6 +3690,7 @@ beck-online.beck.de
 .blacktowhite.net
 .blackvpn.com
 .blaoshi.cc
+.blast.io
 .blazor.net
 .bleepingcomputer.com
 .blender.org
@@ -4272,11 +4274,14 @@ blizzard.nefficient.co.kr
 .bmwusfactory.com
 .bmwusrideracademy.com
 .bmwvalueservice.com
+.bmwweb.solutions
 .bmwwholesaleconnect.com
 .bmwworld.com
 .bmwworld.net
 .bmwworld.tv
 .bmwzentrum.com
+.bnappweb.black
+.bnbchain.org
 .bnbstatic.com
 .bnef.com
 .bnext.com.tw
@@ -4537,7 +4542,9 @@ blizzard.nefficient.co.kr
 .brutaltgp.com
 .bs-adreview.com
 .bs-awh.ne.jp
+.bsappapi.cc
 .bsappapi.com
+.bscdnweb.com
 .bsi.ir
 .bsky.app
 .bsky.network
@@ -5169,6 +5176,7 @@ cdn.workos.com
 .cfwives.com
 .cgdepot.org
 .ch9.ms
+.chainid.network
 .championshipseriesleague.com
 .change.org
 .changp.com
@@ -5829,6 +5837,7 @@ cisco.evergage.com
 .coqnu.com
 .corbinfisher.com
 .cordcloud.org
+.coredao.org
 .coreduo.com
 .coreextreme.com
 .corel.com
@@ -7117,6 +7126,7 @@ dl.begellhouse.com
 .dropboxpartners.com
 .dropboxstatic.com
 .dropboxusercontent.com
+.drpc.org
 .drtuber.com
 .drunk6.com
 .drunkenstepfather.com
@@ -8451,6 +8461,8 @@ f3b7q2p3.ssl.hwcdn.net
 .fanswong.com
 .fantasiasguatemala.com
 .fantasti.cc
+.fantom.foundation
+.fantom.network
 .fantv.hk
 .fap-xxx.com
 .fap18.net
@@ -8656,6 +8668,7 @@ featureassets.org
 .fi11.com
 .fi11av1.com
 .fi11tv1.com
+.fiat24.com
 .fibank.bg
 .fic.fan
 .ficador.com
@@ -8815,6 +8828,7 @@ firstsearch.oclc.org
 .fl310.com
 .flagrasamadores.net
 .flameunleashed.com
+.flare.network
 .flaru.com
 .flashtranny.com
 .flatandfuckedmilfs.com
@@ -12682,6 +12696,7 @@ ingest.apple-studies.com
 .irribay.com
 .is.gd
 .isaacmao.com
+.isafepal.com
 .isbgpsafeyet.com
 .isc.sans.edu
 .isca-speech.org
@@ -14698,6 +14713,7 @@ medone-education.thieme.com
 .mega.io
 .mega.nz
 .megacamz.com
+.megaeth.com
 .megafilmporno.com
 .megafon.com
 .megafon.ru
@@ -14753,6 +14769,7 @@ medone-education.thieme.com
 .meridian.net
 .meripet.com
 .merit-times.com.tw
+.merkl.xyz
 .meshmixer.com
 .meshmixerforum.com
 .messenger.com
@@ -14787,6 +14804,7 @@ medone-education.thieme.com
 .metrotoons.com
 .meuhentai.com
 .mewe.com
+.mexc.co
 .mexc.com
 .mexcsensors.com
 .mfg-inspector.com
@@ -16373,6 +16391,7 @@ muse.jhu.edu
 .nhncorp.jp
 .nic.cz.cc
 .nic.gov
+.nic.ru
 .niceanimegames.com
 .nicegram.app
 .nicegram.cloud
@@ -16381,6 +16400,7 @@ muse.jhu.edu
 .nicesshop.net
 .nichepornsite.com
 .nichepornsites.com
+.nichost.ru
 .nickscipio.com
 .nicky.xxx
 .nico
@@ -16637,6 +16657,7 @@ muse.jhu.edu
 .nodeimage.com
 .nodejs.org
 .nodequality.com
+.nodereal.io
 .nodeseek.com
 .nodesource.com
 .noisullifb.com
@@ -16959,6 +16980,7 @@ ntppool2.time.nl
 .oanda.com
 .oanencore.com
 .oann.com
+.oasis.io
 .oath.cloud
 .oath.com
 .oauthz.com
@@ -17146,6 +17168,7 @@ ntppool2.time.nl
 .onetrust.com
 .onevps.com
 .oneworldmanystories.com
+.onfinality.io
 .onindiansex.com
 .oninstagram.com
 .onion.city
@@ -18955,6 +18978,7 @@ public-us-pingsx.api.clonoth.com
 .r-pool.net
 .r-project.org
 .r0.ru
+.r01.ru
 .r10s.com
 .r10s.jp
 .r18.clickme.net
@@ -19239,6 +19263,9 @@ public-us-pingsx.api.clonoth.com
 .referer.us
 .reflectivecode.com
 .reform-apple.com
+.reg.cloud
+.reg.com
+.reg.ru
 .regex101.com
 .regiongold.com
 .registerhulu.com
@@ -19468,6 +19495,7 @@ roovza.skadsdk.appsflyersdk.com
 .rsf.org
 .rsg.sc
 .rshb.ru
+.rsk.co
 .rspao.com
 rss.4040940.xyz
 rss.datuan.dev
@@ -19639,6 +19667,7 @@ rum.browser-intake-datadoghq.com
 .saasexch.cc
 .saasexch.co
 .saasexch.com
+.saasexch.info
 .saasexch.io
 .sabuibo.net
 .sacduc.com
@@ -19653,6 +19682,7 @@ rum.browser-intake-datadoghq.com
 .safechat.com
 .safeguarddefenders.com
 .safeliner.tech
+.safepal.com
 .safervpn.com
 .saffrontech.com
 .sagabank.co.jp
@@ -20709,6 +20739,7 @@ setup.workos.com
 .solarcity.com
 .solarsystem.nasa.gov
 .solid.ru
+.solidifi.app
 .solostudioksale.com
 .solscan.io
 .solutionstation.com
@@ -21167,6 +21198,7 @@ statsigapi.net
 .steam.ru.qtlglb.com
 .steam.tv
 .steamcommunity.com
+.steamconnecttest.com
 .steamcontent.com
 .steamdb.info
 .steamdeck.com
@@ -21405,6 +21437,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .swapspace.co
 .sway-cdn.com
 .sway.com
+.sweb.ru
 .sweetadult-tube.com
 .sweetandmaxwell.co.uk
 .sweetsext.com
@@ -21531,6 +21564,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .tagbank.ru
 .tagwalk.com
 .taiav.com
+.taiko.xyz
 .tail-f.com
 .tailf.com
 .tails.net
@@ -21979,6 +22013,7 @@ tesla-cdn.thron.com
 .thinkwithgoogle.com
 .thirdmill.org
 .thirdns.de
+.thirdweb.com
 .thisav.com
 .thisisgame.com
 .thisismoney.co.uk
@@ -24793,6 +24828,7 @@ ws.audioscrobbler.com
 .xkontakt18.com
 .xkorean.cam
 .xl-gaytube.com
+.xlayer.tech
 .xlecx.org
 .xlgirls.com
 .xlinkz.to
@@ -25932,6 +25968,8 @@ yangzhi.app
 .zeronet.io
 .zert.ch
 .zettai-ero.com
+zftksc.cdn-settings.appsflyersdk.com
+zftksc.launches.appsflyersdk.com
 .zh-hans.cfsh99.com
 .zh.pokerstrategy.com
 .zh99.net

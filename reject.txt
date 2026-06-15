@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-14T20:02:17+00:00
+# Generated: 2026-06-15T21:28:09+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12294, local=0, total(deduped)=11671
+# Counts: upstream=12298, local=0, total(deduped)=11675
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -268,7 +268,6 @@
 .ad-api.revoaidapp.com
 .ad-arrow.com
 .ad-blocker-1.static-cloudflare.workers.dev
-.ad-blocker.prod-blocking.workers.dev
 .ad-bls-tracking.lemino.docomo.ne.jp
 .ad-brix.com
 ad-channel.diwodiwo.xyz
@@ -463,7 +462,6 @@ ad4.mail.ru
 .adbkwai.com
 .adblade.com
 .adblockanalytics.com
-.adblocker.prod-blocking.workers.dev
 adblogger.vk.com
 adblogger.vk.ru
 .adbot.tw
@@ -866,6 +864,7 @@ adstudio-assets.scdn.co
 .adtarget.me
 .adtcdn.unidadeditorial.es
 .adtech-prod.nikecloud.com
+.adtech.abs-cbn.com
 .adtech.com
 .adtech.de
 .adtechjp.com
@@ -1344,6 +1343,7 @@ analytics-stage.wildberries.ru
 .analytics.editorialedomani.it
 .analytics.egdata.app
 .analytics.eip.telegraph.co.uk
+.analytics.ekonsilio.io
 .analytics.electro-com.ru
 .analytics.elegela.us
 .analytics.emforce.co.kr
@@ -3927,6 +3927,7 @@ disney.my.sentry.io
 .dualstack-cgicol.amap.com
 .dualstack-collection.rong-edge.com
 .dualstack-logs.amap.com
+.duckier.com
 .duiwai.baidu.com
 .dullequivalent.com
 .dumedia.ru
@@ -7878,6 +7879,7 @@ pixel.yandex.com
 .pro100news.ru
 .proclivitysystems.com
 .prod-analytics.royal.drmgms.com
+.prod-blocking.workers.dev
 .prod-clientlog.fastly.newssuite.sinfony.ne.jp
 .prod-collector.bigbasket.com
 .prod-mhaa.mhtr.be
@@ -8517,7 +8519,6 @@ rtlog5-applog.fqnovel.com
 .sas.f.peacocktv.com
 .sas.f.stable-int.peacocktv.com
 .sas.int-nft.peacocktv.com
-.sas.peacocktv.com
 .sas.stable-int.peacocktv.com
 .sas15k01.com
 .sat.cellordion3.net
@@ -9565,6 +9566,7 @@ stats.telega.info
 .stream.corporatefinanceinstitute.com
 .stream.datago.ru
 .stream.spongead.com
+.streamvault.top
 .stripe.rs-1028-a.com
 .stroeerdigitalmedia.de
 .strs.jp
@@ -11312,6 +11314,7 @@ web-analytics.wildberries.ru
 .webwise.com
 .webwise.org
 .wecount4u.com
+.welovedata.go2cloud.org
 .welt-der-links.de
 .wenoolgo.icu
 .west.bidtellect.com
@@ -11395,6 +11398,7 @@ wlog.kuaishou.com
 .wrating.com
 .wrc.shinhancard.com
 .wrmcfyzl.com
+.wrupqrdcwvjar.space
 .ws-goguardian.pusher.com
 .ws.audioeye.com
 .ws.ksmobile.net
