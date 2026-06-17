@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-16T21:22:47+00:00
+# Generated: 2026-06-17T20:32:58+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12305, local=0, total(deduped)=11682
+# Counts: upstream=12306, local=0, total(deduped)=11683
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -5334,7 +5334,6 @@ DOMAIN-SUFFIX,im-apps.net
 DOMAIN-SUFFIX,im.c.yimg.jp
 DOMAIN-SUFFIX,im.cbsileads.com
 DOMAIN-SUFFIX,image-rentracks.com
-DOMAIN-SUFFIX,image-sap.sfmc-content.com
 DOMAIN-SUFFIX,imagehost.pics
 DOMAIN-SUFFIX,imagehub.fun
 DOMAIN-SUFFIX,imapi-sg.isnssdk.com
@@ -8510,6 +8509,7 @@ DOMAIN-SUFFIX,sakura.goguardian.com
 DOMAIN-SUFFIX,salecycle.com
 DOMAIN-SUFFIX,sam.msn.com
 DOMAIN-SUFFIX,samsung-beacons.xumo.com
+DOMAIN-SUFFIX,samsungadhub.com
 DOMAIN-SUFFIX,samsungads.com
 DOMAIN-SUFFIX,samsungtvads.com
 DOMAIN-SUFFIX,samuraiclick.com
@@ -10392,6 +10392,7 @@ DOMAIN-SUFFIX,trackedweb.net
 DOMAIN-SUFFIX,tracker-api.my.com
 DOMAIN-SUFFIX,tracker-beam.aktuality.sk
 DOMAIN-SUFFIX,tracker-dot-optimeeze.appspot.com
+DOMAIN-SUFFIX,tracker-proxy.getmimo.com
 DOMAIN-SUFFIX,tracker-rec.smart-bdash.com
 DOMAIN-SUFFIX,tracker-v4.gamedock.io
 DOMAIN-SUFFIX,tracker.a11.vega.aurion11.io

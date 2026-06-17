@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-16T21:22:32+00:00
+# Generated: 2026-06-17T20:32:38+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30957, local=27, total(deduped)=26101
+# Counts: upstream=30972, local=27, total(deduped)=26110
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -5119,6 +5119,7 @@ cdn.workos.com
 .celebgramme.com
 .celebmasta.live
 .celebritygay.com
+.celebritymoviearchive.com
 .celebritynakeds.com
 .celebrityslips.com
 .celebritystorysite.com
@@ -9135,6 +9136,7 @@ forwarder.workos.com
 .fpacebook.com
 .fpmt.org
 .fpmtmexico.org
+.fpo.xxx
 .fptolia.com
 .fqcebook.com
 .fqrouter.com
@@ -9249,6 +9251,8 @@ forwarder.workos.com
 .freewallpaper4.me
 .freewechat.com
 .freeweibo.com
+.freexh.blog
+.freexh.live
 .freexvideos.org
 .freexxx.best
 .freexxx.win
@@ -17914,6 +17918,7 @@ ood.opsource.net
 .pikpakdrive.com
 .pillbeatsblackfridaysale.com
 .pimg.tw
+.pimpbunny.com
 .pin-cong.com
 .pin.it
 .pin6.com
@@ -18572,6 +18577,7 @@ ood.opsource.net
 .powershellgallery.com
 .powersrv.de
 .powersunitedvr.com
+.powfans.com
 .pp-soc.com
 .pp6.info
 .ppaypal.com
@@ -20017,6 +20023,7 @@ sberpro.vedomosti.ru
 .seqingx.com
 .sequence.com
 .ser7.cc
+.serakon.com
 .serbiporno.net
 .serialssolutions.com
 .serlucap.lol
@@ -23954,6 +23961,7 @@ utcnist3.colorado.edu
 .vscode-unpkg.net
 .vscode.dev
 .vsemrabota.ru
+.vsex.in
 .vsezoo.com
 vsmarketplacebadge.apphb.com
 .vsphere.com
@@ -24781,6 +24789,7 @@ ws.audioscrobbler.com
 .xhamster2.com
 .xhamster3.com
 .xhamsterlive.com
+.xhapp.live
 .xhcdn.com
 .xhnews.live
 .xhot.pro
