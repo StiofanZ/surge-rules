@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-17T20:32:38+00:00
+# Generated: 2026-06-18T20:40:55+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30972, local=27, total(deduped)=26110
+# Counts: upstream=30982, local=27, total(deduped)=26118
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1862,6 +1862,7 @@ api-p.videomarket.jp
 .appbridge.it
 .appcenter.ms
 .appcloud.com
+.appconsent.io
 .appdomain.cloud
 .appdynamics.co.uk
 .appdynamics.com
@@ -2757,6 +2758,7 @@ api-p.videomarket.jp
 .awwcn.xyz
 .awxcdn.com
 .axbdoll.com.tw
+.axept.io
 .axios.com
 .axureformac.com
 .ayabank.com
@@ -5076,6 +5078,7 @@ cbsservice.aws.syncbak.com
 .cdkworkshop.com
 .cdmatech.com
 .cdn-apple.com
+.cdn-cookieyes.com
 cdn-spotify-experiments.conductrics.com
 .cdn-telegram.org
 .cdn-terapeak.com
@@ -5802,6 +5805,7 @@ cisco.evergage.com
 .conquerwithcharacter.com
 .conscrypt.com
 .conscrypt.org
+.consentmanager.net
 .consentpro.com
 .constructware.com
 .consul.io
@@ -5811,9 +5815,11 @@ cisco.evergage.com
 .contentful.com
 .contest.com
 .convrgencegame.com
+.cookiebot.com
 .cookiechoices.org
 .cookielaw.org
 .cookiepro.com
+.cookieyes.com
 .cool-comics.com
 .cool18.com
 .cool3c.com
@@ -21372,7 +21378,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .supchina.com
 .superadultgames.com
 .supercell.com
-.supercell.helpshift.com
+supercell.helpshift.com
 .supercell.net
 .supercellcreators.com
 .supercellgames.com
@@ -21779,6 +21785,7 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .teraperk.com
 .terk.nl
 .termius.com
+.termly.io
 .termux.com
 .termux.dev
 .termux.org
@@ -22443,6 +22450,7 @@ tesla-cdn.thron.com
 .truenas.com
 .trunest.com
 .trust-provider.com
+.trustarc.com
 .trustcor.ca
 .trustcor.com
 .trustdoc.ch

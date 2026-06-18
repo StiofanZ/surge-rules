@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-17T20:32:58+00:00
+# Generated: 2026-06-18T20:41:14+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12306, local=0, total(deduped)=11683
+# Counts: upstream=12307, local=0, total(deduped)=11684
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1463,7 +1463,6 @@ analytics-stage.wildberries.ru
 .analytics.oeksound.com
 .analytics.oliveapp.net
 .analytics.omniscientai.com
-.analytics.onedio.com
 .analytics.ooyala.com
 .analytics.org.coveo.com
 .analytics.ouc.ac.cy
@@ -7528,6 +7527,7 @@ p9-ad-sign.byteimg.com
 .perfdrive.com
 .perfectaudience.com
 .perfiliate.com
+.performance-events.guardianapis.com
 .performancefirst.jp
 .performancerevenues.com
 .performax.cz
@@ -9383,6 +9383,7 @@ stacks.vk-portal.net
 .stats-iobit-com.us-east-1.elasticbeanstalk.com
 .stats-newyork1.bloxcms.com
 .stats-proto.pandora.com
+.stats-sdk.tange365.com
 .stats-sg.ganymede.eu
 .stats.abbi.io
 .stats.allenai.org
