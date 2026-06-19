@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-18T20:41:14+00:00
+# Generated: 2026-06-19T20:09:35+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12307, local=0, total(deduped)=11684
+# Counts: upstream=12317, local=0, total(deduped)=11693
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2267,6 +2267,7 @@ beginners-adv.ozon.ru
 .black77854.com
 .bleua.ecefibwja.xyz
 .blink.fra-01.braze.eu
+.blink.willowmovies.com
 .bliss91.com
 .blockbreaker.io
 .blockmetrics.com
@@ -4933,6 +4934,7 @@ google-analytics-suite.ozon.ru
 .grwdrkaqpxcna.website
 .gs-ad.jp
 .gs.mountain.com
+.gs6ye5zj.ac1n.net
 .gscounters.gigya.com
 .gsdk-quic-gcp-va.bytegsdk.com
 .gsdk-va.bytegsdk.com
@@ -5616,6 +5618,7 @@ incoming-telemetry.thunderbird.net
 .jambojar.com
 .japanhotties.jp
 .japans-offers.com
+.jcgdhqusv.com
 .jcpclick.com
 .jdlog.uu.cc
 .jdoqocy.com
@@ -7174,6 +7177,7 @@ new-adv.ozon.ru
 .nugh2om.txxx.com
 .numbers.md
 .numerino.cz
+.numnahphineas.com
 .nvpartnerspromo.com
 .nwhentheautumn.com
 .nwr.static.mmcdn.com
@@ -7909,6 +7913,7 @@ prodvizhenie-adv.ozon.ru
 .profiler-collector.dalyfeds.com
 .profiler-collector.wshareit.com
 .profitable-grocery.com
+.profitablecpmratenetwork.com
 .profusesupport.com
 .programattik.com
 .programmatica.com
@@ -8360,6 +8365,7 @@ rs.mail.ru
 .rs.sinajs.cn
 .rs0.co.uk
 .rs6.net
+.rsptkogqvascs.site
 .rsra-ph.cdn-fileserver.com
 .rsra.cdn-fileserver.com
 .rsras-ph.cdn-fileserver.com
@@ -9443,6 +9449,7 @@ stats.dev.telega.info
 .stats.macg.io
 .stats.makethebusiness.com
 .stats.mako.co.il
+.stats.mappl.tv
 .stats.media.onet.pl
 .stats.mirror.co.uk
 .stats.mos.ru
@@ -10091,6 +10098,7 @@ target.vk.com
 .tm.r-ad.ne.jp
 .tm.tradetracker.net
 .tm1.hoiplay.com
+.tmadsrv.com
 .tmead.y.qq.com
 .tmeadcomm.y.qq.com
 .tms-collect.sony.jp
@@ -11079,6 +11087,7 @@ tracing-http.megamarket.tech
 .videostats.kakao.com
 .vidigital.ru
 .vidout.net
+.vidwestxyz.com
 .view.fujitv.co.jp
 .view.zijieapi.com
 .views-dual.hulu.com

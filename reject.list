@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-18T20:41:14+00:00
+# Generated: 2026-06-19T20:09:35+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12307, local=0, total(deduped)=11684
+# Counts: upstream=12317, local=0, total(deduped)=11693
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2269,6 +2269,7 @@ DOMAIN-SUFFIX,black6adv.com
 DOMAIN-SUFFIX,black77854.com
 DOMAIN-SUFFIX,bleua.ecefibwja.xyz
 DOMAIN-SUFFIX,blink.fra-01.braze.eu
+DOMAIN-SUFFIX,blink.willowmovies.com
 DOMAIN-SUFFIX,bliss91.com
 DOMAIN-SUFFIX,blockbreaker.io
 DOMAIN-SUFFIX,blockmetrics.com
@@ -4935,6 +4936,7 @@ DOMAIN-SUFFIX,grs.hicloud.com
 DOMAIN-SUFFIX,grwdrkaqpxcna.website
 DOMAIN-SUFFIX,gs-ad.jp
 DOMAIN-SUFFIX,gs.mountain.com
+DOMAIN-SUFFIX,gs6ye5zj.ac1n.net
 DOMAIN-SUFFIX,gscounters.gigya.com
 DOMAIN-SUFFIX,gsdk-quic-gcp-va.bytegsdk.com
 DOMAIN-SUFFIX,gsdk-va.bytegsdk.com
@@ -5618,6 +5620,7 @@ DOMAIN-SUFFIX,jaeger.netmonet.co
 DOMAIN-SUFFIX,jambojar.com
 DOMAIN-SUFFIX,japanhotties.jp
 DOMAIN-SUFFIX,japans-offers.com
+DOMAIN-SUFFIX,jcgdhqusv.com
 DOMAIN-SUFFIX,jcpclick.com
 DOMAIN-SUFFIX,jdlog.uu.cc
 DOMAIN-SUFFIX,jdoqocy.com
@@ -7176,6 +7179,7 @@ DOMAIN-SUFFIX,nuclearads.com
 DOMAIN-SUFFIX,nugh2om.txxx.com
 DOMAIN-SUFFIX,numbers.md
 DOMAIN-SUFFIX,numerino.cz
+DOMAIN-SUFFIX,numnahphineas.com
 DOMAIN-SUFFIX,nvpartnerspromo.com
 DOMAIN-SUFFIX,nwhentheautumn.com
 DOMAIN-SUFFIX,nwr.static.mmcdn.com
@@ -7911,6 +7915,7 @@ DOMAIN-SUFFIX,profile-api.amplitude.com
 DOMAIN-SUFFIX,profiler-collector.dalyfeds.com
 DOMAIN-SUFFIX,profiler-collector.wshareit.com
 DOMAIN-SUFFIX,profitable-grocery.com
+DOMAIN-SUFFIX,profitablecpmratenetwork.com
 DOMAIN-SUFFIX,profusesupport.com
 DOMAIN-SUFFIX,programattik.com
 DOMAIN-SUFFIX,programmatica.com
@@ -8362,6 +8367,7 @@ DOMAIN,rs.mail.ru
 DOMAIN-SUFFIX,rs.sinajs.cn
 DOMAIN-SUFFIX,rs0.co.uk
 DOMAIN-SUFFIX,rs6.net
+DOMAIN-SUFFIX,rsptkogqvascs.site
 DOMAIN-SUFFIX,rsra-ph.cdn-fileserver.com
 DOMAIN-SUFFIX,rsra.cdn-fileserver.com
 DOMAIN-SUFFIX,rsras-ph.cdn-fileserver.com
@@ -9445,6 +9451,7 @@ DOMAIN-SUFFIX,stats.lptracker.ru
 DOMAIN-SUFFIX,stats.macg.io
 DOMAIN-SUFFIX,stats.makethebusiness.com
 DOMAIN-SUFFIX,stats.mako.co.il
+DOMAIN-SUFFIX,stats.mappl.tv
 DOMAIN-SUFFIX,stats.media.onet.pl
 DOMAIN-SUFFIX,stats.mirror.co.uk
 DOMAIN-SUFFIX,stats.mos.ru
@@ -10093,6 +10100,7 @@ DOMAIN-SUFFIX,tm.msgs.jp
 DOMAIN-SUFFIX,tm.r-ad.ne.jp
 DOMAIN-SUFFIX,tm.tradetracker.net
 DOMAIN-SUFFIX,tm1.hoiplay.com
+DOMAIN-SUFFIX,tmadsrv.com
 DOMAIN-SUFFIX,tmead.y.qq.com
 DOMAIN-SUFFIX,tmeadcomm.y.qq.com
 DOMAIN-SUFFIX,tms-collect.sony.jp
@@ -11081,6 +11089,7 @@ DOMAIN-SUFFIX,videostat.com
 DOMAIN-SUFFIX,videostats.kakao.com
 DOMAIN-SUFFIX,vidigital.ru
 DOMAIN-SUFFIX,vidout.net
+DOMAIN-SUFFIX,vidwestxyz.com
 DOMAIN-SUFFIX,view.fujitv.co.jp
 DOMAIN-SUFFIX,view.zijieapi.com
 DOMAIN-SUFFIX,views-dual.hulu.com

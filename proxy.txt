@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-18T20:40:55+00:00
+# Generated: 2026-06-19T20:09:04+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30982, local=27, total(deduped)=26118
+# Counts: upstream=30993, local=27, total(deduped)=26126
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -694,6 +694,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .account-paypal.info
 .account-paypal.net
 .account-paypal.org
+.accountboy.com
 .accountkit.com
 .accountpaypal.com
 .accountpaypal.net
@@ -6596,6 +6597,7 @@ deutschewelle.h-cdn.com
 .dewitwithdurex.com
 .dexterhorn.com
 .dezyred.com
+.dfvpn.com
 .dgaqp.com
 .dgg.gg
 .dgwav.com
@@ -9501,6 +9503,7 @@ forwarder.workos.com
 .gamesstack.com
 .gametap.com
 .gameuxmasterguide.com
+.gamewtb.com
 .gamez.com.tw
 .gaming-notebooks.com
 .gandhara.ru
@@ -9995,6 +9998,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .gockhuatviet.com
 .godaddy
 .godaddy.com
+.godaddy.net
 .godbolt.org
 .godfootsteps.org
 .godoc.org
@@ -21658,6 +21662,7 @@ supercell.helpshift.com
 .taylorandfrancis.com
 .taylorfrancis.com
 .tb-esim.ru
+.tb.pro
 .tbank-online.com
 .tbank.ru
 .tbcollege.org
@@ -22074,6 +22079,7 @@ tesla-cdn.thron.com
 .thumbzilla.com
 .thunderbird.net
 .thunderbolttechnology.net
+.thundermail.com
 .thywords.com
 .thz7.net
 .thzu.cc
@@ -24593,6 +24599,7 @@ wrds-www.wharton.upenn.edu
 .ws-blau.com
 .ws-tcg.com
 ws.audioscrobbler.com
+.wsimg.com
 .wsj.com
 .wsj.jobs
 .wsj.net
@@ -24982,6 +24989,7 @@ ws.audioscrobbler.com
 .xn--uis17aj9kmuf.com
 .xn--uis44a.xn--j6w193g
 .xn--urs05q.jp
+.xn--vuqv2cf7wzyig79c.com
 .xn--wcv22d.hk
 .xn--wcv22d.xn--j6w193g
 .xn--wcvs22d.xn--j6w193g
