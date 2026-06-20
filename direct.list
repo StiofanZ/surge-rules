@@ -1,13 +1,13 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-19T20:09:36+00:00
+# Generated: 2026-06-20T20:00:07+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=112587, local=2, total(deduped)=112456, excluded=5
+# Counts: upstream=112593, local=2, total(deduped)=112462, excluded=5
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -13875,6 +13875,7 @@ DOMAIN-SUFFIX,azt365.com
 DOMAIN-SUFFIX,azuiblc.com
 DOMAIN-SUFFIX,azure-wave.com
 DOMAIN-SUFFIX,azure.cc
+DOMAIN-SUFFIX,azureflame.cloud
 DOMAIN-SUFFIX,azureflying.com
 DOMAIN-SUFFIX,azuremigrate.download.prss.microsoft.com
 DOMAIN-SUFFIX,azuremigratetest.download.prss.microsoft.com
@@ -16483,6 +16484,7 @@ DOMAIN-SUFFIX,bjanjili.com
 DOMAIN-SUFFIX,bjartmuseum.com
 DOMAIN-SUFFIX,bjatv.com
 DOMAIN-SUFFIX,bjbaidianfeng.com
+DOMAIN-SUFFIX,bjbaifan.com
 DOMAIN-SUFFIX,bjbalb.com
 DOMAIN-SUFFIX,bjbaodao.net
 DOMAIN-SUFFIX,bjbb.com
@@ -18927,6 +18929,7 @@ DOMAIN-SUFFIX,cangdu.org
 DOMAIN-SUFFIX,cangfengzhe.com
 DOMAIN-SUFFIX,canghaiip.com
 DOMAIN-SUFFIX,canghaimachine.com
+DOMAIN-SUFFIX,cangjggame.com
 DOMAIN-SUFFIX,canglanghospital.com
 DOMAIN-SUFFIX,cangmang.xyz
 DOMAIN-SUFFIX,cangoonline.com
@@ -20563,6 +20566,7 @@ DOMAIN-SUFFIX,chacheku.com
 DOMAIN-SUFFIX,chachengji.com
 DOMAIN-SUFFIX,chacihai.com
 DOMAIN-SUFFIX,chacuo.net
+DOMAIN-SUFFIX,chadaodao.com
 DOMAIN-SUFFIX,chadianhua.net
 DOMAIN-SUFFIX,chadoc.com
 DOMAIN-SUFFIX,chaej.com
@@ -34561,6 +34565,7 @@ DOMAIN-SUFFIX,feierlaiedu.com
 DOMAIN-SUFFIX,feiersmart.com
 DOMAIN-SUFFIX,feifandesign.com
 DOMAIN-SUFFIX,feifanindustry.com
+DOMAIN-SUFFIX,feifanmi.com
 DOMAIN-SUFFIX,feifantxt.com
 DOMAIN-SUFFIX,feifantxt.net
 DOMAIN-SUFFIX,feifdx.com
@@ -75459,6 +75464,7 @@ DOMAIN-SUFFIX,qingmuxinli.com
 DOMAIN-SUFFIX,qingnianlvxing.com
 DOMAIN-SUFFIX,qingniantuzhai.com
 DOMAIN-SUFFIX,qingnianwang.com
+DOMAIN-SUFFIX,qingning88.com
 DOMAIN-SUFFIX,qingpanduola.com
 DOMAIN-SUFFIX,qingpin.vip
 DOMAIN-SUFFIX,qingping.co
@@ -92530,6 +92536,7 @@ DOMAIN-SUFFIX,uniostay.com
 DOMAIN-SUFFIX,uniow.com
 DOMAIN-SUFFIX,unipack-tech.com
 DOMAIN-SUFFIX,uniproud.com
+DOMAIN-SUFFIX,unisapps.com
 DOMAIN-SUFFIX,uniscope.com
 DOMAIN-SUFFIX,unisdigital.com
 DOMAIN-SUFFIX,unisedu.com
@@ -92772,7 +92779,6 @@ DOMAIN-SUFFIX,urumqimarathon.com
 DOMAIN-SUFFIX,urumqimtr.com
 DOMAIN-SUFFIX,us-ex.com
 DOMAIN-SUFFIX,us-qianzheng.com
-DOMAIN-SUFFIX,us.ci
 DOMAIN-SUFFIX,us0.me
 DOMAIN-SUFFIX,usa-gam.com
 DOMAIN-SUFFIX,usa-idc.com

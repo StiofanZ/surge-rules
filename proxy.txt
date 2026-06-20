@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-19T20:09:04+00:00
+# Generated: 2026-06-20T19:59:51+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=30993, local=27, total(deduped)=26126
+# Counts: upstream=31107, local=27, total(deduped)=26155
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -599,6 +599,7 @@
 .9nation.com.au
 .9news.com.au
 .9now.com.au
+.9oju31.launches.appsflyersdk.com
 .9tak-nav.buzz
 .9to5google.com
 .9to5mac.com
@@ -1822,6 +1823,7 @@ angle.com.tw
 .api-extractor.com
 api-p.videomarket.jp
 .api.ai
+.api.moomoobull.com
 .api.news
 .api.palworldgame.com
 .apiary.io
@@ -3538,6 +3540,7 @@ beck-online.beck.de
 .bili2.cc
 .bili888.com
 .bili999.com
+.bilinovel.com
 .biliplus.com
 .biliworld.com
 .bill-safe.com
@@ -5179,6 +5182,7 @@ cdn.workos.com
 .cfna.com
 .cfr.org
 .cfwives.com
+.cg.play-analytics.com
 .cgdepot.org
 .ch9.ms
 .chainid.network
@@ -9405,9 +9409,21 @@ forwarder.workos.com
 .futhead.com
 .futpromos.com
 .futu.cn
+.futu.com
 .futu.link
+.futu0.com
+.futu1.com
+.futu2.com
+.futu3.com
+.futu4.com
 .futu5.com
+.futu6.com
+.futu7.com
+.futu8.com
+.futu9.com
 .futuau.com
+.futubull.cn
+.futuchain.com
 .futuesop.com
 .futufin.com
 .futuhk.com
@@ -9416,6 +9432,7 @@ forwarder.workos.com
 .futuhkapp.com
 .futuhn.com
 .futuholdings.com
+.futuinc.com
 .futunited.com
 .futuniuniu.com
 .futunn.com
@@ -9429,6 +9446,7 @@ forwarder.workos.com
 .futusg.com
 .futustatic.com
 .fututrade.com
+.fututrustee.com
 .fuxporn.com
 .fuzokudx.com
 .fw.cm
@@ -14082,6 +14100,7 @@ live-patreon-marketing.pantheonsite.io
 .longmabook.com
 .longmabookcn.com
 .longman.ch
+.longportapp.cn
 .longportapp.com
 .longtailvideo.com
 .longtermly.net
@@ -19882,6 +19901,7 @@ sberpro.vedomosti.ru
 .scholarpedia.org
 .schwab.co.uk
 .schwab.com
+.schwab.com.cn
 .schwab.com.hk
 .schwab.com.sg
 .schwabassetmanagement.com
@@ -20253,6 +20273,7 @@ setup.workos.com
 .sg1lib.org
 .sgcheck.ru
 .sgp1.fun
+.sgqt0j.launches.appsflyersdk.com
 .sgr.com.br
 .sgspe.de
 .sgspt.buzz
@@ -20408,6 +20429,7 @@ setup.workos.com
 .shops-disney.com
 .shopspeedtv.com
 .shoptraivip.com
+.shortconn.im.qcloud.com
 .shorturl.at
 .shotgridsoftware.com
 .shotgridstudio.com
@@ -22150,6 +22172,10 @@ tesla-cdn.thron.com
 .tig-ol-bitties.live
 .tigerbbs.cn
 .tigerbbs.com
+.tigerbrokers.com
+.tigerbrokers.net
+.tigerbrokers.nz
+.tigerfintech.com
 .tigervpn.com
 .tik-tokapi.com
 .tiktok-minis.com
@@ -22380,6 +22406,7 @@ tesla-cdn.thron.com
 .tracker.gg
 .tracker.network
 .tracking-location.com
+.tradeup.com
 .tradevip1.com
 .tradingview.com
 .trae.ai
@@ -26009,6 +26036,8 @@ zftksc.launches.appsflyersdk.com
 .zhengjian.org
 .zhengwunet.org
 .zhenxiang.biz
+.zhijianfengyi.cn
+.zhijianfengyi.com
 .zhimeishe888.com
 .zhizhu.top
 .zhongguo.ca

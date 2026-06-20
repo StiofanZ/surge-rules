@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-19T20:09:36+00:00
+# Generated: 2026-06-20T20:00:07+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=112587, local=2, total(deduped)=112456, excluded=5
+# Counts: upstream=112593, local=2, total(deduped)=112462, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -13873,6 +13873,7 @@ avail.googleflights.net
 .azuiblc.com
 .azure-wave.com
 .azure.cc
+.azureflame.cloud
 .azureflying.com
 .azuremigrate.download.prss.microsoft.com
 .azuremigratetest.download.prss.microsoft.com
@@ -16481,6 +16482,7 @@ bg4.v4.a.dl.ws.microsoft.com
 .bjartmuseum.com
 .bjatv.com
 .bjbaidianfeng.com
+.bjbaifan.com
 .bjbalb.com
 .bjbaodao.net
 .bjbb.com
@@ -18925,6 +18927,7 @@ cache.pack.google.com
 .cangfengzhe.com
 .canghaiip.com
 .canghaimachine.com
+.cangjggame.com
 .canglanghospital.com
 .cangmang.xyz
 .cangoonline.com
@@ -20561,6 +20564,7 @@ certs.apple.com
 .chachengji.com
 .chacihai.com
 .chacuo.net
+.chadaodao.com
 .chadianhua.net
 .chadoc.com
 .chaej.com
@@ -34559,6 +34563,7 @@ fcs.dell.com
 .feiersmart.com
 .feifandesign.com
 .feifanindustry.com
+.feifanmi.com
 .feifantxt.com
 .feifantxt.net
 .feifdx.com
@@ -75457,6 +75462,7 @@ publicassets.cdn-apple.com
 .qingnianlvxing.com
 .qingniantuzhai.com
 .qingnianwang.com
+.qingning88.com
 .qingpanduola.com
 .qingpin.vip
 .qingping.co
@@ -92528,6 +92534,7 @@ tp.louisvuitton.com
 .uniow.com
 .unipack-tech.com
 .uniproud.com
+.unisapps.com
 .uniscope.com
 .unisdigital.com
 .unisedu.com
@@ -92770,7 +92777,6 @@ upp.itunes.apple.com
 .urumqimtr.com
 .us-ex.com
 .us-qianzheng.com
-.us.ci
 .us0.me
 .usa-gam.com
 .usa-idc.com
