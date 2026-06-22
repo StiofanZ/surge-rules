@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-06-21T20:08:29+00:00
+# Generated: 2026-06-22T21:17:39+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=112522, local=2, total(deduped)=112393, excluded=5
+# Counts: upstream=112552, local=2, total(deduped)=112387, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -13883,7 +13883,7 @@ avail.googleflights.net
 .b-k-automation.com
 .b-raymedia.com
 .b.biz
-b.c2r.ts.cdn.office.net
+.b.c2r.ts.cdn.office.net
 .b01.net
 .b02f0d7f3745ba7c.com
 .b041e427810281.beer
@@ -15674,8 +15674,6 @@ beacons3.gvt2.com
 .bfyx.com
 .bfyx.net
 .bfzhan.com
-bg.v4.a.dl.ws.microsoft.com
-bg4.v4.a.dl.ws.microsoft.com
 .bg45.com
 .bg7ywl.com
 .bgbfds.com
@@ -18006,7 +18004,6 @@ bookkeeper.itunes.apple.com
 .buickcare.net
 .buidea.com
 .build-decor.com
-build.microsoft.com
 .build8.com
 .build9s.io
 .builddecor.org
@@ -19832,7 +19829,6 @@ cdn.apple-mapkit.com
 .cdn.fun
 cdn.globalsigncdn.com.cdn.cloudflare.net
 .cdn.jetbrains.com
-cdn.marketplaceimages.windowsphone.com
 .cdn.samsung.com
 .cdn.shanghai.nyu.edu
 .cdn.show
@@ -28731,7 +28727,6 @@ dejavu.apple.com
 .devashen.com
 .devask.net
 .devbean.net
-devblogs.microsoft.com
 .devclub.cc
 .devedu.net
 .develenv.com
@@ -30055,7 +30050,6 @@ dl.l.google.com
 .docoi.cc
 .docpe.com
 .docs.cdnetworks.com
-docs.microsoft.com
 .docschina.org
 .docshare.org
 .docsj.com
@@ -31242,6 +31236,7 @@ downloaddispatch.itunes.apple.com
 .dxm-cdn.com
 .dxm-int.com
 .dxm-yibai.com
+.dxmbaoxian.com
 .dxmjinr.com
 .dxmjuhe.com
 .dxmlcf.com
@@ -33768,7 +33763,7 @@ experiments.apple.com
 .f-insight.com
 .f-stack.org
 .f.biz
-f.c2r.ts.cdn.office.net
+.f.c2r.ts.cdn.office.net
 .f.cx
 .f008.com
 .f015dfc4510292.beer
@@ -36004,7 +35999,6 @@ fontfiles.googleapis.com
 .fs-czx.com
 .fs-eliza.com
 .fs-qiyun.com
-fs.microsoft.com
 .fs0757.com
 .fs121.com
 .fs1982.com
@@ -60694,7 +60688,6 @@ ksn-verdict.geoksn.kaspersky.com
 .leapmmw.com
 .leapmotor.com
 .learn-quantum.com
-learn.microsoft.com
 .learndiary.com
 .learnfuture.com
 .learningsj.com
@@ -65092,6 +65085,7 @@ maps.apple.com
 .mcpemaster.com
 .mcpfks.com
 .mcpmaid.com
+.mcpworld.com
 .mcq93.app
 .mcqy.net
 .mcsafebox.com
@@ -65655,6 +65649,7 @@ mdr.ksn.kaspersky-labs.com
 .menpiao.com
 .menpiaotuangou.com
 .menshiny.com
+mensura.cdn-apple.com
 .mentamob.com
 .mentorsc.com
 .mentrends.com
@@ -68070,6 +68065,7 @@ myapp.itunes.apple.com
 .mysqil.com
 .mysql360.com
 .mysqlab.net
+.myssl-uri.com
 .myssl.com
 .mystarch.com
 .mysteel.com
@@ -72837,6 +72833,7 @@ pd.itunes.apple.com
 .perfect-input.com
 .perfect99.com
 .perfectdiary.com
+.perfectlingo.com
 .perfecttradinghk.com
 .perfectwatchen.com
 .perfertw.com
@@ -74277,6 +74274,7 @@ publicassets.cdn-apple.com
 .pw1999.com
 .pw88.com
 .pwand.com
+.pwcinema.com
 .pwdding.icu
 .pwithe.com
 .pwjptdg.xyz
@@ -77720,8 +77718,6 @@ refresh-bkg.activation-v2.kaspersky.com
 .reqable.com
 .reqgvheo.com
 .rergdfh.com
-res-1.cdn.office.net
-res.cdn.office.net
 .reseetech.com
 .resemblancey.com
 .resemi.com
@@ -81469,7 +81465,7 @@ shazam-insights.cdn-apple.com
 .sheketiandi.com
 .shekou.com
 .shelive.net
-shell.cdn.office.net
+.shell.cdn.office.net
 .shellpub.com
 .shellsec.com
 .shelter-china.com
@@ -85293,7 +85289,7 @@ static.gc.apple.com
 .staticfile.org
 .statickksmg.com
 .statics.cc
-statics.teams.cdn.office.net
+.statics.teams.cdn.office.net
 .staticsdd.com
 .staticsoe.com
 .staticsoem.com
@@ -86010,7 +86006,7 @@ supportassist.dell.com
 .surely.cool
 .surerp.com
 .surface.download.prss.microsoft.com
-surface.downloads.prss.microsoft.com
+.surface.downloads.prss.microsoft.com
 .surfacetreatmentgroup.com
 .surfacetreatmenttechnology.com
 .surfcg.com
@@ -90972,6 +90968,7 @@ tp.louisvuitton.com
 .trust400.com
 .trusta-lawyer.com
 .trustasia.com
+.trustasia.net
 .trustcn.com
 .trustdecision.com
 .trustedsign.com
@@ -97392,8 +97389,6 @@ weatherkit.apple.com
 .wsclsb.net
 .wscn.net
 .wscncdn.com
-wscont1.apps.microsoft.com
-wscont2.apps.microsoft.com
 .wscp.shop
 .wscrm.net
 .wscso.com
@@ -97920,7 +97915,6 @@ www.destinationurl.com
 .www.epsonconnect.com
 .www.gov.mo
 .www.htc.com
-www.microsoft.com
 .www.nike.com
 www.pxcc.com
 www.recaptcha-cn.net
