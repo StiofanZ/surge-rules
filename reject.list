@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-22T21:17:39+00:00
+# Generated: 2026-06-23T20:28:15+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12332, local=0, total(deduped)=11705
+# Counts: upstream=12339, local=0, total(deduped)=11711
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2009,6 +2009,7 @@ DOMAIN-SUFFIX,averoconnector.com
 DOMAIN-SUFFIX,avmws.com
 DOMAIN-SUFFIX,avo.app
 DOMAIN-SUFFIX,avspda.xyz
+DOMAIN-SUFFIX,avsplow.com
 DOMAIN-SUFFIX,awasete.com
 DOMAIN-SUFFIX,awesomelytics.com
 DOMAIN-SUFFIX,awin1.com
@@ -2972,6 +2973,7 @@ DOMAIN-SUFFIX,collector.bsg.brave.com
 DOMAIN-SUFFIX,collector.bunchbox.co
 DOMAIN-SUFFIX,collector.cakeresume.com
 DOMAIN-SUFFIX,collector.cdp.cnn.com
+DOMAIN-SUFFIX,collector.feedzop.com
 DOMAIN-SUFFIX,collector.fiverr.com
 DOMAIN-SUFFIX,collector.fullxh.com
 DOMAIN-SUFFIX,collector.gamechanger.io
@@ -2989,6 +2991,7 @@ DOMAIN-SUFFIX,collector.moderntv.eu
 DOMAIN-SUFFIX,collector.pi.spectrum.net
 DOMAIN-SUFFIX,collector.plarium.com
 DOMAIN-SUFFIX,collector.prod.expedia.com
+DOMAIN-SUFFIX,collector.quizzop.com
 DOMAIN-SUFFIX,collector.reelevant.com
 DOMAIN-SUFFIX,collector.retailcrm.pro
 DOMAIN-SUFFIX,collector.rn.de
@@ -3000,6 +3003,7 @@ DOMAIN-SUFFIX,collector.superwall.me
 DOMAIN-SUFFIX,collector.szlcsc.com
 DOMAIN-SUFFIX,collector.taoxh.life
 DOMAIN-SUFFIX,collector.trendmd.com
+DOMAIN-SUFFIX,collector.umogames.com
 DOMAIN-SUFFIX,collector.vhx.tv
 DOMAIN-SUFFIX,collector.xhaccess.com
 DOMAIN-SUFFIX,collector.xhamster.com
@@ -4209,6 +4213,7 @@ DOMAIN-SUFFIX,evadavdsp.pro
 DOMAIN-SUFFIX,event-action.popinfo.jp
 DOMAIN-SUFFIX,event-api-cs.stardust-tv.com
 DOMAIN-SUFFIX,event-api.hackle.io
+DOMAIN-SUFFIX,event-collector.analytics.onedio.com
 DOMAIN-SUFFIX,event-collector.moviesanywhere.com
 DOMAIN-SUFFIX,event-collector.prd.data.s.joyn.de
 DOMAIN-SUFFIX,event-dot-learning-piano.appspot.com
@@ -7208,6 +7213,7 @@ DOMAIN-SUFFIX,ob.cheqzone.com
 DOMAIN-SUFFIX,ob.esnlocco.com
 DOMAIN-SUFFIX,ob.leap.app
 DOMAIN-SUFFIX,obnoljac.com
+DOMAIN-SUFFIX,obs.forseasky.com
 DOMAIN-SUFFIX,obs.mts.ru
 DOMAIN-SUFFIX,observare.de
 DOMAIN-SUFFIX,observerapp.com
@@ -9247,7 +9253,6 @@ DOMAIN-SUFFIX,sst.stickerei-stoiber.de
 DOMAIN-SUFFIX,sst.thebanker.com
 DOMAIN-SUFFIX,st-5cva8vttppvjafpc7jvj.kodik.biz
 DOMAIN-SUFFIX,st-fly.b-cdn.net
-DOMAIN-SUFFIX,st.avsplow.com
 DOMAIN-SUFFIX,st.dynamicyield.com
 DOMAIN-SUFFIX,st.film.ru
 DOMAIN-SUFFIX,st.freedom24.com
@@ -9727,6 +9732,7 @@ DOMAIN-SUFFIX,t.metrilo.com
 DOMAIN-SUFFIX,t.mm-uxrv.com
 DOMAIN-SUFFIX,t.my.jobs
 DOMAIN-SUFFIX,t.n.mcdonalds.de
+DOMAIN-SUFFIX,t.ofsys.com
 DOMAIN-SUFFIX,t.pie.org
 DOMAIN-SUFFIX,t.poki.io
 DOMAIN-SUFFIX,t.powerreviews.com
