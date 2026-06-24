@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-23T20:28:00+00:00
+# Generated: 2026-06-24T20:14:48+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=31112, local=27, total(deduped)=26158, rule_set_only=12
+# Counts: upstream=31123, local=27, total(deduped)=26168, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -1423,6 +1423,7 @@ DOMAIN-SUFFIX,allpornsitespass.com
 DOMAIN-SUFFIX,allspyclips.com
 DOMAIN-SUFFIX,allswingersclubs.org
 DOMAIN-SUFFIX,allthefallen.moe
+DOMAIN-SUFFIX,almalinux.org
 DOMAIN-SUFFIX,alohatube.com
 DOMAIN-SUFFIX,alotporn.com
 DOMAIN-SUFFIX,alphabet.asia
@@ -4669,6 +4670,7 @@ DOMAIN-SUFFIX,bustynudebabes.com
 DOMAIN-SUFFIX,bustyoldsluts.com
 DOMAIN-SUFFIX,bustysammieblack.com
 DOMAIN-SUFFIX,busu.org
+DOMAIN-SUFFIX,busybox.net
 DOMAIN-SUFFIX,buy-from-shanghai.com
 DOMAIN-SUFFIX,buyaapl.com
 DOMAIN-SUFFIX,buyaapl.net
@@ -6304,7 +6306,6 @@ DOMAIN-SUFFIX,deepfreeze.tech
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deezer.com
-DOMAIN,default.exp-tas.com
 DOMAIN-SUFFIX,definebabe.com
 DOMAIN-SUFFIX,definefetish.com
 DOMAIN-SUFFIX,degruyter.com
@@ -8077,6 +8078,7 @@ DOMAIN-SUFFIX,exmormon.org
 DOMAIN-SUFFIX,exoav.com
 DOMAIN-SUFFIX,exotic-ghana.com
 DOMAIN-SUFFIX,exoticuganda.com
+DOMAIN-SUFFIX,exp-tas.com
 DOMAIN-SUFFIX,expatshield.com
 DOMAIN-SUFFIX,expecthim.com
 DOMAIN-SUFFIX,expekt.com
@@ -9878,6 +9880,7 @@ DOMAIN-SUFFIX,gitgud.io
 DOMAIN,github-api.arkoselabs.com
 DOMAIN-SUFFIX,github.ai
 DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.career
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.community
 DOMAIN-SUFFIX,github.dev
@@ -13895,6 +13898,7 @@ DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,licensebuttons.net
 DOMAIN-SUFFIX,licenseparser.com
 DOMAIN-SUFFIX,life-global.org
+DOMAIN-SUFFIX,lifeatspotify.com
 DOMAIN-SUFFIX,lifemiles.com
 DOMAIN-SUFFIX,lifeselector.com
 DOMAIN-SUFFIX,lifestyle-tec.ru
@@ -14402,6 +14406,7 @@ DOMAIN-SUFFIX,manhuntdaily.com
 DOMAIN-SUFFIX,manhwa24h.com
 DOMAIN-SUFFIX,manhwahentai.me
 DOMAIN-SUFFIX,maniakey.homes
+DOMAIN-SUFFIX,manjaro.org
 DOMAIN-SUFFIX,manorama.com
 DOMAIN-SUFFIX,manoramanews.com
 DOMAIN-SUFFIX,manoramaonline.com
@@ -19476,6 +19481,7 @@ DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,rocksextube.com
 DOMAIN-SUFFIX,rockstargames.com
 DOMAIN-SUFFIX,rockstarnorth.com
+DOMAIN-SUFFIX,rockylinux.org
 DOMAIN-SUFFIX,rojo.com
 DOMAIN-SUFFIX,roku.com
 DOMAIN-SUFFIX,rokutime.com
@@ -21017,6 +21023,7 @@ DOMAIN-SUFFIX,spotifycdn.net
 DOMAIN-SUFFIX,spotifycharts.com
 DOMAIN-SUFFIX,spotifycodes.com
 DOMAIN-SUFFIX,spotifyforbrands.com
+DOMAIN-SUFFIX,spotifyforvendors.com
 DOMAIN-SUFFIX,spotifyjobs.com
 DOMAIN-SUFFIX,spraynwash.com
 DOMAIN-SUFFIX,spreadprivacy.com
@@ -24006,7 +24013,10 @@ DOMAIN-SUFFIX,vscale.io
 DOMAIN-SUFFIX,vscale.ru
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vscode-unpkg.net
+DOMAIN-SUFFIX,vscode-webview.net
 DOMAIN-SUFFIX,vscode.dev
+DOMAIN-SUFFIX,vscodeedu.app
+DOMAIN-SUFFIX,vscodeedu.com
 DOMAIN-SUFFIX,vsemrabota.ru
 DOMAIN-SUFFIX,vsex.in
 DOMAIN-SUFFIX,vsezoo.com
