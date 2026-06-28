@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-26T20:14:30+00:00
+# Generated: 2026-06-28T19:50:27+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=31126, local=27, total(deduped)=26170, rule_set_only=12
+# Counts: upstream=31163, local=27, total(deduped)=26191, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -1174,6 +1174,7 @@ DOMAIN-SUFFIX,airsupportapp.com
 DOMAIN-SUFFIX,airtunes.com
 DOMAIN-SUFFIX,airtunes.info
 DOMAIN-SUFFIX,airtunes.net
+DOMAIN-SUFFIX,airuniversity.af.edu
 DOMAIN-SUFFIX,airvpn.org
 DOMAIN-SUFFIX,airwatchexpress.com
 DOMAIN-SUFFIX,airwatchqa.com
@@ -2128,6 +2129,7 @@ DOMAIN-SUFFIX,applepremiumresellers.com.au
 DOMAIN-SUFFIX,applereach.com
 DOMAIN-SUFFIX,applereach.net
 DOMAIN-SUFFIX,apples-msk.ru
+DOMAIN-SUFFIX,appleschoolcontent.com
 DOMAIN-SUFFIX,applescreensavers.com
 DOMAIN-SUFFIX,applescript.info
 DOMAIN-SUFFIX,appleshare.info
@@ -2218,6 +2220,7 @@ DOMAIN-SUFFIX,aps.org
 DOMAIN-SUFFIX,aptoide.com
 DOMAIN-SUFFIX,apture.com
 DOMAIN-SUFFIX,apyle.com
+DOMAIN-SUFFIX,apzones.com
 DOMAIN-SUFFIX,aqdlt.net
 DOMAIN-SUFFIX,arabianchicks.com
 DOMAIN-SUFFIX,arabicrt.ru
@@ -2767,6 +2770,7 @@ DOMAIN-SUFFIX,awxcdn.com
 DOMAIN-SUFFIX,axbdoll.com.tw
 DOMAIN-SUFFIX,axept.io
 DOMAIN-SUFFIX,axios.com
+DOMAIN-SUFFIX,axm-usercontent-apple.com
 DOMAIN-SUFFIX,axureformac.com
 DOMAIN-SUFFIX,ayabank.com
 DOMAIN-SUFFIX,ayshdade.info
@@ -6174,6 +6178,8 @@ DOMAIN-SUFFIX,daliulian.org
 DOMAIN-SUFFIX,damduc.org
 DOMAIN-SUFFIX,damplips.com
 DOMAIN-SUFFIX,dandalinvoa.com
+DOMAIN-SUFFIX,dandanplay.com
+DOMAIN-SUFFIX,dandanplay.net
 DOMAIN-SUFFIX,dandanzan.cc
 DOMAIN-SUFFIX,danemarket.com
 DOMAIN-SUFFIX,danke4china.net
@@ -9559,6 +9565,7 @@ DOMAIN-SUFFIX,gartlive.com
 DOMAIN-SUFFIX,garudalinux.org
 DOMAIN-SUFFIX,gastrointestinalexam.com
 DOMAIN-SUFFIX,gate.cc
+DOMAIN-SUFFIX,gate.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,gatecoin.com
 DOMAIN-SUFFIX,gatedata.org
@@ -11124,6 +11131,7 @@ DOMAIN-SUFFIX,hkgpao.com
 DOMAIN-SUFFIX,hkheadline.com
 DOMAIN-SUFFIX,hklts.org.hk
 DOMAIN-SUFFIX,hkmap.live
+DOMAIN-SUFFIX,hkong.hk
 DOMAIN-SUFFIX,hkopentv.com
 DOMAIN-SUFFIX,hkpeanut.com
 DOMAIN-SUFFIX,hkporn.net
@@ -13481,6 +13489,7 @@ DOMAIN-SUFFIX,keyporntube.com
 DOMAIN-SUFFIX,keytransparency.com
 DOMAIN-SUFFIX,keytransparency.foo
 DOMAIN-SUFFIX,keytransparency.org
+DOMAIN-SUFFIX,kfor.com
 DOMAIN-SUFFIX,kfs.io
 DOMAIN-SUFFIX,kgisystems.com
 DOMAIN-SUFFIX,kgslb.com
@@ -14870,6 +14879,7 @@ DOMAIN-SUFFIX,mhhanman.xyz
 DOMAIN-SUFFIX,mhqwe.xyz
 DOMAIN-SUFFIX,mhradio.org
 DOMAIN-SUFFIX,mhshosting.com
+DOMAIN-SUFFIX,mhwindow.org
 DOMAIN-SUFFIX,mi.kochudaho.me
 DOMAIN-SUFFIX,mi.mashiro.site
 DOMAIN-SUFFIX,mi.nakn.jp
@@ -17762,6 +17772,7 @@ DOMAIN-SUFFIX,pca.st
 DOMAIN-SUFFIX,pccw.com
 DOMAIN-SUFFIX,pccwglobal.com
 DOMAIN-SUFFIX,pccwsolutions.com
+DOMAIN-SUFFIX,pcgamesn.com
 DOMAIN-SUFFIX,pcgamestorrents.com
 DOMAIN-SUFFIX,pchome.com.tw
 DOMAIN-SUFFIX,pchomeec.tw
@@ -19361,6 +19372,7 @@ DOMAIN-SUFFIX,resoubanana.buzz
 DOMAIN-SUFFIX,resoubang.buzz
 DOMAIN-SUFFIX,respawnbyrazer.com
 DOMAIN-SUFFIX,restnproducts.ru
+DOMAIN-SUFFIX,restofworld.org
 DOMAIN-SUFFIX,restream-media.net
 DOMAIN-SUFFIX,restream.ru
 DOMAIN-SUFFIX,rethink.net
@@ -20947,6 +20959,7 @@ DOMAIN-SUFFIX,soyjak.party
 DOMAIN-SUFFIX,soyjak.st
 DOMAIN-SUFFIX,sp.cool
 DOMAIN-SUFFIX,spaceexplored.com
+DOMAIN-SUFFIX,spaceforce.mil
 DOMAIN-SUFFIX,spacely.com.au
 DOMAIN-SUFFIX,spacemail.com
 DOMAIN-SUFFIX,spaces.hightail.com
@@ -21450,6 +21463,7 @@ DOMAIN-SUFFIX,supportfacebook.com
 DOMAIN-SUFFIX,supr.cl
 DOMAIN-SUFFIX,supremacy.com
 DOMAIN-SUFFIX,supremacy.net
+DOMAIN-SUFFIX,supremecourt.gov
 DOMAIN-SUFFIX,suprememastertv.com
 DOMAIN-SUFFIX,sureporn.com
 DOMAIN-SUFFIX,surface.com
@@ -21975,6 +21989,7 @@ DOMAIN-SUFFIX,theindianleaks.com
 DOMAIN-SUFFIX,theinitium.com
 DOMAIN-SUFFIX,theinstagramhack.com
 DOMAIN-SUFFIX,theintelstore.com
+DOMAIN-SUFFIX,theintercept.com
 DOMAIN-SUFFIX,theinventionworks.com
 DOMAIN-SUFFIX,theinventionworks.net
 DOMAIN-SUFFIX,thekarups.com
@@ -22475,6 +22490,7 @@ DOMAIN-SUFFIX,triballo.net
 DOMAIN-SUFFIX,tribler.org
 DOMAIN-SUFFIX,trikepatrol.com
 DOMAIN-SUFFIX,triokini.com
+DOMAIN-SUFFIX,tripo3d.ai
 DOMAIN-SUFFIX,tristatebmw.com
 DOMAIN-SUFFIX,trithucvn.net
 DOMAIN-SUFFIX,trithucvn.org
@@ -22486,6 +22502,7 @@ DOMAIN-SUFFIX,tropictube.com
 DOMAIN-SUFFIX,trouw.nl
 DOMAIN-SUFFIX,trpger.us
 DOMAIN-SUFFIX,trt.net.tr
+DOMAIN-SUFFIX,trtworld.com
 DOMAIN-SUFFIX,trueamateurmodels.com
 DOMAIN-SUFFIX,trueamateurs.com
 DOMAIN-SUFFIX,trueanal.com
@@ -22765,6 +22782,7 @@ DOMAIN-SUFFIX,twnextdigital.com
 DOMAIN-SUFFIX,twoo.com
 DOMAIN-SUFFIX,twporn.net
 DOMAIN-SUFFIX,twreporter.org
+DOMAIN-SUFFIX,twstalker.com
 DOMAIN-SUFFIX,twt.tl
 DOMAIN-SUFFIX,twtkr.com
 DOMAIN-SUFFIX,twtrdns.net
@@ -22952,6 +22970,7 @@ DOMAIN-SUFFIX,unraveltwo.com
 DOMAIN-SUFFIX,unrealengine.com
 DOMAIN-SUFFIX,unrealtournament.com
 DOMAIN-SUFFIX,unseen.is
+DOMAIN-SUFFIX,unsplash.com
 DOMAIN-SUFFIX,unstable.icu
 DOMAIN-SUFFIX,unstyle.us
 DOMAIN-SUFFIX,unusualporn.net
@@ -24116,6 +24135,7 @@ DOMAIN-SUFFIX,waselpro.com
 DOMAIN-SUFFIX,washa.tv
 DOMAIN-SUFFIX,washingtondcbmw.com
 DOMAIN-SUFFIX,washingtonpost.com
+DOMAIN-SUFFIX,washingtontimes.com
 DOMAIN-SUFFIX,waskucity.com
 DOMAIN-SUFFIX,wasmer.io
 DOMAIN-SUFFIX,watch-ebay.org
@@ -25142,6 +25162,7 @@ DOMAIN-SUFFIX,xtube.com
 DOMAIN-SUFFIX,xtubebdsm.com
 DOMAIN-SUFFIX,xtubezoo.com
 DOMAIN-SUFFIX,xu97.vip
+DOMAIN-SUFFIX,xuan.com.my
 DOMAIN-SUFFIX,xuchao.net
 DOMAIN-SUFFIX,xuchao.org
 DOMAIN-SUFFIX,xuehua.us
