@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-28T19:50:44+00:00
+# Generated: 2026-06-29T20:18:56+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12349, local=0, total(deduped)=11719
+# Counts: upstream=12351, local=0, total(deduped)=11721
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2417,7 +2417,6 @@ bs.mail.ru
 .buysellads.com
 .buzzcity.net
 .buzzdeck.com
-.buzzer.xhamster.com
 .buzzer.xhofficial.com
 .buzzonclick.com
 .bvr.ast.snva.jp
@@ -5915,6 +5914,7 @@ incoming-telemetry.thunderbird.net
 .line-e.com
 .line-jp.live
 .line1-log.biligame.net
+.lineare.net
 .linezing.com
 .link-ag.net
 .link-empfehlen24.de
@@ -7843,6 +7843,7 @@ pixel.yandex.com
 .posst.co
 .post-log.pushwoosh.com
 .postaffiliatepro.com
+.posthog.football24.ua
 .posthog.lingvanex.com
 .posthog.tarnkappe.info
 .postitial.com
@@ -9990,6 +9991,7 @@ target.vk.com
 .telemetrics.klaviyo.com
 .telemetry-in.battle.net
 .telemetry.adobe.io
+.telemetry.adsninja.ca
 .telemetry.api.swiftkey.com
 .telemetry.api.wmcdp.io
 .telemetry.art19.com

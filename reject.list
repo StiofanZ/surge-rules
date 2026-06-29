@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-28T19:50:44+00:00
+# Generated: 2026-06-29T20:18:56+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12349, local=0, total(deduped)=11719
+# Counts: upstream=12351, local=0, total(deduped)=11721
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2419,7 +2419,6 @@ DOMAIN-SUFFIX,buyer.dspx.tv
 DOMAIN-SUFFIX,buysellads.com
 DOMAIN-SUFFIX,buzzcity.net
 DOMAIN-SUFFIX,buzzdeck.com
-DOMAIN-SUFFIX,buzzer.xhamster.com
 DOMAIN-SUFFIX,buzzer.xhofficial.com
 DOMAIN-SUFFIX,buzzonclick.com
 DOMAIN-SUFFIX,bvr.ast.snva.jp
@@ -5917,6 +5916,7 @@ DOMAIN-SUFFIX,lijit.com
 DOMAIN-SUFFIX,line-e.com
 DOMAIN-SUFFIX,line-jp.live
 DOMAIN-SUFFIX,line1-log.biligame.net
+DOMAIN-SUFFIX,lineare.net
 DOMAIN-SUFFIX,linezing.com
 DOMAIN-SUFFIX,link-ag.net
 DOMAIN-SUFFIX,link-empfehlen24.de
@@ -7845,6 +7845,7 @@ DOMAIN-SUFFIX,positional.ai
 DOMAIN-SUFFIX,posst.co
 DOMAIN-SUFFIX,post-log.pushwoosh.com
 DOMAIN-SUFFIX,postaffiliatepro.com
+DOMAIN-SUFFIX,posthog.football24.ua
 DOMAIN-SUFFIX,posthog.lingvanex.com
 DOMAIN-SUFFIX,posthog.tarnkappe.info
 DOMAIN-SUFFIX,postitial.com
@@ -9992,6 +9993,7 @@ DOMAIN-SUFFIX,telem.sre.gopuff.com
 DOMAIN-SUFFIX,telemetrics.klaviyo.com
 DOMAIN-SUFFIX,telemetry-in.battle.net
 DOMAIN-SUFFIX,telemetry.adobe.io
+DOMAIN-SUFFIX,telemetry.adsninja.ca
 DOMAIN-SUFFIX,telemetry.api.swiftkey.com
 DOMAIN-SUFFIX,telemetry.api.wmcdp.io
 DOMAIN-SUFFIX,telemetry.art19.com
