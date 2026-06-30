@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-06-29T20:18:37+00:00
+# Generated: 2026-06-30T20:24:49+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=31163, local=27, total(deduped)=26191
+# Counts: upstream=31165, local=27, total(deduped)=26192
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -8097,6 +8097,7 @@ events.statsigapi.net
 .explorespanking.com
 .exporntoons.net
 .exposedlatinas.com
+.expressnews.com
 .expressvpn.com
 .expresswifi.com
 .exrates.me
