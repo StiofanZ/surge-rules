@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-06-30T20:25:29+00:00
+# Generated: 2026-07-01T20:20:22+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12355, local=0, total(deduped)=11725
+# Counts: upstream=12360, local=0, total(deduped)=11730
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -463,6 +463,7 @@ ad4.mail.ru
 .adbkacpmu.com
 .adbkwai.com
 .adblade.com
+.adblendr.io
 .adblockanalytics.com
 adblogger.vk.com
 adblogger.vk.ru
@@ -7530,6 +7531,7 @@ p9-ad-sign.byteimg.com
 .pclog.3u.com
 .pco-sm-log.tantanapp.com
 .pcspeedup.com
+.pcx-events.revbox.co
 .pd.trysera.com
 .pds.gmarket.co.kr
 .pdsssl.gmarket.co.kr
@@ -8066,6 +8068,7 @@ prodvizhenie-adv.ozon.ru
 .qa-events-schema.viacom.tech
 .qa-track.ssg.com
 .qbaka.net
+.qbhsocu.com
 .qbk1.com
 .qbop.com
 .qbrth.ezcontacts.com
@@ -8313,6 +8316,7 @@ report.ap.yandex-net.ru
 .resolver.gslb.mi-idc.com
 .reson8.com
 .responsetap.com
+.rest.comfy.ua
 .restartad.com
 .resu8.hjfile.cn
 .retail-client-events-service.internal.salsify.com
@@ -9713,6 +9717,7 @@ stats.telega.info
 .t.easywebland.my
 .t.eharmony.com
 .t.elasticsuite.io
+.t.experte.de
 .t.fastcmp.com
 .t.felmat.net
 .t.firstpromoter.com
