@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-01T20:20:23+00:00
+# Generated: 2026-07-02T19:58:07+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [local] sources/direct/bitget.txt
 #   [exclude] excludes/direct/fonts-googleapis.txt
 #   [exclude] excludes/direct/gstatic-signin-assets.txt
 #   [exclude] excludes/direct/recaptcha.txt
-# Counts: upstream=112315, local=2, total(deduped)=112146, excluded=5
+# Counts: upstream=112324, local=2, total(deduped)=112155, excluded=5
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -7804,6 +7804,7 @@
 .777haoka.com
 .777lala.com
 .777moban.com
+.777ppt.com
 .777sy.com
 .777yh.am
 .7788.com
@@ -10322,6 +10323,7 @@ adcdownload.apple.com.akadns.net
 .admin5.net
 .admin6.com
 .admin88.com
+.admincdn.com
 .adminer.com
 .admintony.com
 .adminxe.com
@@ -15204,6 +15206,7 @@ beacons3.gvt2.com
 .beidousafety.org
 .beidouxingxueche.com
 .beiduolab.com
+.beie.org
 .beierbio.com
 .beierjin.net
 .beieryouxi.com
@@ -40257,6 +40260,7 @@ gtm.oasisfeng.com
 .guojiayikao.com
 .guojiayixuekaoshi.com
 .guojiazhiyezige.com
+.guojibk.com
 .guojiexpress.com
 .guojijinjia.com
 .guojimami.com
@@ -78130,6 +78134,7 @@ refresh-bkg.activation-v2.kaspersky.com
 .rrjc.com
 .rrkf.com
 .rrky.com
+.rrmj.plus
 .rrmj.tv
 .rrppt.com
 .rrrdai.com
@@ -90045,6 +90050,7 @@ tj-pod1-smp-device.apple.com
 .tokenglish.com
 .tokensky.net
 .tokimekiclub.org
+.tol.vip
 .tol24.com
 .tom.cat
 .tom.com
@@ -93766,6 +93772,7 @@ valid.origin-apple.com.akadns.net
 .vpsrb.com
 .vpsss.net
 .vpssw.com
+.vpsvs.com
 .vpsvsvps.com
 .vpszh.com
 .vptek.com
@@ -95457,6 +95464,7 @@ weatherkit.apple.com
 .wenmi114.com
 .wenmingban.com
 .wenneart.com
+.wenpai.org
 .wenpie.com
 .wenqy.com
 .wenroo.com
@@ -97080,6 +97088,7 @@ weatherkit.apple.com
 .wpceo.com
 .wpcio.com
 .wpcsh.com
+.wpcy.com
 .wpdaxue.com
 .wpdian.com
 .wpengapp.com

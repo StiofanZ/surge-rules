@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-01T20:20:22+00:00
+# Generated: 2026-07-02T19:58:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12360, local=0, total(deduped)=11730
+# Counts: upstream=12371, local=0, total(deduped)=11741
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -98,6 +98,7 @@ DOMAIN-SUFFIX,51y5.net
 DOMAIN-SUFFIX,54kefu.net
 DOMAIN-SUFFIX,55labs.com
 DOMAIN-SUFFIX,5baf1288cf.dl8.me
+DOMAIN-SUFFIX,600fiber.net
 DOMAIN-SUFFIX,60ah.com
 DOMAIN-SUFFIX,64gkf7zhlwqn6y4eutgq1hjjo9y.rest
 DOMAIN-SUFFIX,666579.xyz
@@ -509,6 +510,7 @@ DOMAIN-SUFFIX,adelixir.com
 DOMAIN-SUFFIX,ademon.net
 DOMAIN-SUFFIX,adeng.hpplay.cn
 DOMAIN-SUFFIX,adentifi.com
+DOMAIN-SUFFIX,adeqmedia.com
 DOMAIN-SUFFIX,adeventtracker.spotify.com
 DOMAIN-SUFFIX,adeventtrackermonitoring.spotify.com
 DOMAIN-SUFFIX,adf.shinobi.jp
@@ -3788,6 +3790,7 @@ DOMAIN-SUFFIX,dipperflightrecommend.com
 DOMAIN-SUFFIX,dircont3.com
 DOMAIN-SUFFIX,direct-collect.dy-api.com
 DOMAIN-SUFFIX,direct-collect.dy-api.eu
+DOMAIN-SUFFIX,direct-push.com
 DOMAIN-SUFFIX,directcounter.de
 DOMAIN-SUFFIX,directone.xyz
 DOMAIN-SUFFIX,directrix.ru
@@ -5116,6 +5119,7 @@ DOMAIN-SUFFIX,heystaks.com
 DOMAIN-SUFFIX,heyzap.com
 DOMAIN-SUFFIX,hfisngksng.com
 DOMAIN-SUFFIX,hgads.com
+DOMAIN-SUFFIX,hhvhpxvuu.com
 DOMAIN-SUFFIX,hi.hellobar.com
 DOMAIN-SUFFIX,hibiki-track.logica.bz
 DOMAIN-SUFFIX,hiconversion.com
@@ -6552,6 +6556,7 @@ DOMAIN-SUFFIX,mega-stats.com
 DOMAIN-SUFFIX,mega.mydealz.de
 DOMAIN-SUFFIX,megadata.co.kr
 DOMAIN-SUFFIX,meitustat.com
+DOMAIN-SUFFIX,mellow-habit.com
 DOMAIN-SUFFIX,mellow.tel
 DOMAIN-SUFFIX,mellowtel.com
 DOMAIN-SUFFIX,melredirnxt.top
@@ -7316,6 +7321,7 @@ DOMAIN-SUFFIX,open.kuaishouzt.com
 DOMAIN-SUFFIX,open.kwaizt.com
 DOMAIN-SUFFIX,open.oneplus.net
 DOMAIN-SUFFIX,openads.aira.cz
+DOMAIN,openai.qualtrics.com
 DOMAIN-SUFFIX,openclick.com
 DOMAIN-SUFFIX,openfpcdn.io
 DOMAIN-SUFFIX,openglass.tv
@@ -7593,6 +7599,7 @@ DOMAIN-SUFFIX,pgt1.voyage-prive.es
 DOMAIN-SUFFIX,phaseshift.almagrow.com
 DOMAIN-SUFFIX,phenomtrackapi-ir.phenompeople.com
 DOMAIN-SUFFIX,phenver.com
+DOMAIN-SUFFIX,phileweb-amzrank.vercel.app
 DOMAIN-SUFFIX,phluant.com
 DOMAIN-SUFFIX,phoenix-widget.com
 DOMAIN-SUFFIX,phonalytics.com
@@ -7755,6 +7762,7 @@ DOMAIN-SUFFIX,pketred.com
 DOMAIN-SUFFIX,pkoapbafhgaf.in
 DOMAIN-SUFFIX,pks-analytics.raenonx.cc
 DOMAIN-SUFFIX,pl.elements.video
+DOMAIN-SUFFIX,pl.primis.tech
 DOMAIN-SUFFIX,pl.youku.com
 DOMAIN-SUFFIX,pla-tk.flipkart.net
 DOMAIN-SUFFIX,placemypixel.com
@@ -8298,6 +8306,7 @@ DOMAIN-SUFFIX,report.tencentmusic.com
 DOMAIN-SUFFIX,report2.iciba.com
 DOMAIN-SUFFIX,reporting-api.gannettinnovation.com
 DOMAIN-SUFFIX,reportions.club
+DOMAIN-SUFFIX,reportmyads.com
 DOMAIN-SUFFIX,reports.koalametrics.com
 DOMAIN-SUFFIX,reports.omegacommerce.com
 DOMAIN-SUFFIX,reports.tunein.com
@@ -9614,6 +9623,7 @@ DOMAIN-SUFFIX,strands.com
 DOMAIN-SUFFIX,stream.corporatefinanceinstitute.com
 DOMAIN-SUFFIX,stream.datago.ru
 DOMAIN-SUFFIX,stream.spongead.com
+DOMAIN-SUFFIX,streams-scores.rbl.ms
 DOMAIN-SUFFIX,streamvault.top
 DOMAIN-SUFFIX,stripe.rs-1028-a.com
 DOMAIN-SUFFIX,stroeerdigitalmedia.de
@@ -9671,6 +9681,7 @@ DOMAIN-SUFFIX,sync.bumlam.com
 DOMAIN-SUFFIX,sync.clearnview.com
 DOMAIN-SUFFIX,sync.ebis.ne.jp
 DOMAIN-SUFFIX,sync.getpublica.com
+DOMAIN-SUFFIX,sync.inmobi.com
 DOMAIN-SUFFIX,sync.morgdm.ru
 DOMAIN-SUFFIX,sync.opendsp.ru
 DOMAIN-SUFFIX,sync.outbrain.com

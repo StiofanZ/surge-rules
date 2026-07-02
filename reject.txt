@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-01T20:20:22+00:00
+# Generated: 2026-07-02T19:58:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12360, local=0, total(deduped)=11730
+# Counts: upstream=12371, local=0, total(deduped)=11741
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -96,6 +96,7 @@
 .54kefu.net
 .55labs.com
 .5baf1288cf.dl8.me
+.600fiber.net
 .60ah.com
 .64gkf7zhlwqn6y4eutgq1hjjo9y.rest
 .666579.xyz
@@ -507,6 +508,7 @@ adblogger.vk.ru
 .ademon.net
 .adeng.hpplay.cn
 .adentifi.com
+.adeqmedia.com
 .adeventtracker.spotify.com
 .adeventtrackermonitoring.spotify.com
 .adf.shinobi.jp
@@ -3786,6 +3788,7 @@ copilot-telemetry-service.githubusercontent.com
 .dircont3.com
 .direct-collect.dy-api.com
 .direct-collect.dy-api.eu
+.direct-push.com
 .directcounter.de
 .directone.xyz
 .directrix.ru
@@ -5114,6 +5117,7 @@ google-analytics-suite.ozon.ru
 .heyzap.com
 .hfisngksng.com
 .hgads.com
+.hhvhpxvuu.com
 .hi.hellobar.com
 .hibiki-track.logica.bz
 .hiconversion.com
@@ -6550,6 +6554,7 @@ mc.yandex.net
 .mega.mydealz.de
 .megadata.co.kr
 .meitustat.com
+.mellow-habit.com
 .mellow.tel
 .mellowtel.com
 .melredirnxt.top
@@ -7314,6 +7319,7 @@ o4504926511693824.ingest.sentry.io
 .open.kwaizt.com
 .open.oneplus.net
 .openads.aira.cz
+openai.qualtrics.com
 .openclick.com
 .openfpcdn.io
 .openglass.tv
@@ -7591,6 +7597,7 @@ p9-ad-sign.byteimg.com
 .phaseshift.almagrow.com
 .phenomtrackapi-ir.phenompeople.com
 .phenver.com
+.phileweb-amzrank.vercel.app
 .phluant.com
 .phoenix-widget.com
 .phonalytics.com
@@ -7753,6 +7760,7 @@ pixel.yandex.com
 .pkoapbafhgaf.in
 .pks-analytics.raenonx.cc
 .pl.elements.video
+.pl.primis.tech
 .pl.youku.com
 .pla-tk.flipkart.net
 .placemypixel.com
@@ -8296,6 +8304,7 @@ report.ap.yandex-net.ru
 .report2.iciba.com
 .reporting-api.gannettinnovation.com
 .reportions.club
+.reportmyads.com
 .reports.koalametrics.com
 .reports.omegacommerce.com
 .reports.tunein.com
@@ -9612,6 +9621,7 @@ stats.telega.info
 .stream.corporatefinanceinstitute.com
 .stream.datago.ru
 .stream.spongead.com
+.streams-scores.rbl.ms
 .streamvault.top
 .stripe.rs-1028-a.com
 .stroeerdigitalmedia.de
@@ -9669,6 +9679,7 @@ stats.telega.info
 .sync.clearnview.com
 .sync.ebis.ne.jp
 .sync.getpublica.com
+.sync.inmobi.com
 .sync.morgdm.ru
 .sync.opendsp.ru
 .sync.outbrain.com

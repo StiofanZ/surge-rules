@@ -1,11 +1,11 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-01T20:19:27+00:00
+# Generated: 2026-07-02T19:57:48+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=31165, local=27, total(deduped)=26192
+# Counts: upstream=31177, local=27, total(deduped)=26202
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -3700,6 +3700,7 @@ beck-online.beck.de
 .blackstonespoliceservice.com
 .blacktowhite.net
 .blackvpn.com
+.blanc.ru
 .blaoshi.cc
 .blast.io
 .blazor.net
@@ -4387,6 +4388,7 @@ blizzard.nefficient.co.kr
 .boswp.com
 .botanwang.com
 .botframework.com
+.botim.me
 .botmechanic.io
 .botorch.org
 .botstop.com
@@ -11237,6 +11239,9 @@ holoxx.f5.si
 .horizontal-systems.com
 .horizontalglue.com
 .horizontalsystems.com
+.hornet.com
+.hornetapp.com
+.hornetx.com
 .hornyasianmilfs.com
 .hornybitches.org
 .hornybutt.com
@@ -13989,6 +13994,7 @@ link.theplatform.com
 .listentoyoutube.com
 .listinganalytics.net
 .litbus-anime.com
+.litecoin.org
 .litenews.hk
 .literatumonline.com
 .literotica.com
@@ -16262,7 +16268,9 @@ muse.jhu.edu
 .netflixtechblog.com
 .netlify.app
 .netlify.com
+.netlifydns.com
 .netlifystatus.com
+.netlifyusercontent.com
 .netlock.hu
 .netme.cc
 .netname.com.br
@@ -16805,6 +16813,7 @@ muse.jhu.edu
 .ntdtvla.com
 .ntdvideo.tw
 .ntdvn.com
+.ntl.fyi
 .ntnews.com.au
 ntp-c.colorado.edu
 .ntp-os01.ocn.ad.jp
@@ -21752,6 +21761,7 @@ supercell.helpshift.com
 .technogym.su
 .technologyandsociety.org
 .techradar.com
+.techspot.com
 .techstreet.com
 .techtimes.com
 .techtudo.com

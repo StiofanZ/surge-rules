@@ -1,12 +1,12 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-01T20:19:27+00:00
+# Generated: 2026-07-02T19:57:48+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [surge_ip_rule_set:rule-set-only] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt
 #   [local] sources/proxy/openai-chatgpt.txt
-# Counts: upstream=31165, local=27, total(deduped)=26192, rule_set_only=12
+# Counts: upstream=31177, local=27, total(deduped)=26202, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -3703,6 +3703,7 @@ DOMAIN-SUFFIX,blacksonblondes.com
 DOMAIN-SUFFIX,blackstonespoliceservice.com
 DOMAIN-SUFFIX,blacktowhite.net
 DOMAIN-SUFFIX,blackvpn.com
+DOMAIN-SUFFIX,blanc.ru
 DOMAIN-SUFFIX,blaoshi.cc
 DOMAIN-SUFFIX,blast.io
 DOMAIN-SUFFIX,blazor.net
@@ -4390,6 +4391,7 @@ DOMAIN-SUFFIX,bossagency.co.uk
 DOMAIN-SUFFIX,boswp.com
 DOMAIN-SUFFIX,botanwang.com
 DOMAIN-SUFFIX,botframework.com
+DOMAIN-SUFFIX,botim.me
 DOMAIN-SUFFIX,botmechanic.io
 DOMAIN-SUFFIX,botorch.org
 DOMAIN-SUFFIX,botstop.com
@@ -11240,6 +11242,9 @@ DOMAIN-SUFFIX,horizontal-llc.com
 DOMAIN-SUFFIX,horizontal-systems.com
 DOMAIN-SUFFIX,horizontalglue.com
 DOMAIN-SUFFIX,horizontalsystems.com
+DOMAIN-SUFFIX,hornet.com
+DOMAIN-SUFFIX,hornetapp.com
+DOMAIN-SUFFIX,hornetx.com
 DOMAIN-SUFFIX,hornyasianmilfs.com
 DOMAIN-SUFFIX,hornybitches.org
 DOMAIN-SUFFIX,hornybutt.com
@@ -13992,6 +13997,7 @@ DOMAIN-SUFFIX,listennotes.com
 DOMAIN-SUFFIX,listentoyoutube.com
 DOMAIN-SUFFIX,listinganalytics.net
 DOMAIN-SUFFIX,litbus-anime.com
+DOMAIN-SUFFIX,litecoin.org
 DOMAIN-SUFFIX,litenews.hk
 DOMAIN-SUFFIX,literatumonline.com
 DOMAIN-SUFFIX,literotica.com
@@ -16265,7 +16271,9 @@ DOMAIN-SUFFIX,netflixinvestor.com
 DOMAIN-SUFFIX,netflixtechblog.com
 DOMAIN-SUFFIX,netlify.app
 DOMAIN-SUFFIX,netlify.com
+DOMAIN-SUFFIX,netlifydns.com
 DOMAIN-SUFFIX,netlifystatus.com
+DOMAIN-SUFFIX,netlifyusercontent.com
 DOMAIN-SUFFIX,netlock.hu
 DOMAIN-SUFFIX,netme.cc
 DOMAIN-SUFFIX,netname.com.br
@@ -16808,6 +16816,7 @@ DOMAIN-SUFFIX,ntdtv.se
 DOMAIN-SUFFIX,ntdtvla.com
 DOMAIN-SUFFIX,ntdvideo.tw
 DOMAIN-SUFFIX,ntdvn.com
+DOMAIN-SUFFIX,ntl.fyi
 DOMAIN-SUFFIX,ntnews.com.au
 DOMAIN,ntp-c.colorado.edu
 DOMAIN-SUFFIX,ntp-os01.ocn.ad.jp
@@ -21755,6 +21764,7 @@ DOMAIN-SUFFIX,technogym.ru
 DOMAIN-SUFFIX,technogym.su
 DOMAIN-SUFFIX,technologyandsociety.org
 DOMAIN-SUFFIX,techradar.com
+DOMAIN-SUFFIX,techspot.com
 DOMAIN-SUFFIX,techstreet.com
 DOMAIN-SUFFIX,techtimes.com
 DOMAIN-SUFFIX,techtudo.com
