@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-03T01:57:19+00:00
+# Generated: 2026-07-03T19:54:52+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12371, local=1, total(deduped)=11738, excluded=29
+# Counts: upstream=12375, local=1, total(deduped)=11742, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3718,6 +3718,7 @@ DOMAIN-SUFFIX,deep.bi
 DOMAIN-SUFFIX,deepdive.zum.com
 DOMAIN-SUFFIX,def-platform.com
 DOMAIN-SUFFIX,dejavu.mlapps.com
+DOMAIN-SUFFIX,delightlintlunatic.com
 DOMAIN-SUFFIX,deliver.ads2.iid.jp
 DOMAIN-SUFFIX,deliver.oztam.com.au
 DOMAIN-SUFFIX,deliver.ptgncdn.com
@@ -4524,6 +4525,7 @@ DOMAIN-SUFFIX,find-ip-address.org
 DOMAIN-SUFFIX,finderlocator.com
 DOMAIN-SUFFIX,fingerhi.net
 DOMAIN-SUFFIX,fingerprint.incodesmile.com
+DOMAIN-SUFFIX,fireanalytics.firestream.to
 DOMAIN-SUFFIX,fireworkanalytics.com
 DOMAIN-SUFFIX,first-id.fr
 DOMAIN-SUFFIX,fishhoo.com
@@ -5379,6 +5381,7 @@ DOMAIN-SUFFIX,imp.go.sohu.com
 DOMAIN-SUFFIX,imp.pvnsolutions.com
 DOMAIN-SUFFIX,impact-ad.jp
 DOMAIN-SUFFIX,impactify.media
+DOMAIN-SUFFIX,impassableretainerexplained.com
 DOMAIN-SUFFIX,impbid.com
 DOMAIN-SUFFIX,impdsp.meituan.com
 DOMAIN-SUFFIX,impresivedate.com
@@ -5955,6 +5958,7 @@ DOMAIN-SUFFIX,livetech.shopee.com.br
 DOMAIN-SUFFIX,livetrafficfeed.com
 DOMAIN-SUFFIX,livewebstats.dk
 DOMAIN-SUFFIX,lk.vectoranalytics.ru
+DOMAIN-SUFFIX,lkqivtsnfvriw.website
 DOMAIN-SUFFIX,lloogg.com
 DOMAIN-SUFFIX,lltrck.com
 DOMAIN-SUFFIX,lma.npaw.com
