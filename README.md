@@ -13,7 +13,7 @@
 | [`proxy.txt`](./proxy.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,<policy>` |
 | [`proxy.list`](./proxy.list) | **RULE-SET** | `RULE-SET,<url>,<policy>` |
 
-来源：[Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + [`ruleset/gfw.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt) + [`ruleset/telegramcidr.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt) + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)（OpenAI/ChatGPT 官方允许列表）。
+来源：[Loyalsoldier/surge-rules `proxy.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt) + [`ruleset/gfw.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt) + [`ruleset/telegramcidr.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt) + [`includes/proxy/openai-chatgpt.txt`](./includes/proxy/openai-chatgpt.txt)（OpenAI/ChatGPT 官方允许列表）。
 
 `telegramcidr.txt` 是 `IP-CIDR` / `IP-CIDR6`，只能进入 `proxy.list`；`proxy.txt` 是 DOMAIN-SET，不能表达 IP 段。
 
@@ -43,7 +43,7 @@
 
 构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 
-上游之外还有 [`sources/reject/*.txt`](./sources/reject) 本地补充，当前包含 [`sources/reject/google-telemetry.txt`](./sources/reject/google-telemetry.txt)：`crashlyticsreports-pa.googleapis.com`（Firebase Crashlytics 崩溃上报端点，与业务功能无关）精确屏蔽。
+上游之外还有 [`includes/reject/*.txt`](./includes/reject) 本地补充，当前包含 [`includes/reject/google-telemetry.txt`](./includes/reject/google-telemetry.txt)：`crashlyticsreports-pa.googleapis.com`（Firebase Crashlytics 崩溃上报端点，与业务功能无关）精确屏蔽。
 
 ### direct — 直连域名
 
@@ -52,9 +52,9 @@
 | [`direct.txt`](./direct.txt) | **DOMAIN-SET** | `DOMAIN-SET,<url>,DIRECT` |
 | [`direct.list`](./direct.list) | **RULE-SET** | `RULE-SET,<url>,DIRECT` |
 
-来源：[Loyalsoldier/surge-rules `ruleset/direct.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt) + [`sources/direct/*.txt`](./sources/direct) 本地补充。上游是 Surge RULE-SET 格式，构建器仅转换 `DOMAIN` / `DOMAIN-SUFFIX` 两类域名规则；其它 Surge 规则类型若出现会被跳过，因为 DOMAIN-SET 无法表达。
+来源：[Loyalsoldier/surge-rules `ruleset/direct.txt`](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt) + [`includes/direct/*.txt`](./includes/direct) 本地补充。上游是 Surge RULE-SET 格式，构建器仅转换 `DOMAIN` / `DOMAIN-SUFFIX` 两类域名规则；其它 Surge 规则类型若出现会被跳过，因为 DOMAIN-SET 无法表达。
 
-本地补充当前包含 [`sources/direct/bitget.txt`](./sources/direct/bitget.txt)：`bitget.com`（交易所）与 `bitkeep.app`（Bitget Wallet 移动端，旧品牌 BitKeep）后端均按请求源 IP 判定国家，代理出口在美国会被判为美国并触发地区限制，故强制直连。`bitget.com` 上游归入 `proxy`，而 `proxy` 类别无 `exclude_dir`，它仍同时存在于 `proxy.list`，需保证 `direct.list` 在 Surge 配置中排在 `proxy.list` 之前。
+本地补充当前包含 [`includes/direct/bitget.txt`](./includes/direct/bitget.txt)：`bitget.com`（交易所）与 `bitkeep.app`（Bitget Wallet 移动端，旧品牌 BitKeep）后端均按请求源 IP 判定国家，代理出口在美国会被判为美国并触发地区限制，故强制直连。放进 `includes/direct/` 后它同时被从 `proxy`/`reject` 跨类排除，`bitget.com` 会从上游 `proxy.list` 移除，无需依赖 Surge 配置中 `direct.list` 与 `proxy.list` 的先后顺序。
 
 ## 在 Surge 中使用
 
@@ -85,9 +85,9 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,P
 
 ## 数据来源
 
-1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + `ruleset/gfw.txt` + `ruleset/telegramcidr.txt` + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)。
-2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all` + [`sources/reject/*.txt`](./sources/reject) 本地补充。
-3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt` + [`sources/direct/*.txt`](./sources/direct) 本地补充。
+1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + `ruleset/gfw.txt` + `ruleset/telegramcidr.txt` + [`includes/proxy/openai-chatgpt.txt`](./includes/proxy/openai-chatgpt.txt)。
+2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all` + [`includes/reject/*.txt`](./includes/reject) 本地补充。
+3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt` + [`includes/direct/*.txt`](./includes/direct) 本地补充。
 
 ## CI / 自动化
 
@@ -102,7 +102,7 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,P
 ### 自动更新节奏
 
 - 调度：`update.yml` 每天 18:30 UTC（北京时间次日 02:30）运行。
-- 过程：拉取上游 → 合并 `sources/<category>/*.txt` → 应用 `excludes/<category>/*.txt` → 去冗余 → 排序写出 `*.txt` + `*.list`。
+- 过程：拉取上游 → 合并 `includes/<category>/*.txt` → 应用排除（`excludes/<category>/*.txt` 加其余各类的 `includes/*` 跨类排除）→ 去冗余 → 排序写出 `*.txt` + `*.list`。
 - 仅当规则内容有实质变化时才提交（`git diff -I '^# Generated: '` 忽略纯时间戳漂移）。
 - 手动触发：GitHub UI → Actions → "Update rule sets" → Run workflow，或 `gh workflow run "Update rule sets"`。
 
@@ -130,9 +130,11 @@ python3 scripts/build.py
 
 ## 添加新的补充规则
 
-- **扩充已有分类：** 在 `sources/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。例如 `sources/reject/my-custom.txt`。
-- **排除已有分类：** 在 `excludes/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。精确域名只移除同名精确规则；前导点后缀规则会移除该后缀及其子域。
-- **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、`local_dir`（本地子目录）、输出文件名；`parser` 可选 `"domain_set"`、`"surge_rule_set"`、`"adguard"` 或 `"v2fly"`。
+根目录的六个 `*.txt` / `*.list` 是机器生成产物，**不要手工编辑**——只改下面的 `includes/` 与 `excludes/` 输入，其余交给 CI + `scripts/build.py`。
+
+- **扩充已有分类：** 在 `includes/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释）。例如 `includes/reject/my-custom.txt`。其中的域名会**并入该分类**，并**从其余各分类中跨类排除**（把某域名强制归到 direct，就会自动从 proxy、reject 移除，不再依赖 Surge 配置里规则集的先后顺序）。同一域名不要同时出现在多个分类的 `includes/`，否则会因相互排除而被从所有分类丢弃（构建器会打 `WARN`）。
+- **排除已有分类：** 在 `excludes/<category>/` 下新建 `*.txt`（DOMAIN-SET 格式，一行一条，`#` 为注释），仅从**该分类**移除。精确域名只移除同名精确规则；前导点后缀规则会移除该后缀及其子域。`reject`/`direct`/`proxy` 三类均可用。
+- **新增分类：** 在 `scripts/build.py` 顶部的 `RULE_SETS` 元组里追加一条 `RuleSet(...)`，指定 `sources`（远端源）、输出文件名；本地补充与排除目录按约定即 `includes/<name>/`、`excludes/<name>/`。`parser` 可选 `"domain_set"`、`"surge_rule_set"`、`"adguard"` 或 `"v2fly"`。
 
 推送到 `main` 后 GitHub Actions 会自动合并并发布。
 
@@ -140,21 +142,25 @@ python3 scripts/build.py
 
 ```
 surge-rules/
-├── proxy.txt / proxy.list           # proxy 分类（机器生成）
-├── reject.txt / reject.list         # reject 分类（机器生成）
-├── direct.txt / direct.list         # direct 分类（机器生成）
-├── sources/
+├── proxy.txt / proxy.list           # proxy 分类（机器生成，勿手工编辑）
+├── reject.txt / reject.list         # reject 分类（机器生成，勿手工编辑）
+├── direct.txt / direct.list         # direct 分类（机器生成，勿手工编辑）
+├── includes/                        # 本地补充：并入本类 + 从其余各类跨类排除
 │   ├── proxy/
-│   │   └── openai-chatgpt.txt       # proxy 本地补充源
-│   ├── reject/                      # reject 本地补充源（可选）
-│   └── direct/                      # direct 本地补充源（可选）
-├── excludes/
+│   │   └── openai-chatgpt.txt       # OpenAI/ChatGPT 强制走 proxy
+│   ├── reject/
+│   │   └── google-telemetry.txt     # Firebase Crashlytics 上报端点，屏蔽
+│   └── direct/
+│       └── bitget.txt               # bitget.com / bitkeep.app 强制直连
+├── excludes/                        # 仅从对应分类移除
+│   ├── proxy/                       # proxy 排除项（可选）
+│   ├── reject/                      # reject 排除项（可选）
 │   └── direct/
 │       ├── fonts-googleapis.txt        # direct 排除项
 │       ├── gstatic-signin-assets.txt   # direct 排除项（登录页 gstatic 静态资源）
 │       └── recaptcha.txt               # direct 排除项（reCAPTCHA 镜像域）
 ├── scripts/
-│   └── build.py                     # 多规则集合并 + 排除项 + 双格式输出
+│   └── build.py                     # 多规则集合并 + 跨类排除 + 双格式输出
 └── .github/workflows/
     └── update.yml                   # 每日自动更新
 ```

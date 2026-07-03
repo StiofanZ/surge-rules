@@ -41,6 +41,16 @@ Dedup rules (applied per rule set):
   - If `.example.com` exists, `example.com` AND any `*.example.com` subdomain
     entries are redundant and are dropped.
   - Exact duplicates are collapsed.
+
+Local layout (human-authored inputs). The six root `*.txt` / `*.list` files
+are generated artifacts owned by CI + this script -- never hand-edit them.
+  - includes/<category>/*.txt : domains force-added to <category> AND
+    force-excluded from every OTHER category (so forcing bitget.com to direct
+    also removes it from proxy/reject, no rule-order dependency). DOMAIN-SET
+    format. A domain must not appear in more than one category's includes.
+  - excludes/<category>/*.txt : domains removed from <category> only.
+So the effective exclusion set for a category is its own excludes/<category>/*
+plus every other category's includes/*.
 """
 
 from __future__ import annotations
@@ -54,7 +64,7 @@ import sys
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SOURCES_DIR = ROOT / "sources"
+INCLUDES_DIR = ROOT / "includes"
 EXCLUDES_DIR = ROOT / "excludes"
 
 REQUEST_TIMEOUT_SECONDS = 30
@@ -72,11 +82,12 @@ class RuleSet:
     name: str
     description: str
     sources: tuple[Source, ...]
-    local_dir: str | None  # subdirectory under sources/, or None
     output_domain_set: str  # e.g. "proxy.txt"
     output_rule_set: str  # e.g. "proxy.list"
-    exclude_dir: str | None = None  # subdirectory under excludes/, or None
     rule_set_only_sources: tuple[Source, ...] = ()
+
+    # Local supplement / exclusion directories are convention-based:
+    # includes/<name>/*.txt and excludes/<name>/*.txt.
 
 
 RULE_SETS: tuple[RuleSet, ...] = (
@@ -96,7 +107,6 @@ RULE_SETS: tuple[RuleSet, ...] = (
                 parser="surge_rule_set",
             ),
         ),
-        local_dir="proxy",
         output_domain_set="proxy.txt",
         output_rule_set="proxy.list",
         rule_set_only_sources=(
@@ -176,8 +186,6 @@ RULE_SETS: tuple[RuleSet, ...] = (
                 parser="v2fly",
             ),
         ),
-        local_dir="reject",
-        exclude_dir="reject",
         output_domain_set="reject.txt",
         output_rule_set="reject.list",
     ),
@@ -193,12 +201,14 @@ RULE_SETS: tuple[RuleSet, ...] = (
                 parser="surge_rule_set",
             ),
         ),
-        local_dir="direct",
-        exclude_dir="direct",
         output_domain_set="direct.txt",
         output_rule_set="direct.list",
     ),
 )
+
+# All category names, in definition order. Used to compute cross-category
+# exclusions (each category drops every other category's includes).
+ALL_CATEGORIES: tuple[str, ...] = tuple(rs.name for rs in RULE_SETS)
 
 
 # ------------------------------ fetch ------------------------------
@@ -558,16 +568,23 @@ def _source_lines(rs: RuleSet, *, include_rule_set_only: bool) -> str:
     if include_rule_set_only:
         for s in rs.rule_set_only_sources:
             lines.append(f"#   [{s.parser}:rule-set-only] {s.url}")
-    if rs.local_dir:
-        local_root = SOURCES_DIR / rs.local_dir
-        if local_root.is_dir():
-            for p in sorted(local_root.glob("*.txt")):
-                lines.append(f"#   [local] sources/{rs.local_dir}/{p.name}")
-    if rs.exclude_dir:
-        exclude_root = EXCLUDES_DIR / rs.exclude_dir
-        if exclude_root.is_dir():
-            for p in sorted(exclude_root.glob("*.txt")):
-                lines.append(f"#   [exclude] excludes/{rs.exclude_dir}/{p.name}")
+    include_root = INCLUDES_DIR / rs.name
+    if include_root.is_dir():
+        for p in sorted(include_root.glob("*.txt")):
+            lines.append(f"#   [include] includes/{rs.name}/{p.name}")
+    exclude_root = EXCLUDES_DIR / rs.name
+    if exclude_root.is_dir():
+        for p in sorted(exclude_root.glob("*.txt")):
+            lines.append(f"#   [exclude] excludes/{rs.name}/{p.name}")
+    # Cross-category exclusions: every other category's includes are removed
+    # from this one so a forced classification wins across all rule sets.
+    for cat in ALL_CATEGORIES:
+        if cat == rs.name:
+            continue
+        cross_root = INCLUDES_DIR / cat
+        if cross_root.is_dir():
+            for p in sorted(cross_root.glob("*.txt")):
+                lines.append(f"#   [cross-exclude] includes/{cat}/{p.name}")
     return "\n".join(lines) + "\n"
 
 
@@ -657,36 +674,32 @@ def header_rule_set(
 # ------------------------------ pipeline ------------------------------
 
 
-def _read_local(rs: RuleSet) -> list[str]:
-    """Read local supplement files. Each file is parsed as DOMAIN-SET."""
-    if not rs.local_dir:
-        return []
-    local_root = SOURCES_DIR / rs.local_dir
-    if not local_root.is_dir():
+def _read_includes(name: str) -> list[str]:
+    """Read includes/<name>/*.txt supplement files, parsed as DOMAIN-SET."""
+    include_root = INCLUDES_DIR / name
+    if not include_root.is_dir():
         return []
     out: list[str] = []
-    for path in sorted(local_root.glob("*.txt")):
+    for path in sorted(include_root.glob("*.txt")):
         chunk = parse_domain_set(path.read_text(encoding="utf-8"))
         print(
-            f"[{rs.name}] local sources/{rs.local_dir}/{path.name}: {len(chunk)}",
+            f"[{name}] include includes/{name}/{path.name}: {len(chunk)}",
             file=sys.stderr,
         )
         out.extend(chunk)
     return out
 
 
-def _read_excludes(rs: RuleSet) -> list[str]:
-    """Read local exclusion files. Each file is parsed as DOMAIN-SET."""
-    if not rs.exclude_dir:
-        return []
-    exclude_root = EXCLUDES_DIR / rs.exclude_dir
+def _read_excludes(name: str) -> list[str]:
+    """Read excludes/<name>/*.txt exclusion files, parsed as DOMAIN-SET."""
+    exclude_root = EXCLUDES_DIR / name
     if not exclude_root.is_dir():
         return []
     out: list[str] = []
     for path in sorted(exclude_root.glob("*.txt")):
         chunk = parse_domain_set(path.read_text(encoding="utf-8"))
         print(
-            f"[{rs.name}] exclude excludes/{rs.exclude_dir}/{path.name}: {len(chunk)}",
+            f"[{name}] exclude excludes/{name}/{path.name}: {len(chunk)}",
             file=sys.stderr,
         )
         out.extend(chunk)
@@ -717,7 +730,7 @@ def _dedupe_preserve_order(lines: list[str]) -> list[str]:
     return out
 
 
-def build_rule_set(rs: RuleSet) -> int:
+def build_rule_set(rs: RuleSet, includes_by_category: dict[str, list[str]]) -> int:
     """Fetch, parse, dedupe, and emit one rule set. Returns 0 on success, 1 on failure."""
     upstream_entries: list[str] = []
     for src in rs.sources:
@@ -765,8 +778,15 @@ def build_rule_set(rs: RuleSet) -> int:
         rule_set_only_entries.extend(chunk)
     rule_set_only_entries = _dedupe_preserve_order(rule_set_only_entries)
 
-    local_entries = _read_local(rs)
-    exclude_entries = _read_excludes(rs)
+    local_entries = includes_by_category.get(rs.name, [])
+    explicit_excludes = _read_excludes(rs.name)
+    cross_excludes = [
+        domain
+        for cat in ALL_CATEGORIES
+        if cat != rs.name
+        for domain in includes_by_category.get(cat, [])
+    ]
+    exclude_entries = _dedupe_preserve_order(explicit_excludes + cross_excludes)
     exclude_set = set(exclude_entries)
     combined = [
         domain
@@ -775,9 +795,10 @@ def build_rule_set(rs: RuleSet) -> int:
     ]
     deduped = dedupe(combined)
     print(
-        f"[{rs.name}] upstream={len(upstream_entries)}, local={len(local_entries)}, "
-        f"excluded={len(exclude_entries)}, deduped={len(deduped)}, "
-        f"rule_set_only={len(rule_set_only_entries)}",
+        f"[{rs.name}] upstream={len(upstream_entries)}, include={len(local_entries)}, "
+        f"exclude={len(exclude_entries)} "
+        f"(explicit={len(explicit_excludes)}, cross={len(cross_excludes)}), "
+        f"deduped={len(deduped)}, rule_set_only={len(rule_set_only_entries)}",
         file=sys.stderr,
     )
 
@@ -821,9 +842,25 @@ def build_rule_set(rs: RuleSet) -> int:
 
 
 def main() -> int:
+    includes_by_category = {name: _read_includes(name) for name in ALL_CATEGORIES}
+
+    # A domain forced into two categories at once is contradictory: the
+    # cross-category exclusion would drop it from both. Warn loudly.
+    claimed: dict[str, list[str]] = {}
+    for cat, entries in includes_by_category.items():
+        for domain in entries:
+            claimed.setdefault(domain, []).append(cat)
+    for domain, cats in sorted(claimed.items()):
+        if len(cats) > 1:
+            print(
+                f"WARN: include '{domain}' claimed by multiple categories "
+                f"{cats}; it will be dropped from all of them.",
+                file=sys.stderr,
+            )
+
     rc = 0
     for rs in RULE_SETS:
-        rc |= build_rule_set(rs)
+        rc |= build_rule_set(rs, includes_by_category)
     return rc
 
 

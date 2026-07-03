@@ -9,7 +9,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "sources/**"
+      - "includes/**"
+      - "excludes/**"
       - "scripts/build.py"
       - ".github/workflows/update.yml"
 
