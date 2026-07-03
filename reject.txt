@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12371, local=0, total(deduped)=11741
+# Counts: upstream=12371, local=1, total(deduped)=11742
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -3231,6 +3231,7 @@ copilot-telemetry-service.githubusercontent.com
 .crash2.zhihu.com
 .crasheye.cn
 .crashlytics.163.com
+crashlyticsreports-pa.googleapis.com
 .crazyegg.com
 .create.lidstatic.com
 .creative-klepon-3f0ecb.netlify.app

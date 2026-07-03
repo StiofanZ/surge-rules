@@ -43,6 +43,8 @@
 
 构建时仅保留 `||domain.com^` 纯域名屏蔽规则，自动跳过外观过滤（`##`）、URL 路径、正则、`@@` 允许列表、IP 字面量、`$domain=`/`$script`/`$image` 等资源类型修饰符——Surge DOMAIN-SET 无法表达的条目一律丢弃。跨过滤段之间的重复条目与被更宽后缀规则覆盖的子域也会在 dedup 阶段合并。
 
+上游之外还有 [`sources/reject/*.txt`](./sources/reject) 本地补充，当前包含 [`sources/reject/google-telemetry.txt`](./sources/reject/google-telemetry.txt)：`crashlyticsreports-pa.googleapis.com`（Firebase Crashlytics 崩溃上报端点，与业务功能无关）精确屏蔽。
+
 ### direct — 直连域名
 
 | 文件 | 类型 | 对应 Surge 指令 |
@@ -84,7 +86,7 @@ RULE-SET,https://raw.githubusercontent.com/<OWNER>/surge-rules/main/proxy.list,P
 ## 数据来源
 
 1. **proxy：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `proxy.txt` + `ruleset/gfw.txt` + `ruleset/telegramcidr.txt` + [`sources/proxy/openai-chatgpt.txt`](./sources/proxy/openai-chatgpt.txt)。
-2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all`。
+2. **reject：** [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) 的域名型过滤段 + [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) 的 `data/category-ads-all` + [`sources/reject/*.txt`](./sources/reject) 本地补充。
 3. **direct：** [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules) 的 `release` 分支 `ruleset/direct.txt` + [`sources/direct/*.txt`](./sources/direct) 本地补充。
 
 ## CI / 自动化

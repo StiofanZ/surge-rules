@@ -14,7 +14,7 @@
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt
 #   [v2fly] https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ads-all
-# Counts: upstream=12371, local=0, total(deduped)=11741
+# Counts: upstream=12371, local=1, total(deduped)=11742
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3233,6 +3233,7 @@ DOMAIN-SUFFIX,crash.163.com
 DOMAIN-SUFFIX,crash2.zhihu.com
 DOMAIN-SUFFIX,crasheye.cn
 DOMAIN-SUFFIX,crashlytics.163.com
+DOMAIN,crashlyticsreports-pa.googleapis.com
 DOMAIN-SUFFIX,crazyegg.com
 DOMAIN-SUFFIX,create.lidstatic.com
 DOMAIN-SUFFIX,creative-klepon-3f0ecb.netlify.app

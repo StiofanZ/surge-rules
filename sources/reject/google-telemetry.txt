@@ -1,0 +1,9 @@
+# Google 遥测 / 崩溃上报端点，屏蔽。
+#
+# crashlyticsreports-pa.googleapis.com 是 Firebase Crashlytics 的崩溃
+# 上报端点，App 用它把崩溃日志与统计回传 Google，与业务功能无关。
+#
+# Format: Surge DOMAIN-SET
+#   - bare domain (e.g. example.com)   -> exact match only
+#   - leading-dot (e.g. .example.com)  -> exact + all subdomains
+crashlyticsreports-pa.googleapis.com
