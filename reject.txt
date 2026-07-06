@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-05T19:47:51+00:00
+# Generated: 2026-07-06T20:19:24+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12377, local=1, total(deduped)=11744, excluded=29
+# Counts: upstream=12382, local=1, total(deduped)=11750, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -392,6 +392,7 @@ ad.ozone.ru
 .ad.qun.qq.com
 .ad.rarure.com
 .ad.serv1for.pro
+.ad.sexplex.com
 .ad.simpledesign.ltd
 .ad.sina.com.cn
 .ad.smaad.jp
@@ -2424,6 +2425,7 @@ bs.mail.ru
 .buzzdeck.com
 .buzzer.xhofficial.com
 .buzzonclick.com
+.buzzoola.com
 .bvr.ast.snva.jp
 .bwb101.goo.ne.jp
 .bxtag.com
@@ -5657,6 +5659,7 @@ incoming-telemetry.thunderbird.net
 .jioads.akamaized.net
 .jirafe.com
 .jitsu.ixbt.com
+.jitsu.ixbt.games
 .jitsu.ixbt.site
 .jixie.io
 .jjpp.lmtjapi.com
@@ -10830,6 +10833,7 @@ tracing-http.megamarket.tech
 .tw.api.vpon.com
 .tw.netcore.co.in
 .twcount.com
+.twigcrucialpal.com
 .twimg.cash
 .twin-iq.kickfire.com
 .twitob.com
@@ -10951,6 +10955,7 @@ tracing-http.megamarket.tech
 .umini.shujupie.com
 .umommy.online
 .umphek.com
+.unalaskamiaskitewormproof.monster
 .uncn.jp
 .unddeliv.com
 .unicume.com
@@ -10973,6 +10978,7 @@ tracing-http.megamarket.tech
 .unseenreport.com
 .untho.de
 .untidyrice.com
+.untimely-proof.pro
 .uoutube.com
 .up-hl.3g.qq.com
 .up-rank.com

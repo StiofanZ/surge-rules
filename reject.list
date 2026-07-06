@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-05T19:47:51+00:00
+# Generated: 2026-07-06T20:19:24+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12377, local=1, total(deduped)=11744, excluded=29
+# Counts: upstream=12382, local=1, total(deduped)=11750, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -394,6 +394,7 @@ DOMAIN-SUFFIX,ad.qq.com
 DOMAIN-SUFFIX,ad.qun.qq.com
 DOMAIN-SUFFIX,ad.rarure.com
 DOMAIN-SUFFIX,ad.serv1for.pro
+DOMAIN-SUFFIX,ad.sexplex.com
 DOMAIN-SUFFIX,ad.simpledesign.ltd
 DOMAIN-SUFFIX,ad.sina.com.cn
 DOMAIN-SUFFIX,ad.smaad.jp
@@ -2426,6 +2427,7 @@ DOMAIN-SUFFIX,buzzcity.net
 DOMAIN-SUFFIX,buzzdeck.com
 DOMAIN-SUFFIX,buzzer.xhofficial.com
 DOMAIN-SUFFIX,buzzonclick.com
+DOMAIN-SUFFIX,buzzoola.com
 DOMAIN-SUFFIX,bvr.ast.snva.jp
 DOMAIN-SUFFIX,bwb101.goo.ne.jp
 DOMAIN-SUFFIX,bxtag.com
@@ -5659,6 +5661,7 @@ DOMAIN-SUFFIX,jillsclickcorner.com
 DOMAIN-SUFFIX,jioads.akamaized.net
 DOMAIN-SUFFIX,jirafe.com
 DOMAIN-SUFFIX,jitsu.ixbt.com
+DOMAIN-SUFFIX,jitsu.ixbt.games
 DOMAIN-SUFFIX,jitsu.ixbt.site
 DOMAIN-SUFFIX,jixie.io
 DOMAIN-SUFFIX,jjpp.lmtjapi.com
@@ -10832,6 +10835,7 @@ DOMAIN-SUFFIX,tw-api.vpon.com
 DOMAIN-SUFFIX,tw.api.vpon.com
 DOMAIN-SUFFIX,tw.netcore.co.in
 DOMAIN-SUFFIX,twcount.com
+DOMAIN-SUFFIX,twigcrucialpal.com
 DOMAIN-SUFFIX,twimg.cash
 DOMAIN-SUFFIX,twin-iq.kickfire.com
 DOMAIN-SUFFIX,twitob.com
@@ -10953,6 +10957,7 @@ DOMAIN-SUFFIX,umengjmacs.m.taobao.com
 DOMAIN-SUFFIX,umini.shujupie.com
 DOMAIN-SUFFIX,umommy.online
 DOMAIN-SUFFIX,umphek.com
+DOMAIN-SUFFIX,unalaskamiaskitewormproof.monster
 DOMAIN-SUFFIX,uncn.jp
 DOMAIN-SUFFIX,unddeliv.com
 DOMAIN-SUFFIX,unicume.com
@@ -10975,6 +10980,7 @@ DOMAIN-SUFFIX,unl1zvy2zuyn.franchiseplus.nl
 DOMAIN-SUFFIX,unseenreport.com
 DOMAIN-SUFFIX,untho.de
 DOMAIN-SUFFIX,untidyrice.com
+DOMAIN-SUFFIX,untimely-proof.pro
 DOMAIN-SUFFIX,uoutube.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,up-rank.com
