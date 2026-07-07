@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-06T20:19:24+00:00
+# Generated: 2026-07-07T20:19:35+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12382, local=1, total(deduped)=11750, excluded=29
+# Counts: upstream=12389, local=1, total(deduped)=11757, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2027,6 +2027,7 @@ apilog-web.acfun.cn
 .ax.xrea.com
 .axesslove.mixh.jp
 .axf8.net
+.axmaxhsa.com
 .axon.ai
 .az708531.vo.msecnd.net
 .aznude.workers.dev
@@ -4114,6 +4115,7 @@ disney.my.sentry.io
 .emxdgt.com
 .en-collect.trendyol.com
 .enecto.com
+.enfacesplaineddeglory.qpon
 .engagedhits.com
 .engagefront.theweathernetwork.com
 .engagelab.cc
@@ -6421,6 +6423,7 @@ loyalnost-adv.ozon.ru
 .managedweb.net
 .manalyticshub.com
 .maniteka.com
+.mantis-awx.com
 .map-s.online
 .maper.info
 .maphuahin.com
@@ -7292,6 +7295,7 @@ o4504926511693824.ingest.sentry.io
 .omine.org
 .omni-ads.omni.news
 .omniconvert.com
+.omnimove.tourradar.com
 .omnitag.omniscientai.com
 .omtrdc.net
 .on-line.lv
@@ -8934,6 +8938,7 @@ sentry.x5.ru
 .sjv.io
 .skadnetwork.singular.net
 .skadsdk.appsflyer.com
+.ski.leftnewsex.com
 .skillfuldrop.com
 .skimresources.com
 .skroutza.skroutz.gr
@@ -10956,6 +10961,7 @@ tracing-http.megamarket.tech
 .umommy.online
 .umphek.com
 .unalaskamiaskitewormproof.monster
+.unblockia.com
 .uncn.jp
 .unddeliv.com
 .unicume.com
@@ -11774,3 +11780,4 @@ xapi.ozonru.me
 .zz.bdstatic.com
 .zzhengre.com
 .zzlocalsquared.com
+.zzyqkeniw.com

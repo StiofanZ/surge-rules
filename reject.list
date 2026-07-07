@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-06T20:19:24+00:00
+# Generated: 2026-07-07T20:19:35+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12382, local=1, total(deduped)=11750, excluded=29
+# Counts: upstream=12389, local=1, total(deduped)=11757, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2029,6 +2029,7 @@ DOMAIN-SUFFIX,ax.amnezia.org
 DOMAIN-SUFFIX,ax.xrea.com
 DOMAIN-SUFFIX,axesslove.mixh.jp
 DOMAIN-SUFFIX,axf8.net
+DOMAIN-SUFFIX,axmaxhsa.com
 DOMAIN-SUFFIX,axon.ai
 DOMAIN-SUFFIX,az708531.vo.msecnd.net
 DOMAIN-SUFFIX,aznude.workers.dev
@@ -4116,6 +4117,7 @@ DOMAIN-SUFFIX,ems.youku.com
 DOMAIN-SUFFIX,emxdgt.com
 DOMAIN-SUFFIX,en-collect.trendyol.com
 DOMAIN-SUFFIX,enecto.com
+DOMAIN-SUFFIX,enfacesplaineddeglory.qpon
 DOMAIN-SUFFIX,engagedhits.com
 DOMAIN-SUFFIX,engagefront.theweathernetwork.com
 DOMAIN-SUFFIX,engagelab.cc
@@ -6423,6 +6425,7 @@ DOMAIN-SUFFIX,manage.com
 DOMAIN-SUFFIX,managedweb.net
 DOMAIN-SUFFIX,manalyticshub.com
 DOMAIN-SUFFIX,maniteka.com
+DOMAIN-SUFFIX,mantis-awx.com
 DOMAIN-SUFFIX,map-s.online
 DOMAIN-SUFFIX,maper.info
 DOMAIN-SUFFIX,maphuahin.com
@@ -7294,6 +7297,7 @@ DOMAIN-SUFFIX,omguk.com
 DOMAIN-SUFFIX,omine.org
 DOMAIN-SUFFIX,omni-ads.omni.news
 DOMAIN-SUFFIX,omniconvert.com
+DOMAIN-SUFFIX,omnimove.tourradar.com
 DOMAIN-SUFFIX,omnitag.omniscientai.com
 DOMAIN-SUFFIX,omtrdc.net
 DOMAIN-SUFFIX,on-line.lv
@@ -8936,6 +8940,7 @@ DOMAIN-SUFFIX,sjsmartcontent.org
 DOMAIN-SUFFIX,sjv.io
 DOMAIN-SUFFIX,skadnetwork.singular.net
 DOMAIN-SUFFIX,skadsdk.appsflyer.com
+DOMAIN-SUFFIX,ski.leftnewsex.com
 DOMAIN-SUFFIX,skillfuldrop.com
 DOMAIN-SUFFIX,skimresources.com
 DOMAIN-SUFFIX,skroutza.skroutz.gr
@@ -10958,6 +10963,7 @@ DOMAIN-SUFFIX,umini.shujupie.com
 DOMAIN-SUFFIX,umommy.online
 DOMAIN-SUFFIX,umphek.com
 DOMAIN-SUFFIX,unalaskamiaskitewormproof.monster
+DOMAIN-SUFFIX,unblockia.com
 DOMAIN-SUFFIX,uncn.jp
 DOMAIN-SUFFIX,unddeliv.com
 DOMAIN-SUFFIX,unicume.com
@@ -11776,3 +11782,4 @@ DOMAIN-SUFFIX,zxphiz.tech
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzhengre.com
 DOMAIN-SUFFIX,zzlocalsquared.com
+DOMAIN-SUFFIX,zzyqkeniw.com
