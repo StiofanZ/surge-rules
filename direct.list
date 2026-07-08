@@ -1,6 +1,6 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-07T20:19:37+00:00
+# Generated: 2026-07-08T20:00:07+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=112332, local=2, total(deduped)=112162, excluded=33
+# Counts: upstream=112334, local=2, total(deduped)=112164, excluded=33
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -91447,6 +91447,7 @@ DOMAIN-SUFFIX,twtstudio.com
 DOMAIN-SUFFIX,twty.vip
 DOMAIN-SUFFIX,twwtn.com
 DOMAIN-SUFFIX,twyuxin.com
+DOMAIN-SUFFIX,twyxh.com
 DOMAIN-SUFFIX,twyxi.com
 DOMAIN-SUFFIX,twzilla.com
 DOMAIN-SUFFIX,twzui6.com
@@ -111700,6 +111701,7 @@ DOMAIN-SUFFIX,zwzsh.net
 DOMAIN-SUFFIX,zwzyzx.com
 DOMAIN-SUFFIX,zx-tour.com
 DOMAIN-SUFFIX,zx-xcx.com
+DOMAIN-SUFFIX,zx.com
 DOMAIN-SUFFIX,zx0093.com
 DOMAIN-SUFFIX,zx017.com
 DOMAIN-SUFFIX,zx017.net

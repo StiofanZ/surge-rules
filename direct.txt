@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-07T20:19:37+00:00
+# Generated: 2026-07-08T20:00:07+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=112332, local=2, total(deduped)=112162, excluded=33
+# Counts: upstream=112334, local=2, total(deduped)=112164, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -91445,6 +91445,7 @@ tp.louisvuitton.com
 .twty.vip
 .twwtn.com
 .twyuxin.com
+.twyxh.com
 .twyxi.com
 .twzilla.com
 .twzui6.com
@@ -111698,6 +111699,7 @@ xtratime.qcomgeo2.com
 .zwzyzx.com
 .zx-tour.com
 .zx-xcx.com
+.zx.com
 .zx0093.com
 .zx017.com
 .zx017.net

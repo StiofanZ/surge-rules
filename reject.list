@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-07T20:19:35+00:00
+# Generated: 2026-07-08T20:00:05+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12389, local=1, total(deduped)=11757, excluded=29
+# Counts: upstream=12401, local=1, total(deduped)=11768, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -157,6 +157,7 @@ DOMAIN-SUFFIX,a.gripi.online
 DOMAIN-SUFFIX,a.hentaiocean.com
 DOMAIN-SUFFIX,a.hit360.tech
 DOMAIN-SUFFIX,a.hstrck.com
+DOMAIN-SUFFIX,a.ipinfo.io
 DOMAIN-SUFFIX,a.kupibilet.ru
 DOMAIN-SUFFIX,a.labadena.com
 DOMAIN-SUFFIX,a.letsjerk.to
@@ -1363,6 +1364,7 @@ DOMAIN-SUFFIX,analytics.emforce.co.kr
 DOMAIN-SUFFIX,analytics.emol.com
 DOMAIN-SUFFIX,analytics.enjoymobiserver.com
 DOMAIN-SUFFIX,analytics.everythingstream.com
+DOMAIN-SUFFIX,analytics.evolushost.com
 DOMAIN-SUFFIX,analytics.facebook.com
 DOMAIN-SUFFIX,analytics.faceitanalytics.com
 DOMAIN-SUFFIX,analytics.fap.bar
@@ -1594,6 +1596,7 @@ DOMAIN-SUFFIX,analytics.vg
 DOMAIN-SUFFIX,analytics.vinovo.si
 DOMAIN-SUFFIX,analytics.viture.dev
 DOMAIN-SUFFIX,analytics.vixcloud.co
+DOMAIN-SUFFIX,analytics.vk.asahi.co.jp
 DOMAIN-SUFFIX,analytics.vk.com
 DOMAIN,analytics.vk.ru
 DOMAIN-SUFFIX,analytics.vodgc.net
@@ -1765,6 +1768,7 @@ DOMAIN-SUFFIX,api.statsigcdn.com
 DOMAIN-SUFFIX,api.sve.cc
 DOMAIN-SUFFIX,api.taboola.sve.cc
 DOMAIN-SUFFIX,api.taggrs.io
+DOMAIN-SUFFIX,api.tblcontent.com
 DOMAIN-SUFFIX,api.telemetry.watchabc.go.com
 DOMAIN-SUFFIX,api.tomi.ai
 DOMAIN-SUFFIX,api.trueaudience.io
@@ -3914,6 +3918,7 @@ DOMAIN-SUFFIX,drbbzzs.xyz
 DOMAIN-SUFFIX,dre81lzpy0s7q.cloudfront.net
 DOMAIN-SUFFIX,dreamcounter.de
 DOMAIN-SUFFIX,drfdisvc.walmart.com
+DOMAIN-SUFFIX,driftsbabbleswandery.cfd
 DOMAIN-SUFFIX,driveniq.com
 DOMAIN-SUFFIX,drmcmm.baidu.com
 DOMAIN-SUFFIX,dropfastpath.click
@@ -3992,6 +3997,7 @@ DOMAIN-SUFFIX,e-stat.huya.com
 DOMAIN-SUFFIX,e-volution.ai
 DOMAIN-SUFFIX,e-webtrack.net
 DOMAIN-SUFFIX,e.apsalar.com
+DOMAIN-SUFFIX,e.bad.news
 DOMAIN-SUFFIX,e.channelexco.com
 DOMAIN-SUFFIX,e.fomo.com
 DOMAIN-SUFFIX,e.kuaishou.cn
@@ -4558,6 +4564,7 @@ DOMAIN-SUFFIX,flurry.com
 DOMAIN-SUFFIX,flurryad.com
 DOMAIN-SUFFIX,flux-cdn.com
 DOMAIN-SUFFIX,flux-g.com
+DOMAIN-SUFFIX,fluxivetsknummus.cyou
 DOMAIN-SUFFIX,fluxtech.ai
 DOMAIN-SUFFIX,flx1.com
 DOMAIN-SUFFIX,flxpxl.com
@@ -5449,6 +5456,7 @@ DOMAIN-SUFFIX,ingress.linktr.ee
 DOMAIN-SUFFIX,inistrack.net
 DOMAIN-SUFFIX,init.blackcrow.ai
 DOMAIN-SUFFIX,injectshrslinkblog.com
+DOMAIN-SUFFIX,injusticebakery.com
 DOMAIN-SUFFIX,inlog01.hket.com
 DOMAIN-SUFFIX,inmense.site
 DOMAIN-SUFFIX,inmobi.cn
@@ -6933,6 +6941,7 @@ DOMAIN-SUFFIX,mqs.ioam.de
 DOMAIN-SUFFIX,mr-in.com
 DOMAIN-SUFFIX,mr-rank.de
 DOMAIN-SUFFIX,mr.homedepot.com
+DOMAIN-SUFFIX,mradx.net
 DOMAIN-SUFFIX,mrgr.me
 DOMAIN-SUFFIX,ms-report.uu.cc
 DOMAIN-SUFFIX,ms.cmcm.com
@@ -8136,6 +8145,7 @@ DOMAIN-SUFFIX,qwapi.com
 DOMAIN-SUFFIX,qwfh39851jtfvkurf21hf.com
 DOMAIN-SUFFIX,qwooxrmixmzi.com
 DOMAIN-SUFFIX,qxaz2xcw.com
+DOMAIN-SUFFIX,qxif497o6q61e2nep.cyou
 DOMAIN-SUFFIX,qxwoiv.com
 DOMAIN-SUFFIX,qzlog.com
 DOMAIN-SUFFIX,r-ad.linkshare.jp
@@ -8154,7 +8164,6 @@ DOMAIN-SUFFIX,r.popin.cc
 DOMAIN-SUFFIX,r.rbc.ru
 DOMAIN-SUFFIX,r.sib2.gardrops.com
 DOMAIN-SUFFIX,r0.mail.ru
-DOMAIN-SUFFIX,r0.mradx.net
 DOMAIN-SUFFIX,r066.dailytribune.com
 DOMAIN,r1.mail.ru
 DOMAIN-SUFFIX,r255.wmtw.com
@@ -8561,6 +8570,7 @@ DOMAIN-SUFFIX,sageanalyst.net
 DOMAIN-SUFFIX,sahqtibw.com
 DOMAIN-SUFFIX,sail-horizon.com
 DOMAIN-SUFFIX,sailthru.com
+DOMAIN-SUFFIX,sainwertapr.com
 DOMAIN-SUFFIX,sajari.com
 DOMAIN-SUFFIX,sakura.goguardian.com
 DOMAIN-SUFFIX,salecycle.com
@@ -11073,6 +11083,7 @@ DOMAIN-SUFFIX,uydeqs9.xyz
 DOMAIN-SUFFIX,uz-analysis.akamaized.net
 DOMAIN-SUFFIX,uzrating.com
 DOMAIN-SUFFIX,v-collector.dp.aws.charter.com
+DOMAIN-SUFFIX,v.ipinfo.io
 DOMAIN-SUFFIX,v.kidoz.net
 DOMAIN-SUFFIX,v.oui.sncf
 DOMAIN-SUFFIX,v.shopify.com
