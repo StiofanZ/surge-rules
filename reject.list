@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-08T20:00:05+00:00
+# Generated: 2026-07-09T20:13:17+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12401, local=1, total(deduped)=11768, excluded=29
+# Counts: upstream=12409, local=1, total(deduped)=11776, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1165,6 +1165,7 @@ DOMAIN-SUFFIX,amp-error-reporting.appspot.com
 DOMAIN-SUFFIX,amplifypixel.outbrain.com
 DOMAIN-SUFFIX,amplilab.thepure.app
 DOMAIN-SUFFIX,amplitude-experiment.bandlab.com
+DOMAIN-SUFFIX,amplitude.anytype.io
 DOMAIN-SUFFIX,amplitude.bandlab.com
 DOMAIN-SUFFIX,amplitude.chess.com
 DOMAIN-SUFFIX,amplitude.life360.com
@@ -1485,6 +1486,7 @@ DOMAIN-SUFFIX,analytics.pangle-ads.com
 DOMAIN-SUFFIX,analytics.partcommunity.com
 DOMAIN-SUFFIX,analytics.peraichi.com
 DOMAIN-SUFFIX,analytics.pesktop.com
+DOMAIN-SUFFIX,analytics.pextra.cloud
 DOMAIN-SUFFIX,analytics.pgncs.notion.so
 DOMAIN-SUFFIX,analytics.picsart.com
 DOMAIN-SUFFIX,analytics.pingaja.com
@@ -5673,6 +5675,7 @@ DOMAIN-SUFFIX,jirafe.com
 DOMAIN-SUFFIX,jitsu.ixbt.com
 DOMAIN-SUFFIX,jitsu.ixbt.games
 DOMAIN-SUFFIX,jitsu.ixbt.site
+DOMAIN-SUFFIX,jitsu.www1.ru
 DOMAIN-SUFFIX,jixie.io
 DOMAIN-SUFFIX,jjpp.lmtjapi.com
 DOMAIN-SUFFIX,jl3.yjaxa.top
@@ -7551,6 +7554,7 @@ DOMAIN-SUFFIX,pbl3citto.com
 DOMAIN-SUFFIX,pblog-vmap.getpublica.com
 DOMAIN-SUFFIX,pbmp.ali213.net
 DOMAIN-SUFFIX,pbox.photobox.de
+DOMAIN-SUFFIX,pbs.inmobi.com
 DOMAIN-SUFFIX,pbstck.com
 DOMAIN-SUFFIX,pc-agency24.de
 DOMAIN-SUFFIX,pc-mon.zijieapi.com
@@ -8486,6 +8490,7 @@ DOMAIN-SUFFIX,rugfrfji.win
 DOMAIN-SUFFIX,rum-ingress-coralogix.com
 DOMAIN-SUFFIX,rum-metrics.bunny.net
 DOMAIN-SUFFIX,rum.api.intuit.com
+DOMAIN-SUFFIX,rum.catchmetrics.io
 DOMAIN-SUFFIX,rum.conde.io
 DOMAIN-SUFFIX,rum.condenastdigital.com
 DOMAIN-SUFFIX,rum.corewebvitals.io
@@ -10037,12 +10042,14 @@ DOMAIN-SUFFIX,telemetrics.klaviyo.com
 DOMAIN-SUFFIX,telemetry-in.battle.net
 DOMAIN-SUFFIX,telemetry.adobe.io
 DOMAIN-SUFFIX,telemetry.adsninja.ca
+DOMAIN-SUFFIX,telemetry.anytype.io
 DOMAIN-SUFFIX,telemetry.api.swiftkey.com
 DOMAIN-SUFFIX,telemetry.api.wmcdp.io
 DOMAIN-SUFFIX,telemetry.art19.com
 DOMAIN-SUFFIX,telemetry.battle.net
 DOMAIN-SUFFIX,telemetry.canva.com
 DOMAIN-SUFFIX,telemetry.codefusion.technology
+DOMAIN-SUFFIX,telemetry.data.nvidia.com
 DOMAIN-SUFFIX,telemetry.doxo.com
 DOMAIN-SUFFIX,telemetry.dzen.ru
 DOMAIN-SUFFIX,telemetry.eyeo.com
@@ -11253,6 +11260,7 @@ DOMAIN-SUFFIX,vuukle.net
 DOMAIN-SUFFIX,vvbox.cz
 DOMAIN-SUFFIX,vxcholycr.com
 DOMAIN-SUFFIX,vyg.mobi
+DOMAIN-SUFFIX,w.inmobi.com
 DOMAIN-SUFFIX,w.love4porn.com
 DOMAIN-SUFFIX,w.zenback.jp
 DOMAIN-SUFFIX,w110.kcra.com
