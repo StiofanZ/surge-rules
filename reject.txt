@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-10T19:55:39+00:00
+# Generated: 2026-07-11T19:36:54+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12410, local=1, total(deduped)=11778, excluded=29
+# Counts: upstream=12416, local=1, total(deduped)=11782, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2249,6 +2249,7 @@ beginners-adv.ozon.ru
 .bidforclicks.com
 .bidio.pl
 .bidjora.com
+.bidmachine.io
 .bidmyadz.com
 .bidmyqps.xyz
 .bidr.io
@@ -3810,7 +3811,6 @@ crashlyticsreports-pa.googleapis.com
 .discover-path.com
 .discovery-script.newspic.kr
 .discovery.newspic.kr
-disney.my.sentry.io
 .dispatcher.upmc.uc.cn
 .displayio.cloud
 .displaymarketplace.com
@@ -4807,6 +4807,7 @@ error-tracking.megamarket.tech
 .getmackeepersoftpro.xyz
 .getmetrical.com
 .getrockerbox.com
+.getsentry.com
 .getsmartcontent.com
 .getsmartlook.com
 .getstat.net
@@ -7241,7 +7242,6 @@ new-adv.ozon.ru
 .o333o.com
 .o365diagtelemetry.trafficmanager.net
 .o398.trumbulltimes.com
-o4504926511693824.ingest.sentry.io
 .oadz.com
 .oaprodlogging.yo-digital.com
 .ob.cheqzone.com
@@ -8748,13 +8748,16 @@ rtlog5-applog.fqnovel.com
 .sentifi.com
 .sentinelbi.com
 .sentinelpro.com
+.sentry-cdn.com
 sentry-ng.g.smailru.net
 .sentry.d.mi.com
 .sentry.d.xiaomi.net
+.sentry.dev
 sentry.dev-my.com
 sentry.dev-my.games
 .sentry.eks.hoyoverse.com
 sentry.hetzner.company
+.sentry.io
 sentry.iptv.rt.ru
 sentry.kontur.host
 sentry.mindbox.ru
@@ -11222,6 +11225,7 @@ visor.sberbank.ru
 .visualwebsiteoptimizer.com
 .viva.api.xiaoying.co
 .vivistats.com
+.vivotzrigtry.com
 .vizisense.net
 .vizu.com
 .vizury.com
