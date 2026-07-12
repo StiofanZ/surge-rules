@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-11T19:36:33+00:00
+# Generated: 2026-07-12T19:35:25+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31192, local=27, total(deduped)=26214, excluded=3
+# Counts: upstream=31208, local=27, total(deduped)=26230, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -3407,6 +3407,9 @@ beck-online.beck.de
 .bestbuytradein.com
 .bestbuyus.com
 .bestcamsites.net
+.bestchange.com
+.bestchange.net
+.bestchange.ru
 .bestclouddrive.com
 .bestdori.com
 .besterpornos.com
@@ -5969,6 +5972,7 @@ cisco.evergage.com
 crl.versign.net
 .crmdynint-gcc.com
 .crmdynint.com
+.crocoblock.com
 .crocotube.com
 .cromite.org
 .crossborderexpansion.com
@@ -6337,6 +6341,7 @@ datarouter.apps.netherrealm.com
 .delcamtv.com
 .delcamuniversity.com
 .delcamusa.com
+.delets.online
 .delicious.com.au
 .dell
 .dell.ac
@@ -9765,6 +9770,7 @@ forwarder.workos.com
 .getporn.tv
 .getprintersupports.com
 .getscorecash.com
+.getsentry.com
 .getsession.org
 .getsexgames.com
 .getsynapse.io
@@ -10663,6 +10669,8 @@ gog-cdn-lumen.secure2.footprint.net
 .hao62.xyz
 .haori888.com
 .haplorrhini.com
+.happ.info
+.happ.su
 .happymeal.co.nz
 .happymeal.com
 .happymeal.com.au
@@ -15650,6 +15658,7 @@ medone-education.thieme.com
 .motiongraphicsandmore.com
 .motionpictureser.com
 .moto.com
+.motocms.com
 .motolia.com
 .motopress.com
 .motorola.ca
@@ -17230,6 +17239,7 @@ ntppool2.time.nl
 .onekey.so
 .onekeycn.com
 .oneme.ru
+.onemoment.cc
 .onemozilla.org
 .onenote.com
 .onenote.net
@@ -17621,6 +17631,7 @@ ood.opsource.net
 .paxlicense.org
 .paydiant.com
 .payecom.ru
+.payget.pro
 .paygonline.com
 .payhulu.com
 .paylike.com
@@ -18118,6 +18129,7 @@ ood.opsource.net
 .plastics-cadcam.com
 .platiecom.ru
 .platinumlinks.org
+.platov.co
 .play-asia.com
 .play-bmm.shop
 .play-bmmer.buzz
@@ -19116,6 +19128,8 @@ public-us-pingsx.api.clonoth.com
 .rakutengiftcards.ca
 .rakuya.com.tw
 .ramcity.com.au
+.ramon.cash
+.ramon.money
 .randyblue.com
 .rapefilms.net
 .rapetube.me
@@ -20087,6 +20101,7 @@ sberpro.vedomosti.ru
 .sensualmothers.com
 .sensueel.net
 .sentry-cdn.com
+.sentry.dev
 .sentry.io
 .senzuritv.net
 .seo-dash.net
@@ -21842,6 +21857,7 @@ supercell.helpshift.com
 .tellmewhygame.com
 .temetube.xyz
 .temp-mail.org
+.templatemonster.com
 .temu.com
 .tenbin.ai
 .tenbyfotolia.com
