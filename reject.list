@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-12T19:36:33+00:00
+# Generated: 2026-07-13T19:54:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12419, local=1, total(deduped)=11785, excluded=29
+# Counts: upstream=12425, local=1, total(deduped)=11791, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,1200555.com
 DOMAIN-SUFFIX,123compteur.com
 DOMAIN-SUFFIX,123count.com
 DOMAIN-SUFFIX,13p76nnir.de
+DOMAIN-SUFFIX,1414.hexa.su
 DOMAIN-SUFFIX,152media.cloud
 DOMAIN-SUFFIX,17324756.cfd
 DOMAIN-SUFFIX,1800cnt.com
@@ -1101,6 +1102,7 @@ DOMAIN-SUFFIX,aki-gb-sdklog.kurogames.net
 DOMAIN-SUFFIX,akn.analytics.autodesk.com
 DOMAIN-SUFFIX,akstat.com
 DOMAIN-SUFFIX,akstat.io
+DOMAIN-SUFFIX,akutagawa.consumer.gopuff.com
 DOMAIN-SUFFIX,ala.durasite.net
 DOMAIN-SUFFIX,alb.reddit.com
 DOMAIN-SUFFIX,albss.com
@@ -1401,6 +1403,7 @@ DOMAIN-SUFFIX,analytics.htmedia.in
 DOMAIN-SUFFIX,analytics.ifanrusercontent.com
 DOMAIN-SUFFIX,analytics.ifood.tv
 DOMAIN-SUFFIX,analytics.ikyu.com
+DOMAIN-SUFFIX,analytics.infraloods.nl
 DOMAIN-SUFFIX,analytics.innologica.com
 DOMAIN-SUFFIX,analytics.inquirernetwork.net
 DOMAIN-SUFFIX,analytics.iraiser.eu
@@ -2453,6 +2456,7 @@ DOMAIN-SUFFIX,c.bazo.io
 DOMAIN-SUFFIX,c.bazu.cc
 DOMAIN-SUFFIX,c.bigmir.net
 DOMAIN-SUFFIX,c.blockdetector.org
+DOMAIN-SUFFIX,c.bubutv.top
 DOMAIN-SUFFIX,c.down.tube
 DOMAIN-SUFFIX,c.dpgmedia.net
 DOMAIN-SUFFIX,c.etoolads.cn
@@ -2567,7 +2571,6 @@ DOMAIN-SUFFIX,cca-lite.coinbase.com
 DOMAIN-SUFFIX,cccpmo.com
 DOMAIN-SUFFIX,ccgateway.net
 DOMAIN-SUFFIX,cchome-stage.adobe.io
-DOMAIN-SUFFIX,cchome.adobe.io
 DOMAIN-SUFFIX,cda7k-ddok.com
 DOMAIN-SUFFIX,cdclub.net
 DOMAIN-SUFFIX,cdend.com
@@ -2657,6 +2660,7 @@ DOMAIN-SUFFIX,cdn.sports-streams-online.club
 DOMAIN-SUFFIX,cdn.stat-track.com
 DOMAIN-SUFFIX,cdn.teleportapi.com
 DOMAIN-SUFFIX,cdn.tercept.com
+DOMAIN-SUFFIX,cdn.testdomain12345xyz.com
 DOMAIN-SUFFIX,cdn.topmind.io
 DOMAIN-SUFFIX,cdn.track.olx.com.br
 DOMAIN-SUFFIX,cdn.trackclicks.info
@@ -4846,6 +4850,7 @@ DOMAIN-SUFFIX,glamipixel.com
 DOMAIN-SUFFIX,glance.inmobi.com
 DOMAIN-SUFFIX,glassboxdigital.io
 DOMAIN-SUFFIX,glbtracker.com
+DOMAIN-SUFFIX,glidersreplume.qpon
 DOMAIN-SUFFIX,global-receiver-ta.thinkingdata.cn
 DOMAIN-SUFFIX,global-report.ml.youngjoygame.com
 DOMAIN-SUFFIX,global-sis.engagelab.com
@@ -5131,6 +5136,7 @@ DOMAIN-SUFFIX,henwilkson.com
 DOMAIN-SUFFIX,hepsiads-gw.hepsiburada.com
 DOMAIN-SUFFIX,hermes.allo-media.net
 DOMAIN-SUFFIX,hesads.akamaized.net
+DOMAIN-SUFFIX,hestherchiffer.com
 DOMAIN-SUFFIX,hetcash.com
 DOMAIN-SUFFIX,heukmsactivator.com
 DOMAIN-SUFFIX,hexagon-analytics.com

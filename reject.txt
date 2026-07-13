@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-12T19:36:33+00:00
+# Generated: 2026-07-13T19:54:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12419, local=1, total(deduped)=11785, excluded=29
+# Counts: upstream=12425, local=1, total(deduped)=11791, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -37,6 +37,7 @@
 .123compteur.com
 .123count.com
 .13p76nnir.de
+.1414.hexa.su
 .152media.cloud
 .17324756.cfd
 .1800cnt.com
@@ -1099,6 +1100,7 @@ agency-adv.ozon.ru
 .akn.analytics.autodesk.com
 .akstat.com
 .akstat.io
+.akutagawa.consumer.gopuff.com
 .ala.durasite.net
 .alb.reddit.com
 .albss.com
@@ -1399,6 +1401,7 @@ analytics-stage.wildberries.ru
 .analytics.ifanrusercontent.com
 .analytics.ifood.tv
 .analytics.ikyu.com
+.analytics.infraloods.nl
 .analytics.innologica.com
 .analytics.inquirernetwork.net
 .analytics.iraiser.eu
@@ -2451,6 +2454,7 @@ bs.mail.ru
 .c.bazu.cc
 .c.bigmir.net
 .c.blockdetector.org
+.c.bubutv.top
 .c.down.tube
 .c.dpgmedia.net
 .c.etoolads.cn
@@ -2565,7 +2569,6 @@ bs.mail.ru
 .cccpmo.com
 .ccgateway.net
 .cchome-stage.adobe.io
-.cchome.adobe.io
 .cda7k-ddok.com
 .cdclub.net
 .cdend.com
@@ -2655,6 +2658,7 @@ bs.mail.ru
 .cdn.stat-track.com
 .cdn.teleportapi.com
 .cdn.tercept.com
+.cdn.testdomain12345xyz.com
 .cdn.topmind.io
 .cdn.track.olx.com.br
 .cdn.trackclicks.info
@@ -4844,6 +4848,7 @@ error-tracking.megamarket.tech
 .glance.inmobi.com
 .glassboxdigital.io
 .glbtracker.com
+.glidersreplume.qpon
 .global-receiver-ta.thinkingdata.cn
 .global-report.ml.youngjoygame.com
 .global-sis.engagelab.com
@@ -5129,6 +5134,7 @@ google-analytics-suite.ozon.ru
 .hepsiads-gw.hepsiburada.com
 .hermes.allo-media.net
 .hesads.akamaized.net
+.hestherchiffer.com
 .hetcash.com
 .heukmsactivator.com
 .hexagon-analytics.com
