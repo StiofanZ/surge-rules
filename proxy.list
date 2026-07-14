@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-13T19:54:14+00:00
+# Generated: 2026-07-14T19:48:53+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31209, local=27, total(deduped)=26231, excluded=3, rule_set_only=12
+# Counts: upstream=31203, local=27, total(deduped)=26225, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -1317,7 +1317,6 @@ DOMAIN-SUFFIX,alefbank.com
 DOMAIN-SUFFIX,alexa.com
 DOMAIN-SUFFIX,alexanderstreet.com
 DOMAIN-SUFFIX,alfa.me
-DOMAIN-SUFFIX,alfabank.oavdo.amc
 DOMAIN-SUFFIX,alfabank.ru
 DOMAIN-SUFFIX,alfabank.st
 DOMAIN-SUFFIX,alfadirect.ru
@@ -5224,6 +5223,7 @@ DOMAIN-SUFFIX,chat.lmsys.org
 DOMAIN-SUFFIX,chatango.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,chatgptvideo.xyz
 DOMAIN-SUFFIX,chatgptvideob.buzz
 DOMAIN-SUFFIX,chatpdf.com
@@ -10103,7 +10103,6 @@ DOMAIN-SUFFIX,gongyichuangyi.net
 DOMAIN-SUFFIX,gonike.com
 DOMAIN-SUFFIX,gonzo-movies.com
 DOMAIN-SUFFIX,gonzo.com
-DOMAIN-SUFFIX,goo
 DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,goo.ne.jp
 DOMAIN-SUFFIX,gooblox.com
@@ -12347,7 +12346,6 @@ DOMAIN-SUFFIX,intagram.com
 DOMAIN-SUFFIX,intagrm.com
 DOMAIN-SUFFIX,intc.com
 DOMAIN-SUFFIX,integral7.com
-DOMAIN-SUFFIX,intel
 DOMAIN-SUFFIX,intel-research.net
 DOMAIN-SUFFIX,intel-university-collaboration.net
 DOMAIN-SUFFIX,intel.ac
@@ -13522,6 +13520,7 @@ DOMAIN-SUFFIX,khatrimaza.org
 DOMAIN-SUFFIX,khotruyentranhx.com
 DOMAIN-SUFFIX,kichiku-doujinko.com
 DOMAIN-SUFFIX,kichikuou.com
+DOMAIN-SUFFIX,kick.com
 DOMAIN-SUFFIX,kickporn.com
 DOMAIN-SUFFIX,kickshatchannel.com
 DOMAIN-SUFFIX,kicksnike1.com
@@ -13648,7 +13647,6 @@ DOMAIN-SUFFIX,kompozer.net
 DOMAIN-SUFFIX,konachan.com
 DOMAIN-SUFFIX,konachan.net
 DOMAIN-SUFFIX,konachan.wjcodes.com
-DOMAIN-SUFFIX,konami
 DOMAIN-SUFFIX,konami-igaming.online
 DOMAIN-SUFFIX,konami.co.jp
 DOMAIN-SUFFIX,konami.com
@@ -18679,10 +18677,6 @@ DOMAIN-SUFFIX,ppy.sh
 DOMAIN-SUFFIX,practicalbusinessskills.com
 DOMAIN-SUFFIX,practicalmoneyskills.ca
 DOMAIN-SUFFIX,practicalmoneyskills.jp
-DOMAIN,practivate.adobe
-DOMAIN,practivate.adobe.ipp
-DOMAIN,practivate.adobe.newoa
-DOMAIN,practivate.adobe.ntp
 DOMAIN-SUFFIX,prastitutki.ru
 DOMAIN-SUFFIX,prayforchina.net
 DOMAIN-SUFFIX,prcleader.org
