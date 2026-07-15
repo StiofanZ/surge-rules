@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-14T19:49:49+00:00
+# Generated: 2026-07-15T19:43:12+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12432, local=1, total(deduped)=11798, excluded=29
+# Counts: upstream=12437, local=1, total(deduped)=11803, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -4110,6 +4110,7 @@ crashlyticsreports-pa.googleapis.com
 .elitebidder.com
 .elitics.com
 .elmasistatistik.com.tr
+.elogecoptersabacot.cfd
 .eltex.co.jp
 .eltrafiko.com
 .elxont.com
@@ -4406,6 +4407,7 @@ error-tracking.megamarket.tech
 .eviltracker.net
 .evisitanalyst.com
 .evnt.iol.it
+.evolutionadv.it
 .evorra.net
 .evs.data.ciceksepeti.com
 .evs.segment.complex.com
@@ -4448,6 +4450,7 @@ error-tracking.megamarket.tech
 .ext.movixhub.com
 .external-api.impression-neo.naver.com
 .external-promo-metrics.yandex.net
+.external-tag.mysquadbeyond.com
 .extlog.snssdk.com
 .extole.com
 .extole.io
@@ -5125,6 +5128,7 @@ google-analytics-suite.ozon.ru
 .heatmap-events-collector.instapage.com
 .heatmap.emma.tools
 .heatmap.it
+.heatmap.support-inc.co.jp
 .heauty-viesected.com
 .hechaocheng.cn
 .heidy.makeup
@@ -11444,6 +11448,7 @@ web-analytics.wildberries.ru
 .westfile-dl.click
 .wh.giftd.tech
 .whale.camera
+.whatdidheseehe.com
 .whatismyip.win
 .wheelroot.com
 .wheelwheel.space

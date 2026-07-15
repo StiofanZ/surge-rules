@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-14T19:48:53+00:00
+# Generated: 2026-07-15T19:42:27+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31203, local=27, total(deduped)=26225, excluded=3
+# Counts: upstream=31238, local=27, total(deduped)=26241, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1025,6 +1025,7 @@ adobeereg.com
 .afriboyz.com
 .aga-expo.com
 .agag.tw
+agb9r0ad.qllfkl.com
 .agdbank.com
 .age.tv
 .agedm.app
@@ -4307,6 +4308,7 @@ blizzard.nefficient.co.kr
 .bnn.co
 .bnrmetal.com
 .bntrace.com
+.bnxz.net
 .boardreader.com
 .boboporn.com
 .boboporn.net
@@ -4751,6 +4753,7 @@ bybit.ada.support
 .bypasscensorship.org
 .byrut.org
 .byspotify.com
+.bystys.tech
 .bytedapm.com
 .byteoversea.com
 .bytick.com
@@ -10707,6 +10710,7 @@ gog-cdn-lumen.secure2.footprint.net
 .hayday.com
 .haydaygame.com
 .hayya.ae
+hb4bbbbb.pmhcjk.com
 .hbabit.com
 .hbfile.net
 .hbg.com
@@ -13943,7 +13947,14 @@ licdn.cn.cdn20.com
 .lih.kg
 .lihkg.com
 .lihksnap.com
+.like-video.com
 .like.com
+.like.video
+.likee.com
+.likee.video
+.likeeapp.ru
+.likeevideo.com
+.likeevideo.ru
 .likeseiyu.com
 .liketruyen.net
 .liketwice.com
@@ -16182,6 +16193,7 @@ muse.jhu.edu
 .navyreserve.navy.mil
 .naydex.net
 .nbabot.net
+nbbb1bb7.pmhcjk.com
 .nbc.co
 .nbc.com
 .nbcnews.com
@@ -17462,6 +17474,7 @@ ood.opsource.net
 .ow.ly
 .owl.li
 .owltail.com
+.owxd.xyz
 .oxfordaasc.com
 .oxfordartonline.com
 .oxfordbibliographies.com
@@ -18929,6 +18942,7 @@ public-us-pingsx.api.clonoth.com
 .q10.jp
 .q13.com
 .q13fox.com
+q676790b.pmhcjk.com
 .qatarescortsvip.com
 .qattdh.cc
 .qattdh.top
@@ -23110,6 +23124,7 @@ utcnist3.colorado.edu
 .uweb.ru
 .uwpcommunitytoolkit.com
 .uxthemes.com
+.uxzw.club
 .uyghur-j.org
 .uyghuraa.org
 .uyghuramerican.org
@@ -25982,6 +25997,7 @@ yangzhi.app
 .ytimg.com
 .ytn.co.kr
 .yuanming.net
+.yucf.top
 .yuenuge113.xyz
 .yuenuge18.cc
 .yugioh-card.com

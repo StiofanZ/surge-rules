@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-14T19:49:49+00:00
+# Generated: 2026-07-15T19:43:12+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12432, local=1, total(deduped)=11798, excluded=29
+# Counts: upstream=12437, local=1, total(deduped)=11803, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4112,6 +4112,7 @@ DOMAIN-SUFFIX,elite-s001.com
 DOMAIN-SUFFIX,elitebidder.com
 DOMAIN-SUFFIX,elitics.com
 DOMAIN-SUFFIX,elmasistatistik.com.tr
+DOMAIN-SUFFIX,elogecoptersabacot.cfd
 DOMAIN-SUFFIX,eltex.co.jp
 DOMAIN-SUFFIX,eltrafiko.com
 DOMAIN-SUFFIX,elxont.com
@@ -4408,6 +4409,7 @@ DOMAIN-SUFFIX,evergage.com
 DOMAIN-SUFFIX,eviltracker.net
 DOMAIN-SUFFIX,evisitanalyst.com
 DOMAIN-SUFFIX,evnt.iol.it
+DOMAIN-SUFFIX,evolutionadv.it
 DOMAIN-SUFFIX,evorra.net
 DOMAIN-SUFFIX,evs.data.ciceksepeti.com
 DOMAIN-SUFFIX,evs.segment.complex.com
@@ -4450,6 +4452,7 @@ DOMAIN-SUFFIX,ext.host-tracker.com
 DOMAIN-SUFFIX,ext.movixhub.com
 DOMAIN-SUFFIX,external-api.impression-neo.naver.com
 DOMAIN-SUFFIX,external-promo-metrics.yandex.net
+DOMAIN-SUFFIX,external-tag.mysquadbeyond.com
 DOMAIN-SUFFIX,extlog.snssdk.com
 DOMAIN-SUFFIX,extole.com
 DOMAIN-SUFFIX,extole.io
@@ -5127,6 +5130,7 @@ DOMAIN-SUFFIX,heartlessanthemantiquity.com
 DOMAIN-SUFFIX,heatmap-events-collector.instapage.com
 DOMAIN-SUFFIX,heatmap.emma.tools
 DOMAIN-SUFFIX,heatmap.it
+DOMAIN-SUFFIX,heatmap.support-inc.co.jp
 DOMAIN-SUFFIX,heauty-viesected.com
 DOMAIN-SUFFIX,hechaocheng.cn
 DOMAIN-SUFFIX,heidy.makeup
@@ -11446,6 +11450,7 @@ DOMAIN-SUFFIX,west.bidtellect.com
 DOMAIN-SUFFIX,westfile-dl.click
 DOMAIN-SUFFIX,wh.giftd.tech
 DOMAIN-SUFFIX,whale.camera
+DOMAIN-SUFFIX,whatdidheseehe.com
 DOMAIN-SUFFIX,whatismyip.win
 DOMAIN-SUFFIX,wheelroot.com
 DOMAIN-SUFFIX,wheelwheel.space
