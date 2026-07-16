@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-15T19:43:12+00:00
+# Generated: 2026-07-16T19:37:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12437, local=1, total(deduped)=11803, excluded=29
+# Counts: upstream=12443, local=1, total(deduped)=11808, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4587,6 +4587,7 @@ DOMAIN-SUFFIX,fm-analytics-api.pocketfm.com
 DOMAIN-SUFFIX,fm-analytics.cloudbees.io
 DOMAIN-SUFFIX,fndrsp.net
 DOMAIN-SUFFIX,fnl.quizizz.com
+DOMAIN-SUFFIX,fnozzitywh.com
 DOMAIN-SUFFIX,fnyfeds.com
 DOMAIN-SUFFIX,focas.jp
 DOMAIN-SUFFIX,foisonad.com
@@ -5677,6 +5678,7 @@ DOMAIN-SUFFIX,jcgdhqusv.com
 DOMAIN-SUFFIX,jcpclick.com
 DOMAIN-SUFFIX,jdlog.uu.cc
 DOMAIN-SUFFIX,jdoqocy.com
+DOMAIN-SUFFIX,jdvzwpsfnjphs.com
 DOMAIN-SUFFIX,jfvnerukf.it.com
 DOMAIN-SUFFIX,jg.wensixuetang.com
 DOMAIN-SUFFIX,jg1668.com
@@ -5855,6 +5857,7 @@ DOMAIN-SUFFIX,l.niiblo.jp
 DOMAIN-SUFFIX,l.ooyala.com
 DOMAIN-SUFFIX,l.osakazine.net
 DOMAIN-SUFFIX,l.ouest-france.fr
+DOMAIN-SUFFIX,l.ovhcloud.com
 DOMAIN-SUFFIX,l.player.ooyala.com
 DOMAIN-SUFFIX,l.premium.naver.com
 DOMAIN-SUFFIX,l.sagafan.jp
@@ -6999,6 +7002,7 @@ DOMAIN-SUFFIX,mt-api.itpub.cloud
 DOMAIN-SUFFIX,mt.9gag.com
 DOMAIN-SUFFIX,mt.gigazine.net
 DOMAIN-SUFFIX,mt.ssai.peacocktv.com
+DOMAIN-SUFFIX,mtag.markopolo.ai
 DOMAIN-SUFFIX,mtag.mman.kr
 DOMAIN-SUFFIX,mtburn.jp
 DOMAIN-SUFFIX,mtg.macpaw.com
@@ -11134,6 +11138,7 @@ DOMAIN-SUFFIX,v6-adashx.ut.taobao.com
 DOMAIN-SUFFIX,v6-adashx.ut.youku.com
 DOMAIN-SUFFIX,v812.lakecountystar.com
 DOMAIN-SUFFIX,v8b9c0x1z2.sai7348.xyz
+DOMAIN-SUFFIX,vahqmyowjp.com
 DOMAIN-SUFFIX,valencia-beacons.xumo.com
 DOMAIN-SUFFIX,validate.appsflyer.com
 DOMAIN-SUFFIX,valis-cpx.jp

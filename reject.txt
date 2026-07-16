@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-15T19:43:12+00:00
+# Generated: 2026-07-16T19:37:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12437, local=1, total(deduped)=11803, excluded=29
+# Counts: upstream=12443, local=1, total(deduped)=11808, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -4585,6 +4585,7 @@ error-tracking.megamarket.tech
 .fm-analytics.cloudbees.io
 .fndrsp.net
 .fnl.quizizz.com
+.fnozzitywh.com
 .fnyfeds.com
 .focas.jp
 .foisonad.com
@@ -5675,6 +5676,7 @@ incoming-telemetry.thunderbird.net
 .jcpclick.com
 .jdlog.uu.cc
 .jdoqocy.com
+.jdvzwpsfnjphs.com
 .jfvnerukf.it.com
 .jg.wensixuetang.com
 .jg1668.com
@@ -5853,6 +5855,7 @@ incoming-telemetry.thunderbird.net
 .l.ooyala.com
 .l.osakazine.net
 .l.ouest-france.fr
+.l.ovhcloud.com
 .l.player.ooyala.com
 .l.premium.naver.com
 .l.sagafan.jp
@@ -6997,6 +7000,7 @@ metrics.21-school.ru
 .mt.9gag.com
 .mt.gigazine.net
 .mt.ssai.peacocktv.com
+.mtag.markopolo.ai
 .mtag.mman.kr
 .mtburn.jp
 .mtg.macpaw.com
@@ -11132,6 +11136,7 @@ tracing-http.megamarket.tech
 .v6-adashx.ut.youku.com
 .v812.lakecountystar.com
 .v8b9c0x1z2.sai7348.xyz
+.vahqmyowjp.com
 .valencia-beacons.xumo.com
 .validate.appsflyer.com
 .valis-cpx.jp
