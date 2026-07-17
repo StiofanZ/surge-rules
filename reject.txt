@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-16T19:37:39+00:00
+# Generated: 2026-07-17T19:38:02+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12443, local=1, total(deduped)=11808, excluded=29
+# Counts: upstream=12446, local=1, total(deduped)=11809, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -4626,6 +4626,7 @@ error-tracking.megamarket.tech
 .fptls.com
 .fptls3.com
 .fqtag.com
+.franken-analytics.makeup.global
 .fraud.adjoe.zone
 .fraudmetrix.cn
 .free-counter.co.uk
@@ -8528,6 +8529,7 @@ rtlog5-applog.fqnovel.com
 .rutarget.ru
 .ruuaqkw.com
 .rva.outbrain.com
+.rvmessage.online
 .rvv.emol.com
 .ryrv0j.greenbeanbuddy.com
 .rz261.cn
@@ -10041,7 +10043,6 @@ target.vk.com
 .tdcegypt.com
 .tdep.hema.nl
 .tdep.kvk.nl
-.tdid.m.qq.com
 .tdk.petsplace.nl
 .tds.bid
 .tds.favbet.partners

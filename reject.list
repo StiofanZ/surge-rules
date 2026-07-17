@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-16T19:37:39+00:00
+# Generated: 2026-07-17T19:38:02+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12443, local=1, total(deduped)=11808, excluded=29
+# Counts: upstream=12446, local=1, total(deduped)=11809, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4628,6 +4628,7 @@ DOMAIN-SUFFIX,fpt.commerce.adobe.com
 DOMAIN-SUFFIX,fptls.com
 DOMAIN-SUFFIX,fptls3.com
 DOMAIN-SUFFIX,fqtag.com
+DOMAIN-SUFFIX,franken-analytics.makeup.global
 DOMAIN-SUFFIX,fraud.adjoe.zone
 DOMAIN-SUFFIX,fraudmetrix.cn
 DOMAIN-SUFFIX,free-counter.co.uk
@@ -8530,6 +8531,7 @@ DOMAIN-SUFFIX,rusty-heartbeat.services.ps.axelspringer.de
 DOMAIN-SUFFIX,rutarget.ru
 DOMAIN-SUFFIX,ruuaqkw.com
 DOMAIN-SUFFIX,rva.outbrain.com
+DOMAIN-SUFFIX,rvmessage.online
 DOMAIN-SUFFIX,rvv.emol.com
 DOMAIN-SUFFIX,ryrv0j.greenbeanbuddy.com
 DOMAIN-SUFFIX,rz261.cn
@@ -10043,7 +10045,6 @@ DOMAIN-SUFFIX,tdbc.redgalaxy.com
 DOMAIN-SUFFIX,tdcegypt.com
 DOMAIN-SUFFIX,tdep.hema.nl
 DOMAIN-SUFFIX,tdep.kvk.nl
-DOMAIN-SUFFIX,tdid.m.qq.com
 DOMAIN-SUFFIX,tdk.petsplace.nl
 DOMAIN-SUFFIX,tds.bid
 DOMAIN-SUFFIX,tds.favbet.partners

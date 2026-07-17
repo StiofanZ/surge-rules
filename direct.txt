@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-16T19:37:40+00:00
+# Generated: 2026-07-17T19:38:03+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=112059, local=2, total(deduped)=111896, excluded=33
+# Counts: upstream=112069, local=2, total(deduped)=111906, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -12582,6 +12582,7 @@ api-edge.apps.apple.com
 .api-m.com
 .api-vod-qcloud.com
 .api.anythinktech.com
+api.blipsandchitz.me
 .api.so
 .apiairasia.com
 .apiandroid.com
@@ -28131,6 +28132,7 @@ dc1.ksn.kaspersky-labs.com
 .dcyz.com
 .dcyzq.com
 .dczcsc.com
+.dczcy.com
 .dczkj.com
 .dczy168.com
 .dd-advisor.com
@@ -29118,6 +29120,7 @@ dg-meta.video.google.com
 .didichuxing.com
 .dididapiao.com
 .dididi88.com
+.didifinance.com
 .didiglobal.com
 .didimobility.com
 .didiopenapi.com
@@ -35984,6 +35987,7 @@ ftasitapj.dell.com
 .fuca-china.com
 .fucantec.com
 .fuchaipower.com
+.fuchenkj.com
 .fuchuangyu.com
 .fucnm.com
 .fucol.club
@@ -47255,6 +47259,7 @@ guzzoni.smoot.apple.com
 .hrs100.com
 .hrsalon.org
 .hrsay.com
+.hrsecn.com
 .hrsee.com
 .hrsel.com
 .hrsoft-china.com
@@ -53900,6 +53905,7 @@ izattime.qcomgeo2.com
 .jieshui8.com
 .jieshuitech.com
 .jieshuwang.com
+.jietianz.com
 .jietu365.com
 .jietuhb.com
 .jietuosh.com
@@ -79747,6 +79753,7 @@ scene7-cdn.dell.com
 .sdseshealth.com
 .sdsfjy.com
 .sdshangya.com
+.sdshdc.com
 .sdshgk.com
 .sdshihua.com
 .sdshitu.com
@@ -81443,6 +81450,7 @@ shell.cdn.office.net
 .shicaizhanlan.com
 .shicehao.com
 .shichangbu.com
+.shicheng6.com
 .shichengbao.com
 .shichengyi.com
 .shichuangsj.com
@@ -91913,6 +91921,7 @@ tp.louisvuitton.com
 .ulikestatic.com
 .ulinix.com
 .ulinix.tv
+.ulongemg.com
 .ulpay.com
 .ultracachenode.com
 .ultraeda.com
@@ -106715,6 +106724,7 @@ xtratime.qcomgeo2.com
 .yximgs.com
 .yxin18.com
 .yxinbao.com
+.yxingfan.com
 .yxintent.com
 .yxit.net
 .yxixy.com
