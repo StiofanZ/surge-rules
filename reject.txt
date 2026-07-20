@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-19T19:37:04+00:00
+# Generated: 2026-07-20T20:01:35+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12449, local=1, total(deduped)=11812, excluded=29
+# Counts: upstream=12452, local=1, total(deduped)=11815, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -546,6 +546,7 @@ adblogger.vk.ru
 .adhitzads.com
 .adhooah.com
 .adhood.com
+.adhub.porcino-kinoko.workers.dev
 .adhunter.media
 .adilk.ilikecomix.com
 .adimage.sphdigital.com
@@ -1077,6 +1078,7 @@ agency-adv.ozon.ru
 .ahoy-internal-ads-hv.b-cdn.net
 .aidata.io
 .aidsvc.netflix.com
+.aifpleasurebeh.org
 .aikhiwnpdff.com
 .aim-tag.hcn.health
 .aim.loc.kr
@@ -3713,7 +3715,6 @@ crashlyticsreports-pa.googleapis.com
 .dct.mango-office.ru
 .dd.g2.com
 .dd.leboncoin.fr
-.dd.qwant.com
 .dd.reuters.com
 .dd6zx4ibq538k.cloudfront.net
 .ddgjjj.com
@@ -6922,6 +6923,7 @@ metrics.21-school.ru
 .montelena.gmarket.co.kr
 .montmena.top
 .moofoonepaw.com
+.moonlighthathel.org
 .mopinion.com
 .mopub-win-us-east.bksn.se
 .mopub.com
@@ -9067,6 +9069,7 @@ sentry.x5.ru
 .sngmta.qq.com
 .sniperlog.ru
 .sniphub.com
+.snippet.affilimate.io
 .snoobi.com
 .snoop.minecraft.net
 .snowdayonline.xyz
