@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-20T20:00:46+00:00
+# Generated: 2026-07-21T19:56:52+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31244, local=27, total(deduped)=26246, excluded=3, rule_set_only=12
+# Counts: upstream=31257, local=27, total(deduped)=26255, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -3376,6 +3376,7 @@ DOMAIN-SUFFIX,berlincompanions.com
 DOMAIN-SUFFIX,berlinerbericht.de
 DOMAIN-SUFFIX,berlintwitterwall.com
 DOMAIN-SUFFIX,best-sex-games.com
+DOMAIN-SUFFIX,best2pay.net
 DOMAIN-SUFFIX,best4bim.com
 DOMAIN-SUFFIX,bestbeats4u.com
 DOMAIN-SUFFIX,bestbhy.com
@@ -5526,6 +5527,7 @@ DOMAIN-SUFFIX,clashmini.com
 DOMAIN-SUFFIX,clashofclans.com
 DOMAIN-SUFFIX,clashroyale.com
 DOMAIN-SUFFIX,clashroyaleapp.com
+DOMAIN-SUFFIX,clashyun.com
 DOMAIN-SUFFIX,clasporno.org
 DOMAIN-SUFFIX,classicalguitarblog.net
 DOMAIN-SUFFIX,classicnike.com
@@ -8142,6 +8144,8 @@ DOMAIN-SUFFIX,f-dro1d.org
 DOMAIN-SUFFIX,f-droid.com
 DOMAIN-SUFFIX,f-droid.org
 DOMAIN-SUFFIX,f-secure.com
+DOMAIN-SUFFIX,f1.com
+DOMAIN-SUFFIX,f1tv.com
 DOMAIN-SUFFIX,f2pool.com
 DOMAIN,f3b7q2p3.ssl.hwcdn.net
 DOMAIN-SUFFIX,f5pf.com
@@ -8975,6 +8979,7 @@ DOMAIN-SUFFIX,form.new
 DOMAIN-SUFFIX,formit360.com
 DOMAIN-SUFFIX,formitfactory.com
 DOMAIN-SUFFIX,forms.new
+DOMAIN-SUFFIX,formula1.com
 DOMAIN-SUFFIX,forpojie.pics
 DOMAIN-SUFFIX,forshtadt.ru
 DOMAIN-SUFFIX,fortawesome.com
@@ -11698,6 +11703,7 @@ DOMAIN-SUFFIX,hustlercash.com
 DOMAIN-SUFFIX,hutao.cloud
 DOMAIN-SUFFIX,hutianyi.net
 DOMAIN-SUFFIX,hutpromos.com
+DOMAIN-SUFFIX,hva.im
 DOMAIN-SUFFIX,hwayue.org.tw
 DOMAIN-SUFFIX,hwgo.com
 DOMAIN-SUFFIX,hwslabs.com
@@ -19211,8 +19217,10 @@ DOMAIN-SUFFIX,rbmavericks.com
 DOMAIN-SUFFIX,rbnainternational.com
 DOMAIN-SUFFIX,rbplc.com
 DOMAIN-SUFFIX,rbrandlibrary.com
+DOMAIN-SUFFIX,rbsgate.com
 DOMAIN-SUFFIX,rbsgr.com
 DOMAIN-SUFFIX,rbspeakup.com
+DOMAIN-SUFFIX,rbsuat.com
 DOMAIN-SUFFIX,rbth.com
 DOMAIN-SUFFIX,rbx.com
 DOMAIN-SUFFIX,rbxcdn.com
@@ -21634,6 +21642,7 @@ DOMAIN-SUFFIX,synologyupdate.com
 DOMAIN-SUFFIX,syosetu.com
 DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,system76.com
+DOMAIN-SUFFIX,sysub.com
 DOMAIN-SUFFIX,syzbj36.xyz
 DOMAIN-SUFFIX,szabadeuropa.hu
 DOMAIN-SUFFIX,szcheapmonsterheadphones.com
