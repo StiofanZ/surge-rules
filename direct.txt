@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-21T19:57:31+00:00
+# Generated: 2026-07-22T19:50:10+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=112127, local=2, total(deduped)=111964, excluded=33
+# Counts: upstream=112131, local=2, total(deduped)=111968, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -19561,6 +19561,7 @@ cache.pack.google.com
 .cd-zc.com
 .cd00c44f211031.beer
 .cd120.com
+.cd120.info
 .cd12371.com
 .cd1958.com
 .cd20.net
@@ -66620,6 +66621,7 @@ ml.cdn-apple.com
 .moe321.com
 .moeclub.org
 .moedot.net
+.moedu.com
 .moeelf.com
 .moefactory.com
 .moefantasy.com
@@ -90701,6 +90703,7 @@ tp.louisvuitton.com
 .tsingpost.com
 .tsingshang.com
 .tsingtek.com
+.tsingtengms.com
 .tsingtoo.com
 .tsingtuo.com
 .tsingyangroup.com
@@ -98349,6 +98352,7 @@ www.support.apple.com
 .xcxymw.com
 .xcxzww.com
 .xcyg.net
+.xcz.im
 .xczhmzb.com
 .xczhsh.com
 .xczim.com

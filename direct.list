@@ -1,6 +1,6 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-21T19:57:31+00:00
+# Generated: 2026-07-22T19:50:10+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=112127, local=2, total(deduped)=111964, excluded=33
+# Counts: upstream=112131, local=2, total(deduped)=111968, excluded=33
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -19563,6 +19563,7 @@ DOMAIN-SUFFIX,cd-wx.net
 DOMAIN-SUFFIX,cd-zc.com
 DOMAIN-SUFFIX,cd00c44f211031.beer
 DOMAIN-SUFFIX,cd120.com
+DOMAIN-SUFFIX,cd120.info
 DOMAIN-SUFFIX,cd12371.com
 DOMAIN-SUFFIX,cd1958.com
 DOMAIN-SUFFIX,cd20.net
@@ -66622,6 +66623,7 @@ DOMAIN-SUFFIX,moe233.org
 DOMAIN-SUFFIX,moe321.com
 DOMAIN-SUFFIX,moeclub.org
 DOMAIN-SUFFIX,moedot.net
+DOMAIN-SUFFIX,moedu.com
 DOMAIN-SUFFIX,moeelf.com
 DOMAIN-SUFFIX,moefactory.com
 DOMAIN-SUFFIX,moefantasy.com
@@ -90703,6 +90705,7 @@ DOMAIN-SUFFIX,tsingoofoods.com
 DOMAIN-SUFFIX,tsingpost.com
 DOMAIN-SUFFIX,tsingshang.com
 DOMAIN-SUFFIX,tsingtek.com
+DOMAIN-SUFFIX,tsingtengms.com
 DOMAIN-SUFFIX,tsingtoo.com
 DOMAIN-SUFFIX,tsingtuo.com
 DOMAIN-SUFFIX,tsingyangroup.com
@@ -98351,6 +98354,7 @@ DOMAIN-SUFFIX,xcxwo.com
 DOMAIN-SUFFIX,xcxymw.com
 DOMAIN-SUFFIX,xcxzww.com
 DOMAIN-SUFFIX,xcyg.net
+DOMAIN-SUFFIX,xcz.im
 DOMAIN-SUFFIX,xczhmzb.com
 DOMAIN-SUFFIX,xczhsh.com
 DOMAIN-SUFFIX,xczim.com
