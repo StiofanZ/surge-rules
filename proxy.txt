@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-22T19:49:52+00:00
+# Generated: 2026-07-23T19:51:33+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=30516, local=27, total(deduped)=26162, excluded=3
+# Counts: upstream=31261, local=27, total(deduped)=26257, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -189,6 +189,7 @@
 .1password.co
 .1password.com
 .1password.community
+1password.drift.click
 .1password.eu
 .1password.io
 .1passwordservices.com
@@ -617,6 +618,7 @@
 .a0pple.net
 .a1av.xyz
 .a2z.com
+a4e8s8k3.map2.ssl.hwcdn.net
 .a7sex.com
 .aa77kk.com
 .aaagradeheadphones.com
@@ -883,6 +885,7 @@
 .adobedc.net
 .adobedemo.com
 .adobedtm.com
+adobeereg.com
 .adobeexchange.com
 .adobeexperienceawards.com
 .adobegov.com
@@ -1022,6 +1025,7 @@
 .afriboyz.com
 .aga-expo.com
 .agag.tw
+agb9r0ad.qllfkl.com
 .agdbank.com
 .age.tv
 .agedm.app
@@ -1722,6 +1726,7 @@
 .angela-merkel.de
 .angelbeats.jp
 .angelweb.jp
+angle.com.tw
 .angola.org
 .angulardart.org
 .angularjs.org
@@ -1820,6 +1825,7 @@
 .apexlegends.com
 .apexprint.com.hk
 .api-extractor.com
+api-p.videomarket.jp
 .api.ai
 .api.moomoobull.com
 .api.news
@@ -3001,6 +3007,7 @@
 .bbhub.io
 .bbqm1.xyz
 .bbr.ru
+bbs.boingboing.net
 .bbs.cantonese.asia
 .bbs.hanminzu.org
 .bbs.junglobal.net
@@ -3316,6 +3323,7 @@
 .beautyescortsamsterdam.com
 .bebepremium3.com.bo
 .bebo.com
+beck-online.beck.de
 .becomeindex.com
 .beddit.tv
 .bedstegratisporno.com
@@ -3714,6 +3722,7 @@
 .blip.tv
 .blizzak-juken.jp
 .blizzard.com
+blizzard.nefficient.co.kr
 .blizzardgearstore.com
 .blockcast.it
 .blockchain.com
@@ -4729,6 +4738,7 @@
 .bybdc6.com
 .bybeatsdre.com
 .bybit-global.com
+bybit.ada.support
 .bybit.biz
 .bybit.cloud
 .bybit.com
@@ -5046,6 +5056,7 @@
 .cbsaavideo.com
 .cbscorporation.com
 .cbsi.com
+cbsi.live.ott.irdeto.com
 .cbsi.video
 .cbsiam.com
 .cbsig.net
@@ -5054,7 +5065,9 @@
 .cbsistatic.com
 .cbsivideo.com
 .cbsnews.com
+cbsplaylistserver.aws.syncbak.com
 .cbspressexpress.com
+cbsservice.aws.syncbak.com
 .cbssports.com
 .cbsstatic.com
 .cbssvideo.com
@@ -5090,12 +5103,14 @@
 .cdmatech.com
 .cdn-apple.com
 .cdn-cookieyes.com
+cdn-spotify-experiments.conductrics.com
 .cdn-telegram.org
 .cdn-terapeak.com
 .cdn-tinkoff.ru
 .cdn-vk.net
 .cdn-vk.ru
 .cdn.arstechnica.net
+cdn.js7k.com
 cdn.openaimerge.com
 .cdn.printfriendly.com
 .cdn.seatguru.com
@@ -5434,6 +5449,7 @@ cdn.workos.com
 .cisco-returns.com
 .cisco-warrantyfinder.com
 .cisco.com
+cisco.evergage.com
 .cisco.mobi
 .ciscoccservice.com
 .ciscoconnectcloud.com
@@ -5960,6 +5976,7 @@ cdn.workos.com
 .crit-staging.com
 .critiquebrainz.org
 .crixet.com
+crl.versign.net
 .crmdynint-gcc.com
 .crmdynint.com
 .crocoblock.com
@@ -6221,10 +6238,12 @@ cdn.workos.com
 .data-vocabulary.org
 .data.com
 .data18.com
+databank.worldbank.org
 .datacloudmy.com
 .dataframeworks.com
 .dataliberation.org
 .datalore.io
+datarouter.apps.netherrealm.com
 .datasheets360.com
 .datawav.club
 .date2night.xyz
@@ -6510,6 +6529,7 @@ cdn.workos.com
 .depositphotos.com
 .deps.dev
 .deps.info
+deribit.cdn.prismic.io
 .deribit.com
 .derpibooru.org
 .dert.online
@@ -6581,6 +6601,7 @@ cdn.workos.com
 .deutsche-welle.de
 .deutschebank.ru
 .deutschepornos-kostenlos.net
+deutschewelle.h-cdn.com
 .deutschsex.com
 .dev-guardianapis.com
 .dev-my.com
@@ -6883,6 +6904,7 @@ cdn.workos.com
 .dkrecttv.com
 .dl-iphone.com
 .dl-laby.jp
+dl.begellhouse.com
 .dl.box.net
 .dlaf.jp
 .dlap001.xyz
@@ -7679,6 +7701,7 @@ cdn.workos.com
 .elevenlabs.io
 .elgaronline.com
 .elgoog.im
+elib.maruzen.co.jp
 .elifesciences.org
 .eligens.cl
 .eligens.com.br
@@ -8121,6 +8144,7 @@ events.statsigapi.net
 .f1.com
 .f1tv.com
 .f2pool.com
+f3b7q2p3.ssl.hwcdn.net
 .f5pf.com
 .f6.dev
 .f6.ru
@@ -8524,6 +8548,7 @@ events.statsigapi.net
 .faronics.com.au
 .faronics.com.sg
 .faronics.eu
+faronics.kayako.com
 .faronics.tech
 .faronicslabs.com
 .faronicswise.co.uk
@@ -8835,6 +8860,7 @@ featureassets.org
 .firstpost.com
 .firstprivatebank.com.mm
 .firstrade.com
+firstsearch.oclc.org
 .fish.audio
 .fishmpegs.com
 .fitbit.com
@@ -9886,6 +9912,7 @@ forwarder.workos.com
 .gitbook.com
 .gitbook.io
 .gitgud.io
+github-api.arkoselabs.com
 .github.ai
 .github.blog
 .github.career
@@ -9903,6 +9930,7 @@ forwarder.workos.com
 .githubstatus.com
 .githubuniverse.com
 .githubusercontent.com
+gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .gitlab-static.net
 .gitlab.com
 .gitlab.io
@@ -10038,6 +10066,7 @@ forwarder.workos.com
 .gofucker.com
 .gofuckmenow.com
 .gofundme.com
+gog-cdn-lumen.secure2.footprint.net
 .gog-services.com
 .gog-statics.com
 .gog.com
@@ -10688,6 +10717,7 @@ forwarder.workos.com
 .hayday.com
 .haydaygame.com
 .hayya.ae
+hb4bbbbb.pmhcjk.com
 .hbabit.com
 .hbfile.net
 .hbg.com
@@ -11177,6 +11207,7 @@ forwarder.workos.com
 .holloporn.com
 .hollyrandall.com
 .hololens.com
+holoxx.f5.si
 .holyspiritspeaks.org
 .home-made-porn-movies.com
 .home-made-videos.com
@@ -11449,6 +11480,7 @@ forwarder.workos.com
 .hpstore-china.com
 .hpstore-emea.com
 .hpstore.com
+hpstore.corpmerchandise.com
 .hpstorethailand.com
 .hpsupport.com
 .hpsuresupply.com
@@ -11577,6 +11609,7 @@ forwarder.workos.com
 .huaxin80.com
 .huaxinvip.top
 .huayuworld.org
+hub.slarker.me
 .hubblephone.com
 .hudatoriq.web.id
 .hudson.org
@@ -11698,6 +11731,7 @@ forwarder.workos.com
 .i-o-u.info
 .i-scmp.com
 .i.111666.best
+i.jeded.com
 .i.lithium.com
 .i.org
 .i234.me
@@ -12150,6 +12184,7 @@ images.workoscdn.com
 .imoviegallery.com
 .imoviestage.com
 .impactdesignhub.com
+imperial.insendi.com
 .imperialbusiness.school
 .imperiodefamosas.com
 .impermium.com
@@ -13899,6 +13934,7 @@ images.workoscdn.com
 .libsolutions.app
 .libsolutions.domains
 .libsolutions.net
+licdn.cn.cdn20.com
 .licdn.com
 .licensebuttons.net
 .licenseparser.com
@@ -13965,6 +14001,7 @@ images.workoscdn.com
 .lingvodics.com
 .link-o-rama.com
 .link.com
+link.theplatform.com
 .link2galleries.com
 .link69.com
 .linkedin.at
@@ -14001,6 +14038,7 @@ images.workoscdn.com
 .liuhefabu.club
 .liuxiaobo.net
 .liuxiaotong.com
+live-patreon-marketing.pantheonsite.io
 .live-video.net
 .live.com
 .live.com.au
@@ -14753,6 +14791,7 @@ images.workoscdn.com
 .medium.com
 .medium.systems
 .mediumquality.ru
+medone-education.thieme.com
 .medow.ru
 .medrxiv.org
 .meee.com.tw
@@ -15840,6 +15879,7 @@ images.workoscdn.com
 .muscache.com
 .muscdn.com
 .musclegirlflix.com
+muse.jhu.edu
 .mushroomtrack.com
 .mushymush.tv
 .musical.ly
@@ -16162,6 +16202,7 @@ images.workoscdn.com
 .navyreserve.navy.mil
 .naydex.net
 .nbabot.net
+nbbb1bb7.pmhcjk.com
 .nbc.co
 .nbc.com
 .nbcnews.com
@@ -16812,6 +16853,7 @@ images.workoscdn.com
 .ntdvn.com
 .ntl.fyi
 .ntnews.com.au
+ntp-c.colorado.edu
 .ntp-os01.ocn.ad.jp
 .ntp-tk01.ocn.ad.jp
 .ntp-tk02.ocn.ad.jp
@@ -16826,24 +16868,37 @@ images.workoscdn.com
 .ntp.ripe.net
 .ntp.se
 .ntp.t.ring.gr.jp
+ntp.time.nl
 .ntp.tohoku.ac.jp
 .ntp.tut.ac.jp
 .ntp.ufe.cz
+ntp0.ntp-servers.net
 .ntp0.ring.gr.jp
 .ntp1.jst.mfeed.ad.jp
+ntp1.ntp-servers.net
 .ntp1.plala.or.jp
 .ntp1.ring.gr.jp
+ntp1.time.nl
 .ntp1.tohoku.ac.jp
 .ntp1.v6.mfeed.ad.jp
 .ntp1.wakwak.com
 .ntp2.jst.mfeed.ad.jp
+ntp2.ntp-servers.net
 .ntp2.plala.or.jp
 .ntp2.ring.gr.jp
+ntp2.time.nl
 .ntp2.tohoku.ac.jp
 .ntp2.v6.mfeed.ad.jp
 .ntp2.wakwak.com
 .ntp3.jst.mfeed.ad.jp
+ntp3.ntp-servers.net
 .ntp3.v6.mfeed.ad.jp
+ntp4.ntp-servers.net
+ntp5.ntp-servers.net
+ntp6.ntp-servers.net
+ntp7.ntp-servers.net
+ntppool1.time.nl
+ntppool2.time.nl
 .ntten-mg.buzz
 .nu-bay.com
 .nu36.vip
@@ -17266,6 +17321,7 @@ images.workoscdn.com
 .ontrac.com
 .onxxxtube.com
 .onxxxvideo.com
+ood.opsource.net
 .oojj.de
 .ooni.io
 .ooni.org
@@ -18818,6 +18874,7 @@ prodregistryv2.org
 .pubg.com
 .public-sex-porn.com
 .public-trust.com
+public-us-pingsx.api.clonoth.com
 .publicagentxxx.com
 .publicpornvideo.com
 .publicsexhub.com
@@ -18895,6 +18952,7 @@ prodregistryv2.org
 .q10.jp
 .q13.com
 .q13fox.com
+q676790b.pmhcjk.com
 .qatarescortsvip.com
 .qattdh.cc
 .qattdh.top
@@ -19413,6 +19471,7 @@ prodregistryv2.org
 .rigums.xyz
 .riku.me
 .rimg.com.tw
+rink.hockeyapp.net
 .rinvdh7.xyz
 .riot-games.com
 .riot.com
@@ -19506,6 +19565,10 @@ prodregistryv2.org
 .ronjoneswriter.com
 .root-signing.ch
 .rootsigning.com
+roovza-launches.appsflyersdk.com
+roovza.inapps.appsflyersdk.com
+roovza.launches.appsflyersdk.com
+roovza.skadsdk.appsflyersdk.com
 .rosbank-auto.ru
 .rosbank-capital.ru
 .rosbank-credit.com
@@ -19548,7 +19611,23 @@ prodregistryv2.org
 .rshb.ru
 .rsk.co
 .rspao.com
+rss.4040940.xyz
+rss.datuan.dev
+rss.littlebaby.life
+rss.owo.nz
+rss.wudifeixue.com
 .rsshub.app
+rsshub.asailor.org
+rsshub.email-once.com
+rsshub.henry.wang
+rsshub.isrss.com
+rsshub.ktachibana.party
+rsshub.pseudoyu.com
+rsshub.rss.tips
+rsshub.rssforever.com
+rsshub.umzzz.com
+rsshub.woodland.cafe
+rsshub2.asailor.org
 .rssing.com
 .rssmeme.com
 .rstatic.net
@@ -19854,6 +19933,7 @@ rum.browser-intake-datadoghq.com
 .sbermegamarket.ru
 .sbermobile.ru
 .sberpb.ru
+sberpro.vedomosti.ru
 .sberspasibo.ru
 .sbertech.ru
 .sbertroika.ru
@@ -21297,6 +21377,7 @@ statsigapi.net
 .straightouttasomewhere.com
 .straightpornstuds.com
 .straitstimes.com
+straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .straitsx.com
 .straplessdildo.com
 .stream-mydirtyhobby.biz
@@ -21407,6 +21488,7 @@ statsigapi.net
 .supchina.com
 .superadultgames.com
 .supercell.com
+supercell.helpshift.com
 .supercell.net
 .supercellcreators.com
 .supercellgames.com
@@ -22291,6 +22373,7 @@ statsigapi.net
 .tok.media
 .token.im
 .tokenlon.im
+.tokenplus.app
 .tokyo-hot.com
 .tokyo-porn-tube.com
 .tokyo-sports.co.jp
@@ -22809,6 +22892,7 @@ statsigapi.net
 .uberproxy.net
 .ubi.com
 .ubisoft.com
+ubisoft.siteintercept.qualtrics.com
 .ubisoftconnect.com
 .ubncloud.com
 .ubnw.net
@@ -23015,6 +23099,10 @@ statsigapi.net
 .ustream.tv
 .usvimosquito.com
 .usvimosquitoproject.com
+ut1-time.colorado.edu
+utcnist.colorado.edu
+utcnist2.colorado.edu
+utcnist3.colorado.edu
 .utdstc.com
 .utopianpal.com
 .uug22.com
@@ -24014,6 +24102,7 @@ statsigapi.net
 .vsemrabota.ru
 .vsex.in
 .vsezoo.com
+vsmarketplacebadge.apphb.com
 .vsphere.com
 .vsphere.net
 .vtb-direct.com
@@ -24363,6 +24452,7 @@ statsigapi.net
 .widberri.ru
 .widberris.ru
 .widevine.com
+widgets.stripst.com
 .wieldberris.ru
 .wife-home-videos.com
 .wifehomeporn.com
@@ -24631,10 +24721,12 @@ statsigapi.net
 .wpmailsmtp.com
 .wpoforum.com
 .wpvip.com
+wrds-www.wharton.upenn.edu
 .wrenchead.com
 .writesonic.com
 .ws-blau.com
 .ws-tcg.com
+ws.audioscrobbler.com
 .wsimg.com
 .wsj.com
 .wsj.jobs
@@ -25562,6 +25654,7 @@ statsigapi.net
 .yango.taxi
 .yango.tech
 .yangofellowship.com
+yangzhi.app
 .yangzhi.org
 .yantaqu.com
 .yaohubaba.com
@@ -26031,6 +26124,8 @@ statsigapi.net
 .zeronet.io
 .zert.ch
 .zettai-ero.com
+zftksc.cdn-settings.appsflyersdk.com
+zftksc.launches.appsflyersdk.com
 .zh-hans.cfsh99.com
 .zh.pokerstrategy.com
 .zh99.net

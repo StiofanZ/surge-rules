@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-22T19:50:09+00:00
+# Generated: 2026-07-23T19:51:53+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12458, local=1, total(deduped)=11821, excluded=29
+# Counts: upstream=12462, local=1, total(deduped)=11825, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4721,6 +4721,7 @@ DOMAIN-SUFFIX,gak.webtoons.com
 DOMAIN-SUFFIX,galiysana.vip
 DOMAIN-SUFFIX,gallerieshub.com
 DOMAIN-SUFFIX,gallupnet.fi
+DOMAIN-SUFFIX,gamengirls.com
 DOMAIN-SUFFIX,gamergirl.pro
 DOMAIN-SUFFIX,gamestats.easybrain.com
 DOMAIN-SUFFIX,gaming001.site
@@ -11634,6 +11635,7 @@ DOMAIN-SUFFIX,xjwhtz6.com
 DOMAIN-SUFFIX,xjwhtz7.com
 DOMAIN-SUFFIX,xjwhtz8.com
 DOMAIN-SUFFIX,xjwhtz9.com
+DOMAIN-SUFFIX,xl-ads.com
 DOMAIN-SUFFIX,xl-trk.com
 DOMAIN-SUFFIX,xlisting.jp
 DOMAIN-SUFFIX,xlog-va.musical.ly
@@ -11660,6 +11662,7 @@ DOMAIN-SUFFIX,xtr.tos.sktelecom.com
 DOMAIN-SUFFIX,xtractor.no
 DOMAIN-SUFFIX,xtremline.com
 DOMAIN-SUFFIX,xtube.chat
+DOMAIN-SUFFIX,xwdsofoflwimy.website
 DOMAIN-SUFFIX,xxsmtz1.com
 DOMAIN-SUFFIX,xxsmtz10.com
 DOMAIN-SUFFIX,xxsmtz2.com
@@ -11731,6 +11734,7 @@ DOMAIN-SUFFIX,yijuxie.com
 DOMAIN-SUFFIX,yinyouapp.com
 DOMAIN-SUFFIX,yip.su
 DOMAIN-SUFFIX,yitongfang.com
+DOMAIN-SUFFIX,yjibimcrcylrg.website
 DOMAIN-SUFFIX,yjtag.jp
 DOMAIN-SUFFIX,ykad-data.youku.com
 DOMAIN-SUFFIX,yllix.com
