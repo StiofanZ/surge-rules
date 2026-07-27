@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-25T19:39:39+00:00
+# Generated: 2026-07-27T19:59:55+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12465, local=1, total(deduped)=11828, excluded=29
+# Counts: upstream=12468, local=1, total(deduped)=11831, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -269,6 +269,7 @@ DOMAIN-SUFFIX,activity.browser.intl.miui.com
 DOMAIN-SUFFIX,actonservice.com
 DOMAIN-SUFFIX,actonsoftware.com
 DOMAIN-SUFFIX,acuityplatform.com
+DOMAIN-SUFFIX,acv.mira-dsp.com
 DOMAIN-SUFFIX,acvraulxhsvkr.com
 DOMAIN-SUFFIX,acweb.clog.jp
 DOMAIN-SUFFIX,acxiom-online.com
@@ -1563,6 +1564,7 @@ DOMAIN-SUFFIX,analytics.streamingworld.xyz
 DOMAIN-SUFFIX,analytics.studiodesignapp.com
 DOMAIN-SUFFIX,analytics.styria.hr
 DOMAIN-SUFFIX,analytics.superstructure.ai
+DOMAIN-SUFFIX,analytics.sutochno.ru
 DOMAIN-SUFFIX,analytics.sve.cc
 DOMAIN-SUFFIX,analytics.t-mobile.com
 DOMAIN-SUFFIX,analytics.tebilisim.com
@@ -3580,6 +3582,7 @@ DOMAIN-SUFFIX,d3k2wzdv9kuerp.cloudfront.net
 DOMAIN-SUFFIX,d3kyk5bao1crtw.cloudfront.net
 DOMAIN-SUFFIX,d3l3lkinz3f56t.cloudfront.net
 DOMAIN-SUFFIX,d3lqotgbn3npr.cloudfront.net
+DOMAIN-SUFFIX,d3lw7s0briwuoi.cloudfront.net
 DOMAIN-SUFFIX,d3m6crjuedf6o.cloudfront.net
 DOMAIN-SUFFIX,d3oep4gb91kpuv.cloudfront.net
 DOMAIN-SUFFIX,d3p2b5qewrnsyv.cloudfront.net
