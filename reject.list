@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-27T19:59:55+00:00
+# Generated: 2026-07-28T19:57:49+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12468, local=1, total(deduped)=11831, excluded=29
+# Counts: upstream=12477, local=1, total(deduped)=11839, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -85,6 +85,7 @@ DOMAIN-SUFFIX,360tag.com
 DOMAIN-SUFFIX,3dlivestats.com
 DOMAIN-SUFFIX,3dstats.com
 DOMAIN-SUFFIX,3gl.net
+DOMAIN-SUFFIX,3iulae112b.com
 DOMAIN-SUFFIX,3n2nc158v6u5hv6o.cfd
 DOMAIN-SUFFIX,3p-geo.yahoo.com
 DOMAIN-SUFFIX,3p-udc.yahoo.com
@@ -1107,6 +1108,7 @@ DOMAIN-SUFFIX,akstat.com
 DOMAIN-SUFFIX,akstat.io
 DOMAIN-SUFFIX,akutagawa.consumer.gopuff.com
 DOMAIN-SUFFIX,ala.durasite.net
+DOMAIN-SUFFIX,aladinia.app
 DOMAIN-SUFFIX,alb.reddit.com
 DOMAIN-SUFFIX,albss.com
 DOMAIN-SUFFIX,alcmpn.com
@@ -1341,6 +1343,7 @@ DOMAIN-SUFFIX,analytics.cosmicstack.org
 DOMAIN-SUFFIX,analytics.cosmonova.net
 DOMAIN-SUFFIX,analytics.cosmopolitanmag.com.tr
 DOMAIN-SUFFIX,analytics.crea.ca
+DOMAIN-SUFFIX,analytics.crewly.pl
 DOMAIN-SUFFIX,analytics.daasrv.net
 DOMAIN-SUFFIX,analytics.dap-networks.de
 DOMAIN-SUFFIX,analytics.dashboard.fingerprint.com
@@ -1629,6 +1632,7 @@ DOMAIN-SUFFIX,analytics.zg-api.com
 DOMAIN-SUFFIX,analytics.zoomit.ir
 DOMAIN-SUFFIX,analytics2.awsli.com.br
 DOMAIN-SUFFIX,analytics2.tvreport.co.kr
+DOMAIN-SUFFIX,analyticsehnwe.servicebus.windows.net
 DOMAIN-SUFFIX,analyticsengine.s3.amazonaws.com
 DOMAIN-SUFFIX,analyticshipaa.cloud.coveo.com
 DOMAIN-SUFFIX,analyticsnew.overwolf.com
@@ -2888,6 +2892,7 @@ DOMAIN-SUFFIX,clog.tanshudata.com
 DOMAIN-SUFFIX,clog.weverse.io
 DOMAIN-SUFFIX,clogger.nocutnews.co.kr
 DOMAIN-SUFFIX,cloud-exploration.com
+DOMAIN-SUFFIX,cloud.monolytics.app
 DOMAIN-SUFFIX,cloud.roistat.com
 DOMAIN-SUFFIX,cloudad.icu
 DOMAIN-SUFFIX,cloudads.tv
@@ -4028,6 +4033,7 @@ DOMAIN-SUFFIX,e.tw.cx
 DOMAIN-SUFFIX,e.viously.com
 DOMAIN-SUFFIX,e.zg-api.com
 DOMAIN-SUFFIX,e082.ukiahdailyjournal.com
+DOMAIN-SUFFIX,e2.sy-d.io
 DOMAIN-SUFFIX,e20d8e38992b.o3n.io
 DOMAIN-SUFFIX,e220.dailyfreeman.com
 DOMAIN-SUFFIX,e2e.mashable.com
@@ -4575,6 +4581,7 @@ DOMAIN-SUFFIX,flask.us.nextdoor.com
 DOMAIN-SUFFIX,flcounter.com
 DOMAIN-SUFFIX,flixsyndication.net
 DOMAIN-SUFFIX,floors.dev
+DOMAIN-SUFFIX,flow-control.profitroom.net
 DOMAIN-SUFFIX,fls-na.amazon.com
 DOMAIN-SUFFIX,fluencymedia.com
 DOMAIN-SUFFIX,fluentmobile.com
@@ -7093,6 +7100,7 @@ DOMAIN-SUFFIX,n0611.com
 DOMAIN-SUFFIX,n152adserv.com
 DOMAIN-SUFFIX,n475.pilotonline.com
 DOMAIN-SUFFIX,n55ylc001.vip
+DOMAIN-SUFFIX,n6pwo7whs2.com
 DOMAIN-SUFFIX,n730.timesunion.com
 DOMAIN-SUFFIX,n818.timesherald.com
 DOMAIN-SUFFIX,naj.sk
