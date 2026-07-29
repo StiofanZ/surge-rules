@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-28T19:56:53+00:00
+# Generated: 2026-07-29T19:49:31+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31271, local=27, total(deduped)=26264, excluded=3
+# Counts: upstream=31276, local=27, total(deduped)=26269, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -3896,6 +3896,7 @@ blizzard.nefficient.co.kr
 .bluemix.net
 .bluestacks.com
 .bluffyporn.com
+.blurams.app
 .blurams.com
 .blylq.buzz
 .blz-contentstack.com
@@ -5159,6 +5160,7 @@ cdn.workos.com
 .cencoastbmw.com
 .cenews.eu
 .cenkei.com
+.ceno.app
 .censorship.ai
 .censorship.no
 .centauro.com.br
@@ -12873,6 +12875,7 @@ imperial.insendi.com
 .iutunes.com
 .ivacy.com
 .ivi.ru
+.ivicdn.tv
 .ivintageporn.com
 .ivonblog.com
 .ivpn.net
@@ -13583,6 +13586,7 @@ imperial.insendi.com
 .kindleren.com
 .kindnudist.com
 .kindteenporn.com
+.kinescopecdn.net
 .kingcomix.com
 .kingdomsalvation.org
 .kingextre.me
@@ -19922,6 +19926,7 @@ rum.browser-intake-datadoghq.com
 .sber.ru
 .sberauto.com
 .sberbank-insurance.ru
+.sberbank-tele.com
 .sberbank.com
 .sberbank.ru
 .sberbankaktivno.ru
