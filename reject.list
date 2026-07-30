@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-29T19:49:48+00:00
+# Generated: 2026-07-30T19:58:10+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12478, local=1, total(deduped)=11840, excluded=29
+# Counts: upstream=12485, local=1, total(deduped)=11846, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1108,7 +1108,6 @@ DOMAIN-SUFFIX,akstat.com
 DOMAIN-SUFFIX,akstat.io
 DOMAIN-SUFFIX,akutagawa.consumer.gopuff.com
 DOMAIN-SUFFIX,ala.durasite.net
-DOMAIN-SUFFIX,aladinia.app
 DOMAIN-SUFFIX,alb.reddit.com
 DOMAIN-SUFFIX,albss.com
 DOMAIN-SUFFIX,alcmpn.com
@@ -3336,6 +3335,7 @@ DOMAIN-SUFFIX,cs44.pikabu.ru
 DOMAIN-SUFFIX,csdata1.com
 DOMAIN-SUFFIX,cse.rakanto.com
 DOMAIN-SUFFIX,csi.gstatic.com
+DOMAIN-SUFFIX,csjplatform.com
 DOMAIN-SUFFIX,csm.cxpublic.com
 DOMAIN-SUFFIX,csp-report.marketing.aws.dev
 DOMAIN-SUFFIX,csplog.kwai-pro.com
@@ -3637,6 +3637,7 @@ DOMAIN-SUFFIX,dailyrumor-jp.co.in
 DOMAIN-SUFFIX,daliantong.com.cn
 DOMAIN-SUFFIX,danatrak.com
 DOMAIN-SUFFIX,danv01ao0kdr2.cloudfront.net
+DOMAIN-SUFFIX,dap.hindustantimes.com
 DOMAIN-SUFFIX,dap.livemint.com
 DOMAIN-SUFFIX,dap.worldota.net
 DOMAIN-SUFFIX,dapxl.com
@@ -7479,6 +7480,7 @@ DOMAIN-SUFFIX,p.eneba.com
 DOMAIN-SUFFIX,p.gazeta.pl
 DOMAIN-SUFFIX,p.gm99.com
 DOMAIN-SUFFIX,p.imgur.com
+DOMAIN-SUFFIX,p.lbserver.xyz
 DOMAIN-SUFFIX,p.permalink-system.com
 DOMAIN-SUFFIX,p.placed.com
 DOMAIN-SUFFIX,p.raasnet.com
@@ -7540,6 +7542,7 @@ DOMAIN-SUFFIX,palibzh.tech
 DOMAIN-SUFFIX,pampopholf.com
 DOMAIN-SUFFIX,panda.kasika.io
 DOMAIN-SUFFIX,pangle-b.io
+DOMAIN-SUFFIX,pangle.cn
 DOMAIN-SUFFIX,pangle.io
 DOMAIN-SUFFIX,pangolin-dsp-toutiao-b.com
 DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
@@ -8423,7 +8426,6 @@ DOMAIN-SUFFIX,revi.rcs.it
 DOMAIN-SUFFIX,revolvermaps.com
 DOMAIN-SUFFIX,revotas.com
 DOMAIN-SUFFIX,revprotect.com
-DOMAIN-SUFFIX,reward-api.csjplatform.com
 DOMAIN-SUFFIX,rewardtv.com
 DOMAIN-SUFFIX,rexpush.info
 DOMAIN-SUFFIX,reyun.com
@@ -9512,6 +9514,7 @@ DOMAIN-SUFFIX,statowl.com
 DOMAIN-SUFFIX,statpipe.ru
 DOMAIN-SUFFIX,stats-a.maxthon.com
 DOMAIN-SUFFIX,stats-api.skylum.com
+DOMAIN-SUFFIX,stats-cdn.polyspeak.ai
 DOMAIN-SUFFIX,stats-dev.brid.tv
 DOMAIN-SUFFIX,stats-iobit-com.us-east-1.elasticbeanstalk.com
 DOMAIN-SUFFIX,stats-newyork1.bloxcms.com
@@ -10791,6 +10794,7 @@ DOMAIN-SUFFIX,trafficregenerator.com
 DOMAIN-SUFFIX,trafficscanner.pl
 DOMAIN-SUFFIX,trafficstars.com
 DOMAIN-SUFFIX,trafficsyncpro.com
+DOMAIN-SUFFIX,traffinity.pro
 DOMAIN-SUFFIX,trafic.ro
 DOMAIN-SUFFIX,trafico.prensaiberica.es
 DOMAIN-SUFFIX,trafikkfondet.no
@@ -10896,6 +10900,7 @@ DOMAIN-SUFFIX,ttmetrics.jcpenney.com
 DOMAIN-SUFFIX,tu2.taohuaimg.com
 DOMAIN-SUFFIX,tubecontext.com
 DOMAIN-SUFFIX,tubemogul.com
+DOMAIN-SUFFIX,tubexazimebeze.com
 DOMAIN-SUFFIX,tuhesok.com
 DOMAIN-SUFFIX,tulip18.com
 DOMAIN-SUFFIX,tumabeni.com
@@ -11357,6 +11362,7 @@ DOMAIN-SUFFIX,waplog.mobi
 DOMAIN-SUFFIX,wapstart.ru
 DOMAIN-SUFFIX,wapwbclick.mobile.sina.cn
 DOMAIN-SUFFIX,waqool.com
+DOMAIN-SUFFIX,warkedmalie.com
 DOMAIN-SUFFIX,warlog.ru
 DOMAIN-SUFFIX,warp.media.net
 DOMAIN-SUFFIX,watchtower.graindata.com

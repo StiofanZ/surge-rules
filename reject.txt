@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-07-29T19:49:48+00:00
+# Generated: 2026-07-30T19:58:10+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12478, local=1, total(deduped)=11840, excluded=29
+# Counts: upstream=12485, local=1, total(deduped)=11846, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1106,7 +1106,6 @@ agency-adv.ozon.ru
 .akstat.io
 .akutagawa.consumer.gopuff.com
 .ala.durasite.net
-.aladinia.app
 .alb.reddit.com
 .albss.com
 .alcmpn.com
@@ -3334,6 +3333,7 @@ crashlyticsreports-pa.googleapis.com
 .csdata1.com
 .cse.rakanto.com
 .csi.gstatic.com
+.csjplatform.com
 .csm.cxpublic.com
 .csp-report.marketing.aws.dev
 .csplog.kwai-pro.com
@@ -3635,6 +3635,7 @@ crashlyticsreports-pa.googleapis.com
 .daliantong.com.cn
 .danatrak.com
 .danv01ao0kdr2.cloudfront.net
+.dap.hindustantimes.com
 .dap.livemint.com
 .dap.worldota.net
 .dapxl.com
@@ -7477,6 +7478,7 @@ openai.qualtrics.com
 .p.gazeta.pl
 .p.gm99.com
 .p.imgur.com
+.p.lbserver.xyz
 .p.permalink-system.com
 .p.placed.com
 .p.raasnet.com
@@ -7538,6 +7540,7 @@ p9-ad-sign.byteimg.com
 .pampopholf.com
 .panda.kasika.io
 .pangle-b.io
+.pangle.cn
 .pangle.io
 .pangolin-dsp-toutiao-b.com
 .pangolin-dsp-toutiao.com
@@ -8421,7 +8424,6 @@ report.ap.yandex-net.ru
 .revolvermaps.com
 .revotas.com
 .revprotect.com
-.reward-api.csjplatform.com
 .rewardtv.com
 .rexpush.info
 .reyun.com
@@ -9510,6 +9512,7 @@ stacks.vk-portal.net
 .statpipe.ru
 .stats-a.maxthon.com
 .stats-api.skylum.com
+.stats-cdn.polyspeak.ai
 .stats-dev.brid.tv
 .stats-iobit-com.us-east-1.elasticbeanstalk.com
 .stats-newyork1.bloxcms.com
@@ -10789,6 +10792,7 @@ tracing-http.megamarket.tech
 .trafficscanner.pl
 .trafficstars.com
 .trafficsyncpro.com
+.traffinity.pro
 .trafic.ro
 .trafico.prensaiberica.es
 .trafikkfondet.no
@@ -10894,6 +10898,7 @@ tracing-http.megamarket.tech
 .tu2.taohuaimg.com
 .tubecontext.com
 .tubemogul.com
+.tubexazimebeze.com
 .tuhesok.com
 .tulip18.com
 .tumabeni.com
@@ -11355,6 +11360,7 @@ visor.sberbank.ru
 .wapstart.ru
 .wapwbclick.mobile.sina.cn
 .waqool.com
+.warkedmalie.com
 .warlog.ru
 .warp.media.net
 .watchtower.graindata.com
