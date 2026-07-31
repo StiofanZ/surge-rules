@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-07-30T19:57:20+00:00
+# Generated: 2026-07-31T19:58:06+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31276, local=27, total(deduped)=26269, excluded=3
+# Counts: upstream=31302, local=27, total(deduped)=26292, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1831,6 +1831,7 @@ api-p.videomarket.jp
 .api.news
 .api.palworldgame.com
 .apiary.io
+.apiauto.ru
 .apibay.org
 .apigee.com
 .apina.biz
@@ -2487,6 +2488,7 @@ api-p.videomarket.jp
 .authorxml.com
 .authpass.app
 .authy.com
+.auto.ru
 .autocad-schulungen.com
 .autocad.com
 .autocad360.com
@@ -2625,6 +2627,7 @@ api-p.videomarket.jp
 .automaton-media.com
 .automobile.fr
 .automotive-cadcam.com
+.autoru.me
 .autosketch.com
 .autumn-jade.com
 .auxdubai.com
@@ -2727,6 +2730,7 @@ api-p.videomarket.jp
 .avstar6.com
 .avstar8.com
 .avstar9.com
+.avto.ru
 .avwong.com
 .avwto.com
 .avxde.org
@@ -5318,6 +5322,8 @@ cdn.workos.com
 .cherrypimps.com
 .cherrypornhd.com
 .cherrysave.com
+.chess.com
+.chesscomfiles.com
 .chhongbi.org
 .chianxv.buzz
 .chibabank.co.jp
@@ -5434,6 +5440,9 @@ cdn.workos.com
 .ci-en.jp
 .ci-en.net
 .cia.gov
+.cian.ru
+.cian.site
+.ciangroup.ru
 .ciattackers.com
 .cici.com
 .ciciai.com
@@ -5647,6 +5656,7 @@ cisco.evergage.com
 .clusterconnection.com
 .clyp.it
 .clzz2.xyz
+.cm.expert
 .cmcn.org
 .cmegroup.com
 .cmhalq.com
@@ -6935,6 +6945,7 @@ dl.begellhouse.com
 .dmed.technology
 .dmgmediaprivacy.co.uk
 .dmhy.org
+.dmir.ru
 .dmit.io
 .dmit.sh
 .dml-lang.org
@@ -7156,6 +7167,7 @@ dl.begellhouse.com
 .drmario-world.com
 .drnastran.com
 .drobbox.pro
+.drom.ru
 .dronedj.com
 .dropbooks.tv
 .dropbox-dns.com
@@ -13895,6 +13907,7 @@ imperial.insendi.com
 .letsjerk.cc
 .letsmoveforabetterworld.com
 .lettherebeporn.com
+.level-plus.net
 .levelsex.com
 .lewdthots.com
 .lewdvrgames.com
@@ -17076,6 +17089,7 @@ ntppool2.time.nl
 .nytimg.com
 .nytstyle.com
 .o-courier.ru
+.o-uchi.ru
 .o2action.co.kr
 .o3.ru
 .o365weve-dev.com
@@ -18665,6 +18679,7 @@ ood.opsource.net
 .potatso.com
 .potenza.jp
 .potvpn.com
+.poudobnee.com
 .pourquoi.tw
 .povpornonly.com
 .povr.com
@@ -19237,6 +19252,7 @@ q676790b.pmhcjk.com
 .rcl07.xyz
 .rclon.com
 .rd.com
+.rdrom.ru
 .rds-yes.buzz
 .rdtcdn.com
 .re25.vip
@@ -19309,6 +19325,7 @@ q676790b.pmhcjk.com
 .realtor.com
 .realtype.co.jp
 .realtype.jp
+.realtyverif.ru
 .realvision.com
 .realviz.com
 .realzoomovies.com
@@ -22916,6 +22933,7 @@ ubisoft.siteintercept.qualtrics.com
 .uc-japan.org
 .uchi.ru
 .uchicago.edu
+.uchilk.ru
 .ucla.edu
 .ucoz.ae
 .ucoz.club
@@ -23166,6 +23184,7 @@ utcnist3.colorado.edu
 .v-has.com
 .v.gd
 .v.ps
+.v.recipes
 .v2.help
 .v2.hysteria.network
 .v2ex.com
@@ -25020,6 +25039,7 @@ ws.audioscrobbler.com
 .xn----8sbeoy5bze.com
 .xn----8sbkfzespdwig.xn--p1ai
 .xn----8sbwjbxyd.xn--p1ai
+.xn----otbzjdu.xn--p1ai
 .xn--096-4g6em5t.com
 .xn--11xs86f.icu
 .xn--1jqvh729avzfcy2d8ummib.com
@@ -25040,6 +25060,8 @@ ws.audioscrobbler.com
 .xn--74q434dwff.net
 .xn--7hv594h.com
 .xn--80a9a4b.xn--p1ai
+.xn--80aaafbpzn5blfby1p.xn--p1ai
+.xn--80aaeib8abrryx4k.xn--p1ai
 .xn--80aafgovrgbc7am.xn--p1ai
 .xn--80acbjgmges7ca.xn--p1ai
 .xn--80acbjgsdq2cl.xn--p1ai
@@ -25738,6 +25760,7 @@ yangzhi.app
 .ymhsf.top
 .ymhsf1.top
 .ync.ne.jp
+.yndx.net
 .ynoproject.net
 .yo-star.com
 .yo1health.com

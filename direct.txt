@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-07-30T19:58:11+00:00
+# Generated: 2026-07-31T19:58:44+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111814, local=2, total(deduped)=111651, excluded=33
+# Counts: upstream=111854, local=2, total(deduped)=111691, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -122,6 +122,7 @@
 .008n0l12145.xin
 .008sport.com
 .009.xin
+.009513.xyz
 .009y.com
 .00bx.com
 .00cdn.com
@@ -2757,6 +2758,7 @@
 .2023game.com
 .2024qq.com
 .2025.net
+.2026cname.com
 .202m.com
 .202wan.com
 .2048ai.net
@@ -3124,6 +3126,7 @@
 .258ch.com
 .258en.com
 .258fuwu.com
+.258jrs.com
 .258sd.com
 .258weishi.com
 .258zw.com
@@ -4062,6 +4065,7 @@
 .365xuet.com
 .365yarn.com
 .365yg.com
+.365ym.com
 .365you.com
 .365yyf.com
 .365zhaopin.com
@@ -6447,6 +6451,7 @@
 .591adb.com
 .591con.com
 .591hx.com
+.591ll.com
 .591master.com
 .591moto.com
 .591moto.net
@@ -9095,6 +9100,7 @@
 .95en.com
 .95epay.com
 .95fenapp.com
+.95fk.net
 .95ib.com
 .95ip.com
 .95jizhang.com
@@ -15541,6 +15547,7 @@ beacons3.gvt2.com
 .bh-mangrove.com
 .bh-med.com
 .bh-xhhd.com
+.bh.sb
 .bh1t.com
 .bh3.com
 .bh5.com
@@ -19634,6 +19641,7 @@ cdn.apple-mapkit.com
 .cdn.fun
 cdn.globalsigncdn.com.cdn.cloudflare.net
 .cdn.jetbrains.com
+.cdn.me
 .cdn.samsung.com
 .cdn.shanghai.nyu.edu
 .cdn.show
@@ -19644,6 +19652,7 @@ cdn1.apple-mapkit.com
 .cdn1.vip
 .cdn1008.com
 .cdn1218.com
+.cdn123.cc
 .cdn16.com
 cdn2.apple-mapkit.com
 .cdn20.com
@@ -24254,6 +24263,7 @@ cn.widevine.com
 .cnpowdertech.com
 .cnpp100.com
 .cnppa.org
+.cnprac.xyz
 .cnpressphoto.com
 .cnprofit.com
 .cnprs.com
@@ -26083,6 +26093,7 @@ crls.pki.goog
 .csgky.net
 .csgocn.net
 .csgongshui.com
+.csgozbt.com
 .csgpc.org
 .csgwexpo.com
 .csgxyl.com
@@ -27559,6 +27570,7 @@ customization-cdn.dell.com
 .daododo.com
 .daoduoduo.com
 .daofengdj.com
+.daogou.ai
 .daoguo.com
 .daohang198.com
 .daohang4.com
@@ -31093,6 +31105,7 @@ downloaddispatch.itunes.apple.com
 .dysj.com
 .dysji.com
 .dyspcdntip.com
+.dyswl.com
 .dytmgm.com
 .dytss.com
 .dytt2028.cc
@@ -44603,6 +44616,7 @@ guzzoni.smoot.apple.com
 .heerit.com
 .hefagear.com
 .hefei.cc
+.hefei.website
 .hefeilaws.com
 .hefeimarathon.com
 .heflc.com
@@ -45786,6 +45800,7 @@ guzzoni.smoot.apple.com
 .hklmoto.com
 .hklmxcx.com
 .hkm168.com
+.hkmanga.com
 .hkmedtime.com
 .hkmeinian.com
 .hkmipo.com
@@ -50101,6 +50116,7 @@ i.pki.goog
 .idcdoc.com
 .idceb.com
 .idcfengye.com
+.idcfx.net
 .idcgcloudcs.com
 .idchz.com
 .idchz.net
@@ -54088,6 +54104,7 @@ izattime.qcomgeo2.com
 .jingshun-wl.com
 .jingshzh.com
 .jingsocial.com
+.jingsoft.com
 .jingtai-group.com
 .jingtanggame.com
 .jingtao58.com
@@ -55746,6 +55763,7 @@ js-cdn.music.apple.com
 .jsjdzf.com
 .jsjeda.com
 .jsjffj.com
+.jsjform.com
 .jsjfz.com
 .jsjgbxg.com
 .jsjgtz.com
@@ -56307,6 +56325,7 @@ js-cdn.music.apple.com
 .julongchina.com
 .julonggr.com
 .juluape.com
+.julycloud.net
 .julycn.com
 .julydate.com
 .julyedu.com
@@ -60431,6 +60450,7 @@ ksn-verdict.geoksn.kaspersky.com
 .lelepyq.com
 .leletv.com
 .leletv.net
+.leleyun.icu
 .lelinly.com
 .lelongpp.com
 .lemai.com
@@ -64060,6 +64080,7 @@ ksn-verdict.geoksn.kaspersky.com
 .managershare.com
 .manamana.net
 .manben.com
+.manbenapi.com
 .manbetxoo.com
 .manbetxrr.com
 .manboker.com
@@ -64401,6 +64422,7 @@ maps.apple.com
 .maxamchina.com
 .maxd.cloud
 .maxdo.net
+.maxesads.com
 .maxfinesthair.com
 .maxfor-tool.com
 .maxgamehub.com
@@ -67139,6 +67161,7 @@ musicstatus.music.apple.com
 .mutian.net
 .mutianyugreatwall.com
 .mutieffect.com
+.mutoglobal.vip
 .mutouxb.com
 .mutouyu.com
 .mutualhunter.com
@@ -67713,6 +67736,7 @@ myapp.itunes.apple.com
 .n63.com
 .n69.com
 .n78785.com
+.n7r65.com
 .n802.com
 .n8soft.com
 .n9z.net
@@ -70202,6 +70226,7 @@ np-edge.itunes.apple.com
 .ntsanxin.com
 .ntsgx.com
 .ntsuye.com
+.nttcname.com
 .ntwikis.com
 .ntwzy.com
 .ntxx.net
@@ -71609,6 +71634,7 @@ p.cdn.persaas.dell.com
 .p6air.com
 .p6sai.com
 .p77777777.com
+.p8.ink
 .p80.net
 .p8games.com
 .p96q3p1m93.world
@@ -74202,6 +74228,7 @@ publicassets.cdn-apple.com
 .qfeiche.com
 .qfiee.com
 .qfihdr.com
+.qfkjnb.club
 .qfns1.com
 .qfpay.com
 .qfpq.com
@@ -74497,6 +74524,7 @@ publicassets.cdn-apple.com
 .qianxuew.com
 .qianxueyunke.com
 .qianxun.com
+.qianxun1688.com
 .qianxunclub.com
 .qianxungroup.com
 .qianxuntrip.com
@@ -84651,6 +84679,7 @@ staging.databe.floonet.goog
 .starrevs.com
 .starrockinvest.com
 .starrtc.com
+.starryblu.com
 .starrydyn.com
 .starryfrp.com
 .starrymed.com
@@ -89640,6 +89669,7 @@ tj-pod1-smp-device.apple.com
 .tomson-group.com
 .tomson-riviera.com
 .tomwx.net
+.ton51.com
 .tone-sun.com
 .tonebj.com
 .tonechemical.com
@@ -91061,6 +91091,7 @@ tp.louisvuitton.com
 .txjscl.com
 .txjsjgs888.com
 .txjy689.com
+.txkjaisa.asia
 .txlctong.com
 .txleshare.com
 .txlivecdn.com
@@ -92508,6 +92539,7 @@ valid.origin-apple.com.akadns.net
 .vbkrhk.com
 .vbmnmy.com
 .vbsemi.com
+.vbw432.com
 .vc800.com
 .vcarepharmatech.com
 .vcbeat.net
@@ -98485,6 +98517,7 @@ www.support.apple.com
 .xiamenwater.com
 .xiami.com
 .xiami.net
+.xiamiapi.xyz
 .xiamo.fun
 .xiamoyun.com
 .xiamp4.com
@@ -98707,6 +98740,7 @@ www.support.apple.com
 .xiaobool.com
 .xiaobot.net
 .xiaobu.tech
+.xiaobu.xin
 .xiaobu121.com
 .xiaobuwq.com
 .xiaocanapp.com
@@ -99681,6 +99715,7 @@ www.support.apple.com
 .xinlilw.com
 .xinlinghuayuan.com
 .xinlingletu.com
+.xinlingshou.com
 .xinlip.com
 .xinlischool.com
 .xinlishumeng.com
@@ -102990,6 +103025,7 @@ xtratime.qcomgeo2.com
 .yfmhw.com
 .yfp2p.net
 .yfpayment.com
+.yfqh.tech
 .yfsafety.com
 .yfsail.net
 .yfscdn.net
@@ -103513,6 +103549,7 @@ xtratime.qcomgeo2.com
 .yinchengpai.com
 .yinchuanwater.com
 .yinchuanzxd.com
+.yindo-ohm.com
 .yindon.com
 .yindu.com
 .yinduchina.com
@@ -106593,6 +106630,7 @@ xtratime.qcomgeo2.com
 .yyds.space
 .yydsmh.com
 .yydsok.com
+.yydsym.com
 .yydszp.com
 .yydy.com
 .yydzh.com
@@ -111218,6 +111256,7 @@ xtratime.qcomgeo2.com
 .zxczw.com
 .zxd.com
 .zxd666.com
+.zxdj.club
 .zxdkj.com
 .zxdu.net
 .zxerp.com
@@ -111455,6 +111494,7 @@ xtratime.qcomgeo2.com
 .zyyimin.com
 .zyykj168.com
 .zyylee.com
+.zyyun.xyz
 .zyz119.com
 .zyzhan.com
 .zyzl120.com
