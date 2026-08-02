@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-01T19:39:10+00:00
+# Generated: 2026-08-02T19:39:25+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31302, local=27, total(deduped)=26292, excluded=3, rule_set_only=12
+# Counts: upstream=31314, local=27, total(deduped)=26303, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -745,6 +745,7 @@ DOMAIN-SUFFIX,acrobat.com
 DOMAIN-SUFFIX,acs.org
 DOMAIN-SUFFIX,actalis.com
 DOMAIN-SUFFIX,actalis.it
+DOMAIN-SUFFIX,actifio.com
 DOMAIN-SUFFIX,activelearnprimary.co.uk
 DOMAIN-SUFFIX,activelearnprimary.com.au
 DOMAIN-SUFFIX,activematter.game
@@ -13146,7 +13147,10 @@ DOMAIN-SUFFIX,jessicaturner.com
 DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN-SUFFIX,jetbrains.cloud
 DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,jetbrains.dev
 DOMAIN-SUFFIX,jetbrains.net
+DOMAIN-SUFFIX,jetbrains.org
+DOMAIN-SUFFIX,jetbrains.ru
 DOMAIN-SUFFIX,jetbrains.space
 DOMAIN-SUFFIX,jetbrains.team
 DOMAIN-SUFFIX,jetfuelapp.com
@@ -13701,6 +13705,8 @@ DOMAIN-SUFFIX,korewaeroi.com
 DOMAIN-SUFFIX,korona.com
 DOMAIN-SUFFIX,koshelek.app
 DOMAIN-SUFFIX,kostenlosepornoclips.com
+DOMAIN-SUFFIX,kotl.in
+DOMAIN-SUFFIX,kotlinconf.com
 DOMAIN-SUFFIX,kotlinlang.org
 DOMAIN-SUFFIX,koubaibu.jp
 DOMAIN-SUFFIX,koukoku.jp
@@ -13727,6 +13733,7 @@ DOMAIN-SUFFIX,ksescortclub.com
 DOMAIN-SUFFIX,kspcoin.com
 DOMAIN-SUFFIX,ksyp10.com
 DOMAIN-SUFFIX,ktech.team
+DOMAIN-SUFFIX,ktor.io
 DOMAIN-SUFFIX,ktvu.com
 DOMAIN-SUFFIX,ktzhk.com
 DOMAIN-SUFFIX,ku77.xyz
@@ -16047,6 +16054,7 @@ DOMAIN-SUFFIX,myhulu.com
 DOMAIN-SUFFIX,myicloud.net
 DOMAIN-SUFFIX,myiphide.com
 DOMAIN-SUFFIX,myipod.net
+DOMAIN-SUFFIX,myjetbrains.com
 DOMAIN-SUFFIX,myjkwd.com
 DOMAIN-SUFFIX,myjs.tw
 DOMAIN-SUFFIX,mykomica.org
@@ -16876,6 +16884,7 @@ DOMAIN-SUFFIX,ntdtv.se
 DOMAIN-SUFFIX,ntdtvla.com
 DOMAIN-SUFFIX,ntdvideo.tw
 DOMAIN-SUFFIX,ntdvn.com
+DOMAIN-SUFFIX,nthlink.com
 DOMAIN-SUFFIX,ntl.fyi
 DOMAIN-SUFFIX,ntnews.com.au
 DOMAIN,ntp-c.colorado.edu
@@ -17408,6 +17417,7 @@ DOMAIN-SUFFIX,openweathermap.org
 DOMAIN-SUFFIX,openweave.io
 DOMAIN-SUFFIX,openwebster.com
 DOMAIN-SUFFIX,openwrt.org
+DOMAIN-SUFFIX,openxla.org
 DOMAIN-SUFFIX,opera.com
 DOMAIN-SUFFIX,opinionjournal.com
 DOMAIN-SUFFIX,oppai-doga.info
@@ -21749,6 +21759,7 @@ DOMAIN-SUFFIX,taleofthenight.com
 DOMAIN-SUFFIX,talkatone.com
 DOMAIN-SUFFIX,talkboxapp.com
 DOMAIN-SUFFIX,talkcc.com
+DOMAIN-SUFFIX,talkingkotlin.com
 DOMAIN-SUFFIX,talkonly.net
 DOMAIN-SUFFIX,talksport.com
 DOMAIN-SUFFIX,tamilsexvideos.cc

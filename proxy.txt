@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-01T19:39:10+00:00
+# Generated: 2026-08-02T19:39:25+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31302, local=27, total(deduped)=26292, excluded=3
+# Counts: upstream=31314, local=27, total(deduped)=26303, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -742,6 +742,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .acs.org
 .actalis.com
 .actalis.it
+.actifio.com
 .activelearnprimary.co.uk
 .activelearnprimary.com.au
 .activematter.game
@@ -13143,7 +13144,10 @@ imperial.insendi.com
 .jetbrains.ai
 .jetbrains.cloud
 .jetbrains.com
+.jetbrains.dev
 .jetbrains.net
+.jetbrains.org
+.jetbrains.ru
 .jetbrains.space
 .jetbrains.team
 .jetfuelapp.com
@@ -13698,6 +13702,8 @@ imperial.insendi.com
 .korona.com
 .koshelek.app
 .kostenlosepornoclips.com
+.kotl.in
+.kotlinconf.com
 .kotlinlang.org
 .koubaibu.jp
 .koukoku.jp
@@ -13724,6 +13730,7 @@ imperial.insendi.com
 .kspcoin.com
 .ksyp10.com
 .ktech.team
+.ktor.io
 .ktvu.com
 .ktzhk.com
 .ku77.xyz
@@ -16044,6 +16051,7 @@ muse.jhu.edu
 .myicloud.net
 .myiphide.com
 .myipod.net
+.myjetbrains.com
 .myjkwd.com
 .myjs.tw
 .mykomica.org
@@ -16873,6 +16881,7 @@ nbbb1bb7.pmhcjk.com
 .ntdtvla.com
 .ntdvideo.tw
 .ntdvn.com
+.nthlink.com
 .ntl.fyi
 .ntnews.com.au
 ntp-c.colorado.edu
@@ -17405,6 +17414,7 @@ ood.opsource.net
 .openweave.io
 .openwebster.com
 .openwrt.org
+.openxla.org
 .opera.com
 .opinionjournal.com
 .oppai-doga.info
@@ -21746,6 +21756,7 @@ supercell.helpshift.com
 .talkatone.com
 .talkboxapp.com
 .talkcc.com
+.talkingkotlin.com
 .talkonly.net
 .talksport.com
 .tamilsexvideos.cc
