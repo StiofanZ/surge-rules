@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-02T19:39:25+00:00
+# Generated: 2026-08-03T20:04:40+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31314, local=27, total(deduped)=26303, excluded=3, rule_set_only=12
+# Counts: upstream=31308, local=27, total(deduped)=26300, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -18934,7 +18934,6 @@ DOMAIN-SUFFIX,punishworld.com
 DOMAIN-SUFFIX,pure18.com
 DOMAIN-SUFFIX,pureapk.com
 DOMAIN-SUFFIX,pureconcepts.net
-DOMAIN-SUFFIX,puredns.org
 DOMAIN-SUFFIX,pureinsight.org
 DOMAIN-SUFFIX,purelov5.com
 DOMAIN-SUFFIX,purelyceleb.com
@@ -19152,7 +19151,6 @@ DOMAIN-SUFFIX,radioaustralia.net.au
 DOMAIN-SUFFIX,radiofarda.com
 DOMAIN-SUFFIX,radioglobo.com.br
 DOMAIN-SUFFIX,radiohilight.net
-DOMAIN-SUFFIX,radiojar.com
 DOMAIN-SUFFIX,radioline.co
 DOMAIN-SUFFIX,radiomango.fm
 DOMAIN-SUFFIX,radiomarsho.com
@@ -24809,7 +24807,6 @@ DOMAIN-SUFFIX,www-sms-apple.com
 DOMAIN-SUFFIX,www.ajsands.com
 DOMAIN-SUFFIX,www.antd.org
 DOMAIN-SUFFIX,www.aolnews.com
-DOMAIN-SUFFIX,www.clashverge.dev
 DOMAIN-SUFFIX,www.cmoinc.org
 DOMAIN-SUFFIX,www.destinationurl.com
 DOMAIN-SUFFIX,www.eastturkistan.net

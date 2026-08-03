@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-02T19:39:46+00:00
+# Generated: 2026-08-03T20:05:16+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12488, local=1, total(deduped)=11848, excluded=29
+# Counts: upstream=12487, local=1, total(deduped)=11847, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -3940,6 +3940,7 @@ crashlyticsreports-pa.googleapis.com
 .drfdisvc.walmart.com
 .driftsbabbleswandery.cfd
 .driveniq.com
+.drlagqnl.com
 .drmcmm.baidu.com
 .dropfastpath.click
 .droplink.digital
@@ -4533,6 +4534,7 @@ error-tracking.megamarket.tech
 .fcm-collect-api.alyac.com
 .fcmatch.google.com
 .fcs.ovh
+.fdluoxnn.com
 .fdolspwa.my
 .fe-go.letv.com
 .feast-events.guardianapis.com
@@ -5707,6 +5709,7 @@ incoming-telemetry.thunderbird.net
 .jiankongbao.com
 .jicypigra.com
 .jillsclickcorner.com
+.jinanrqz.com
 .jioads.akamaized.net
 .jirafe.com
 .jitsu.ixbt.com
@@ -6619,6 +6622,7 @@ mc.yandex.net
 .mega-stats.com
 .mega.mydealz.de
 .megadata.co.kr
+.meijxqop.com
 .meitustat.com
 .mellow-habit.com
 .mellow.tel
@@ -8837,6 +8841,7 @@ sentry.x5.ru
 .serie-vostfr.com
 .serious-partners.com
 .sersh.com
+.serve.affiliate.heurekashopping.sk
 .serve.williamhill.com
 .servebom.com
 .servedby.o2.co.uk
@@ -11026,21 +11031,14 @@ tracing-http.megamarket.tech
 .ultraimpression.jp
 .um-public-panel-prod.s3.amazonaws.com
 .um.merinfo.se
-.umami.aigenerations.net
 .umami.is
-.umami.spencerdevs.xyz
-.umami.subdavis.com
-.umami.syg.ma
-.umami.vidcore.net
-.umami.vidfast.pro
-.umami.vidup.to
 .umamix.fadunews.in
 .umbel.com
 .umeng.com
 .umengacs.m.taobao.com
 .umengjmacs.m.taobao.com
 .umini.shujupie.com
-.umommy.online
+.umommy.cyou
 .umphek.com
 .unalaskamiaskitewormproof.monster
 .unblockia.com
@@ -11382,6 +11380,7 @@ visor.sberbank.ru
 .wct-2.com
 .wdfl.co
 .wdig.vo.llnwd.net
+.wdziitkl.com
 .we-stats.com
 .wearemiq.com
 .wearetopple.com

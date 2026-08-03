@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-02T19:39:46+00:00
+# Generated: 2026-08-03T20:05:16+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12488, local=1, total(deduped)=11848, excluded=29
+# Counts: upstream=12487, local=1, total(deduped)=11847, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3942,6 +3942,7 @@ DOMAIN-SUFFIX,dreamcounter.de
 DOMAIN-SUFFIX,drfdisvc.walmart.com
 DOMAIN-SUFFIX,driftsbabbleswandery.cfd
 DOMAIN-SUFFIX,driveniq.com
+DOMAIN-SUFFIX,drlagqnl.com
 DOMAIN-SUFFIX,drmcmm.baidu.com
 DOMAIN-SUFFIX,dropfastpath.click
 DOMAIN-SUFFIX,droplink.digital
@@ -4535,6 +4536,7 @@ DOMAIN-SUFFIX,fclog.baidu.com
 DOMAIN-SUFFIX,fcm-collect-api.alyac.com
 DOMAIN-SUFFIX,fcmatch.google.com
 DOMAIN-SUFFIX,fcs.ovh
+DOMAIN-SUFFIX,fdluoxnn.com
 DOMAIN-SUFFIX,fdolspwa.my
 DOMAIN-SUFFIX,fe-go.letv.com
 DOMAIN-SUFFIX,feast-events.guardianapis.com
@@ -5709,6 +5711,7 @@ DOMAIN-SUFFIX,jhu8u9.pro
 DOMAIN-SUFFIX,jiankongbao.com
 DOMAIN-SUFFIX,jicypigra.com
 DOMAIN-SUFFIX,jillsclickcorner.com
+DOMAIN-SUFFIX,jinanrqz.com
 DOMAIN-SUFFIX,jioads.akamaized.net
 DOMAIN-SUFFIX,jirafe.com
 DOMAIN-SUFFIX,jitsu.ixbt.com
@@ -6621,6 +6624,7 @@ DOMAIN-SUFFIX,meetrics.net
 DOMAIN-SUFFIX,mega-stats.com
 DOMAIN-SUFFIX,mega.mydealz.de
 DOMAIN-SUFFIX,megadata.co.kr
+DOMAIN-SUFFIX,meijxqop.com
 DOMAIN-SUFFIX,meitustat.com
 DOMAIN-SUFFIX,mellow-habit.com
 DOMAIN-SUFFIX,mellow.tel
@@ -8839,6 +8843,7 @@ DOMAIN-SUFFIX,sepyra.com
 DOMAIN-SUFFIX,serie-vostfr.com
 DOMAIN-SUFFIX,serious-partners.com
 DOMAIN-SUFFIX,sersh.com
+DOMAIN-SUFFIX,serve.affiliate.heurekashopping.sk
 DOMAIN-SUFFIX,serve.williamhill.com
 DOMAIN-SUFFIX,servebom.com
 DOMAIN-SUFFIX,servedby.o2.co.uk
@@ -11028,21 +11033,14 @@ DOMAIN-SUFFIX,ultraadserver.com
 DOMAIN-SUFFIX,ultraimpression.jp
 DOMAIN-SUFFIX,um-public-panel-prod.s3.amazonaws.com
 DOMAIN-SUFFIX,um.merinfo.se
-DOMAIN-SUFFIX,umami.aigenerations.net
 DOMAIN-SUFFIX,umami.is
-DOMAIN-SUFFIX,umami.spencerdevs.xyz
-DOMAIN-SUFFIX,umami.subdavis.com
-DOMAIN-SUFFIX,umami.syg.ma
-DOMAIN-SUFFIX,umami.vidcore.net
-DOMAIN-SUFFIX,umami.vidfast.pro
-DOMAIN-SUFFIX,umami.vidup.to
 DOMAIN-SUFFIX,umamix.fadunews.in
 DOMAIN-SUFFIX,umbel.com
 DOMAIN-SUFFIX,umeng.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
 DOMAIN-SUFFIX,umengjmacs.m.taobao.com
 DOMAIN-SUFFIX,umini.shujupie.com
-DOMAIN-SUFFIX,umommy.online
+DOMAIN-SUFFIX,umommy.cyou
 DOMAIN-SUFFIX,umphek.com
 DOMAIN-SUFFIX,unalaskamiaskitewormproof.monster
 DOMAIN-SUFFIX,unblockia.com
@@ -11384,6 +11382,7 @@ DOMAIN-SUFFIX,wcp.taobao.com
 DOMAIN-SUFFIX,wct-2.com
 DOMAIN-SUFFIX,wdfl.co
 DOMAIN-SUFFIX,wdig.vo.llnwd.net
+DOMAIN-SUFFIX,wdziitkl.com
 DOMAIN-SUFFIX,we-stats.com
 DOMAIN-SUFFIX,wearemiq.com
 DOMAIN-SUFFIX,wearetopple.com
