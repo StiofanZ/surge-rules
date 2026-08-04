@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-03T20:05:16+00:00
+# Generated: 2026-08-04T20:04:33+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12487, local=1, total(deduped)=11847, excluded=29
+# Counts: upstream=12491, local=1, total(deduped)=11851, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -5012,6 +5012,7 @@ google-analytics-suite.ozon.ru
 .gsecurecontent.com
 .gsght.com
 .gsimedia.net
+.gsitrix.com
 .gsspat.jp
 .gsspcln.jp
 .gssprt.jp
@@ -5497,6 +5498,7 @@ incoming-telemetry.thunderbird.net
 .init.blackcrow.ai
 .injectshrslinkblog.com
 .injusticebakery.com
+.inklinkor.com
 .inlog01.hket.com
 .inmense.site
 .inmobi.cn
@@ -6841,6 +6843,7 @@ metrics.21-school.ru
 .mmstat.com
 .mmtro.com
 .mn-tz.com
+.mn.browpotware.com
 .mnbvpo8trk.com
 .mo.freeindoapp.com
 .moa-upload-online.coloros.com
@@ -8280,6 +8283,7 @@ r1.mail.ru
 .rcp.evolok.net
 .rcu.skywayplatform.com
 .rd.rakuten.co.jp
+.rdipmrbwgvk.com
 .rdr.wargaming.net
 .rdstation.com
 .rdstation.com.br
