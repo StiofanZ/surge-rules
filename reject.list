@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-04T20:04:33+00:00
+# Generated: 2026-08-05T20:01:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12491, local=1, total(deduped)=11851, excluded=29
+# Counts: upstream=12476, local=1, total(deduped)=11837, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -512,6 +512,8 @@ DOMAIN-SUFFIX,addata.mediacategory.com
 DOMAIN-SUFFIX,addeluxe.jp
 DOMAIN-SUFFIX,addfreestats.com
 DOMAIN-SUFFIX,addlv.smt.docomo.ne.jp
+DOMAIN-SUFFIX,addthis.com
+DOMAIN-SUFFIX,addthiscdn.com
 DOMAIN-SUFFIX,addthisedge.com
 DOMAIN-SUFFIX,adeeply.ru
 DOMAIN-SUFFIX,adelixir.com
@@ -640,7 +642,6 @@ DOMAIN-SUFFIX,adprotected.com
 DOMAIN-SUFFIX,adproxy.tf1.fr
 DOMAIN-SUFFIX,adpublisher.s3.amazonaws.com
 DOMAIN-SUFFIX,adpush.goforandroid.com
-DOMAIN-SUFFIX,adq.chinaso.com
 DOMAIN-SUFFIX,adquota.com
 DOMAIN-SUFFIX,adradar.io
 DOMAIN-SUFFIX,adrange.net
@@ -2649,7 +2650,6 @@ DOMAIN-SUFFIX,cdn.mixx-ad.net
 DOMAIN-SUFFIX,cdn.moengage.com
 DOMAIN-SUFFIX,cdn.odoscope.cloud
 DOMAIN-SUFFIX,cdn.particularaudience.com
-DOMAIN-SUFFIX,cdn.pocoiq.cn
 DOMAIN-SUFFIX,cdn.polarbyte.com
 DOMAIN-SUFFIX,cdn.powerinboxedge.com
 DOMAIN-SUFFIX,cdn.pranmcpkx.com
@@ -3644,7 +3644,6 @@ DOMAIN-SUFFIX,dapxl.com
 DOMAIN-SUFFIX,daq0d0aotgq0f.cloudfront.net
 DOMAIN-SUFFIX,daraz.com
 DOMAIN-SUFFIX,darnuid.netflix.com
-DOMAIN-SUFFIX,das-rpt-log.ucloud.cn
 DOMAIN-SUFFIX,dash.tmearn.com
 DOMAIN-SUFFIX,dash.zintrack.com
 DOMAIN-SUFFIX,dashboard.heatmap.com
@@ -3880,7 +3879,6 @@ DOMAIN-SUFFIX,dmtracking2.alibaba.com
 DOMAIN-SUFFIX,dmtry.com
 DOMAIN-SUFFIX,dmtw0i4zln92b.cloudfront.net
 DOMAIN-SUFFIX,dmzls.safe-installation.com
-DOMAIN-SUFFIX,dn-growing.qbox.me
 DOMAIN-SUFFIX,dn666andut2j1.cloudfront.net
 DOMAIN-SUFFIX,dna8twue3dlxq.cloudfront.net
 DOMAIN-SUFFIX,dnh523js9661q.cloudfront.net
@@ -6341,6 +6339,7 @@ DOMAIN-SUFFIX,logs.nebulahoroscope.com
 DOMAIN-SUFFIX,logs.netflix.com
 DOMAIN-SUFFIX,logs.ntvplus.tv
 DOMAIN-SUFFIX,logs.openbank.com
+DOMAIN-SUFFIX,logs.profi.ru
 DOMAIN-SUFFIX,logs.psm.wmcdp.io
 DOMAIN-SUFFIX,logs.roku.com
 DOMAIN-SUFFIX,logs.spilgames.com
@@ -7291,7 +7290,6 @@ DOMAIN-SUFFIX,ny77jj.washingtonpost.com
 DOMAIN-SUFFIX,nycp-hlb.dvgtm.akadns.net
 DOMAIN-SUFFIX,nyctrl32.com
 DOMAIN-SUFFIX,nzydzsw.com
-DOMAIN-SUFFIX,o.addthis.com
 DOMAIN-SUFFIX,o2o.api.xiaomi.com
 DOMAIN-SUFFIX,o333o.com
 DOMAIN-SUFFIX,o365diagtelemetry.trafficmanager.net
@@ -7311,7 +7309,6 @@ DOMAIN-SUFFIX,obtaintrout.com
 DOMAIN-SUFFIX,obus-in.dc.heytapmobile.com
 DOMAIN-SUFFIX,ocolt.com
 DOMAIN-SUFFIX,oconner.biz
-DOMAIN-SUFFIX,oct.pocoiq.cn
 DOMAIN-SUFFIX,octavius.rocks
 DOMAIN-SUFFIX,octillion.tv
 DOMAIN-SUFFIX,octopuspop.com
@@ -7711,16 +7708,6 @@ DOMAIN-SUFFIX,ping.pdst.fm
 DOMAIN-SUFFIX,pingback.giphy.com
 DOMAIN-SUFFIX,pingback.sogou.com
 DOMAIN-SUFFIX,pingdom.net
-DOMAIN,pinggai0.caixin.com
-DOMAIN,pinggai1.caixin.com
-DOMAIN,pinggai2.caixin.com
-DOMAIN,pinggai3.caixin.com
-DOMAIN,pinggai4.caixin.com
-DOMAIN,pinggai5.caixin.com
-DOMAIN,pinggai6.caixin.com
-DOMAIN,pinggai7.caixin.com
-DOMAIN,pinggai8.caixin.com
-DOMAIN,pinggai9.caixin.com
 DOMAIN-SUFFIX,pingjs.qq.com
 DOMAIN-SUFFIX,pingma.qq.com
 DOMAIN-SUFFIX,pingmeter.com
@@ -8475,6 +8462,7 @@ DOMAIN-SUFFIX,roiservice.com
 DOMAIN-SUFFIX,roku-beacons.xumo.com
 DOMAIN-SUFFIX,rollingcounters.com
 DOMAIN-SUFFIX,roosterfirework.com
+DOMAIN-SUFFIX,ropeshippingcatchy.com
 DOMAIN-SUFFIX,ropsumemu.com
 DOMAIN-SUFFIX,roselip-fetish.com
 DOMAIN-SUFFIX,rossoad.com
@@ -9410,7 +9398,6 @@ DOMAIN-SUFFIX,stat.apfgexfusion.com
 DOMAIN-SUFFIX,stat.aporntv.com
 DOMAIN-SUFFIX,stat.arzamas.academy
 DOMAIN-SUFFIX,stat.botdetector.ru
-DOMAIN-SUFFIX,stat.chinaso.com
 DOMAIN-SUFFIX,stat.clickfrog.ru
 DOMAIN-SUFFIX,stat.cncenter.cz
 DOMAIN-SUFFIX,stat.dealtime.com
@@ -9733,7 +9720,6 @@ DOMAIN-SUFFIX,sts.marketingsuite.jp
 DOMAIN-SUFFIX,stt.nimbusweb.me
 DOMAIN-SUFFIX,stutterschuyt.com
 DOMAIN-SUFFIX,style.onvz.nl
-DOMAIN-SUFFIX,su.addthis.com
 DOMAIN-SUFFIX,sub2tech.com
 DOMAIN-SUFFIX,subag.freexxxbase.com
 DOMAIN-SUFFIX,submitnet.net

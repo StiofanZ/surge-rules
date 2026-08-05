@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-04T20:03:54+00:00
+# Generated: 2026-08-05T20:00:13+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31308, local=27, total(deduped)=26300, excluded=3
+# Counts: upstream=31322, local=27, total(deduped)=26314, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -6342,6 +6342,8 @@ datarouter.apps.netherrealm.com
 .deepfreeze.tech
 .deepl.com
 .deepmind.com
+.deepwiki.com
+.deepwiki.org
 .deezer.com
 .definebabe.com
 .definefetish.com
@@ -8941,8 +8943,11 @@ firstsearch.oclc.org
 .fluidpreview.com
 .flutter.dev
 .flutterapp.com
+.fly.dev
+.fly.io
 .flyflv.com
 .flyingjizz.com
+.flyio.net
 .flypool.org
 .flyvpn.com
 .flyyindh-cc.sbs
@@ -9970,6 +9975,7 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .glass8.eu
 .gle
 .gleline.com
+.glitchwave.com
 .global-sci.org
 .globaledu.org
 .globaljihad.net
@@ -17543,14 +17549,17 @@ ood.opsource.net
 .ozon-credit.ru
 .ozon-dostavka.ru
 .ozon-tech.ru
+.ozon.app
 .ozon.by
 .ozon.com
 .ozon.com.by
 .ozon.com.kz
 .ozon.dev
 .ozon.express
+.ozon.global
 .ozon.kz
 .ozon.li
+.ozon.market
 .ozon.ru
 .ozon.tech
 .ozon.tm
@@ -19783,6 +19792,7 @@ rum.browser-intake-datadoghq.com
 .rutracker.org
 .rutrk.org
 .rutube.ru
+.rutube.sport
 .rutubelist.ru
 .ruvideos.net
 .rwb.ru
@@ -19790,6 +19800,7 @@ rum.browser-intake-datadoghq.com
 .rwbautomation.tech
 .rwbgeo.ru
 .rxhj.net
+.rym.fm
 .ryokoyomiuri.co.jp
 .ryukyubank.co.jp
 .rzr.to
@@ -20832,6 +20843,7 @@ setup.workos.com
 .snk-corp.co.jp
 .snk-corp.info
 .snkplaymore.info
+.snmc.io
 .snow.me
 .snowcorp.com
 .snowmiku.com
@@ -20901,6 +20913,8 @@ setup.workos.com
 .solv.finance
 .solveforx.com
 .somee.com
+.sonematic.net
+.sonemic.com
 .songjianjun.com
 .sonorousporn.com
 .sony

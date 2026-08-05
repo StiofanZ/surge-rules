@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-04T20:04:33+00:00
+# Generated: 2026-08-05T20:01:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12491, local=1, total(deduped)=11851, excluded=29
+# Counts: upstream=12476, local=1, total(deduped)=11837, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -510,6 +510,8 @@ adblogger.vk.ru
 .addeluxe.jp
 .addfreestats.com
 .addlv.smt.docomo.ne.jp
+.addthis.com
+.addthiscdn.com
 .addthisedge.com
 .adeeply.ru
 .adelixir.com
@@ -638,7 +640,6 @@ adblogger.vk.ru
 .adproxy.tf1.fr
 .adpublisher.s3.amazonaws.com
 .adpush.goforandroid.com
-.adq.chinaso.com
 .adquota.com
 .adradar.io
 .adrange.net
@@ -2647,7 +2648,6 @@ bs.mail.ru
 .cdn.moengage.com
 .cdn.odoscope.cloud
 .cdn.particularaudience.com
-.cdn.pocoiq.cn
 .cdn.polarbyte.com
 .cdn.powerinboxedge.com
 .cdn.pranmcpkx.com
@@ -3642,7 +3642,6 @@ crashlyticsreports-pa.googleapis.com
 .daq0d0aotgq0f.cloudfront.net
 .daraz.com
 .darnuid.netflix.com
-.das-rpt-log.ucloud.cn
 .dash.tmearn.com
 .dash.zintrack.com
 .dashboard.heatmap.com
@@ -3878,7 +3877,6 @@ crashlyticsreports-pa.googleapis.com
 .dmtry.com
 .dmtw0i4zln92b.cloudfront.net
 .dmzls.safe-installation.com
-.dn-growing.qbox.me
 .dn666andut2j1.cloudfront.net
 .dna8twue3dlxq.cloudfront.net
 .dnh523js9661q.cloudfront.net
@@ -6339,6 +6337,7 @@ log5-applog.fqnovel.com
 .logs.netflix.com
 .logs.ntvplus.tv
 .logs.openbank.com
+.logs.profi.ru
 .logs.psm.wmcdp.io
 .logs.roku.com
 .logs.spilgames.com
@@ -7289,7 +7288,6 @@ new-adv.ozon.ru
 .nycp-hlb.dvgtm.akadns.net
 .nyctrl32.com
 .nzydzsw.com
-.o.addthis.com
 .o2o.api.xiaomi.com
 .o333o.com
 .o365diagtelemetry.trafficmanager.net
@@ -7309,7 +7307,6 @@ new-adv.ozon.ru
 .obus-in.dc.heytapmobile.com
 .ocolt.com
 .oconner.biz
-.oct.pocoiq.cn
 .octavius.rocks
 .octillion.tv
 .octopuspop.com
@@ -7709,16 +7706,6 @@ p9-ad-sign.byteimg.com
 .pingback.giphy.com
 .pingback.sogou.com
 .pingdom.net
-pinggai0.caixin.com
-pinggai1.caixin.com
-pinggai2.caixin.com
-pinggai3.caixin.com
-pinggai4.caixin.com
-pinggai5.caixin.com
-pinggai6.caixin.com
-pinggai7.caixin.com
-pinggai8.caixin.com
-pinggai9.caixin.com
 .pingjs.qq.com
 .pingma.qq.com
 .pingmeter.com
@@ -8473,6 +8460,7 @@ report.ap.yandex-net.ru
 .roku-beacons.xumo.com
 .rollingcounters.com
 .roosterfirework.com
+.ropeshippingcatchy.com
 .ropsumemu.com
 .roselip-fetish.com
 .rossoad.com
@@ -9408,7 +9396,6 @@ stacks.vk-portal.net
 .stat.aporntv.com
 .stat.arzamas.academy
 .stat.botdetector.ru
-.stat.chinaso.com
 .stat.clickfrog.ru
 .stat.cncenter.cz
 .stat.dealtime.com
@@ -9731,7 +9718,6 @@ stats.telega.info
 .stt.nimbusweb.me
 .stutterschuyt.com
 .style.onvz.nl
-.su.addthis.com
 .sub2tech.com
 .subag.freexxxbase.com
 .submitnet.net
