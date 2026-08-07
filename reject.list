@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-05T20:01:07+00:00
+# Generated: 2026-08-07T00:20:16+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12476, local=1, total(deduped)=11837, excluded=29
+# Counts: upstream=12487, local=1, total(deduped)=11847, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -977,6 +977,7 @@ DOMAIN-SUFFIX,advnet.xyz
 DOMAIN-SUFFIX,advolve.io
 DOMAIN-SUFFIX,advombat.ru
 DOMAIN-SUFFIX,advortex.cloud
+DOMAIN-SUFFIX,adwell.app
 DOMAIN-SUFFIX,adword.ge
 DOMAIN-SUFFIX,adwords-community.com
 DOMAIN-SUFFIX,adwords.com
@@ -1710,6 +1711,7 @@ DOMAIN-SUFFIX,api.ads.watchabc.go.com
 DOMAIN-SUFFIX,api.all-internet.jp
 DOMAIN-SUFFIX,api.amplitude.com
 DOMAIN-SUFFIX,api.amplitudeexperiment.com
+DOMAIN-SUFFIX,api.analytics.dobrosvyaz.com
 DOMAIN-SUFFIX,api.analytics.omgpop.com
 DOMAIN-SUFFIX,api.antibanads.com
 DOMAIN-SUFFIX,api.applovefrom.com
@@ -2301,6 +2303,7 @@ DOMAIN-SUFFIX,bjads.bejbej.ca
 DOMAIN-SUFFIX,bktpcross.com
 DOMAIN-SUFFIX,black6adv.com
 DOMAIN-SUFFIX,black77854.com
+DOMAIN-SUFFIX,blakeunwanted.com
 DOMAIN-SUFFIX,bleua.ecefibwja.xyz
 DOMAIN-SUFFIX,blink.fra-01.braze.eu
 DOMAIN-SUFFIX,blink.willowmovies.com
@@ -5914,6 +5917,7 @@ DOMAIN-SUFFIX,land.izuchai.dance
 DOMAIN-SUFFIX,landing.meendo.com
 DOMAIN-SUFFIX,laserstat.com
 DOMAIN-SUFFIX,launch-analytics-plugin.launchpotato.com
+DOMAIN-SUFFIX,launcher.disconetwork.com
 DOMAIN-SUFFIX,launcher.us.yeshen.com
 DOMAIN-SUFFIX,launches.appsflyer.com
 DOMAIN-SUFFIX,lb.usemaxserver.de
@@ -7928,6 +7932,7 @@ DOMAIN-SUFFIX,post-log.pushwoosh.com
 DOMAIN-SUFFIX,postaffiliatepro.com
 DOMAIN-SUFFIX,posthog.football24.ua
 DOMAIN-SUFFIX,posthog.lingvanex.com
+DOMAIN-SUFFIX,posthog.russpass.ru
 DOMAIN-SUFFIX,posthog.tarnkappe.info
 DOMAIN-SUFFIX,postitial.com
 DOMAIN-SUFFIX,postmedia-ai.wehaacdn.com
@@ -7970,6 +7975,7 @@ DOMAIN-SUFFIX,predictivadnetwork.com
 DOMAIN-SUFFIX,predictivedna.com
 DOMAIN-SUFFIX,predictiveresponse.net
 DOMAIN-SUFFIX,preflect.com
+DOMAIN-SUFFIX,prehurl.com
 DOMAIN-SUFFIX,premiumstats.xyz
 DOMAIN-SUFFIX,preroll.hostave3.net
 DOMAIN-SUFFIX,presage.io
@@ -8107,6 +8113,7 @@ DOMAIN-SUFFIX,pushd-android-logs.s3.amazonaws.com
 DOMAIN-SUFFIX,pushd.netky.tech
 DOMAIN-SUFFIX,pushfilefind.click
 DOMAIN-SUFFIX,pushpad.xyz
+DOMAIN-SUFFIX,pusqfnqjeekvd.website
 DOMAIN-SUFFIX,pv.dakawm.cc
 DOMAIN-SUFFIX,pv.datacaciques.com
 DOMAIN-SUFFIX,pv.hd.sohu.com
@@ -8620,6 +8627,7 @@ DOMAIN-SUFFIX,sa.openmedia.co
 DOMAIN-SUFFIX,sa.sina.cn
 DOMAIN-SUFFIX,sabavision.com
 DOMAIN-SUFFIX,saber.srvcs.tumblr.com
+DOMAIN-SUFFIX,sableviolet.com
 DOMAIN-SUFFIX,sadobeanalytics.geico.com
 DOMAIN-SUFFIX,sageanalyst.net
 DOMAIN-SUFFIX,sahqtibw.com
@@ -9466,6 +9474,7 @@ DOMAIN-SUFFIX,static-ads.zaloapp.com
 DOMAIN-SUFFIX,static-mon.yandex.net
 DOMAIN-SUFFIX,static-rmr.reworldmediafactory.com
 DOMAIN-SUFFIX,static-tracking.klaviyo.com
+DOMAIN-SUFFIX,static.accesstrade.vn
 DOMAIN-SUFFIX,static.affiliate.rakuten.co.jp
 DOMAIN-SUFFIX,static.affiliatly.com
 DOMAIN-SUFFIX,static.cloudflareinsights.com
@@ -11474,6 +11483,7 @@ DOMAIN-SUFFIX,webvitals.luxnet.ua
 DOMAIN-SUFFIX,webwise.com
 DOMAIN-SUFFIX,webwise.org
 DOMAIN-SUFFIX,wecount4u.com
+DOMAIN-SUFFIX,wellworn-lead.com
 DOMAIN-SUFFIX,welovedata.go2cloud.org
 DOMAIN-SUFFIX,welt-der-links.de
 DOMAIN-SUFFIX,wenoolgo.icu

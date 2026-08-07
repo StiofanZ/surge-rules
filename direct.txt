@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-08-05T20:01:09+00:00
+# Generated: 2026-08-07T00:20:17+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111511, local=2, total(deduped)=111348, excluded=33
+# Counts: upstream=111514, local=2, total(deduped)=111351, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -63624,6 +63624,7 @@ ksn-verdict.geoksn.kaspersky.com
 .madajiefood.com
 .madaomall.com
 .madboxi.com
+.made-in-china.com
 .madefuns.com
 .madeinchinastone.com
 .madewei.com
@@ -65368,6 +65369,7 @@ mesu.apple.com
 .microxiang.com
 .microyan.com
 .microzuji.com
+.micstatic.com
 .mictormedical.com
 .micu.hk
 .micun.com
@@ -72999,6 +73001,7 @@ podcasts.itunes.apple.com
 .powercx.com
 .powerde.com
 .powereasy.net
+.poweremarket.com
 .powerex1.com
 .powerflow-tech.com
 .powerfulchina.com
