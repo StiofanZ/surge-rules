@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-08-07T19:25:34+00:00
+# Generated: 2026-08-08T19:04:59+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111514, local=2, total(deduped)=111351, excluded=33
+# Counts: upstream=111515, local=2, total(deduped)=111352, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -60932,6 +60932,7 @@ ksn-verdict.geoksn.kaspersky.com
 .lifevc.com
 .lifevccdn.com
 .lifeweeker.com
+.lifexue.com
 .lifeyk.com
 .lifeyn.net
 .lifezb.com
