@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-08T19:04:58+00:00
+# Generated: 2026-08-10T19:26:22+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12490, local=1, total(deduped)=11849, excluded=29
+# Counts: upstream=12493, local=1, total(deduped)=11852, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -85,7 +85,6 @@ DOMAIN-SUFFIX,360tag.com
 DOMAIN-SUFFIX,3dlivestats.com
 DOMAIN-SUFFIX,3dstats.com
 DOMAIN-SUFFIX,3gl.net
-DOMAIN-SUFFIX,3iulae112b.com
 DOMAIN-SUFFIX,3n2nc158v6u5hv6o.cfd
 DOMAIN-SUFFIX,3p-geo.yahoo.com
 DOMAIN-SUFFIX,3p-udc.yahoo.com
@@ -1302,6 +1301,7 @@ DOMAIN-SUFFIX,analytics.atlassian.com
 DOMAIN-SUFFIX,analytics.audioeye.com
 DOMAIN-SUFFIX,analytics.audionow.de
 DOMAIN-SUFFIX,analytics.authoritymedia.com
+DOMAIN-SUFFIX,analytics.autoodb.com
 DOMAIN-SUFFIX,analytics.avcdn.net
 DOMAIN-SUFFIX,analytics.aweber.com
 DOMAIN-SUFFIX,analytics.azrhymes.com
@@ -3056,6 +3056,7 @@ DOMAIN-SUFFIX,collserve.com
 DOMAIN-SUFFIX,colossal.jp
 DOMAIN-SUFFIX,colossusssp.com
 DOMAIN-SUFFIX,comagic.ru
+DOMAIN-SUFFIX,comanicilikeiste.com
 DOMAIN-SUFFIX,cometlytrack.com
 DOMAIN-SUFFIX,commander1.com
 DOMAIN-SUFFIX,commandersact.com
@@ -6516,6 +6517,7 @@ DOMAIN,marketplace-sentry.wb.ru
 DOMAIN-SUFFIX,marktest.pt
 DOMAIN-SUFFIX,martech.condenastdigital.com
 DOMAIN-SUFFIX,mas.protecmedia.com
+DOMAIN-SUFFIX,maskmonopoly.com
 DOMAIN-SUFFIX,master-shopify-tracker.s3.amazonaws.com
 DOMAIN-SUFFIX,masterlythehague.com
 DOMAIN-SUFFIX,masterstats.com
@@ -7631,6 +7633,7 @@ DOMAIN-SUFFIX,peach-analytics.vercel.app
 DOMAIN-SUFFIX,peakcounter.dk
 DOMAIN-SUFFIX,pearldiver.io
 DOMAIN-SUFFIX,pebed.dm-event.net
+DOMAIN-SUFFIX,pecannerous.com
 DOMAIN-SUFFIX,pecukirom.com
 DOMAIN-SUFFIX,peerius.com
 DOMAIN-SUFFIX,pendo-data-prod.box.com
@@ -9279,6 +9282,7 @@ DOMAIN-SUFFIX,spider-mich.com
 DOMAIN-SUFFIX,spider-tracker.xiaohongshu.com
 DOMAIN-SUFFIX,spindl.link
 DOMAIN-SUFFIX,spiny.ai
+DOMAIN-SUFFIX,spitefulmom.com
 DOMAIN-SUFFIX,spixel.socy.es
 DOMAIN-SUFFIX,spl.ztvx8.com
 DOMAIN-SUFFIX,splash-ad.classting.com
@@ -11485,7 +11489,6 @@ DOMAIN-SUFFIX,webvitals.luxnet.ua
 DOMAIN-SUFFIX,webwise.com
 DOMAIN-SUFFIX,webwise.org
 DOMAIN-SUFFIX,wecount4u.com
-DOMAIN-SUFFIX,wellworn-lead.com
 DOMAIN-SUFFIX,welovedata.go2cloud.org
 DOMAIN-SUFFIX,welt-der-links.de
 DOMAIN-SUFFIX,wenoolgo.icu

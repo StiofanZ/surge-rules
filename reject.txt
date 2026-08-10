@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-08T19:04:58+00:00
+# Generated: 2026-08-10T19:26:22+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12490, local=1, total(deduped)=11849, excluded=29
+# Counts: upstream=12493, local=1, total(deduped)=11852, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -83,7 +83,6 @@
 .3dlivestats.com
 .3dstats.com
 .3gl.net
-.3iulae112b.com
 .3n2nc158v6u5hv6o.cfd
 .3p-geo.yahoo.com
 .3p-udc.yahoo.com
@@ -1300,6 +1299,7 @@ analytics-stage.wildberries.ru
 .analytics.audioeye.com
 .analytics.audionow.de
 .analytics.authoritymedia.com
+.analytics.autoodb.com
 .analytics.avcdn.net
 .analytics.aweber.com
 .analytics.azrhymes.com
@@ -3054,6 +3054,7 @@ click.rustore.ru
 .colossal.jp
 .colossusssp.com
 .comagic.ru
+.comanicilikeiste.com
 .cometlytrack.com
 .commander1.com
 .commandersact.com
@@ -6514,6 +6515,7 @@ marketplace-sentry.wb.ru
 .marktest.pt
 .martech.condenastdigital.com
 .mas.protecmedia.com
+.maskmonopoly.com
 .master-shopify-tracker.s3.amazonaws.com
 .masterlythehague.com
 .masterstats.com
@@ -7629,6 +7631,7 @@ p9-ad-sign.byteimg.com
 .peakcounter.dk
 .pearldiver.io
 .pebed.dm-event.net
+.pecannerous.com
 .pecukirom.com
 .peerius.com
 .pendo-data-prod.box.com
@@ -9277,6 +9280,7 @@ sentry.x5.ru
 .spider-tracker.xiaohongshu.com
 .spindl.link
 .spiny.ai
+.spitefulmom.com
 .spixel.socy.es
 .spl.ztvx8.com
 .splash-ad.classting.com
@@ -11483,7 +11487,6 @@ web-analytics.wildberries.ru
 .webwise.com
 .webwise.org
 .wecount4u.com
-.wellworn-lead.com
 .welovedata.go2cloud.org
 .welt-der-links.de
 .wenoolgo.icu

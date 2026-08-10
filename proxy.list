@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-08T19:04:26+00:00
+# Generated: 2026-08-10T19:25:47+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31363, local=27, total(deduped)=26353, excluded=3, rule_set_only=12
+# Counts: upstream=31369, local=27, total(deduped)=26355, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -1078,6 +1078,7 @@ DOMAIN-SUFFIX,ai7995.site
 DOMAIN-SUFFIX,ai91porn.cc
 DOMAIN-SUFFIX,aiaa.org
 DOMAIN-SUFFIX,aiasahi.jp
+DOMAIN-SUFFIX,aihub.top
 DOMAIN-SUFFIX,aimei133.com
 DOMAIN-SUFFIX,aimsciences.org
 DOMAIN-SUFFIX,aiosearch.com
@@ -8036,6 +8037,7 @@ DOMAIN-SUFFIX,esetsoftware.com
 DOMAIN-SUFFIX,esforce.com
 DOMAIN-SUFFIX,esforce.ru
 DOMAIN-SUFFIX,esg.t91y.com
+DOMAIN-SUFFIX,esim.redteago.com
 DOMAIN-SUFFIX,eskimotube.com
 DOMAIN-SUFFIX,eslite.com
 DOMAIN-SUFFIX,esm.run
