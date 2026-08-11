@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-10T19:26:22+00:00
+# Generated: 2026-08-11T19:31:14+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12493, local=1, total(deduped)=11852, excluded=29
+# Counts: upstream=12504, local=1, total(deduped)=11862, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1944,6 +1944,7 @@ DOMAIN-SUFFIX,assessoriagmv.com
 DOMAIN-SUFFIX,assets.9gtb.com
 DOMAIN-SUFFIX,assets.datarize.ai
 DOMAIN-SUFFIX,assets.newsmaxwidget.com
+DOMAIN-SUFFIX,assets.onedollarstats.com
 DOMAIN-SUFFIX,assets.publicgood.com
 DOMAIN-SUFFIX,assetsconfigcdn.org
 DOMAIN-SUFFIX,assistads.net
@@ -3092,6 +3093,7 @@ DOMAIN-SUFFIX,connexity.net
 DOMAIN-SUFFIX,consent-manager-events.ogury.io
 DOMAIN-SUFFIX,consent.easybrain.com
 DOMAIN-SUFFIX,consentag.eu
+DOMAIN-SUFFIX,console-telemetry.oci.oraclecloud.com
 DOMAIN-SUFFIX,console.data4.net
 DOMAIN-SUFFIX,consolidata.ai
 DOMAIN-SUFFIX,constellation.networknmedia.com
@@ -4904,7 +4906,9 @@ DOMAIN-SUFFIX,go-usertrack-importer.pub.rtl-api.com
 DOMAIN-SUFFIX,go.admost.com
 DOMAIN-SUFFIX,go.bidfluence.com
 DOMAIN-SUFFIX,go.gsrv.dev
+DOMAIN-SUFFIX,go.mobisla.com
 DOMAIN-SUFFIX,go.mobstitialtag.com
+DOMAIN-SUFFIX,go.mobtrks.com
 DOMAIN-SUFFIX,go.rcvlinks.com
 DOMAIN-SUFFIX,go.tmrjmp.com
 DOMAIN-SUFFIX,go.vrvm.com
@@ -4988,6 +4992,7 @@ DOMAIN-SUFFIX,gratis-counter-gratis.de
 DOMAIN-SUFFIX,gravity4.com
 DOMAIN-SUFFIX,gre.groobee.io
 DOMAIN-SUFFIX,great12.org
+DOMAIN-SUFFIX,greatpuppydogs.com
 DOMAIN-SUFFIX,greatviews.de
 DOMAIN-SUFFIX,greenbids.ai
 DOMAIN-SUFFIX,gresrv.com
@@ -9561,6 +9566,7 @@ DOMAIN,stats.dahlmessenger.com
 DOMAIN-SUFFIX,stats.darkreader.app
 DOMAIN-SUFFIX,stats.datawrapper.de
 DOMAIN,stats.dev.telega.info
+DOMAIN-SUFFIX,stats.divee.ai
 DOMAIN-SUFFIX,stats.dnaindia.com
 DOMAIN-SUFFIX,stats.emol.com
 DOMAIN-SUFFIX,stats.externulls.com
@@ -9582,6 +9588,7 @@ DOMAIN-SUFFIX,stats.index.hr
 DOMAIN-SUFFIX,stats.indianpornempire.com
 DOMAIN-SUFFIX,stats.insighttimer.com
 DOMAIN-SUFFIX,stats.itc.ua
+DOMAIN-SUFFIX,stats.jerkmotion.com
 DOMAIN-SUFFIX,stats.jiosaavn.com
 DOMAIN-SUFFIX,stats.jkdesa.com
 DOMAIN-SUFFIX,stats.jpush.cn
@@ -10842,6 +10849,7 @@ DOMAIN-SUFFIX,treker.fun
 DOMAIN-SUFFIX,trendemon.com
 DOMAIN-SUFFIX,trenhdg.com
 DOMAIN-SUFFIX,trgfx.b-cdn.net
+DOMAIN-SUFFIX,tri-table.com
 DOMAIN-SUFFIX,triggertag.gorillanation.com
 DOMAIN-SUFFIX,triggit.com
 DOMAIN-SUFFIX,trigraff.com
@@ -10954,6 +10962,7 @@ DOMAIN-SUFFIX,tzegilo.com
 DOMAIN-SUFFIX,u-ad.info
 DOMAIN-SUFFIX,u-on.eu
 DOMAIN-SUFFIX,u.btserve.com
+DOMAIN-SUFFIX,u.lessbutbetter.studio
 DOMAIN-SUFFIX,u.tampermonkey.net
 DOMAIN-SUFFIX,u.xogu.cn
 DOMAIN-SUFFIX,u066.ocregister.com
@@ -11163,6 +11172,7 @@ DOMAIN-SUFFIX,v.kidoz.net
 DOMAIN-SUFFIX,v.oui.sncf
 DOMAIN-SUFFIX,v.shopify.com
 DOMAIN-SUFFIX,v.tampermonkey.net
+DOMAIN-SUFFIX,v.voltmail.io
 DOMAIN-SUFFIX,v063.4029tv.com
 DOMAIN-SUFFIX,v066.wxii12.com
 DOMAIN-SUFFIX,v16-ad.byteoversea.com

@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-10T19:26:22+00:00
+# Generated: 2026-08-11T19:31:14+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12493, local=1, total(deduped)=11852, excluded=29
+# Counts: upstream=12504, local=1, total(deduped)=11862, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1942,6 +1942,7 @@ apilog-web.acfun.cn
 .assets.9gtb.com
 .assets.datarize.ai
 .assets.newsmaxwidget.com
+.assets.onedollarstats.com
 .assets.publicgood.com
 .assetsconfigcdn.org
 .assistads.net
@@ -3090,6 +3091,7 @@ click.rustore.ru
 .consent-manager-events.ogury.io
 .consent.easybrain.com
 .consentag.eu
+.console-telemetry.oci.oraclecloud.com
 .console.data4.net
 .consolidata.ai
 .constellation.networknmedia.com
@@ -4902,7 +4904,9 @@ error-tracking.megamarket.tech
 .go.admost.com
 .go.bidfluence.com
 .go.gsrv.dev
+.go.mobisla.com
 .go.mobstitialtag.com
+.go.mobtrks.com
 .go.rcvlinks.com
 .go.tmrjmp.com
 .go.vrvm.com
@@ -4986,6 +4990,7 @@ google-analytics-suite.ozon.ru
 .gravity4.com
 .gre.groobee.io
 .great12.org
+.greatpuppydogs.com
 .greatviews.de
 .greenbids.ai
 .gresrv.com
@@ -9559,6 +9564,7 @@ stats.dahlmessenger.com
 .stats.darkreader.app
 .stats.datawrapper.de
 stats.dev.telega.info
+.stats.divee.ai
 .stats.dnaindia.com
 .stats.emol.com
 .stats.externulls.com
@@ -9580,6 +9586,7 @@ stats.dev.telega.info
 .stats.indianpornempire.com
 .stats.insighttimer.com
 .stats.itc.ua
+.stats.jerkmotion.com
 .stats.jiosaavn.com
 .stats.jkdesa.com
 .stats.jpush.cn
@@ -10840,6 +10847,7 @@ tracing-http.megamarket.tech
 .trendemon.com
 .trenhdg.com
 .trgfx.b-cdn.net
+.tri-table.com
 .triggertag.gorillanation.com
 .triggit.com
 .trigraff.com
@@ -10952,6 +10960,7 @@ tracing-http.megamarket.tech
 .u-ad.info
 .u-on.eu
 .u.btserve.com
+.u.lessbutbetter.studio
 .u.tampermonkey.net
 .u.xogu.cn
 .u066.ocregister.com
@@ -11161,6 +11170,7 @@ tracing-http.megamarket.tech
 .v.oui.sncf
 .v.shopify.com
 .v.tampermonkey.net
+.v.voltmail.io
 .v063.4029tv.com
 .v066.wxii12.com
 .v16-ad.byteoversea.com

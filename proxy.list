@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-10T19:25:47+00:00
+# Generated: 2026-08-11T19:30:35+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31369, local=27, total(deduped)=26355, excluded=3, rule_set_only=12
+# Counts: upstream=31371, local=27, total(deduped)=26356, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -6927,6 +6927,7 @@ DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,disqusservice.com
 DOMAIN-SUFFIX,dit-inc.us
 DOMAIN-SUFFIX,divas.com.uy
+DOMAIN-SUFFIX,divdyn.com
 DOMAIN-SUFFIX,diwodiwo.xyz
 DOMAIN-SUFFIX,diyarbakirescort.com
 DOMAIN-SUFFIX,diyin.org
