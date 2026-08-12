@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-11T19:30:35+00:00
+# Generated: 2026-08-12T19:31:18+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31371, local=27, total(deduped)=26356, excluded=3
+# Counts: upstream=31400, local=27, total(deduped)=26385, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -753,6 +753,9 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .activelearnprimary.com.au
 .activematter.game
 .activeteachonline.com
+.activision.com
+.activisionblizzard.com
+.activisionblizzardmedia.com
 .activpn.com
 .actualidad-rt.com
 .aculo.us
@@ -3377,6 +3380,7 @@ beck-online.beck.de
 .bellotube.com
 .bellsouth.net
 .benaughty.fun
+.benefitsforeveryworld.com
 .bengalisexvideos.com
 .benliton.com
 .bentobox.tv
@@ -4834,6 +4838,11 @@ bybit.ada.support
 .callbackkiller.com
 .callersbane.com
 .callhulu.com
+.callofduty.com
+.callofdutyendowment.com
+.callofdutyendowment.org
+.callofdutyleague.com
+.callofdutymobile.com
 .cam-duct.com
 .cam4.com
 .cam69.com
@@ -4885,6 +4894,7 @@ bybit.ada.support
 .camwhoria.com
 .canada-beatsbydre.com
 .candidforum-videos.com
+.candycrush.com
 .candycumcity.com
 .candypleasure.com
 .canny.io
@@ -5962,6 +5972,7 @@ cisco.evergage.com
 .crackle.com
 .craigslist.org
 .crankplayer.com
+.crashbandicoot.com
 .crashlytics.com
 .crates.io
 .crazy-amateurs.com
@@ -6542,6 +6553,7 @@ datarouter.apps.netherrealm.com
 .demo.unlock-music.dev
 .democracy.earth
 .demonoid.is
+.demonware.net
 .demoprint.com
 .demosisto.hk
 .denfaminicogamer.jp
@@ -6664,7 +6676,9 @@ deutschewelle.h-cdn.com
 .dgwav.com
 .dh44.lol
 .dhlestudio.com.co
+.diablo.com
 .diablo3.com
+.diablo4.com
 .diabloimmortal.com
 .diabrowser.com
 .diabrowser.engineering
@@ -8101,6 +8115,7 @@ elib.maruzen.co.jp
 .europeansustainabledesign.net
 .europeansustainabledesigncouncil.com
 .europeansustainabledesigncouncil.net
+.europeanwarzoneseries.com
 .europepmc.org
 .europornstar.com
 .eurosexscene.com
@@ -11136,6 +11151,7 @@ hb4bbbbb.pmhcjk.com
 .hifuli.com
 .highbolt.net
 .highdefinitionbeatsbydre.com
+.highmoonstudios.com
 .highporn.net
 .highrockmedia.com
 .hightopnikes.com
@@ -12288,6 +12304,7 @@ imperial.insendi.com
 .industrialtoys.com
 .infinitetoons.com
 .infinitetube.com
+.infinityward.com
 .influencersgonewild.com
 .info-graf.fr
 .infocert.digital
@@ -13635,6 +13652,7 @@ imperial.insendi.com
 .kindnudist.com
 .kindteenporn.com
 .kinescopecdn.net
+.king.com
 .kingcomix.com
 .kingdomsalvation.org
 .kingextre.me
@@ -19254,6 +19272,7 @@ q676790b.pmhcjk.com
 .ratedgross.com
 .rateyourmusic.com
 .rationalwiki.org
+.ravensoftware.com
 .ravm.tv
 .raw.githack.com
 .rawgit.com
@@ -20171,6 +20190,7 @@ sberpro.vedomosti.ru
 .seiron-sankei.com
 .sejie80.com
 .sekai.colorfulpalette.org
+.sekirothegame.com
 .seksmet.nl
 .sekswebsite.nl
 .sekur1213.guru
@@ -20628,6 +20648,7 @@ setup.workos.com
 .sidelinesnews.com
 .sider.ai
 .siege-amazon.com
+.sierragames.com
 .sifangclub.com
 .sigcomm.org
 .sigmoidoscopeexam.com
@@ -20754,6 +20775,7 @@ setup.workos.com
 .sky.com
 .skyassets.com
 .skybet.com
+.skylanders.com
 .skymansion.net
 .skymatter.com
 .skyoceanrescue.com
@@ -20796,6 +20818,7 @@ setup.workos.com
 .sldolls.com
 .sleazyfork.org
 .sleazyneasy.com
+.sledgehammergames.com
 .slheng.com
 .slickvpn.com
 .slides.com
@@ -20942,6 +20965,7 @@ setup.workos.com
 .solarsystem.nasa.gov
 .solid.ru
 .solidifi.app
+.solidstate.com
 .solostudioksale.com
 .solscan.io
 .solutionstation.com
@@ -21198,6 +21222,7 @@ setup.workos.com
 .sputnikmediabank.com
 .sputniknews.com
 .spyjinx.com
+.spyrothedragon.com
 .sqlite.org
 .sqlserveronlinux.com
 .sqool.net
@@ -22483,6 +22508,8 @@ supercell.helpshift.com
 .toncenter.com
 .tonec.com
 .tonicmovies.com
+.tonyhawk.com
+.tonyhawkthegame.com
 .toolforge.org
 .toolmaking-cadcam.com
 .toomadporn.pro
@@ -22634,6 +22661,7 @@ supercell.helpshift.com
 .trendmicro.com
 .trendsmap.com
 .trendyporn.com
+.treyarch.com
 .trezor.io
 .triballo.net
 .tribler.org
@@ -24797,6 +24825,7 @@ widgets.stripst.com
 .worldscientific.com
 .worldsecureemail.com
 .worldsecuresystems.com
+.worldseriesofwarzone.com
 .worldsex.com
 .worldsfastestgamer.net
 .worldvpn.net

@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-11T19:31:14+00:00
+# Generated: 2026-08-12T19:31:52+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12504, local=1, total(deduped)=11862, excluded=29
+# Counts: upstream=12507, local=1, total(deduped)=11865, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2584,6 +2584,7 @@ bs.mail.ru
 .cccpmo.com
 .ccgateway.net
 .cchome-stage.adobe.io
+.ccnsad.com
 .cda7k-ddok.com
 .cdclub.net
 .cdend.com
@@ -3388,6 +3389,7 @@ crashlyticsreports-pa.googleapis.com
 .cya2.net
 .cyberanalytics.nl
 .cypr.com
+.czilladx.com
 .d-064.com
 .d-collector.jennifersoft.com
 .d-log.asahi.co.jp
@@ -7945,6 +7947,7 @@ pixel.yandex.com
 .postmedia-ai.wehaacdn.com
 .postmedia.app
 .postut.cn
+.powderencouraged.com
 .power.adhacker.online
 .powerbiz.co
 .powercount.com
