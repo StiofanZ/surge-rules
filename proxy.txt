@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-12T19:31:18+00:00
+# Generated: 2026-08-13T19:30:12+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31400, local=27, total(deduped)=26385, excluded=3
+# Counts: upstream=31412, local=27, total(deduped)=26396, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -4633,6 +4633,7 @@ blizzard.nefficient.co.kr
 .buicha.social
 .building3dcontent.com
 .builtfromebay.com
+.builtwithnix.org
 .bukkake-jav.com
 .bullguard.com
 .bullog.org
@@ -16123,6 +16124,7 @@ muse.jhu.edu
 .mynavi.jp
 .mynetname.net
 .mynike.com
+.mynixos.com
 .myoctocat.com
 .myparagliding.com
 .mypearson.com
@@ -16818,7 +16820,15 @@ nbbb1bb7.pmhcjk.com
 .nivod.tv
 .nivodi.tv
 .nivodz.com
+.nix-community.org
+.nix.dev
+.nix.store
+.nixcon.org
+.nixcon2017.org
+.nixlang.com
 .nixos.org
+.nixos.wiki
+.nixpkgs.org
 .niziero.info
 .njactb.org
 .njav.tv
@@ -25743,6 +25753,7 @@ ws.audioscrobbler.com
 .yandex.eu
 .yandex.fi
 .yandex.fr
+.yandex.it
 .yandex.jobs
 .yandex.kg
 .yandex.kz

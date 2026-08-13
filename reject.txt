@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-12T19:31:52+00:00
+# Generated: 2026-08-13T19:30:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12507, local=1, total(deduped)=11865, excluded=29
+# Counts: upstream=12515, local=1, total(deduped)=11872, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1739,6 +1739,7 @@ api.dashlytrack.app
 .api.exc.mob.com
 .api.eye.sbdv.ru
 .api.ffbbbdc6d3c353211fe2ba39c9f744cd.com
+.api.firwinds.site
 .api.flocktory.com
 .api.flygame.io
 .api.fusepowered.com
@@ -4451,6 +4452,7 @@ error-tracking.megamarket.tech
 .exe.bid
 .exelator.com
 .exelbid.com
+.exhalesyntheticundefined.com
 .eximdigital.com
 .exinariuminix.info
 .exitbee.com
@@ -4791,6 +4793,7 @@ error-tracking.megamarket.tech
 .geniee.jp
 .genieedmp.com
 .genieesspv.jp
+.geniuslinkcdn.com
 .geo-service.adtelligent.com
 .geo.go2s.co
 .geo.hltv.org
@@ -6637,6 +6640,7 @@ mc.yandex.net
 .mega-stats.com
 .mega.mydealz.de
 .megadata.co.kr
+.megapred.com
 .meijxqop.com
 .meitustat.com
 .mellow-habit.com
@@ -7410,6 +7414,7 @@ new-adv.ozon.ru
 .openads.aira.cz
 openai.qualtrics.com
 .openclick.com
+.opendatastats.net
 .openfpcdn.io
 .openglass.tv
 .openhit.com
@@ -8089,6 +8094,7 @@ prodvizhenie-adv.ozon.ru
 .pub.toku-tag.jp
 .pub1.co
 .pubexchange.com
+.pubfuture-ssp.com
 .pubjelly.nxjmp.com
 .public-data-api.miyoushe.com
 .public.profitwell.com
@@ -8215,6 +8221,7 @@ questions-adv.ozon.ru
 .qxif497o6q61e2nep.cyou
 .qxwoiv.com
 .qzlog.com
+.qzs.gdtimg.com
 .r-ad.linkshare.jp
 .r.aachener-zeitung.de
 .r.anime-go.cc

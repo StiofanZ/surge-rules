@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-08-12T19:31:53+00:00
+# Generated: 2026-08-13T19:30:35+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111515, local=2, total(deduped)=111352, excluded=33
+# Counts: upstream=111521, local=2, total(deduped)=111358, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -2437,6 +2437,7 @@
 .194nb.com
 .195155.com
 .195268032591463.icu
+.1958xy.com
 .195idc.com
 .196b7adb23969e39.com
 .196g.com
@@ -4095,6 +4096,7 @@
 .36kr.net
 .36krcdn.com
 .36krcnd.com
+.36linkr.com
 .36pnes36t0qs.com
 .36qp.com
 .36rv3j3.shop
@@ -14216,7 +14218,6 @@ bag.itunes.apple.com
 .bamboofactorychina.com
 .bambooolab.com
 .bambu-lab.com
-.bambulab.com
 .bamengame.com
 .bamensq.com
 .bamenzhushou.com
@@ -16777,6 +16778,7 @@ beacons3.gvt2.com
 .bktsj.com
 .bkvps.com
 .bkweek.com
+.bkzhibo.com
 .bkzzy.com
 .bl.com
 .bl0757.com
@@ -52945,6 +52947,7 @@ izattime.qcomgeo2.com
 .jgsemicon.com
 .jgstour.com
 .jgsxfw.com
+.jgtab.link
 .jgtc315.com
 .jguanjia.com
 .jgums.com
@@ -54698,6 +54701,7 @@ izattime.qcomgeo2.com
 .jkyule.com
 .jkzhilu.com
 .jkzl.com
+.jkzlrs.com
 .jkzn365.com
 .jl-er.com
 .jl-jssk.com
@@ -56361,6 +56365,7 @@ js-cdn.music.apple.com
 .juwanhezi.com
 .juwanshe.com
 .juweixin.com
+.juwinmedia.com
 .juxia.com
 .juxian.com
 .juxiang3d.com
@@ -85604,6 +85609,7 @@ swscan.apple.com
 .sxyj.net
 .sxyqgs.asia
 .sxyyc.net
+.sxyygh.com
 .sxzhaobiao.com
 .sxzhongfei.com
 .sxzhyy.com
@@ -98142,6 +98148,7 @@ www.support.apple.com
 .xhscdn.net
 .xhsd.com
 .xhsd.net
+.xhsdzd.com
 .xhsf.com
 .xhslink.com
 .xhslw.com
@@ -104530,7 +104537,6 @@ xtratime.qcomgeo2.com
 .youlesp.com
 .youletd.com
 .youleyou.com
-.youlian.fun
 .youlianfuwu.com
 .youliangda.com
 .youlianghz.com
