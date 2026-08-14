@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-13T19:30:34+00:00
+# Generated: 2026-08-14T19:24:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12515, local=1, total(deduped)=11872, excluded=29
+# Counts: upstream=12518, local=1, total(deduped)=11875, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -4492,6 +4492,7 @@ error-tracking.megamarket.tech
 .ezakus.net
 .ezodn.com
 .ezoicanalytics.com
+.ezojs.com
 .ezstat.ru
 .ezytrack.com
 .f-counter.net
@@ -6003,6 +6004,7 @@ incoming-telemetry.thunderbird.net
 .line1-log.biligame.net
 .lineare.net
 .linezing.com
+.ling.willowmovies.com
 .link-ag.net
 .link-empfehlen24.de
 .link-medias.com
@@ -6426,6 +6428,7 @@ loyalnost-adv.ozon.ru
 .luolitang.com
 .lust-girls.com
 .lustygg.com
+.luugy.com
 .luxupcdnc.com
 .lw-c-log.lastwarapp.com
 .lwadm.com
