@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-17T19:04:33+00:00
+# Generated: 2026-08-18T19:03:56+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12523, local=1, total(deduped)=11880, excluded=29
+# Counts: upstream=12530, local=1, total(deduped)=11887, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1281,6 +1281,7 @@ DOMAIN-SUFFIX,analytics.163.com
 DOMAIN-SUFFIX,analytics.300624.com
 DOMAIN-SUFFIX,analytics.3c5.com
 DOMAIN-SUFFIX,analytics.74.ru
+DOMAIN-SUFFIX,analytics.7reels.cc
 DOMAIN-SUFFIX,analytics.a-f.io
 DOMAIN-SUFFIX,analytics.adfreetime.com
 DOMAIN-SUFFIX,analytics.adoffice.11st.co.kr
@@ -1474,6 +1475,7 @@ DOMAIN-SUFFIX,analytics.msnbc.msn.com
 DOMAIN-SUFFIX,analytics.muses.org
 DOMAIN-SUFFIX,analytics.myshoptago.com
 DOMAIN-SUFFIX,analytics.netkeiba.com
+DOMAIN-SUFFIX,analytics.netronline.dev
 DOMAIN-SUFFIX,analytics.newscred.com
 DOMAIN-SUFFIX,analytics.newsifier.nl
 DOMAIN-SUFFIX,analytics.nextopia.net
@@ -1566,6 +1568,7 @@ DOMAIN-SUFFIX,analytics.stanby.com
 DOMAIN-SUFFIX,analytics.starlink.com
 DOMAIN-SUFFIX,analytics.starmakerstudios.com
 DOMAIN-SUFFIX,analytics.streamingworld.xyz
+DOMAIN-SUFFIX,analytics.streamvaultsrc.click
 DOMAIN-SUFFIX,analytics.studiodesignapp.com
 DOMAIN-SUFFIX,analytics.styria.hr
 DOMAIN-SUFFIX,analytics.superstructure.ai
@@ -4003,6 +4006,7 @@ DOMAIN-SUFFIX,dump.mewcdn.online
 DOMAIN-SUFFIX,dup.baidustatic.com
 DOMAIN-SUFFIX,dupcczkfziyd3.cloudfront.net
 DOMAIN-SUFFIX,durationmedia.net
+DOMAIN-SUFFIX,dutchrelay.com
 DOMAIN-SUFFIX,dutils.com
 DOMAIN-SUFFIX,dv663fc06d35i.cloudfront.net
 DOMAIN-SUFFIX,dvv009j588zal.cloudfront.net
@@ -7716,6 +7720,7 @@ DOMAIN-SUFFIX,photospace.life
 DOMAIN-SUFFIX,photovault.pics
 DOMAIN-SUFFIX,photovault.store
 DOMAIN-SUFFIX,phpstat.com
+DOMAIN-SUFFIX,physicaldad.com
 DOMAIN-SUFFIX,phywi.org
 DOMAIN-SUFFIX,pi-stats.com
 DOMAIN-SUFFIX,pi.ispot.tv
@@ -8951,6 +8956,7 @@ DOMAIN-SUFFIX,sgtm.tennis-point.de
 DOMAIN-SUFFIX,sgtm.tripping.com
 DOMAIN-SUFFIX,sgtm.walbrook.ac.uk
 DOMAIN-SUFFIX,sgtm.yubico.com
+DOMAIN-SUFFIX,shameful-farm.com
 DOMAIN-SUFFIX,shareasale.com
 DOMAIN-SUFFIX,sharebang.com
 DOMAIN-SUFFIX,sharethrough.com
@@ -9072,6 +9078,7 @@ DOMAIN-SUFFIX,slview.psne.jp
 DOMAIN-SUFFIX,sm-cloud.yunsafe.top
 DOMAIN-SUFFIX,smaad.net
 DOMAIN-SUFFIX,smac-ad.com
+DOMAIN-SUFFIX,smallanywhere.com
 DOMAIN-SUFFIX,smart-below.com
 DOMAIN-SUFFIX,smart-c.jp
 DOMAIN-SUFFIX,smart-digital-solutions.com
