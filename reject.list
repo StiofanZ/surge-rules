@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-18T19:03:56+00:00
+# Generated: 2026-08-19T18:58:31+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12530, local=1, total(deduped)=11887, excluded=29
+# Counts: upstream=12538, local=1, total(deduped)=11895, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1222,6 +1222,7 @@ DOMAIN-SUFFIX,analytically.net
 DOMAIN,analytics-adv.ozon.ru
 DOMAIN-SUFFIX,analytics-alv.google.com
 DOMAIN-SUFFIX,analytics-api.a-f.io
+DOMAIN-SUFFIX,analytics-api.byub.org
 DOMAIN-SUFFIX,analytics-api.gemcommerce.com
 DOMAIN-SUFFIX,analytics-api.invideo.io
 DOMAIN-SUFFIX,analytics-api.liveapp.com
@@ -1319,6 +1320,7 @@ DOMAIN-SUFFIX,analytics.bomiv.com
 DOMAIN-SUFFIX,analytics.brave.com
 DOMAIN-SUFFIX,analytics.brunch.co.kr
 DOMAIN-SUFFIX,analytics.businessinsider.com
+DOMAIN-SUFFIX,analytics.byub.org
 DOMAIN-SUFFIX,analytics.callbell.eu
 DOMAIN-SUFFIX,analytics.carambo.la
 DOMAIN-SUFFIX,analytics.carvana.io
@@ -1575,6 +1577,7 @@ DOMAIN-SUFFIX,analytics.superstructure.ai
 DOMAIN-SUFFIX,analytics.sutochno.ru
 DOMAIN-SUFFIX,analytics.sve.cc
 DOMAIN-SUFFIX,analytics.t-mobile.com
+DOMAIN-SUFFIX,analytics.talentegy.com
 DOMAIN-SUFFIX,analytics.tebilisim.com
 DOMAIN-SUFFIX,analytics.tedium.co
 DOMAIN-SUFFIX,analytics.teespring.com
@@ -2166,6 +2169,7 @@ DOMAIN-SUFFIX,beacon.coofis.com
 DOMAIN-SUFFIX,beacon.digima.com
 DOMAIN-SUFFIX,beacon.dropbox.com
 DOMAIN-SUFFIX,beacon.ehow.com
+DOMAIN-SUFFIX,beacon.errorception.com
 DOMAIN-SUFFIX,beacon.gtv-pub.com
 DOMAIN-SUFFIX,beacon.gu-web.net
 DOMAIN-SUFFIX,beacon.gutefrage.net
@@ -2657,6 +2661,7 @@ DOMAIN-SUFFIX,cdn.logbase.io
 DOMAIN-SUFFIX,cdn.logrocket.com
 DOMAIN-SUFFIX,cdn.mediatradecraft.com
 DOMAIN-SUFFIX,cdn.memo.co
+DOMAIN-SUFFIX,cdn.mgln.ai
 DOMAIN-SUFFIX,cdn.mircheigeshoa.com
 DOMAIN-SUFFIX,cdn.mixx-ad.net
 DOMAIN-SUFFIX,cdn.moengage.com
@@ -6645,6 +6650,7 @@ DOMAIN-SUFFIX,mediav.com
 DOMAIN-SUFFIX,mediba.jp
 DOMAIN-SUFFIX,mediego.com
 DOMAIN-SUFFIX,medipartner.jp
+DOMAIN-SUFFIX,medium-while.com
 DOMAIN-SUFFIX,medtargetsystem.com
 DOMAIN-SUFFIX,meendocash.com
 DOMAIN-SUFFIX,meet-buddy.com
@@ -8196,6 +8202,7 @@ DOMAIN-SUFFIX,qguwoq.cn
 DOMAIN-SUFFIX,qhupdate.com
 DOMAIN-SUFFIX,qienews.cn
 DOMAIN-SUFFIX,qifacaisklop.com
+DOMAIN-SUFFIX,qirgzaosm.in
 DOMAIN-SUFFIX,qist.me
 DOMAIN-SUFFIX,qlitics.com
 DOMAIN-SUFFIX,qlog.adap.tv
@@ -11892,6 +11899,7 @@ DOMAIN-SUFFIX,ziyu.net
 DOMAIN-SUFFIX,zjgfq.com
 DOMAIN-SUFFIX,zml-apm-prd.dbv4.noncd.db.de
 DOMAIN-SUFFIX,zmqdez.ru
+DOMAIN-SUFFIX,zoligirls.com
 DOMAIN-SUFFIX,zoly.tech
 DOMAIN-SUFFIX,zoomanalytics.co
 DOMAIN-SUFFIX,zoomino.com

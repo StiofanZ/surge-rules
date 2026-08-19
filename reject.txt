@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-18T19:03:56+00:00
+# Generated: 2026-08-19T18:58:31+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12530, local=1, total(deduped)=11887, excluded=29
+# Counts: upstream=12538, local=1, total(deduped)=11895, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1220,6 +1220,7 @@ agency-adv.ozon.ru
 analytics-adv.ozon.ru
 .analytics-alv.google.com
 .analytics-api.a-f.io
+.analytics-api.byub.org
 .analytics-api.gemcommerce.com
 .analytics-api.invideo.io
 .analytics-api.liveapp.com
@@ -1317,6 +1318,7 @@ analytics-stage.wildberries.ru
 .analytics.brave.com
 .analytics.brunch.co.kr
 .analytics.businessinsider.com
+.analytics.byub.org
 .analytics.callbell.eu
 .analytics.carambo.la
 .analytics.carvana.io
@@ -1573,6 +1575,7 @@ analytics-stage.wildberries.ru
 .analytics.sutochno.ru
 .analytics.sve.cc
 .analytics.t-mobile.com
+.analytics.talentegy.com
 .analytics.tebilisim.com
 .analytics.tedium.co
 .analytics.teespring.com
@@ -2164,6 +2167,7 @@ b2.mail.ru
 .beacon.digima.com
 .beacon.dropbox.com
 .beacon.ehow.com
+.beacon.errorception.com
 .beacon.gtv-pub.com
 .beacon.gu-web.net
 .beacon.gutefrage.net
@@ -2655,6 +2659,7 @@ bs.mail.ru
 .cdn.logrocket.com
 .cdn.mediatradecraft.com
 .cdn.memo.co
+.cdn.mgln.ai
 .cdn.mircheigeshoa.com
 .cdn.mixx-ad.net
 .cdn.moengage.com
@@ -6643,6 +6648,7 @@ mc.yandex.net
 .mediba.jp
 .mediego.com
 .medipartner.jp
+.medium-while.com
 .medtargetsystem.com
 .meendocash.com
 .meet-buddy.com
@@ -8194,6 +8200,7 @@ prodvizhenie-adv.ozon.ru
 .qhupdate.com
 .qienews.cn
 .qifacaisklop.com
+.qirgzaosm.in
 .qist.me
 .qlitics.com
 .qlog.adap.tv
@@ -11890,6 +11897,7 @@ xapi.ozonru.me
 .zjgfq.com
 .zml-apm-prd.dbv4.noncd.db.de
 .zmqdez.ru
+.zoligirls.com
 .zoly.tech
 .zoomanalytics.co
 .zoomino.com
