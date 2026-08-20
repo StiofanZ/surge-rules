@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-08-19T18:58:32+00:00
+# Generated: 2026-08-20T19:06:57+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111522, local=2, total(deduped)=111359, excluded=33
+# Counts: upstream=111492, local=2, total(deduped)=111330, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -10339,7 +10339,6 @@ adservice.google.com
 .afca-asia.org
 .afca6b82c11032.beer
 .afcec.com
-afcs.dell.com
 .afdian.com
 .afdian.net
 .afdiancdn.com
@@ -23086,7 +23085,6 @@ client-api.itunes.apple.com
 .client51.com
 clientflow.apple.com
 clientflow.apple.com.akadns.net
-clientperipherals.dell.com
 clientservices.googleapis.com
 .clifford-hospital.org
 .cliffordtrading.com
@@ -26505,7 +26503,6 @@ cstat.cdn-apple.com
 .cusdvs.com
 .cusdvs.net
 .custeel.com
-customization-cdn.dell.com
 .customizedfasteners.com
 .customsapp.com
 .customskh.org
@@ -28062,7 +28059,6 @@ dd-cdn.origin-apple.com.akadns.net
 .ddpai.com
 .ddpoc.com
 .ddqcw.com
-dds.dell.com
 .ddsaas.com
 .ddsk.la
 .ddsm.com
@@ -29369,7 +29365,6 @@ discussionschinese.apple.com
 .dl-meitu.com
 .dl-rc.com
 .dl.delivery.mp.microsoft.com
-dl.dell.com
 dl.google.com
 dl.l.google.com
 .dl0728.com
@@ -31313,9 +31308,6 @@ downloaddispatch.itunes.apple.com
 .ea-china.com
 .ea-retina.com
 .ea-xing.com
-ea2cn-dev-outlet.dell.com
-ea2cn-prod-outlet.dell.com
-ea2cn-staging-outlet.dell.com
 .ea360.com
 .ea3w.com
 .ea65d2a2f16d6b8c.com
@@ -32373,7 +32365,6 @@ ea2cn-staging-outlet.dell.com
 .emlog.net
 .emmmn.com
 .emodor.com
-emoi-cncdn.bing.com
 .emoji6.com
 .emojimobile.com
 .emoriko.com
@@ -34030,7 +34021,6 @@ experiments.apple.com
 .fcpowerup.com
 .fcqjc.com
 .fcrc114.com
-fcs.dell.com
 .fcs1.com
 .fcsc.com
 .fcstor.com
@@ -35740,11 +35730,7 @@ fpinit.itunes.apple.com
 .ft12.com
 .ft22.com
 .ft98.com
-fta.dell.com
-ftaapj.dell.com
-ftaemea.dell.com
 .ftaro.com
-ftasitapj.dell.com
 .ftbj.net
 .ftcoaster.com
 .ftd.nz
@@ -36844,8 +36830,6 @@ g3.gstatic.com
 .gbtranswins.com
 .gbvh.com
 .gbw114.com
-gbxgateway-dev.dell.com
-gbxgateway.dell.com
 .gc-zb.com
 .gc1616.com
 .gc39.com
@@ -49419,7 +49403,6 @@ guzzoni.smoot.apple.com
 .i-xiaohaibao.com
 .i-xinnuo.com
 .i-xoron.com
-i.dell.com
 i.pki.goog
 .i0.pub
 .i007.vip
@@ -68406,7 +68389,6 @@ myapp.itunes.apple.com
 .nextworkshop.net
 .nextyu.com
 .nexus-holding.com
-nexus.dell.com
 .nexusedgeio.com
 .nexushd.org
 .neyetwatcher.com
@@ -71392,7 +71374,6 @@ osxapps.itunes.g.aaplimg.com
 .p-sig-dom.com
 .p-sig-dom.net
 .p.biz
-p.cdn.persaas.dell.com
 .p023.com
 .p0371.com
 .p0431.com
@@ -78719,7 +78700,6 @@ safebrowsing.googleapis.com
 .sceeo.com
 .sceia.org
 .scemrq.com
-scene7-cdn.dell.com
 .scengine.com
 .scenictc.com
 .scensmart.com
@@ -82214,7 +82194,6 @@ shell.cdn.office.net
 .si-era.com
 .si-in.com
 .si-win.com
-si.cdn.dell.com
 .sia1995.net
 .siad-c.com
 .siaedu.net
@@ -83118,7 +83097,6 @@ si.cdn.dell.com
 .sm-check.com
 .sm-cq.com
 .sm-main.com
-sm.dell.com
 .sm0.fun
 .sm160.com
 .sm160.net
@@ -83417,9 +83395,7 @@ smp-device-content.apple.com
 .snowkey.com
 .snowlotusgroup.com
 .snowyimall.com
-snp.cdn.dell.com
 .snpac.com
-snpi.dell.com
 .snps.tech
 .snptc.com
 .snrat.com
@@ -85161,7 +85137,6 @@ su.itunes.apple.com
 support-china.apple-support.akadns.net
 .support-cn.samsung.com
 support.apple.com
-supportassist.dell.com
 .supreme-oe.com
 .supwisdom.com
 .supwk.com
@@ -89830,7 +89805,6 @@ tools.google.com
 .toysol.com
 .tp-data.com
 .tp-hivi.com
-tp.louisvuitton.com
 .tp82.com
 .tpadx.com
 .tpbook.com
@@ -91757,7 +91731,6 @@ updates.cdn-apple.com
 .upkao.com
 .upkk.com
 .upkuajing.com
-uplaypc-s-ubisoft.cdn.ubi.com
 .uplookedu.com
 .uplooking.com
 .upluck.cc
@@ -97018,7 +96991,6 @@ weatherkit.apple.com
 .wwstat.com
 .www-666789.com
 .www-76244.com
-www-csb.dell.com
 www-google-analytics.l.google.com
 www-googletagmanager.l.google.com
 .www-jabuank-co-jp.net
@@ -97028,7 +97000,6 @@ www.apple.com.edgekey.net.globalredir.akadns.net
 .www.cdnetworks.com
 .www.cg
 .www.com.my
-www.dell.com
 www.destinationurl.com
 .www.djivideos.com
 .www.epsonconnect.com

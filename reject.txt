@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-19T18:58:31+00:00
+# Generated: 2026-08-20T19:06:56+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12538, local=1, total(deduped)=11895, excluded=29
+# Counts: upstream=12542, local=1, total(deduped)=11899, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -3765,6 +3765,7 @@ crashlyticsreports-pa.googleapis.com
 .deep.bi
 .deepdive.zum.com
 .def-platform.com
+.degreeeruptionpredator.com
 .dejavu.mlapps.com
 .delightlintlunatic.com
 .deliver.ads2.iid.jp
@@ -4526,6 +4527,7 @@ error-tracking.megamarket.tech
 .factortg.com
 .faibl.org
 .fail.adr.ec
+.fairanalytics.de
 .fairfaxmedia.sharedcount.com
 .fairscrew.com
 .falcon.useinsider.com
@@ -4624,6 +4626,7 @@ error-tracking.megamarket.tech
 .flygo.ru
 .fm-analytics-api.pocketfm.com
 .fm-analytics.cloudbees.io
+.fml-x.com
 .fndrsp.net
 .fnl.quizizz.com
 .fnozzitywh.com
@@ -8729,6 +8732,7 @@ rtlog5-applog.fqnovel.com
 .sciencerevenue.com
 .sclick.baidu.com
 .scmn0di.com
+.scollect.17173.com
 .scorecardresearch.com
 .scounter.rambler.ru
 .screen.buzzvil.com
