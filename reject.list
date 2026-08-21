@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-20T19:06:56+00:00
+# Generated: 2026-08-21T19:03:14+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12542, local=1, total(deduped)=11899, excluded=29
+# Counts: upstream=12547, local=1, total(deduped)=11904, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1546,6 +1546,7 @@ DOMAIN-SUFFIX,analytics.scalemonk.com
 DOMAIN-SUFFIX,analytics.schoolwires.com
 DOMAIN-SUFFIX,analytics.scorpion.co
 DOMAIN-SUFFIX,analytics.seekxr.com
+DOMAIN-SUFFIX,analytics.sen.go.kr
 DOMAIN-SUFFIX,analytics.send.cm
 DOMAIN-SUFFIX,analytics.servogram.io
 DOMAIN-SUFFIX,analytics.sgnapps.com
@@ -1564,6 +1565,7 @@ DOMAIN-SUFFIX,analytics.snaptube.app
 DOMAIN-SUFFIX,analytics.sonjj.com
 DOMAIN-SUFFIX,analytics.spankbang.com
 DOMAIN-SUFFIX,analytics.spearly.com
+DOMAIN-SUFFIX,analytics.sportera.fans
 DOMAIN-SUFFIX,analytics.sports.ru
 DOMAIN-SUFFIX,analytics.ssmas.com
 DOMAIN-SUFFIX,analytics.stanby.com
@@ -5882,6 +5884,7 @@ DOMAIN-SUFFIX,krt.asycxtz.cn
 DOMAIN-SUFFIX,krum.vsct.fr
 DOMAIN-SUFFIX,krutilka.net
 DOMAIN-SUFFIX,krxd.net
+DOMAIN-SUFFIX,ksks2.sportsonline.top
 DOMAIN-SUFFIX,ktrackdata.com
 DOMAIN-SUFFIX,kts.visitstats.com
 DOMAIN-SUFFIX,ku7v49qghpkytrk537er.rest
@@ -6419,7 +6422,6 @@ DOMAIN,loyalnost-adv.ozon.ru
 DOMAIN-SUFFIX,lp4.io
 DOMAIN-SUFFIX,lporirxe.com
 DOMAIN-SUFFIX,lps.qantas.com
-DOMAIN-SUFFIX,lptag.liveperson.net
 DOMAIN-SUFFIX,lpx.qantas.com
 DOMAIN-SUFFIX,lqc006.com
 DOMAIN-SUFFIX,lr-in-prod.com
@@ -9784,6 +9786,7 @@ DOMAIN-SUFFIX,suchanalytik.hideandsec.sh
 DOMAIN-SUFFIX,sugar.zhihu.com
 DOMAIN-SUFFIX,sumatoad.com
 DOMAIN-SUFFIX,sumatra.ai
+DOMAIN-SUFFIX,sumetrika.com
 DOMAIN-SUFFIX,sumologic.com
 DOMAIN-SUFFIX,sundaysky.com
 DOMAIN-SUFFIX,sunios.de
@@ -11123,6 +11126,7 @@ DOMAIN-SUFFIX,up.ousabq.tech
 DOMAIN-SUFFIX,upalytics.com
 DOMAIN-SUFFIX,upapi.net
 DOMAIN-SUFFIX,upasiansex.com
+DOMAIN-SUFFIX,upbeatbut.com
 DOMAIN-SUFFIX,upc.zztfly.com
 DOMAIN-SUFFIX,update-macosx.com
 DOMAIN-SUFFIX,updatemobilee.com
@@ -11731,6 +11735,7 @@ DOMAIN-SUFFIX,xpu.samsungelectronics.com
 DOMAIN-SUFFIX,xray.mail.ru
 DOMAIN-SUFFIX,xrtb.io
 DOMAIN-SUFFIX,xstat.gazeta.bo
+DOMAIN-SUFFIX,xstats.st
 DOMAIN-SUFFIX,xtr.tos.sktelecom.com
 DOMAIN-SUFFIX,xtractor.no
 DOMAIN-SUFFIX,xtremline.com
