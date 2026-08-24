@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-23T18:53:11+00:00
+# Generated: 2026-08-24T19:07:17+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12547, local=1, total(deduped)=11904, excluded=29
+# Counts: upstream=12551, local=1, total(deduped)=11908, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -173,6 +173,7 @@ DOMAIN-SUFFIX,a.o2u.jp
 DOMAIN-SUFFIX,a.opmnstr.com
 DOMAIN-SUFFIX,a.plerdy.com
 DOMAIN-SUFFIX,a.popin.cc
+DOMAIN-SUFFIX,a.pur.agency
 DOMAIN-SUFFIX,a.quora.com
 DOMAIN-SUFFIX,a.ria.ru
 DOMAIN-SUFFIX,a.streamed.pk
@@ -1873,6 +1874,7 @@ DOMAIN-SUFFIX,appcpi.net
 DOMAIN-SUFFIX,appdraft.link
 DOMAIN-SUFFIX,appgift.sinaapp.com
 DOMAIN-SUFFIX,appgiftwall.oss-us-west-1.aliyuncs.com
+DOMAIN-SUFFIX,appgw.inmobi.com
 DOMAIN-SUFFIX,appia.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,apple.www.letv.com
@@ -7530,6 +7532,7 @@ DOMAIN-SUFFIX,p.permalink-system.com
 DOMAIN-SUFFIX,p.placed.com
 DOMAIN-SUFFIX,p.raasnet.com
 DOMAIN-SUFFIX,p.smartertravel.com
+DOMAIN-SUFFIX,p.softmedia.cz
 DOMAIN-SUFFIX,p.statp.com
 DOMAIN-SUFFIX,p.vtracy.de
 DOMAIN-SUFFIX,p.wktfkj.com
@@ -11316,6 +11319,7 @@ DOMAIN-SUFFIX,visilabs.net
 DOMAIN-SUFFIX,vision.fn-pz.com
 DOMAIN-SUFFIX,visioncriticalpanels.com
 DOMAIN-SUFFIX,visistat.com
+DOMAIN-SUFFIX,visit-server.inmobi-choice.io
 DOMAIN-SUFFIX,visit.oschina.net
 DOMAIN-SUFFIX,visit.webhosting.yahoo.com
 DOMAIN-SUFFIX,visit.xchina.pics
