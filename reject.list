@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-24T19:07:17+00:00
+# Generated: 2026-08-25T19:05:45+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12551, local=1, total(deduped)=11908, excluded=29
+# Counts: upstream=12560, local=1, total(deduped)=11917, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2149,6 +2149,7 @@ DOMAIN-SUFFIX,bayctrk.com
 DOMAIN-SUFFIX,bb.lekumo.jp
 DOMAIN-SUFFIX,bb8.aotter.net
 DOMAIN-SUFFIX,bbc-reporting-api.app
+DOMAIN-SUFFIX,bbm-ad-stack-production.up.railway.app
 DOMAIN-SUFFIX,bbnfcfrvjs.com
 DOMAIN-SUFFIX,bc.nhk.jp
 DOMAIN-SUFFIX,bcd.esprit.de
@@ -2473,6 +2474,7 @@ DOMAIN-SUFFIX,bvr.ast.snva.jp
 DOMAIN-SUFFIX,bwb101.goo.ne.jp
 DOMAIN-SUFFIX,bxtag.com
 DOMAIN-SUFFIX,byoviral.com
+DOMAIN-SUFFIX,byracucosopenu.com
 DOMAIN-SUFFIX,byscy.cn
 DOMAIN-SUFFIX,byteadverts.com
 DOMAIN-SUFFIX,bytemgdd.com
@@ -4467,6 +4469,8 @@ DOMAIN-SUFFIX,exactag.com
 DOMAIN-SUFFIX,exacttarget.api.mashery.com
 DOMAIN-SUFFIX,exapxl.de
 DOMAIN-SUFFIX,exc.ns.nl
+DOMAIN-SUFFIX,excess-ga.duolingo.com
+DOMAIN-SUFFIX,excess.duolingo.com
 DOMAIN-SUFFIX,exclusiveclicks.com
 DOMAIN-SUFFIX,exe.bid
 DOMAIN-SUFFIX,exelator.com
@@ -6019,6 +6023,7 @@ DOMAIN-SUFFIX,liftoff-creatives.io
 DOMAIN-SUFFIX,liftoff.io
 DOMAIN-SUFFIX,liftyad.xyz
 DOMAIN-SUFFIX,lighthouse.edoinc.com
+DOMAIN-SUFFIX,lightlypowerfulgourmet.com
 DOMAIN-SUFFIX,lightstep.medium.systems
 DOMAIN-SUFFIX,lijit.com
 DOMAIN-SUFFIX,line-e.com
@@ -6668,6 +6673,7 @@ DOMAIN-SUFFIX,megadata.co.kr
 DOMAIN-SUFFIX,megapred.com
 DOMAIN-SUFFIX,meijxqop.com
 DOMAIN-SUFFIX,meitustat.com
+DOMAIN-SUFFIX,mejewusodovuca.com
 DOMAIN-SUFFIX,mellow-habit.com
 DOMAIN-SUFFIX,mellow.tel
 DOMAIN-SUFFIX,mellowtel.com
@@ -8405,6 +8411,7 @@ DOMAIN-SUFFIX,relead.com
 DOMAIN-SUFFIX,relevanceads.com
 DOMAIN-SUFFIX,relevant-digital.com
 DOMAIN-SUFFIX,reliablecounter.com
+DOMAIN-SUFFIX,relieved-understanding.com
 DOMAIN-SUFFIX,relmaxtop.com
 DOMAIN-SUFFIX,remarketstats.com
 DOMAIN-SUFFIX,remehealth.net
@@ -8836,6 +8843,7 @@ DOMAIN-SUFFIX,selphiu.com
 DOMAIN-SUFFIX,semanticverses.com
 DOMAIN-SUFFIX,semasio.net
 DOMAIN-SUFFIX,sematext.com
+DOMAIN-SUFFIX,seminarycentral.org
 DOMAIN-SUFFIX,semygruja.com
 DOMAIN-SUFFIX,sendtraffic.com
 DOMAIN-SUFFIX,sensor.aqhg.online
@@ -11926,6 +11934,7 @@ DOMAIN-SUFFIX,ztrck.me
 DOMAIN-SUFFIX,ztsrv.com
 DOMAIN-SUFFIX,zucks.net
 DOMAIN-SUFFIX,zucks.net.zimg.jp
+DOMAIN-SUFFIX,zugasezuryjoxo.com
 DOMAIN-SUFFIX,zxcvbnmasdfghjklqwertyuiop.work
 DOMAIN-SUFFIX,zxid-api.mobileservice.cn
 DOMAIN-SUFFIX,zxid-m.mobileservice.cn

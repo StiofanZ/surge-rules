@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-24T19:07:17+00:00
+# Generated: 2026-08-25T19:05:45+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12551, local=1, total(deduped)=11908, excluded=29
+# Counts: upstream=12560, local=1, total(deduped)=11917, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2147,6 +2147,7 @@ b2.mail.ru
 .bb.lekumo.jp
 .bb8.aotter.net
 .bbc-reporting-api.app
+.bbm-ad-stack-production.up.railway.app
 .bbnfcfrvjs.com
 .bc.nhk.jp
 .bcd.esprit.de
@@ -2471,6 +2472,7 @@ bs.mail.ru
 .bwb101.goo.ne.jp
 .bxtag.com
 .byoviral.com
+.byracucosopenu.com
 .byscy.cn
 .byteadverts.com
 .bytemgdd.com
@@ -4465,6 +4467,8 @@ error-tracking.megamarket.tech
 .exacttarget.api.mashery.com
 .exapxl.de
 .exc.ns.nl
+.excess-ga.duolingo.com
+.excess.duolingo.com
 .exclusiveclicks.com
 .exe.bid
 .exelator.com
@@ -6017,6 +6021,7 @@ incoming-telemetry.thunderbird.net
 .liftoff.io
 .liftyad.xyz
 .lighthouse.edoinc.com
+.lightlypowerfulgourmet.com
 .lightstep.medium.systems
 .lijit.com
 .line-e.com
@@ -6666,6 +6671,7 @@ mc.yandex.net
 .megapred.com
 .meijxqop.com
 .meitustat.com
+.mejewusodovuca.com
 .mellow-habit.com
 .mellow.tel
 .mellowtel.com
@@ -8403,6 +8409,7 @@ reklama.mail.ru
 .relevanceads.com
 .relevant-digital.com
 .reliablecounter.com
+.relieved-understanding.com
 .relmaxtop.com
 .remarketstats.com
 .remehealth.net
@@ -8834,6 +8841,7 @@ rtlog5-applog.fqnovel.com
 .semanticverses.com
 .semasio.net
 .sematext.com
+.seminarycentral.org
 .semygruja.com
 .sendtraffic.com
 .sensor.aqhg.online
@@ -11924,6 +11932,7 @@ xapi.ozonru.me
 .ztsrv.com
 .zucks.net
 .zucks.net.zimg.jp
+.zugasezuryjoxo.com
 .zxcvbnmasdfghjklqwertyuiop.work
 .zxid-api.mobileservice.cn
 .zxid-m.mobileservice.cn
