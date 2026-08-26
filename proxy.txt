@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-08-25T19:04:55+00:00
+# Generated: 2026-08-26T20:15:55+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31447, local=27, total(deduped)=26419, excluded=3
+# Counts: upstream=31451, local=27, total(deduped)=26423, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -790,6 +790,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .adguard.io
 .adguard.org
 .adguardaccount.com
+.adguardaccount.net
 .adguardcdn.com
 .adguardvpn.com
 .adhelpnews.com
@@ -1823,6 +1824,7 @@ angle.com.tw
 .aodahl.com
 .aofriend.com
 .aokwholesale.net
+.aolcdn.com
 .aomedia.org
 .aomiwang.com
 .aorus.com
@@ -17578,6 +17580,7 @@ ood.opsource.net
 .ourshemales.com
 .oursteps.com.au
 .ourtv.hk
+.ouryahoo.com
 .out-app-purchase.com
 .outbound.io
 .outdoorpublicsex.com
@@ -25740,6 +25743,7 @@ ws.audioscrobbler.com
 .yahoodns.net
 .yahoofinance.com
 .yahoohealth.com
+.yahooinc.com
 .yahoomusic.com
 .yahoosandbox.com
 .yahoosportsbook.com

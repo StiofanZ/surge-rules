@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-25T19:05:45+00:00
+# Generated: 2026-08-26T20:16:37+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12560, local=1, total(deduped)=11917, excluded=29
+# Counts: upstream=12569, local=1, total(deduped)=11926, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -715,6 +715,7 @@ DOMAIN-SUFFIX,ads.cocomobi.com
 DOMAIN-SUFFIX,ads.contents.fc2.com
 DOMAIN,ads.dahlmessenger.com
 DOMAIN-SUFFIX,ads.digital.disneyadvertising.com
+DOMAIN-SUFFIX,ads.dzeko11.st
 DOMAIN-SUFFIX,ads.edadeal.ru
 DOMAIN-SUFFIX,ads.environmentalleader.com
 DOMAIN-SUFFIX,ads.farakav.com
@@ -2204,6 +2205,7 @@ DOMAIN-SUFFIX,beacon.wikia-services.com
 DOMAIN-SUFFIX,beacon.www.theguardian.com
 DOMAIN-SUFFIX,beacon.ztgame.com
 DOMAIN-SUFFIX,beaconcdn.qq.com
+DOMAIN-SUFFIX,beaconimages.netflix.net
 DOMAIN-SUFFIX,beacons-prod.fubo.tv
 DOMAIN-SUFFIX,beacons.ads.fubo.tv
 DOMAIN-SUFFIX,beacons.digital.disneyadvertising.com
@@ -2287,6 +2289,7 @@ DOMAIN-SUFFIX,bidmachine.io
 DOMAIN-SUFFIX,bidmyadz.com
 DOMAIN-SUFFIX,bidmyqps.xyz
 DOMAIN-SUFFIX,bidr.io
+DOMAIN-SUFFIX,bidscube.com
 DOMAIN-SUFFIX,bidsms.com
 DOMAIN-SUFFIX,bidsopt.com
 DOMAIN-SUFFIX,bidswitch.net
@@ -3561,6 +3564,7 @@ DOMAIN-SUFFIX,d2oa97wrxvxm7y.cloudfront.net
 DOMAIN-SUFFIX,d2oh4tlt9mrke9.cloudfront.net
 DOMAIN-SUFFIX,d2osk0po1oybwz.cloudfront.net
 DOMAIN-SUFFIX,d2ovgc4ipdt6us.cloudfront.net
+DOMAIN-SUFFIX,d2pf0ys5xus6n.cloudfront.net
 DOMAIN-SUFFIX,d2pppxxtaciku9.cloudfront.net
 DOMAIN-SUFFIX,d2psma0az3acui.cloudfront.net
 DOMAIN-SUFFIX,d2qmp7jjpd79k7.cloudfront.net
@@ -4168,6 +4172,7 @@ DOMAIN-SUFFIX,embeddedanalytics.com
 DOMAIN-SUFFIX,ember-cf-netlify.cdn-x.net
 DOMAIN-SUFFIX,emediate.eu
 DOMAIN-SUFFIX,emetriq.de
+DOMAIN-SUFFIX,emgthroposit.org
 DOMAIN-SUFFIX,emisja.contentstream.pl
 DOMAIN-SUFFIX,emjcd.com
 DOMAIN-SUFFIX,emlsend.com
@@ -4255,6 +4260,9 @@ DOMAIN-SUFFIX,etx.indiatimes.com
 DOMAIN-SUFFIX,etyper.com
 DOMAIN-SUFFIX,eu-1-id5-sync.com
 DOMAIN-SUFFIX,eu-data.kameleoon.io
+DOMAIN-SUFFIX,eu-onrt-stsdk.vivoglobal.com
+DOMAIN-SUFFIX,eu-ort-stsdk.vivoglobal.com
+DOMAIN-SUFFIX,eu-stsdk.vivoglobal.com
 DOMAIN-SUFFIX,eu-survey.com
 DOMAIN-SUFFIX,eu.groupondata.com
 DOMAIN-SUFFIX,eu.spgo.io
@@ -4465,6 +4473,7 @@ DOMAIN-SUFFIX,evt.mxplay.com
 DOMAIN-SUFFIX,evts.ecocart.io
 DOMAIN-SUFFIX,evyy.net
 DOMAIN-SUFFIX,ew1.reg.bigdata.ssp.samsung.com
+DOMAIN-SUFFIX,ex-adreq-asia.vivoglobal.com
 DOMAIN-SUFFIX,exactag.com
 DOMAIN-SUFFIX,exacttarget.api.mashery.com
 DOMAIN-SUFFIX,exapxl.de
@@ -11615,6 +11624,7 @@ DOMAIN-SUFFIX,wlog.tmon.co.kr
 DOMAIN-SUFFIX,wm.baidu.com
 DOMAIN-SUFFIX,wmbd.gamersky.com
 DOMAIN-SUFFIX,wmctjd.com
+DOMAIN-SUFFIX,wnwtfmpsmslwi.site
 DOMAIN-SUFFIX,wobbly-birth.com
 DOMAIN-SUFFIX,wobs.route.com
 DOMAIN-SUFFIX,wompanalytics.azurewebsites.net
@@ -11754,7 +11764,6 @@ DOMAIN-SUFFIX,xtremline.com
 DOMAIN-SUFFIX,xtube.chat
 DOMAIN-SUFFIX,xwdsofoflwimy.website
 DOMAIN-SUFFIX,xxsmtz1.com
-DOMAIN-SUFFIX,xxsmtz10.com
 DOMAIN-SUFFIX,xxsmtz2.com
 DOMAIN-SUFFIX,xxsmtz3.com
 DOMAIN-SUFFIX,xxsmtz4.com
