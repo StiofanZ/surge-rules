@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-26T20:16:37+00:00
+# Generated: 2026-08-28T02:13:22+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12569, local=1, total(deduped)=11926, excluded=29
+# Counts: upstream=12571, local=1, total(deduped)=11927, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1626,6 +1626,7 @@ analytics.vk.ru
 .analytics.vpplayer.tech
 .analytics.wachanga.app
 .analytics.waifu2x.org
+.analytics.watchott.org
 .analytics.webanalytics.op.europa.eu
 .analytics.webflow.com
 .analytics.webgains.io
@@ -2140,6 +2141,7 @@ b2.mail.ru
 .basicstat.com
 .basilic.io
 .bat.bing.com
+.bat.bing.net
 .bat31.gimmeporn.xyz
 .batmobile.com.tw
 .bats.video.yahoo.com
@@ -2985,7 +2987,6 @@ click.rustore.ru
 .coinnebula.com
 .coinpirate.cf
 .coinpot.co
-.cointent.com
 .coinzillatag.com
 .col.surfside.io
 .colbwxlsfenwn.website
@@ -4921,7 +4922,6 @@ error-tracking.megamarket.tech
 .glassboxdigital.io
 .glbtracker.com
 .glidersreplume.qpon
-.global-receiver-ta.thinkingdata.cn
 .global-report.ml.youngjoygame.com
 .global-sis.engagelab.com
 .global.appnext.com
@@ -10253,6 +10253,7 @@ target.vk.com
 .thevtk.com
 .theweeklydonut.org
 .thind-gke-euw.prd.data.corp.unity3d.com
+.thinkingdata.cn
 .thj.astrakhan.ru
 .thongke.24h.com.vn
 .threeate.jp
