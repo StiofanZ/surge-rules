@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-29T21:01:25+00:00
+# Generated: 2026-08-30T21:16:03+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12580, local=1, total(deduped)=11935, excluded=29
+# Counts: upstream=12602, local=1, total(deduped)=11953, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1708,8 +1708,12 @@ api-js.mindbox.ru
 api-ru.carrotquest.app
 api-ru.carrotquest.io
 api-ru.mindbox.cloud
+.api-secure.amplitude.com
 api-secure.carrotquest.app
 api-secure.carrottrack.app
+.api-secure.eu.amplitude.com
+.api-sr.amplitude.com
+.api-sr.eu.amplitude.com
 api-staging.mindbox.ru
 .api-v2.shareitgames.com
 .api.abcsinsights.com
@@ -1747,6 +1751,7 @@ api.dashlytrack.app
 .api.data-analytics.pokemon.com
 .api.datahub-srgssr.ch
 .api.deeplink.dev
+.api.eu.amplitude.com
 .api.event.appstack.tech
 .api.eventbus.me
 .api.exc.mob.com
@@ -1962,6 +1967,8 @@ apilog-web.acfun.cn
 .assets.publicgood.com
 .assetsconfigcdn.org
 .assistads.net
+.assistant-api.amplitude.com
+.assistant-api.eu.amplitude.com
 .assoc-amazon.com
 .assoc-amazon.jp
 .assoctrac.com
@@ -2635,6 +2642,7 @@ bs.mail.ru
 .cdn.advertiser.linkvertise.com
 .cdn.aimtell.com
 .cdn.alistcloud.com
+.cdn.amplitude.com
 .cdn.appnext.com
 .cdn.aucey.com
 .cdn.banclip.com
@@ -2653,6 +2661,7 @@ bs.mail.ru
 .cdn.dfsdk.com
 .cdn.dsspn.com
 .cdn.empower.net
+.cdn.eu.amplitude.com
 .cdn.fedsy.xyz
 .cdn.firstpromoter.com
 .cdn.getkoala.com
@@ -4187,6 +4196,8 @@ crashlyticsreports-pa.googleapis.com
 .engagedhits.com
 .engagefront.theweathernetwork.com
 .engagelab.cc
+.engagement-static.amplitude.com
+.engagement-static.eu.amplitude.com
 .engagements.appsflyer.com
 .engagetosell.com
 .engageya.com
@@ -4618,7 +4629,6 @@ error-tracking.megamarket.tech
 .fixcounter.com
 .fixwap.net
 .flaegrudad.com
-.flag.lab.amplitude.com
 .flagcounter.com
 .flairads.com
 .flash-counter.com
@@ -5039,6 +5049,7 @@ google-analytics-suite.ozon.ru
 .grgnsht.nzxt.com
 .gridsum.com
 .gridsumdissector.com
+.grindsteeplesprung.com
 .grmtech.net
 .groovinews.com
 .groovy-manul.pikapod.net
@@ -5051,6 +5062,8 @@ google-analytics-suite.ozon.ru
 .grs.hicloud.com
 .grwdrkaqpxcna.website
 .gs-ad.jp
+.gs.amplitude.com
+.gs.eu.amplitude.com
 .gs.mountain.com
 .gs6ye5zj.ac1n.net
 .gscounters.gigya.com
@@ -5951,7 +5964,9 @@ incoming-telemetry.thunderbird.net
 .l5id.com
 .l936.expressnews.com
 .l997.lmtonline.com
+.lab.amplitude.com
 .lab.analyticspodium.com
+.lab.eu.amplitude.com
 .lacunads.com
 .ladsp.com
 .ladsp.jp
@@ -8405,6 +8420,7 @@ r1.mail.ru
 .refpakrtsb.top
 .regi.di.atlas.samsung.com
 .regionconfig.amplitude.com
+.regionconfig.eu.amplitude.com
 .register.appsflyer.com
 .register.boostymark.com
 .reindaks.com
@@ -9391,6 +9407,7 @@ sentry.x5.ru
 .squeezely.tech
 .squidanalytics.com
 .sr-client-cfg.amplitude.com
+.sr-client-cfg.eu.amplitude.com
 .sr.studiostack.com
 .sra-px.cdn-fileserver.com
 srch-telemeter10.g.smailru.net
@@ -9816,6 +9833,7 @@ stats.telega.info
 .sumologic.com
 .sundaysky.com
 .sunios.de
+.sunnyreception.com
 .suntcontent.se
 .superboosty.com
 .supercounters.com

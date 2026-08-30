@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-29T21:01:25+00:00
+# Generated: 2026-08-30T21:16:03+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12580, local=1, total(deduped)=11935, excluded=29
+# Counts: upstream=12602, local=1, total(deduped)=11953, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1710,8 +1710,12 @@ DOMAIN-SUFFIX,api-pixels.easyadsapp.com
 DOMAIN,api-ru.carrotquest.app
 DOMAIN,api-ru.carrotquest.io
 DOMAIN,api-ru.mindbox.cloud
+DOMAIN-SUFFIX,api-secure.amplitude.com
 DOMAIN,api-secure.carrotquest.app
 DOMAIN,api-secure.carrottrack.app
+DOMAIN-SUFFIX,api-secure.eu.amplitude.com
+DOMAIN-SUFFIX,api-sr.amplitude.com
+DOMAIN-SUFFIX,api-sr.eu.amplitude.com
 DOMAIN,api-staging.mindbox.ru
 DOMAIN-SUFFIX,api-v2.shareitgames.com
 DOMAIN-SUFFIX,api.abcsinsights.com
@@ -1749,6 +1753,7 @@ DOMAIN,api.dashlytrack.app
 DOMAIN-SUFFIX,api.data-analytics.pokemon.com
 DOMAIN-SUFFIX,api.datahub-srgssr.ch
 DOMAIN-SUFFIX,api.deeplink.dev
+DOMAIN-SUFFIX,api.eu.amplitude.com
 DOMAIN-SUFFIX,api.event.appstack.tech
 DOMAIN-SUFFIX,api.eventbus.me
 DOMAIN-SUFFIX,api.exc.mob.com
@@ -1964,6 +1969,8 @@ DOMAIN-SUFFIX,assets.onedollarstats.com
 DOMAIN-SUFFIX,assets.publicgood.com
 DOMAIN-SUFFIX,assetsconfigcdn.org
 DOMAIN-SUFFIX,assistads.net
+DOMAIN-SUFFIX,assistant-api.amplitude.com
+DOMAIN-SUFFIX,assistant-api.eu.amplitude.com
 DOMAIN-SUFFIX,assoc-amazon.com
 DOMAIN-SUFFIX,assoc-amazon.jp
 DOMAIN-SUFFIX,assoctrac.com
@@ -2637,6 +2644,7 @@ DOMAIN-SUFFIX,cdn.adt567.net
 DOMAIN-SUFFIX,cdn.advertiser.linkvertise.com
 DOMAIN-SUFFIX,cdn.aimtell.com
 DOMAIN-SUFFIX,cdn.alistcloud.com
+DOMAIN-SUFFIX,cdn.amplitude.com
 DOMAIN-SUFFIX,cdn.appnext.com
 DOMAIN-SUFFIX,cdn.aucey.com
 DOMAIN-SUFFIX,cdn.banclip.com
@@ -2655,6 +2663,7 @@ DOMAIN-SUFFIX,cdn.deviceinf.com
 DOMAIN-SUFFIX,cdn.dfsdk.com
 DOMAIN-SUFFIX,cdn.dsspn.com
 DOMAIN-SUFFIX,cdn.empower.net
+DOMAIN-SUFFIX,cdn.eu.amplitude.com
 DOMAIN-SUFFIX,cdn.fedsy.xyz
 DOMAIN-SUFFIX,cdn.firstpromoter.com
 DOMAIN-SUFFIX,cdn.getkoala.com
@@ -4189,6 +4198,8 @@ DOMAIN-SUFFIX,enfacesplaineddeglory.qpon
 DOMAIN-SUFFIX,engagedhits.com
 DOMAIN-SUFFIX,engagefront.theweathernetwork.com
 DOMAIN-SUFFIX,engagelab.cc
+DOMAIN-SUFFIX,engagement-static.amplitude.com
+DOMAIN-SUFFIX,engagement-static.eu.amplitude.com
 DOMAIN-SUFFIX,engagements.appsflyer.com
 DOMAIN-SUFFIX,engagetosell.com
 DOMAIN-SUFFIX,engageya.com
@@ -4620,7 +4631,6 @@ DOMAIN-SUFFIX,fivecdm.com
 DOMAIN-SUFFIX,fixcounter.com
 DOMAIN-SUFFIX,fixwap.net
 DOMAIN-SUFFIX,flaegrudad.com
-DOMAIN-SUFFIX,flag.lab.amplitude.com
 DOMAIN-SUFFIX,flagcounter.com
 DOMAIN-SUFFIX,flairads.com
 DOMAIN-SUFFIX,flash-counter.com
@@ -5041,6 +5051,7 @@ DOMAIN-SUFFIX,grfz.de
 DOMAIN-SUFFIX,grgnsht.nzxt.com
 DOMAIN-SUFFIX,gridsum.com
 DOMAIN-SUFFIX,gridsumdissector.com
+DOMAIN-SUFFIX,grindsteeplesprung.com
 DOMAIN-SUFFIX,grmtech.net
 DOMAIN-SUFFIX,groovinews.com
 DOMAIN-SUFFIX,groovy-manul.pikapod.net
@@ -5053,6 +5064,8 @@ DOMAIN-SUFFIX,growthrx.in
 DOMAIN-SUFFIX,grs.hicloud.com
 DOMAIN-SUFFIX,grwdrkaqpxcna.website
 DOMAIN-SUFFIX,gs-ad.jp
+DOMAIN-SUFFIX,gs.amplitude.com
+DOMAIN-SUFFIX,gs.eu.amplitude.com
 DOMAIN-SUFFIX,gs.mountain.com
 DOMAIN-SUFFIX,gs6ye5zj.ac1n.net
 DOMAIN-SUFFIX,gscounters.gigya.com
@@ -5953,7 +5966,9 @@ DOMAIN-SUFFIX,l4s.love4porn.com
 DOMAIN-SUFFIX,l5id.com
 DOMAIN-SUFFIX,l936.expressnews.com
 DOMAIN-SUFFIX,l997.lmtonline.com
+DOMAIN-SUFFIX,lab.amplitude.com
 DOMAIN-SUFFIX,lab.analyticspodium.com
+DOMAIN-SUFFIX,lab.eu.amplitude.com
 DOMAIN-SUFFIX,lacunads.com
 DOMAIN-SUFFIX,ladsp.com
 DOMAIN-SUFFIX,ladsp.jp
@@ -8407,6 +8422,7 @@ DOMAIN-SUFFIX,refinedads.com
 DOMAIN-SUFFIX,refpakrtsb.top
 DOMAIN-SUFFIX,regi.di.atlas.samsung.com
 DOMAIN-SUFFIX,regionconfig.amplitude.com
+DOMAIN-SUFFIX,regionconfig.eu.amplitude.com
 DOMAIN-SUFFIX,register.appsflyer.com
 DOMAIN-SUFFIX,register.boostymark.com
 DOMAIN-SUFFIX,reindaks.com
@@ -9393,6 +9409,7 @@ DOMAIN-SUFFIX,sq.requestads.com
 DOMAIN-SUFFIX,squeezely.tech
 DOMAIN-SUFFIX,squidanalytics.com
 DOMAIN-SUFFIX,sr-client-cfg.amplitude.com
+DOMAIN-SUFFIX,sr-client-cfg.eu.amplitude.com
 DOMAIN-SUFFIX,sr.studiostack.com
 DOMAIN-SUFFIX,sra-px.cdn-fileserver.com
 DOMAIN,srch-telemeter10.g.smailru.net
@@ -9818,6 +9835,7 @@ DOMAIN-SUFFIX,sumetrika.com
 DOMAIN-SUFFIX,sumologic.com
 DOMAIN-SUFFIX,sundaysky.com
 DOMAIN-SUFFIX,sunios.de
+DOMAIN-SUFFIX,sunnyreception.com
 DOMAIN-SUFFIX,suntcontent.se
 DOMAIN-SUFFIX,superboosty.com
 DOMAIN-SUFFIX,supercounters.com
