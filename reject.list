@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-30T21:16:03+00:00
+# Generated: 2026-08-31T22:56:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12602, local=1, total(deduped)=11953, excluded=29
+# Counts: upstream=12610, local=1, total(deduped)=11959, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -115,7 +115,6 @@ DOMAIN-SUFFIX,6sc.co
 DOMAIN-SUFFIX,776.jstatic.xyz
 DOMAIN-SUFFIX,77tracking.com
 DOMAIN-SUFFIX,7box.vip
-DOMAIN-SUFFIX,7bpeople.com
 DOMAIN-SUFFIX,7d36a.com
 DOMAIN-SUFFIX,7eer.net
 DOMAIN-SUFFIX,80xmedia.com
@@ -296,7 +295,6 @@ DOMAIN-SUFFIX,ad-files.classting.com
 DOMAIN-SUFFIX,ad-generation.jp
 DOMAIN-SUFFIX,ad-hatena.com
 DOMAIN-SUFFIX,ad-log-upload-os.hoyoverse.com
-DOMAIN-SUFFIX,ad-log.wemakeprice.com
 DOMAIN-SUFFIX,ad-move.jp
 DOMAIN-SUFFIX,ad-nex.com
 DOMAIN-SUFFIX,ad-optima.com
@@ -1259,7 +1257,6 @@ DOMAIN-SUFFIX,analytics-ingress.bitmovin.com
 DOMAIN-SUFFIX,analytics-ipv6.tiktokw.us
 DOMAIN-SUFFIX,analytics-log.withhive.com
 DOMAIN-SUFFIX,analytics-logger.service.junctiontv.net
-DOMAIN-SUFFIX,analytics-mkt.wemakeprice.com
 DOMAIN-SUFFIX,analytics-op.streak.ninja
 DOMAIN-SUFFIX,analytics-prd.aws.wehaa.net
 DOMAIN-SUFFIX,analytics-prod.readtheory.org
@@ -2725,6 +2722,7 @@ DOMAIN-SUFFIX,cdn.zx-adnet.com
 DOMAIN-SUFFIX,cdn2.sales-frontier.com
 DOMAIN-SUFFIX,cdnads.geeksforgeeks.org
 DOMAIN-SUFFIX,cdnappicons.appsflyer.com
+DOMAIN-SUFFIX,cdnet.nasmob.com
 DOMAIN-SUFFIX,cdnhorizon.nnmtools.com
 DOMAIN-SUFFIX,cdnlibjs.com
 DOMAIN-SUFFIX,cdnlogs.org
@@ -4787,6 +4785,7 @@ DOMAIN-SUFFIX,ga-bq-py-1.appspot.com
 DOMAIN-SUFFIX,ga.getresponse.com
 DOMAIN-SUFFIX,ga2.getresponse.com
 DOMAIN-SUFFIX,gacela.eu
+DOMAIN-SUFFIX,gaconnector.com
 DOMAIN-SUFFIX,gadsme.com
 DOMAIN-SUFFIX,gae.karte.io
 DOMAIN-SUFFIX,gak.webtoons.com
@@ -5045,6 +5044,7 @@ DOMAIN-SUFFIX,gre.groobee.io
 DOMAIN-SUFFIX,great12.org
 DOMAIN-SUFFIX,greatpuppydogs.com
 DOMAIN-SUFFIX,greatviews.de
+DOMAIN-SUFFIX,greekexternal.com
 DOMAIN-SUFFIX,greenbids.ai
 DOMAIN-SUFFIX,gresrv.com
 DOMAIN-SUFFIX,grfz.de
@@ -7667,6 +7667,7 @@ DOMAIN-SUFFIX,pasta.esfile.duapps.com
 DOMAIN-SUFFIX,patakaendymal.top
 DOMAIN-SUFFIX,pathfinder.analytics.komoot.net
 DOMAIN-SUFFIX,patriot.cs.pp.cn
+DOMAIN-SUFFIX,pausible.flaq.ai
 DOMAIN-SUFFIX,pavoboxapp.com
 DOMAIN-SUFFIX,paychat.fuse-cloud.com
 DOMAIN-SUFFIX,payload.adadapted.com
@@ -7816,6 +7817,7 @@ DOMAIN-SUFFIX,pixanalytics.com
 DOMAIN-SUFFIX,pixel-cdp.sberhealth.ru
 DOMAIN-SUFFIX,pixel-config.reddit.com
 DOMAIN-SUFFIX,pixel-conversion.apps.seabroadnet.com
+DOMAIN-SUFFIX,pixel-frontend.avito.ru
 DOMAIN-SUFFIX,pixel-img.com
 DOMAIN-SUFFIX,pixel-see.com
 DOMAIN-SUFFIX,pixel-static.spotify.com
@@ -8597,6 +8599,7 @@ DOMAIN-SUFFIX,rtbdemand.com
 DOMAIN-SUFFIX,rtbfactory.com
 DOMAIN-SUFFIX,rtblab.net
 DOMAIN-SUFFIX,rtbplatform.net
+DOMAIN-SUFFIX,rtbscale.com
 DOMAIN-SUFFIX,rtbserve.io
 DOMAIN-SUFFIX,rtbuniverse.com
 DOMAIN-SUFFIX,rtc-logger-va.tiktokv.com
@@ -9654,6 +9657,7 @@ DOMAIN-SUFFIX,stats.emol.com
 DOMAIN-SUFFIX,stats.externulls.com
 DOMAIN-SUFFIX,stats.fifthstarlabs.io
 DOMAIN-SUFFIX,stats.firedrive.com
+DOMAIN-SUFFIX,stats.flixcloud.cc
 DOMAIN-SUFFIX,stats.fluorescent.co
 DOMAIN-SUFFIX,stats.fomo.com
 DOMAIN-SUFFIX,stats.gastronom.ru
@@ -9705,6 +9709,7 @@ DOMAIN-SUFFIX,stats.pronouns.page
 DOMAIN-SUFFIX,stats.propublica.org
 DOMAIN-SUFFIX,stats.pusher.com
 DOMAIN-SUFFIX,stats.rbc.ua
+DOMAIN-SUFFIX,stats.reanime.to
 DOMAIN-SUFFIX,stats.renet.io
 DOMAIN-SUFFIX,stats.rip
 DOMAIN-SUFFIX,stats.rong-edge.com
@@ -10376,6 +10381,7 @@ DOMAIN-SUFFIX,tok.vaicore.xyz
 DOMAIN-SUFFIX,toldyouso.lol
 DOMAIN-SUFFIX,tolt.io
 DOMAIN-SUFFIX,tomog.pro
+DOMAIN-SUFFIX,tomonavi.xyz
 DOMAIN-SUFFIX,tonefuse.com
 DOMAIN-SUFFIX,tongbaimi.cn
 DOMAIN-SUFFIX,tongjiniao.com
@@ -10535,7 +10541,6 @@ DOMAIN-SUFFIX,track.extra.app
 DOMAIN-SUFFIX,track.fluffyfalcon.com
 DOMAIN-SUFFIX,track.fusionmedia.io
 DOMAIN-SUFFIX,track.fxstreet.com
-DOMAIN-SUFFIX,track.gaconnector.com
 DOMAIN-SUFFIX,track.hily.com
 DOMAIN-SUFFIX,track.historictalk.com
 DOMAIN-SUFFIX,track.hk01.com
@@ -10725,6 +10730,7 @@ DOMAIN-SUFFIX,trackernew.ulivetv.net
 DOMAIN-SUFFIX,trackers.fubo.tv
 DOMAIN-SUFFIX,trackerscript.sqreemtech.com
 DOMAIN-SUFFIX,trackersimulator.org
+DOMAIN-SUFFIX,trackhaven.com
 DOMAIN-SUFFIX,trackhorizon.nnmtools.com
 DOMAIN-SUFFIX,trackid.globoid.globo.com
 DOMAIN-SUFFIX,trackimpression.com
@@ -11100,6 +11106,7 @@ DOMAIN-SUFFIX,udc.msn.com
 DOMAIN-SUFFIX,udderstack.allstar.gg
 DOMAIN-SUFFIX,udgrbq.malwarebytes.com
 DOMAIN-SUFFIX,udkcrj.com
+DOMAIN-SUFFIX,ue.a-bly.com
 DOMAIN-SUFFIX,ue.flipboard.com
 DOMAIN-SUFFIX,ue8im.com
 DOMAIN-SUFFIX,uep.gaijin.net
@@ -11647,7 +11654,6 @@ DOMAIN-SUFFIX,wlg.shinhancard.com
 DOMAIN-SUFFIX,wlog.ifdo.co.kr
 DOMAIN-SUFFIX,wlog.ksapisrv.com
 DOMAIN,wlog.kuaishou.com
-DOMAIN-SUFFIX,wlog.tmon.co.kr
 DOMAIN-SUFFIX,wm.baidu.com
 DOMAIN-SUFFIX,wmbd.gamersky.com
 DOMAIN-SUFFIX,wmctjd.com

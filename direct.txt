@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-08-30T21:16:04+00:00
+# Generated: 2026-08-31T22:56:36+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111321, local=2, total(deduped)=111159, excluded=33
+# Counts: upstream=111325, local=2, total(deduped)=111163, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -3113,6 +3113,7 @@
 .25fe391eb68e3f9c.com
 .25game.com
 .25ku.com
+.25mao.com
 .25nc.com
 .25pp.com
 .25q7ekcc67.com
@@ -42119,6 +42120,7 @@ guzzoni.smoot.apple.com
 .gzjkfk.com
 .gzjkfund.com
 .gzjkjl.com
+.gzjkoa.com
 .gzjkqh.com
 .gzjkyljt.com
 .gzjlp.com
@@ -43074,6 +43076,7 @@ guzzoni.smoot.apple.com
 .hanpupharm.com
 .hanqigroup.com
 .hanqinghb.com
+.hanqiuming888.com
 .hanqunfeng.com
 .hans-ad.com
 .hanschen.site
@@ -91350,6 +91353,7 @@ tools.google.com
 .under-5.shop
 .underfill.cc
 .uneed.com
+.uneedx.com
 .unfish.net
 .ungifts.com
 .uni-cent.com

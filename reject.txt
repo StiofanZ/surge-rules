@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-30T21:16:03+00:00
+# Generated: 2026-08-31T22:56:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12602, local=1, total(deduped)=11953, excluded=29
+# Counts: upstream=12610, local=1, total(deduped)=11959, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -113,7 +113,6 @@
 .776.jstatic.xyz
 .77tracking.com
 .7box.vip
-.7bpeople.com
 .7d36a.com
 .7eer.net
 .80xmedia.com
@@ -294,7 +293,6 @@ ad-display.diwodiwo.xyz
 .ad-generation.jp
 .ad-hatena.com
 .ad-log-upload-os.hoyoverse.com
-.ad-log.wemakeprice.com
 .ad-move.jp
 .ad-nex.com
 .ad-optima.com
@@ -1257,7 +1255,6 @@ analytics-adv.ozon.ru
 .analytics-ipv6.tiktokw.us
 .analytics-log.withhive.com
 .analytics-logger.service.junctiontv.net
-.analytics-mkt.wemakeprice.com
 .analytics-op.streak.ninja
 .analytics-prd.aws.wehaa.net
 .analytics-prod.readtheory.org
@@ -2723,6 +2720,7 @@ bs.mail.ru
 .cdn2.sales-frontier.com
 .cdnads.geeksforgeeks.org
 .cdnappicons.appsflyer.com
+.cdnet.nasmob.com
 .cdnhorizon.nnmtools.com
 .cdnlibjs.com
 .cdnlogs.org
@@ -4785,6 +4783,7 @@ error-tracking.megamarket.tech
 .ga.getresponse.com
 .ga2.getresponse.com
 .gacela.eu
+.gaconnector.com
 .gadsme.com
 .gae.karte.io
 .gak.webtoons.com
@@ -5043,6 +5042,7 @@ google-analytics-suite.ozon.ru
 .great12.org
 .greatpuppydogs.com
 .greatviews.de
+.greekexternal.com
 .greenbids.ai
 .gresrv.com
 .grfz.de
@@ -7665,6 +7665,7 @@ p9-ad-sign.byteimg.com
 .patakaendymal.top
 .pathfinder.analytics.komoot.net
 .patriot.cs.pp.cn
+.pausible.flaq.ai
 .pavoboxapp.com
 .paychat.fuse-cloud.com
 .payload.adadapted.com
@@ -7814,6 +7815,7 @@ p9-ad-sign.byteimg.com
 .pixel-cdp.sberhealth.ru
 .pixel-config.reddit.com
 .pixel-conversion.apps.seabroadnet.com
+.pixel-frontend.avito.ru
 .pixel-img.com
 .pixel-see.com
 .pixel-static.spotify.com
@@ -8595,6 +8597,7 @@ rs.mail.ru
 .rtbfactory.com
 .rtblab.net
 .rtbplatform.net
+.rtbscale.com
 .rtbserve.io
 .rtbuniverse.com
 .rtc-logger-va.tiktokv.com
@@ -9652,6 +9655,7 @@ stats.dev.telega.info
 .stats.externulls.com
 .stats.fifthstarlabs.io
 .stats.firedrive.com
+.stats.flixcloud.cc
 .stats.fluorescent.co
 .stats.fomo.com
 .stats.gastronom.ru
@@ -9703,6 +9707,7 @@ stats.dev.telega.info
 .stats.propublica.org
 .stats.pusher.com
 .stats.rbc.ua
+.stats.reanime.to
 .stats.renet.io
 .stats.rip
 .stats.rong-edge.com
@@ -10374,6 +10379,7 @@ target.vk.com
 .toldyouso.lol
 .tolt.io
 .tomog.pro
+.tomonavi.xyz
 .tonefuse.com
 .tongbaimi.cn
 .tongjiniao.com
@@ -10533,7 +10539,6 @@ tracing-http.megamarket.tech
 .track.fluffyfalcon.com
 .track.fusionmedia.io
 .track.fxstreet.com
-.track.gaconnector.com
 .track.hily.com
 .track.historictalk.com
 .track.hk01.com
@@ -10723,6 +10728,7 @@ tracing-http.megamarket.tech
 .trackers.fubo.tv
 .trackerscript.sqreemtech.com
 .trackersimulator.org
+.trackhaven.com
 .trackhorizon.nnmtools.com
 .trackid.globoid.globo.com
 .trackimpression.com
@@ -11098,6 +11104,7 @@ tracing-http.megamarket.tech
 .udderstack.allstar.gg
 .udgrbq.malwarebytes.com
 .udkcrj.com
+.ue.a-bly.com
 .ue.flipboard.com
 .ue8im.com
 .uep.gaijin.net
@@ -11645,7 +11652,6 @@ whiteline.mail.ru
 .wlog.ifdo.co.kr
 .wlog.ksapisrv.com
 wlog.kuaishou.com
-.wlog.tmon.co.kr
 .wm.baidu.com
 .wmbd.gamersky.com
 .wmctjd.com
