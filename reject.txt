@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-08-31T22:56:34+00:00
+# Generated: 2026-09-01T21:09:40+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12610, local=1, total(deduped)=11959, excluded=29
+# Counts: upstream=12611, local=1, total(deduped)=11960, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1671,6 +1671,7 @@ analytics.wildberries.ru
 .anonymized-metrics.rmbl.ws
 .anormal-tracker.de
 .anrdoezrs.net
+.antiadblockcore.com
 .antillephone.com
 .antivi.xyz
 .antvoice.com
@@ -2581,6 +2582,7 @@ bs.mail.ru
 .capture.pixverse.ai
 .carbonads.net
 .carmen.golem.de
+.carmen2.golem.de
 .carrick-ui.advoncommerce.com
 .carrier202205.tokyo
 .carts.guru
@@ -3757,7 +3759,6 @@ crashlyticsreports-pa.googleapis.com
 .dc.oppomobile.com
 .dc121677.com
 .dc5ig2fc8lg83.cloudfront.net
-.dc8xl0ndzn2cb.cloudfront.net
 .dcjg1gv1px1h.cloudfront.net
 .dclsrv.com
 .dcmn.com
@@ -4179,6 +4180,7 @@ crashlyticsreports-pa.googleapis.com
 .embeddedanalytics.com
 .ember-cf-netlify.cdn-x.net
 .emediate.eu
+.emergency.zeta-ai.io
 .emetriq.de
 .emgthroposit.org
 .emisja.contentstream.pl
@@ -4269,7 +4271,6 @@ error-tracking.megamarket.tech
 .etx.indiatimes.com
 .etyper.com
 .eu-1-id5-sync.com
-.eu-data.kameleoon.io
 .eu-onrt-stsdk.vivoglobal.com
 .eu-ort-stsdk.vivoglobal.com
 .eu-stsdk.vivoglobal.com
@@ -5178,6 +5179,7 @@ google-analytics-suite.ozon.ru
 .halldata.com
 .hananokai.tv
 .handler.rgstats.com
+.handskeeping.com
 .hao123union.baidu.com
 .haoxxwang.com
 .happyleafmotion.com
@@ -5731,7 +5733,6 @@ incoming-telemetry.thunderbird.net
 .iwad.cachefly.net
 .iwanad.baidu.com
 .iwebtrack.com
-.iws2.io.naver.com
 .iwstats.com
 .iyes.youku.com
 .iyi.net
@@ -5849,6 +5850,7 @@ incoming-telemetry.thunderbird.net
 .kaan.kakao.com
 .kaiseki-website.com
 .kameleoon.com
+.kameleoon.io
 .kampyle.com
 .kantartns.lt
 .kaomanko.axesslove.com
@@ -6345,7 +6347,6 @@ log5-applog.fqnovel.com
 .logevt.pubfinity.com
 .logg9r.io
 .logger.applovefrom.com
-.logger.bzu.kr
 .logger.cloudmobi.net
 .logger.co.kr
 .logger.eigene.io
@@ -8147,6 +8148,7 @@ prodvizhenie-adv.ozon.ru
 .pt.appirits.com
 .pt.ispot.tv
 .pt.wisernotify.com
+.pteknvcm.com
 .ptengine.com
 .pto-slb-09.com
 .ptwmstc.com
@@ -8552,6 +8554,7 @@ report.ap.yandex-net.ru
 .roewnand.biz
 .roiservice.com
 .roku-beacons.xumo.com
+.rollgosize.com
 .rollingcounters.com
 .roosterfirework.com
 .ropeshippingcatchy.com
@@ -9019,6 +9022,7 @@ sentry.x5.ru
 .sharebang.com
 .sharethrough.com
 .sharevault.cloud
+.sharkvidskr.com
 .sharp.ondu.ru
 .sharpmarketing.eu
 .sharpspring.com
@@ -9348,8 +9352,6 @@ sentry.x5.ru
 .spacenine.biz
 .spade.twitch.tv
 .spadsync.com
-.spanids.dictionary.com
-.spanids.thesaurus.com
 .sparrowcanned.com
 .sparteo.com
 .spbgc.com
@@ -9596,7 +9598,6 @@ stacks.vk-portal.net
 .statistichegratis.net
 .statistics-collector-api.listglobally.com
 .statistics.11880.com
-.statistics.crowdynews.com
 .statistics.daktilo.com
 .statistics.fppressa.ru
 .statistics.mailerlite.com
