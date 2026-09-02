@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-01T21:09:40+00:00
+# Generated: 2026-09-02T21:09:29+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12611, local=1, total(deduped)=11960, excluded=29
+# Counts: upstream=12612, local=1, total(deduped)=11961, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -32,7 +32,6 @@
 .1-cl0ud.com
 .103bees.com
 .1100ad.com
-.11nux.com
 .1200555.com
 .123compteur.com
 .123count.com
@@ -58,8 +57,6 @@
 .1ts18.top
 .1warie.com
 .1xsultan.com
-.200summit.com
-.204st.us
 .206solutions.com
 .247realmedia.com
 .24counter.com
@@ -2158,6 +2155,7 @@ b2.mail.ru
 .bbc-reporting-api.app
 .bbm-ad-stack-production.up.railway.app
 .bbnfcfrvjs.com
+.bbs.xhamster.com
 .bc.nhk.jp
 .bcd.esprit.de
 .bcfads.com
@@ -2482,6 +2480,7 @@ bs.mail.ru
 .bvr.ast.snva.jp
 .bwb101.goo.ne.jp
 .bxtag.com
+.bycsg.oii.la
 .byoviral.com
 .byracucosopenu.com
 .byscy.cn
@@ -2902,6 +2901,7 @@ click.rustore.ru
 .clientlog.midomi.com
 .clientlog.perfectworldgames.com
 .clientlog.pwsdk.com
+.clientlog.wanmei.com
 .clientlog3.music.163.com
 .clientlogdep.music.163.com
 .clientlogger.marketplace.aws.a2z.com
@@ -5673,7 +5673,6 @@ incoming-telemetry.thunderbird.net
 .ipaddresslabs.com
 .ipcatch.com
 .ipcc.vnpt.com.vn
-.ipcheck.blogsys.jp
 .ipcount.net
 .ipcounter.de
 .iper2.com
@@ -5786,6 +5785,7 @@ incoming-telemetry.thunderbird.net
 .jjpp.lmtjapi.com
 .jl3.yjaxa.top
 .jmlp.app
+.jnt.welt.de
 .jobbox-front.mamastar.jp
 .join.xlgirls.com
 .joinads.me
@@ -6581,6 +6581,7 @@ marketplace-sentry.wb.ru
 .marktest.pt
 .martech.condenastdigital.com
 .mas.protecmedia.com
+.masculine-employment.com
 .maskmonopoly.com
 .master-shopify-tracker.s3.amazonaws.com
 .masterlythehague.com

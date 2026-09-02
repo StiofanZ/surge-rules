@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-01T21:09:40+00:00
+# Generated: 2026-09-02T21:09:29+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12611, local=1, total(deduped)=11960, excluded=29
+# Counts: upstream=12612, local=1, total(deduped)=11961, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -34,7 +34,6 @@ DOMAIN-SUFFIX,0stats.com
 DOMAIN-SUFFIX,1-cl0ud.com
 DOMAIN-SUFFIX,103bees.com
 DOMAIN-SUFFIX,1100ad.com
-DOMAIN-SUFFIX,11nux.com
 DOMAIN-SUFFIX,1200555.com
 DOMAIN-SUFFIX,123compteur.com
 DOMAIN-SUFFIX,123count.com
@@ -60,8 +59,6 @@ DOMAIN-SUFFIX,1s8pj.cn
 DOMAIN-SUFFIX,1ts18.top
 DOMAIN-SUFFIX,1warie.com
 DOMAIN-SUFFIX,1xsultan.com
-DOMAIN-SUFFIX,200summit.com
-DOMAIN-SUFFIX,204st.us
 DOMAIN-SUFFIX,206solutions.com
 DOMAIN-SUFFIX,247realmedia.com
 DOMAIN-SUFFIX,24counter.com
@@ -2160,6 +2157,7 @@ DOMAIN-SUFFIX,bb8.aotter.net
 DOMAIN-SUFFIX,bbc-reporting-api.app
 DOMAIN-SUFFIX,bbm-ad-stack-production.up.railway.app
 DOMAIN-SUFFIX,bbnfcfrvjs.com
+DOMAIN-SUFFIX,bbs.xhamster.com
 DOMAIN-SUFFIX,bc.nhk.jp
 DOMAIN-SUFFIX,bcd.esprit.de
 DOMAIN-SUFFIX,bcfads.com
@@ -2484,6 +2482,7 @@ DOMAIN-SUFFIX,buzzoola.com
 DOMAIN-SUFFIX,bvr.ast.snva.jp
 DOMAIN-SUFFIX,bwb101.goo.ne.jp
 DOMAIN-SUFFIX,bxtag.com
+DOMAIN-SUFFIX,bycsg.oii.la
 DOMAIN-SUFFIX,byoviral.com
 DOMAIN-SUFFIX,byracucosopenu.com
 DOMAIN-SUFFIX,byscy.cn
@@ -2904,6 +2903,7 @@ DOMAIN-SUFFIX,client.smartpushedm.com
 DOMAIN-SUFFIX,clientlog.midomi.com
 DOMAIN-SUFFIX,clientlog.perfectworldgames.com
 DOMAIN-SUFFIX,clientlog.pwsdk.com
+DOMAIN-SUFFIX,clientlog.wanmei.com
 DOMAIN-SUFFIX,clientlog3.music.163.com
 DOMAIN-SUFFIX,clientlogdep.music.163.com
 DOMAIN-SUFFIX,clientlogger.marketplace.aws.a2z.com
@@ -5675,7 +5675,6 @@ DOMAIN-SUFFIX,ip356694986.ahcdn.com
 DOMAIN-SUFFIX,ipaddresslabs.com
 DOMAIN-SUFFIX,ipcatch.com
 DOMAIN-SUFFIX,ipcc.vnpt.com.vn
-DOMAIN-SUFFIX,ipcheck.blogsys.jp
 DOMAIN-SUFFIX,ipcount.net
 DOMAIN-SUFFIX,ipcounter.de
 DOMAIN-SUFFIX,iper2.com
@@ -5788,6 +5787,7 @@ DOMAIN-SUFFIX,jixie.io
 DOMAIN-SUFFIX,jjpp.lmtjapi.com
 DOMAIN-SUFFIX,jl3.yjaxa.top
 DOMAIN-SUFFIX,jmlp.app
+DOMAIN-SUFFIX,jnt.welt.de
 DOMAIN-SUFFIX,jobbox-front.mamastar.jp
 DOMAIN-SUFFIX,join.xlgirls.com
 DOMAIN-SUFFIX,joinads.me
@@ -6583,6 +6583,7 @@ DOMAIN,marketplace-sentry.wb.ru
 DOMAIN-SUFFIX,marktest.pt
 DOMAIN-SUFFIX,martech.condenastdigital.com
 DOMAIN-SUFFIX,mas.protecmedia.com
+DOMAIN-SUFFIX,masculine-employment.com
 DOMAIN-SUFFIX,maskmonopoly.com
 DOMAIN-SUFFIX,master-shopify-tracker.s3.amazonaws.com
 DOMAIN-SUFFIX,masterlythehague.com
