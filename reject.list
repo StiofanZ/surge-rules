@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-02T21:09:29+00:00
+# Generated: 2026-09-03T21:09:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12612, local=1, total(deduped)=11961, excluded=29
+# Counts: upstream=12608, local=1, total(deduped)=11956, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -78,7 +78,6 @@ DOMAIN-SUFFIX,2performant.com
 DOMAIN-SUFFIX,33across.com
 DOMAIN-SUFFIX,360adshost.com
 DOMAIN-SUFFIX,360i.com
-DOMAIN-SUFFIX,360tag.com
 DOMAIN-SUFFIX,3dlivestats.com
 DOMAIN-SUFFIX,3dstats.com
 DOMAIN-SUFFIX,3gl.net
@@ -110,7 +109,6 @@ DOMAIN-SUFFIX,6ogiuks905.com
 DOMAIN-SUFFIX,6pal.consobaby.com
 DOMAIN-SUFFIX,6sc.co
 DOMAIN-SUFFIX,776.jstatic.xyz
-DOMAIN-SUFFIX,77tracking.com
 DOMAIN-SUFFIX,7box.vip
 DOMAIN-SUFFIX,7d36a.com
 DOMAIN-SUFFIX,7eer.net
@@ -210,7 +208,6 @@ DOMAIN-SUFFIX,abbott.vo.llnwd.net
 DOMAIN-SUFFIX,abc.esprit.de
 DOMAIN-SUFFIX,abc.espritshop.pl
 DOMAIN-SUFFIX,abcompteur.com
-DOMAIN-SUFFIX,abcstats.com
 DOMAIN-SUFFIX,abdalminhag.com
 DOMAIN-SUFFIX,abh.jp
 DOMAIN-SUFFIX,abjectionfreedpaying.com
@@ -234,7 +231,6 @@ DOMAIN-SUFFIX,ac2.tnaflix.com
 DOMAIN-SUFFIX,acc-hd.de
 DOMAIN-SUFFIX,accaii.com
 DOMAIN-SUFFIX,accanalyze.com
-DOMAIN-SUFFIX,access-analyze.org
 DOMAIN-SUFFIX,accessintel.com
 DOMAIN-SUFFIX,accesstrade.net
 DOMAIN-SUFFIX,accessv.org
@@ -246,7 +242,6 @@ DOMAIN-SUFFIX,accuratecoal.com
 DOMAIN-SUFFIX,ace.naver.com
 DOMAIN-SUFFIX,acecounter.com
 DOMAIN-SUFFIX,acelogger.heraldcorp.com
-DOMAIN-SUFFIX,acetrk.com
 DOMAIN-SUFFIX,acexedge.com
 DOMAIN-SUFFIX,acint.net
 DOMAIN-SUFFIX,acjs.aliyun.com
@@ -269,7 +264,6 @@ DOMAIN-SUFFIX,acuityplatform.com
 DOMAIN-SUFFIX,acv.mira-dsp.com
 DOMAIN-SUFFIX,acvraulxhsvkr.com
 DOMAIN-SUFFIX,acweb.clog.jp
-DOMAIN-SUFFIX,acxiom-online.com
 DOMAIN-SUFFIX,ad-api-log.colopl.jp
 DOMAIN-SUFFIX,ad-api.ehawk.com
 DOMAIN-SUFFIX,ad-api.maxnapps.com
@@ -1075,6 +1069,7 @@ DOMAIN-SUFFIX,agl008.shop
 DOMAIN-SUFFIX,agl010.pro
 DOMAIN-SUFFIX,agma-analytics.de
 DOMAIN-SUFFIX,agorahtag.tech
+DOMAIN-SUFFIX,agrau.aii.sh
 DOMAIN-SUFFIX,agreeabletouch.com
 DOMAIN-SUFFIX,agrvt.com
 DOMAIN-SUFFIX,ahatm12od.top
@@ -2260,6 +2255,7 @@ DOMAIN-SUFFIX,besucherzaehler-zugriffszaehler.de
 DOMAIN-SUFFIX,besucherzaehler.org
 DOMAIN-SUFFIX,bet365affiliates.com
 DOMAIN-SUFFIX,beta.simpel.nl
+DOMAIN-SUFFIX,betamountwo.com
 DOMAIN-SUFFIX,betarget.com
 DOMAIN-SUFFIX,betarget.de
 DOMAIN-SUFFIX,betrad.com
@@ -2569,6 +2565,7 @@ DOMAIN-SUFFIX,calltracks.com
 DOMAIN-SUFFIX,campaign.remp.nv.ua
 DOMAIN-SUFFIX,campaigncog.com
 DOMAIN-SUFFIX,campaigns-collector.albacross.com
+DOMAIN-SUFFIX,campingfinishvow.com
 DOMAIN-SUFFIX,camplethora.com
 DOMAIN-SUFFIX,camsbanner.wtfgroup.co
 DOMAIN-SUFFIX,candac.iridion.de
@@ -6851,6 +6848,7 @@ DOMAIN-SUFFIX,midas-i.com
 DOMAIN-SUFFIX,middleware.p7s1.io
 DOMAIN-SUFFIX,midnightlotusgrove.com
 DOMAIN-SUFFIX,mieru-ca.com
+DOMAIN-SUFFIX,migstat.com
 DOMAIN-SUFFIX,milk.supertool.stunnermedia.com
 DOMAIN-SUFFIX,millioncounter.com
 DOMAIN-SUFFIX,mimicromax.com
@@ -8170,7 +8168,6 @@ DOMAIN-SUFFIX,public.profitwell.com
 DOMAIN-SUFFIX,publicidees.com
 DOMAIN-SUFFIX,publictelemetry.tophat.com
 DOMAIN-SUFFIX,publisher-event.ads.prd.ie.internal.unity3d.com
-DOMAIN-SUFFIX,publishflow.com
 DOMAIN-SUFFIX,pubmatic.co.jp
 DOMAIN-SUFFIX,pubmatic.com
 DOMAIN-SUFFIX,pubnative.info
@@ -8880,7 +8877,6 @@ DOMAIN-SUFFIX,selectmedia.asia
 DOMAIN-SUFFIX,selfcampaign.com
 DOMAIN-SUFFIX,sellpoints.com
 DOMAIN-SUFFIX,selphiu.com
-DOMAIN-SUFFIX,semanticverses.com
 DOMAIN-SUFFIX,semasio.net
 DOMAIN-SUFFIX,sematext.com
 DOMAIN-SUFFIX,seminarycentral.org
@@ -10868,7 +10864,6 @@ DOMAIN-SUFFIX,tracking202.com
 DOMAIN-SUFFIX,tracking3.vnncdn.net
 DOMAIN-SUFFIX,trackingapi.kaufda.de
 DOMAIN-SUFFIX,trackingapi.meinprospekt.de
-DOMAIN-SUFFIX,trackinglabs.com
 DOMAIN-SUFFIX,trackinglibrary.prodperfect.com
 DOMAIN-SUFFIX,trackingmyadsas.com
 DOMAIN-SUFFIX,trackingprd.hwwt8.com
@@ -10935,7 +10930,6 @@ DOMAIN-SUFFIX,trckng.web55708.greatnet-hosting.de
 DOMAIN-SUFFIX,trcksp.cordial.io
 DOMAIN-SUFFIX,treasuredata.com
 DOMAIN-SUFFIX,treatment.grammarly.com
-DOMAIN-SUFFIX,treconeanalytics.com
 DOMAIN-SUFFIX,treehousei.com
 DOMAIN-SUFFIX,trek.powtoon.com
 DOMAIN-SUFFIX,treker.fun
@@ -11483,6 +11477,7 @@ DOMAIN-SUFFIX,wave.outbrain.com
 DOMAIN-SUFFIX,waves.retentionscience.com
 DOMAIN-SUFFIX,way2traffic.com
 DOMAIN-SUFFIX,wayfinderanalytics.servicebus.windows.net
+DOMAIN-SUFFIX,waytogrow.com
 DOMAIN-SUFFIX,wazimo.com
 DOMAIN-SUFFIX,wbclick.mobile.sina.cn
 DOMAIN-SUFFIX,wbtrk.net

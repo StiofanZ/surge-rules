@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-02T21:09:29+00:00
+# Generated: 2026-09-03T21:09:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12612, local=1, total(deduped)=11961, excluded=29
+# Counts: upstream=12608, local=1, total(deduped)=11956, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -76,7 +76,6 @@
 .33across.com
 .360adshost.com
 .360i.com
-.360tag.com
 .3dlivestats.com
 .3dstats.com
 .3gl.net
@@ -108,7 +107,6 @@
 .6pal.consobaby.com
 .6sc.co
 .776.jstatic.xyz
-.77tracking.com
 .7box.vip
 .7d36a.com
 .7eer.net
@@ -208,7 +206,6 @@
 .abc.esprit.de
 .abc.espritshop.pl
 .abcompteur.com
-.abcstats.com
 .abdalminhag.com
 .abh.jp
 .abjectionfreedpaying.com
@@ -232,7 +229,6 @@
 .acc-hd.de
 .accaii.com
 .accanalyze.com
-.access-analyze.org
 .accessintel.com
 .accesstrade.net
 .accessv.org
@@ -244,7 +240,6 @@
 .ace.naver.com
 .acecounter.com
 .acelogger.heraldcorp.com
-.acetrk.com
 .acexedge.com
 .acint.net
 .acjs.aliyun.com
@@ -267,7 +262,6 @@
 .acv.mira-dsp.com
 .acvraulxhsvkr.com
 .acweb.clog.jp
-.acxiom-online.com
 .ad-api-log.colopl.jp
 .ad-api.ehawk.com
 .ad-api.maxnapps.com
@@ -1073,6 +1067,7 @@ agency-adv.ozon.ru
 .agl010.pro
 .agma-analytics.de
 .agorahtag.tech
+.agrau.aii.sh
 .agreeabletouch.com
 .agrvt.com
 .ahatm12od.top
@@ -2258,6 +2253,7 @@ beginners-adv.ozon.ru
 .besucherzaehler.org
 .bet365affiliates.com
 .beta.simpel.nl
+.betamountwo.com
 .betarget.com
 .betarget.de
 .betrad.com
@@ -2567,6 +2563,7 @@ bs.mail.ru
 .campaign.remp.nv.ua
 .campaigncog.com
 .campaigns-collector.albacross.com
+.campingfinishvow.com
 .camplethora.com
 .camsbanner.wtfgroup.co
 .candac.iridion.de
@@ -6849,6 +6846,7 @@ metrics.21-school.ru
 .middleware.p7s1.io
 .midnightlotusgrove.com
 .mieru-ca.com
+.migstat.com
 .milk.supertool.stunnermedia.com
 .millioncounter.com
 .mimicromax.com
@@ -8168,7 +8166,6 @@ prodvizhenie-adv.ozon.ru
 .publicidees.com
 .publictelemetry.tophat.com
 .publisher-event.ads.prd.ie.internal.unity3d.com
-.publishflow.com
 .pubmatic.co.jp
 .pubmatic.com
 .pubnative.info
@@ -8878,7 +8875,6 @@ rtlog5-applog.fqnovel.com
 .selfcampaign.com
 .sellpoints.com
 .selphiu.com
-.semanticverses.com
 .semasio.net
 .sematext.com
 .seminarycentral.org
@@ -10866,7 +10862,6 @@ tracing-http.megamarket.tech
 .tracking3.vnncdn.net
 .trackingapi.kaufda.de
 .trackingapi.meinprospekt.de
-.trackinglabs.com
 .trackinglibrary.prodperfect.com
 .trackingmyadsas.com
 .trackingprd.hwwt8.com
@@ -10933,7 +10928,6 @@ tracing-http.megamarket.tech
 .trcksp.cordial.io
 .treasuredata.com
 .treatment.grammarly.com
-.treconeanalytics.com
 .treehousei.com
 .trek.powtoon.com
 .treker.fun
@@ -11481,6 +11475,7 @@ visor.sberbank.ru
 .waves.retentionscience.com
 .way2traffic.com
 .wayfinderanalytics.servicebus.windows.net
+.waytogrow.com
 .wazimo.com
 .wbclick.mobile.sina.cn
 .wbtrk.net
