@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-03T21:09:18+00:00
+# Generated: 2026-09-04T20:52:57+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12608, local=1, total(deduped)=11956, excluded=29
+# Counts: upstream=12615, local=1, total(deduped)=11963, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -222,6 +222,7 @@
 .abtest.mistat.xiaomi.com
 .abtest.swrve.com
 .abtshield.com
+.ac.conel.jp
 .ac.ecai-report.com
 .ac.miovp.com
 .ac.prism-world.jp.net
@@ -668,6 +669,7 @@ ads-integration.rustore.ru
 .ads-leaseweb.appsgeyser.com
 .ads-lite.net
 .ads-lite2.net
+.ads-m.rustore.ru
 .ads-media.gameforge.com
 ads-media.wildberries.ru
 .ads-partners.coupang.com
@@ -2297,6 +2299,7 @@ beginners-adv.ozon.ru
 .big7.com
 .bigcattracks.com
 .bigcrunch.com
+.bigfluffycatexchange.crabdance.com
 .biggestplayer.cachefly.net
 .bigmobileads.com
 .bigsauron.ru
@@ -4615,6 +4618,7 @@ error-tracking.megamarket.tech
 .find-ip-address.org
 .finderlocator.com
 .fingerhi.net
+.fingerprint-veri.info
 .fingerprint.incodesmile.com
 .fireanalytics.firestream.to
 .fireworkanalytics.com
@@ -6095,6 +6099,7 @@ incoming-telemetry.thunderbird.net
 .lmadps.jp
 .lmepbq.com
 .lmj8i.pro
+.lms.roblox.com
 .lndata.com
 .lndpy.com
 .lng.xiaohongshu.com
@@ -10652,6 +10657,7 @@ tracing-http.megamarket.tech
 .tracker.anandtech.com
 .tracker.arc.io
 .tracker.azet.sk
+.tracker.bigl.ua
 .tracker.bt.uol.com.br
 .tracker.calameo.com
 .tracker.cartprotector.com
@@ -10854,6 +10860,7 @@ tracing-http.megamarket.tech
 .tracking.utlservice.com
 .tracking.vbr.ru
 .tracking.viewlift.com
+.tracking.vivareal.com.br
 .tracking.ws.eurosport.com
 .tracking.yourfilehost.com
 .tracking02.adweb.co.kr
