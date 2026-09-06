@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-09-05T20:29:58+00:00
+# Generated: 2026-09-06T20:32:27+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31470, local=27, total(deduped)=26436, excluded=3
+# Counts: upstream=31485, local=27, total(deduped)=26442, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -50,6 +50,8 @@
 .119474.xyz
 .11jav.com
 .123-hp.com
+.123av.com
+.123av.me
 .123bin.cc
 .123dapp.com
 .123dappipad.com
@@ -19671,6 +19673,7 @@ rink.hockeyapp.net
 .roborecall.com
 .robotoffice.com
 .robustnessiskey.com
+.roc-taiwan.org
 .rocket-inc.net
 .rocket.chat
 .rocketfishproducts.com
@@ -19719,6 +19722,7 @@ roovza.skadsdk.appsflyersdk.com
 .roudaosp.cc
 .roughebonysex.com
 .roughman.net
+.roushuwo.com
 .routerboard.com
 .routledgehandbooks.com
 .rowblocks.com
@@ -21856,6 +21860,7 @@ supercell.helpshift.com
 .taipeitimes.com
 .taisounds.com
 .taiwanadultexpo.com
+.taiwanembassy.org
 .taiwanhot.net
 .taiwanjustice.net
 .taiwanncf.org.tw
@@ -24909,6 +24914,7 @@ ws.audioscrobbler.com
 .wsjplus.com
 .wsjshop.com
 .wsjwine.com
+.wtfpass.com
 .wtfpeople.com
 .wtmobile.com
 .wto.org
