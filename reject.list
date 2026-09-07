@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-06T20:32:53+00:00
+# Generated: 2026-09-07T21:36:58+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12616, local=1, total(deduped)=11964, excluded=29
+# Counts: upstream=12623, local=1, total(deduped)=11971, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -181,6 +181,7 @@ DOMAIN-SUFFIX,a.youdao.com
 DOMAIN-SUFFIX,a013.com
 DOMAIN-SUFFIX,a11ybar.com
 DOMAIN-SUFFIX,a1webstrategy.com
+DOMAIN-SUFFIX,a2.cineflix.st
 DOMAIN-SUFFIX,a32a.com.cn
 DOMAIN-SUFFIX,a352.sandiegouniontribune.com
 DOMAIN-SUFFIX,a433.dailypress.com
@@ -2111,6 +2112,7 @@ DOMAIN-SUFFIX,backlink-test.de
 DOMAIN-SUFFIX,backlinkdino.de
 DOMAIN-SUFFIX,bacon.getcarro.com
 DOMAIN-SUFFIX,badjs.weixinbridge.com
+DOMAIN-SUFFIX,badylenicesist.com
 DOMAIN-SUFFIX,bagbeam.com
 DOMAIN-SUFFIX,baggyrepackingrocky.com
 DOMAIN-SUFFIX,baichuan-sdk.alicdn.com
@@ -2245,6 +2247,7 @@ DOMAIN-SUFFIX,belstat.de
 DOMAIN-SUFFIX,belstat.fr
 DOMAIN-SUFFIX,belstat.nl
 DOMAIN-SUFFIX,ben.crxmouse.com
+DOMAIN-SUFFIX,bend.frizzsince.com
 DOMAIN-SUFFIX,benefits.sovendus.com
 DOMAIN-SUFFIX,benrif-solutions.com
 DOMAIN-SUFFIX,bepolite.eu
@@ -5229,6 +5232,7 @@ DOMAIN-SUFFIX,hellosherpa.com
 DOMAIN-SUFFIX,helpful-web.com
 DOMAIN-SUFFIX,hemnes.win
 DOMAIN-SUFFIX,hentaicounter.com
+DOMAIN-SUFFIX,hentheautumnca.org
 DOMAIN-SUFFIX,henwilkson.com
 DOMAIN-SUFFIX,hepsiads-gw.hepsiburada.com
 DOMAIN-SUFFIX,hermes.allo-media.net
@@ -6876,6 +6880,7 @@ DOMAIN-SUFFIX,miqdigital.com
 DOMAIN-SUFFIX,mirabelanalytics.com
 DOMAIN-SUFFIX,misc.api.snaptube.app
 DOMAIN-SUFFIX,misc.in.duokanbox.com
+DOMAIN-SUFFIX,miwxoqcbiswmx.com
 DOMAIN-SUFFIX,mixadvert.com
 DOMAIN-SUFFIX,mixer.sina.cn
 DOMAIN-SUFFIX,mixpanel-proxy-ivbdkvonca-uc.a.run.app
@@ -9221,6 +9226,7 @@ DOMAIN-SUFFIX,sofire.bdstatic.com
 DOMAIN-SUFFIX,sofire.terabox.app
 DOMAIN-SUFFIX,sofire.terabox.com
 DOMAIN-SUFFIX,softonic-analytics.net
+DOMAIN-SUFFIX,sogu.tripster.ru
 DOMAIN-SUFFIX,sokmil-ad.com
 DOMAIN-SUFFIX,sokrati.com
 DOMAIN-SUFFIX,solarad.net
@@ -10180,6 +10186,7 @@ DOMAIN-SUFFIX,tcheck.outbrainimg.com
 DOMAIN-SUFFIX,tcs-asp.net
 DOMAIN-SUFFIX,tcss.qq.com
 DOMAIN-SUFFIX,tctm.co
+DOMAIN-SUFFIX,tcwvvosfnvk.com
 DOMAIN-SUFFIX,tcx-beacon.docs.aws.dev
 DOMAIN-SUFFIX,td573.com
 DOMAIN-SUFFIX,tda.io
