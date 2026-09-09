@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-08T21:16:27+00:00
+# Generated: 2026-09-09T21:01:30+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12629, local=1, total(deduped)=11977, excluded=29
+# Counts: upstream=12637, local=1, total(deduped)=11984, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2942,6 +2942,7 @@ click.rustore.ru
 .cloudpush.iqiyi.com
 .cloudscape84.net
 .cloudshielders.com
+.cloudx.io
 .clrpdhptoddatj49.pro
 .cls.vrvm.com
 .clt.banggood.com
@@ -3423,6 +3424,7 @@ crashlyticsreports-pa.googleapis.com
 .cya1t.net
 .cya2.net
 .cyberanalytics.nl
+.cyicbayqmbz.com
 .cypr.com
 .czilladx.com
 .d-064.com
@@ -4025,6 +4027,7 @@ crashlyticsreports-pa.googleapis.com
 .dtscout.com
 .dttrk.com
 .dtxtngytz5im1.cloudfront.net
+.dtzgbt.com
 .dualstack-cgicol.amap.com
 .dualstack-collection.rong-edge.com
 .dualstack-logs.amap.com
@@ -6107,6 +6110,7 @@ incoming-telemetry.thunderbird.net
 .lms.roblox.com
 .lndata.com
 .lndpy.com
+.lndrsapi.com
 .lng.xiaohongshu.com
 .lngtd.com
 .lnhsjob.com
@@ -7806,6 +7810,7 @@ p9-ad-sign.byteimg.com
 .pingomatic.com
 .pingpong.us
 .pingtas.qq.com
+.piousshiners.com
 .pipe-collect.ebu.io
 .pipedream.wistia.com
 .pipeline.rd.nl
@@ -7927,6 +7932,7 @@ pixel.yandex.com
 .pl.primis.tech
 .pl.youku.com
 .pla-tk.flipkart.net
+.pla.uqload.vc
 .placemypixel.com
 .plankton-gtm.a.autoscout24.com
 .plarimoplus.com
@@ -10882,6 +10888,7 @@ tracing-http.megamarket.tech
 .tracking3.vnncdn.net
 .trackingapi.kaufda.de
 .trackingapi.meinprospekt.de
+.trackinginwtd.pro
 .trackinglibrary.prodperfect.com
 .trackingmyadsas.com
 .trackingprd.hwwt8.com

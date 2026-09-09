@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-08T21:16:27+00:00
+# Generated: 2026-09-09T21:01:30+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12629, local=1, total(deduped)=11977, excluded=29
+# Counts: upstream=12637, local=1, total(deduped)=11984, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2944,6 +2944,7 @@ DOMAIN-SUFFIX,cloudmetrics.xenforo.com
 DOMAIN-SUFFIX,cloudpush.iqiyi.com
 DOMAIN-SUFFIX,cloudscape84.net
 DOMAIN-SUFFIX,cloudshielders.com
+DOMAIN-SUFFIX,cloudx.io
 DOMAIN-SUFFIX,clrpdhptoddatj49.pro
 DOMAIN-SUFFIX,cls.vrvm.com
 DOMAIN-SUFFIX,clt.banggood.com
@@ -3425,6 +3426,7 @@ DOMAIN-SUFFIX,cy-pr.com
 DOMAIN-SUFFIX,cya1t.net
 DOMAIN-SUFFIX,cya2.net
 DOMAIN-SUFFIX,cyberanalytics.nl
+DOMAIN-SUFFIX,cyicbayqmbz.com
 DOMAIN-SUFFIX,cypr.com
 DOMAIN-SUFFIX,czilladx.com
 DOMAIN-SUFFIX,d-064.com
@@ -4027,6 +4029,7 @@ DOMAIN-SUFFIX,dts-log.anker.com
 DOMAIN-SUFFIX,dtscout.com
 DOMAIN-SUFFIX,dttrk.com
 DOMAIN-SUFFIX,dtxtngytz5im1.cloudfront.net
+DOMAIN-SUFFIX,dtzgbt.com
 DOMAIN-SUFFIX,dualstack-cgicol.amap.com
 DOMAIN-SUFFIX,dualstack-collection.rong-edge.com
 DOMAIN-SUFFIX,dualstack-logs.amap.com
@@ -6109,6 +6112,7 @@ DOMAIN-SUFFIX,lmj8i.pro
 DOMAIN-SUFFIX,lms.roblox.com
 DOMAIN-SUFFIX,lndata.com
 DOMAIN-SUFFIX,lndpy.com
+DOMAIN-SUFFIX,lndrsapi.com
 DOMAIN-SUFFIX,lng.xiaohongshu.com
 DOMAIN-SUFFIX,lngtd.com
 DOMAIN-SUFFIX,lnhsjob.com
@@ -7808,6 +7812,7 @@ DOMAIN-SUFFIX,pingmeter.com
 DOMAIN-SUFFIX,pingomatic.com
 DOMAIN-SUFFIX,pingpong.us
 DOMAIN-SUFFIX,pingtas.qq.com
+DOMAIN-SUFFIX,piousshiners.com
 DOMAIN-SUFFIX,pipe-collect.ebu.io
 DOMAIN-SUFFIX,pipedream.wistia.com
 DOMAIN-SUFFIX,pipeline.rd.nl
@@ -7929,6 +7934,7 @@ DOMAIN-SUFFIX,pl.elements.video
 DOMAIN-SUFFIX,pl.primis.tech
 DOMAIN-SUFFIX,pl.youku.com
 DOMAIN-SUFFIX,pla-tk.flipkart.net
+DOMAIN-SUFFIX,pla.uqload.vc
 DOMAIN-SUFFIX,placemypixel.com
 DOMAIN-SUFFIX,plankton-gtm.a.autoscout24.com
 DOMAIN-SUFFIX,plarimoplus.com
@@ -10884,6 +10890,7 @@ DOMAIN-SUFFIX,tracking202.com
 DOMAIN-SUFFIX,tracking3.vnncdn.net
 DOMAIN-SUFFIX,trackingapi.kaufda.de
 DOMAIN-SUFFIX,trackingapi.meinprospekt.de
+DOMAIN-SUFFIX,trackinginwtd.pro
 DOMAIN-SUFFIX,trackinglibrary.prodperfect.com
 DOMAIN-SUFFIX,trackingmyadsas.com
 DOMAIN-SUFFIX,trackingprd.hwwt8.com
