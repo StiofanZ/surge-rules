@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-09T21:01:30+00:00
+# Generated: 2026-09-10T21:00:13+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12637, local=1, total(deduped)=11984, excluded=29
+# Counts: upstream=12645, local=1, total(deduped)=11992, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2568,6 +2568,7 @@ DOMAIN-SUFFIX,callmeasurement.com
 DOMAIN-SUFFIX,callrail.com
 DOMAIN-SUFFIX,calltrackingmetrics.com
 DOMAIN-SUFFIX,calltracks.com
+DOMAIN-SUFFIX,camp.inc.com
 DOMAIN-SUFFIX,campaign.remp.nv.ua
 DOMAIN-SUFFIX,campaigncog.com
 DOMAIN-SUFFIX,campaigns-collector.albacross.com
@@ -3886,6 +3887,7 @@ DOMAIN-SUFFIX,disqusads.com
 DOMAIN-SUFFIX,distillery.wistia.com
 DOMAIN-SUFFIX,distiltag.com
 DOMAIN-SUFFIX,distralytics.com
+DOMAIN-SUFFIX,disutgh7q0ncc.cloudfront.net
 DOMAIN-SUFFIX,dit.whatsapp.net
 DOMAIN-SUFFIX,divolution.com
 DOMAIN-SUFFIX,divscripty.net
@@ -4443,6 +4445,7 @@ DOMAIN-SUFFIX,events.niit-mts.com
 DOMAIN-SUFFIX,events.ocdn.eu
 DOMAIN-SUFFIX,events.onet.pl
 DOMAIN-SUFFIX,events.paramount.tech
+DOMAIN-SUFFIX,events.plutus.ninja
 DOMAIN-SUFFIX,events.popinfo.jp
 DOMAIN-SUFFIX,events.prd.api.discomax.com
 DOMAIN-SUFFIX,events.privy.com
@@ -4634,6 +4637,7 @@ DOMAIN-SUFFIX,fireworkanalytics.com
 DOMAIN-SUFFIX,first-id.fr
 DOMAIN-SUFFIX,fishhoo.com
 DOMAIN-SUFFIX,fitanalytics.com
+DOMAIN-SUFFIX,fitlivelywhup.com
 DOMAIN-SUFFIX,fivecdm.com
 DOMAIN-SUFFIX,fixcounter.com
 DOMAIN-SUFFIX,fixwap.net
@@ -6779,6 +6783,7 @@ DOMAIN-SUFFIX,metrics.cs.money
 DOMAIN-SUFFIX,metrics.dominos.com.tr
 DOMAIN-SUFFIX,metrics.doppiostreams.com
 DOMAIN-SUFFIX,metrics.duolingo.com
+DOMAIN-SUFFIX,metrics.earlygame.com
 DOMAIN-SUFFIX,metrics.ee.co.uk
 DOMAIN-SUFFIX,metrics.foxnews.com
 DOMAIN-SUFFIX,metrics.freemake.com
@@ -8502,6 +8507,7 @@ DOMAIN-SUFFIX,reportwest-midas.codmwest.com
 DOMAIN-SUFFIX,reqde.sooplive.com
 DOMAIN-SUFFIX,reqstat.api.mega.co.nz
 DOMAIN-SUFFIX,requestmetrics.com
+DOMAIN-SUFFIX,rer4.com
 DOMAIN-SUFFIX,res-x.com
 DOMAIN-SUFFIX,res.adx.opera.com
 DOMAIN-SUFFIX,res.hunantv.com
@@ -11195,6 +11201,7 @@ DOMAIN-SUFFIX,unl1zvy2zuyn.franchiseplus.nl
 DOMAIN-SUFFIX,unseenreport.com
 DOMAIN-SUFFIX,untho.de
 DOMAIN-SUFFIX,untidyrice.com
+DOMAIN-SUFFIX,untimely-hello.com
 DOMAIN-SUFFIX,untimely-proof.pro
 DOMAIN-SUFFIX,uoutube.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
@@ -11987,6 +11994,7 @@ DOMAIN-SUFFIX,ziyu.net
 DOMAIN-SUFFIX,zjgfq.com
 DOMAIN-SUFFIX,zml-apm-prd.dbv4.noncd.db.de
 DOMAIN-SUFFIX,zmqdez.ru
+DOMAIN-SUFFIX,zodalt.com
 DOMAIN-SUFFIX,zoligirls.com
 DOMAIN-SUFFIX,zoly.tech
 DOMAIN-SUFFIX,zoomanalytics.co

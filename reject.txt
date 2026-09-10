@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-09T21:01:30+00:00
+# Generated: 2026-09-10T21:00:13+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12637, local=1, total(deduped)=11984, excluded=29
+# Counts: upstream=12645, local=1, total(deduped)=11992, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2566,6 +2566,7 @@ bs.mail.ru
 .callrail.com
 .calltrackingmetrics.com
 .calltracks.com
+.camp.inc.com
 .campaign.remp.nv.ua
 .campaigncog.com
 .campaigns-collector.albacross.com
@@ -3884,6 +3885,7 @@ crashlyticsreports-pa.googleapis.com
 .distillery.wistia.com
 .distiltag.com
 .distralytics.com
+.disutgh7q0ncc.cloudfront.net
 .dit.whatsapp.net
 .divolution.com
 .divscripty.net
@@ -4441,6 +4443,7 @@ error-tracking.megamarket.tech
 .events.ocdn.eu
 .events.onet.pl
 .events.paramount.tech
+.events.plutus.ninja
 .events.popinfo.jp
 .events.prd.api.discomax.com
 .events.privy.com
@@ -4632,6 +4635,7 @@ error-tracking.megamarket.tech
 .first-id.fr
 .fishhoo.com
 .fitanalytics.com
+.fitlivelywhup.com
 .fivecdm.com
 .fixcounter.com
 .fixwap.net
@@ -6777,6 +6781,7 @@ metrics.21-school.ru
 .metrics.dominos.com.tr
 .metrics.doppiostreams.com
 .metrics.duolingo.com
+.metrics.earlygame.com
 .metrics.ee.co.uk
 .metrics.foxnews.com
 .metrics.freemake.com
@@ -8500,6 +8505,7 @@ report.ap.yandex-net.ru
 .reqde.sooplive.com
 .reqstat.api.mega.co.nz
 .requestmetrics.com
+.rer4.com
 .res-x.com
 .res.adx.opera.com
 .res.hunantv.com
@@ -11193,6 +11199,7 @@ tracing-http.megamarket.tech
 .unseenreport.com
 .untho.de
 .untidyrice.com
+.untimely-hello.com
 .untimely-proof.pro
 .uoutube.com
 .up-hl.3g.qq.com
@@ -11985,6 +11992,7 @@ xapi.ozonru.me
 .zjgfq.com
 .zml-apm-prd.dbv4.noncd.db.de
 .zmqdez.ru
+.zodalt.com
 .zoligirls.com
 .zoly.tech
 .zoomanalytics.co
