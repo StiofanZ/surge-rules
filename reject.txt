@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-10T21:00:13+00:00
+# Generated: 2026-09-11T21:05:16+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12645, local=1, total(deduped)=11992, excluded=29
+# Counts: upstream=12654, local=1, total(deduped)=12000, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -110,6 +110,7 @@
 .7box.vip
 .7d36a.com
 .7eer.net
+.7lzwgj.donaukurier.de
 .80xmedia.com
 .813c5.v.fwmrm.net
 .87uq.com
@@ -1985,6 +1986,7 @@ apilog-web.acfun.cn
 .atanx2.alicdn.com
 .atax.teamxbox.com
 .atb-stats-api.imolive.tv
+.atddmn.com
 .atdmt.com
 .athena-event-provider.n11.com
 .athena.api.kwalee.com
@@ -2282,6 +2284,7 @@ beginners-adv.ozon.ru
 .bibincom.com
 .bicp-analytics.postscript.io
 .bid-algorix.com
+.bid.ctv.house
 .bid.run
 .bidder.a11.vega.aurion11.io
 .bidder.doceree.com
@@ -4898,6 +4901,7 @@ error-tracking.megamarket.tech
 .get.stoplocker.com
 .get4click.ru
 .getadfinity.com
+.getads.ru
 .getallmedia.com
 .getbackstory.com
 .getbeacon.io
@@ -5460,6 +5464,7 @@ google-analytics-suite.ozon.ru
 .idio.co
 .idot.cz
 .idreamed.com
+.idsequoia.ai
 .iemiq.com
 .iesnare.com
 .ifacelog.iqiyi.com
@@ -6176,6 +6181,7 @@ log-sdk.gifshow.com
 .log.bloodppressure.info
 .log.bloodsugars.live
 .log.bunjang.co.kr
+.log.calomeal.com
 .log.classting.com
 .log.cleandesigner.live
 .log.cleanertoolboxonline.live
@@ -7166,6 +7172,7 @@ metrics.21-school.ru
 .mycounter.com.ua
 .mycounter.ua
 .mydas.mobi
+.mydatascript.bubbleup.com
 .myfastcounter.com
 .myiads.com
 .mymap.icu
@@ -7383,6 +7390,7 @@ new-adv.ozon.ru
 .ny77jj.washingtonpost.com
 .nycp-hlb.dvgtm.akadns.net
 .nyctrl32.com
+.nyhizyjybawozi.com
 .nzydzsw.com
 .o2o.api.xiaomi.com
 .o333o.com
