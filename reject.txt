@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-13T20:58:23+00:00
+# Generated: 2026-09-14T21:55:30+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12656, local=1, total(deduped)=12001, excluded=29
+# Counts: upstream=12659, local=1, total(deduped)=12003, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -173,6 +173,7 @@
 .a.tampermonkey.net
 .a.thelocal.com
 .a.tyncar.com
+.a.ussp.io
 .a.visme.co
 .a.wb.ru
 .a.wishabi.com
@@ -572,7 +573,6 @@ adblogger.vk.ru
 .adleap.jp
 .adlibr.com
 .adlink.wurl.com
-.adlookmanager.com
 .adm.shinobi.jp
 .adma.xsrv.jp
 .adman.gr
@@ -1778,7 +1778,6 @@ api.mindbox.ru
 .api.newsfeed.intl.miui.com
 .api.openpanel.dev
 .api.pingstart.com
-.api.primecaster.net
 .api.pubfinity.com
 .api.publytics.net
 .api.receptivity.io
@@ -1801,7 +1800,6 @@ api.mindbox.ru
 .api.tomi.ai
 .api.trueaudience.io
 .api.uca.cloud.unity3d.com
-.api.unthem.com
 .api.usebutton.com
 .api.visitorapi.com
 .api.whizeo.com
@@ -1953,7 +1951,6 @@ apilog-web.acfun.cn
 .asia-northeast1-affiliate-pr.cloudfunctions.net
 .askfollow.us
 .aspservice.jp
-.assessoriagmv.com
 .assets.9gtb.com
 .assets.datarize.ai
 .assets.newsmaxwidget.com
@@ -2290,6 +2287,7 @@ beginners-adv.ozon.ru
 .bidder.doceree.com
 .bidder.dsp.outfit7.com
 .bidder.mdspinc.com
+.bidderstack.com
 .bidforclicks.com
 .bidio.pl
 .bidjora.com
@@ -2646,7 +2644,6 @@ bs.mail.ru
 .cdn.adt567.net
 .cdn.advertiser.linkvertise.com
 .cdn.aimtell.com
-.cdn.alistcloud.com
 .cdn.amplitude.com
 .cdn.appnext.com
 .cdn.aucey.com
@@ -2687,7 +2684,6 @@ bs.mail.ru
 .cdn.memo.co
 .cdn.mgln.ai
 .cdn.mircheigeshoa.com
-.cdn.mixx-ad.net
 .cdn.moengage.com
 .cdn.odoscope.cloud
 .cdn.particularaudience.com
@@ -3320,7 +3316,6 @@ crashlyticsreports-pa.googleapis.com
 .creative.chiccams.com
 .creative.drtuberlive.com
 .creative.live.javmix.tv
-.creative.live.tktube.com
 .creative.live7mm.tv
 .creative.myavlive.com
 .creative.rarecams.com
@@ -3373,6 +3368,7 @@ crashlyticsreports-pa.googleapis.com
 .crypto-o.click
 .cryptoadvertising.net
 .cs.avito.ru
+.cs.ifedata.ru
 .cs.media.net
 .cs.rivierewhimsey.com
 .cs.zg-api.com
@@ -3905,7 +3901,6 @@ crashlyticsreports-pa.googleapis.com
 .dlog-config.uu.cc
 .dlog.perfectworldgames.com
 .dlog.pwsdk.com
-.dlp4luwpus5kr.cloudfront.net
 .dls-account.di.atlas.samsung.com
 .dls-ddc.dqa.samsung.com
 .dls2s.appsflyer.com
@@ -4020,6 +4015,7 @@ crashlyticsreports-pa.googleapis.com
 .dt.beyla.site
 .dt.dbankcloud.ru
 .dtasrvr.com
+.dtbxnc.com
 .dtch.brunel.nl
 .dtcollect.newsbang.com
 .dtent.povvverz.one
@@ -4031,6 +4027,7 @@ crashlyticsreports-pa.googleapis.com
 .dts-log.anker.com
 .dtscout.com
 .dttrk.com
+.dtvyyf.com
 .dtxtngytz5im1.cloudfront.net
 .dtzgbt.com
 .dualstack-cgicol.amap.com
@@ -5387,7 +5384,6 @@ google-analytics-suite.ozon.ru
 .hwstats.unity3d.com
 .hxtrack.com
 .hybrid.ai
-.hydrangeao.com
 .hyfntrak.com
 .hyperactivate.com
 .hyperadx.com
@@ -5650,6 +5646,7 @@ incoming-telemetry.thunderbird.net
 .intelligence.xnews.one
 .intelligencefocus.com
 .intelligenceretarget.com
+.intent.ai
 .intent.cbsi.com
 .interactive-circle.jp
 .interakt.ru
@@ -5657,6 +5654,7 @@ incoming-telemetry.thunderbird.net
 .interceptum.com
 .intergid.ru
 .interhits.de
+.interlinecustomroofingllc.com
 .intermarkets.net
 .internal-analytics.odoo.com
 .internetmap.info
@@ -5777,7 +5775,6 @@ incoming-telemetry.thunderbird.net
 .jaeger.netmonet.co
 .jambojar.com
 .japanhotties.jp
-.japans-offers.com
 .jcgdhqusv.com
 .jcpclick.com
 .jdlog.uu.cc
@@ -6073,7 +6070,6 @@ incoming-telemetry.thunderbird.net
 .lightstep.medium.systems
 .lijit.com
 .line-e.com
-.line-jp.live
 .line1-log.biligame.net
 .lineare.net
 .linezing.com
@@ -6489,7 +6485,6 @@ loyalnost-adv.ozon.ru
 .lu.sogou.com
 .lu.sogoucdn.com
 .lucidel.com
-.lucky-website.com
 .luckyforworlds.com
 .luckyorange.com
 .luckyorange.net
@@ -7082,6 +7077,7 @@ metrics.21-school.ru
 .mp.theepochtimes.com
 .mp3king.club
 .mparticle.com
+.mpartner.digital
 .mpc.nicequest.com
 .mpecom-analyticevents-prod.boyner.com.tr
 .mpianalytics.com
@@ -7201,6 +7197,7 @@ metrics.21-school.ru
 .myusersonline.com
 .myvisitors.se
 .myvisualiq.net
+.myweb3id.io
 .mywebstats.com.au
 .mywebstats.org
 .mywedding-beacon.team-rec.jp
@@ -7344,6 +7341,7 @@ new-adv.ozon.ru
 .node.aibeacon.jp
 .noibu.com
 .noodshare.pics
+.noonewillshop.com
 .noowho.com
 .nordicresearch.com
 .northstar.cr
@@ -7361,7 +7359,6 @@ new-adv.ozon.ru
 .nprove.com
 .nr-beacon.movingimage.com
 .nr-data.net
-.nr.bidderstack.com
 .nr7.us
 .nrc.tapas.net
 .nrich.ai
@@ -7484,6 +7481,7 @@ new-adv.ozon.ru
 .onestat.com
 .onetag-sys.com
 .onetag.co.kr
+.onetarget.ru
 .ongsono.com
 .online-metrix.net
 .onlineapi.youappi.com
@@ -7587,6 +7585,7 @@ openai.qualtrics.com
 .p.controld.com
 .p.data.cctv.com
 .p.eneba.com
+.p.food.ru
 .p.gazeta.pl
 .p.gm99.com
 .p.imgur.com
@@ -8444,7 +8443,6 @@ r1.mail.ru
 .redstatcounter.com
 .redtram.com
 .reedbusiness.net
-.reemo-ad.jp
 .referer.org
 .referer.pixplug.in
 .referforex.com
@@ -8623,6 +8621,7 @@ rs.mail.ru
 .rtb-trk4.linkedin.com
 .rtb-us-east.linkedin.com
 .rtb.appbid.com
+.rtb.dynotech.io
 .rtb.julang.taobao.com
 .rtb.videonow.ru
 .rtb.voltaxam.com
@@ -8770,7 +8769,6 @@ rtlog5-applog.fqnovel.com
 .sanalytics.ncaa.com
 .sanity-dataplane.rudderstack.com
 .sanjagh.com
-.sankei.click
 .sapha.com
 .sapi.tremendous.com
 .sas.a.int-nft.peacocktv.com
@@ -9087,6 +9085,7 @@ sentry.x5.ru
 .shrinktheweb.com
 .shtrack.kingsoft.jp
 .shuzilm.cn
+.shypublishedeternity.com
 .sia.internet.apps.samsung.com
 .sibautomation.com
 .sibergy.com
@@ -9181,6 +9180,7 @@ sentry.x5.ru
 .smart-placements-sdk.ex.co
 .smart-redirecting.com
 .smart.idmnet.pl
+.smartcallback.ru
 .smartcard.apps.coloros.com
 .smartctr.com
 .smarterhq.io
@@ -9321,6 +9321,7 @@ sentry.x5.ru
 .sp.lancastereaglegazette.com
 .sp.lansingstatejournal.com
 .sp.ldnews.com
+.sp.linkssp.ru
 .sp.lohud.com
 .sp.mansfieldnewsjournal.com
 .sp.marionstar.com
@@ -9905,11 +9906,13 @@ stats.telega.info
 .syh.zybang.com
 .sync.adap.tv
 .sync.adotmob.com
+.sync.adsp.io
 .sync.adspend.space
 .sync.bumlam.com
 .sync.clearnview.com
 .sync.ebis.ne.jp
 .sync.getpublica.com
+.sync.gonet-ads.com
 .sync.inmobi.com
 .sync.morgdm.ru
 .sync.opendsp.ru
@@ -10188,6 +10191,7 @@ target.vk.com
 .targeting.washpost.nile.works
 .targetman.ru
 .targetpush.co.kr
+.targetrtb.com
 .targetspot.com
 .taskapi.net
 .tatrack.thinkyeah.com
@@ -11756,7 +11760,6 @@ wlog.kuaishou.com
 .wxqdcakvuv.com
 .wysistat.com
 .wzrkt.com
-.x-lift.jp
 .x-stat.de
 .x-storage-a1.cir.io
 .x-traceur.com
@@ -11965,7 +11968,6 @@ xapi.ozonru.me
 .zanox-affiliate.de
 .zanox.com
 .zap.cdn.zynga.com
-.zastag.com
 .zc.adswizz.com
 .zcode11.me
 .zdbb.net
