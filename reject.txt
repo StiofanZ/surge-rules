@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-14T21:55:30+00:00
+# Generated: 2026-09-15T21:32:12+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12659, local=1, total(deduped)=12003, excluded=29
+# Counts: upstream=12665, local=1, total(deduped)=12009, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -3848,6 +3848,7 @@ crashlyticsreports-pa.googleapis.com
 .dialogtech.com
 .dianomi.com
 .dic9vgwbkxd8r.cloudfront.net
+.diciestchokybuffi.cyou
 .did-it.com
 .didit.com
 .didna.io
@@ -4797,6 +4798,7 @@ error-tracking.megamarket.tech
 .ga2.getresponse.com
 .gacela.eu
 .gaconnector.com
+.gadata.motorpresse.de
 .gadsme.com
 .gae.karte.io
 .gak.webtoons.com
@@ -5847,6 +5849,7 @@ incoming-telemetry.thunderbird.net
 .junbi-tracker.com
 .juneworewyjyna.com
 .justad.mobi
+.justice.maybeoneday.ch
 .justid.io
 .justtrack.io
 .justuno.com
@@ -8079,6 +8082,7 @@ pixel.yandex.com
 .prebid.scope3.com
 .prebid.tapatalk.com
 .precisioncounter.com
+.precoxwurzels.qpon
 .predataclient.b-cdn.net
 .predicta.net
 .predictivadnetwork.com
@@ -8966,6 +8970,7 @@ sentry.x5.ru
 .serious-partners.com
 .sersh.com
 .serve.affiliate.heurekashopping.sk
+.serve.omr.com
 .serve.williamhill.com
 .servebom.com
 .servedby.o2.co.uk
@@ -9111,6 +9116,7 @@ sentry.x5.ru
 .simpli.fi
 .simplycast.us
 .simplymeasured.com
+.sinceaware.com
 .singlefeed.com
 .sioa.chewy.com
 .site-azp.slgnt.eu
