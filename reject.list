@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-16T21:27:37+00:00
+# Generated: 2026-09-17T21:31:56+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -1073,7 +1073,6 @@ DOMAIN-SUFFIX,agl008.shop
 DOMAIN-SUFFIX,agl010.pro
 DOMAIN-SUFFIX,agma-analytics.de
 DOMAIN-SUFFIX,agorahtag.tech
-DOMAIN-SUFFIX,agrau.aii.sh
 DOMAIN-SUFFIX,agreeabletouch.com
 DOMAIN-SUFFIX,agrvt.com
 DOMAIN-SUFFIX,ahatm12od.top
@@ -2439,6 +2438,7 @@ DOMAIN-SUFFIX,brominer.com
 DOMAIN-SUFFIX,bronto.com
 DOMAIN-SUFFIX,browser-fp.production.linktr.ee
 DOMAIN-SUFFIX,browser-intake-datadoghq.com
+DOMAIN-SUFFIX,browser-intake-datadoghq.eu
 DOMAIN-SUFFIX,browser-statistik.de
 DOMAIN-SUFFIX,browser-update.org
 DOMAIN-SUFFIX,browser.events.data.msn.cn
@@ -6417,7 +6417,6 @@ DOMAIN-SUFFIX,logs.8thwall.com
 DOMAIN-SUFFIX,logs.adplay.ru
 DOMAIN-SUFFIX,logs.amap.com
 DOMAIN-SUFFIX,logs.appsource.microsoft.com
-DOMAIN-SUFFIX,logs.browser-intake-datadoghq.eu
 DOMAIN-SUFFIX,logs.chatboost-cv.algoage.co.jp
 DOMAIN-SUFFIX,logs.chelaile.net.cn
 DOMAIN-SUFFIX,logs.classdojo.com
@@ -7562,6 +7561,7 @@ DOMAIN-SUFFIX,ot.ebis.ne.jp
 DOMAIN-SUFFIX,otel-collector.reliability.smartnews.net
 DOMAIN-SUFFIX,otel-mobile.doordash.com
 DOMAIN-SUFFIX,otik.de
+DOMAIN-SUFFIX,otl.minefun.io
 DOMAIN-SUFFIX,otoshiana.com
 DOMAIN-SUFFIX,ouiokaq.top
 DOMAIN-SUFFIX,ournet-analytics.com
