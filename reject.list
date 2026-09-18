@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-17T21:31:56+00:00
+# Generated: 2026-09-18T21:02:23+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12668, local=1, total(deduped)=12012, excluded=29
+# Counts: upstream=12674, local=1, total(deduped)=12018, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4020,6 +4020,7 @@ DOMAIN-SUFFIX,dspunion.com
 DOMAIN-SUFFIX,dsxlez.com
 DOMAIN-SUFFIX,dt.beyla.site
 DOMAIN-SUFFIX,dt.dbankcloud.ru
+DOMAIN-SUFFIX,dtam.thrive.today
 DOMAIN-SUFFIX,dtasrvr.com
 DOMAIN-SUFFIX,dtbxnc.com
 DOMAIN-SUFFIX,dtch.brunel.nl
@@ -4035,6 +4036,7 @@ DOMAIN-SUFFIX,dtscout.com
 DOMAIN-SUFFIX,dttrk.com
 DOMAIN-SUFFIX,dtvyyf.com
 DOMAIN-SUFFIX,dtxtngytz5im1.cloudfront.net
+DOMAIN-SUFFIX,dtxudj.com
 DOMAIN-SUFFIX,dtzgbt.com
 DOMAIN-SUFFIX,dualstack-cgicol.amap.com
 DOMAIN-SUFFIX,dualstack-collection.rong-edge.com
@@ -5059,6 +5061,7 @@ DOMAIN-SUFFIX,grapheffect.com
 DOMAIN-SUFFIX,gratis-besucherzaehler.de
 DOMAIN-SUFFIX,gratis-counter-gratis.de
 DOMAIN-SUFFIX,gravity4.com
+DOMAIN-SUFFIX,gray.unlikebuck.com
 DOMAIN-SUFFIX,gre.groobee.io
 DOMAIN-SUFFIX,great12.org
 DOMAIN-SUFFIX,greatpuppydogs.com
@@ -5807,6 +5810,7 @@ DOMAIN-SUFFIX,jixie.io
 DOMAIN-SUFFIX,jjpp.lmtjapi.com
 DOMAIN-SUFFIX,jl3.yjaxa.top
 DOMAIN-SUFFIX,jmlp.app
+DOMAIN-SUFFIX,jnt.bild.de
 DOMAIN-SUFFIX,jnt.welt.de
 DOMAIN-SUFFIX,jobbox-front.mamastar.jp
 DOMAIN-SUFFIX,join.xlgirls.com
@@ -9775,6 +9779,7 @@ DOMAIN-SUFFIX,stats.someecards.com
 DOMAIN-SUFFIX,stats.spottedlublin.pl
 DOMAIN-SUFFIX,stats.spreadsimple.com
 DOMAIN-SUFFIX,stats.sprocketrocket.co
+DOMAIN-SUFFIX,stats.stellar.rip
 DOMAIN-SUFFIX,stats.streamhub.io
 DOMAIN-SUFFIX,stats.studyquicks.com
 DOMAIN-SUFFIX,stats.stylight.de
@@ -11896,6 +11901,7 @@ DOMAIN-SUFFIX,yc-ads.s3.amazonaws.com
 DOMAIN-SUFFIX,ydxdg.xyz
 DOMAIN-SUFFIX,ye.dun.163yun.com
 DOMAIN-SUFFIX,yeahmobi.com
+DOMAIN-SUFFIX,yearlyartist.com
 DOMAIN-SUFFIX,yeesshh.com
 DOMAIN-SUFFIX,yektanet.com
 DOMAIN-SUFFIX,yellowbrix.com
