@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-18T21:02:23+00:00
+# Generated: 2026-09-21T22:04:23+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12674, local=1, total(deduped)=12018, excluded=29
+# Counts: upstream=12688, local=1, total(deduped)=12032, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -29,6 +29,7 @@
 .02ip.ru
 .0emm.com
 .0stats.com
+.0xclicks.com
 .1-cl0ud.com
 .103bees.com
 .1100ad.com
@@ -43,6 +44,7 @@
 .1990tu.com
 .1cpbac.ru
 .1dmp.io
+.1epc8o1tg9zz.com
 .1f7wwaex9rbh.com
 .1freecounter.com
 .1iuh5l.com
@@ -90,6 +92,7 @@
 .4seeresults.com
 .4sqt6jq.de
 .4stats.de
+.4tm4ezb2lqlx.com
 .50bang.org
 .51.la
 .51y5.net
@@ -184,6 +187,7 @@
 .a2.cineflix.st
 .a32a.com.cn
 .a352.sandiegouniontribune.com
+.a3kvau184uea.com
 .a433.dailypress.com
 .a613.redbluffdailynews.com
 .a8.net
@@ -1433,6 +1437,7 @@ analytics-stage.wildberries.ru
 .analytics.lasegunda.ecn.cl
 .analytics.launch.bz
 .analytics.launcherleaks.net
+.analytics.laxamentum.tech
 .analytics.learndirect.com
 .analytics.lekumo.jp
 .analytics.liine.com
@@ -2807,6 +2812,7 @@ bs.mail.ru
 .cizion.com
 .ck-ie.com
 .ck.ncclick.co.kr
+.ck4hkyq3myt6.com
 .ckl.fbmedia-ckl.com
 .cl-ad.x-flow.app
 .cl.canva.com
@@ -3409,6 +3415,7 @@ crashlyticsreports-pa.googleapis.com
 .cupid.iqiyi.com
 .curalate.com
 .curiosity-seven.vercel.app
+.curl.springinure.com
 .customer.io
 .customerevents.dradis.netflix.com
 .customerevents.netflix.com
@@ -5325,6 +5332,7 @@ google-analytics-suite.ozon.ru
 .hohosearch.com
 .hokkid5.com
 .holder.com.ua
+.hoof.absentwhack.com
 .hookspf.com
 .horizon-track.globo.com
 .horizon.globo.com
@@ -7211,6 +7219,7 @@ metrics.21-school.ru
 .mywebstats.org
 .mywedding-beacon.team-rec.jp
 .n-analytics.io
+.n.nstbrowser.io
 .n0611.com
 .n152adserv.com
 .n475.pilotonline.com
@@ -7581,6 +7590,7 @@ openai.qualtrics.com
 .ox.bncounter.com
 .oxidy.com
 .oxu24.com
+.oz70ba58w25c.com
 .ozbnagojbop.com
 .p-analytics.life
 .p-behacdn.ksmobile.net
@@ -8580,6 +8590,7 @@ report.ap.yandex-net.ru
 .rlcdn.com
 .rlog-api.under9.co
 .rlog.9gag.com
+.rlog.baifentan.com
 .rlog.popin.cc
 .rm.aarki.net
 .rma.homedepot.com
@@ -8672,6 +8683,7 @@ rtlog5-applog.fqnovel.com
 .rucounter.ru
 .rudder-server-prd.arena.im
 .rudderlabs.com
+.rudimentarytheoreticalrome.com
 .rudr-events.joybird.com
 .rugfrfji.win
 .rum-ingress-coralogix.com
@@ -11107,6 +11119,7 @@ tracing-http.megamarket.tech
 .u-on.eu
 .u.btserve.com
 .u.lessbutbetter.studio
+.u.omgjav.com
 .u.tampermonkey.net
 .u.xogu.cn
 .u066.ocregister.com
@@ -11874,6 +11887,7 @@ xapi.ozonru.me
 .y194.asics.com
 .y197.standardspeaker.com
 .y494.wdsu.com
+.y5kvsuy8wr7c.com
 .y738.nhregister.com
 .y752.milfordmirror.com
 .y820.darientimes.com
