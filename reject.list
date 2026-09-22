@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-21T22:04:23+00:00
+# Generated: 2026-09-22T21:30:26+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12688, local=1, total(deduped)=12032, excluded=29
+# Counts: upstream=12696, local=1, total(deduped)=12039, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1110,6 +1110,7 @@ DOMAIN-SUFFIX,akstat.com
 DOMAIN-SUFFIX,akstat.io
 DOMAIN-SUFFIX,akutagawa.consumer.gopuff.com
 DOMAIN-SUFFIX,ala.durasite.net
+DOMAIN-SUFFIX,alaphoid.com
 DOMAIN-SUFFIX,alb.reddit.com
 DOMAIN-SUFFIX,albss.com
 DOMAIN-SUFFIX,alcmpn.com
@@ -2076,6 +2077,7 @@ DOMAIN-SUFFIX,axf8.net
 DOMAIN-SUFFIX,axmaxhsa.com
 DOMAIN-SUFFIX,axon.ai
 DOMAIN-SUFFIX,az708531.vo.msecnd.net
+DOMAIN-SUFFIX,azlfmivp.in
 DOMAIN-SUFFIX,aznude.workers.dev
 DOMAIN-SUFFIX,azq.zozo.jp
 DOMAIN-SUFFIX,aztool.org
@@ -3100,6 +3102,7 @@ DOMAIN-SUFFIX,collectorj.tvsquared.com
 DOMAIN-SUFFIX,collects.lightinthebox.com
 DOMAIN-SUFFIX,collserve.com
 DOMAIN-SUFFIX,colossal.jp
+DOMAIN-SUFFIX,colossalteacher.com
 DOMAIN-SUFFIX,colossusssp.com
 DOMAIN-SUFFIX,comagic.ru
 DOMAIN-SUFFIX,comanicilikeiste.com
@@ -4124,6 +4127,7 @@ DOMAIN-SUFFIX,ea.venta-unica.com
 DOMAIN-SUFFIX,ea.vente-unique.ch
 DOMAIN-SUFFIX,ea.vente-unique.com
 DOMAIN-SUFFIX,ea.warnerbros.fr
+DOMAIN-SUFFIX,eadygos.com
 DOMAIN-SUFFIX,eagle-insight.com
 DOMAIN-SUFFIX,eanalyzer.de
 DOMAIN-SUFFIX,earnco.in
@@ -8783,6 +8787,7 @@ DOMAIN-SUFFIX,sainwertapr.com
 DOMAIN-SUFFIX,sajari.com
 DOMAIN-SUFFIX,sakura.goguardian.com
 DOMAIN-SUFFIX,salecycle.com
+DOMAIN-SUFFIX,salungavine.com
 DOMAIN-SUFFIX,sam.msn.com
 DOMAIN-SUFFIX,samsung-beacons.xumo.com
 DOMAIN-SUFFIX,samsungadhub.com
@@ -9888,6 +9893,7 @@ DOMAIN-SUFFIX,sts.batmobi.net
 DOMAIN-SUFFIX,sts.eccmp.com
 DOMAIN-SUFFIX,sts.marketingsuite.jp
 DOMAIN-SUFFIX,stt.nimbusweb.me
+DOMAIN-SUFFIX,studdisablerely.com
 DOMAIN-SUFFIX,stutterschuyt.com
 DOMAIN-SUFFIX,style.onvz.nl
 DOMAIN-SUFFIX,sub2tech.com
@@ -11534,6 +11540,7 @@ DOMAIN-SUFFIX,waiads.com
 DOMAIN-SUFFIX,wait.re
 DOMAIN-SUFFIX,wan.kbdmp.com
 DOMAIN-SUFFIX,wangmeng.baidu.com
+DOMAIN-SUFFIX,wanlycoxier.com
 DOMAIN-SUFFIX,wap.qqbiquge.net
 DOMAIN-SUFFIX,wap.wovn.io
 DOMAIN-SUFFIX,wapempire.com

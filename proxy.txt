@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-09-21T22:03:55+00:00
+# Generated: 2026-09-22T21:29:43+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31482, local=27, total(deduped)=26453, excluded=3
+# Counts: upstream=31486, local=27, total(deduped)=26455, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -5416,6 +5416,7 @@ cdn.workos.com
 .chinesegay.org
 .chinesen.de
 .chinesenews.net.au
+.chineseposters.net
 .chineseradioseattle.com
 .chinesespanking.com
 .chineseupress.com
@@ -16907,6 +16908,7 @@ nbbb1bb7.pmhcjk.com
 .norsk.mobi
 .norton.com
 .nos.nl
+.note.com
 .notegpt.io
 .notepad-plus-plus.org
 .noticias-rt.com
