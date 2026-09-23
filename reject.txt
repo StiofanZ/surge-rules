@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-22T21:30:26+00:00
+# Generated: 2026-09-23T21:36:25+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12696, local=1, total(deduped)=12039, excluded=29
+# Counts: upstream=12702, local=1, total(deduped)=12045, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -237,6 +237,7 @@
 .acc-hd.de
 .accaii.com
 .accanalyze.com
+.acceptablefabric.com
 .accessintel.com
 .accesstrade.net
 .accessv.org
@@ -1565,6 +1566,7 @@ analytics-stage.wildberries.ru
 .analytics.spankbang.com
 .analytics.spearly.com
 .analytics.sportera.fans
+.analytics.sportigio.com
 .analytics.sports.ru
 .analytics.ssmas.com
 .analytics.stanby.com
@@ -5795,6 +5797,7 @@ incoming-telemetry.thunderbird.net
 .jaeger.netmonet.co
 .jambojar.com
 .japanhotties.jp
+.jazz.abovesave.com
 .jcgdhqusv.com
 .jcpclick.com
 .jdlog.uu.cc
@@ -8401,6 +8404,7 @@ r1.mail.ru
 .ranmaotome.com
 .rapid-cdn.yottaa.com
 .rapidcounter.com
+.rapidfire.cc
 .rapidlinkhub.click
 .rapidstats.net
 .rapidtrk.net
@@ -8474,6 +8478,7 @@ r1.mail.ru
 .referrer.disqus.com
 .referrer.website
 .refersion.com
+.referwhen.com
 .refinedads.com
 .refpakrtsb.top
 .regi.di.atlas.samsung.com
@@ -9111,6 +9116,7 @@ sentry.x5.ru
 .shoppingads.cn
 .shouldercommandmentlimitless.com
 .shrekis.life
+.shrillypants.com
 .shrinktheweb.com
 .shtrack.kingsoft.jp
 .shuzilm.cn
