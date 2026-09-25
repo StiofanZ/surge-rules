@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-24T21:37:28+00:00
+# Generated: 2026-09-25T21:41:38+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12705, local=1, total(deduped)=12048, excluded=29
+# Counts: upstream=12714, local=1, total(deduped)=12057, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1863,6 +1863,7 @@ DOMAIN-SUFFIX,app.189tutors.com
 DOMAIN-SUFFIX,app.airtrack.jp
 DOMAIN-SUFFIX,app.appsflyer.com
 DOMAIN-SUFFIX,app.ardalio.com
+DOMAIN-SUFFIX,app.bxapi.de
 DOMAIN-SUFFIX,app.convertbox.com
 DOMAIN-SUFFIX,app.crossengage.io
 DOMAIN-SUFFIX,app.kuvio.io
@@ -3820,6 +3821,7 @@ DOMAIN-SUFFIX,delivery.2d.net.co
 DOMAIN-SUFFIX,delivery.adten.eu
 DOMAIN-SUFFIX,delivery.dighty.com
 DOMAIN-SUFFIX,delivery.sexyxxx.biz
+DOMAIN-SUFFIX,delivery.viewsense.ai
 DOMAIN-SUFFIX,delog.nestads.com
 DOMAIN-SUFFIX,delog.sooplive.com
 DOMAIN-SUFFIX,deltadna.net
@@ -4594,6 +4596,7 @@ DOMAIN-SUFFIX,fail.adr.ec
 DOMAIN-SUFFIX,fairanalytics.de
 DOMAIN-SUFFIX,fairfaxmedia.sharedcount.com
 DOMAIN-SUFFIX,fairscrew.com
+DOMAIN-SUFFIX,fairycarboys.qpon
 DOMAIN-SUFFIX,falcon.useinsider.com
 DOMAIN-SUFFIX,fam-8.net
 DOMAIN-SUFFIX,fam-ad.com
@@ -6151,6 +6154,7 @@ DOMAIN-SUFFIX,lnhsjob.com
 DOMAIN-SUFFIX,load.sumome.com
 DOMAIN-SUFFIX,loader.mantis-intelligence.com
 DOMAIN-SUFFIX,loadmypath.click
+DOMAIN-SUFFIX,lobe.scv.public.sse-prod-eks-euw1.futureplc.engineering
 DOMAIN-SUFFIX,loc.sexymilfspics.com
 DOMAIN-SUFFIX,localbitcoins.com
 DOMAIN-SUFFIX,localytics.com
@@ -6822,6 +6826,7 @@ DOMAIN-SUFFIX,metrics.imdb.com
 DOMAIN-SUFFIX,metrics.infranken.de
 DOMAIN-SUFFIX,metrics.kapa.ai
 DOMAIN-SUFFIX,metrics.kmsmep.com
+DOMAIN-SUFFIX,metrics.li
 DOMAIN-SUFFIX,metrics.macys.com
 DOMAIN-SUFFIX,metrics.makemytrip.com
 DOMAIN-SUFFIX,metrics.mdstrm.com
@@ -7347,6 +7352,7 @@ DOMAIN-SUFFIX,ngacm.com
 DOMAIN-SUFFIX,ngastatic.com
 DOMAIN-SUFFIX,ngmco.net
 DOMAIN-SUFFIX,nhgmymxth.com
+DOMAIN-SUFFIX,nicelymodulo.com
 DOMAIN-SUFFIX,nickhel.com
 DOMAIN-SUFFIX,nid.the-sun.com
 DOMAIN-SUFFIX,nid.thesun.co.uk
@@ -7680,6 +7686,7 @@ DOMAIN-SUFFIX,pahtsx.tech
 DOMAIN-SUFFIX,pahtuo.tech
 DOMAIN-SUFFIX,pahtuz.tech
 DOMAIN-SUFFIX,painsko.com
+DOMAIN-SUFFIX,palateonce.com
 DOMAIN-SUFFIX,palibzh.tech
 DOMAIN-SUFFIX,pampopholf.com
 DOMAIN-SUFFIX,panda.kasika.io
@@ -8660,6 +8667,7 @@ DOMAIN-SUFFIX,rtb.appbid.com
 DOMAIN-SUFFIX,rtb.dynotech.io
 DOMAIN-SUFFIX,rtb.julang.taobao.com
 DOMAIN-SUFFIX,rtb.videonow.ru
+DOMAIN-SUFFIX,rtb.viewsense.ai
 DOMAIN-SUFFIX,rtb.voltaxam.com
 DOMAIN-SUFFIX,rtbadzesto.com
 DOMAIN-SUFFIX,rtbanalytics.com
@@ -10376,6 +10384,7 @@ DOMAIN-SUFFIX,thtk.temu.com
 DOMAIN-SUFFIX,tianji.flowgpt.com
 DOMAIN-SUFFIX,tieszhu.com
 DOMAIN-SUFFIX,tiktokpangle.us
+DOMAIN-SUFFIX,tilerypursers.qpon
 DOMAIN-SUFFIX,tim.nextinpact.com
 DOMAIN-SUFFIX,timon.zijieapi.com
 DOMAIN-SUFFIX,tinb.net
