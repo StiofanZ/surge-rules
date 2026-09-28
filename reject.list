@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-27T21:28:28+00:00
+# Generated: 2026-09-28T23:23:47+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12715, local=1, total(deduped)=12058, excluded=29
+# Counts: upstream=12722, local=1, total(deduped)=12065, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2228,6 +2228,7 @@ DOMAIN-SUFFIX,beacons.mediamelon.com
 DOMAIN-SUFFIX,beagle.prod.tda.link
 DOMAIN-SUFFIX,beam.koddi.com
 DOMAIN-SUFFIX,beam.remp.impresa.pt
+DOMAIN-SUFFIX,beam.telegram.hr
 DOMAIN-SUFFIX,beanstalkdata.com
 DOMAIN-SUFFIX,beanstock.com
 DOMAIN-SUFFIX,beap-bc.yahoo.com
@@ -2584,6 +2585,7 @@ DOMAIN-SUFFIX,calltrackingmetrics.com
 DOMAIN-SUFFIX,calltracks.com
 DOMAIN-SUFFIX,camp.inc.com
 DOMAIN-SUFFIX,campaign.remp.nv.ua
+DOMAIN-SUFFIX,campaign.telegram.hr
 DOMAIN-SUFFIX,campaigncog.com
 DOMAIN-SUFFIX,campaigns-collector.albacross.com
 DOMAIN-SUFFIX,campingfinishvow.com
@@ -3840,6 +3842,7 @@ DOMAIN-SUFFIX,dep.tc
 DOMAIN-SUFFIX,depart.trinitymedia.ai
 DOMAIN-SUFFIX,deqik.com
 DOMAIN-SUFFIX,deqwas.net
+DOMAIN-SUFFIX,desk.unlesscool.com
 DOMAIN-SUFFIX,detaillog-global-dual.coolbcloud.com
 DOMAIN-SUFFIX,detaillog-global-dual.coolccloud.com
 DOMAIN-SUFFIX,detaillog-global-dual.coolgcloud.com
@@ -4181,6 +4184,7 @@ DOMAIN-SUFFIX,edt02.net
 DOMAIN-SUFFIX,edtp.de
 DOMAIN-SUFFIX,eduad.baidu.com
 DOMAIN-SUFFIX,edw.edmunds.com
+DOMAIN-SUFFIX,ee.nukido.net
 DOMAIN-SUFFIX,ef.fanatical.com
 DOMAIN-SUFFIX,ef.futuroscope.com
 DOMAIN-SUFFIX,effectivemeasure.net
@@ -4235,6 +4239,7 @@ DOMAIN-SUFFIX,engagement-static.eu.amplitude.com
 DOMAIN-SUFFIX,engagements.appsflyer.com
 DOMAIN-SUFFIX,engagetosell.com
 DOMAIN-SUFFIX,engageya.com
+DOMAIN-SUFFIX,engine.camconnections.live
 DOMAIN-SUFFIX,engine.partylemons.com
 DOMAIN-SUFFIX,engine.trialhd.com
 DOMAIN-SUFFIX,engine.vaxcams.com
@@ -7658,6 +7663,7 @@ DOMAIN-SUFFIX,pa-cd.com
 DOMAIN-SUFFIX,pa-oa.com
 DOMAIN-SUFFIX,pa.pinpoll.com
 DOMAIN-SUFFIX,pa.tns-ua.com
+DOMAIN-SUFFIX,pa.wew.jp
 DOMAIN-SUFFIX,paa-reporting-advertising.amazon
 DOMAIN-SUFFIX,pabidding.io
 DOMAIN-SUFFIX,pac.the-sun.com
@@ -10804,6 +10810,7 @@ DOMAIN-SUFFIX,tracker.sqreemtech.com
 DOMAIN-SUFFIX,tracker.srta.spectrum.com
 DOMAIN-SUFFIX,tracker.stats.in.th
 DOMAIN-SUFFIX,tracker.str-nrg.com
+DOMAIN-SUFFIX,tracker.telegram.hr
 DOMAIN-SUFFIX,tracker.thinkermail.com
 DOMAIN-SUFFIX,tracker.thinkindot.com
 DOMAIN-SUFFIX,tracker.tianmu.mobi
