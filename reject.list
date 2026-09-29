@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-28T23:23:47+00:00
+# Generated: 2026-09-29T22:25:51+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12722, local=1, total(deduped)=12065, excluded=29
+# Counts: upstream=12728, local=1, total(deduped)=12071, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1941,8 +1941,10 @@ DOMAIN-SUFFIX,aqtracker.com
 DOMAIN-SUFFIX,aqueduct-collector-prod.alar.my
 DOMAIN-SUFFIX,ar-x.site
 DOMAIN-SUFFIX,araklet.mediagene.co.jp
+DOMAIN-SUFFIX,araplhn.org
 DOMAIN-SUFFIX,arcadeweb.com
 DOMAIN-SUFFIX,arcspire.io
+DOMAIN-SUFFIX,ardance.org
 DOMAIN-SUFFIX,ariane.abtasty.com
 DOMAIN-SUFFIX,ark.letv.com
 DOMAIN-SUFFIX,arkayne.com
@@ -2297,6 +2299,7 @@ DOMAIN-SUFFIX,bibincom.com
 DOMAIN-SUFFIX,bicp-analytics.postscript.io
 DOMAIN-SUFFIX,bid-algorix.com
 DOMAIN-SUFFIX,bid.ctv.house
+DOMAIN-SUFFIX,bid.pleasedmad.com
 DOMAIN-SUFFIX,bid.run
 DOMAIN-SUFFIX,bidder.a11.vega.aurion11.io
 DOMAIN-SUFFIX,bidder.doceree.com
@@ -3220,7 +3223,6 @@ DOMAIN-SUFFIX,countar.de
 DOMAIN-SUFFIX,counter-gratis.com
 DOMAIN-SUFFIX,counter-kostenlos.info
 DOMAIN-SUFFIX,counter-kostenlos.net
-DOMAIN-SUFFIX,counter-mdpr.freetls.fastly.net
 DOMAIN-SUFFIX,counter-treff.de
 DOMAIN-SUFFIX,counter.1gb.ru
 DOMAIN-SUFFIX,counter.24log.es
@@ -5322,6 +5324,7 @@ DOMAIN-SUFFIX,hitmeter.ru
 DOMAIN-SUFFIX,hitmir.ru
 DOMAIN-SUFFIX,hits-i.iubenda.com
 DOMAIN-SUFFIX,hits.dealer.com
+DOMAIN-SUFFIX,hits.letras.mus.br
 DOMAIN-SUFFIX,hits.theguardian.com
 DOMAIN-SUFFIX,hits.top.lv
 DOMAIN-SUFFIX,hits2u.com
@@ -5344,6 +5347,7 @@ DOMAIN-SUFFIX,hlstlyy.com
 DOMAIN-SUFFIX,hm.baidu.com
 DOMAIN-SUFFIX,hm2wjuuus3.execute-api.ap-northeast-1.amazonaws.com
 DOMAIN-SUFFIX,hmma.baidu.com
+DOMAIN-SUFFIX,hmshanyin.com
 DOMAIN-SUFFIX,hnyishidengbao.com
 DOMAIN-SUFFIX,hodor-collect.arabam.com
 DOMAIN-SUFFIX,hoerenjs.b-cdn.net
@@ -10877,6 +10881,7 @@ DOMAIN-SUFFIX,tracking.di.se
 DOMAIN-SUFFIX,tracking.diginetica.net
 DOMAIN-SUFFIX,tracking.digitalocean.com
 DOMAIN-SUFFIX,tracking.directservices.it
+DOMAIN-SUFFIX,tracking.dpmlol.com
 DOMAIN-SUFFIX,tracking.emerse.com
 DOMAIN-SUFFIX,tracking.ensonhaber.com
 DOMAIN-SUFFIX,tracking.epicgames.com
@@ -11336,6 +11341,7 @@ DOMAIN-SUFFIX,userneeds.dk
 DOMAIN-SUFFIX,userreplay.net
 DOMAIN-SUFFIX,userreport.com
 DOMAIN-SUFFIX,userreporting.cloud.unity3d.com
+DOMAIN-SUFFIX,users.vidy.st
 DOMAIN-SUFFIX,userwave.com
 DOMAIN-SUFFIX,usesfathom.com
 DOMAIN-SUFFIX,usheebainaut.com

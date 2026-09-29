@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-28T23:23:47+00:00
+# Generated: 2026-09-29T22:25:51+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12722, local=1, total(deduped)=12065, excluded=29
+# Counts: upstream=12728, local=1, total(deduped)=12071, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1939,8 +1939,10 @@ apilog-web.acfun.cn
 .aqueduct-collector-prod.alar.my
 .ar-x.site
 .araklet.mediagene.co.jp
+.araplhn.org
 .arcadeweb.com
 .arcspire.io
+.ardance.org
 .ariane.abtasty.com
 .ark.letv.com
 .arkayne.com
@@ -2295,6 +2297,7 @@ beginners-adv.ozon.ru
 .bicp-analytics.postscript.io
 .bid-algorix.com
 .bid.ctv.house
+.bid.pleasedmad.com
 .bid.run
 .bidder.a11.vega.aurion11.io
 .bidder.doceree.com
@@ -3218,7 +3221,6 @@ copilot-telemetry-service.githubusercontent.com
 .counter-gratis.com
 .counter-kostenlos.info
 .counter-kostenlos.net
-.counter-mdpr.freetls.fastly.net
 .counter-treff.de
 .counter.1gb.ru
 .counter.24log.es
@@ -5320,6 +5322,7 @@ google-analytics-suite.ozon.ru
 .hitmir.ru
 .hits-i.iubenda.com
 .hits.dealer.com
+.hits.letras.mus.br
 .hits.theguardian.com
 .hits.top.lv
 .hits2u.com
@@ -5342,6 +5345,7 @@ google-analytics-suite.ozon.ru
 .hm.baidu.com
 .hm2wjuuus3.execute-api.ap-northeast-1.amazonaws.com
 .hmma.baidu.com
+.hmshanyin.com
 .hnyishidengbao.com
 .hodor-collect.arabam.com
 .hoerenjs.b-cdn.net
@@ -10875,6 +10879,7 @@ tracing-http.megamarket.tech
 .tracking.diginetica.net
 .tracking.digitalocean.com
 .tracking.directservices.it
+.tracking.dpmlol.com
 .tracking.emerse.com
 .tracking.ensonhaber.com
 .tracking.epicgames.com
@@ -11334,6 +11339,7 @@ tracing-http.megamarket.tech
 .userreplay.net
 .userreport.com
 .userreporting.cloud.unity3d.com
+.users.vidy.st
 .userwave.com
 .usesfathom.com
 .usheebainaut.com
