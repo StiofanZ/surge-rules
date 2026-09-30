@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-29T22:25:51+00:00
+# Generated: 2026-09-30T22:24:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12728, local=1, total(deduped)=12071, excluded=29
+# Counts: upstream=12731, local=1, total(deduped)=12074, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -4231,6 +4231,7 @@ DOMAIN-SUFFIX,emogi.com
 DOMAIN-SUFFIX,ems.youku.com
 DOMAIN-SUFFIX,emxdgt.com
 DOMAIN-SUFFIX,en-collect.trendyol.com
+DOMAIN-SUFFIX,enchanted-station.com
 DOMAIN-SUFFIX,enecto.com
 DOMAIN-SUFFIX,enfacesplaineddeglory.qpon
 DOMAIN-SUFFIX,engagedhits.com
@@ -4997,7 +4998,6 @@ DOMAIN-SUFFIX,glugherg.net
 DOMAIN-SUFFIX,gmodmp.jp
 DOMAIN-SUFFIX,gmossp-sp.jp
 DOMAIN-SUFFIX,gnar.grammarly.com
-DOMAIN-SUFFIX,gnsnpaw.com
 DOMAIN-SUFFIX,go-mpulse.net
 DOMAIN-SUFFIX,go-usertrack-importer.pub.rtl-api.com
 DOMAIN-SUFFIX,go.admost.com
@@ -7260,6 +7260,7 @@ DOMAIN-SUFFIX,nakanohito.jp
 DOMAIN-SUFFIX,nakedreel.com
 DOMAIN-SUFFIX,nalook.com
 DOMAIN-SUFFIX,nanigans.com
+DOMAIN-SUFFIX,nao.kagane.to
 DOMAIN-SUFFIX,nasimobi.com
 DOMAIN-SUFFIX,native-log-collect.gryphline.com
 DOMAIN-SUFFIX,native.ai
@@ -8873,6 +8874,7 @@ DOMAIN-SUFFIX,scmn0di.com
 DOMAIN-SUFFIX,scollect.17173.com
 DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,scounter.rambler.ru
+DOMAIN-SUFFIX,scout.data.funkedigital.de
 DOMAIN-SUFFIX,screen.buzzvil.com
 DOMAIN-SUFFIX,screenshare.pics
 DOMAIN-SUFFIX,screenshot.best
@@ -9347,6 +9349,7 @@ DOMAIN-SUFFIX,sp.courierpostonline.com
 DOMAIN-SUFFIX,sp.courierpress.com
 DOMAIN-SUFFIX,sp.dailyrecord.com
 DOMAIN-SUFFIX,sp.dailyworld.com
+DOMAIN-SUFFIX,sp.data.funkedigital.de
 DOMAIN-SUFFIX,sp.delawareonline.com
 DOMAIN-SUFFIX,sp.delmarvanow.com
 DOMAIN-SUFFIX,sp.democratandchronicle.com

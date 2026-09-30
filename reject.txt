@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-09-29T22:25:51+00:00
+# Generated: 2026-09-30T22:24:34+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12728, local=1, total(deduped)=12071, excluded=29
+# Counts: upstream=12731, local=1, total(deduped)=12074, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -4229,6 +4229,7 @@ crashlyticsreports-pa.googleapis.com
 .ems.youku.com
 .emxdgt.com
 .en-collect.trendyol.com
+.enchanted-station.com
 .enecto.com
 .enfacesplaineddeglory.qpon
 .engagedhits.com
@@ -4995,7 +4996,6 @@ error-tracking.megamarket.tech
 .gmodmp.jp
 .gmossp-sp.jp
 .gnar.grammarly.com
-.gnsnpaw.com
 .go-mpulse.net
 .go-usertrack-importer.pub.rtl-api.com
 .go.admost.com
@@ -7258,6 +7258,7 @@ metrics.21-school.ru
 .nakedreel.com
 .nalook.com
 .nanigans.com
+.nao.kagane.to
 .nasimobi.com
 .native-log-collect.gryphline.com
 .native.ai
@@ -8871,6 +8872,7 @@ rtlog5-applog.fqnovel.com
 .scollect.17173.com
 .scorecardresearch.com
 .scounter.rambler.ru
+.scout.data.funkedigital.de
 .screen.buzzvil.com
 .screenshare.pics
 .screenshot.best
@@ -9345,6 +9347,7 @@ sentry.x5.ru
 .sp.courierpress.com
 .sp.dailyrecord.com
 .sp.dailyworld.com
+.sp.data.funkedigital.de
 .sp.delawareonline.com
 .sp.delmarvanow.com
 .sp.democratandchronicle.com
