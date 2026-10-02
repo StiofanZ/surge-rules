@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-01T22:47:37+00:00
+# Generated: 2026-10-02T22:22:51+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12736, local=1, total(deduped)=12079, excluded=29
+# Counts: upstream=12745, local=1, total(deduped)=12088, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1023,6 +1023,7 @@ DOMAIN-SUFFIX,afdconf.baidu.com
 DOMAIN-SUFFIX,aff-policy.lbesecapi.com
 DOMAIN-SUFFIX,aff-report.lbesecapi.com
 DOMAIN-SUFFIX,aff.jskyservices.com
+DOMAIN-SUFFIX,affectionatestorage.com
 DOMAIN-SUFFIX,affex.org
 DOMAIN-SUFFIX,affforce.com
 DOMAIN-SUFFIX,affil.top4football.com
@@ -1073,6 +1074,7 @@ DOMAIN-SUFFIX,agilemedia.jp
 DOMAIN-SUFFIX,agillic.eu
 DOMAIN-SUFFIX,agilone.com
 DOMAIN-SUFFIX,agkn.com
+DOMAIN-SUFFIX,agl003.com
 DOMAIN-SUFFIX,agl004.fun
 DOMAIN-SUFFIX,agl008.shop
 DOMAIN-SUFFIX,agl010.pro
@@ -2960,6 +2962,7 @@ DOMAIN-SUFFIX,cloudad.icu
 DOMAIN-SUFFIX,cloudads.tv
 DOMAIN-SUFFIX,cloudconf.fengkongcloud.com
 DOMAIN-SUFFIX,cloudfilt.com
+DOMAIN-SUFFIX,cloudfrant.net
 DOMAIN-SUFFIX,cloudmetrics.xenforo.com
 DOMAIN-SUFFIX,cloudpush.iqiyi.com
 DOMAIN-SUFFIX,cloudscape84.net
@@ -7299,6 +7302,7 @@ DOMAIN-SUFFIX,nend.net
 DOMAIN-SUFFIX,neo7x.com
 DOMAIN-SUFFIX,neofield.click
 DOMAIN-SUFFIX,neon.click
+DOMAIN-SUFFIX,nervousstroke.com
 DOMAIN-SUFFIX,net-filter.com
 DOMAIN-SUFFIX,net.iberia.com
 DOMAIN-SUFFIX,net.jumia.com
@@ -7339,6 +7343,7 @@ DOMAIN-SUFFIX,new-adtest.pages.dev
 DOMAIN,new-adv.ozon.ru
 DOMAIN-SUFFIX,new-collect.albacross.com
 DOMAIN-SUFFIX,new-pressroom.com
+DOMAIN-SUFFIX,new-split.com
 DOMAIN-SUFFIX,newchallenges-dsp.com
 DOMAIN-SUFFIX,newfeatureview.perfectionholic.com
 DOMAIN-SUFFIX,newlog.overwolf.com
@@ -8072,6 +8077,7 @@ DOMAIN-SUFFIX,popcashjs.b-cdn.net
 DOMAIN-SUFFIX,popcent.net
 DOMAIN-SUFFIX,popcent.org
 DOMAIN-SUFFIX,popclck.org
+DOMAIN-SUFFIX,poppyrimpace.com
 DOMAIN-SUFFIX,popsample.com
 DOMAIN-SUFFIX,popt.in
 DOMAIN-SUFFIX,poptival.com
@@ -8364,6 +8370,7 @@ DOMAIN-SUFFIX,quiddity.goguardian.com
 DOMAIN-SUFFIX,quietyellowday.com
 DOMAIN-SUFFIX,quillion.com
 DOMAIN-SUFFIX,quintelligence.com
+DOMAIN-SUFFIX,quitcertify.com
 DOMAIN-SUFFIX,quitzon.net
 DOMAIN-SUFFIX,quizzicalrun.com
 DOMAIN-SUFFIX,qwapi.com
@@ -9578,6 +9585,7 @@ DOMAIN-SUFFIX,sta.tirexo.ink
 DOMAIN-SUFFIX,sta.tracedock.com
 DOMAIN-SUFFIX,stack-sonar.com
 DOMAIN,stacks.vk-portal.net
+DOMAIN-SUFFIX,stackup-ai.com
 DOMAIN-SUFFIX,stanzytkyx.com
 DOMAIN-SUFFIX,stape.ac
 DOMAIN-SUFFIX,stape.brascast.com
@@ -11591,6 +11599,7 @@ DOMAIN-SUFFIX,warkedmalie.com
 DOMAIN-SUFFIX,warlog.ru
 DOMAIN-SUFFIX,warp.media.net
 DOMAIN-SUFFIX,watchtower.graindata.com
+DOMAIN-SUFFIX,waterloggedkind.com
 DOMAIN-SUFFIX,waudit.cz
 DOMAIN-SUFFIX,waust.at
 DOMAIN-SUFFIX,wave.outbrain.com

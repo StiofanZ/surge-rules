@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-01T22:47:37+00:00
+# Generated: 2026-10-02T22:22:51+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12736, local=1, total(deduped)=12079, excluded=29
+# Counts: upstream=12745, local=1, total(deduped)=12088, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1021,6 +1021,7 @@ advk.vk.ru
 .aff-policy.lbesecapi.com
 .aff-report.lbesecapi.com
 .aff.jskyservices.com
+.affectionatestorage.com
 .affex.org
 .affforce.com
 .affil.top4football.com
@@ -1071,6 +1072,7 @@ agency-adv.ozon.ru
 .agillic.eu
 .agilone.com
 .agkn.com
+.agl003.com
 .agl004.fun
 .agl008.shop
 .agl010.pro
@@ -2958,6 +2960,7 @@ click.rustore.ru
 .cloudads.tv
 .cloudconf.fengkongcloud.com
 .cloudfilt.com
+.cloudfrant.net
 .cloudmetrics.xenforo.com
 .cloudpush.iqiyi.com
 .cloudscape84.net
@@ -7297,6 +7300,7 @@ metrics.21-school.ru
 .neo7x.com
 .neofield.click
 .neon.click
+.nervousstroke.com
 .net-filter.com
 .net.iberia.com
 .net.jumia.com
@@ -7337,6 +7341,7 @@ metrics.21-school.ru
 new-adv.ozon.ru
 .new-collect.albacross.com
 .new-pressroom.com
+.new-split.com
 .newchallenges-dsp.com
 .newfeatureview.perfectionholic.com
 .newlog.overwolf.com
@@ -8070,6 +8075,7 @@ pixel.yandex.com
 .popcent.net
 .popcent.org
 .popclck.org
+.poppyrimpace.com
 .popsample.com
 .popt.in
 .poptival.com
@@ -8362,6 +8368,7 @@ questions-adv.ozon.ru
 .quietyellowday.com
 .quillion.com
 .quintelligence.com
+.quitcertify.com
 .quitzon.net
 .quizzicalrun.com
 .qwapi.com
@@ -9576,6 +9583,7 @@ srch-telemeter10.g.smailru.net
 .sta.tracedock.com
 .stack-sonar.com
 stacks.vk-portal.net
+.stackup-ai.com
 .stanzytkyx.com
 .stape.ac
 .stape.brascast.com
@@ -11589,6 +11597,7 @@ visor.sberbank.ru
 .warlog.ru
 .warp.media.net
 .watchtower.graindata.com
+.waterloggedkind.com
 .waudit.cz
 .waust.at
 .wave.outbrain.com
