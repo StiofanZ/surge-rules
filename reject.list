@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-06T00:11:15+00:00
+# Generated: 2026-10-06T22:42:39+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12737, local=1, total(deduped)=12102, excluded=29
+# Counts: upstream=12754, local=1, total(deduped)=12118, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1418,6 +1418,7 @@ DOMAIN-SUFFIX,analytics.htmedia.in
 DOMAIN-SUFFIX,analytics.ifanrusercontent.com
 DOMAIN-SUFFIX,analytics.ifood.tv
 DOMAIN-SUFFIX,analytics.ikyu.com
+DOMAIN-SUFFIX,analytics.infomaniak.com
 DOMAIN-SUFFIX,analytics.infraloods.nl
 DOMAIN-SUFFIX,analytics.innologica.com
 DOMAIN-SUFFIX,analytics.inquirernetwork.net
@@ -1973,7 +1974,6 @@ DOMAIN-SUFFIX,aspservice.jp
 DOMAIN-SUFFIX,assets.9gtb.com
 DOMAIN-SUFFIX,assets.datarize.ai
 DOMAIN-SUFFIX,assets.newsmaxwidget.com
-DOMAIN-SUFFIX,assets.onedollarstats.com
 DOMAIN-SUFFIX,assets.publicgood.com
 DOMAIN-SUFFIX,assetsconfigcdn.org
 DOMAIN-SUFFIX,assistads.net
@@ -2338,6 +2338,7 @@ DOMAIN-SUFFIX,bingads.com
 DOMAIN-SUFFIX,biocdn.net
 DOMAIN-SUFFIX,bional-dested.icu
 DOMAIN-SUFFIX,bionicclick.com
+DOMAIN-SUFFIX,biprx.n12.co.il
 DOMAIN-SUFFIX,bisrtb.vidazoo.com
 DOMAIN-SUFFIX,bitcoines.com
 DOMAIN-SUFFIX,bitmedia.io
@@ -2485,6 +2486,7 @@ DOMAIN-SUFFIX,bts-la.ucweb.com
 DOMAIN-SUFFIX,bttrack.com
 DOMAIN-SUFFIX,btttag.com
 DOMAIN-SUFFIX,bu1.duba.com
+DOMAIN-SUFFIX,buballmighty.com
 DOMAIN-SUFFIX,bubblesmedia.ru
 DOMAIN-SUFFIX,bubblestat.com
 DOMAIN-SUFFIX,buf.lemonde.fr
@@ -2561,6 +2563,7 @@ DOMAIN-SUFFIX,c1exchange.com
 DOMAIN-SUFFIX,c212.net
 DOMAIN-SUFFIX,c2i.startappnetwork.com
 DOMAIN-SUFFIX,c2s.startappnetwork.com
+DOMAIN-SUFFIX,c3.wildwolf.name
 DOMAIN-SUFFIX,c3metrics.com
 DOMAIN-SUFFIX,c3tag.com
 DOMAIN-SUFFIX,c4tracking01.com
@@ -3913,6 +3916,7 @@ DOMAIN-SUFFIX,directsnap.click
 DOMAIN-SUFFIX,discover-path.com
 DOMAIN-SUFFIX,discovery-script.newspic.kr
 DOMAIN-SUFFIX,discovery.newspic.kr
+DOMAIN-SUFFIX,dish.yippeeidle.com
 DOMAIN-SUFFIX,dispatcher.upmc.uc.cn
 DOMAIN-SUFFIX,displayio.cloud
 DOMAIN-SUFFIX,displaymarketplace.com
@@ -4092,6 +4096,7 @@ DOMAIN-SUFFIX,dwlv.xyz
 DOMAIN-SUFFIX,dwyeuy.com
 DOMAIN-SUFFIX,dx.mountain.com
 DOMAIN-SUFFIX,dxp.baidu.com
+DOMAIN-SUFFIX,dyf08yha87tii.cloudfront.net
 DOMAIN-SUFFIX,dyn-rev.app
 DOMAIN-SUFFIX,dynatrace-managed.com
 DOMAIN-SUFFIX,dynatrace.att.com
@@ -4285,6 +4290,7 @@ DOMAIN-SUFFIX,erandex.com
 DOMAIN-SUFFIX,ereportz.com
 DOMAIN-SUFFIX,eresmas.net
 DOMAIN-SUFFIX,erg.ihclam.cn
+DOMAIN-SUFFIX,ergadx.com
 DOMAIN-SUFFIX,ero-advertising.com
 DOMAIN-SUFFIX,eroadvertising.com
 DOMAIN-SUFFIX,erotop.lv
@@ -4520,6 +4526,7 @@ DOMAIN-SUFFIX,eventstream.dodopizza.com
 DOMAIN-SUFFIX,eventsv2balanced.malpagames.com
 DOMAIN-SUFFIX,eventtrace.ru
 DOMAIN-SUFFIX,eventtracking.hubapi.com
+DOMAIN-SUFFIX,evenyippee.com
 DOMAIN-SUFFIX,everestjs.net
 DOMAIN-SUFFIX,everestop.io
 DOMAIN-SUFFIX,everesttech.net
@@ -6129,6 +6136,7 @@ DOMAIN-SUFFIX,lighthouse.edoinc.com
 DOMAIN-SUFFIX,lightlypowerfulgourmet.com
 DOMAIN-SUFFIX,lightstep.medium.systems
 DOMAIN-SUFFIX,lijit.com
+DOMAIN-SUFFIX,lilstts.com
 DOMAIN-SUFFIX,line-e.com
 DOMAIN-SUFFIX,line1-log.biligame.net
 DOMAIN-SUFFIX,lineare.net
@@ -7437,6 +7445,7 @@ DOMAIN-SUFFIX,nsclickvideo.baidu.com
 DOMAIN-SUFFIX,nsclickvideo.xiaodutv.com
 DOMAIN-SUFFIX,nst.trex.media
 DOMAIN-SUFFIX,nstracking.com
+DOMAIN-SUFFIX,nt-stream-log.profilepassport.jp
 DOMAIN-SUFFIX,nta1vb6cdlrl.com
 DOMAIN-SUFFIX,ntlab.org
 DOMAIN-SUFFIX,ntracker-collector.naver.com
@@ -7536,6 +7545,8 @@ DOMAIN-SUFFIX,onclickpredictiv.com
 DOMAIN-SUFFIX,onclicktop.com
 DOMAIN-SUFFIX,one-new-message.com
 DOMAIN-SUFFIX,one.fsylr.com
+DOMAIN-SUFFIX,one01.stright.bizris.com
+DOMAIN-SUFFIX,onedollarstats.com
 DOMAIN-SUFFIX,onefeed.co.uk
 DOMAIN-SUFFIX,onegg.site
 DOMAIN-SUFFIX,oneid.live
@@ -8124,6 +8135,8 @@ DOMAIN-SUFFIX,power.adhacker.online
 DOMAIN-SUFFIX,powerbiz.co
 DOMAIN-SUFFIX,powercount.com
 DOMAIN-SUFFIX,powerlinks.com
+DOMAIN-SUFFIX,pp3-sdk-api.profilepassport.jp
+DOMAIN-SUFFIX,pp3-sdkdata-v2-ut.profilepassport.jp
 DOMAIN-SUFFIX,ppcent.org
 DOMAIN-SUFFIX,ppcnt.org
 DOMAIN-SUFFIX,ppoi.org
@@ -9302,6 +9315,7 @@ DOMAIN-SUFFIX,smetrics.uhc.com
 DOMAIN-SUFFIX,smilered.com
 DOMAIN-SUFFIX,smileyhost.net
 DOMAIN-SUFFIX,smind.hr
+DOMAIN-SUFFIX,smoothhmph.com
 DOMAIN-SUFFIX,smp.tus.ac.jp
 DOMAIN-SUFFIX,smpl.hit.ppdb.pl
 DOMAIN-SUFFIX,smpop.icfcdn.com
@@ -10430,6 +10444,7 @@ DOMAIN-SUFFIX,timon.zijieapi.com
 DOMAIN-SUFFIX,tinb.net
 DOMAIN-SUFFIX,tinycounter.com
 DOMAIN-SUFFIX,tinystat.ir
+DOMAIN-SUFFIX,tips.delt.io
 DOMAIN-SUFFIX,tiq.espritshop.pl
 DOMAIN-SUFFIX,tiser.com.au
 DOMAIN-SUFFIX,tisoomi-services.com
@@ -11283,6 +11298,7 @@ DOMAIN-SUFFIX,umini.shujupie.com
 DOMAIN-SUFFIX,umommy.cyou
 DOMAIN-SUFFIX,umphek.com
 DOMAIN-SUFFIX,unalaskamiaskitewormproof.monster
+DOMAIN-SUFFIX,unami.delt.io
 DOMAIN-SUFFIX,unblockia.com
 DOMAIN-SUFFIX,uncn.jp
 DOMAIN-SUFFIX,unddeliv.com
