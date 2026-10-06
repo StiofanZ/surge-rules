@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-04T21:40:44+00:00
+# Generated: 2026-10-06T00:11:15+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12750, local=1, total(deduped)=12093, excluded=29
+# Counts: upstream=12737, local=1, total(deduped)=12102, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1843,8 +1843,10 @@ DOMAIN-SUFFIX,apm-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,apm-native.redbascket.com
 DOMAIN-SUFFIX,apm-native.xiaohongshu.com
 DOMAIN-SUFFIX,apm-track.xiaohongshu.com
+DOMAIN-SUFFIX,apm.volccdn.com
 DOMAIN-SUFFIX,apm.yahoo.co.jp
 DOMAIN-SUFFIX,apmplus.ap-southeast-1.volces.com
+DOMAIN-SUFFIX,apmplus.volces.com
 DOMAIN-SUFFIX,apollo.miniclip.com
 DOMAIN-SUFFIX,apollo.plein.nl
 DOMAIN-SUFFIX,apollofind.com
@@ -3872,6 +3874,7 @@ DOMAIN-SUFFIX,dfqzah.xyz
 DOMAIN-SUFFIX,dfyxzuog.com
 DOMAIN-SUFFIX,dgcollector.evidon.com
 DOMAIN-SUFFIX,dggaenaawxe8z.cloudfront.net
+DOMAIN-SUFFIX,dgwxaedsrledc.site
 DOMAIN-SUFFIX,dh0uktvqfaomb.cloudfront.net
 DOMAIN-SUFFIX,dh8azcl753e1e.cloudfront.net
 DOMAIN-SUFFIX,dhkqqe.top
@@ -4023,6 +4026,7 @@ DOMAIN-SUFFIX,drlagqnl.com
 DOMAIN-SUFFIX,drmcmm.baidu.com
 DOMAIN-SUFFIX,dropfastpath.click
 DOMAIN-SUFFIX,droplink.digital
+DOMAIN-SUFFIX,drug.shrillyclose.com
 DOMAIN-SUFFIX,druggedrat.com
 DOMAIN-SUFFIX,druxxo.com
 DOMAIN-SUFFIX,ds-aksb-a.akamaihd.net
@@ -4527,6 +4531,7 @@ DOMAIN-SUFFIX,evolutionadv.it
 DOMAIN-SUFFIX,evorra.net
 DOMAIN-SUFFIX,evs.data.ciceksepeti.com
 DOMAIN-SUFFIX,evs.segment.complex.com
+DOMAIN-SUFFIX,evs.segwww.incident.io
 DOMAIN-SUFFIX,evs.sgmt.loom.com
 DOMAIN-SUFFIX,evt.24.com
 DOMAIN-SUFFIX,evt.houzz.com
@@ -4710,6 +4715,7 @@ DOMAIN-SUFFIX,flxr.myplan-c.com
 DOMAIN-SUFFIX,flygo.ru
 DOMAIN-SUFFIX,fm-analytics-api.pocketfm.com
 DOMAIN-SUFFIX,fm-analytics.cloudbees.io
+DOMAIN-SUFFIX,fmepuzstjrkqv.website
 DOMAIN-SUFFIX,fml-x.com
 DOMAIN-SUFFIX,fndrsp.net
 DOMAIN-SUFFIX,fnl.quizizz.com
@@ -4736,6 +4742,7 @@ DOMAIN-SUFFIX,foundry42.com
 DOMAIN-SUFFIX,fourier.alibaba.com
 DOMAIN-SUFFIX,fourier.aliexpress.com
 DOMAIN-SUFFIX,fourier.taobao.com
+DOMAIN-SUFFIX,fourthdistributeexpecting.com
 DOMAIN-SUFFIX,fout.jp
 DOMAIN-SUFFIX,fp-it.fengkongcloud.com
 DOMAIN-SUFFIX,fp-sa-it.fengkongcloud.com
@@ -5857,6 +5864,7 @@ DOMAIN-SUFFIX,joinmassive.com
 DOMAIN-SUFFIX,joinmy.site
 DOMAIN-SUFFIX,jokerly.com
 DOMAIN-SUFFIX,jollyoutdoorjogger.com
+DOMAIN-SUFFIX,jorcnuuk.com
 DOMAIN-SUFFIX,journal-bt.wildberries.ru
 DOMAIN-SUFFIX,jp-axia.m0mentum.net
 DOMAIN-SUFFIX,jp1media.com
@@ -5952,6 +5960,7 @@ DOMAIN-SUFFIX,kitbit.net
 DOMAIN-SUFFIX,kitchen.juicer.cc
 DOMAIN-SUFFIX,kiwi.mdldb.net
 DOMAIN-SUFFIX,kiwihk.net
+DOMAIN-SUFFIX,kjbeseujnss.com
 DOMAIN-SUFFIX,kjfmvnuri.click
 DOMAIN-SUFFIX,klert.com
 DOMAIN-SUFFIX,klickly.com
