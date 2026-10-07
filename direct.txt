@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-10-06T22:42:40+00:00
+# Generated: 2026-10-07T23:12:43+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=111353, local=2, total(deduped)=111190, excluded=33
+# Counts: upstream=111392, local=2, total(deduped)=111229, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -3688,6 +3688,7 @@
 .3464.com
 .346888.com
 .346g4247o9.world
+.346tudx.com
 .348b60ac51011.beer
 .34a14155f1016.beer
 .34c5fe453528e605.com
@@ -8699,6 +8700,7 @@
 .91meitu.com
 .91mh.me
 .91miaoshou.com
+.91mtp.com
 .91muzhi.com
 .91ninthpalace.com
 .91nzh.com
@@ -10055,6 +10057,7 @@ adcdownload.apple.com.akadns.net
 .adlainortye.com
 .adlefee.com
 .adlefei.com
+.adlingsi.com
 .adlo.net
 .adluckin.com
 .adm88888.com
@@ -10279,6 +10282,7 @@ adservice.google.com
 .aflytec.com
 .afriendx.com
 .afrindex.com
+.afs-static.com
 .afshanghai.org
 .afszc.com
 .aft1v1.com
@@ -24860,6 +24864,7 @@ connectivitycheck.gstatic.com
 .cosyjoy.com
 .cosz.com
 .cotek-robotics.com
+.cotenhao31.net
 .cotong.com
 .cotticoffee.com
 .cotv.tv
@@ -26413,6 +26418,7 @@ cstat.cdn-apple.com
 .cupmcn.com
 .cuppot.com
 .curlc.com
+.curlymobi.com
 .current.vc
 .cursor.zone
 .curtisasia.com
@@ -27514,6 +27520,7 @@ dartsearch-cn.net
 .dashu.com
 .dashubaba.com
 .dashuju123.com
+.dasiotravel.com
 .dasiyingyu.com
 .dasong108.com
 .dasoujia.com
@@ -28409,6 +28416,7 @@ devstreaming-cdn.apple.com
 .dfjyun.com
 .dfkhgj.com
 .dfkj.cc
+.dfldgx.com
 .dflzm.com
 .dflzmxs.com
 .dfmc.com
@@ -29500,6 +29508,7 @@ dl.l.google.com
 .dnsis.net
 .dnsjia.com
 .dnsjiasu001.com
+.dnsjp.cc
 .dnsjxla.com
 .dnslin.com
 .dnsmeasurement.com
@@ -30126,6 +30135,7 @@ downloaddispatch.itunes.apple.com
 .dptechnology.net
 .dptel.com
 .dpurat.com
+.dpweixin.com
 .dpwl.net
 .dpxkjw.com
 .dpxq.com
@@ -32327,6 +32337,7 @@ end.shallow.ink
 .enfodesk.com
 .enforever.com
 .eng24.com
+.engagelab.email
 .engeniustec.com
 .engeyuan.com
 .engkoo.com
@@ -35744,6 +35755,7 @@ fpinit.itunes.apple.com
 .fuma-carbide.com
 .fumake.com
 .fumaofawu.com
+.fumhwl.com
 .fumi.com
 .fumiaoyinpin.com
 .fumin.com
@@ -38449,6 +38461,7 @@ g3.gstatic.com
 .goertek.com
 .goetheslz.com
 .gofarqzyy.com
+.goflac.com
 .goforandroid.com
 .gofreeplay.com
 .gofrp.org
@@ -40168,6 +40181,7 @@ guzzoni.smoot.apple.com
 .gxcmgr.com
 .gxcncec.com
 .gxcors.com
+.gxcould.com
 .gxcounty.com
 .gxcpa.com
 .gxcq188.com
@@ -42173,6 +42187,7 @@ guzzoni.smoot.apple.com
 .gzqixun-tech.com
 .gzqljxd.com
 .gzqsts.com
+.gzquans.com
 .gzqunsheng.com
 .gzqygl.com
 .gzqz.com
@@ -52807,6 +52822,7 @@ izattime.qcomgeo2.com
 .jhconba.com
 .jhctbank.com
 .jhddsz.com
+.jhdexpress.com
 .jhdmro.com
 .jhdpower.com
 .jhdxjk.com
@@ -53074,6 +53090,7 @@ izattime.qcomgeo2.com
 .jianguoyun.com
 .jiangweishan.com
 .jiangxiatech.com
+.jiangxin-tech.com
 .jiangxinkeji.club
 .jiangxiol.com
 .jiangxirc.com
@@ -53913,6 +53930,7 @@ izattime.qcomgeo2.com
 .jinmenrc.com
 .jinming.net
 .jinmixuetang.com
+.jinmo.tech
 .jinmogame.com
 .jinmuinfo.com
 .jinnong.cc
@@ -53975,6 +53993,7 @@ izattime.qcomgeo2.com
 .jinshanmz.com
 .jinshasitemuseum.com
 .jinshaxuexiao.com
+.jinsheng73.com
 .jinshengceramics.com
 .jinshengtang.net
 .jinsheyi.com
@@ -57150,6 +57169,7 @@ js-cdn.music.apple.com
 .kaowana.com
 .kaowang.com
 .kaowx.com
+.kaoyagogo.com
 .kaoyan.com
 .kaoyan.org
 .kaoyan1v1.com
@@ -62444,6 +62464,7 @@ ksn-verdict.geoksn.kaspersky.com
 .luckao.com
 .luckeeinc.com
 .luckforcalendar.com
+.luckin.com
 .luckincalendar.com
 .luckincdn.com
 .luckincoffee.co
@@ -66556,6 +66577,7 @@ ml.cdn-apple.com
 .mtab.cc
 .mtadvert.com
 .mtadx.com
+.mtakm.com
 .mtaokj.com
 .mtavip.com
 .mtblj.com
@@ -70227,6 +70249,7 @@ ocsp2.apple.com
 .ofo.com
 .ofpay.com
 .ofpay365.com
+.ofulai.com
 .ofuns.com
 .ofweek.com
 .ofweek.net
@@ -71133,6 +71156,7 @@ osxapps.itunes.g.aaplimg.com
 .owulia.com
 .oxbridgedu.org
 .oxerr.net
+.oxflac.com
 .oxiang.com
 .oxiaohua.com
 .oxiranchem.com
@@ -75156,6 +75180,7 @@ qpx.googleflights.net
 .qrtest.com
 .qrtz.co
 .qrx.cc
+.qrytsa.com
 .qrzxx.com
 .qs-jt.net
 .qs12315.com
@@ -77883,6 +77908,7 @@ safebrowsing.googleapis.com
 .safenext.com
 .safetyimg.com
 .safetystatic.com
+.safetytaxfree.com
 .safetyvod.com
 .safewk.com
 .safround.com
@@ -83749,6 +83775,7 @@ sp.itunes.apple.com
 .sparkeduapi.com
 .sparkeducdn.com
 .sparkletour.com
+.sparknexa.com
 .spasvo.com
 .spawor.com
 .spay365.com
@@ -84681,6 +84708,7 @@ su.itunes.apple.com
 .sungent.com
 .sungesoft.com
 .sungine.com
+.sungivenplus.com
 .sunglow-tec.com
 .sungoal.org
 .sungoedu.com
@@ -85057,6 +85085,7 @@ support.apple.com
 .svipgulr.com
 .sviping.com
 .svlik.com
+.svlqgh.com
 .svn999.com
 .svnbucket.com
 .svnspot.com
@@ -86935,6 +86964,7 @@ tac.googleapis.com
 .taoniupin.com
 .taooo.cc
 .taopb.com
+.taopianzy.com
 .taopiaopiao.com
 .taopic.com
 .taopinquan.com
@@ -91392,6 +91422,7 @@ tools.google.com
 .union555.com
 .unioncom.cc
 .unioncyber.net
+.unionflink.com
 .unionli.com
 .unionpay.com
 .unionpay.net
@@ -98829,6 +98860,7 @@ www.support.apple.com
 .xijingjianzhan9.com
 .xikang365.net
 .xikcloud.com
+.xikestor.com
 .xikii.com
 .xikoutourism.com
 .xikuan.com
@@ -100243,6 +100275,7 @@ www.support.apple.com
 .xn--xkr190gv5p.com
 .xn--xkr999cp4fv97a.com
 .xn--xkrs9ba41r.com
+.xn--xwrq59aduur60a.com
 .xn--y8jhmm6gn.moe
 .xn--yetw60a.xyz
 .xn--ygtp21bwyedsq.com
@@ -100549,6 +100582,7 @@ xp.apple.com
 .xthinking.net
 .xthtc.com
 .xthyjt.com
+.xtia.design
 .xtiai.com
 .xtianlang.com
 .xtibet.com
@@ -103232,6 +103266,7 @@ xtratime.qcomgeo2.com
 .yinjispace.com
 .yinka.co
 .yinkead.com
+.yinkeshidai.com
 .yinlimedia.com
 .yinlingshuyuan.com
 .yinmakeji.com
@@ -104777,6 +104812,7 @@ xtratime.qcomgeo2.com
 .yr-info.com
 .yr17.net
 .yr3.com
+.yr4c3jo8ry.com
 .yra2.com
 .yracc.com
 .yrapp.net
@@ -105976,6 +106012,7 @@ xtratime.qcomgeo2.com
 .yx1312.com
 .yx192.com
 .yx231.com
+.yx338.com
 .yx643.com
 .yx7088.com
 .yx74.com
@@ -106218,6 +106255,7 @@ xtratime.qcomgeo2.com
 .yytek.com
 .yytfood.com
 .yytiflytek.com
+.yytsks.com
 .yyuap.com
 .yyutfzv.com
 .yywd.com
@@ -106265,6 +106303,7 @@ xtratime.qcomgeo2.com
 .yz-li.com
 .yz-machinery.com
 .yz-proton.com
+.yz-shield.com
 .yz-show.com
 .yz-xd.com
 .yz0752.com
