@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-07T23:12:42+00:00
+# Generated: 2026-10-08T23:28:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12770, local=1, total(deduped)=12133, excluded=29
+# Counts: upstream=12773, local=1, total(deduped)=12139, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1250,6 +1250,7 @@ DOMAIN-SUFFIX,analytics-conomi.line.me
 DOMAIN-SUFFIX,analytics-data.io
 DOMAIN-SUFFIX,analytics-dataplane.invideo.io
 DOMAIN-SUFFIX,analytics-egain.com
+DOMAIN-SUFFIX,analytics-event.com
 DOMAIN-SUFFIX,analytics-events.inshorts.com
 DOMAIN-SUFFIX,analytics-fe.digital-cloud.medallia.eu
 DOMAIN-SUFFIX,analytics-gateway.delta.dp.lightricks.com
@@ -2339,6 +2340,7 @@ DOMAIN-SUFFIX,bigyapan.hamropatro.com
 DOMAIN-SUFFIX,bilog.lovense-api.com
 DOMAIN-SUFFIX,bingads.com
 DOMAIN-SUFFIX,biocdn.net
+DOMAIN-SUFFIX,biomanos.org
 DOMAIN-SUFFIX,bional-dested.icu
 DOMAIN-SUFFIX,bionicclick.com
 DOMAIN-SUFFIX,biprx.n12.co.il
@@ -3023,6 +3025,7 @@ DOMAIN-SUFFIX,co.vaicore.site
 DOMAIN-SUFFIX,co.vaicore.xyz
 DOMAIN-SUFFIX,co932.coloradopolitics.com
 DOMAIN-SUFFIX,cocojen.cdn.bcebos.com
+DOMAIN-SUFFIX,cod.buzzingnippy.com
 DOMAIN-SUFFIX,codata.ru
 DOMAIN-SUFFIX,code.acstat.com
 DOMAIN-SUFFIX,code.r5hsid.ru
@@ -3208,7 +3211,6 @@ DOMAIN-SUFFIX,cookie.codemarketing.cloud
 DOMAIN-SUFFIX,cookie.sync.usonar.jp
 DOMAIN-SUFFIX,cookiemon-analytics.azurewebsites.net
 DOMAIN-SUFFIX,cooladata.com
-DOMAIN,copilot-telemetry-service.githubusercontent.com
 DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com
 DOMAIN-SUFFIX,copperegg.com
 DOMAIN-SUFFIX,core-cen-54.com
@@ -4647,6 +4649,7 @@ DOMAIN-SUFFIX,fastlane.rubiconproject.com
 DOMAIN-SUFFIX,fastly-analytics.com
 DOMAIN-SUFFIX,fastly-insights.com
 DOMAIN-SUFFIX,faststart.ru
+DOMAIN-SUFFIX,fat.hypehuddle.com
 DOMAIN-SUFFIX,fathomdns.com
 DOMAIN-SUFFIX,fathomseo.com
 DOMAIN-SUFFIX,fbthirdpartypixel.com
@@ -5109,8 +5112,6 @@ DOMAIN-SUFFIX,gpm-mon-va.byteoversea.com
 DOMAIN-SUFFIX,graffiti-tags.apple.com
 DOMAIN-SUFFIX,graph-fallback.instagram.com
 DOMAIN-SUFFIX,graph.instagram.com
-DOMAIN-SUFFIX,graph.whatsapp.com
-DOMAIN-SUFFIX,graph.whatsapp.net
 DOMAIN-SUFFIX,grapheffect.com
 DOMAIN-SUFFIX,gratis-besucherzaehler.de
 DOMAIN-SUFFIX,gratis-counter-gratis.de
@@ -5604,7 +5605,6 @@ DOMAIN-SUFFIX,inbound-analytics.pixlee.co
 DOMAIN-SUFFIX,inbound-analytics.pixlee.com
 DOMAIN-SUFFIX,inboxtag.com
 DOMAIN-SUFFIX,incentivesnetwork.net
-DOMAIN,incoming-telemetry.thunderbird.net
 DOMAIN-SUFFIX,incoming.telemetry.mozilla.org
 DOMAIN-SUFFIX,increasingcustomers-tag.com
 DOMAIN-SUFFIX,index.ru
@@ -5709,6 +5709,7 @@ DOMAIN-SUFFIX,intarget.ru
 DOMAIN-SUFFIX,inte.sogou.com
 DOMAIN-SUFFIX,inte.sogoucdn.com
 DOMAIN-SUFFIX,integral-marketing.com
+DOMAIN-SUFFIX,integrations-itbl.co
 DOMAIN-SUFFIX,integrations.syncmedia.io
 DOMAIN-SUFFIX,intelli-direct.com
 DOMAIN-SUFFIX,intelliad.de
@@ -6588,6 +6589,7 @@ DOMAIN-SUFFIX,lytiks.com
 DOMAIN-SUFFIX,lz-pub-ads.com
 DOMAIN-SUFFIX,m-adash.m.taobao.com
 DOMAIN-SUFFIX,m-brain.fi
+DOMAIN-SUFFIX,m-chromadrone.prod.suno.com
 DOMAIN-SUFFIX,m-live.jp
 DOMAIN-SUFFIX,m-metrics.capitalone.com
 DOMAIN-SUFFIX,m-pathy.com
@@ -9566,6 +9568,7 @@ DOMAIN-SUFFIX,sra-px.cdn-fileserver.com
 DOMAIN,srch-telemeter10.g.smailru.net
 DOMAIN-SUFFIX,srmdata.com
 DOMAIN-SUFFIX,srpx.net
+DOMAIN-SUFFIX,srt94.click
 DOMAIN-SUFFIX,srtb.msn.cn
 DOMAIN-SUFFIX,srtb.msn.com
 DOMAIN-SUFFIX,srv.stackadapt.com
@@ -9686,6 +9689,7 @@ DOMAIN-SUFFIX,stat.okko.tv
 DOMAIN-SUFFIX,stat.pl
 DOMAIN-SUFFIX,stat.pravdafrance.com
 DOMAIN-SUFFIX,stat.rare.ru
+DOMAIN-SUFFIX,stat.s.ee
 DOMAIN-SUFFIX,stat.scroogefrog.com
 DOMAIN-SUFFIX,stat.sputnik.ru
 DOMAIN-SUFFIX,stat.teleport.media
@@ -10693,6 +10697,7 @@ DOMAIN-SUFFIX,track.edu-info.jp
 DOMAIN-SUFFIX,track.effiliation.com
 DOMAIN-SUFFIX,track.elpais.com.uy
 DOMAIN-SUFFIX,track.engagesciences.com
+DOMAIN-SUFFIX,track.esteban.fr
 DOMAIN-SUFFIX,track.eurogirlsescort.com
 DOMAIN-SUFFIX,track.exame.com
 DOMAIN-SUFFIX,track.express.de
@@ -10844,6 +10849,7 @@ DOMAIN-SUFFIX,tracker.joost.com
 DOMAIN-SUFFIX,tracker.kantan-access.com
 DOMAIN-SUFFIX,tracker.mattel.com
 DOMAIN-SUFFIX,tracker.metricool.com
+DOMAIN-SUFFIX,tracker.mida-app.io
 DOMAIN-SUFFIX,tracker.mtrtb.com
 DOMAIN-SUFFIX,tracker.multisearch.io
 DOMAIN-SUFFIX,tracker.my.com
