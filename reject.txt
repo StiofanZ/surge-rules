@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-08T23:28:06+00:00
+# Generated: 2026-10-09T22:46:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12773, local=1, total(deduped)=12139, excluded=29
+# Counts: upstream=12781, local=1, total(deduped)=12147, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -295,6 +295,7 @@ ad-display.diwodiwo.xyz
 .ad-generation.jp
 .ad-hatena.com
 .ad-log-upload-os.hoyoverse.com
+.ad-manager.matsukiyococokara-online.com
 .ad-move.jp
 .ad-nex.com
 .ad-optima.com
@@ -698,6 +699,7 @@ ads-media.wildberries.ru
 .ads-uo.api.leiniao.com
 .ads-ut.api.leiniao.com
 .ads.123net.jp
+.ads.1mindrama.net
 .ads.adadapted.com
 .ads.adinmotech.com
 .ads.aerserv.com
@@ -868,6 +870,7 @@ adsdk.yandex.ru
 .adstatistics.av380.net
 .adstats.tencentmusic.com
 .adstax-cdn.adrtx.net
+.adsterratech.com
 .adstestview.qq.com
 .adstk.io
 .adstuber.com
@@ -2845,6 +2848,7 @@ bs.mail.ru
 .cl.canva.com
 .cl.t3n.de
 .clanker-events.squarespace.com
+.clanpages.org
 .clarice.streema.com
 .claring-loccelkin.com
 .clarity.ms
@@ -3820,6 +3824,7 @@ crashlyticsreports-pa.googleapis.com
 .de17a.com
 .deapi.nestads.com
 .deapi.sooplive.com
+.debitm.org
 .debojuagug1sf.cloudfront.net
 .debridleech.com
 .decdna.net
@@ -4194,6 +4199,7 @@ crashlyticsreports-pa.googleapis.com
 .edge.ads.twitch.tv
 .edge.atmtd.com
 .edge.cuddlybeside.com
+.edge.meadowwhat.com
 .edge.quantserve.com
 .edge.xtriks.com
 .edgrmtracking.com
@@ -8231,6 +8237,7 @@ prodvizhenie-adv.ozon.ru
 .profiler-collector.wshareit.com
 .profitable-grocery.com
 .profitablecpmratenetwork.com
+.profitableratecpmnetwork.com
 .profusesupport.com
 .programattik.com
 .programmatica.com
@@ -9945,6 +9952,7 @@ stats.telega.info
 .stealth.nl
 .steelhousemedia.com
 .stellaservice.com
+.step.whoeverhow.com
 .stg-apigw.samsungdmroute.com
 .stg-data-collector.playbuzz.com
 .stiffstem.com
@@ -11014,6 +11022,7 @@ tracing-http.megamarket.tech
 .tracking.thehut.net
 .tracking.tidalhifi.com
 .tracking.times247.com
+.tracking.trickbyte.com
 .tracking.trnox.com
 .tracking.tving.com
 .tracking.twelveapp.sh
@@ -11998,7 +12007,6 @@ xapi.ozonru.me
 .y752.milfordmirror.com
 .y820.darientimes.com
 .y900.greenwichtime.com
-.yabs.yandex.ru
 .yadro.ru
 .yads.c.yimg.jp
 .yads.tech

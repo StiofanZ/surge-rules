@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-08T23:28:06+00:00
+# Generated: 2026-10-09T22:46:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12773, local=1, total(deduped)=12139, excluded=29
+# Counts: upstream=12781, local=1, total(deduped)=12147, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -297,6 +297,7 @@ DOMAIN-SUFFIX,ad-files.classting.com
 DOMAIN-SUFFIX,ad-generation.jp
 DOMAIN-SUFFIX,ad-hatena.com
 DOMAIN-SUFFIX,ad-log-upload-os.hoyoverse.com
+DOMAIN-SUFFIX,ad-manager.matsukiyococokara-online.com
 DOMAIN-SUFFIX,ad-move.jp
 DOMAIN-SUFFIX,ad-nex.com
 DOMAIN-SUFFIX,ad-optima.com
@@ -700,6 +701,7 @@ DOMAIN-SUFFIX,ads-union.jd.com
 DOMAIN-SUFFIX,ads-uo.api.leiniao.com
 DOMAIN-SUFFIX,ads-ut.api.leiniao.com
 DOMAIN-SUFFIX,ads.123net.jp
+DOMAIN-SUFFIX,ads.1mindrama.net
 DOMAIN-SUFFIX,ads.adadapted.com
 DOMAIN-SUFFIX,ads.adinmotech.com
 DOMAIN-SUFFIX,ads.aerserv.com
@@ -870,6 +872,7 @@ DOMAIN-SUFFIX,adstat.4u.pl
 DOMAIN-SUFFIX,adstatistics.av380.net
 DOMAIN-SUFFIX,adstats.tencentmusic.com
 DOMAIN-SUFFIX,adstax-cdn.adrtx.net
+DOMAIN-SUFFIX,adsterratech.com
 DOMAIN-SUFFIX,adstestview.qq.com
 DOMAIN-SUFFIX,adstk.io
 DOMAIN-SUFFIX,adstuber.com
@@ -2847,6 +2850,7 @@ DOMAIN-SUFFIX,cl-ad.x-flow.app
 DOMAIN-SUFFIX,cl.canva.com
 DOMAIN-SUFFIX,cl.t3n.de
 DOMAIN-SUFFIX,clanker-events.squarespace.com
+DOMAIN-SUFFIX,clanpages.org
 DOMAIN-SUFFIX,clarice.streema.com
 DOMAIN-SUFFIX,claring-loccelkin.com
 DOMAIN-SUFFIX,clarity.ms
@@ -3822,6 +3826,7 @@ DOMAIN-SUFFIX,ddl.alma.iltalehti.fi
 DOMAIN-SUFFIX,de17a.com
 DOMAIN-SUFFIX,deapi.nestads.com
 DOMAIN-SUFFIX,deapi.sooplive.com
+DOMAIN-SUFFIX,debitm.org
 DOMAIN-SUFFIX,debojuagug1sf.cloudfront.net
 DOMAIN-SUFFIX,debridleech.com
 DOMAIN-SUFFIX,decdna.net
@@ -4196,6 +4201,7 @@ DOMAIN-SUFFIX,ecustomeropinions.com
 DOMAIN-SUFFIX,edge.ads.twitch.tv
 DOMAIN-SUFFIX,edge.atmtd.com
 DOMAIN-SUFFIX,edge.cuddlybeside.com
+DOMAIN-SUFFIX,edge.meadowwhat.com
 DOMAIN-SUFFIX,edge.quantserve.com
 DOMAIN-SUFFIX,edge.xtriks.com
 DOMAIN-SUFFIX,edgrmtracking.com
@@ -8233,6 +8239,7 @@ DOMAIN-SUFFIX,profiler-collector.dalyfeds.com
 DOMAIN-SUFFIX,profiler-collector.wshareit.com
 DOMAIN-SUFFIX,profitable-grocery.com
 DOMAIN-SUFFIX,profitablecpmratenetwork.com
+DOMAIN-SUFFIX,profitableratecpmnetwork.com
 DOMAIN-SUFFIX,profusesupport.com
 DOMAIN-SUFFIX,programattik.com
 DOMAIN-SUFFIX,programmatica.com
@@ -9947,6 +9954,7 @@ DOMAIN-SUFFIX,steadfastsystem.com
 DOMAIN-SUFFIX,stealth.nl
 DOMAIN-SUFFIX,steelhousemedia.com
 DOMAIN-SUFFIX,stellaservice.com
+DOMAIN-SUFFIX,step.whoeverhow.com
 DOMAIN-SUFFIX,stg-apigw.samsungdmroute.com
 DOMAIN-SUFFIX,stg-data-collector.playbuzz.com
 DOMAIN-SUFFIX,stiffstem.com
@@ -11016,6 +11024,7 @@ DOMAIN-SUFFIX,tracking.tchibo.de
 DOMAIN-SUFFIX,tracking.thehut.net
 DOMAIN-SUFFIX,tracking.tidalhifi.com
 DOMAIN-SUFFIX,tracking.times247.com
+DOMAIN-SUFFIX,tracking.trickbyte.com
 DOMAIN-SUFFIX,tracking.trnox.com
 DOMAIN-SUFFIX,tracking.tving.com
 DOMAIN-SUFFIX,tracking.twelveapp.sh
@@ -12000,7 +12009,6 @@ DOMAIN-SUFFIX,y738.nhregister.com
 DOMAIN-SUFFIX,y752.milfordmirror.com
 DOMAIN-SUFFIX,y820.darientimes.com
 DOMAIN-SUFFIX,y900.greenwichtime.com
-DOMAIN-SUFFIX,yabs.yandex.ru
 DOMAIN-SUFFIX,yadro.ru
 DOMAIN-SUFFIX,yads.c.yimg.jp
 DOMAIN-SUFFIX,yads.tech
