@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-09T22:46:06+00:00
+# Generated: 2026-10-10T21:53:06+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12781, local=1, total(deduped)=12147, excluded=29
+# Counts: upstream=12787, local=1, total(deduped)=12153, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3718,6 +3718,7 @@ DOMAIN-SUFFIX,da.hunantv.com
 DOMAIN-SUFFIX,da.mgtv.com
 DOMAIN-SUFFIX,da29e6b8-f018-490f-b25f-39a887fc95e7.xyz
 DOMAIN-SUFFIX,dable.io
+DOMAIN-SUFFIX,dacfhprtw.com
 DOMAIN-SUFFIX,dacounter.com
 DOMAIN-SUFFIX,dad-api.dcard.tw
 DOMAIN-SUFFIX,dad1mq193mgtr.cloudfront.net
@@ -3890,6 +3891,7 @@ DOMAIN-SUFFIX,dfqzah.xyz
 DOMAIN-SUFFIX,dfyxzuog.com
 DOMAIN-SUFFIX,dgcollector.evidon.com
 DOMAIN-SUFFIX,dggaenaawxe8z.cloudfront.net
+DOMAIN-SUFFIX,dgkqqbixb.com
 DOMAIN-SUFFIX,dgwxaedsrledc.site
 DOMAIN-SUFFIX,dh0uktvqfaomb.cloudfront.net
 DOMAIN-SUFFIX,dh8azcl753e1e.cloudfront.net
@@ -3942,6 +3944,7 @@ DOMAIN-SUFFIX,dit.whatsapp.net
 DOMAIN-SUFFIX,divolution.com
 DOMAIN-SUFFIX,divscripty.net
 DOMAIN-SUFFIX,djers.com
+DOMAIN-SUFFIX,djvbrjtpqbikw.com
 DOMAIN-SUFFIX,djwf0dl2q9i99.cloudfront.net
 DOMAIN-SUFFIX,dk45agakx3yfl.cloudfront.net
 DOMAIN-SUFFIX,dkaktsb.icu
@@ -5984,6 +5987,7 @@ DOMAIN-SUFFIX,kitchen.juicer.cc
 DOMAIN-SUFFIX,kiwi.mdldb.net
 DOMAIN-SUFFIX,kiwihk.net
 DOMAIN-SUFFIX,kjbeseujnss.com
+DOMAIN-SUFFIX,kjetdxtcammhc.com
 DOMAIN-SUFFIX,kjfmvnuri.click
 DOMAIN-SUFFIX,klert.com
 DOMAIN-SUFFIX,klickly.com
@@ -11182,6 +11186,7 @@ DOMAIN-SUFFIX,tsj0.madeindesign.com
 DOMAIN-SUFFIX,tsk4.com
 DOMAIN-SUFFIX,tsk5.com
 DOMAIN-SUFFIX,tsn.dmcmedia.co.kr
+DOMAIN-SUFFIX,tsrrygodropvq.space
 DOMAIN-SUFFIX,tsyndicate.com
 DOMAIN-SUFFIX,tt.ttarget.ru
 DOMAIN-SUFFIX,ttauri.laptopmag.com
@@ -11941,6 +11946,7 @@ DOMAIN-SUFFIX,xdrlthfhikvgm.club
 DOMAIN-SUFFIX,xg4ken.com
 DOMAIN-SUFFIX,xgdata.xoyo.games
 DOMAIN-SUFFIX,xhit.com
+DOMAIN-SUFFIX,xhvideo.saawsedge.com
 DOMAIN-SUFFIX,ximad.com
 DOMAIN-SUFFIX,xiti.com
 DOMAIN-SUFFIX,xjwhtz10.com
