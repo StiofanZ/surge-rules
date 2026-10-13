@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-10T21:53:06+00:00
+# Generated: 2026-10-13T00:51:50+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=12787, local=1, total(deduped)=12153, excluded=29
+# Counts: upstream=12776, local=1, total(deduped)=12143, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -222,6 +222,7 @@
 .abodealley.com
 .aboveaveragefinallycast.com
 .aboveboardcomplicate.com
+.abovesave.com
 .abroad-ad.kingsoft-office-service.com
 .abs.proxistore.com
 .absolstats.co.za
@@ -2309,7 +2310,6 @@ beginners-adv.ozon.ru
 .bicp-analytics.postscript.io
 .bid-algorix.com
 .bid.ctv.house
-.bid.pleasedmad.com
 .bid.run
 .bidder.a11.vega.aurion11.io
 .bidder.doceree.com
@@ -3027,7 +3027,6 @@ click.rustore.ru
 .co.vaicore.xyz
 .co932.coloradopolitics.com
 .cocojen.cdn.bcebos.com
-.cod.buzzingnippy.com
 .codata.ru
 .code.acstat.com
 .code.r5hsid.ru
@@ -3901,6 +3900,7 @@ crashlyticsreports-pa.googleapis.com
 .dic9vgwbkxd8r.cloudfront.net
 .diciestchokybuffi.cyou
 .did-it.com
+.did.kr
 .didit.com
 .didna.io
 .die-rankliste.com
@@ -3929,7 +3929,6 @@ crashlyticsreports-pa.googleapis.com
 .discover-path.com
 .discovery-script.newspic.kr
 .discovery.newspic.kr
-.dish.yippeeidle.com
 .dispatcher.upmc.uc.cn
 .displayio.cloud
 .displaymarketplace.com
@@ -4044,7 +4043,6 @@ crashlyticsreports-pa.googleapis.com
 .drmcmm.baidu.com
 .dropfastpath.click
 .droplink.digital
-.drug.shrillyclose.com
 .druggedrat.com
 .druxxo.com
 .ds-aksb-a.akamaihd.net
@@ -4201,8 +4199,6 @@ crashlyticsreports-pa.googleapis.com
 .ecustomeropinions.com
 .edge.ads.twitch.tv
 .edge.atmtd.com
-.edge.cuddlybeside.com
-.edge.meadowwhat.com
 .edge.quantserve.com
 .edge.xtriks.com
 .edgrmtracking.com
@@ -4566,6 +4562,7 @@ error-tracking.megamarket.tech
 .exactag.com
 .exacttarget.api.mashery.com
 .exapxl.de
+.exbd.ex.co
 .exc.ns.nl
 .excess-ga.duolingo.com
 .excess.duolingo.com
@@ -4656,7 +4653,6 @@ error-tracking.megamarket.tech
 .fastly-analytics.com
 .fastly-insights.com
 .faststart.ru
-.fat.hypehuddle.com
 .fathomdns.com
 .fathomseo.com
 .fbthirdpartypixel.com
@@ -4758,7 +4754,6 @@ error-tracking.megamarket.tech
 .forkcdn.com
 .formalyzer.com
 .formisimo.com
-.fort.toovaliantly.com
 .forter.com
 .fortnitechat.site
 .fouanalytics.com
@@ -5393,7 +5388,6 @@ google-analytics-suite.ozon.ru
 .hohosearch.com
 .hokkid5.com
 .holder.com.ua
-.hoof.absentwhack.com
 .hookspf.com
 .horizon-track.globo.com
 .horizon.globo.com
@@ -5852,7 +5846,6 @@ google-analytics-suite.ozon.ru
 .jaeger.netmonet.co
 .jambojar.com
 .japanhotties.jp
-.jazz.abovesave.com
 .jcgdhqusv.com
 .jcpclick.com
 .jdlog.uu.cc
@@ -6753,6 +6746,7 @@ mc.yandex.net
 .mds.nipa.co.th
 .mdstats.info
 .mdt.qq.com
+.meadowwhat.com
 .meanlytics.com
 .meapk.com
 .measure.chase.com
@@ -6872,6 +6866,7 @@ metrics.21-school.ru
 .metrics.duolingo.com
 .metrics.earlygame.com
 .metrics.ee.co.uk
+.metrics.elcomercio.es
 .metrics.foxnews.com
 .metrics.freemake.com
 .metrics.geekwire.com
@@ -8120,7 +8115,6 @@ pixel.yandex.com
 .popcent.net
 .popcent.org
 .popclck.org
-.poppyrimpace.com
 .popsample.com
 .popt.in
 .poptival.com
@@ -8416,7 +8410,6 @@ questions-adv.ozon.ru
 .quietyellowday.com
 .quillion.com
 .quintelligence.com
-.quitcertify.com
 .quitzon.net
 .quizzicalrun.com
 .qwapi.com
@@ -8636,6 +8629,7 @@ report.ap.yandex-net.ru
 .researchnow.co.uk
 .resolver.gslb.mi-idc.com
 .reson8.com
+.resourcelow.com
 .responsetap.com
 .rest.comfy.ua
 .restartad.com
@@ -8886,7 +8880,6 @@ rtlog5-applog.fqnovel.com
 .sanalytics.ncaa.com
 .sanity-dataplane.rudderstack.com
 .sanjagh.com
-.sansyettusk.com
 .sapha.com
 .sapi.tremendous.com
 .sas.a.int-nft.peacocktv.com
@@ -9202,7 +9195,6 @@ sentry.x5.ru
 .shoppingads.cn
 .shouldercommandmentlimitless.com
 .shrekis.life
-.shrillypants.com
 .shrinktheweb.com
 .shtrack.kingsoft.jp
 .shuzilm.cn
@@ -9338,7 +9330,6 @@ sentry.x5.ru
 .smilered.com
 .smileyhost.net
 .smind.hr
-.smoothhmph.com
 .smp.tus.ac.jp
 .smpl.hit.ppdb.pl
 .smpop.icfcdn.com
@@ -9956,7 +9947,6 @@ stats.telega.info
 .stealth.nl
 .steelhousemedia.com
 .stellaservice.com
-.step.whoeverhow.com
 .stg-apigw.samsungdmroute.com
 .stg-data-collector.playbuzz.com
 .stiffstem.com
@@ -10467,7 +10457,6 @@ target.vk.com
 .tiktokpangle.us
 .tilerypursers.qpon
 .tim.nextinpact.com
-.timestorn.com
 .timon.zijieapi.com
 .tinb.net
 .tinycounter.com
@@ -11100,7 +11089,6 @@ tracing-http.megamarket.tech
 .transaction-watcher-2.littledata.io
 .transporter.makemytrip.global
 .traxex.gannettdigital.com
-.tray.ackvainly.com
 .trc.gpcdn.pl
 .trc.r25.jp
 .trck.bdi-services.de
@@ -11800,6 +11788,7 @@ whiteline.mail.ru
 .whoaremyfriends.com
 .whoaremyfriends.net
 .whoas.xyz
+.whoeverhow.com
 .whoisonline.net
 .whoisvisiting.com
 .whosclickingwho.com
@@ -12056,6 +12045,7 @@ xapi.ozonru.me
 .yijuxie.com
 .yinyouapp.com
 .yip.su
+.yippeeidle.com
 .yitongfang.com
 .yjibimcrcylrg.website
 .yjtag.jp
