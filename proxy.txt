@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-15T21:32:23+00:00
+# Generated: 2026-10-16T21:24:31+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31662, local=27, total(deduped)=26582, excluded=3
+# Counts: upstream=31667, local=27, total(deduped)=26587, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -18414,6 +18414,7 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .playstation
 .playstation.com
 .playstation.net
+.playstationnetwork.com
 .playvalorant.com
 .playvids.com
 .playwarcraft3.com
@@ -20199,6 +20200,7 @@ rum.browser-intake-datadoghq.com
 .scatville.com
 .scb.ru
 .scdn.co
+.scea.com
 .scene7.com
 .scenesource.me
 .scharferporno.com
@@ -21163,6 +21165,7 @@ setup.workos.com
 .sony.com.pa
 .sony.com.pe
 .sony.com.ph
+.sony.com.py
 .sony.com.sg
 .sony.com.sv
 .sony.com.tr
@@ -21206,8 +21209,10 @@ setup.workos.com
 .sonydna.com
 .sonyentertainmentnetwork.com
 .sonyglobalsolutions.jp
+.sonyinteractive.com
 .sonykigyo.jp
 .sonylatvija.com
+.sonymusic.com.hk
 .sonynetwork.co.jp
 .sonypcl.jp
 .sonypictures.com
