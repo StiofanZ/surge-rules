@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-17T20:45:01+00:00
+# Generated: 2026-10-18T20:54:36+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31671, local=27, total(deduped)=26588, excluded=3
+# Counts: upstream=31677, local=27, total(deduped)=26594, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -6167,6 +6167,7 @@ crl.versign.net
 .cursor.com
 .cursor.sh
 .cursorapi.com
+.cursorvm.com
 .curve.fi
 .curvefish.com
 .curvybbwwives.com
@@ -17549,6 +17550,7 @@ ood.opsource.net
 .opac-project.eu
 .open.firstory.me
 .openai.com
+.openai.org
 .openamt.com
 .openapiplatform.com
 .openapiservice.com
@@ -20215,6 +20217,7 @@ rum.browser-intake-datadoghq.com
 .schwab.com.hk
 .schwab.com.sg
 .schwabassetmanagement.com
+.schwabcdn.com
 .schwabplan.com
 .sci-hub.ee
 .sci-hub.it.nf
@@ -22578,6 +22581,8 @@ supercell.helpshift.com
 .timestalks.com
 .timeweb.cloud
 .timeweb.com
+.timeweb.tech
+.timewebcloud.kz
 .timi1.me
 .timo0.com
 .timtales.com
@@ -23155,6 +23160,7 @@ supercell.helpshift.com
 .typekit.net
 .typenetwork.com
 .typepad.com
+.typesafe.ai
 .typeset.io
 .typesquare.com
 .typography.com
