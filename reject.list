@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-18T20:55:03+00:00
+# Generated: 2026-10-19T22:29:52+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=13086, local=1, total(deduped)=12452, excluded=29
+# Counts: upstream=13094, local=1, total(deduped)=12460, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2622,6 +2622,7 @@ DOMAIN-SUFFIX,big-loads.com
 DOMAIN-SUFFIX,big7.com
 DOMAIN-SUFFIX,bigcattracks.com
 DOMAIN-SUFFIX,bigcrunch.com
+DOMAIN-SUFFIX,bigdata-scfx-push.kucoin.plus
 DOMAIN-SUFFIX,bigfluffycatexchange.crabdance.com
 DOMAIN-SUFFIX,biggestplayer.cachefly.net
 DOMAIN-SUFFIX,bigmobileads.com
@@ -3271,6 +3272,7 @@ DOMAIN-SUFFIX,cloudconf.fengkongcloud.com
 DOMAIN-SUFFIX,cloudfilt.com
 DOMAIN-SUFFIX,cloudfrant.net
 DOMAIN-SUFFIX,cloudmetrics.xenforo.com
+DOMAIN-SUFFIX,cloudnaery.net
 DOMAIN-SUFFIX,cloudpush.iqiyi.com
 DOMAIN-SUFFIX,cloudscape84.net
 DOMAIN-SUFFIX,cloudshielders.com
@@ -7356,6 +7358,7 @@ DOMAIN-SUFFIX,mobile-campaigns.avast.com
 DOMAIN-SUFFIX,mobile-collector.newrelic.com
 DOMAIN-SUFFIX,mobile-events.eservice.emarsys.net
 DOMAIN-SUFFIX,mobile-production.content-square.net
+DOMAIN-SUFFIX,mobile-telemetry.multiball.forzafootball.net
 DOMAIN-SUFFIX,mobile.slgnt.eu
 DOMAIN-SUFFIX,mobileads.google.com
 DOMAIN-SUFFIX,mobileadvertiser.yanosik.pl
@@ -7540,6 +7543,7 @@ DOMAIN-SUFFIX,mxcdn.net
 DOMAIN-SUFFIX,mxpl.9gag.com
 DOMAIN-SUFFIX,mxpnl.com
 DOMAIN-SUFFIX,mxptint.net
+DOMAIN-SUFFIX,mxqdpxzybpx.com
 DOMAIN-SUFFIX,mxradon.com
 DOMAIN-SUFFIX,mxvp-ad-config-prod-1.zenmxapps.com
 DOMAIN-SUFFIX,mxvp-feature-toggle-prod-1.zenmxapps.com
@@ -8170,6 +8174,7 @@ DOMAIN-SUFFIX,personyze.com
 DOMAIN-SUFFIX,pertholin.com
 DOMAIN-SUFFIX,perzonalization.com
 DOMAIN-SUFFIX,petametrics.com
+DOMAIN-SUFFIX,pexelss.net
 DOMAIN-SUFFIX,pf.intuit.com
 DOMAIN-SUFFIX,pf.newegg.com
 DOMAIN-SUFFIX,pflexads.com
@@ -8962,6 +8967,7 @@ DOMAIN-SUFFIX,rexpush.info
 DOMAIN-SUFFIX,reyun.com
 DOMAIN-SUFFIX,rferl.c.goolara.net
 DOMAIN-SUFFIX,rfihub.com
+DOMAIN-SUFFIX,rfsdvudff.com
 DOMAIN-SUFFIX,rfvgcross.com
 DOMAIN-SUFFIX,rgzz3rs.icu
 DOMAIN-SUFFIX,rhinoseo.com
@@ -10903,6 +10909,7 @@ DOMAIN-SUFFIX,tp88trk.com
 DOMAIN-SUFFIX,tpa7.iahorro.com
 DOMAIN-SUFFIX,tpbid.com
 DOMAIN-SUFFIX,tpi-app.herokuapp.com
+DOMAIN-SUFFIX,tpiwudolrna.in
 DOMAIN-SUFFIX,tpstelemetry.tencent.com
 DOMAIN-SUFFIX,tpx.tesseradigital.com
 DOMAIN-SUFFIX,tr-experiments.parsely.com
@@ -11351,6 +11358,7 @@ DOMAIN-SUFFIX,trackingprd.hwwt8.com
 DOMAIN-SUFFIX,trackkas.com
 DOMAIN-SUFFIX,tracklog.58.com
 DOMAIN-SUFFIX,trackmyweb.net
+DOMAIN-SUFFIX,tracks.hackmd.io
 DOMAIN-SUFFIX,tracks.trackingplan.com
 DOMAIN-SUFFIX,trackserver.shuxinyc.com
 DOMAIN-SUFFIX,trackset.it

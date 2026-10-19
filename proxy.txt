@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-18T20:54:36+00:00
+# Generated: 2026-10-19T22:29:25+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31677, local=27, total(deduped)=26594, excluded=3
+# Counts: upstream=31689, local=27, total(deduped)=26604, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -2390,7 +2390,6 @@ api-p.videomarket.jp
 .asmr.gay
 .asmrbuluo.com
 .asn-online.org
-.asobostudio.com
 .asp-cc.com
 .asp.net
 .aspbjournals.org
@@ -3378,8 +3377,15 @@ beck-online.beck.de
 .beforeigners.com
 .befuck.com
 .befuck.net
+.beget.app
+.beget.cloud
 .beget.com
+.beget.de
+.beget.hosting
+.beget.pro
 .beget.ru
+.beget.tech
+.begetcdn.cloud
 .begin-trade.com
 .behance.net
 .behindthescreenz.com
@@ -3412,6 +3418,7 @@ beck-online.beck.de
 .berlinerbericht.de
 .berlintwitterwall.com
 .beru.ru
+.beserver.ru
 .best-sex-games.com
 .best2pay.net
 .best4bim.com
@@ -3522,6 +3529,7 @@ beck-online.beck.de
 .bffshd.com
 .bfnn.org
 .bfsh.hk
+.bget.ru
 .bgicdn.com
 .bgm.tv
 .bgme.me
@@ -9012,7 +9020,6 @@ firstsearch.oclc.org
 .flickr
 .flickr.com
 .flickr.net
-.flightsimulator.com
 .flipboard.com
 .flipfap.com
 .flipkart.com
@@ -19155,6 +19162,7 @@ public-us-pingsx.api.clonoth.com
 .pussyspace.net
 .putinho.net
 .putty.org
+.pv-cdn.net
 .pvp.net
 .pvp.tv
 .pvt.sexy
@@ -21368,6 +21376,7 @@ setup.workos.com
 .springwood.me
 .sprinklesapp.com
 .sproutcore.com
+.sprut.io
 .sptvbroadcast.com
 .sputnikglobe.com
 .sputnikimages.com
@@ -25363,6 +25372,7 @@ ws.audioscrobbler.com
 .xn--90ab.com
 .xn--90ab2c.xn--p1ai
 .xn--90absjljw3g.xn--p1ai
+.xn--90aefb9d.xn--p1ai
 .xn--90aifd0az.shop
 .xn--90aifd0azb.xn--p1acf
 .xn--90wwvt03e.com
