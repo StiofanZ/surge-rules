@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-20T21:44:09+00:00
+# Generated: 2026-10-21T21:51:01+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=13942, local=1, total(deduped)=13308, excluded=29
+# Counts: upstream=14103, local=1, total(deduped)=13468, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -325,6 +325,7 @@
 .152media.cloud
 .17324756.cfd
 .1800cnt.com
+.199.teieparm.tv
 .1990tu.com
 .1cpbac.ru
 .1dmp.io
@@ -1681,6 +1682,7 @@ analytics-stage.wildberries.ru
 .analytics.consolecrypt.dev
 .analytics.contents.by-fw.jp
 .analytics.cookiefirst.dev
+.analytics.corretoranadja.com.br
 .analytics.cosmicstack.org
 .analytics.cosmonova.net
 .analytics.cosmopolitanmag.com.tr
@@ -1706,6 +1708,7 @@ analytics-stage.wildberries.ru
 .analytics.dsyqt.com
 .analytics.dugou.best
 .analytics.dugun.com
+.analytics.dunlio.com
 .analytics.dupple.com
 .analytics.e-mentor.ch
 .analytics.e1.ru
@@ -1746,6 +1749,7 @@ analytics-stage.wildberries.ru
 .analytics.freespee.com
 .analytics.fs-bdash.com
 .analytics.gamesdrive.net
+.analytics.garagemdotiago.shop
 .analytics.gayboys.vip
 .analytics.geldverhalten.org
 .analytics.geoffreyborel.com
@@ -1761,7 +1765,9 @@ analytics-stage.wildberries.ru
 .analytics.growthphysics.com
 .analytics.gtflixtv.com
 .analytics.hardlightgames.com
+.analytics.harmoney.co.nz
 .analytics.hashnode.com
+.analytics.heimdalldigitalholdings.com
 .analytics.heistotron.uk
 .analytics.hellospace.fr
 .analytics.helpukrainewinwidget.org
@@ -1808,6 +1814,7 @@ analytics-stage.wildberries.ru
 .analytics.kongregate.io
 .analytics.kurocore.com
 .analytics.kyxar.fr
+.analytics.lakbast.com
 .analytics.languagetoolplus.com
 .analytics.lasegunda.ecn.cl
 .analytics.launch.bz
@@ -1820,7 +1827,9 @@ analytics-stage.wildberries.ru
 .analytics.liveact.cri-mw.jp
 .analytics.livestream.com
 .analytics.loadweb.com
+.analytics.locataire.live
 .analytics.logsss.com
+.analytics.lucasmarquescorretor.com.br
 .analytics.lunarclientprod.com
 .analytics.lunaweb.cloud
 .analytics.luogu.me
@@ -1879,6 +1888,7 @@ analytics-stage.wildberries.ru
 .analytics.ovapos.com
 .analytics.ovh.com
 .analytics.oyorooms.com
+.analytics.palm2000.com
 .analytics.pangle-ads.com
 .analytics.partcommunity.com
 .analytics.peakstone.app
@@ -1900,6 +1910,7 @@ analytics-stage.wildberries.ru
 .analytics.portal.gov.bd
 .analytics.possibly.forsale
 .analytics.posttv.com
+.analytics.pradellaimoveis.com.br
 .analytics.preissturz.com
 .analytics.prensaiberica.es
 .analytics.prod.mybuddy.ai
@@ -1907,6 +1918,7 @@ analytics-stage.wildberries.ru
 .analytics.projectcarmen.com
 .analytics.prosites.com
 .analytics.proxer.me
+.analytics.pulseform.io
 .analytics.purelovers.com
 .analytics.pyksid.com
 .analytics.python.org
@@ -1929,6 +1941,7 @@ analytics-stage.wildberries.ru
 .analytics.risti.io
 .analytics.rizzipsum.com
 .analytics.robinhood.com
+.analytics.rockai.top
 .analytics.rotapost.ru
 .analytics.rover.io
 .analytics.rwi-essen.de
@@ -1940,6 +1953,7 @@ analytics-stage.wildberries.ru
 .analytics.scalemonk.com
 .analytics.schoolwires.com
 .analytics.scorpion.co
+.analytics.scprimeimoveis.com.br
 .analytics.sealdoc.eu
 .analytics.seekxr.com
 .analytics.sen.go.kr
@@ -1974,6 +1988,7 @@ analytics-stage.wildberries.ru
 .analytics.stanby.com
 .analytics.starlink.com
 .analytics.starmakerstudios.com
+.analytics.start-fds.jp
 .analytics.startupcity.hamburg
 .analytics.streamingworld.xyz
 .analytics.streamvaultsrc.click
@@ -2059,6 +2074,7 @@ analytics.wildberries.ru
 .analytics.wondara.org
 .analytics.wondershare.cc
 .analytics.wrc.nic.in
+.analytics.write.as
 .analytics.xwm.app
 .analytics.xxcontent.lol
 .analytics.yahoo.com
@@ -2429,6 +2445,7 @@ apilog-web.acfun.cn
 .at.adtech.redventures.io
 .at.artistchai.co.kr
 .at.prod.jimdo.systems
+.atag.adgile.media
 .atanx.alicdn.com
 .atanx2.alicdn.com
 .atax.teamxbox.com
@@ -2440,6 +2457,7 @@ apilog-web.acfun.cn
 .athena.archive.org
 .athenainstitute.biz
 .atinternet.com
+.atlas.atsptp.com
 .atlas1.krone.at
 .atm.youku.com
 .atom-data.io
@@ -2527,6 +2545,7 @@ apilog-web.acfun.cn
 .b-click.net
 .b-short.link
 .b-sing.com
+.b.allegrocdp.com
 .b.asaplinks.com
 .b.augmeta.ai
 .b.awardscholar.com
@@ -2534,6 +2553,7 @@ apilog-web.acfun.cn
 .b.ranking.apis.sankei-digital.co.jp
 .b.sli-spark.com
 .b.trueanthem.com
+.b.tryknowmad.com
 .b.videoamp.com
 .b0.yahoo.co.jp
 .b0e8.com
@@ -2860,6 +2880,7 @@ bloodhound.spotify.com
 .bounce-ads.de
 .bounceexchange.com
 .bouncex.com
+.bouncex.net
 .bouncyproperty.com
 .boutomeeshaul.com
 .boxpr.aiservice.vn
@@ -4216,6 +4237,7 @@ crashlyticsreports-pa.googleapis.com
 .data.sec.intl.miui.com
 .data.sec.miui.com
 .data.signicat.com
+.data.sozo24.co.uk
 .data.ssports.com
 .data.thoughtmetric.io
 .data.tm-awx.com
@@ -4577,6 +4599,7 @@ crashlyticsreports-pa.googleapis.com
 .e-volution.ai
 .e-webtrack.net
 .e.apsalar.com
+.e.armandgonczol.com
 .e.assetdisposalguide.com
 .e.bad.news
 .e.businessclosureguide.com
@@ -4595,6 +4618,7 @@ crashlyticsreports-pa.googleapis.com
 .e.metarouter.io
 .e.mindbox.ru
 .e.needlework-studio.com
+.e.pickfu.com
 .e.qq.com
 .e.stat.ykimg.com
 .e.styrfarms.com
@@ -5087,6 +5111,7 @@ error-tracking.megamarket.tech
 .f.dubaicarindex.com
 .f.promostar.app
 .f.sen.seg.br
+.f.webhooks.cc
 .f023.bostonherald.com
 .f11-ads.com
 .f164.sheltonherald.com
@@ -5330,6 +5355,7 @@ error-tracking.megamarket.tech
 .g.ign.com
 .g.meetmy.io
 .g.mindbox.ru
+.g.racingday.app
 .g.rtbrain.app
 .g1.tagtic.cn
 .g10498469755.co
@@ -5655,6 +5681,7 @@ google-analytics-suite.ozon.ru
 .gtm.elementor.com
 .gtm.elisa.fi
 .gtm.ellos.se
+.gtm.finaloop.com
 .gtm.ground.news
 .gtm.guitarzoom.com
 .gtm.humann.com
@@ -6353,6 +6380,7 @@ google-analytics-suite.ozon.ru
 .jinanrqz.com
 .jioads.akamaized.net
 .jirafe.com
+.jisao12.cyou
 .jitsu.ixbt.com
 .jitsu.ixbt.games
 .jitsu.ixbt.site
@@ -6422,6 +6450,7 @@ google-analytics-suite.ozon.ru
 .jzt.jd.com
 .k-analytix.com
 .k-words.io
+.k.doppio.live
 .k.qwant.com
 .k030.koco.com
 .k203.adn.com
@@ -7188,6 +7217,7 @@ marketplace-sentry.wb.ru
 .masterstats.com
 .mastertag.effiliation.com
 .mastertag.kpcustomer.de
+.mat.143flix.com
 .mateti.net
 .matheranalytics.com
 .mathtag.com
@@ -7205,14 +7235,17 @@ marketplace-sentry.wb.ru
 .matomo.aerosix.eu
 .matomo.afservice.eu
 .matomo.aimouse.eu
+.matomo.airportlspg.ch
 .matomo.airtaxiflights.eu
 .matomo.aistrix.eu
 .matomo.akbal.dev
 .matomo.aksorn.com
+.matomo.alarencontre.de
 .matomo.aleo.agency
 .matomo.alexbarchiesi.eu
 .matomo.alexchong.de
 .matomo.allbyvoss.de
+.matomo.alpinasoft.de
 .matomo.alumnor.eu
 .matomo.amadomotor.eu
 .matomo.amazonica.eu
@@ -7221,19 +7254,26 @@ marketplace-sentry.wb.ru
 .matomo.anniabnehmreise.de
 .matomo.apphoto.eu
 .matomo.aquainvert.eu
+.matomo.archery-point.eu
 .matomo.architphoto.eu
+.matomo.arieslob.eu
 .matomo.art-kon-tor.de
 .matomo.arteconcreto.eu
 .matomo.artflower.eu
+.matomo.arthurameel.eu
 .matomo.asenizacja-krakow.eu
+.matomo.attruck.eu
 .matomo.aurolio.de
 .matomo.aurumprive.eu
 .matomo.badtechnik.eu
+.matomo.baschpictures.de
+.matomo.berlin-media-school.de
 .matomo.berni-hundebetten.de
 .matomo.betonbarth.de
 .matomo.betontage2026.de
 .matomo.bewusstseins-akademie.de
 .matomo.bioczech.eu
+.matomo.bioprodukt.eu
 .matomo.bizzupp.eu
 .matomo.blacklightsstudio.eu
 .matomo.blarium.de
@@ -7243,9 +7283,12 @@ marketplace-sentry.wb.ru
 .matomo.borisfreyeakademie.de
 .matomo.bottleexpress.eu
 .matomo.brightimpactstudios.eu
+.matomo.btclottery.eu
 .matomo.buicasus.eu
 .matomo.cameredesupraveghere.eu
+.matomo.candleforyou.eu
 .matomo.carremlf.de
+.matomo.carzyfolio.eu
 .matomo.castle4u.eu
 .matomo.charcoalpurple.eu
 .matomo.chimneycowls.eu
@@ -7254,8 +7297,10 @@ marketplace-sentry.wb.ru
 .matomo.civam.org
 .matomo.clanto.cloud
 .matomo.clawmatic.eu
+.matomo.clogiq.eu
 .matomo.cloudfront.similarweb.io
 .matomo.co2carbon.eu
+.matomo.containersmart.de
 .matomo.contenthafen.de
 .matomo.controllare.eu
 .matomo.creartizia.eu
@@ -7274,20 +7319,26 @@ marketplace-sentry.wb.ru
 .matomo.dr-fabian-klein.de
 .matomo.dragot.eu
 .matomo.dubaipropertyhub.de
+.matomo.duolibra.eu
 .matomo.ecolaoils.eu
 .matomo.ecoviz.eu
 .matomo.eduwill.net
+.matomo.ekskluzywnewnetrza.eu
 .matomo.elena-engel.de
 .matomo.eleprosa.de
 .matomo.elhotec.de
 .matomo.eloserv.de
 .matomo.embarquezdanslhistoire.eu
 .matomo.empire-ltd.eu
+.matomo.enaskrent.de
+.matomo.energieberaterin-mohr.de
+.matomo.enper.eu
 .matomo.enricomattei.eu
 .matomo.erdklang.eu
 .matomo.eshop-rychle.cz
 .matomo.evathlos.eu
 .matomo.evl.fi
+.matomo.ew-bildung.de
 .matomo.expert-fenster.de
 .matomo.familiemops.de
 .matomo.famtopia.de
@@ -7297,27 +7348,33 @@ marketplace-sentry.wb.ru
 .matomo.ferienhaus-buehler.de
 .matomo.fewo-pieper.com
 .matomo.ficus-health.eu
+.matomo.finanzkobold.de
 .matomo.fitnesswarrior.eu
 .matomo.foody-project.eu
 .matomo.forestautomation.de
 .matomo.fotografia-ciazowa.eu
 .matomo.fotomosch.de
 .matomo.fotoseminare.eu
+.matomo.fullserwis.eu
 .matomo.funmedia-tvapp.de
+.matomo.gallerystreetwear.eu
 .matomo.gansberger.de
 .matomo.gartentipps.eu
 .matomo.getwow.eu
+.matomo.gewohnheitstier.eu
 .matomo.gfm-printer.de
 .matomo.globalenglishclub.eu
 .matomo.goldextract.eu
 .matomo.grillamhill.de
 .matomo.guebowl.de
 .matomo.gustogiro.de
+.matomo.halal-vacation.de
 .matomo.hamburgconsultants.de
 .matomo.hanne-schuetz.de
 .matomo.hgninfo.de
 .matomo.hh-design.eu
 .matomo.horticenter.eu
+.matomo.iaa-verkaeuferrallye.de
 .matomo.icematch.de
 .matomo.il-sorriso.eu
 .matomo.imperialclean.eu
@@ -7325,7 +7382,10 @@ marketplace-sentry.wb.ru
 .matomo.ingresofootballacademy.de
 .matomo.inhaledesign.de
 .matomo.innovationnet.eu
+.matomo.irmcmaghreb-bib.org
 .matomo.israelitaxis.de
+.matomo.italbrokers.eu
+.matomo.itmitaliacleaningdivision.eu
 .matomo.janusz-slodczyk.eu
 .matomo.jl-studio.eu
 .matomo.joaillier-couteaux.eu
@@ -7352,25 +7412,32 @@ marketplace-sentry.wb.ru
 .matomo.kordani.eu
 .matomo.kormidlocb.eu
 .matomo.koroche.eu
+.matomo.kosmetiksteingass.de
 .matomo.kuchenknall.de
 .matomo.kuechenstudio-daleiden.de
 .matomo.kurzyaskoleni.eu
+.matomo.laboiserie.eu
 .matomo.laculturashop.eu
 .matomo.language-moment.eu
 .matomo.lanotteitaliana.eu
 .matomo.le-knittel.de
 .matomo.lecivo.eu
 .matomo.lerngern.eu
+.matomo.leseberg.de
 .matomo.lifewithduo.eu
 .matomo.logdek.eu
 .matomo.lostadventurehunting.de
 .matomo.ltmediart.de
+.matomo.luther-lawfirm.com
 .matomo.luxlumen.eu
+.matomo.m-t-gdressurausbildung.de
 .matomo.maero.eu
 .matomo.magicvalley.eu
 .matomo.maike-hummelsheim.de
+.matomo.managementsurvey.eu
 .matomo.manamassage.de
 .matomo.marekbalon.eu
+.matomo.marliesvetter.de
 .matomo.maximilian-heinz.de
 .matomo.mcs.swiss
 .matomo.medeamedica.eu
@@ -7381,6 +7448,9 @@ marketplace-sentry.wb.ru
 .matomo.michaelarubik.de
 .matomo.mindenjobb.de
 .matomo.minerewards.eu
+.matomo.minis-app.de
+.matomo.mint-online.eu
+.matomo.mis.mpg.de
 .matomo.mo-doro.de
 .matomo.mobilism.org
 .matomo.modellbau-matze.de
@@ -7388,8 +7458,11 @@ marketplace-sentry.wb.ru
 .matomo.motorpresse.de
 .matomo.mrklassenfahrt.de
 .matomo.msolit.eu
+.matomo.multivalve.eu
 .matomo.mwtrading.eu
 .matomo.mybookis.eu
+.matomo.mymedipass.eu
+.matomo.mysticherbals.de
 .matomo.myvida-travel.eu
 .matomo.nalej.eu
 .matomo.nasaler-jokus.de
@@ -7397,7 +7470,9 @@ marketplace-sentry.wb.ru
 .matomo.negoziare.eu
 .matomo.nexarax.de
 .matomo.nfcstuttgart.de
+.matomo.nicecolours.de
 .matomo.niemannrecycling.de
+.matomo.nikanagel-bulgaria.eu
 .matomo.niko-bielefeld.de
 .matomo.nilo-eisbaer.de
 .matomo.nino-werk.de
@@ -7412,7 +7487,9 @@ marketplace-sentry.wb.ru
 .matomo.optisigns.com
 .matomo.orbimediaproduction.de
 .matomo.osmoseanlage.eu
+.matomo.parfumerie-seuren.de
 .matomo.parthenon-verlag.eu
+.matomo.pcphotography.de
 .matomo.persian-sunshine.de
 .matomo.pferdehof-kaisten.de
 .matomo.photographe-antibes.eu
@@ -7421,9 +7498,12 @@ marketplace-sentry.wb.ru
 .matomo.pickndeal.eu
 .matomo.pilotenheadsets.eu
 .matomo.planandpaper.de
+.matomo.pmgroup.de
 .matomo.podslink.net
 .matomo.pohybovky.eu
+.matomo.pol-uniwersum.eu
 .matomo.promobil.de
+.matomo.protontypes.eu
 .matomo.pruefmittel24.com
 .matomo.psisprezeni.eu
 .matomo.pujckyonline.eu
@@ -7439,14 +7519,19 @@ marketplace-sentry.wb.ru
 .matomo.rathsmann-baustoffe.de
 .matomo.rdgroupcentre.eu
 .matomo.ref5resh.de
+.matomo.reisefeeverena.de
 .matomo.rheumafrei-leben.de
 .matomo.ringsell.eu
+.matomo.rohrreinigungalfter.de
+.matomo.rotary.de
 .matomo.royal-apartments.eu
 .matomo.rvs-zwembad.eu
 .matomo.salon-plenitude.eu
 .matomo.sandsteinpolen.eu
 .matomo.sansana.eu
+.matomo.sayinreinigung.de
 .matomo.sazuka.eu
+.matomo.schadenmelden24.de
 .matomo.schorndorf-handelt.de
 .matomo.schreinerdesignwerk.de
 .matomo.scolar.cz
@@ -7457,9 +7542,11 @@ marketplace-sentry.wb.ru
 .matomo.shloh.eu
 .matomo.shockt-project.de
 .matomo.shoppersguide.com.ph
+.matomo.side-one.eu
 .matomo.similarweb.io
 .matomo.smokey-steelers.de
 .matomo.snfabrics.eu
+.matomo.sovereign-ict.eu
 .matomo.spastycznosc.eu
 .matomo.spmpublishing.eu
 .matomo.stackvaults.com
@@ -7473,21 +7560,27 @@ marketplace-sentry.wb.ru
 .matomo.sunnysiteup.eu
 .matomo.svberlinerbrauereien.de
 .matomo.swiatgier.eu
+.matomo.synthropia.eu
+.matomo.tandem-hamburg.de
+.matomo.tauben-abwehr.eu
 .matomo.tauschbar-akustikband.de
 .matomo.taxialica.de
 .matomo.tbordac.eu
 .matomo.teamthomas3.de
 .matomo.technorelax.eu
 .matomo.tegewiki.de
+.matomo.tg.ch
 .matomo.thecsgoworld.eu
 .matomo.theklamarianowak.de
 .matomo.thomas-woehrmann.de
 .matomo.tienaprax.de
 .matomo.tier-und-naturfotografie.eu
 .matomo.tigitlabs.de
+.matomo.tovve-coaching.de
 .matomo.traiteur-lyon.eu
 .matomo.transpolisglobaleurope.eu
 .matomo.trezi.eu
+.matomo.turangroup.eu
 .matomo.turkeineurologie.de
 .matomo.twinrehab.eu
 .matomo.ulrikekunze.de
@@ -7520,9 +7613,11 @@ marketplace-sentry.wb.ru
 .matomo.wolfsradio.de
 .matomo.woodgifts.eu
 .matomo.woodhey-production.de
+.matomo.workopia.eu
 .matomo.worldofmarvel.eu
 .matomo.yourbabycanlearn.eu
 .matomo.youshark.de
+.matomo.youtubepisnicky.eu
 .matomo.zarebski.eu
 .matomo.zeitreise-festival.de
 .matomo2.site.supplies
@@ -7699,6 +7794,7 @@ metrics.21-school.ru
 .metrics.imdb.com
 .metrics.infranken.de
 .metrics.kapa.ai
+.metrics.kiba.tools
 .metrics.kmsmep.com
 .metrics.li
 .metrics.macys.com
@@ -7721,6 +7817,7 @@ metrics.21-school.ru
 .metrics.rapidedge.io
 .metrics.roblox.com
 .metrics.sdkbox.com
+.metrics.shasetsu.jp
 .metrics.sp0n.io
 .metrics.spbtv.com
 .metrics.svc.conholdate.cloud
@@ -7851,6 +7948,7 @@ metrics.21-school.ru
 .mn.browpotware.com
 .mnbvpo8trk.com
 .mo.freeindoapp.com
+.mo.opase.com
 .moa-upload-online.coloros.com
 .moai-dev-samsung.com
 .moat.com
@@ -8723,8 +8821,11 @@ p9-ad-sign.byteimg.com
 .pglstatp-toutiao.com
 .pgs.io
 .pgt1.voyage-prive.es
+.ph-ca.geomirror.net
+.ph.carvertical.com
 .ph.equibles.com
 .ph.nether-realm.com
+.ph.silencershop.com
 .ph.vapi.ai
 .ph.vespper.com
 .ph.wasteadollar.co
@@ -8776,6 +8877,7 @@ p9-ad-sign.byteimg.com
 .piratepc.net
 .pirsch.io
 .pithyiwgz.top
+.piwik.bluegras.de
 .piwik.f7.de
 .piwik.org
 .piwik.pro
@@ -8906,6 +9008,7 @@ pixel.yandex.com
 .plausible.baseballops.app
 .plausible.dengkaiyun.space
 .plausible.io
+.plausible.mubai3.top
 .plausible.omgapi.org
 .plausible.paimon.moe
 .plausible.pronouns.cc
@@ -8913,6 +9016,7 @@ pixel.yandex.com
 .plausible.scimago.es
 .plausible.shipsolo.io
 .plausible.simplelogin.io
+.plausible.solucky.win
 .plausible.spareborsen.no
 .plausible.toolrain.com
 .plausible.vidsonic.net
@@ -9130,7 +9234,9 @@ prodvizhenie-adv.ozon.ru
 .provenpixel.com
 .providence.voxmedia.com
 .proxima.midjourney.com
+.proxy.adiktaty.sk
 .proxy.telemetry.us-ashburn-1.oci.oraclecloud.com
+.proxy.webpage.sk
 .proxyhog.com
 .prtracker.com
 .prudsys-rde.de
@@ -9148,6 +9254,7 @@ prodvizhenie-adv.ozon.ru
 .pteknvcm.com
 .ptengine.com
 .pto-slb-09.com
+.ptrack.xyz
 .ptwmstc.com
 .ptztvpremium.com
 .puata.info
@@ -9174,6 +9281,7 @@ prodvizhenie-adv.ozon.ru
 .pullcf.com
 .puls.lv
 .pulsar.ebay.com
+.pulse.abuniverse.com
 .pulse.ftools.fluege.de
 .pulse.neurostreamlink10.cfd
 .pulse.perfmetrics.netflix.com
@@ -9689,6 +9797,7 @@ rtlog5-applog.fqnovel.com
 .s.beop.io
 .s.bunkr.ru
 .s.c-ctrip.com
+.s.cadcraft.online
 .s.clickiocdn.com
 .s.clicktex.ru
 .s.conyak.com
@@ -9702,6 +9811,7 @@ rtlog5-applog.fqnovel.com
 .s.mindbox.ru
 .s.news.naver.com
 .s.opensend.com
+.s.pdfcraft.live
 .s.pemsrv.com
 .s.pie.org
 .s.pixsrvcs.com
@@ -9748,6 +9858,7 @@ rtlog5-applog.fqnovel.com
 .sajari.com
 .sakura.goguardian.com
 .salecycle.com
+.saltyrim.margaritavilleresorts.com
 .salungavine.com
 .sam.msn.com
 .samsung-beacons.xumo.com
@@ -10035,9 +10146,11 @@ sentry.x5.ru
 .sgtm.open.ac.uk
 .sgtm.piuchepuoi.it
 .sgtm.sefamerve.com
+.sgtm.sheahomes.com
 .sgtm.simoahava.com
 .sgtm.stihl.ru
 .sgtm.tagmanageritalia.it
+.sgtm.tc.de
 .sgtm.technikboerse.com
 .sgtm.tennis-point.de
 .sgtm.tripping.com
@@ -10676,6 +10789,7 @@ stacks.vk-portal.net
 .stats-sg.ganymede.eu
 .stats.9180.net
 .stats.abbi.io
+.stats.admk.com
 .stats.aiseek.dev
 .stats.allenai.org
 .stats.amur.life
@@ -10692,11 +10806,13 @@ stacks.vk-portal.net
 .stats.aws.rubiconproject.com
 .stats.bbc.co.uk
 .stats.behindtheframe.app
+.stats.berkay.tools
 .stats.blackholeenglish.com
 .stats.blogg.se
 .stats.bluebillywig.com
 .stats.boussalai.com
 .stats.bouyguestelecom.fr
+.stats.bravecreativestud.io
 .stats.browsertrix.com
 .stats.bunkr.ru
 .stats.bynatalliajean.fr
@@ -10724,6 +10840,7 @@ stats.dahlmessenger.com
 .stats.dasterit.tech
 .stats.datawrapper.de
 .stats.ddtoday.shop
+.stats.deadliftgame.com
 stats.dev.telega.info
 .stats.digitalent.dev
 .stats.digitalprojections.studio
@@ -10748,6 +10865,7 @@ stats.dev.telega.info
 .stats.fluorescent.co
 .stats.fomo.com
 .stats.fontedavidajoaopessoa.com.br
+.stats.forgefrance.fr
 .stats.frasko.si
 .stats.gamood.app
 .stats.gastronom.ru
@@ -10755,6 +10873,7 @@ stats.dev.telega.info
 .stats.getaim.org
 .stats.getfurio.com
 .stats.getleadq.ru
+.stats.gogrin.co.uk
 .stats.golv4.com
 .stats.grafana.org
 .stats.habr.com
@@ -10764,11 +10883,13 @@ stats.dev.telega.info
 .stats.heyoya.com
 .stats.himtec.es
 .stats.hitwebcloud.de
+.stats.hoergeraete-kersten.de
 .stats.hollysat.com
 .stats.hotellobby-ai.org
 .stats.ibtimes.co.in
 .stats.ibtimes.co.uk
 .stats.img2go.com
+.stats.imhsh.com
 .stats.index.hr
 .stats.indianpornempire.com
 .stats.informatips.fr
@@ -10791,12 +10912,15 @@ stats.dev.telega.info
 .stats.leybeckham.eu
 .stats.louiegayao.ph
 .stats.lptracker.ru
+.stats.lpzion.org
 .stats.luckx.dev
 .stats.lumy.com.mx
 .stats.macg.io
+.stats.macrolyzed.com
 .stats.mahaweb.be
 .stats.makethebusiness.com
 .stats.mako.co.il
+.stats.mangerly.com
 .stats.maonta.com
 .stats.mappl.tv
 .stats.markenuwe.de
@@ -10804,6 +10928,7 @@ stats.dev.telega.info
 .stats.mashwerk.io
 .stats.media.onet.pl
 .stats.megaphone-festival.fr
+.stats.melanrouillon.fr
 .stats.miriamllantada.com
 .stats.mirror.co.uk
 .stats.modelcardatabase.com
@@ -10812,12 +10937,15 @@ stats.dev.telega.info
 .stats.my-better-web.site
 .stats.mycars254.co.ke
 .stats.myserverhome.de
+.stats.nannings365.nl
+.stats.nasslabs.nl
 .stats.natishoot.fr
 .stats.nexoratechnologies.co
 .stats.norton.com
 .stats.notenarchiv.com
 .stats.nymag.com
 .stats.oasisdiscipleshiphomes.org
+.stats.ohmychart.xyz
 .stats.oilpainting.colorbynumber.veraxen.com
 .stats.okaysize.com
 .stats.olark.com
@@ -10845,15 +10973,19 @@ stats.dev.telega.info
 .stats.pricemapai.com
 .stats.pronouns.page
 .stats.propublica.org
+.stats.protoelectro.com
 .stats.psykedeliskportal.dk
 .stats.pusher.com
 .stats.rbc.ua
 .stats.reanime.to
+.stats.regalofacile.it
 .stats.releasekeep.com
+.stats.reloadingcalc.com
 .stats.renet.io
 .stats.rip
 .stats.riscoreal.com.br
 .stats.rjindex.com
+.stats.rolesradar.dev
 .stats.rong-edge.com
 .stats.rtv-cenzura.com
 .stats.rustica.fr
@@ -10882,6 +11014,7 @@ stats.dev.telega.info
 .stats.spreadsimple.com
 .stats.sprocketrocket.co
 .stats.stellar.rip
+.stats.storegga.org
 .stats.streamhub.io
 .stats.stringalize.app
 .stats.studisync.de
@@ -10889,12 +11022,14 @@ stats.dev.telega.info
 .stats.stylight.de
 .stats.stylingbyvishal.com
 .stats.suite101.com
+.stats.swietlikstudio.pl
 .stats.sxp.smartclip.net
 .stats.tandemda.com
 .stats.tehila.gov.il
 stats.telega.info
 .stats.temptcdn.com
 .stats.thehatchery.dev
+.stats.theinjection.dev
 .stats.tipser.com
 .stats.tirexo.blue
 .stats.tmate.fr
@@ -10923,6 +11058,7 @@ stats.telega.info
 .stats.webetdesign.com
 .stats.websiteaccessibilitychecker.net
 .stats.weddingspace.app
+.stats.weeberwrk.de
 .stats.wexinoba.icu
 .stats.wielkareklama.eu
 .stats.wired.com
@@ -10930,6 +11066,7 @@ stats.telega.info
 .stats.wp.com
 .stats.wpmucdn.com
 .stats.wwd.com
+.stats.wybber.com
 .stats.ynet.co.il
 .stats.ynovra.fr
 .stats.zincdrive.com
@@ -11089,6 +11226,7 @@ stats.telega.info
 .t.adclr.jp
 .t.adii.se
 .t.adlpo.com
+.t.adrili.com
 .t.adx.opera.com
 .t.aftermath.site
 .t.ajrkm.link
@@ -11127,6 +11265,7 @@ stats.telega.info
 .t.frtyi.com
 .t.ghostboard.io
 .t.gutsy.so
+.t.haydays.app
 .t.hentaivox.com
 .t.hoood.info
 .t.hypers.com.cn
@@ -11137,6 +11276,7 @@ stats.telega.info
 .t.influ2.com
 .t.irtyc.com
 .t.iwara.tv
+.t.jagerne.ai
 .t.jasper.ai
 .t.jibeno.xyz
 .t.journify.io
@@ -11176,6 +11316,7 @@ t.mail.ru
 .t.trsbf.com
 .t.unbounce.com
 .t.usermaven.com
+.t.usetrace.app
 .t.vana.tech
 .t.visx.net
 .t.wayfair.com
@@ -12094,6 +12235,7 @@ tracing-http.megamarket.tech
 .tracking.thehut.net
 .tracking.tidalhifi.com
 .tracking.times247.com
+.tracking.tpgmobile.sg
 .tracking.trickbyte.com
 .tracking.trnox.com
 .tracking.tving.com
@@ -12313,6 +12455,7 @@ tracing-http.megamarket.tech
 .u.lessbutbetter.studio
 .u.omgjav.com
 .u.sabine-haenisch.de
+.u.spicepairing.com
 .u.tampermonkey.net
 .u.xogu.cn
 .u066.ocregister.com
@@ -12411,17 +12554,22 @@ tracing-http.megamarket.tech
 .umami-pink-phi.vercel.app
 .umami-production-2072c.up.railway.app
 .umami-production-2ce1.up.railway.app
+.umami.ahkeeper.com
 .umami.ahmednabik.com
 .umami.apixen-agency.com
 .umami.botipedia.org
+.umami.cinetrotter.com
 .umami.cloudportal.space
 .umami.dev.ops.butterfly-effect.dev
 .umami.devliang.xyz
+.umami.duxlabs.dev
 .umami.hausofmahl.com
+.umami.huexef.cn
 .umami.infessa.com
 .umami.insighttech.com.tr
 .umami.is
 .umami.lukron.app
+.umami.luther-lawfirm.com
 .umami.mango.nyc
 .umami.mcpgood.com
 .umami.mertwang.top
@@ -12500,6 +12648,7 @@ tracing-http.megamarket.tech
 .urbanairship.com
 .urchin.com
 .ureca.samsungapps.com
+.urit.launchpass.com
 .urlbrief.com
 .urstats.de
 .us-behavior.apitd.net
@@ -12673,24 +12822,32 @@ tracing-http.megamarket.tech
 .visit.aisongs.site
 .visit.aiwriter.pro
 .visit.app-design.online
+.visit.audio-to-text.site
 .visit.bigvu.online
+.visit.clipdrop.pro
 .visit.codeformer.online
 .visit.cutvideo.pro
 .visit.dapachecker.art
 .visit.domain-name.art
 .visit.fishaudio.pro
 .visit.gmicloud.online
+.visit.hypeauditor.online
 .visit.image-editor.pro
 .visit.img2img.art
 .visit.jogg.online
 .visit.kikivoice.online
 .visit.lipsync.info
 .visit.magichour.online
+.visit.musicremover.pro
 .visit.oschina.net
 .visit.rodinai.online
 .visit.searchatlas.pro
 .visit.seedream.site
+.visit.slazzer.pro
+.visit.syllaby.art
 .visit.taplio.pro
+.visit.texttospeechai.online
+.visit.voiceai.site
 .visit.voicemaker.site
 .visit.webhosting.yahoo.com
 .visit.xchina.pics
@@ -12744,6 +12901,7 @@ visor.sberbank.ru
 .votetoda.com
 .votistics.com
 .vought.removeads.workers.dev
+.voyager.tech.etribes.de
 .vry9.destinia.com
 .vserv.mobi
 .vsn-analytics.aparentmedia.com
@@ -13058,6 +13216,7 @@ wlog.kuaishou.com
 .x-storage-a1.cir.io
 .x-traceur.com
 .x-value.net
+.x.appbrain.com
 .x.babe.today
 .x.sexhd.pics
 .x.trvdp.com
@@ -13324,6 +13483,7 @@ xapi.ozonru.me
 .zucks.net
 .zucks.net.zimg.jp
 .zugasezuryjoxo.com
+.zwjvbnvhnzme.heise.de
 .zxcvbnmasdfghjklqwertyuiop.work
 .zxid-api.mobileservice.cn
 .zxid-m.mobileservice.cn
