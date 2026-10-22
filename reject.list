@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-21T21:51:01+00:00
+# Generated: 2026-10-22T21:46:17+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14103, local=1, total(deduped)=13468, excluded=29
+# Counts: upstream=14111, local=1, total(deduped)=13476, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2358,6 +2358,7 @@ DOMAIN-SUFFIX,applytics.my1337jog.run
 DOMAIN-SUFFIX,applytics.napps-1.com
 DOMAIN-SUFFIX,applytics.nordvpn.com
 DOMAIN-SUFFIX,applytics.os4work.com
+DOMAIN-SUFFIX,applytics.zwyr157wwiu6eior.com
 DOMAIN-SUFFIX,applzr.com
 DOMAIN-SUFFIX,appmetr.com
 DOMAIN-SUFFIX,appmetrica.yandex.com
@@ -4174,6 +4175,7 @@ DOMAIN-SUFFIX,d985a9d2clzq5.cloudfront.net
 DOMAIN-SUFFIX,d9jj3mjthpub.cloudfront.net
 DOMAIN-SUFFIX,d9leupuz17y6i.cloudfront.net
 DOMAIN-SUFFIX,d9tnvwv7i2n85.cloudfront.net
+DOMAIN-SUFFIX,da.flvcdn.net
 DOMAIN-SUFFIX,da.hunantv.com
 DOMAIN-SUFFIX,da.mgtv.com
 DOMAIN-SUFFIX,da29e6b8-f018-490f-b25f-39a887fc95e7.xyz
@@ -4243,6 +4245,7 @@ DOMAIN-SUFFIX,data.sozo24.co.uk
 DOMAIN-SUFFIX,data.ssports.com
 DOMAIN-SUFFIX,data.thoughtmetric.io
 DOMAIN-SUFFIX,data.tm-awx.com
+DOMAIN-SUFFIX,data.vzhh.de
 DOMAIN-SUFFIX,data.web-enseignes.com
 DOMAIN-SUFFIX,data2.doodlemobile.com
 DOMAIN-SUFFIX,data4.ojto.pl
@@ -5141,6 +5144,7 @@ DOMAIN-SUFFIX,familialsimulation.com
 DOMAIN-SUFFIX,fancyapi.com
 DOMAIN-SUFFIX,fancydsp.com
 DOMAIN-SUFFIX,fanplayr.com
+DOMAIN-SUFFIX,fanza.ftbucket.info
 DOMAIN-SUFFIX,fanzhuang.net.cn
 DOMAIN-SUFFIX,farflung-permission.com
 DOMAIN-SUFFIX,fast-down.ru
@@ -6545,6 +6549,7 @@ DOMAIN-SUFFIX,kuyun.com
 DOMAIN-SUFFIX,kvaedit.site
 DOMAIN-SUFFIX,kw0xlh4wig.com
 DOMAIN-SUFFIX,kyemnphpymnyv.website
+DOMAIN-SUFFIX,kzeaxmzil.in
 DOMAIN-SUFFIX,l.da-te.jp
 DOMAIN-SUFFIX,l.ffsagami.com
 DOMAIN-SUFFIX,l.ffx.io
@@ -9719,6 +9724,7 @@ DOMAIN-SUFFIX,rtb-us-east.linkedin.com
 DOMAIN-SUFFIX,rtb.appbid.com
 DOMAIN-SUFFIX,rtb.dynotech.io
 DOMAIN-SUFFIX,rtb.julang.taobao.com
+DOMAIN-SUFFIX,rtb.nefta.app
 DOMAIN-SUFFIX,rtb.videonow.ru
 DOMAIN-SUFFIX,rtb.viewsense.ai
 DOMAIN-SUFFIX,rtb.voltaxam.com
@@ -10835,6 +10841,7 @@ DOMAIN-SUFFIX,stats.coronalabs.com
 DOMAIN-SUFFIX,stats.coursepad.com
 DOMAIN-SUFFIX,stats.cratco.ru
 DOMAIN-SUFFIX,stats.crunchtime.fun
+DOMAIN-SUFFIX,stats.curd.io
 DOMAIN-SUFFIX,stats.cyknij.com
 DOMAIN,stats.dahlmessenger.com
 DOMAIN-SUFFIX,stats.danwood-sachsen.com
@@ -13132,6 +13139,7 @@ DOMAIN-SUFFIX,wishloop.com
 DOMAIN-SUFFIX,wissekeygroup.com
 DOMAIN-SUFFIX,wit.qq.com
 DOMAIN-SUFFIX,withcabin.com
+DOMAIN-SUFFIX,wivowu.my
 DOMAIN-SUFFIX,wix-engage-visitors-prod-6.firebaseio.com
 DOMAIN-SUFFIX,wizaly.com
 DOMAIN-SUFFIX,wizensbuphaga.sh

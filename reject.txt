@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-21T21:51:01+00:00
+# Generated: 2026-10-22T21:46:17+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14103, local=1, total(deduped)=13468, excluded=29
+# Counts: upstream=14111, local=1, total(deduped)=13476, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2356,6 +2356,7 @@ apilog-web.acfun.cn
 .applytics.napps-1.com
 .applytics.nordvpn.com
 .applytics.os4work.com
+.applytics.zwyr157wwiu6eior.com
 .applzr.com
 .appmetr.com
 .appmetrica.yandex.com
@@ -4172,6 +4173,7 @@ crashlyticsreports-pa.googleapis.com
 .d9jj3mjthpub.cloudfront.net
 .d9leupuz17y6i.cloudfront.net
 .d9tnvwv7i2n85.cloudfront.net
+.da.flvcdn.net
 .da.hunantv.com
 .da.mgtv.com
 .da29e6b8-f018-490f-b25f-39a887fc95e7.xyz
@@ -4241,6 +4243,7 @@ crashlyticsreports-pa.googleapis.com
 .data.ssports.com
 .data.thoughtmetric.io
 .data.tm-awx.com
+.data.vzhh.de
 .data.web-enseignes.com
 .data2.doodlemobile.com
 .data4.ojto.pl
@@ -5139,6 +5142,7 @@ error-tracking.megamarket.tech
 .fancyapi.com
 .fancydsp.com
 .fanplayr.com
+.fanza.ftbucket.info
 .fanzhuang.net.cn
 .farflung-permission.com
 .fast-down.ru
@@ -6543,6 +6547,7 @@ google-analytics-suite.ozon.ru
 .kvaedit.site
 .kw0xlh4wig.com
 .kyemnphpymnyv.website
+.kzeaxmzil.in
 .l.da-te.jp
 .l.ffsagami.com
 .l.ffx.io
@@ -9717,6 +9722,7 @@ rs.mail.ru
 .rtb.appbid.com
 .rtb.dynotech.io
 .rtb.julang.taobao.com
+.rtb.nefta.app
 .rtb.videonow.ru
 .rtb.viewsense.ai
 .rtb.voltaxam.com
@@ -10833,6 +10839,7 @@ stacks.vk-portal.net
 .stats.coursepad.com
 .stats.cratco.ru
 .stats.crunchtime.fun
+.stats.curd.io
 .stats.cyknij.com
 stats.dahlmessenger.com
 .stats.danwood-sachsen.com
@@ -13130,6 +13137,7 @@ whiteline.mail.ru
 .wissekeygroup.com
 .wit.qq.com
 .withcabin.com
+.wivowu.my
 .wix-engage-visitors-prod-6.firebaseio.com
 .wizaly.com
 .wizensbuphaga.sh

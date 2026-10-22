@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-21T21:50:31+00:00
+# Generated: 2026-10-22T21:45:50+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31696, local=27, total(deduped)=26609, excluded=3
+# Counts: upstream=31718, local=27, total(deduped)=26630, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -1797,6 +1797,7 @@ angle.com.tw
 .anonymouse.org
 .ansarbank.com
 .ansin.erodayo.com
+.ant.dev
 .antarvasnaclips.com
 .antarvasnax.com
 .antenna.co.kr
@@ -1804,10 +1805,12 @@ angle.com.tw
 .anthemthegame.com
 .anthonycalzadilla.com
 .anthropic.com
+.anthropic.team
 .antiphishing.nl
 .antiphishing.ru
 .antiwave.net
 .antpool.com
+.antspace.dev
 .anudetube.com
 .anuneko.com
 .anxiangxing.com
@@ -5291,6 +5294,7 @@ cdn.workos.com
 .chat.com
 .chat.lmsys.org
 .chatango.com
+.chatbotclaude.com
 .chatgpt.com
 .chatgpt.livekit.cloud
 .chatgpt.site
@@ -5612,10 +5616,16 @@ cisco.evergage.com
 .classymomsex.com
 .clau.de
 .claude.ai
+.claude.app
 .claude.com
 .claude.dev
+.claude.new
+.claude.site
+.claudeacademy.com
 .claudemcpclient.com
 .claudemcpcontent.com
+.claudepages.dev
+.claudestudio.com
 .claudeusercontent.com
 .clawhub.ai
 .clck.ru
@@ -9051,6 +9061,17 @@ firstsearch.oclc.org
 .fluidpreview.com
 .flutter.dev
 .flutterapp.com
+.fluxer.app
+.fluxer.com
+.fluxer.dev
+.fluxer.gg
+.fluxer.gift
+.fluxer.media
+.fluxer.tools
+.fluxerapp.com
+.fluxerstatic.com
+.fluxerstatus.com
+.fluxerusercontent.com
 .fly.dev
 .fly.io
 .flyflv.com
