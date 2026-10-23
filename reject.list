@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-22T21:46:17+00:00
+# Generated: 2026-10-23T21:31:54+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14111, local=1, total(deduped)=13476, excluded=29
+# Counts: upstream=14120, local=1, total(deduped)=13485, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -435,6 +435,7 @@ DOMAIN-SUFFIX,a.bestcontenttool.top
 DOMAIN-SUFFIX,a.binpartner.com
 DOMAIN-SUFFIX,a.boredpanda.bio
 DOMAIN-SUFFIX,a.brack.ch
+DOMAIN-SUFFIX,a.cdn-lab.shop
 DOMAIN-SUFFIX,a.cineflix.st
 DOMAIN-SUFFIX,a.das.dev
 DOMAIN-SUFFIX,a.dataroles.co
@@ -1037,6 +1038,7 @@ DOMAIN-SUFFIX,ads.mozilla.org
 DOMAIN-SUFFIX,ads.museum.or.jp
 DOMAIN-SUFFIX,ads.music.126.net
 DOMAIN-SUFFIX,ads.nicovideo.jp
+DOMAIN-SUFFIX,ads.nijiurachan.net
 DOMAIN-SUFFIX,ads.oppomobile.com
 DOMAIN-SUFFIX,ads.pdbarea.com
 DOMAIN-SUFFIX,ads.phonepe.com
@@ -4363,6 +4365,7 @@ DOMAIN-SUFFIX,dfe.mic.mob.com
 DOMAIN-SUFFIX,dfjlgfb4lxka5.cloudfront.net
 DOMAIN-SUFFIX,dfqzah.xyz
 DOMAIN-SUFFIX,dfyxzuog.com
+DOMAIN-SUFFIX,dga9amo.website
 DOMAIN-SUFFIX,dgcollector.evidon.com
 DOMAIN-SUFFIX,dggaenaawxe8z.cloudfront.net
 DOMAIN-SUFFIX,dgkqqbixb.com
@@ -5828,6 +5831,7 @@ DOMAIN-SUFFIX,hesads.akamaized.net
 DOMAIN-SUFFIX,hestherchiffer.com
 DOMAIN-SUFFIX,hetcash.com
 DOMAIN-SUFFIX,heukmsactivator.com
+DOMAIN-SUFFIX,hewdasgas.com
 DOMAIN-SUFFIX,hexagon-analytics.com
 DOMAIN-SUFFIX,hey.tanqueo.com
 DOMAIN-SUFFIX,heymatic.com
@@ -6614,6 +6618,7 @@ DOMAIN-SUFFIX,lcs.loginfra.com
 DOMAIN-SUFFIX,lcs.modoo.at
 DOMAIN-SUFFIX,lcs.naver.com
 DOMAIN-SUFFIX,lddt.de
+DOMAIN-SUFFIX,ldfyjedytzkpx.space
 DOMAIN-SUFFIX,ldpsh.fashionnova.com
 DOMAIN-SUFFIX,lead-123.com
 DOMAIN-SUFFIX,leadboltads.net
@@ -8582,6 +8587,7 @@ DOMAIN-SUFFIX,osm-onead.cdn.hinet.net
 DOMAIN-SUFFIX,ot.ebis.ne.jp
 DOMAIN-SUFFIX,otel-collector.reliability.smartnews.net
 DOMAIN-SUFFIX,otel-mobile.doordash.com
+DOMAIN-SUFFIX,othbmudutr.in
 DOMAIN-SUFFIX,otik.de
 DOMAIN-SUFFIX,otl.minefun.io
 DOMAIN-SUFFIX,otoshiana.com
@@ -11648,6 +11654,7 @@ DOMAIN-SUFFIX,thind-gke-euw.prd.data.corp.unity3d.com
 DOMAIN-SUFFIX,thinkingdata.cn
 DOMAIN-SUFFIX,thj.astrakhan.ru
 DOMAIN-SUFFIX,thongke.24h.com.vn
+DOMAIN-SUFFIX,thoroughgear.com
 DOMAIN-SUFFIX,threeate.jp
 DOMAIN-SUFFIX,thrtle.com
 DOMAIN-SUFFIX,thtk.temu.com
@@ -11659,6 +11666,7 @@ DOMAIN-SUFFIX,tim.nextinpact.com
 DOMAIN-SUFFIX,timon.zijieapi.com
 DOMAIN-SUFFIX,tinb.net
 DOMAIN-SUFFIX,tinycounter.com
+DOMAIN-SUFFIX,tinyns.me
 DOMAIN-SUFFIX,tinystat.ir
 DOMAIN-SUFFIX,tips.delt.io
 DOMAIN-SUFFIX,tiq.espritshop.pl
@@ -13486,6 +13494,7 @@ DOMAIN-SUFFIX,zoosnet.net
 DOMAIN-SUFFIX,zoossoft.net
 DOMAIN-SUFFIX,zprk.io
 DOMAIN-SUFFIX,zqtk.net
+DOMAIN-SUFFIX,zrraksfxccuop.online
 DOMAIN-SUFFIX,zstnzufw.com
 DOMAIN-SUFFIX,ztevents.zaloapp.com
 DOMAIN-SUFFIX,ztrck.me
