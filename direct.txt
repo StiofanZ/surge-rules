@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-10-24T20:59:38+00:00
+# Generated: 2026-10-25T20:59:43+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=110235, local=2, total(deduped)=110074, excluded=33
+# Counts: upstream=110241, local=2, total(deduped)=110078, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -19207,6 +19207,7 @@ cdn4.apple-mapkit.com
 .cdqz.net
 .cdrbs.net
 .cdrcb.com
+.cdrcbank.com
 .cdren.net
 .cdrich.com
 .cdrjob.com
@@ -25108,6 +25109,7 @@ connectivitycheck.gstatic.com
 .cqyygz.com
 .cqyyjc.com
 .cqyysx.com
+.cqyyxc.com
 .cqyyzy.com
 .cqyznews.com
 .cqzbcg.com
@@ -48707,6 +48709,7 @@ i.pki.goog
 .ibaizhu.com
 .ibanana.club
 .ibanbu.com
+.ibangbank.com
 .ibanggo.com
 .ibangkf.com
 .ibangtiao.com
@@ -50812,6 +50815,7 @@ is5.mzstatic.com
 .isi-gf.com
 .isiabio.com
 .isign.ren
+.isigning.com
 .isigu.com
 .isilent.me
 .isilicontech.com
@@ -65227,7 +65231,6 @@ ml.cdn-apple.com
 .moefactory.com
 .moefantasy.com
 .moefou.org
-.moegirl.org
 .moegirl.tw
 .moehot.com
 .moehu.org
@@ -66664,6 +66667,7 @@ myapp.itunes.apple.com
 .nannjlnk.com
 .nanobody-biolab.com
 .nanochrom.com
+.nanocorechip.com
 .nanoeast.net
 .nanoer.net
 .nanoinglobal.com
