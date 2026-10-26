@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-25T20:59:15+00:00
+# Generated: 2026-10-26T22:46:21+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31760, local=27, total(deduped)=26660, excluded=3
+# Counts: upstream=31751, local=27, total(deduped)=26645, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -780,6 +780,7 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .addthiscdn.com
 .addthisedge.com
 .addtoany.com
+.addtodropbox.com
 .addyoutube.com
 .adelaidenow.com.au
 .adgoogle.net
@@ -6339,6 +6340,7 @@ crl.versign.net
 .darwinsource.org
 .darwinsourcecode.com
 .dasaob.online
+.dash.ai
 .dashlane.com
 .dashly.app
 .dashly.help
@@ -7101,6 +7103,7 @@ dl.begellhouse.com
 .docs.new
 .docs.rs
 .docs.rw
+.docsend.com
 .doctor-videos.com
 .documentforce.com
 .documentingreality.com
@@ -7295,12 +7298,15 @@ dl.begellhouse.com
 .dropboxapi.com
 .dropboxbusiness.com
 .dropboxcaptcha.com
+.dropboxexperiment.com
 .dropboxforum.com
 .dropboxforums.com
 .dropboxinsiders.com
+.dropboxlegal.com
 .dropboxmail.com
 .dropboxpartners.com
 .dropboxstatic.com
+.dropboxteam.com
 .dropboxusercontent.com
 .drpc.org
 .drtuber.com
@@ -11040,9 +11046,11 @@ hb4bbbbb.pmhcjk.com
 .helixstudios.net
 .helloandroid.com
 .helloavgirls.com
+.hellofax.com
 .hellokittybeats.com
 .hellomoto.com
 .helloqueer.com
+.hellosign.com
 .hellosmartbook.com
 .hellporno.com
 .hellven.net
@@ -14140,6 +14148,7 @@ imperial.insendi.com
 .librarylovefest.com
 .libraryofthumbs.com
 .libredd.it
+.librewolf.dev
 .librewolf.net
 .libsolutions.app
 .libsolutions.domains
@@ -20955,7 +20964,6 @@ setup.workos.com
 .situero.com
 .six-degrees.io
 .six9dy.pw
-.sixte.st
 .sjcollect.com
 .sjhsp1.buzz
 .skate2.com
@@ -22252,29 +22260,6 @@ supercell.helpshift.com
 .teslaenergy.services
 .teslamotors.com
 .teslazta.net
-.test-ipv6.alpinedc.ch
-.test-ipv6.arauc.br
-.test-ipv6.belwue.net
-.test-ipv6.carnet.hr
-.test-ipv6.cl
-.test-ipv6.com
-.test-ipv6.cs.umd.edu
-.test-ipv6.csclub.uwaterloo.ca
-.test-ipv6.cz
-.test-ipv6.epic.network
-.test-ipv6.fratec.net
-.test-ipv6.freerangecloud.com
-.test-ipv6.go6.si
-.test-ipv6.hu
-.test-ipv6.is
-.test-ipv6.iu13.net
-.test-ipv6.ke.liquidtelecom.net
-.test-ipv6.noroutetohost.net
-.test-ipv6.roedu.net
-.test-ipv6.se
-.test-ipv6.sin.vr.org
-.test-ipv6.ttk.ru
-.testipv6.de
 .testonfox.com
 .tetrika-school.ru
 .tettediferro.it
