@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-26T22:46:57+00:00
+# Generated: 2026-10-27T22:26:26+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14124, local=1, total(deduped)=13488, excluded=29
+# Counts: upstream=14141, local=1, total(deduped)=13505, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1132,6 +1132,7 @@ adsdk.yandex.ru
 .adsgard.aprod.scopely.io
 .adsgig.com
 .adsgram.ai
+.adsgravity.io
 .adsh.m.taobao.com
 .adshares.net
 .adshmmsg.qq.com
@@ -2783,6 +2784,7 @@ beginners-adv.ozon.ru
 .bigcattracks.com
 .bigcrunch.com
 .bigdata-scfx-push.kucoin.plus
+.bigdata.downza.com
 .bigfluffycatexchange.crabdance.com
 .biggestplayer.cachefly.net
 .bigmobileads.com
@@ -3126,6 +3128,7 @@ bs.mail.ru
 .cdn-ra.rockcontent.com
 .cdn-redirector.glopal.com
 .cdn-rtb.sape.ru
+.cdn-settings.af-sdk.com
 .cdn-v3.conductrics.net
 .cdn.ad-platform.jmty.jp
 .cdn.adk2.com
@@ -3524,6 +3527,7 @@ click.rustore.ru
 .collect.media.jio.com
 .collect.mxapis.com
 .collect.nature.com
+.collect.pravdastat.com
 .collect.rebelmouse.io
 .collect.rtl.lu
 .collect.serious.li
@@ -3596,6 +3600,7 @@ click.rustore.ru
 .colossusssp.com
 .comagic.ru
 .comanicilikeiste.com
+.combatbaskstationery.com
 .cometlytrack.com
 .commander1.com
 .commandersact.com
@@ -4571,6 +4576,7 @@ crashlyticsreports-pa.googleapis.com
 .dullequivalent.com
 .dumedia.ru
 .dump.mewcdn.online
+.dunanscastle.org
 .dup.baidustatic.com
 .dupcczkfziyd3.cloudfront.net
 .durationmedia.net
@@ -5638,6 +5644,7 @@ google-analytics-suite.ozon.ru
 .greatviews.de
 .greekexternal.com
 .greenbids.ai
+.greentrafsa.com
 .gresrv.com
 .grfz.de
 .grgnsht.nzxt.com
@@ -6124,6 +6131,7 @@ google-analytics-suite.ozon.ru
 .in.cuebiq.com
 .in.unext.jp
 .inaftracker.com
+.inapps.af-sdk.com
 .inapps.appsflyer.com
 .inbound-analytics.pixlee.co
 .inbound-analytics.pixlee.com
@@ -7829,6 +7837,7 @@ metrics.21-school.ru
 .metrics.rapidedge.io
 .metrics.roblox.com
 .metrics.sdkbox.com
+.metrics.selectel.ru
 .metrics.shasetsu.jp
 .metrics.sp0n.io
 .metrics.spbtv.com
@@ -8016,6 +8025,7 @@ metrics.21-school.ru
 .mochibot.com
 .mod.leftnewsex.com
 .moduleanalysis.aliexpress.com
+.modusygunaciro.com
 .mofox.com
 .moguldom.com
 .mokuz.ru
@@ -8277,6 +8287,7 @@ metrics.21-school.ru
 .neo7x.com
 .neofield.click
 .neon.click
+.neonewszone.lat
 .nervousstroke.com
 .net-filter.com
 .net.iberia.com
@@ -8577,6 +8588,7 @@ openai.qualtrics.com
 .orcapia.com
 .oremark.com
 .organic-doberman.pikapod.net
+.organic-package.com
 .orlovskyi.com
 .ormatenqron.com
 .orquidea.ai
@@ -10342,6 +10354,7 @@ sentry.x5.ru
 .smilered.com
 .smileyhost.net
 .smind.hr
+.smog.gentlecork.com
 .smp.tus.ac.jp
 .smpl.hit.ppdb.pl
 .smpop.icfcdn.com
@@ -11592,6 +11605,7 @@ target.vk.com
 .telemetry.microsoft.us
 .telemetry.navigatorapp.net
 .telemetry.nbcuott.com
+.telemetry.paypay.ne.jp
 .telemetry.proton.me
 .telemetry.sdk.inmobi.com
 .telemetry.services.yofi.ai
@@ -12595,6 +12609,8 @@ tracing-http.megamarket.tech
 .umami.shiaqiang.cv
 .umami.trackiq.com
 .umami.trapilot.ai
+.umami.vidfast.vc
+.umami.vidup.to
 .umami2.devliang.xyz
 .umami3.devliang.xyz
 .umami4.devliang.xyz
@@ -13457,6 +13473,7 @@ xapi.ozonru.me
 .zealousimage.com
 .zebestof.com
 .zedo.com
+.zenstats.yzhy19.cn
 .zentrixads.com
 .zeotap.com
 .zero.kz
