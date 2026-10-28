@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-27T22:25:58+00:00
+# Generated: 2026-10-28T22:42:48+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31751, local=27, total(deduped)=26645, excluded=3
+# Counts: upstream=31759, local=27, total(deduped)=26653, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -2321,6 +2321,7 @@ api-p.videomarket.jp
 .artel.watch
 .arteldoc.com
 .arteldoc.tv
+.artificialanalysis.ai
 .artixlinux.org
 .artnudegalleries.com
 .artoferotica.info
@@ -5652,6 +5653,7 @@ cisco.evergage.com
 .clickserve.cc-dt.com
 .clickserver.googleads.com
 .climate-server.com
+.cline.bot
 .clinica-tibet.ru
 .clinical-videos.com
 .clinicalkey.com
@@ -5895,6 +5897,7 @@ cisco.evergage.com
 .comixzilla.com
 .comm-verse.com
 .commandandconquer.com
+.commandcode.ai
 .comments.app
 .commentshk.com
 .commerceos.com
@@ -5947,6 +5950,7 @@ cisco.evergage.com
 .contechacademy.com
 .contentful.com
 .contest.com
+.context7.com
 .convrgencegame.com
 .cookiebot.com
 .cookiechoices.org
@@ -13078,6 +13082,7 @@ imperial.insendi.com
 .iutunes.com
 .ivacy.com
 .ivi.ru
+.ivi.tv
 .ivicdn.tv
 .ivintageporn.com
 .ivonblog.com
@@ -15103,6 +15108,7 @@ medone-education.thieme.com
 .met-nude.com
 .meta.ai
 .meta.com
+.metaaiusercontent.com
 .metaaivm.com
 .metabora.io
 .metabrainz.org
@@ -17066,6 +17072,7 @@ nbbb1bb7.pmhcjk.com
 .notion.so
 .notionusercontent.com
 .nottinghampost.com
+.nousresearch.com
 .novelai.net
 .noveltrove.com
 .novids.com
@@ -22468,6 +22475,7 @@ supercell.helpshift.com
 .thinkgeek.com
 .thinkingtaiwan.com
 .thinkofliving.com
+.thinkorswim.com
 .thinkquarterly.co.uk
 .thinkquarterly.com
 .thinkwithgoogle.com
