@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-28T22:43:18+00:00
+# Generated: 2026-10-29T22:52:10+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14145, local=1, total(deduped)=13509, excluded=29
+# Counts: upstream=14150, local=1, total(deduped)=13514, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2294,6 +2294,7 @@ apilog-web.acfun.cn
 .apm-track.xiaohongshu.com
 .apm.volccdn.com
 .apm.yahoo.co.jp
+.apmginternational.matomo.cloud
 .apmplus.ap-southeast-1.volces.com
 .apmplus.volces.com
 .apollo.miniclip.com
@@ -8536,6 +8537,7 @@ new-adv.ozon.ru
 .onmarshtompor.com
 .onthe.io
 .ookris.oferty-kredytowe.pl
+.op.fintables.com
 .opecloud.com
 .open-analytics.hrw.org
 .open.isnssdk.com
@@ -9834,6 +9836,7 @@ rtlog5-applog.fqnovel.com
 .s.frida.vse42.ru
 .s.gofile.io
 .s.hisp.in
+.s.igen.fr
 .s.infogram.com
 .s.izrnvo.com
 .s.mindbox.ru
@@ -12632,6 +12635,7 @@ tracing-http.megamarket.tech
 .unblockia.com
 .uncn.jp
 .unddeliv.com
+.unfoldedtrade.com
 .unicume.com
 .unid.go.com
 .unidentifiedanalytics.web.app
@@ -12723,6 +12727,7 @@ tracing-http.megamarket.tech
 .usesfathom.com
 .usheebainaut.com
 .usp1.baidu.com
+.usrpubtrck.com
 .usrpubtrk.com
 .usstat.icocofun.com
 .ustat.info

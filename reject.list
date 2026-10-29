@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-28T22:43:18+00:00
+# Generated: 2026-10-29T22:52:10+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14145, local=1, total(deduped)=13509, excluded=29
+# Counts: upstream=14150, local=1, total(deduped)=13514, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2296,6 +2296,7 @@ DOMAIN-SUFFIX,apm-native.xiaohongshu.com
 DOMAIN-SUFFIX,apm-track.xiaohongshu.com
 DOMAIN-SUFFIX,apm.volccdn.com
 DOMAIN-SUFFIX,apm.yahoo.co.jp
+DOMAIN-SUFFIX,apmginternational.matomo.cloud
 DOMAIN-SUFFIX,apmplus.ap-southeast-1.volces.com
 DOMAIN-SUFFIX,apmplus.volces.com
 DOMAIN-SUFFIX,apollo.miniclip.com
@@ -8538,6 +8539,7 @@ DOMAIN-SUFFIX,onlinewebstats.com
 DOMAIN-SUFFIX,onmarshtompor.com
 DOMAIN-SUFFIX,onthe.io
 DOMAIN-SUFFIX,ookris.oferty-kredytowe.pl
+DOMAIN-SUFFIX,op.fintables.com
 DOMAIN-SUFFIX,opecloud.com
 DOMAIN-SUFFIX,open-analytics.hrw.org
 DOMAIN-SUFFIX,open.isnssdk.com
@@ -9836,6 +9838,7 @@ DOMAIN-SUFFIX,s.dt6ycu.com
 DOMAIN-SUFFIX,s.frida.vse42.ru
 DOMAIN-SUFFIX,s.gofile.io
 DOMAIN-SUFFIX,s.hisp.in
+DOMAIN-SUFFIX,s.igen.fr
 DOMAIN-SUFFIX,s.infogram.com
 DOMAIN-SUFFIX,s.izrnvo.com
 DOMAIN-SUFFIX,s.mindbox.ru
@@ -12634,6 +12637,7 @@ DOMAIN-SUFFIX,unami.tripinfohub.com
 DOMAIN-SUFFIX,unblockia.com
 DOMAIN-SUFFIX,uncn.jp
 DOMAIN-SUFFIX,unddeliv.com
+DOMAIN-SUFFIX,unfoldedtrade.com
 DOMAIN-SUFFIX,unicume.com
 DOMAIN-SUFFIX,unid.go.com
 DOMAIN-SUFFIX,unidentifiedanalytics.web.app
@@ -12725,6 +12729,7 @@ DOMAIN-SUFFIX,userwave.com
 DOMAIN-SUFFIX,usesfathom.com
 DOMAIN-SUFFIX,usheebainaut.com
 DOMAIN-SUFFIX,usp1.baidu.com
+DOMAIN-SUFFIX,usrpubtrck.com
 DOMAIN-SUFFIX,usrpubtrk.com
 DOMAIN-SUFFIX,usstat.icocofun.com
 DOMAIN-SUFFIX,ustat.info
