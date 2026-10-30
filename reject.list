@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-10-29T22:52:10+00:00
+# Generated: 2026-10-30T22:30:23+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14150, local=1, total(deduped)=13514, excluded=29
+# Counts: upstream=14161, local=1, total(deduped)=13525, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1960,6 +1960,7 @@ DOMAIN-SUFFIX,analytics.schoolwires.com
 DOMAIN-SUFFIX,analytics.scorpion.co
 DOMAIN-SUFFIX,analytics.scprimeimoveis.com.br
 DOMAIN-SUFFIX,analytics.sealdoc.eu
+DOMAIN-SUFFIX,analytics.searchspring.net
 DOMAIN-SUFFIX,analytics.seekxr.com
 DOMAIN-SUFFIX,analytics.sen.go.kr
 DOMAIN-SUFFIX,analytics.send.cm
@@ -2141,6 +2142,7 @@ DOMAIN-SUFFIX,ape-tagit.timeinc.net
 DOMAIN-SUFFIX,apetite.index.hr
 DOMAIN-SUFFIX,apexstats.com
 DOMAIN-SUFFIX,apextwo.com
+DOMAIN-SUFFIX,api-abtest-cdn.learnings.ai
 DOMAIN-SUFFIX,api-ad-adapter.wps.com
 DOMAIN-SUFFIX,api-ad-callback.falconnet.app
 DOMAIN-SUFFIX,api-adservices.apple.com
@@ -3200,6 +3202,7 @@ DOMAIN-SUFFIX,cdn.seonintelligence.com
 DOMAIN-SUFFIX,cdn.sgmntfy.com
 DOMAIN-SUFFIX,cdn.slots.baxter.olx.org
 DOMAIN-SUFFIX,cdn.smlog.co.kr
+DOMAIN-SUFFIX,cdn.snitcher.com
 DOMAIN-SUFFIX,cdn.sophi.io
 DOMAIN-SUFFIX,cdn.sov.stream
 DOMAIN-SUFFIX,cdn.sportlabs.online
@@ -3317,6 +3320,7 @@ DOMAIN-SUFFIX,claring-loccelkin.com
 DOMAIN-SUFFIX,clarity.ms
 DOMAIN-SUFFIX,claritytag.com
 DOMAIN-SUFFIX,clarivoy.com
+DOMAIN-SUFFIX,claydar.com
 DOMAIN-SUFFIX,clb.yahoo.co.jp
 DOMAIN-SUFFIX,clb.yahooapis.jp
 DOMAIN-SUFFIX,clc.stackoverflow.com
@@ -5582,6 +5586,7 @@ DOMAIN-SUFFIX,gomakemerich1.com
 DOMAIN-SUFFIX,goneviral.com
 DOMAIN-SUFFIX,goo-access-analytics.appspot.com
 DOMAIN-SUFFIX,goodcounter.org
+DOMAIN-SUFFIX,goodpics.net
 DOMAIN-SUFFIX,goodsstor.vip
 DOMAIN-SUFFIX,google-analyticals.com
 DOMAIN-SUFFIX,google-analytics-cn.com
@@ -5848,6 +5853,7 @@ DOMAIN-SUFFIX,hey.tanqueo.com
 DOMAIN-SUFFIX,heymatic.com
 DOMAIN-SUFFIX,heystaks.com
 DOMAIN-SUFFIX,heyzap.com
+DOMAIN-SUFFIX,hfgaw.online
 DOMAIN-SUFFIX,hfisngksng.com
 DOMAIN-SUFFIX,hgads.com
 DOMAIN-SUFFIX,hhvhpxvuu.com
@@ -6427,6 +6433,7 @@ DOMAIN-SUFFIX,jp-axia.m0mentum.net
 DOMAIN-SUFFIX,jp1media.com
 DOMAIN-SUFFIX,jpaasne.e.shifen.com
 DOMAIN-SUFFIX,jpush.io
+DOMAIN-SUFFIX,jpvire.com
 DOMAIN-SUFFIX,jqsstwk8o2.babyparadise.dk
 DOMAIN-SUFFIX,js-agent.newrelic.com
 DOMAIN-SUFFIX,js-collector.icewood.net
@@ -6496,6 +6503,7 @@ DOMAIN-SUFFIX,kcwcohcmsotlsyn.com
 DOMAIN-SUFFIX,kdmupcsngkdoz.website
 DOMAIN-SUFFIX,kdnvieos.my
 DOMAIN-SUFFIX,kdpic.pchome.com.tw
+DOMAIN-SUFFIX,kdrvs.online
 DOMAIN-SUFFIX,kepler-37b.com
 DOMAIN-SUFFIX,kerebro.com
 DOMAIN-SUFFIX,ketchapp.org
@@ -9461,6 +9469,7 @@ DOMAIN-SUFFIX,ra.rockcontent.com
 DOMAIN-SUFFIX,ra1.xyz
 DOMAIN-SUFFIX,rac.ruutu.fi
 DOMAIN-SUFFIX,radar.imgsmail.ru
+DOMAIN-SUFFIX,radar.snitcher.com
 DOMAIN-SUFFIX,raggedapproaching.com
 DOMAIN-SUFFIX,rainbow-prod-jdlog.ldoverseas.com
 DOMAIN-SUFFIX,rainmaker.production-public.tubi.io
@@ -9565,6 +9574,7 @@ DOMAIN-SUFFIX,referrer.website
 DOMAIN-SUFFIX,refersion.com
 DOMAIN-SUFFIX,referwhen.com
 DOMAIN-SUFFIX,refinedads.com
+DOMAIN-SUFFIX,reflecting-nature.com
 DOMAIN-SUFFIX,refpakrtsb.top
 DOMAIN-SUFFIX,regi.di.atlas.samsung.com
 DOMAIN-SUFFIX,regionconfig.amplitude.com
@@ -10861,6 +10871,7 @@ DOMAIN-SUFFIX,stats.chiefsmurph.com
 DOMAIN-SUFFIX,stats.christianpost.com
 DOMAIN-SUFFIX,stats.cindervane.eu
 DOMAIN-SUFFIX,stats.cinevibe.asia
+DOMAIN-SUFFIX,stats.cleanip.io
 DOMAIN-SUFFIX,stats.clear-media.com
 DOMAIN-SUFFIX,stats.cn.ronghub.com
 DOMAIN-SUFFIX,stats.comparcom.fr
