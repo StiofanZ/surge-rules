@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-30T22:29:55+00:00
+# Generated: 2026-10-31T21:45:00+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31759, local=27, total(deduped)=26653, excluded=3
+# Counts: upstream=31772, local=27, total(deduped)=26661, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -134,6 +134,7 @@
 .18comic-god.xyz
 .18comic.cc
 .18comic.company
+.18comic.ink
 .18comic.org
 .18comic.vip
 .18commic.com
@@ -3683,6 +3684,7 @@ beck-online.beck.de
 .bingoporno.com
 .bingparachute.com
 .bingsandbox.com
+.bingstatic.com
 .bingvisualsearch.com
 .bingworld.com
 .bingx.com
@@ -4638,6 +4640,7 @@ blizzard.nefficient.co.kr
 .bscdnweb.com
 .bsi.ir
 .bsky.app
+.bsky.chat
 .bsky.network
 .bsky.social
 .bspb.ru
@@ -10112,6 +10115,7 @@ github-api.arkoselabs.com
 .githubassets.com
 .githubcopilot.com
 .githubhackathon.com
+.githubhelp.com
 .githubnext.com
 .githubpreview.dev
 .githubstatus.com
@@ -16051,6 +16055,7 @@ medone-education.thieme.com
 .msfteducation.ca
 .msftncsi.com
 .msftnet.org
+.msftstatic.com
 .msgamesresearch.com
 .msgamestudios.com
 .msha.gov
@@ -22619,9 +22624,12 @@ supercell.helpshift.com
 .tiktokglobalshopv.com
 .tiktokminis.us
 .tiktokrow-cdn.com
+.tiktokshop.com
+.tiktokstaticb.com
 .tiktokv.com
 .tiktokv.eu
 .tiktokv.us
+.tiktokvapp.com
 .tiktokw.eu
 .tiktokw.us
 .tilda.cc
