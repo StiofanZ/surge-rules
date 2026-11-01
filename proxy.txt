@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-10-31T21:45:00+00:00
+# Generated: 2026-11-01T22:12:30+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31772, local=27, total(deduped)=26661, excluded=3
+# Counts: upstream=31777, local=27, total(deduped)=26663, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -22812,6 +22812,7 @@ supercell.helpshift.com
 .torproject.org
 .torrentgalaxy.to
 .torrentkitty.tv
+.torrentleech.org
 .torrentprivacy.com
 .torrentproject.se
 .torrenty.org
@@ -26400,6 +26401,7 @@ yangzhi.app
 .youtubekids.com
 .youtubemobilesupport.com
 .youversion.com
+.youversionapi.com
 .youwin.com
 .youwuss.com
 .youx.xxx
