@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-01T22:12:30+00:00
+# Generated: 2026-11-03T01:04:04+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31777, local=27, total(deduped)=26663, excluded=3
+# Counts: upstream=31786, local=27, total(deduped)=26672, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -3970,6 +3970,7 @@ blizzard.nefficient.co.kr
 .bmia.org
 .bmj.com
 .bml.info
+.bmonkeys.net
 .bmw
 .bmw-abudhabi.com
 .bmw-adventskalender.com
@@ -4394,6 +4395,7 @@ blizzard.nefficient.co.kr
 .bokep.net
 .bokepseks.org
 .bokepvidz.com
+.boldgrid.com
 .bolehvpn.net
 .bollywoodlife.com
 .boltdns.net
@@ -5737,6 +5739,7 @@ cisco.evergage.com
 .cloudproxy.app
 .cloudrobotics.com
 .cloudvolumes.com
+.cloudwp.dev
 .cloudyzgirl.com
 .cloupia.com
 .cloupia.net
@@ -21680,6 +21683,7 @@ statsigapi.net
 .steamladder.com
 .steamofporn.com
 .steamos.cloud
+.steampeek.hu
 .steampowered.com
 .steamserver.net
 .steamstatic.com
@@ -24231,6 +24235,7 @@ utcnist3.colorado.edu
 .vodafone.de
 .vodafone.it
 .vodafone.nl
+.vodafoneziggo.nl
 .voicettank.org
 .vokevr.com
 .vol.moe
@@ -24690,7 +24695,9 @@ vsmarketplacebadge.apphb.com
 .webex.de
 .webex.es
 .webex.fr
+.webflow-ext.com
 .webflow.com
+.webflow.io
 .webgata.net
 .webgirlsonline.net
 .webhosting.com
@@ -24713,6 +24720,7 @@ vsmarketplacebadge.apphb.com
 .webrtc.org
 .websdr.org
 .webshare.io
+.website-files.com
 .website.new
 .webtoons.com
 .webtoonscorp.com
@@ -26560,6 +26568,7 @@ zftksc.launches.appsflyersdk.com
 .zhuzhushipin-app.com
 .zi.media
 .zibacity.com
+.ziggo.nl
 .ziglang.org
 .zigzag.kr
 .zillionk.com
