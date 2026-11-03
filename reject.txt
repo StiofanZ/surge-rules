@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-03T01:04:24+00:00
+# Generated: 2026-11-03T23:30:44+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14164, local=1, total(deduped)=13528, excluded=29
+# Counts: upstream=14173, local=1, total(deduped)=13537, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -541,6 +541,7 @@
 .acclog001.shop-pro.jp
 .acclog002.shop-pro.jp
 .account.beauty
+.accountut.com
 .accscdn.m.taobao.com
 .accuratecoal.com
 .acdn.newshuntads.com
@@ -2155,6 +2156,7 @@ api-eu.carrotquest.io
 api-js.mindbox.ru
 .api-ktm.kkday.com
 .api-log-upload.wenext.technology
+.api-node.corvexa.cloud
 .api-notify.markarch.com
 .api-pixels.easyadsapp.com
 api-ru.carrotquest.app
@@ -2444,6 +2446,7 @@ apilog-web.acfun.cn
 .astral.nicovideo.jp
 .astro-way.com
 .astrsk.net
+.asttoxa.ru
 .asumi.shinobi.jp
 .asv.transsion.com
 .async-px-eu.dynamicyield.com
@@ -2559,7 +2562,6 @@ apilog-web.acfun.cn
 .b.clipkit.co
 .b.ranking.apis.sankei-digital.co.jp
 .b.sli-spark.com
-.b.trueanthem.com
 .b.tryknowmad.com
 .b.videoamp.com
 .b0.yahoo.co.jp
@@ -2720,6 +2722,7 @@ beginners-adv.ozon.ru
 .beizi.biz
 .bekannt-im-web.de
 .beliebtestewebseite.de
+.bellnewyork.org
 .belstat.be
 .belstat.com
 .belstat.de
@@ -3591,6 +3594,7 @@ click.rustore.ru
 .collector.trendmd.com
 .collector.umogames.com
 .collector.vhx.tv
+.collector.wawlabs.com
 .collector.xhaccess.com
 .collector.xhamster.com
 .collector.xhofficial.com
@@ -5836,6 +5840,7 @@ google-analytics-suite.ozon.ru
 .hellay.net
 .hellosherpa.com
 .helpful-web.com
+.helpfulmaple.com
 .hemnes.win
 .hentaicounter.com
 .hentheautumnca.org
@@ -6280,6 +6285,7 @@ google-analytics-suite.ozon.ru
 .invoc.us
 .invoca.net
 .invoca.solutions
+.inyourpocket.co.uk
 .io.narrative.io
 .iocnt.net
 .iol.io
@@ -7147,6 +7153,7 @@ loyalnost-adv.ozon.ru
 .lytics.io
 .lytiks.com
 .lz-pub-ads.com
+.lzopmoas.in
 .m-adash.m.taobao.com
 .m-brain.fi
 .m-chromadrone.prod.suno.com
@@ -11615,6 +11622,7 @@ target.vk.com
 .telemetry.data.nvidia.com
 .telemetry.doxo.com
 .telemetry.dzen.ru
+.telemetry.ecosoft.group
 .telemetry.eyeo.com
 .telemetry.gfe.nvidia.com
 .telemetry.individual.githubcopilot.com
@@ -12429,6 +12437,7 @@ tracing-http.megamarket.tech
 .trt-scripts.usedrop.io
 .trt.usedrop.io
 .tru.am
+.trueanthem.com
 .truehits.in.th
 .truehits.net
 .truehits1.gits.net.th
