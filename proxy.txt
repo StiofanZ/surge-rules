@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-03T23:30:05+00:00
+# Generated: 2026-11-04T23:46:57+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31789, local=27, total(deduped)=26674, excluded=3
+# Counts: upstream=31794, local=27, total(deduped)=26679, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -14204,6 +14204,9 @@ licdn.cn.cdn20.com
 .lilhumpers.com
 .liliav.com
 .lilith-soft.com
+.limbuscompany.global
+.limbuscompanyapi.com
+.limbuscompanycdn.org
 .limedia.tw
 .limelight.com
 .limer.tw
@@ -19123,6 +19126,7 @@ prodregistryv2.org
 .projectcircuitbreaker.com
 .projecteuclid.org
 .projectjav.com
+.projectmoon.studio
 .projectmurphy.net
 .projectpoint.com
 .projectpoint.net
@@ -20999,6 +21003,7 @@ setup.workos.com
 .skillshare.com
 .skimtube.com
 .skinstrip.net
+.skinswap.com
 .skokka.com
 .sksarab.top
 .skunkgirl.cc
