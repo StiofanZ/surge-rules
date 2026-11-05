@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-04T23:47:13+00:00
+# Generated: 2026-11-05T23:44:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14175, local=1, total(deduped)=13539, excluded=29
+# Counts: upstream=14180, local=1, total(deduped)=13544, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -5242,6 +5242,7 @@ DOMAIN-SUFFIX,fls-na.amazon.com
 DOMAIN-SUFFIX,fluencymedia.com
 DOMAIN-SUFFIX,fluentmobile.com
 DOMAIN-SUFFIX,fluffy-analytics.vercel.app
+DOMAIN-SUFFIX,fluid-player-analytics.sky.it
 DOMAIN-SUFFIX,fluidsurveys.com
 DOMAIN-SUFFIX,flurry.cachefly.net
 DOMAIN-SUFFIX,flurry.com
@@ -6221,6 +6222,8 @@ DOMAIN-SUFFIX,insight.danawa.com
 DOMAIN-SUFFIX,insight.ucweb.com
 DOMAIN-SUFFIX,insightera.com
 DOMAIN-SUFFIX,insightgrit.com
+DOMAIN-SUFFIX,insightjs.com
+DOMAIN-SUFFIX,insightjs.org
 DOMAIN-SUFFIX,insights-categorizer-noneu.truecaller.com
 DOMAIN-SUFFIX,insights-collector.gog.com
 DOMAIN-SUFFIX,insights-collector.newrelic.com
@@ -6659,7 +6662,6 @@ DOMAIN-SUFFIX,leadinfo.net
 DOMAIN-SUFFIX,leadintelligence.co.uk
 DOMAIN-SUFFIX,leadium.com
 DOMAIN-SUFFIX,leadlab.click
-DOMAIN-SUFFIX,leadlife.com
 DOMAIN-SUFFIX,leadmanagerfx.com
 DOMAIN-SUFFIX,leadrebel.io
 DOMAIN-SUFFIX,leadsius.com
@@ -8794,6 +8796,7 @@ DOMAIN-SUFFIX,pbcs.decider.com
 DOMAIN-SUFFIX,pbcs.nypost.com
 DOMAIN-SUFFIX,pbcs.pagesix.com
 DOMAIN-SUFFIX,pbcs.realtor.com
+DOMAIN-SUFFIX,pbd.yahoo.com
 DOMAIN-SUFFIX,pbjs-stream.bydata.com
 DOMAIN-SUFFIX,pbjs.sskzlabs.com
 DOMAIN-SUFFIX,pbl3citto.com
@@ -8801,6 +8804,7 @@ DOMAIN-SUFFIX,pblog-vmap.getpublica.com
 DOMAIN-SUFFIX,pbmp.ali213.net
 DOMAIN-SUFFIX,pbox.photobox.de
 DOMAIN-SUFFIX,pbs.inmobi.com
+DOMAIN-SUFFIX,pbs.yahoo.com
 DOMAIN-SUFFIX,pbstck.com
 DOMAIN-SUFFIX,pc-agency24.de
 DOMAIN-SUFFIX,pc-mon.zijieapi.com
@@ -13546,6 +13550,7 @@ DOMAIN-SUFFIX,zoomanalytics.co
 DOMAIN-SUFFIX,zoomino.com
 DOMAIN-SUFFIX,zoosnet.net
 DOMAIN-SUFFIX,zoossoft.net
+DOMAIN-SUFFIX,zowiedead.com
 DOMAIN-SUFFIX,zprk.io
 DOMAIN-SUFFIX,zqtk.net
 DOMAIN-SUFFIX,zrraksfxccuop.online

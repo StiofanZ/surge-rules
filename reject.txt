@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-04T23:47:13+00:00
+# Generated: 2026-11-05T23:44:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14175, local=1, total(deduped)=13539, excluded=29
+# Counts: upstream=14180, local=1, total(deduped)=13544, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -5240,6 +5240,7 @@ error-tracking.megamarket.tech
 .fluencymedia.com
 .fluentmobile.com
 .fluffy-analytics.vercel.app
+.fluid-player-analytics.sky.it
 .fluidsurveys.com
 .flurry.cachefly.net
 .flurry.com
@@ -6219,6 +6220,8 @@ google-analytics-suite.ozon.ru
 .insight.ucweb.com
 .insightera.com
 .insightgrit.com
+.insightjs.com
+.insightjs.org
 .insights-categorizer-noneu.truecaller.com
 .insights-collector.gog.com
 .insights-collector.newrelic.com
@@ -6657,7 +6660,6 @@ google-analytics-suite.ozon.ru
 .leadintelligence.co.uk
 .leadium.com
 .leadlab.click
-.leadlife.com
 .leadmanagerfx.com
 .leadrebel.io
 .leadsius.com
@@ -8792,6 +8794,7 @@ p9-ad-sign.byteimg.com
 .pbcs.nypost.com
 .pbcs.pagesix.com
 .pbcs.realtor.com
+.pbd.yahoo.com
 .pbjs-stream.bydata.com
 .pbjs.sskzlabs.com
 .pbl3citto.com
@@ -8799,6 +8802,7 @@ p9-ad-sign.byteimg.com
 .pbmp.ali213.net
 .pbox.photobox.de
 .pbs.inmobi.com
+.pbs.yahoo.com
 .pbstck.com
 .pc-agency24.de
 .pc-mon.zijieapi.com
@@ -13544,6 +13548,7 @@ xapi.ozonru.me
 .zoomino.com
 .zoosnet.net
 .zoossoft.net
+.zowiedead.com
 .zprk.io
 .zqtk.net
 .zrraksfxccuop.online
