@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-05T23:44:07+00:00
+# Generated: 2026-11-06T23:18:27+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14180, local=1, total(deduped)=13544, excluded=29
+# Counts: upstream=14190, local=1, total(deduped)=13553, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -952,6 +952,8 @@ DOMAIN-SUFFIX,adrizer.com
 DOMAIN-SUFFIX,adrta.com
 DOMAIN-SUFFIX,ads-alpha.ewscloud.com
 DOMAIN-SUFFIX,ads-ap-venues.yinzcam.com
+DOMAIN-SUFFIX,ads-api-o.api.leiniao.com
+DOMAIN-SUFFIX,ads-api-t.my7v.com
 DOMAIN-SUFFIX,ads-api.duolingo.com
 DOMAIN-SUFFIX,ads-api.kidsnote.com
 DOMAIN-SUFFIX,ads-api.twitter.com
@@ -983,6 +985,7 @@ DOMAIN-SUFFIX,ads-lite2.net
 DOMAIN-SUFFIX,ads-m.rustore.ru
 DOMAIN-SUFFIX,ads-media.gameforge.com
 DOMAIN,ads-media.wildberries.ru
+DOMAIN-SUFFIX,ads-o.res.leiniao.com
 DOMAIN-SUFFIX,ads-partners.coupang.com
 DOMAIN-SUFFIX,ads-pixiv.net
 DOMAIN-SUFFIX,ads-privacy-api.prd.mz.internal.unity3d.com
@@ -3673,6 +3676,7 @@ DOMAIN-SUFFIX,contexthub.net
 DOMAIN-SUFFIX,contextual.media.net
 DOMAIN-SUFFIX,contextualadv.com
 DOMAIN-SUFFIX,controversychilly.com
+DOMAIN-SUFFIX,contuselegator.com
 DOMAIN-SUFFIX,convergeselect.net
 DOMAIN-SUFFIX,convergetrack.com
 DOMAIN-SUFFIX,conversionlogic.net
@@ -4596,6 +4600,7 @@ DOMAIN-SUFFIX,dutchrelay.com
 DOMAIN-SUFFIX,dutils.com
 DOMAIN-SUFFIX,dv663fc06d35i.cloudfront.net
 DOMAIN-SUFFIX,dvv009j588zal.cloudfront.net
+DOMAIN-SUFFIX,dvwztnx4ab3fl.cloudfront.net
 DOMAIN-SUFFIX,dw-eu.com.com
 DOMAIN-SUFFIX,dwf6crl4raal7.cloudfront.net
 DOMAIN-SUFFIX,dwh-prod.moz.de
@@ -6346,6 +6351,7 @@ DOMAIN-SUFFIX,irxcm.com
 DOMAIN-SUFFIX,is-log.furunavi.jp
 DOMAIN-SUFFIX,isdspeed.qq.com
 DOMAIN-SUFFIX,ish.tumedia.no
+DOMAIN-SUFFIX,isms-o.api.my7v.com
 DOMAIN-SUFFIX,iss.shopimind.com
 DOMAIN-SUFFIX,ist-track.com
 DOMAIN-SUFFIX,istat24.com
@@ -9534,6 +9540,7 @@ DOMAIN-SUFFIX,rdipmrbwgvk.com
 DOMAIN-SUFFIX,rdr.wargaming.net
 DOMAIN-SUFFIX,rdstation.com
 DOMAIN-SUFFIX,rdstation.com.br
+DOMAIN-SUFFIX,re-n-ai.com
 DOMAIN-SUFFIX,reachableads.com
 DOMAIN-SUFFIX,reachforce.com
 DOMAIN-SUFFIX,reachmax.cn
@@ -12380,6 +12387,7 @@ DOMAIN-SUFFIX,trailheadapp.com
 DOMAIN-SUFFIX,trakken.de
 DOMAIN-SUFFIX,traktum.com
 DOMAIN-SUFFIX,tralut.chatpdf.com
+DOMAIN-SUFFIX,trambelongedallure.com
 DOMAIN-SUFFIX,trandgid.com
 DOMAIN-SUFFIX,transaction-watcher-2.littledata.io
 DOMAIN-SUFFIX,transporter.makemytrip.global
@@ -12941,7 +12949,8 @@ DOMAIN-SUFFIX,visitortracklog.com
 DOMAIN-SUFFIX,visitorville.com
 DOMAIN-SUFFIX,visits.lt
 DOMAIN-SUFFIX,visitstreamer.com
-DOMAIN,visor.sberbank.ru
+DOMAIN-SUFFIX,visor.sberbank.ru
+DOMAIN-SUFFIX,visor.sbrf.ru
 DOMAIN-SUFFIX,visualdna.com
 DOMAIN-SUFFIX,visualrevenue.com
 DOMAIN-SUFFIX,visualwebsiteoptimizer.com

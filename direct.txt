@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-11-05T23:44:08+00:00
+# Generated: 2026-11-06T23:18:28+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=110189, local=2, total(deduped)=110026, excluded=33
+# Counts: upstream=110188, local=2, total(deduped)=110025, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -16923,6 +16923,7 @@ bookkeeper.itunes.apple.com
 .bsdongxin.com
 .bsdt1688.com
 .bsehk.com
+.bseinfo.net
 .bseqp.com
 .bserc.com
 .bsgcnc.com
@@ -21852,7 +21853,6 @@ checkin.gstatic.com
 .chuxinvip.com
 .chuxueyun.com
 .chuyaer.com
-.chuyu.me
 .chuzhaobiao.com
 .chvacuum.com
 .chvoice.com
@@ -35613,14 +35613,12 @@ g3.gstatic.com
 .gamehaopu.com
 .gamehome.tv
 .gameinns.com
-.gameitop.com
 .gamejym.com
 .gamekee.com
 .gamekezhan.com
 .gamekuaishou.com
 .gamelet.games
 .gameley.com
-.gameloop.com
 .gameloop.fun
 .gamemale.com
 .gamemcu.com
@@ -49909,7 +49907,6 @@ imasdk.googleapis.com
 .in-tencentclb.com
 .in-tencentclb.net
 .in-tencentclb.work
-.in.th
 .in001.com
 .in66.com
 .in800.com
@@ -61791,6 +61788,7 @@ ksn-verdict.geoksn.kaspersky.com
 .luyinla.com
 .luyinzhushou.com
 .luyitong.com
+.luyong.com
 .luyor.net
 .luyouqi.com
 .luyouwang.com
@@ -62589,9 +62587,6 @@ ksn-verdict.geoksn.kaspersky.com
 .magpiepharma.com
 .magtechjournal.com
 .magvision.com
-.mahjongai.net
-.mahjongcup.com
-.mahjongcup.net
 .mahoupao.com
 .mahua.com
 .mai.com
@@ -72073,7 +72068,6 @@ prod.databe.floonet.goog
 .proup.club
 .providence-chemicals.com
 .prowine-shanghai.com
-.proximabeta.com
 .proya-group.com
 .proya.com
 .proyy.com
@@ -75149,6 +75143,7 @@ qpx.googleflights.net
 .radiate-electronics.com
 .radida.com
 .radilush.com
+radio.itunes.apple.com
 .radio1964.com
 .radio366.com
 .radiotj.com
@@ -78511,6 +78506,7 @@ seed.siri.apple.com
 .senra.me
 .sense-hk.com
 .senseagro.com
+.senseavatar.com
 .senselock.com
 .senseluxury.com
 .senser.group
@@ -80771,6 +80767,7 @@ shell.cdn.office.net
 .shutu.cc
 .shutwin.com
 .shuwangxing.com
+.shuwen.com
 .shuwenxianyun.com
 .shuwulou.com
 .shuxiangmuye.com
@@ -86861,8 +86858,6 @@ tac.googleapis.com
 .tetuijiudian.com
 .tevachem.com
 .tex68.com
-.texasholdemcup.com
-.texasholdemcup.net
 .texpage.com
 .texpageusercontent.com
 .texpro-group.com
@@ -87469,6 +87464,7 @@ tf-feedback.itunes.apple.com
 .tidemedia.com
 .tidepharm.com
 .tidesec.com
+.tidesight.com
 .tideswing.fun
 .tidi.mobi
 .tiduyun.com
@@ -90536,6 +90532,7 @@ upp.itunes.apple.com
 .upsapp.com
 .upseller.com
 .upskyshanghai.com
+.upsort.com
 .upst86.com
 .uptom.com
 .uptougu.com
@@ -104359,6 +104356,7 @@ xtratime.qcomgeo2.com
 .yundonghao.com
 .yundongit.com
 .yundousoft.com
+.yundouxueyuan.com
 .yundui.cc
 .yunduimedia.com
 .yundun.com
@@ -105008,6 +105006,7 @@ xtratime.qcomgeo2.com
 .yy960.com
 .yyaotec.com
 .yyarea.com
+.yybip.com
 .yyblly.com
 .yybnet.net
 .yybox.cc

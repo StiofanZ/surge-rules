@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-05T23:44:07+00:00
+# Generated: 2026-11-06T23:18:27+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14180, local=1, total(deduped)=13544, excluded=29
+# Counts: upstream=14190, local=1, total(deduped)=13553, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -950,6 +950,8 @@ adblogger.vk.ru
 .adrta.com
 .ads-alpha.ewscloud.com
 .ads-ap-venues.yinzcam.com
+.ads-api-o.api.leiniao.com
+.ads-api-t.my7v.com
 .ads-api.duolingo.com
 .ads-api.kidsnote.com
 .ads-api.twitter.com
@@ -981,6 +983,7 @@ ads-integration.rustore.ru
 .ads-m.rustore.ru
 .ads-media.gameforge.com
 ads-media.wildberries.ru
+.ads-o.res.leiniao.com
 .ads-partners.coupang.com
 .ads-pixiv.net
 .ads-privacy-api.prd.mz.internal.unity3d.com
@@ -3671,6 +3674,7 @@ click.rustore.ru
 .contextual.media.net
 .contextualadv.com
 .controversychilly.com
+.contuselegator.com
 .convergeselect.net
 .convergetrack.com
 .conversionlogic.net
@@ -4594,6 +4598,7 @@ crashlyticsreports-pa.googleapis.com
 .dutils.com
 .dv663fc06d35i.cloudfront.net
 .dvv009j588zal.cloudfront.net
+.dvwztnx4ab3fl.cloudfront.net
 .dw-eu.com.com
 .dwf6crl4raal7.cloudfront.net
 .dwh-prod.moz.de
@@ -6344,6 +6349,7 @@ google-analytics-suite.ozon.ru
 .is-log.furunavi.jp
 .isdspeed.qq.com
 .ish.tumedia.no
+.isms-o.api.my7v.com
 .iss.shopimind.com
 .ist-track.com
 .istat24.com
@@ -9532,6 +9538,7 @@ r1.mail.ru
 .rdr.wargaming.net
 .rdstation.com
 .rdstation.com.br
+.re-n-ai.com
 .reachableads.com
 .reachforce.com
 .reachmax.cn
@@ -12378,6 +12385,7 @@ tracing-http.megamarket.tech
 .trakken.de
 .traktum.com
 .tralut.chatpdf.com
+.trambelongedallure.com
 .trandgid.com
 .transaction-watcher-2.littledata.io
 .transporter.makemytrip.global
@@ -12939,7 +12947,8 @@ tracing-http.megamarket.tech
 .visitorville.com
 .visits.lt
 .visitstreamer.com
-visor.sberbank.ru
+.visor.sberbank.ru
+.visor.sbrf.ru
 .visualdna.com
 .visualrevenue.com
 .visualwebsiteoptimizer.com
