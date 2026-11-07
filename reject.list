@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-06T23:18:27+00:00
+# Generated: 2026-11-07T22:04:12+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14190, local=1, total(deduped)=13553, excluded=29
+# Counts: upstream=14192, local=1, total(deduped)=13555, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -3592,6 +3592,7 @@ DOMAIN-SUFFIX,collector.rn.de
 DOMAIN-SUFFIX,collector.roistat.com
 DOMAIN-SUFFIX,collector.schibsted.io
 DOMAIN-SUFFIX,collector.scopely.io
+DOMAIN-SUFFIX,collector.snowplow.supercell.com
 DOMAIN-SUFFIX,collector.snplow.net
 DOMAIN-SUFFIX,collector.superwall.me
 DOMAIN-SUFFIX,collector.szlcsc.com
@@ -7952,6 +7953,7 @@ DOMAIN-SUFFIX,mixpanel-proxy.ted.com
 DOMAIN-SUFFIX,mixpanel.com
 DOMAIN-SUFFIX,mixpanel.tigocloud.net
 DOMAIN-SUFFIX,mj23.eulerian.com
+DOMAIN-SUFFIX,mkt.supercell.com
 DOMAIN-SUFFIX,mkt3261.com
 DOMAIN-SUFFIX,mkt51.net
 DOMAIN-SUFFIX,mkt941.com
