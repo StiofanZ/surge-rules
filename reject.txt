@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-08T22:17:09+00:00
+# Generated: 2026-11-10T01:39:50+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=14192, local=1, total(deduped)=13555, excluded=29
+# Counts: upstream=14198, local=1, total(deduped)=13561, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1941,6 +1941,7 @@ analytics-stage.wildberries.ru
 .analytics.rechtslupe.org
 .analytics.recruitics.com
 .analytics.redbubble.com
+.analytics.redflix.ac
 .analytics.regex101.com
 .analytics.renatafernandesimoveis.com.br
 .analytics.rev.iq
@@ -7153,6 +7154,7 @@ loyalnost-adv.ozon.ru
 .luugy.com
 .luxupcdnc.com
 .lw-c-log.lastwarapp.com
+.lw-c-log.lastwarapp.net
 .lwadm.com
 .lxqcgj.com
 .lxtrack.com
@@ -9178,6 +9180,7 @@ pixel.yandex.com
 .powerlinks.com
 .pp3-sdk-api.profilepassport.jp
 .pp3-sdkdata-v2-ut.profilepassport.jp
+.pp3-sdkdata-v2.profilepassport.jp
 .ppcent.org
 .ppcnt.org
 .ppoi.org
@@ -11117,6 +11120,7 @@ stats.telega.info
 .stats.velodirbtuve.lt
 .stats.victor-giroud.fr
 .stats.vidalytics.com
+.stats.vidbolt.pro
 .stats.video.globo.com
 .stats.videodelivery.net
 .stats.videoseyred.in
@@ -11332,6 +11336,7 @@ stats.telega.info
 .t.firstpromoter.com
 .t.flix360.com
 .t.frtyi.com
+.t.games.gg
 .t.ghostboard.io
 .t.gutsy.so
 .t.haydays.app
@@ -12338,6 +12343,7 @@ tracing-http.megamarket.tech
 .trackingmyadsas.com
 .trackingprd.hwwt8.com
 .trackkas.com
+.tracklet.prod.tech.as-nmt.de
 .tracklog.58.com
 .trackmyweb.net
 .tracks.hackmd.io
