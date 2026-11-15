@@ -1,6 +1,6 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-11-14T22:37:10+00:00
+# Generated: 2026-11-15T23:00:21+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=110239, local=2, total(deduped)=110076, excluded=33
+# Counts: upstream=110243, local=2, total(deduped)=110080, excluded=33
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -18085,6 +18085,7 @@ DOMAIN-SUFFIX,caps-china.org
 DOMAIN-SUFFIX,capsuleshanghai.com
 DOMAIN-SUFFIX,captain-cro.com
 DOMAIN-SUFFIX,captainbi.com
+DOMAIN-SUFFIX,captive.apple.com
 DOMAIN-SUFFIX,capturetheflag.fun
 DOMAIN-SUFFIX,capvision.com
 DOMAIN-SUFFIX,capwhale.com
@@ -24027,6 +24028,7 @@ DOMAIN-SUFFIX,conergas.net
 DOMAIN-SUFFIX,conew.com
 DOMAIN,configuration.apple.com
 DOMAIN,configuration.apple.com.akadns.net
+DOMAIN,configuration.ls.apple.com
 DOMAIN-SUFFIX,confluxrpc.com
 DOMAIN-SUFFIX,conghua.com
 DOMAIN-SUFFIX,congmiqq.com
@@ -65826,6 +65828,7 @@ DOMAIN-SUFFIX,musicedu8.com
 DOMAIN-SUFFIX,musiceol.com
 DOMAIN-SUFFIX,musicgw.com
 DOMAIN-SUFFIX,musiclemon.net
+DOMAIN,musicstatus.itunes.apple.com
 DOMAIN,musicstatus.music.apple.com
 DOMAIN-SUFFIX,musiness.vip
 DOMAIN-SUFFIX,muslimwww.com
@@ -66377,6 +66380,7 @@ DOMAIN-SUFFIX,mzsemi.com
 DOMAIN-SUFFIX,mzsmn.com
 DOMAIN-SUFFIX,mzsrmyy.com
 DOMAIN-SUFFIX,mzssysmyxgs.com
+DOMAIN,mzstorekit.itunes.apple.com
 DOMAIN-SUFFIX,mzsvn.com
 DOMAIN-SUFFIX,mztgame.com
 DOMAIN-SUFFIX,mztspa.com
