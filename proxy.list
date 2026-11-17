@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-15T22:59:50+00:00
+# Generated: 2026-11-17T01:54:26+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31810, local=27, total(deduped)=26689, excluded=3, rule_set_only=12
+# Counts: upstream=31812, local=27, total(deduped)=26691, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -6254,6 +6254,7 @@ DOMAIN-SUFFIX,cybertrust.co.jp
 DOMAIN-SUFFIX,cybertrust.ne.jp
 DOMAIN-SUFFIX,cyberx.com
 DOMAIN-SUFFIX,cygames.co.jp
+DOMAIN-SUFFIX,cygames.com
 DOMAIN-SUFFIX,cygames.jp
 DOMAIN-SUFFIX,cygwin.com
 DOMAIN-SUFFIX,cylink.pro
@@ -26105,6 +26106,7 @@ DOMAIN-SUFFIX,yavtube.com
 DOMAIN-SUFFIX,yaya.cyou
 DOMAIN-SUFFIX,yayadizhi.xyz
 DOMAIN-SUFFIX,yazhouse8.com
+DOMAIN-SUFFIX,yb-payment.ru
 DOMAIN-SUFFIX,yccdn.ru
 DOMAIN-SUFFIX,yclients.com
 DOMAIN-SUFFIX,ycombinator.com
