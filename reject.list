@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-17T01:55:02+00:00
+# Generated: 2026-11-18T01:03:18+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15624, local=1, total(deduped)=14984, excluded=29
+# Counts: upstream=15627, local=1, total(deduped)=14987, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2841,6 +2841,7 @@ DOMAIN-SUFFIX,backend-pixel.zotek.io
 DOMAIN-SUFFIX,backlink-test.de
 DOMAIN-SUFFIX,backlinkdino.de
 DOMAIN-SUFFIX,bacon.getcarro.com
+DOMAIN-SUFFIX,badge.dimensions.ai
 DOMAIN-SUFFIX,badjs.weixinbridge.com
 DOMAIN-SUFFIX,badylenicesist.com
 DOMAIN-SUFFIX,bagbeam.com
@@ -3018,6 +3019,7 @@ DOMAIN-SUFFIX,bi-tracker-global.rivergame.net
 DOMAIN-SUFFIX,bi.manhuaren.com
 DOMAIN-SUFFIX,bi.yeshen.com
 DOMAIN-SUFFIX,bia.brightinfo.com
+DOMAIN-SUFFIX,bianopixel.com
 DOMAIN-SUFFIX,bibincom.com
 DOMAIN-SUFFIX,bicp-analytics.postscript.io
 DOMAIN-SUFFIX,bid-algorix.com
@@ -3907,6 +3909,7 @@ DOMAIN-SUFFIX,confirmational.com
 DOMAIN-SUFFIX,congrab.com
 DOMAIN-SUFFIX,connead.net
 DOMAIN-SUFFIX,connect.blockboardtech.com
+DOMAIN-SUFFIX,connect.liblynx.com
 DOMAIN-SUFFIX,connect.primebase.io
 DOMAIN-SUFFIX,connexity.net
 DOMAIN-SUFFIX,consent-manager-events.ogury.io
