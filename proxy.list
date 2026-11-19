@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-18T01:02:52+00:00
+# Generated: 2026-11-19T00:32:29+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -7859,6 +7859,7 @@ DOMAIN-SUFFIX,elephanttube.com
 DOMAIN-SUFFIX,elephanttubenew.com
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabsusercontent.com
 DOMAIN-SUFFIX,elgaronline.com
 DOMAIN-SUFFIX,elgoog.im
 DOMAIN,elib.maruzen.co.jp
@@ -26070,7 +26071,6 @@ DOMAIN-SUFFIX,yandexdataschool.ru
 DOMAIN-SUFFIX,yandexgo.com
 DOMAIN-SUFFIX,yandexlyceum.ru
 DOMAIN-SUFFIX,yandexwebcache.net
-DOMAIN-SUFFIX,yandexwebcache.org
 DOMAIN-SUFFIX,yango-b2b.com
 DOMAIN-SUFFIX,yango-team.com
 DOMAIN-SUFFIX,yango-tech.com

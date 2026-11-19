@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-18T01:03:18+00:00
+# Generated: 2026-11-19T00:32:43+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15627, local=1, total(deduped)=14987, excluded=29
+# Counts: upstream=15628, local=1, total(deduped)=14988, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -12923,6 +12923,7 @@ DOMAIN-SUFFIX,temp.twicomi.com
 DOMAIN-SUFFIX,tempo-client-metric-prod.s3.amazonaws.com
 DOMAIN-SUFFIX,temptation.ad.nl
 DOMAIN-SUFFIX,tenant-content.apm.appfolio-analytics.com
+DOMAIN-SUFFIX,tencentads.com
 DOMAIN-SUFFIX,tentaculos.net
 DOMAIN-SUFFIX,terabytemedia.com
 DOMAIN-SUFFIX,teralog.techhub.co.kr

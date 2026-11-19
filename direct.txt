@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-11-18T01:03:19+00:00
+# Generated: 2026-11-19T00:32:44+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=110243, local=2, total(deduped)=110080, excluded=33
+# Counts: upstream=110247, local=2, total(deduped)=110084, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -59288,6 +59288,7 @@ ksn-verdict.geoksn.kaspersky.com
 .lenovoconnect.com
 .lenovoeservice.com
 .lenovofile.com
+.lenovofuturecenter.com
 .lenovogame.com
 .lenovohci.com
 .lenovohuishang.com
@@ -73996,6 +73997,7 @@ publicassets.cdn-apple.com
 .qpkaifa.com
 .qplus.com
 .qplusstatic.com
+.qpmcn.com
 .qpoc.com
 .qpstar.com
 .qpwater.com
@@ -88857,6 +88859,7 @@ tools.google.com
 .trpc.center
 .trpc.group
 .trpc.tech
+.trpcdn.com
 .trpcdn.net
 .trs-logistics.com
 .trsoft.vip
@@ -106483,6 +106486,7 @@ xtratime.qcomgeo2.com
 .zhaokuaizhao.com
 .zhaolaobanla.com
 .zhaoliangji.com
+.zhaoliangjipc.com
 .zhaoliming.net
 .zhaoming.biz
 .zhaomishijie.com
