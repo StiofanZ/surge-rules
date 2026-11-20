@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-19T00:32:43+00:00
+# Generated: 2026-11-20T00:43:12+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15628, local=1, total(deduped)=14988, excluded=29
+# Counts: upstream=15632, local=1, total(deduped)=14992, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1516,6 +1516,7 @@ agency-adv.ozon.ru
 .ampltd2.medal.tv
 .amptrack-dailymail-co-uk.cdn.ampproject.org
 .ams-beacons.xumo.com
+.ams-port.com
 .amung.us
 .amunx.de
 .an.b37mrtl.ru
@@ -3767,6 +3768,7 @@ click.rustore.ru
 .code.usergram.info
 .codedrink.com
 .codes.royalad.pl
+.cognitivlabs.com
 .coin-have.com
 .coinad.org
 .coinerra.com
@@ -10415,6 +10417,7 @@ r1.mail.ru
 .radar.snitcher.com
 .raggedapproaching.com
 .rainbow-prod-jdlog.ldoverseas.com
+.rainbow.sheepesports.com
 .rainmaker.production-public.tubi.io
 .rainmaker4.production-public.tubi.io
 .rakam-api.aptoide.com
@@ -10764,6 +10767,7 @@ rtlog5-applog.fqnovel.com
 .rumstat.cdnvideo.ru
 .rumt-sg.com
 .rumt-zh.com
+.runative-syndicate.com
 .rusty-heartbeat.services.ps.axelspringer.de
 .rutarget.ru
 .ruuaqkw.com
