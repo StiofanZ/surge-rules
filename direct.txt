@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: direct.txt (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-11-20T00:43:12+00:00
+# Generated: 2026-11-21T00:03:28+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=110247, local=2, total(deduped)=110084, excluded=33
+# Counts: upstream=110250, local=2, total(deduped)=110087, excluded=33
 #
 # Use in Surge config: DOMAIN-SET,<url>,DIRECT
 # Format:
@@ -30822,6 +30822,7 @@ downloaddispatch.itunes.apple.com
 .echo-isoftstone.com
 .echo188.com
 .echoing.tech
+.echooai.com
 .echoteen.com
 .echovelle.com
 .echu-cable.com
@@ -33073,6 +33074,7 @@ experiments.apple.com
 .fayufaguo.com
 .fazhi12368.com
 .fazhijx.com
+.fazhipro.com
 .fazz.fun
 .fb32dc52302e6b9b.com
 .fb46cd5483f029aa.com
@@ -76878,6 +76880,7 @@ s5.mzstatic.com
 .saaas.com
 .saagasports.com
 .saasddos.com
+.saasfz.com
 .saaslb.com
 .saasops.tech
 .saasruanjian.com

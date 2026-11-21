@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-20T00:43:12+00:00
+# Generated: 2026-11-21T00:03:27+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15632, local=1, total(deduped)=14992, excluded=29
+# Counts: upstream=15640, local=1, total(deduped)=15000, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -467,6 +467,7 @@
 .a.line.me
 .a.market.xiaomi.com
 .a.meloja.com.br
+.a.menards.com
 .a.mobify.com
 .a.mt.ru
 .a.mts.ru
@@ -1083,6 +1084,7 @@ ads.rustore.ru
 .ads.topsex.cc
 .ads.trafficjunky.net
 .ads.tvb.com
+.ads.tver.jp
 .ads.tvp.pl
 .ads.uc.cn
 .ads.union.jd.com
@@ -1201,6 +1203,7 @@ adstudio-assets.scdn.co
 .adsunflower.com
 .adsview.qq.com
 .adsview2.qq.com
+.adsvr.tver.jp
 .adsximg.com
 .adsyou.pro
 .adtag.sphdigital.com
@@ -1383,6 +1386,7 @@ advk.vk.ru
 .affistats.com
 .afflaze.com
 .affsnetwork.com
+.afhovwatn.in
 .afi-b.com
 .afi-thor.com
 .afl.rozetka.com.ua
@@ -3557,6 +3561,7 @@ bs.mail.ru
 .checkmygeo.com
 .checkstat.nl
 .checkyourgeo.info
+.cheeseoverlordsaline.com
 .china-caa.org
 .chinaciaf.org
 .chloro.trip.com
@@ -5209,6 +5214,7 @@ error-tracking.megamarket.tech
 .event-dot-learning-piano.appspot.com
 .event-dot-procolor-backend.appspot.com
 .event-gateway.data.karrotmarket.com
+.event-ingestion.yazio-analytics.com
 .event-log-api-data-platform-data-lake-prod.gryphline.com
 .event-log-api-ipv6.gryphline.com
 .event-portal.dailyinnovation.biz
@@ -5580,6 +5586,7 @@ error-tracking.megamarket.tech
 .fnozzitywh.com
 .fnyfeds.com
 .focas.jp
+.fod-cm-ad-v.webcdn.stream.ne.jp
 .foisonad.com
 .followercounter.com
 .foot.wiki
@@ -5672,6 +5679,7 @@ error-tracking.megamarket.tech
 .fueldeck.com
 .fuelx.com
 .fugetech.com
+.fujckovr.in
 .fullstory.com
 .fun-hits.com
 .functions.raabkarcher.de
@@ -10038,6 +10046,7 @@ pixel.yandex.com
 .pob-mob2.websearchbrowser.com
 .pocitadlo.cz
 .pocketads.pl
+.pockett3.com
 .poeticmetric.com
 .pointmediatracker.com
 .pokoran.com
@@ -10882,6 +10891,7 @@ rtlog5-applog.fqnovel.com
 .sanjagh.com
 .sapha.com
 .sapi.tremendous.com
+.saqtuwrryaft.in
 .sas.a.int-nft.peacocktv.com
 .sas.a.peacocktv.com
 .sas.a.stable-int.peacocktv.com
@@ -12487,7 +12497,6 @@ stats.telega.info
 .swssp.simplywall.st
 .swwtj3.cyou
 .sx.fakjkwp.cn
-.sy.ameba.jp
 .sygrip.info
 .syh.zybang.com
 .sync.adap.tv
@@ -14851,7 +14860,6 @@ xapi.ozonru.me
 .yariman.online
 .yatr.ru
 .yaudience.com
-.yazio-analytics.com
 .ybotvisit.com
 .ybx.yahoo.co.jp
 .yc-ads.s3.amazonaws.com

@@ -1,6 +1,6 @@
 # Surge RULE-SET: direct.list (direct)
 # Description: Domains that should connect directly. Upstream Loyalsoldier/surge-rules ruleset/direct.txt converted from Surge RULE-SET format.
-# Generated: 2026-11-20T00:43:12+00:00
+# Generated: 2026-11-21T00:03:28+00:00
 # Sources:
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
 #   [include] includes/direct/bitget.txt
@@ -9,7 +9,7 @@
 #   [exclude] excludes/direct/recaptcha.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
-# Counts: upstream=110247, local=2, total(deduped)=110084, excluded=33
+# Counts: upstream=110250, local=2, total(deduped)=110087, excluded=33
 #
 # Use in Surge config: RULE-SET,<url>,DIRECT
 # Format:
@@ -30824,6 +30824,7 @@ DOMAIN-SUFFIX,echippqc.com
 DOMAIN-SUFFIX,echo-isoftstone.com
 DOMAIN-SUFFIX,echo188.com
 DOMAIN-SUFFIX,echoing.tech
+DOMAIN-SUFFIX,echooai.com
 DOMAIN-SUFFIX,echoteen.com
 DOMAIN-SUFFIX,echovelle.com
 DOMAIN-SUFFIX,echu-cable.com
@@ -33075,6 +33076,7 @@ DOMAIN-SUFFIX,fayiyi.com
 DOMAIN-SUFFIX,fayufaguo.com
 DOMAIN-SUFFIX,fazhi12368.com
 DOMAIN-SUFFIX,fazhijx.com
+DOMAIN-SUFFIX,fazhipro.com
 DOMAIN-SUFFIX,fazz.fun
 DOMAIN-SUFFIX,fb32dc52302e6b9b.com
 DOMAIN-SUFFIX,fb46cd5483f029aa.com
@@ -76880,6 +76882,7 @@ DOMAIN-SUFFIX,sa96.com
 DOMAIN-SUFFIX,saaas.com
 DOMAIN-SUFFIX,saagasports.com
 DOMAIN-SUFFIX,saasddos.com
+DOMAIN-SUFFIX,saasfz.com
 DOMAIN-SUFFIX,saaslb.com
 DOMAIN-SUFFIX,saasops.tech
 DOMAIN-SUFFIX,saasruanjian.com

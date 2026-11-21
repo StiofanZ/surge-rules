@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-20T00:43:12+00:00
+# Generated: 2026-11-21T00:03:27+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15632, local=1, total(deduped)=14992, excluded=29
+# Counts: upstream=15640, local=1, total(deduped)=15000, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -469,6 +469,7 @@ DOMAIN-SUFFIX,a.letsjerk.to
 DOMAIN-SUFFIX,a.line.me
 DOMAIN-SUFFIX,a.market.xiaomi.com
 DOMAIN-SUFFIX,a.meloja.com.br
+DOMAIN-SUFFIX,a.menards.com
 DOMAIN-SUFFIX,a.mobify.com
 DOMAIN-SUFFIX,a.mt.ru
 DOMAIN-SUFFIX,a.mts.ru
@@ -1085,6 +1086,7 @@ DOMAIN-SUFFIX,ads.thetimes.co.uk
 DOMAIN-SUFFIX,ads.topsex.cc
 DOMAIN-SUFFIX,ads.trafficjunky.net
 DOMAIN-SUFFIX,ads.tvb.com
+DOMAIN-SUFFIX,ads.tver.jp
 DOMAIN-SUFFIX,ads.tvp.pl
 DOMAIN-SUFFIX,ads.uc.cn
 DOMAIN-SUFFIX,ads.union.jd.com
@@ -1203,6 +1205,7 @@ DOMAIN,adstudio-assets.scdn.co
 DOMAIN-SUFFIX,adsunflower.com
 DOMAIN-SUFFIX,adsview.qq.com
 DOMAIN-SUFFIX,adsview2.qq.com
+DOMAIN-SUFFIX,adsvr.tver.jp
 DOMAIN-SUFFIX,adsximg.com
 DOMAIN-SUFFIX,adsyou.pro
 DOMAIN-SUFFIX,adtag.sphdigital.com
@@ -1385,6 +1388,7 @@ DOMAIN-SUFFIX,affinitymatrix.com
 DOMAIN-SUFFIX,affistats.com
 DOMAIN-SUFFIX,afflaze.com
 DOMAIN-SUFFIX,affsnetwork.com
+DOMAIN-SUFFIX,afhovwatn.in
 DOMAIN-SUFFIX,afi-b.com
 DOMAIN-SUFFIX,afi-thor.com
 DOMAIN-SUFFIX,afl.rozetka.com.ua
@@ -3559,6 +3563,7 @@ DOMAIN-SUFFIX,checkeffect.at
 DOMAIN-SUFFIX,checkmygeo.com
 DOMAIN-SUFFIX,checkstat.nl
 DOMAIN-SUFFIX,checkyourgeo.info
+DOMAIN-SUFFIX,cheeseoverlordsaline.com
 DOMAIN-SUFFIX,china-caa.org
 DOMAIN-SUFFIX,chinaciaf.org
 DOMAIN-SUFFIX,chloro.trip.com
@@ -5211,6 +5216,7 @@ DOMAIN-SUFFIX,event-collector.prd.data.s.joyn.de
 DOMAIN-SUFFIX,event-dot-learning-piano.appspot.com
 DOMAIN-SUFFIX,event-dot-procolor-backend.appspot.com
 DOMAIN-SUFFIX,event-gateway.data.karrotmarket.com
+DOMAIN-SUFFIX,event-ingestion.yazio-analytics.com
 DOMAIN-SUFFIX,event-log-api-data-platform-data-lake-prod.gryphline.com
 DOMAIN-SUFFIX,event-log-api-ipv6.gryphline.com
 DOMAIN-SUFFIX,event-portal.dailyinnovation.biz
@@ -5582,6 +5588,7 @@ DOMAIN-SUFFIX,fnl.quizizz.com
 DOMAIN-SUFFIX,fnozzitywh.com
 DOMAIN-SUFFIX,fnyfeds.com
 DOMAIN-SUFFIX,focas.jp
+DOMAIN-SUFFIX,fod-cm-ad-v.webcdn.stream.ne.jp
 DOMAIN-SUFFIX,foisonad.com
 DOMAIN-SUFFIX,followercounter.com
 DOMAIN-SUFFIX,foot.wiki
@@ -5674,6 +5681,7 @@ DOMAIN-SUFFIX,fubuki-umami.space
 DOMAIN-SUFFIX,fueldeck.com
 DOMAIN-SUFFIX,fuelx.com
 DOMAIN-SUFFIX,fugetech.com
+DOMAIN-SUFFIX,fujckovr.in
 DOMAIN-SUFFIX,fullstory.com
 DOMAIN-SUFFIX,fun-hits.com
 DOMAIN-SUFFIX,functions.raabkarcher.de
@@ -10040,6 +10048,7 @@ DOMAIN-SUFFIX,po.ponant.com
 DOMAIN-SUFFIX,pob-mob2.websearchbrowser.com
 DOMAIN-SUFFIX,pocitadlo.cz
 DOMAIN-SUFFIX,pocketads.pl
+DOMAIN-SUFFIX,pockett3.com
 DOMAIN-SUFFIX,poeticmetric.com
 DOMAIN-SUFFIX,pointmediatracker.com
 DOMAIN-SUFFIX,pokoran.com
@@ -10884,6 +10893,7 @@ DOMAIN-SUFFIX,sanity-dataplane.rudderstack.com
 DOMAIN-SUFFIX,sanjagh.com
 DOMAIN-SUFFIX,sapha.com
 DOMAIN-SUFFIX,sapi.tremendous.com
+DOMAIN-SUFFIX,saqtuwrryaft.in
 DOMAIN-SUFFIX,sas.a.int-nft.peacocktv.com
 DOMAIN-SUFFIX,sas.a.peacocktv.com
 DOMAIN-SUFFIX,sas.a.stable-int.peacocktv.com
@@ -12489,7 +12499,6 @@ DOMAIN-SUFFIX,swsdd.simplywall.st
 DOMAIN-SUFFIX,swssp.simplywall.st
 DOMAIN-SUFFIX,swwtj3.cyou
 DOMAIN-SUFFIX,sx.fakjkwp.cn
-DOMAIN-SUFFIX,sy.ameba.jp
 DOMAIN-SUFFIX,sygrip.info
 DOMAIN-SUFFIX,syh.zybang.com
 DOMAIN-SUFFIX,sync.adap.tv
@@ -14853,7 +14862,6 @@ DOMAIN-SUFFIX,yango-ads.com
 DOMAIN-SUFFIX,yariman.online
 DOMAIN-SUFFIX,yatr.ru
 DOMAIN-SUFFIX,yaudience.com
-DOMAIN-SUFFIX,yazio-analytics.com
 DOMAIN-SUFFIX,ybotvisit.com
 DOMAIN-SUFFIX,ybx.yahoo.co.jp
 DOMAIN-SUFFIX,yc-ads.s3.amazonaws.com

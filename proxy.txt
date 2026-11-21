@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-20T00:42:56+00:00
+# Generated: 2026-11-21T00:03:15+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31812, local=27, total(deduped)=26691, excluded=3
+# Counts: upstream=31729, local=27, total(deduped)=26580, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -346,7 +346,6 @@
 .3xxx.pro
 .404museum.com
 .40momporntube.com
-.40shopping.com
 .40somethingmag.com
 .41maonn.com
 .444.coffee
@@ -644,7 +643,6 @@ a4e8s8k3.map2.ssl.hwcdn.net
 .aaex.uk
 .aalah.me
 .aamacau.com
-.aanaan.com
 .aapl.tw
 .aaplimg.com
 .aave.com
@@ -1013,7 +1011,6 @@ adobeereg.com
 .advertfan.com
 .advertisercommunity.com
 .adx.promo
-.aeasyshop.com
 .aebn.com
 .aecexcellence.com
 .aei.org
@@ -1186,7 +1183,6 @@ agb9r0ad.qllfkl.com
 .airiti.com
 .airitilibrary.com
 .airmax360.com
-.airmay.com
 .airport-gov-cn.com
 .airport.brussels
 .airport.com
@@ -1249,7 +1245,6 @@ agb9r0ad.qllfkl.com
 .aizyk.xyz
 .ajplus.net
 .ajsjx.com
-.ajtalk.com
 .ak1.net
 .aka-ai.com
 .aka-ai.net
@@ -1793,7 +1788,6 @@ angle.com.tw
 .annas-archive.gd
 .annas-archive.gl
 .annas-archive.pk
-.annstores.net
 .annualpelvicexam.com
 .annualreviews.org
 .anobii.com
@@ -1838,7 +1832,6 @@ angle.com.tw
 .aoc.cat
 .aodahl.com
 .aofriend.com
-.aokwholesale.net
 .aolcdn.com
 .aomedia.org
 .aomiwang.com
@@ -2926,7 +2919,6 @@ api-p.videomarket.jp
 .badteenspunished.com
 .badvirtue.com
 .baeb.com
-.bag-glasses1.com
 .bahamut.com.tw
 .bai29.xyz
 .baicaonetwork.com
@@ -2951,7 +2943,6 @@ api-p.videomarket.jp
 .bandag.cc
 .bandag.com
 .bandcamp.com
-.bandgirlz.com
 .bandpage.com
 .bandwagonhost.com
 .bang-dream.com
@@ -3026,7 +3017,6 @@ api-p.videomarket.jp
 .battlefrontii.com
 .battlelog.com
 .battleye.com
-.baxsound.com
 .bayareabmw.com
 .bayvoice.net
 .bazel.build
@@ -3049,7 +3039,6 @@ api-p.videomarket.jp
 .bbcpersian.com
 .bbcpornonly.com
 .bbcverticals.com
-.bbestmall.com
 .bbg.gov
 .bbgevent.com
 .bbgwatch.com
@@ -3399,7 +3388,6 @@ beck-online.beck.de
 .beget.ru
 .beget.tech
 .begetcdn.cloud
-.begin-trade.com
 .behance.net
 .behindthescreenz.com
 .beibao.com
@@ -3608,7 +3596,6 @@ beck-online.beck.de
 .bigtitvenera.com
 .bigtopsites.com
 .biguz.net
-.biitii.com
 .bijukujo.club
 .bikaa.xyz
 .bikac.xyz
@@ -3943,7 +3930,6 @@ blizzard.nefficient.co.kr
 .bloombergvault.com
 .bloombergview.com
 .bloomfortune.com
-.bloommicroventures.com
 .bloomsburycollections.com
 .bloomsburydesignlibrary.com
 .blowjobit.com
@@ -4429,7 +4415,6 @@ blizzard.nefficient.co.kr
 .bookmark.xxx
 .bookmate.ru
 .bookmybridgestonetyre.com
-.bookonsky.net
 .books.com.tw
 .booksc.eu
 .booksc.me
@@ -4467,7 +4452,6 @@ blizzard.nefficient.co.kr
 .bosharso.net
 .boslife.biz
 .boslife.net
-.bossae.com
 .bossagency.co.uk
 .boswp.com
 .botanwang.com
@@ -4516,11 +4500,7 @@ blizzard.nefficient.co.kr
 .braintreeps.com
 .branchportal.com
 .brand-protection-team.com
-.brandeasygo.com
-.brandelectronic.com
 .brandporno.com
-.brandproducts1688.com
-.brands098.com
 .brantect.com
 .brasilincesto.com
 .brasiltudoliberado.com
@@ -4741,7 +4721,6 @@ blizzard.nefficient.co.kr
 .businessinsider.nl
 .businessinsider.sg
 .businesstoday.com.tw
-.businesswebwise.com
 .businessweek.com
 .businessweekly.com.tw
 .businessweekmag.com
@@ -4761,7 +4740,6 @@ blizzard.nefficient.co.kr
 .bustysammieblack.com
 .busu.org
 .busybox.net
-.buy-from-shanghai.com
 .buyaapl.com
 .buyaapl.net
 .buyaltera.com
@@ -4791,8 +4769,6 @@ blizzard.nefficient.co.kr
 .buypass.no
 .buypass.se
 .buyservices.com
-.buyshoponly.com
-.buzzardflapper.com
 .buzzav.com
 .buzzorange.com
 .buzzsprout.com
@@ -5370,8 +5346,6 @@ cdn.workos.com
 .cheapestbeatsdrdre.com
 .cheapheadphonesland.com
 .cheapheadphonessale.com
-.cheapheadsetmall.com
-.cheapheadsetshop.com
 .cheapmonsterbeatsbydrdre.com
 .cheapmonsterbeatsheadsets.com
 .cheapmonsterbeatssale.com
@@ -5381,11 +5355,8 @@ cdn.workos.com
 .cheapnikedunks.com
 .cheapnikeoutlet.com
 .cheapsalemonster.com
-.cheapshoesvip.com
-.cheapwireless04.com
 .cheapwirelessbeats.com
 .checkgfw.com
-.cheerwholesale.us
 .chef.io
 .chegg.com
 .cheggcdn.com
@@ -5420,7 +5391,6 @@ cdn.workos.com
 .chickstagram.com
 .chickteases.com
 .chid.com.mm
-.chihair-straightener.com
 .chii.in
 .chikiporn.com
 .chikubank.co.jp
@@ -5443,7 +5413,6 @@ cdn.workos.com
 .chinaaid.us
 .chinachange.org
 .chinachannel.hk
-.chinaclothesstore.com
 .chinadecoding.com
 .chinademocrats.org
 .chinadialogue.net
@@ -5531,7 +5500,6 @@ cdn.workos.com
 .cian.ru
 .cian.site
 .ciangroup.ru
-.ciattackers.com
 .cibank.ru
 .cici.com
 .ciciai.com
@@ -5760,9 +5728,9 @@ cisco.evergage.com
 .cm.expert
 .cmcn.org
 .cmegroup.com
-.cmhalq.com
 .cmi.org.tw
 .cmmedia.com.tw
+.cmoney.tw
 .cmpaas.com
 .cmrbank.ru
 .cms-twdigitalassets.com
@@ -5802,7 +5770,6 @@ cisco.evergage.com
 .cnnpolitics.com
 .cnpmjs.org
 .cnpolitics.org
-.cnshopin.com
 .cnyes.com
 .cnzjp.xyz
 .co.ng.mil
@@ -6050,7 +6017,6 @@ cisco.evergage.com
 .cpu-monkey.com
 .cpz.to
 .cq99.us
-.cqcorea.com
 .crabporn.com
 .crackle.com
 .craftifyx.com
@@ -6182,7 +6148,6 @@ crl.versign.net
 .cuckwatchingwife.com
 .cuckwimp.com
 .cuebic.biz
-.cuffiesaldi.com
 .cuhk.hk
 .cuinc.oen.tw
 .cuinc.tw
@@ -6326,7 +6291,6 @@ crl.versign.net
 .dandanplay.com
 .dandanplay.net
 .dandanzan.cc
-.danemarket.com
 .danke4china.net
 .danmarkbeatsbydrdre.com
 .danskpornofilm.com
@@ -6697,7 +6661,6 @@ deribit.cdn.prismic.io
 .desktopmovies.org
 .dessci.com
 .destinationbim.com
-.detaliczny.com
 .detentiongirls.com
 .detodosparatodos.org
 .detpress.com
@@ -7359,7 +7322,6 @@ dl.begellhouse.com
 .dtci.technology
 .dtiblog.com
 .dtic.mil
-.dtsell.com
 .dtv2009offers.com
 .dtvce.com
 .dualeotruyen1s.com
@@ -7519,6 +7481,7 @@ dl.begellhouse.com
 .e-goods.ru
 .e-hentai.org
 .e-hentaidb.com
+.e-info.org.tw
 .e-szigno.hu
 .e-tugra.com
 .e-zone.com.hk
@@ -7546,7 +7509,6 @@ dl.begellhouse.com
 .eaplay.com
 .earlytibet.com
 .earngeek.com
-.earphonescheapest.com
 .earpod.net
 .earthdell.com
 .earthvpn.com
@@ -7760,7 +7722,6 @@ dl.begellhouse.com
 .ebscohost.com
 .ebtcbank.com
 .ebuyer.com
-.ebuyheadphones.com
 .ecbsn.com
 .ecchinohentai.ru
 .ecert.gov.hk
@@ -8189,7 +8150,6 @@ elib.maruzen.co.jp
 .estudiopenthouse.com
 .esurance.com
 .etbc.com.hk
-.etheadphones.com
 .etherdelta.com
 .ethereum.foundation
 .ethereum.org
@@ -8633,7 +8593,6 @@ f3b7q2p3.ssl.hwcdn.net
 .familyswap.xxx
 .famima.vn
 .famitsu.com
-.famosascalvas.com
 .famous-nudes.com
 .famousinternetgirls.com
 .famousinternetgirlsgalleries.com
@@ -9392,11 +9351,9 @@ forwarder.workos.com
 .frcasquesbeats.com
 .freakshare.com
 .free-3d-porn.com
-.free-aa.com
 .free-abbywinters.com
 .free-avx.jp
 .free-erobooks.com
-.free-sns.com
 .free-ss.site
 .free-strip-games.com
 .free-wap-tube.com
@@ -9515,7 +9472,6 @@ forwarder.workos.com
 .fril.jp
 .fring.com
 .fringenetwork.com
-.frishoes.com
 .fritchy.com
 .frommel.net
 .frontiersin.org
@@ -9726,7 +9682,6 @@ forwarder.workos.com
 .gamcore.com
 .game-platform.net
 .game-repack.site
-.game735.com
 .gameapps.hk
 .gamebanana.com
 .gamebase.com.tw
@@ -9756,6 +9711,7 @@ forwarder.workos.com
 .gamewtb.com
 .gamez.com.tw
 .gaming-notebooks.com
+.gamma.app
 .gandhara.ru
 .gandi.net
 .ganjing.com
@@ -10196,7 +10152,6 @@ gitlab-assets.oss-cn-hongkong.aliyuncs.com
 .gmail.com
 .gmgard.com
 .gmgn.ai
-.gmnetworks.net
 .gmo
 .gmo-aozora.com
 .gmo-app.jp
@@ -10326,7 +10281,6 @@ gog-cdn-lumen.secure2.footprint.net
 .goodporno.cc
 .goodreaders.com
 .goodreads.com
-.goodsdunk.net
 .goodsexporn.org
 .goodsrv.de
 .goofind.com
@@ -10710,6 +10664,7 @@ gog-cdn-lumen.secure2.footprint.net
 .greatgame.asia
 .greatretroporn.com
 .green-box-tv.com
+.greenbean.media
 .greenbuildingstudio.com
 .greenend.org.uk
 .greenlakeaas.com
@@ -11025,20 +10980,12 @@ hb4bbbbb.pmhcjk.com
 .hdzog.com
 .he.net
 .headlinejobs.hk
-.headphonepubs.com
-.headphones-cool.com
 .headphones-dre.com
 .headphones-outlet-online.com
 .headphonesbeatsaudio.com
 .headphonesbeatsbydre.com
 .headphoneses.com
-.headphoneshome.com
-.headphoneshotsales.com
-.headphonesol.com
 .headphonesretailer.com
-.headphonessupply.com
-.headphonezip.com
-.headset987.com
 .health026.click
 .healthcarecareeronline.com
 .healthreach.hk
@@ -11320,10 +11267,8 @@ hb4bbbbb.pmhcjk.com
 .hindiweb.com
 .hindustantimes.com
 .hinet.net
-.hipaa6020.com
 .hiporn.net
 .hippyhillscomix.com
-.hipzoom.net
 .hiroshimabank.co.jp
 .historylines.net
 .historyofdota.com
@@ -11354,9 +11299,11 @@ hb4bbbbb.pmhcjk.com
 .hkchronicles.com
 .hkcircleapp.com
 .hkcitizenmedia.com
+.hkcitycreation.com
 .hkcnews.com
 .hkcoc.com
 .hkcoc.weather.com.hk
+.hkcourtnews.com
 .hkcsl.com
 .hkdc.us
 .hkedcity.net
@@ -11367,6 +11314,7 @@ hb4bbbbb.pmhcjk.com
 .hkf202311.site
 .hkf202312.shop
 .hkfaa.com
+.hkfeature.com
 .hkgalden.com
 .hkgolden.com
 .hkgolden.media
@@ -11457,7 +11405,6 @@ holoxx.f5.si
 .hometrack.com.au
 .hominis.media
 .homo.xxx
-.honawalaan.com
 .honestpornreviews.com
 .hongjie10.xyz
 .hongjie11.xyz
@@ -11568,7 +11515,6 @@ holoxx.f5.si
 .hotstunners.com
 .hotteenfreecam.com
 .hottestfilms.com
-.hottestheadphonesonline.com
 .hottg.com
 .hottystop.com
 .hotvpn.com
@@ -11729,7 +11675,6 @@ hpstore.corpmerchandise.com
 .hrecords.jp
 .hrichina.org
 .hrntt.org
-.hrsaz.com
 .hrtek.ru
 .hrw.org
 .hsbc
@@ -12196,7 +12141,6 @@ i.jeded.com
 .ignitesasia.com
 .igniteseurope.com
 .igoogle.com
-.igoshopping.net
 .igotpornpics.com
 .igpublish.com
 .igsonar.com
@@ -12312,7 +12256,6 @@ i.jeded.com
 .ilife.wang
 .illawarramercury.com.au
 .illgames.jp
-.illianacomputerrecycling.com
 .illusion111.com
 .illusionas.com
 .illusionchn.com
@@ -12417,7 +12360,6 @@ imperial.insendi.com
 .inaporn.com
 .inasian.club
 .inbox.ru
-.incentivetravelgifts.com
 .incestflix.com
 .incesto.blog.br
 .incestporn.xxx
@@ -12906,7 +12848,6 @@ imperial.insendi.com
 .iphone5casescovers.com
 .iphone5s5case.com
 .iphoneacessorios.com.br
-.iphonecase2013.com
 .iphonecase5.com
 .iphonecases100.com
 .iphonecases5.com
@@ -13019,7 +12960,6 @@ imperial.insendi.com
 .iskoot.com
 .islam.org.hk
 .islamhouse.com
-.islamiccenterofnewlondon.com
 .ismaelan.com
 .ismprofessional.net
 .isnbank.ru
@@ -13757,7 +13697,6 @@ imperial.insendi.com
 .kichikuou.com
 .kick.com
 .kickporn.com
-.kickshatchannel.com
 .kicksnike1.com
 .kicu.tv
 .kidgrid.tv
@@ -13902,7 +13841,6 @@ imperial.insendi.com
 .konamistyle.jp
 .koolsolutions.com
 .koornk.com
-.kopfhorergunstigshop.com
 .koranmandarin.com
 .koreanpornmovie.com
 .korewaeroi.com
@@ -14085,7 +14023,6 @@ imperial.insendi.com
 .lecoin.cc
 .lede-project.org
 .ledger.com
-.leecountytimes.com
 .left21.hk
 .legaltracker.com
 .legra.ph
@@ -14133,7 +14070,6 @@ imperial.insendi.com
 .lewdweb.net
 .lexica.art
 .lexisnexis.com
-.lexuemei.com
 .lezpoo.com
 .lfai.foundation
 .lg.com
@@ -14183,6 +14119,7 @@ licdn.cn.cdn20.com
 .lifeatspotify.com
 .lifemiles.com
 .lifeselector.com
+.lifesitenews.com
 .lifestyle-tec.ru
 .lifewire.com
 .lightbridge.com
@@ -14484,7 +14421,6 @@ live-patreon-marketing.pantheonsite.io
 .lucasentertainment.com
 .lucasfilm.com
 .luckydesigner.space
-.luckyissue.com
 .luckymobile.ca
 .luckysrv.de
 .ludepress.com
@@ -14521,7 +14457,6 @@ live-patreon-marketing.pantheonsite.io
 .lysol.com
 .lysol.com.mx
 .lysol.net
-.lyzsxx.com
 .lzjscript.com
 .lzmtnews.org
 .m-power.com
@@ -14655,7 +14590,6 @@ live-patreon-marketing.pantheonsite.io
 .makearmanotwar.com
 .makebettercode.com
 .makecode.org
-.makeeu.com
 .makeitopen.com
 .makeitrealcontest.com
 .makemymood.com
@@ -14670,7 +14604,6 @@ live-patreon-marketing.pantheonsite.io
 .malayporn.space
 .malaypornhub.com
 .mallandrinhas.net
-.mallheadphone.com
 .malotogo.ru
 .malvastudios.com
 .mamacitaz.com
@@ -14783,6 +14716,7 @@ live-patreon-marketing.pantheonsite.io
 .massagerepublic.com
 .masseffect.com
 .masseffectarchives.com
+.master-insight.com
 .mastercad.com
 .mastercard-email.com
 .mastercard.ae
@@ -14953,7 +14887,6 @@ live-patreon-marketing.pantheonsite.io
 .mayijiejie.com
 .maying.co
 .mbeats-tech.com
-.mbheadphone.com
 .mcadforums.com
 .mcaf.ee
 .mcafee.com
@@ -15300,7 +15233,6 @@ medone-education.thieme.com
 .microsofttranslator.com
 .microsoftuwp.com
 .microvpn.com
-.micstl.com
 .midatlanticbmwmotorcycles.com
 .midentsolutions.com
 .midjourney.com
@@ -15830,6 +15762,7 @@ medone-education.thieme.com
 .moneta.ru
 .money-link.com.tw
 .moneydj.com
+.moneynet.com.tw
 .moneywithfacebook.com
 .mongodb.com
 .mongodb.org
@@ -15899,7 +15832,6 @@ medone-education.thieme.com
 .monsterdrebeats-usa.com
 .monsterdrebeats-usa.net
 .monsterheadphone.net
-.monsterproduct.net
 .monstersbeatbydres.com
 .monstersdebea.com
 .monstersexporn.net
@@ -15919,7 +15851,6 @@ medone-education.thieme.com
 .moptt.tw
 .morazzia.com
 .more.tv
-.moreheadphones.com
 .moresci.sale
 .morewithautodesk.com
 .morganclaypool.com
@@ -16184,6 +16115,7 @@ muse.jhu.edu
 .mxshm.site
 .my-enema.com
 .my-formosa.com
+.my-formosa.com.tw
 .my-magazine.me
 .my-manager-account.com
 .my-private-network.co.uk
@@ -16500,7 +16432,6 @@ nbbb1bb7.pmhcjk.com
 .ndi.org
 .near.by
 .nebay.net
-.neborder.com
 .ned.org
 .nee4you.com
 .needforspeed.com
@@ -16612,7 +16543,6 @@ nbbb1bb7.pmhcjk.com
 .new2fea.com
 .new3dcomics.com
 .newbeatsblackfriday.com
-.newbemany.com
 .newbienudes.com
 .newbrazz.com
 .newcastlenewslocal.com.au
@@ -16630,7 +16560,6 @@ nbbb1bb7.pmhcjk.com
 .newindianexpress.com
 .newisiknowledge.com
 .newlineporn.com
-.newlysprung.net
 .newmitbbs.com
 .newmonst1erbeatsto1re.com
 .newmonsterbeatsheadphones.com
@@ -16650,7 +16579,6 @@ nbbb1bb7.pmhcjk.com
 .newsblur.com
 .newscareers.co.uk
 .newscdn.com.au
-.newschristmasshopping.com
 .newscommercial.co.uk
 .newsconcierge.com.au
 .newscorp.com
@@ -16725,7 +16653,6 @@ nbbb1bb7.pmhcjk.com
 .nexus-cdn.com
 .nexusmods.com
 .nf.id.au
-.nflhotsalejerseys.com
 .nflxext.com
 .nflximg.com
 .nflximg.net
@@ -16777,7 +16704,6 @@ nbbb1bb7.pmhcjk.com
 .nicegram.cloud
 .niceporn.tv
 .nicesrv.de
-.nicesshop.net
 .nichepornsite.com
 .nichepornsites.com
 .nichost.ru
@@ -17436,7 +17362,6 @@ ntppool2.time.nl
 .oed.com
 .oekakiskey.com
 .oex.com
-.offerairjordanlebron.com
 .office
 .office.com
 .office.net
@@ -17455,7 +17380,6 @@ ntppool2.time.nl
 .ofiii.com
 .ofile.org
 .ogakikyoritsu.co.jp
-.ogameblog.com
 .ogaoga.org
 .ogate.org
 .oghost.com.br
@@ -17628,7 +17552,6 @@ ntppool2.time.nl
 .onlytweets.com
 .onmanorama.com
 .onsalekey.com
-.onsaletrend.com
 .onstream.cc
 .onthehunt.com
 .ontrac.com
@@ -17965,7 +17888,6 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .patreon.com
 .patreoncommunity.com
 .patreonusercontent.com
-.paulsimon-music.com
 .pavpal.com
 .pawchive.pw
 .pawchive.st
@@ -18250,7 +18172,6 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .perfect-privacy.com
 .perfectgirls.net
 .perfectgonzo.com
-.perfectkickz.net
 .perfectnaked.com
 .perfectsexnow.com
 .perfectshemales.com
@@ -18265,7 +18186,6 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .persiankitty.com
 .person.com
 .personaltrainermath.com
-.personeelsland.com
 .pervbank.ru
 .pervclips.com
 .perverse.sex
@@ -18320,9 +18240,7 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .picasaweb.org
 .pichunter.com
 .pickinguppussy.com
-.picknicekicks.net
 .pickpackapp.com
-.pickshoesclothes.com
 .picnik.com
 .picpost.com
 .pics.ee
@@ -18549,7 +18467,6 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .pobeda.page
 .pobl-content.com
 .pochtabank.ru
-.pocketbiketrader.com
 .pocketcasts.com
 .podbean.com
 .podcast.co
@@ -19226,6 +19143,7 @@ public-us-pingsx.api.clonoth.com
 .pullfolio.co
 .pullstring.net
 .pulsebrowser.app
+.pulsehknews.com
 .punishbang.com
 .punishworld.com
 .pure18.com
@@ -19552,7 +19470,6 @@ q676790b.pmhcjk.com
 .rbplc.com
 .rbrandlibrary.com
 .rbsgate.com
-.rbsgr.com
 .rbspeakup.com
 .rbsuat.com
 .rbth.com
@@ -19714,7 +19631,6 @@ q676790b.pmhcjk.com
 .refah-bank.ir
 .referer.us
 .reflectivecode.com
-.reform-apple.com
 .reg.cloud
 .reg.com
 .reg.ru
@@ -19748,8 +19664,6 @@ q676790b.pmhcjk.com
 .report-megafon.ru
 .repotama.com
 .repsils.no
-.repsneakermall.com
-.repswing.com
 .resao.com
 .researchandcare.org
 .researchgate.net
@@ -20165,7 +20079,6 @@ rum.browser-intake-datadoghq.com
 .sale-nikeshoes.com
 .salebeatslasteststyle4you.com
 .saleblackfridaydrebeats.com
-.salecheaphandbags.com
 .salesforce-setup.com
 .salesforce-sites.com
 .salesforce.com
@@ -20175,7 +20088,6 @@ rum.browser-intake-datadoghq.com
 .salesforcemarketingcloud.com
 .salvation.org.hk
 .sambaporno.com
-.samebags.com
 .samsung
 .samsung.com
 .samsungapps.com
@@ -20230,7 +20142,6 @@ rum.browser-intake-datadoghq.com
 .sankie.net
 .sanmin.com.tw
 .sanspo.com
-.sanvaras.com
 .saobjpg.com
 .saoni91.xyz
 .saonia.xyz
@@ -20342,7 +20253,6 @@ rum.browser-intake-datadoghq.com
 .scitation.org
 .scival.com
 .scmp.com
-.scnshop.cc
 .scnsrc.me
 .scolle.net
 .scoop.sh
@@ -20720,6 +20630,7 @@ setup.workos.com
 .shahvani.site
 .shakethesnake.com
 .shameless.com
+.shanghainationalparty.com
 .shaparak.ir
 .shapelcounset.xyz
 .share-videos.se
@@ -20801,8 +20712,6 @@ setup.workos.com
 .shizuokabank.co.jp
 .shockingmovies.com
 .shodanhq.com
-.shoers.com
-.shoestop2.com
 .shokochukin.co.jp
 .shonai.co.jp
 .shooshtime.com
@@ -20851,8 +20760,6 @@ setup.workos.com
 .shopminiusa.com
 .shopmonsterbeats.com
 .shoppercentre.com
-.shopping-days.net
-.shoppinguheadphones.com
 .shops-disney.com
 .shopspeedtv.com
 .shoptraivip.com
@@ -21144,9 +21051,6 @@ setup.workos.com
 .snapwebcams.com
 .snbank.ru
 .sndcdn.com
-.sneaker666.com
-.sneakerpage.net
-.sneakerskick.com
 .sngb.ru
 .snjulebu.com
 .snk-corp.co.jp
@@ -21343,12 +21247,12 @@ setup.workos.com
 .sos.org
 .sos44.com
 .sosad.fun
-.soso7778.com
 .sosreader.com
 .sotwe.com
 .soubory.com
 .souka.xyz
 .soulcaliburhentai.net
+.soulogic.com
 .soundcloud.cloud
 .soundcloud.com
 .soundofhope.eu
@@ -21408,7 +21312,6 @@ setup.workos.com
 .spcc-sp.com
 .speakerdeck.com
 .spearhead.kr
-.specialtyheadphones.com
 .spectraltube.com
 .speedcat.me
 .speeddreamride.com
@@ -21434,7 +21337,6 @@ setup.workos.com
 .spiderpool.com
 .spiedigitallibrary.org
 .spigotmc.org
-.spiritclubs.com
 .spiritofecstasy.com
 .spizoo.com
 .splatoon2tournament.com
@@ -21844,7 +21746,6 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .suissl.com
 .sukafeti.jp
 .sukebelinks.com
-.sulwerphoto.com
 .summerstage.ru
 .summitceo.ru
 .sumomo-ch.com
@@ -21854,7 +21755,6 @@ straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 .sundanceignite2016.com
 .sundayguardianlive.com
 .sundayready.com
-.sunglassessale2014.com
 .sunmedia.ca
 .suno.ai
 .suno.com
@@ -21871,7 +21771,6 @@ supercell.helpshift.com
 .supercellid.com
 .supercellstore.com
 .supercoach.com.au
-.superearsenjoy.com
 .supergratisporno.com
 .superhqporn.com
 .superjapanesesex.com
@@ -21889,7 +21788,6 @@ supercell.helpshift.com
 .supervpn.net
 .superzooi.com
 .supjav.com
-.supplybestjerseys.com
 .support-uber.com
 .supportfacebook.com
 .supr.cl
@@ -22022,7 +21920,6 @@ supercell.helpshift.com
 .szabadeuropa.hu
 .szcheapmonsterheadphones.com
 .szexvideo.top
-.szwinnertechnology.com
 .t-access.ru
 .t-bank-app.ru
 .t-bank-app.su
@@ -22085,10 +21982,10 @@ supercell.helpshift.com
 .taiwanncf.org.tw
 .taiwannews.com.tw
 .taiwansex.tw
+.taiwantoday.tw
 .taiwantt.org.tw
 .tajimabank.co.jp
 .take2games.com
-.takegoto.com
 .takens.tw
 .taknai.com
 .takporn.com
@@ -22368,6 +22265,7 @@ supercell.helpshift.com
 .thecleversense.com
 .theclub.com.hk
 .theclubprive.com
+.thecollectivehk.com
 .thecompaqstore.com
 .theconversation.com
 .thecuckold.com
@@ -22431,6 +22329,7 @@ supercell.helpshift.com
 .thenewslens.com
 .thenextweb.com
 .thenipslip.com
+.theonlinecitizen.com
 .theopportunityproject.org
 .thepaypalshop.com
 .thepervs.com
@@ -22467,6 +22366,7 @@ supercell.helpshift.com
 .thesimssocial.com
 .thestandard.com.hk
 .thestandnews.com
+.thestar.com
 .thestationbymaker.com
 .thesun.co.uk
 .thesun.ie
@@ -22481,7 +22381,6 @@ supercell.helpshift.com
 .thetread.com
 .thetvdb.com
 .thetype.com
-.theuab.net
 .theverge.com
 .thevirtualsexreview.com
 .thewaltdisneycompany.com
@@ -22490,6 +22389,7 @@ supercell.helpshift.com
 .thewgo.org
 .thewirechina.com
 .thewitcher.com
+.thewitnesshk.com
 .thewonderful101.com
 .theync.com
 .theyxxx.com
@@ -22877,7 +22777,6 @@ supercell.helpshift.com
 .tracker.network
 .tracking-location.com
 .tradeup.com
-.tradevip1.com
 .tradingview.com
 .trae.ai
 .trafficmanager.net
@@ -23018,7 +22917,6 @@ supercell.helpshift.com
 .tsyum.com
 .tt1069.com
 .ttcdn-us.com
-.tteshop.com
 .ttl.com.tw
 .ttlivecdn.com
 .ttoverseaus.net
@@ -23429,7 +23327,6 @@ ubisoft.siteintercept.qualtrics.com
 .unseen.is
 .unsplash.com
 .unstable.icu
-.unstyle.us
 .unusualporn.net
 .unwire.hk
 .uo.com
@@ -23550,7 +23447,6 @@ utcnist3.colorado.edu
 .uygur.fc2web.com
 .uymaarip.com
 .v-av.com
-.v-has.com
 .v.gd
 .v.ps
 .v.recipes
@@ -23935,11 +23831,9 @@ utcnist3.colorado.edu
 .vip-enterprise.com
 .vipbeatsbydre.com
 .vipergirls.to
-.vipheadphones.com
 .vipissy.com
 .vipmatureporn.com
 .vipoo.es
-.vipshoes2.com
 .vipstudiocali.com
 .viqeo.tv
 .viqeotv.com
@@ -24605,7 +24499,6 @@ vsmarketplacebadge.apphb.com
 .warp.plus
 .warroom.org
 .warthunder.com
-.wasdj.com
 .waselpro.com
 .washa.tv
 .washingtondcbmw.com
@@ -24843,10 +24736,6 @@ vsmarketplacebadge.apphb.com
 .wholefoodsmarket.com
 .wholekidsfoundation.org
 .wholeplanetfoundation.org
-.wholesale-exporter1.com
-.wholesalediscountpurses.com
-.wholesalefine.com
-.wholesaleonlinemart.com
 .wholevideos.com
 .whonix.org
 .whoreasianporn.com
@@ -25067,6 +24956,7 @@ widgets.stripst.com
 .wolframalpha.com
 .wolfsex-me.sbs
 .wolterskluwer.com
+.womany.net
 .wombo.ai
 .womensnikeshox.com
 .womenwill.com
@@ -25101,7 +24991,6 @@ widgets.stripst.com
 .workspaceone.com
 .workstations.tv
 .world3d.biz
-.worldcoinpay.com
 .worldcuprussia.com
 .worldcurrencycard.co.za
 .worldemojiawards.com
