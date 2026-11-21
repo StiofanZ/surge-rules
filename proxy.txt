@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-21T00:03:15+00:00
+# Generated: 2026-11-21T23:28:59+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31729, local=27, total(deduped)=26580, excluded=3
+# Counts: upstream=31752, local=27, total(deduped)=26603, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -4513,6 +4513,7 @@ blizzard.nefficient.co.kr
 .bravoteens.com
 .bravotube.net
 .bravotube.tv
+.bravotv.com
 .brawlstars.com
 .brawlstarsgame.com
 .brazilpartneruniversity.com
@@ -5744,6 +5745,7 @@ cisco.evergage.com
 .cn.shafaqna.com
 .cna.com.tw
 .cnbc.com
+.cnbccouncils.com
 .cnbcfm.com
 .cnbeta.com
 .cnbeta.com.tw
@@ -8637,6 +8639,7 @@ f3b7q2p3.ssl.hwcdn.net
 .fantom.foundation
 .fantom.network
 .fantv.hk
+.fanza.jp
 .fap-xxx.com
 .fap18.net
 .fap666.com
@@ -9088,6 +9091,7 @@ firstsearch.oclc.org
 .fnmt.es
 .foampositeshoes.com
 .fochk.org
+.focusfeatures.com
 .focustaiwan.tw
 .fofg.org
 .foftolia.com
@@ -10882,6 +10886,7 @@ gog-cdn-lumen.secure2.footprint.net
 .hayabusa.media
 .hayday.com
 .haydaygame.com
+.hayu.com
 .hayya.ae
 hb4bbbbb.pmhcjk.com
 .hbabit.com
@@ -11328,6 +11333,7 @@ hb4bbbbb.pmhcjk.com
 .hkporn.net
 .hkreadingcity.net
 .hkreporter.com
+.hkt
 .hkt-enterprise.com
 .hkt-eye.com
 .hkt.com
@@ -12256,6 +12262,7 @@ i.jeded.com
 .ilife.wang
 .illawarramercury.com.au
 .illgames.jp
+.illumination.com
 .illusion111.com
 .illusionas.com
 .illusionchn.com
@@ -16015,7 +16022,6 @@ medone-education.thieme.com
 .msk.kitazawa.me
 .msn.com
 .msn.net
-.msnbc.com
 .msnewskids.com
 .msnewskids.net
 .msnewskids.org
@@ -16417,8 +16423,11 @@ nbbb1bb7.pmhcjk.com
 .nbcolympics.com
 .nbcsports.com
 .nbcudigitaladops.com
+.nbcumv.com
 .nbcuni.com
+.nbcunicareers.com
 .nbcuniversal.com
+.nbcuniversalprivacy.com
 .nbdh15.buzz
 .nbtvpn.com
 .nbys.tv
@@ -18062,6 +18071,7 @@ p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
 .pbxes.org
 .pc.com
 .pca.st
+.pccw
 .pccw.com
 .pccwglobal.com
 .pccwsolutions.com
@@ -19660,6 +19670,7 @@ q676790b.pmhcjk.com
 .renyurenquan.org
 .renzhe.cloud
 .repe21.com
+.replit.com
 .repo.new
 .report-megafon.ru
 .repotama.com
@@ -22148,6 +22159,7 @@ supercell.helpshift.com
 .telegramdownload.com
 .telekom.com
 .telekom.de
+.telemundo.com
 .telerik.com
 .telesco.pe
 .telesec.de
@@ -22739,6 +22751,7 @@ supercell.helpshift.com
 .torrentproject.se
 .torrenty.org
 .torrindex.net
+.tortoisegit.org
 .tortoisesvn.net
 .torvpn.com
 .tosh.comedycentral.com
@@ -23231,6 +23244,7 @@ ubisoft.siteintercept.qualtrics.com
 .udnfunlife.com
 .udomain.hk
 .udtrucksmeena.com
+.udxfpp.com
 .ueberamazon.de
 .uflash.tv
 .uforadio.com.tw
@@ -23308,11 +23322,18 @@ ubisoft.siteintercept.qualtrics.com
 .united.ru
 .unity.com
 .unity3d.com
+.universalbeijingresort.com
+.universalhorrorunleashed.com
+.universalkidsresort.com
 .universalorlando.com
+.universalpictures.co.uk
 .universalpictures.com
+.universalpicturesathome.com
 .universalpicturesinternational.com
+.universalproductsexperiences.com
 .universalscalablefirmware.org
 .universalstudioshollywood.com
+.universalukproject.co.uk
 .universitypressscholarship.com
 .unknownspace.org
 .unkoscene.com
@@ -23339,6 +23360,7 @@ ubisoft.siteintercept.qualtrics.com
 .upfrontcfd.com
 .upfrontfea.com
 .upghsbc.com
+.uphe.com
 .upholdjustice.org
 .upjav.cc
 .uplay-istrip.com
@@ -23388,6 +23410,7 @@ ubisoft.siteintercept.qualtrics.com
 .usersdrive.com
 .usertrust.com
 .usfk.mil
+.usj.co.jp
 .usma.edu
 .usno.navy.mil
 .usocial.pro
