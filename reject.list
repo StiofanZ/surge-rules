@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-21T23:29:17+00:00
+# Generated: 2026-11-24T03:59:49+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15641, local=1, total(deduped)=15001, excluded=29
+# Counts: upstream=15645, local=1, total(deduped)=15004, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -2491,6 +2491,7 @@ DOMAIN-SUFFIX,api.publytics.net
 DOMAIN-SUFFIX,api.receptivity.io
 DOMAIN-SUFFIX,api.reproio.com
 DOMAIN-SUFFIX,api.revenuads.com
+DOMAIN-SUFFIX,api.rudderstack.com
 DOMAIN-SUFFIX,api.rvere.com
 DOMAIN-SUFFIX,api.sae.systems
 DOMAIN-SUFFIX,api.sail-personalize.com
@@ -4566,6 +4567,7 @@ DOMAIN-SUFFIX,dataflow.biliapi.com
 DOMAIN-SUFFIX,datam.com
 DOMAIN-SUFFIX,datamaster.com.cn
 DOMAIN-SUFFIX,dataperforma.com
+DOMAIN-SUFFIX,dataplane.rudderstack.com
 DOMAIN-SUFFIX,datarangers-event.myrightone.com
 DOMAIN-SUFFIX,datarating.com
 DOMAIN-SUFFIX,dataroid.com
@@ -5054,7 +5056,6 @@ DOMAIN-SUFFIX,ek-tracker.ekitan.com
 DOMAIN-SUFFIX,ekmpinpoint.co.uk
 DOMAIN-SUFFIX,ekmpinpoint.com
 DOMAIN-SUFFIX,elb.the-ozone-project.com
-DOMAIN-SUFFIX,eldoradottfha.dataplane.rudderstack.com
 DOMAIN-SUFFIX,elephantdata.net
 DOMAIN-SUFFIX,elite-s001.com
 DOMAIN-SUFFIX,elitebidder.com
@@ -10359,6 +10360,7 @@ DOMAIN-SUFFIX,qobuz.surveysparrow.com
 DOMAIN-SUFFIX,qoijertneio.com
 DOMAIN-SUFFIX,qoopler.ru
 DOMAIN-SUFFIX,qortex.ai
+DOMAIN-SUFFIX,qozkbwkxygxlrs.com
 DOMAIN-SUFFIX,qpb.sohu.com
 DOMAIN-SUFFIX,qpb1.sohu.com
 DOMAIN-SUFFIX,qqcyhtl.buzz
@@ -14816,6 +14818,7 @@ DOMAIN-SUFFIX,xray.mail.ru
 DOMAIN-SUFFIX,xrtb.io
 DOMAIN-SUFFIX,xstat.gazeta.bo
 DOMAIN-SUFFIX,xstats.st
+DOMAIN-SUFFIX,xtaztxiibmcgwv.com
 DOMAIN-SUFFIX,xtr.tos.sktelecom.com
 DOMAIN-SUFFIX,xtractor.no
 DOMAIN-SUFFIX,xtremline.com

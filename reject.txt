@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-21T23:29:17+00:00
+# Generated: 2026-11-24T03:59:49+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15641, local=1, total(deduped)=15001, excluded=29
+# Counts: upstream=15645, local=1, total(deduped)=15004, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -2489,6 +2489,7 @@ api.mindbox.ru
 .api.receptivity.io
 .api.reproio.com
 .api.revenuads.com
+.api.rudderstack.com
 .api.rvere.com
 .api.sae.systems
 .api.sail-personalize.com
@@ -4564,6 +4565,7 @@ crashlyticsreports-pa.googleapis.com
 .datam.com
 .datamaster.com.cn
 .dataperforma.com
+.dataplane.rudderstack.com
 .datarangers-event.myrightone.com
 .datarating.com
 .dataroid.com
@@ -5052,7 +5054,6 @@ crashlyticsreports-pa.googleapis.com
 .ekmpinpoint.co.uk
 .ekmpinpoint.com
 .elb.the-ozone-project.com
-.eldoradottfha.dataplane.rudderstack.com
 .elephantdata.net
 .elite-s001.com
 .elitebidder.com
@@ -10357,6 +10358,7 @@ prodvizhenie-adv.ozon.ru
 .qoijertneio.com
 .qoopler.ru
 .qortex.ai
+.qozkbwkxygxlrs.com
 .qpb.sohu.com
 .qpb1.sohu.com
 .qqcyhtl.buzz
@@ -14814,6 +14816,7 @@ xapi.ozonru.me
 .xrtb.io
 .xstat.gazeta.bo
 .xstats.st
+.xtaztxiibmcgwv.com
 .xtr.tos.sktelecom.com
 .xtractor.no
 .xtremline.com
