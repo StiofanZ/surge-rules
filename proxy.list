@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-24T03:59:15+00:00
+# Generated: 2026-11-25T02:37:33+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31753, local=27, total(deduped)=26604, excluded=3, rule_set_only=12
+# Counts: upstream=31758, local=27, total(deduped)=26609, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -4835,6 +4835,7 @@ DOMAIN-SUFFIX,cabletv.com.hk
 DOMAIN-SUFFIX,cabletvdirectv.com
 DOMAIN-SUFFIX,cachefly.com
 DOMAIN-SUFFIX,cachefly.net
+DOMAIN-SUFFIX,cachix.org
 DOMAIN-SUFFIX,cacnw.com
 DOMAIN-SUFFIX,cactusvpn.com
 DOMAIN-SUFFIX,cad-mep.com
@@ -6006,6 +6007,7 @@ DOMAIN-SUFFIX,coursera-for-business.org
 DOMAIN-SUFFIX,coursera.community
 DOMAIN-SUFFIX,coursera.help
 DOMAIN-SUFFIX,coursera.org
+DOMAIN,courses.myecnu.org
 DOMAIN-SUFFIX,covenantswatch.org.tw
 DOMAIN-SUFFIX,coverartarchive.org
 DOMAIN-SUFFIX,covid19-rx.org
@@ -8698,10 +8700,12 @@ DOMAIN-SUFFIX,fastindianporn.com
 DOMAIN-SUFFIX,fastlane.ci
 DOMAIN-SUFFIX,fastlane.tools
 DOMAIN-SUFFIX,fastly-edge.com
+DOMAIN-SUFFIX,fastly-insights.com
 DOMAIN-SUFFIX,fastly-terrarium.com
 DOMAIN-SUFFIX,fastly.com
 DOMAIN-SUFFIX,fastly.io
 DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,fastlydns.net
 DOMAIN-SUFFIX,fastlylabs.com
 DOMAIN-SUFFIX,fastlylb.net
 DOMAIN-SUFFIX,fastpic.ru
@@ -24033,6 +24037,7 @@ DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,viu.tv
 DOMAIN-SUFFIX,vivaldi.com
 DOMAIN-SUFFIX,vivaxnxx.com
+DOMAIN-SUFFIX,vivox.com
 DOMAIN-SUFFIX,vivthomas.com
 DOMAIN-SUFFIX,vixen.com
 DOMAIN-SUFFIX,vixengroup.com

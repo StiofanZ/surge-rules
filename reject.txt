@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-24T03:59:49+00:00
+# Generated: 2026-11-25T02:38:03+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15645, local=1, total(deduped)=15004, excluded=29
+# Counts: upstream=15649, local=1, total(deduped)=15008, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -6341,6 +6341,7 @@ google-analytics-suite.ozon.ru
 .hwads-t.api.my7v.com
 .hwpub.com
 .hwstats.unity3d.com
+.hxgnwrwslhzgrmjsfvdevrjpn.com
 .hxtrack.com
 .hybrid.ai
 .hyfntrak.com
@@ -6536,6 +6537,7 @@ google-analytics-suite.ozon.ru
 .ingest.m2catalyst.com
 .ingest.make.rvohealth.com
 .ingest.skarb.work
+.ingest.t3.codes
 .ingest.webcol.sdp.peacocktv.com
 .ingestion.webanalytics.italia.it
 .ingress.linktr.ee
@@ -10562,6 +10564,7 @@ reklama.mail.ru
 .relevanceads.com
 .relevant-digital.com
 .reliablecounter.com
+.reliablelinen.com
 .relieved-understanding.com
 .relmaxtop.com
 .remarketstats.com
@@ -10787,6 +10790,7 @@ rtlog5-applog.fqnovel.com
 .rvgfc.com
 .rvmessage.online
 .rvv.emol.com
+.ry6wy3dr62usd0fnicfk.com
 .ryrv0j.greenbeanbuddy.com
 .rz261.cn
 .rztrkr.com

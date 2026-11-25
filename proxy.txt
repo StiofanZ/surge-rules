@@ -1,13 +1,13 @@
 # Surge DOMAIN-SET: proxy.txt (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-24T03:59:15+00:00
+# Generated: 2026-11-25T02:37:33+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31753, local=27, total(deduped)=26604, excluded=3
+# Counts: upstream=31758, local=27, total(deduped)=26609, excluded=3
 #
 # Use in Surge config: DOMAIN-SET,<url>,PROXY
 # Format:
@@ -4832,6 +4832,7 @@ bybit.ada.support
 .cabletvdirectv.com
 .cachefly.com
 .cachefly.net
+.cachix.org
 .cacnw.com
 .cactusvpn.com
 .cad-mep.com
@@ -6003,6 +6004,7 @@ cisco.evergage.com
 .coursera.community
 .coursera.help
 .coursera.org
+courses.myecnu.org
 .covenantswatch.org.tw
 .coverartarchive.org
 .covid19-rx.org
@@ -8695,10 +8697,12 @@ faronics.kayako.com
 .fastlane.ci
 .fastlane.tools
 .fastly-edge.com
+.fastly-insights.com
 .fastly-terrarium.com
 .fastly.com
 .fastly.io
 .fastly.net
+.fastlydns.net
 .fastlylabs.com
 .fastlylb.net
 .fastpic.ru
@@ -24030,6 +24034,7 @@ utcnist3.colorado.edu
 .viu.tv
 .vivaldi.com
 .vivaxnxx.com
+.vivox.com
 .vivthomas.com
 .vixen.com
 .vixengroup.com

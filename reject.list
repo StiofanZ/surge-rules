@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-24T03:59:49+00:00
+# Generated: 2026-11-25T02:38:03+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15645, local=1, total(deduped)=15004, excluded=29
+# Counts: upstream=15649, local=1, total(deduped)=15008, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -6343,6 +6343,7 @@ DOMAIN-SUFFIX,hwa.his.huawei.com
 DOMAIN-SUFFIX,hwads-t.api.my7v.com
 DOMAIN-SUFFIX,hwpub.com
 DOMAIN-SUFFIX,hwstats.unity3d.com
+DOMAIN-SUFFIX,hxgnwrwslhzgrmjsfvdevrjpn.com
 DOMAIN-SUFFIX,hxtrack.com
 DOMAIN-SUFFIX,hybrid.ai
 DOMAIN-SUFFIX,hyfntrak.com
@@ -6538,6 +6539,7 @@ DOMAIN-SUFFIX,ingest.do.brainsland.com
 DOMAIN-SUFFIX,ingest.m2catalyst.com
 DOMAIN-SUFFIX,ingest.make.rvohealth.com
 DOMAIN-SUFFIX,ingest.skarb.work
+DOMAIN-SUFFIX,ingest.t3.codes
 DOMAIN-SUFFIX,ingest.webcol.sdp.peacocktv.com
 DOMAIN-SUFFIX,ingestion.webanalytics.italia.it
 DOMAIN-SUFFIX,ingress.linktr.ee
@@ -10564,6 +10566,7 @@ DOMAIN-SUFFIX,relead.com
 DOMAIN-SUFFIX,relevanceads.com
 DOMAIN-SUFFIX,relevant-digital.com
 DOMAIN-SUFFIX,reliablecounter.com
+DOMAIN-SUFFIX,reliablelinen.com
 DOMAIN-SUFFIX,relieved-understanding.com
 DOMAIN-SUFFIX,relmaxtop.com
 DOMAIN-SUFFIX,remarketstats.com
@@ -10789,6 +10792,7 @@ DOMAIN-SUFFIX,rva.outbrain.com
 DOMAIN-SUFFIX,rvgfc.com
 DOMAIN-SUFFIX,rvmessage.online
 DOMAIN-SUFFIX,rvv.emol.com
+DOMAIN-SUFFIX,ry6wy3dr62usd0fnicfk.com
 DOMAIN-SUFFIX,ryrv0j.greenbeanbuddy.com
 DOMAIN-SUFFIX,rz261.cn
 DOMAIN-SUFFIX,rztrkr.com
