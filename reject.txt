@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-25T02:38:03+00:00
+# Generated: 2026-11-26T01:52:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15649, local=1, total(deduped)=15008, excluded=29
+# Counts: upstream=15658, local=1, total(deduped)=15017, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -1789,6 +1789,7 @@ analytics-stage.wildberries.ru
 .analytics.developer.riotgames.com
 .analytics.devshivan.com
 .analytics.diatelos.com
+.analytics.did.kr
 .analytics.digitalpfizer.com
 .analytics.digitalscale.pro
 .analytics.directify.app
@@ -3605,6 +3606,7 @@ clck.yango.com
 .clearbitjs.com
 .clearbitscripts.com
 .cleartag.run
+.clerk-telemetry.com
 .cleveritics.com
 .clevi.com
 .cli2020.com
@@ -4684,7 +4686,6 @@ crashlyticsreports-pa.googleapis.com
 .dic9vgwbkxd8r.cloudfront.net
 .diciestchokybuffi.cyou
 .did-it.com
-.did.kr
 .didit.com
 .didna.io
 .die-rankliste.com
@@ -4806,6 +4807,7 @@ crashlyticsreports-pa.googleapis.com
 .doubleverify.com
 .download-stats.mozilla.org
 .download.350.com
+.download.gameanalytics.com
 .download.jword.jp
 .downloadshi.b-cdn.net
 .dp1fzft1fdb84.cloudfront.net
@@ -4836,6 +4838,7 @@ crashlyticsreports-pa.googleapis.com
 .dsb.yahoo.co.jp
 .dsb.yahooapis.jp
 .dsbahmgppc0j4.cloudfront.net
+.dsh-otel-collector.deepseeksvc.com
 .dsh1ct2zrfakt.cloudfront.net
 .dskcwz.com
 .dsmmadvantage.com
@@ -5613,6 +5616,7 @@ error-tracking.megamarket.tech
 .fourlytics.foureyes.financial
 .fourthdistributeexpecting.com
 .fout.jp
+.fozekikikiminu.com
 .fp-it.fengkongcloud.com
 .fp-sa-it.fengkongcloud.com
 .fp.kakaku.com
@@ -5861,6 +5865,7 @@ error-tracking.megamarket.tech
 .gggpppht.com
 .ggsfq.xyz
 .gh.fanatical.com
+.ghtinc.com
 .gia.jd.com
 .gid.tapapis.cn
 .gio.ren
@@ -12429,6 +12434,7 @@ stats.telega.info
 .stippleit.com
 .stlog.d.dmkt-sp.jp
 .stlog.dmarket.docomo.ne.jp
+.stmtag.ru
 .stocks-analytics-events.apple.com
 .stocks-analytics-events.news.apple-dns.net
 .stopify.co
@@ -12689,6 +12695,7 @@ t.mail.ru
 .tafrebadus.com
 .tag.aftvnews.com
 .tag.aticdn.net
+.tag.atom.gamedistribution.com
 .tag.contactatonce.co.uk
 .tag.cribnotes.jp
 .tag.datariver.ru
@@ -13259,6 +13266,7 @@ tracing-http.megamarket.tech
 .track.cpatool.net
 .track.ddmanager.ru
 .track.dictionary.com
+.track.did.kr
 .track.dorfzeit.de
 .track.dustytater.com
 .track.eadv.it
@@ -13398,6 +13406,7 @@ tracing-http.megamarket.tech
 .tracker.anandtech.com
 .tracker.arc.io
 .tracker.azet.sk
+.tracker.beam.remp.startitup.sk
 .tracker.bigl.ua
 .tracker.bt.uol.com.br
 .tracker.calameo.com

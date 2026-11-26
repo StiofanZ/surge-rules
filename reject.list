@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-25T02:38:03+00:00
+# Generated: 2026-11-26T01:52:07+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15649, local=1, total(deduped)=15008, excluded=29
+# Counts: upstream=15658, local=1, total(deduped)=15017, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -1791,6 +1791,7 @@ DOMAIN-SUFFIX,analytics.dermivalimoveis.com.br
 DOMAIN-SUFFIX,analytics.developer.riotgames.com
 DOMAIN-SUFFIX,analytics.devshivan.com
 DOMAIN-SUFFIX,analytics.diatelos.com
+DOMAIN-SUFFIX,analytics.did.kr
 DOMAIN-SUFFIX,analytics.digitalpfizer.com
 DOMAIN-SUFFIX,analytics.digitalscale.pro
 DOMAIN-SUFFIX,analytics.directify.app
@@ -3607,6 +3608,7 @@ DOMAIN-SUFFIX,clearbit.com
 DOMAIN-SUFFIX,clearbitjs.com
 DOMAIN-SUFFIX,clearbitscripts.com
 DOMAIN-SUFFIX,cleartag.run
+DOMAIN-SUFFIX,clerk-telemetry.com
 DOMAIN-SUFFIX,cleveritics.com
 DOMAIN-SUFFIX,clevi.com
 DOMAIN-SUFFIX,cli2020.com
@@ -4686,7 +4688,6 @@ DOMAIN-SUFFIX,dianomi.com
 DOMAIN-SUFFIX,dic9vgwbkxd8r.cloudfront.net
 DOMAIN-SUFFIX,diciestchokybuffi.cyou
 DOMAIN-SUFFIX,did-it.com
-DOMAIN-SUFFIX,did.kr
 DOMAIN-SUFFIX,didit.com
 DOMAIN-SUFFIX,didna.io
 DOMAIN-SUFFIX,die-rankliste.com
@@ -4808,6 +4809,7 @@ DOMAIN-SUFFIX,doubletag.run
 DOMAIN-SUFFIX,doubleverify.com
 DOMAIN-SUFFIX,download-stats.mozilla.org
 DOMAIN-SUFFIX,download.350.com
+DOMAIN-SUFFIX,download.gameanalytics.com
 DOMAIN-SUFFIX,download.jword.jp
 DOMAIN-SUFFIX,downloadshi.b-cdn.net
 DOMAIN-SUFFIX,dp1fzft1fdb84.cloudfront.net
@@ -4838,6 +4840,7 @@ DOMAIN-SUFFIX,dsas.danawa.com
 DOMAIN-SUFFIX,dsb.yahoo.co.jp
 DOMAIN-SUFFIX,dsb.yahooapis.jp
 DOMAIN-SUFFIX,dsbahmgppc0j4.cloudfront.net
+DOMAIN-SUFFIX,dsh-otel-collector.deepseeksvc.com
 DOMAIN-SUFFIX,dsh1ct2zrfakt.cloudfront.net
 DOMAIN-SUFFIX,dskcwz.com
 DOMAIN-SUFFIX,dsmmadvantage.com
@@ -5615,6 +5618,7 @@ DOMAIN-SUFFIX,fourier.taobao.com
 DOMAIN-SUFFIX,fourlytics.foureyes.financial
 DOMAIN-SUFFIX,fourthdistributeexpecting.com
 DOMAIN-SUFFIX,fout.jp
+DOMAIN-SUFFIX,fozekikikiminu.com
 DOMAIN-SUFFIX,fp-it.fengkongcloud.com
 DOMAIN-SUFFIX,fp-sa-it.fengkongcloud.com
 DOMAIN-SUFFIX,fp.kakaku.com
@@ -5863,6 +5867,7 @@ DOMAIN-SUFFIX,ggbond.peaksite.tech
 DOMAIN-SUFFIX,gggpppht.com
 DOMAIN-SUFFIX,ggsfq.xyz
 DOMAIN-SUFFIX,gh.fanatical.com
+DOMAIN-SUFFIX,ghtinc.com
 DOMAIN-SUFFIX,gia.jd.com
 DOMAIN-SUFFIX,gid.tapapis.cn
 DOMAIN-SUFFIX,gio.ren
@@ -12431,6 +12436,7 @@ DOMAIN-SUFFIX,stinafulltiukmep.org
 DOMAIN-SUFFIX,stippleit.com
 DOMAIN-SUFFIX,stlog.d.dmkt-sp.jp
 DOMAIN-SUFFIX,stlog.dmarket.docomo.ne.jp
+DOMAIN-SUFFIX,stmtag.ru
 DOMAIN-SUFFIX,stocks-analytics-events.apple.com
 DOMAIN-SUFFIX,stocks-analytics-events.news.apple-dns.net
 DOMAIN-SUFFIX,stopify.co
@@ -12691,6 +12697,7 @@ DOMAIN-SUFFIX,tafimedia.com
 DOMAIN-SUFFIX,tafrebadus.com
 DOMAIN-SUFFIX,tag.aftvnews.com
 DOMAIN-SUFFIX,tag.aticdn.net
+DOMAIN-SUFFIX,tag.atom.gamedistribution.com
 DOMAIN-SUFFIX,tag.contactatonce.co.uk
 DOMAIN-SUFFIX,tag.cribnotes.jp
 DOMAIN-SUFFIX,tag.datariver.ru
@@ -13261,6 +13268,7 @@ DOMAIN-SUFFIX,track.coherentpath.com
 DOMAIN-SUFFIX,track.cpatool.net
 DOMAIN-SUFFIX,track.ddmanager.ru
 DOMAIN-SUFFIX,track.dictionary.com
+DOMAIN-SUFFIX,track.did.kr
 DOMAIN-SUFFIX,track.dorfzeit.de
 DOMAIN-SUFFIX,track.dustytater.com
 DOMAIN-SUFFIX,track.eadv.it
@@ -13400,6 +13408,7 @@ DOMAIN-SUFFIX,tracker.ai.xiaomi.com
 DOMAIN-SUFFIX,tracker.anandtech.com
 DOMAIN-SUFFIX,tracker.arc.io
 DOMAIN-SUFFIX,tracker.azet.sk
+DOMAIN-SUFFIX,tracker.beam.remp.startitup.sk
 DOMAIN-SUFFIX,tracker.bigl.ua
 DOMAIN-SUFFIX,tracker.bt.uol.com.br
 DOMAIN-SUFFIX,tracker.calameo.com
