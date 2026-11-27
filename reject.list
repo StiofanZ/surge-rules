@@ -1,6 +1,6 @@
 # Surge RULE-SET: reject.list (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-26T01:52:07+00:00
+# Generated: 2026-11-27T01:49:33+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15658, local=1, total(deduped)=15017, excluded=29
+# Counts: upstream=15660, local=1, total(deduped)=15019, excluded=29
 #
 # Use in Surge config: RULE-SET,<url>,REJECT
 # Format:
@@ -810,6 +810,7 @@ DOMAIN-SUFFIX,adc.hpplay.cn
 DOMAIN-SUFFIX,adc.nine.com.au
 DOMAIN-SUFFIX,adc.xxxlshop.de
 DOMAIN-SUFFIX,adcamp.ru
+DOMAIN-SUFFIX,adcanvas.com
 DOMAIN-SUFFIX,adcdn.goo.ne.jp
 DOMAIN-SUFFIX,adcel.co
 DOMAIN-SUFFIX,adcel.vrvm.com
@@ -2619,6 +2620,7 @@ DOMAIN-SUFFIX,applytics.os4work.com
 DOMAIN-SUFFIX,applytics.zwyr157wwiu6eior.com
 DOMAIN-SUFFIX,applzr.com
 DOMAIN-SUFFIX,appmetr.com
+DOMAIN-SUFFIX,appmetrica.sovcombank.ru
 DOMAIN-SUFFIX,appmetrica.yandex.com
 DOMAIN-SUFFIX,appmetrica.yandex.net
 DOMAIN-SUFFIX,appmetrica.yandex.ru
@@ -9647,6 +9649,7 @@ DOMAIN-SUFFIX,painsko.com
 DOMAIN-SUFFIX,palateonce.com
 DOMAIN-SUFFIX,palibzh.tech
 DOMAIN-SUFFIX,pampopholf.com
+DOMAIN-SUFFIX,pan.pazarama.com
 DOMAIN-SUFFIX,panda.kasika.io
 DOMAIN-SUFFIX,pangle-b.io
 DOMAIN-SUFFIX,pangle.cn
@@ -10463,7 +10466,6 @@ DOMAIN-SUFFIX,rankinteractive.com
 DOMAIN-SUFFIX,ranklet.come.cc
 DOMAIN-SUFFIX,ranklink.de
 DOMAIN-SUFFIX,ranmaotome.com
-DOMAIN-SUFFIX,rapid-cdn.yottaa.com
 DOMAIN-SUFFIX,rapidcounter.com
 DOMAIN-SUFFIX,rapidfire.cc
 DOMAIN-SUFFIX,rapidlinkhub.click

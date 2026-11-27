@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-26T01:52:07+00:00
+# Generated: 2026-11-27T01:49:33+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15658, local=1, total(deduped)=15017, excluded=29
+# Counts: upstream=15660, local=1, total(deduped)=15019, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -808,6 +808,7 @@ adblogger.vk.ru
 .adc.nine.com.au
 .adc.xxxlshop.de
 .adcamp.ru
+.adcanvas.com
 .adcdn.goo.ne.jp
 .adcel.co
 .adcel.vrvm.com
@@ -2617,6 +2618,7 @@ apilog-web.acfun.cn
 .applytics.zwyr157wwiu6eior.com
 .applzr.com
 .appmetr.com
+.appmetrica.sovcombank.ru
 .appmetrica.yandex.com
 .appmetrica.yandex.net
 .appmetrica.yandex.ru
@@ -9645,6 +9647,7 @@ p9-ad-sign.byteimg.com
 .palateonce.com
 .palibzh.tech
 .pampopholf.com
+.pan.pazarama.com
 .panda.kasika.io
 .pangle-b.io
 .pangle.cn
@@ -10461,7 +10464,6 @@ r1.mail.ru
 .ranklet.come.cc
 .ranklink.de
 .ranmaotome.com
-.rapid-cdn.yottaa.com
 .rapidcounter.com
 .rapidfire.cc
 .rapidlinkhub.click
