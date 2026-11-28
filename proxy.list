@@ -1,6 +1,6 @@
 # Surge RULE-SET: proxy.list (proxy)
 # Description: Domains that should go through a proxy. Upstream Loyalsoldier/surge-rules proxy.txt and ruleset/gfw.txt plus local OpenAI/ChatGPT allowlist supplement.
-# Generated: 2026-11-27T01:49:19+00:00
+# Generated: 2026-11-28T01:31:12+00:00
 # Sources:
 #   [domain_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
 #   [surge_rule_set] https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
@@ -8,7 +8,7 @@
 #   [include] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=31769, local=27, total(deduped)=26620, excluded=3, rule_set_only=12
+# Counts: upstream=31777, local=27, total(deduped)=26625, excluded=3, rule_set_only=12
 #
 # Use in Surge config: RULE-SET,<url>,PROXY
 # Format:
@@ -1088,6 +1088,7 @@ DOMAIN-SUFFIX,ai7995.site
 DOMAIN-SUFFIX,ai91porn.cc
 DOMAIN-SUFFIX,aiaa.org
 DOMAIN-SUFFIX,aiasahi.jp
+DOMAIN-SUFFIX,aicu.cc
 DOMAIN-SUFFIX,aidc.com.tw
 DOMAIN-SUFFIX,aihub.top
 DOMAIN-SUFFIX,aimei133.com
@@ -2512,6 +2513,7 @@ DOMAIN-SUFFIX,auntymaza.com
 DOMAIN-SUFFIX,auricularemonsterbeats.com
 DOMAIN-SUFFIX,auricularesbeatsbaratosshop.com
 DOMAIN-SUFFIX,auricularesbeatsmarkt.com
+DOMAIN,aurora-customization-usw2.lithium.com
 DOMAIN-SUFFIX,auroraoss.com
 DOMAIN-SUFFIX,ausbeatsbydrdre.com
 DOMAIN-SUFFIX,auth0.com
@@ -6299,6 +6301,7 @@ DOMAIN-SUFFIX,dandanplay.com
 DOMAIN-SUFFIX,dandanplay.net
 DOMAIN-SUFFIX,dandanzan.cc
 DOMAIN-SUFFIX,danke4china.net
+DOMAIN-SUFFIX,danmakus.com
 DOMAIN-SUFFIX,danmarkbeatsbydrdre.com
 DOMAIN-SUFFIX,danskpornofilm.com
 DOMAIN-SUFFIX,dansmovies.com
@@ -8768,6 +8771,7 @@ DOMAIN-SUFFIX,fc2cn.com
 DOMAIN-SUFFIX,fc2ppv.tv
 DOMAIN-SUFFIX,fcacebook.com
 DOMAIN-SUFFIX,fcaebook.com
+DOMAIN-SUFFIX,fce.gg
 DOMAIN-SUFFIX,fcebook.com
 DOMAIN-SUFFIX,fcebookk.com
 DOMAIN-SUFFIX,fcfacebook.com
@@ -21310,6 +21314,7 @@ DOMAIN-SUFFIX,soyjak.party
 DOMAIN-SUFFIX,soyjak.st
 DOMAIN-SUFFIX,sp.cool
 DOMAIN-SUFFIX,spacebattles.com
+DOMAIN-SUFFIX,spacedesk.net
 DOMAIN-SUFFIX,spaceexplored.com
 DOMAIN-SUFFIX,spaceforce.mil
 DOMAIN-SUFFIX,spacely.com.au

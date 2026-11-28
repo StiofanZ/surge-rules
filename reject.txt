@@ -1,6 +1,6 @@
 # Surge DOMAIN-SET: reject.txt (reject)
 # Description: Ad / tracking / crypto-miner domains to reject. Aggregated from every domain-oriented section across AdguardTeam/AdguardFilters: BaseFilter, MobileFilter, ChineseFilter, JapaneseFilter (adservers + adservers_firstparty); SpywareFilter (tracking_servers + tracking_servers_firstparty + mobile); plus BaseFilter cryptominers. Cosmetic, URL-path, regex, allowlist, and resource-type-conditional rules are dropped by the parser.
-# Generated: 2026-11-27T01:49:33+00:00
+# Generated: 2026-11-28T01:31:49+00:00
 # Sources:
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 #   [adguard] https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
@@ -17,7 +17,7 @@
 #   [include] includes/reject/google-telemetry.txt
 #   [cross-exclude] includes/proxy/openai-chatgpt.txt
 #   [cross-exclude] includes/direct/bitget.txt
-# Counts: upstream=15660, local=1, total(deduped)=15019, excluded=29
+# Counts: upstream=15667, local=1, total(deduped)=15026, excluded=29
 #
 # Use in Surge config: DOMAIN-SET,<url>,REJECT
 # Format:
@@ -544,6 +544,7 @@
 .abtest.mistat.xiaomi.com
 .abtest.swrve.com
 .abtshield.com
+.ac.avito.ru
 .ac.conel.jp
 .ac.ecai-report.com
 .ac.miovp.com
@@ -852,6 +853,7 @@ adblogger.vk.ru
 .adform.com
 .adfox.ru
 .adfox.yandex.ru
+.adfractal.com
 .adfstat.yandex.ru
 .adfurikun.jp
 .adfuture.cn
@@ -2370,6 +2372,7 @@ analytics.wildberries.ru
 .anythinktech.com
 .aomsitf.com
 .aoqenxgnxtnnc.club
+.ap-prd-edge-clientlog.nexon.com
 .ap.ad-feed.com
 .ap.attainplatform.io
 .ap.emergent.sh
@@ -2956,6 +2959,7 @@ b2.mail.ru
 .beacons.digital.disneyadvertising.com
 .beacons.mediamelon.com
 .beagle.prod.tda.link
+.beam.denikn.cz
 .beam.koddi.com
 .beam.remp.impresa.pt
 .beam.telegram.hr
@@ -3433,6 +3437,7 @@ bs.mail.ru
 .cdn.deviceinf.com
 .cdn.dezacibesodexi.com
 .cdn.dfsdk.com
+.cdn.diginetica.net
 .cdn.dsspn.com
 .cdn.empower.net
 .cdn.eu.amplitude.com
@@ -12851,6 +12856,7 @@ target.vk.com
 .targetpush.co.kr
 .targetrtb.com
 .targetspot.com
+.tarqivo.com
 .taskapi.net
 .tatrack.thinkyeah.com
 .tatsumi-sys.jp
@@ -13160,6 +13166,7 @@ target.vk.com
 .tovery.net
 .townlife-aff.com
 .toxic-writer.xyz
+.toy.log.nexon.io
 .tp.content-score.com
 .tp.suppercacheimages.top
 .tp2p.kg.qq.com
